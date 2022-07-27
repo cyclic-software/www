@@ -5,10 +5,6 @@ export default {
   //   base: '/www-builder/'
   // },
 
-  router: {
-    base: '/www-builder/'
-  },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'www-builder',
