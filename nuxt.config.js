@@ -1,6 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  // router: {
+  //   base: '/www-builder/'
+  // },
 
   router: {
     base: '/www-builder/'

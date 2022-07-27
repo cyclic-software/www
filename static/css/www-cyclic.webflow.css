@@ -367,7 +367,13 @@ blockquote {
   margin-left: 0px;
   padding-right: 100px;
   padding-left: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#245fff), color-stop(77%, #0f2c41));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#245fff),
+    color-stop(77%, #0f2c41)
+  );
   background-image: linear-gradient(180deg, #245fff, #0f2c41 77%);
 }
 
@@ -395,8 +401,10 @@ blockquote {
   border-radius: 0px 4px 4px 0px;
   background-color: #245fff;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03);
-  -webkit-transition: border-color 200ms ease, color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
-  transition: border-color 200ms ease, color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+  -webkit-transition: border-color 200ms ease, color 200ms ease,
+    box-shadow 200ms ease, background-color 200ms ease;
+  transition: border-color 200ms ease, color 200ms ease, box-shadow 200ms ease,
+    background-color 200ms ease;
   color: #fff;
   font-size: 16px;
   line-height: 1.5;
@@ -1703,7 +1711,8 @@ blockquote {
   -webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
   transition: opacity 200ms ease, -webkit-transform 200ms ease;
   transition: transform 200ms ease, opacity 200ms ease;
-  transition: transform 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, opacity 200ms ease,
+    -webkit-transform 200ms ease;
 }
 
 .card:hover {
@@ -1962,7 +1971,7 @@ blockquote {
   grid-auto-columns: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-template-areas: ".";
+  grid-template-areas: '.';
   -ms-grid-columns: 3fr 0px 1fr 0px 1fr 0px 1fr;
   grid-template-columns: 3fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
@@ -2023,8 +2032,10 @@ blockquote {
   border-radius: 5px;
   background-color: #245fff;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03);
-  -webkit-transition: border-color 200ms ease, color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
-  transition: border-color 200ms ease, color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+  -webkit-transition: border-color 200ms ease, color 200ms ease,
+    box-shadow 200ms ease, background-color 200ms ease;
+  transition: border-color 200ms ease, color 200ms ease, box-shadow 200ms ease,
+    background-color 200ms ease;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -2631,7 +2642,8 @@ blockquote {
   -webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
   transition: opacity 200ms ease, -webkit-transform 200ms ease;
   transition: transform 200ms ease, opacity 200ms ease;
-  transition: transform 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, opacity 200ms ease,
+    -webkit-transform 200ms ease;
 }
 
 .blog-card:hover {
@@ -2909,10 +2921,20 @@ blockquote {
   background-position: 20px 50%;
   background-size: auto 15px;
   background-repeat: no-repeat;
-  -webkit-transition: padding 500ms cubic-bezier(.23, 1, .32, 1), background-position 500ms cubic-bezier(.23, 1, .32, 1), color 200ms ease, opacity 200ms ease, -webkit-transform 500ms cubic-bezier(.23, 1, .32, 1);
-  transition: padding 500ms cubic-bezier(.23, 1, .32, 1), background-position 500ms cubic-bezier(.23, 1, .32, 1), color 200ms ease, opacity 200ms ease, -webkit-transform 500ms cubic-bezier(.23, 1, .32, 1);
-  transition: padding 500ms cubic-bezier(.23, 1, .32, 1), background-position 500ms cubic-bezier(.23, 1, .32, 1), transform 500ms cubic-bezier(.23, 1, .32, 1), color 200ms ease, opacity 200ms ease;
-  transition: padding 500ms cubic-bezier(.23, 1, .32, 1), background-position 500ms cubic-bezier(.23, 1, .32, 1), transform 500ms cubic-bezier(.23, 1, .32, 1), color 200ms ease, opacity 200ms ease, -webkit-transform 500ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transition: padding 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-position 500ms cubic-bezier(0.23, 1, 0.32, 1), color 200ms ease,
+    opacity 200ms ease, -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: padding 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-position 500ms cubic-bezier(0.23, 1, 0.32, 1), color 200ms ease,
+    opacity 200ms ease, -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: padding 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-position 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 500ms cubic-bezier(0.23, 1, 0.32, 1), color 200ms ease,
+    opacity 200ms ease;
+  transition: padding 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-position 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 500ms cubic-bezier(0.23, 1, 0.32, 1), color 200ms ease,
+    opacity 200ms ease, -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
   line-height: 1.6em;
   font-weight: 500;
   text-align: center;
@@ -2993,8 +3015,10 @@ blockquote {
   background-position: 0% 50%;
   background-size: auto 10px;
   background-repeat: no-repeat;
-  -webkit-transition: padding 500ms cubic-bezier(.23, 1, .32, 1), background-position 500ms cubic-bezier(.23, 1, .32, 1);
-  transition: padding 500ms cubic-bezier(.23, 1, .32, 1), background-position 500ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transition: padding 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-position 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: padding 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-position 500ms cubic-bezier(0.23, 1, 0.32, 1);
   color: #081158;
 }
 
@@ -3032,10 +3056,15 @@ blockquote {
   justify-content: flex-end;
   border-bottom-style: none;
   border-radius: 10px;
-  -webkit-transition: box-shadow 500ms cubic-bezier(.23, 1, .32, 1), opacity 500ms ease, -webkit-transform 500ms cubic-bezier(.23, 1, .32, 1);
-  transition: box-shadow 500ms cubic-bezier(.23, 1, .32, 1), opacity 500ms ease, -webkit-transform 500ms cubic-bezier(.23, 1, .32, 1);
-  transition: box-shadow 500ms cubic-bezier(.23, 1, .32, 1), transform 500ms cubic-bezier(.23, 1, .32, 1), opacity 500ms ease;
-  transition: box-shadow 500ms cubic-bezier(.23, 1, .32, 1), transform 500ms cubic-bezier(.23, 1, .32, 1), opacity 500ms ease, -webkit-transform 500ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transition: box-shadow 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 500ms ease, -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 500ms ease, -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 500ms cubic-bezier(0.23, 1, 0.32, 1), opacity 500ms ease;
+  transition: box-shadow 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 500ms cubic-bezier(0.23, 1, 0.32, 1), opacity 500ms ease,
+    -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
   text-align: left;
 }
 
@@ -5231,21 +5260,24 @@ blockquote {
 
 @font-face {
   font-family: 'Fa brands 400';
-  src: url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.ttf') format('truetype');
+  src: url('../fonts/fa-brands-400.woff2') format('woff2'),
+    url('../fonts/fa-brands-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Fa solid 900';
-  src: url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.ttf') format('truetype');
+  src: url('../fonts/fa-solid-900.woff2') format('woff2'),
+    url('../fonts/fa-solid-900.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Fa 400';
-  src: url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.ttf') format('truetype');
+  src: url('../fonts/fa-regular-400.woff2') format('woff2'),
+    url('../fonts/fa-regular-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
