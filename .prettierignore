@@ -95,5 +95,5 @@ sw.*
 # Vim swap files
 *.swp
 
-# Ignore all HTML files:
-*.html
+# Ignore all static files downloaded from Webflow
+static/*
