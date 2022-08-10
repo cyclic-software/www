@@ -17,17 +17,17 @@
 </template>
 
 <script>
-import { builder, RenderContent } from '@builder.io/vue'
+// import { builder, RenderContent } from '@builder.io/vue'
 import Vue from 'vue'
 
 // Replace with your Public API Key.
-builder.init("99d57cd26dcd4e0cbc917e798102b081")
+// builder.init("99d57cd26dcd4e0cbc917e798102b081")
 
 export default Vue.extend({
   data: () => ({
     notFound: false,
   }),
-  components: { RenderContent },
+  // components: { RenderContent },
   methods: {
     contentLoaded(content) {
       if (!content) {
