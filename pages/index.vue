@@ -52,12 +52,12 @@
   <div data-collapse="small" data-animation="default" data-duration="400" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c319c" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
     <div class="nav-container w-container">
       <div class="logo-div">
-        <a href="index.html" aria-current="page" class="nav-logo w-inline-block w--current"><img src="images/Group-1.png" loading="lazy" width="68" alt="" class="image-2"></a>
+        <NuxtLink to="/" aria-current="page" class="nav-logo w-inline-block w--current"><img src="images/Group-1.png" loading="lazy" width="68" alt="" class="image-2"></NuxtLink>
       </div>
       <nav role="navigation" class="nav-content w-nav-menu">
         <div class="nav-menu">
-          <a href="pricing.html" class="nav-link w-nav-link">Pricing</a>
-          <a href="/blog" class="nav-link w-nav-link">Blog</a>
+          <NuxtLink to="/pricing" class="nav-link w-nav-link">Pricing</NuxtLink>
+          <NuxtLink to="/blog" class="nav-link w-nav-link">Blog</NuxtLink>
           <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="nav-link w-nav-link">Docs</a>
           <a href="release-notes.html" target="_blank" class="nav-link w-nav-link">Release Notes</a>
         </div>
@@ -209,15 +209,15 @@
           <div class="footer-links-container">
             <h5 class="footer-header">Social</h5>
             <a href="https://github.com/cyclic-software" target="_blank" class="footer-link">Github</a>
-            <a href="https://discord.gg/huhcqxXCbE" target="_blank" class="footer-link">Discord </a>
+            <a href="https://discord.cyclic.sh" target="_blank" class="footer-link">Discord </a>
             <a href="https://twitter.com/cyclicsoftware" target="_blank" class="footer-link">Twitter</a>
           </div>
         </div>
         <div class="column desk-2 tab-4 mob-6">
           <div class="footer-links-container">
             <h5 class="footer-header">Company</h5>
-            <a href="pricing.html" class="footer-link">Pricing</a>
-            <a href="/blog" class="footer-link">Blog</a>
+            <NuxtLink to="/pricing" class="footer-link">Pricing</NuxtLink>
+            <NuxtLink to="/blog" class="footer-link">Blog</NuxtLink>
             <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="footer-link">Documentation</a>
             <a href="release-notes.html" class="footer-link">Release Notes</a>
             <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
