@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Jul 26 2022 21:11:03 GMT+0000 (Coordinated Universal Time)  -->
+<template><!DOCTYPE html><!--  Last Published: Tue Jul 26 2022 21:11:03 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60d0f077b69e2dca4a246157" data-wf-site="60d0f076b69e2d55ce24614e">
 <head>
   <meta charset="utf-8">
@@ -27,7 +27,7 @@
   <!-- script>window.LogRocket && window.LogRocket.init('sprnyp/cyclicsh');</script -->
   <!--  Global site tag (gtag.js) - Google Analytics  -->
   <!--  Global site tag (gtag.js) - Google Analytics  -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-199750669-3"></script>
+  <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-199750669-3"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -40,7 +40,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-RMTRNCTQEJ');
-</script>
+</script> -->
 </head>
 <body>
   <div data-collapse="small" data-animation="default" data-duration="400" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c319c" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
@@ -51,7 +51,7 @@
       <nav role="navigation" class="nav-content w-nav-menu">
         <div class="nav-menu">
           <a href="pricing.html" class="nav-link w-nav-link">Pricing</a>
-          <a href="blog.html" aria-current="page" class="nav-link w-nav-link w--current">Blog</a>
+          <a href="/blog" aria-current="page" class="nav-link w-nav-link w--current">Blog</a>
           <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="nav-link w-nav-link">Docs</a>
           <a href="release-notes.html" target="_blank" class="nav-link w-nav-link">Release Notes</a>
         </div>
@@ -171,7 +171,7 @@
           <div class="footer-links-container">
             <h5 class="footer-header">Company</h5>
             <a href="pricing.html" class="footer-link">Pricing</a>
-            <a href="blog.html" aria-current="page" class="footer-link w--current">Blog</a>
+            <a href="/blog" aria-current="page" class="footer-link w--current">Blog</a>
             <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="footer-link">Documentation</a>
             <a href="release-notes.html" class="footer-link">Release Notes</a>
             <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
@@ -182,26 +182,13 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60d0f076b69e2d55ce24614e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <!--  Start seamless-pagination custom code  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
-  <script>
-  var containerSelector = '#seamless-replace';
-  $(document).pjax(
-    '.w-pagination-wrapper a',
-    containerSelector,
-    {
-      container: containerSelector, 
-      fragment: containerSelector,
-      scrollTo: false,
-      timeout: 2500,
-    }
-  );
-    // These 3 lines should reinitialize interactions
-  $(document).on('pjax:end', function() {
-    Webflow.require('ix2').init();
-  });
-</script>
-  <!--  End seamless-pagination custom code  -->
+
 </body>
 </html>
+</template>
+
+<script>
+export default {
+  name: 'BlogPage',
+}
+</script>
