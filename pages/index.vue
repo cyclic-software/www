@@ -49,25 +49,7 @@
 </script -->
 </head>
 <body>
-  <div data-collapse="small" data-animation="default" data-duration="400" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c319c" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
-    <div class="nav-container w-container">
-      <div class="logo-div">
-        <NuxtLink to="/" aria-current="page" class="nav-logo w-inline-block w--current"><img src="images/Group-1.png" loading="lazy" width="68" alt="" class="image-2"></NuxtLink>
-      </div>
-      <nav role="navigation" class="nav-content w-nav-menu">
-        <div class="nav-menu">
-          <NuxtLink to="/pricing" class="nav-link w-nav-link">Pricing</NuxtLink>
-          <NuxtLink to="/blog" class="nav-link w-nav-link">Blog</NuxtLink>
-          <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="nav-link w-nav-link">Docs</a>
-          <a href="release-notes.html" target="_blank" class="nav-link w-nav-link">Release Notes</a>
-        </div>
-        <div class="nav-cta-button-container">
-          <a href="https://app.cyclic.sh/api/login" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c31b7" class="nav-link filled w-nav-link">Sign In</a>
-        </div>
-      </nav>
-      <div class="menu-button w-nav-button"><img src="images/White-Menu.svg" loading="lazy" width="24" alt="" class="menu-icon"></div>
-    </div>
-  </div><img src="images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
+  <img src="images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
   <div class="section hero home wf-section">
     <div class="container w-container">
       <div class="_12-columns tablet-center">
@@ -195,37 +177,7 @@
       </div>
     </div>
   </div>
-  <div class="footer wf-section">
-    <div class="spacer _64"></div>
-    <div class="footer-container w-container">
-      <div class="_12-columns align-top">
-        <div class="column desk-6 tab-12">
-          <a data-ix="logo" href="index.html" aria-current="page" class="footer-logo w-nav-brand w--current"><img src="images/default-monochrome-white.svg" loading="lazy" alt="cyclic logo" class="image"></a>
-          <p class="paragraph-small no-margin">© 2021 <a href="index.html" aria-current="page" class="w--current">Cyclic Software</a><br></p>
-          <div class="spacer _64"></div>
-        </div>
-        <div class="column desk-2 tab-4 mob-6"></div>
-        <div class="column desk-2 tab-4 mob-6">
-          <div class="footer-links-container">
-            <h5 class="footer-header">Social</h5>
-            <a href="https://github.com/cyclic-software" target="_blank" class="footer-link">Github</a>
-            <a href="https://discord.cyclic.sh" target="_blank" class="footer-link">Discord </a>
-            <a href="https://twitter.com/cyclicsoftware" target="_blank" class="footer-link">Twitter</a>
-          </div>
-        </div>
-        <div class="column desk-2 tab-4 mob-6">
-          <div class="footer-links-container">
-            <h5 class="footer-header">Company</h5>
-            <NuxtLink to="/pricing" class="footer-link">Pricing</NuxtLink>
-            <NuxtLink to="/blog" class="footer-link">Blog</NuxtLink>
-            <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="footer-link">Documentation</a>
-            <a href="release-notes.html" class="footer-link">Release Notes</a>
-            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60d0f076b69e2d55ce24614e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
 
