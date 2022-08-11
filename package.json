@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxt",
     "dev:csvToMarkdown": "node ./util/csv_to_markdown.js",
+    "dev:serve": "serve ./dist",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -35,6 +36,7 @@
     "mustache": "^2.3.2",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
+    "serve": "^14.0.1",
     "turndown": "^7.1.1",
     "vue-jest": "^3.0.4"
   }
