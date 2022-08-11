@@ -1,8 +1,9 @@
---
-Name: AngelList Roll Up Vehicles: Why, What and How
-Slug: angellist-roll-up-vehicle-why-what-and-how
-Summary: 
---
+---
+Name: 'AngelList Roll Up Vehicles: Why, What and How'
+Slug: 'angellist-roll-up-vehicle-why-what-and-how'
+Summary: ''
+---
+
 I recently raised a friends and family round for Cyclic and used an AngelList Roll Up Vehicle (RUV). More on the round later. Multiple founder friends have asked about my experience and why I used an RUV. Here is the Why, What and How:
 
   

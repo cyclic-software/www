@@ -3,7 +3,10 @@ const fs = require('fs')
 const {render} = require('mustache')
 var TurndownService = require('turndown')
 
-var td = new TurndownService()
+var td = new TurndownService({
+  preformattedCode: true,
+  codeBlockStyle: 'fenced'
+})
 
 const template = fs.readFileSync('./util/posts.mustache').toString()
 

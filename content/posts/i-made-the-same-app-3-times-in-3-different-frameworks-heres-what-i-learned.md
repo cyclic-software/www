@@ -1,8 +1,9 @@
---
-Name: I Made The Same App 3 Times in 3 Different Frameworks… Here’s What I Learned.
-Slug: i-made-the-same-app-3-times-in-3-different-frameworks-heres-what-i-learned
-Summary: 
---
+---
+Name: 'I Made The Same App 3 Times in 3 Different Frameworks… Here’s What I Learned.'
+Slug: 'i-made-the-same-app-3-times-in-3-different-frameworks-heres-what-i-learned'
+Summary: ''
+---
+
 Angular, Svelte, Solid, React, Vue — there are so many frameworks out there. And you probably dealt with [the “framework dilemma”](https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;webdev&#x2F;comments&#x2F;ux2ov8&#x2F;how_do_you_guys_determine_which_frameworks_to_use&#x2F;) at some point in your career.
 
 Some of us pursue React, the [most popular framework](https:&#x2F;&#x2F;insights.stackoverflow.com&#x2F;survey&#x2F;2021#most-loved-dreaded-and-wanted-webframe-want). And that’s completely understandable, because it being famous also implies that it’s the most demanded skill in the job market.

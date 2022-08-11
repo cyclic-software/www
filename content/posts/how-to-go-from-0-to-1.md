@@ -1,8 +1,9 @@
---
-Name: How to go from 0 to 1 - Growing users for a new product or service
-Slug: how-to-go-from-0-to-1
-Summary: 
---
+---
+Name: 'How to go from 0 to 1 - Growing users for a new product or service'
+Slug: 'how-to-go-from-0-to-1'
+Summary: ''
+---
+
 As a repeat founder I get the question from entrepreneurs and others: &quot;how do you get your first users?&quot;
 
   

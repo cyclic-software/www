@@ -1,8 +1,9 @@
---
-Name: AWS S3: Why sometimes you should press the $100k button
-Slug: aws-s3-why-sometimes-you-should-press-the-100k-dollar-button
-Summary: 
---
+---
+Name: 'AWS S3: Why sometimes you should press the $100k button'
+Slug: 'aws-s3-why-sometimes-you-should-press-the-100k-dollar-button'
+Summary: ''
+---
+
 _(a short story inspired by true events)_
 
 &gt; TLDR: Mere mortals implement best practices for S3 read and write performance, create a million billion s3 objects with their high performance system, try to clean up the really really expensive mess and find themselves in a _dimension as vast as space and as timeless as infinity.  

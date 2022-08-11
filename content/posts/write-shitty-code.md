@@ -1,8 +1,9 @@
---
-Name: Write Shitty Code - why you should and feel good about it
-Slug: write-shitty-code
-Summary: 
---
+---
+Name: 'Write Shitty Code - why you should and feel good about it'
+Slug: 'write-shitty-code'
+Summary: ''
+---
+
 I know how to write good code.
 
   

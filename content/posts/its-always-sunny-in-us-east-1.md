@@ -1,8 +1,9 @@
---
-Name: Its Always Sunny in us-east-1: The gang does business continuity
-Slug: its-always-sunny-in-us-east-1
-Summary: 
---
+---
+Name: 'Its Always Sunny in us-east-1: The gang does business continuity'
+Slug: 'its-always-sunny-in-us-east-1'
+Summary: ''
+---
+
 _TLDR: The gang experiences an AWS outage; customers report SHOWSTOPPERs; the gang triages the issues and attempts to implement an elaborate disaster recovery plan_
 
 It is 11:03 AM on a Thursday, US-EAST-1, Pennsylvania. You&#39;ve been triple booked just right and everyone at each call thinks you&#39;re at the other call. In this rare moment of freedom, you are adding custom emojis to slack.

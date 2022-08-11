@@ -1,8 +1,9 @@
---
-Name: We sound like idiots when we talk about technical debt
-Slug: we-sound-like-idiots-when-we-talk-about-technical-debt
-Summary: 
---
+---
+Name: 'We sound like idiots when we talk about technical debt'
+Slug: 'we-sound-like-idiots-when-we-talk-about-technical-debt'
+Summary: ''
+---
+
 ### Does this Sound Familiar?
 
   

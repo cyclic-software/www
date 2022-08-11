@@ -1,8 +1,9 @@
---
-Name: AWS Tools Suck
-Slug: aws-tools-suck
-Summary: 
---
+---
+Name: 'AWS Tools Suck'
+Slug: 'aws-tools-suck'
+Summary: ''
+---
+
 If you have ever worked with AWS as a developer then you will know what I mean, AWS tools suck. They suck so bad there is an entire industry focused on solving for this pile of suck. For just Infrastructure as Code, for example, there are Terraform, Pulumi and Serverless. AWS is famous for &quot;listening to customers&quot;. So what gives? Why do their tools still feel clunky, complex and riddled with infuriating edge cases?  
 
   

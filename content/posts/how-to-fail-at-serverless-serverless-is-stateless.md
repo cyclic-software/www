@@ -1,8 +1,9 @@
---
-Name: How to Fail at Serverless: Serverless is Stateless
-Slug: how-to-fail-at-serverless-serverless-is-stateless
-Summary: 
---
+---
+Name: 'How to Fail at Serverless: Serverless is Stateless'
+Slug: 'how-to-fail-at-serverless-serverless-is-stateless'
+Summary: ''
+---
+
 This blog series is an extended version of a talk I gave at [Serverless Days NYC 2022](https:&#x2F;&#x2F;nyc.serverlessdays.io&#x2F;). The goal is to share ways that a &quot;friend of mine&quot; has failed at serverless to help level up the community. Just as the transportation industry shares accident report analysis with the whole industry to improve safety, we in the software community need to do the same. This is my attempt to do that.  
 
   

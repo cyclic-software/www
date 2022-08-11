@@ -1,8 +1,9 @@
---
-Name: The VC Business Model and Why VCs Invest
-Slug: the-vc-business-model-and-why-vcs-invest
-Summary: 
---
+---
+Name: 'The VC Business Model and Why VCs Invest'
+Slug: 'the-vc-business-model-and-why-vcs-invest'
+Summary: ''
+---
+
 (photo credit [Charles Cushing](https:&#x2F;&#x2F;wonderstorms.substack.com&#x2F;p&#x2F;how-can-we-fix-the-market-for-solutions))  
   
 This article is intended for startup founders, particularly for those who are first timers. There is nothing extraordinary about my VC experiences. I have done the following: raised an angel round and two institutional rounds (and failed at two rounds?) at a company I co-founded in the GovTech&#x2F;Community space (SeeClickFix). I have participated in pitches as CTO of a pre-PMF (product market fit) mortgage tech company (HeavyWater). I have raised a friends-and-family round at my current Cloud Infrastructure company ([https:&#x2F;&#x2F;www.cyclic.sh](https:&#x2F;&#x2F;www.cyclic.sh))

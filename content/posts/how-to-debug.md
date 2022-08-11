@@ -1,8 +1,9 @@
---
-Name: How to Debug
-Slug: how-to-debug
-Summary: 
---
+---
+Name: 'How to Debug'
+Slug: 'how-to-debug'
+Summary: ''
+---
+
 We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? If a line of code always breaks then the fix is direct. The system is linear. The action leads to a failure.
 
 ‍

@@ -1,8 +1,9 @@
---
-Name: Technical Debt: A Field Guide
-Slug: technical-debt-a-field-guide
-Summary: 
---
+---
+Name: 'Technical Debt: A Field Guide'
+Slug: 'technical-debt-a-field-guide'
+Summary: ''
+---
+
 &gt; I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](&#x2F;posts&#x2F;we-sound-like-idiots-when-we-talk-about-technical-debt) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say &quot;technical debt&quot;.
 
 ‍  

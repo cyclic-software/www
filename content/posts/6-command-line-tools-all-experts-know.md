@@ -1,8 +1,9 @@
---
-Name: 6 Command line Tools All Experts Know
-Slug: 6-command-line-tools-all-experts-know
-Summary: 
---
+---
+Name: '6 Command line Tools All Experts Know'
+Slug: '6-command-line-tools-all-experts-know'
+Summary: ''
+---
+
 I work on Mac OSX and Linux command line environments. My tool kit is shaped by the needs I have. This is my tool box of tools that work with almost any command and help me go from just using the command line to being an expert.
 
   

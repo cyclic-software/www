@@ -1,8 +1,9 @@
---
-Name: Dad&#39;s Advice for How to Live
-Slug: dads-advice-for-how-to-live
-Summary: 
---
+---
+Name: 'Dad&#39;s Advice for How to Live'
+Slug: 'dads-advice-for-how-to-live'
+Summary: ''
+---
+
 I was 16 and about to head off as the youngest member of a month-long wilderness sailing trip. The night before my departure my dad came into my room to check on my packing and inspect my gear. He got serious and gave me the following advice for how to stay alive, keep safe and make the most of my time.
 
   

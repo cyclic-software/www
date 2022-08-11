@@ -1,8 +1,9 @@
---
-Name: Users Are the Best Feature
-Slug: users-are-the-best-feature
-Summary: 
---
+---
+Name: 'Users Are the Best Feature'
+Slug: 'users-are-the-best-feature'
+Summary: ''
+---
+
 As an engineer I like to talk about the features of a product. I talk about the product’s implementation and how it was built. I get excited about the internal workings. I have spent days of my life working on features that were never used. I operated under a mental framework that users came from outside and were external to the product. I was concerned with building the product. The users would be there when I was done. So I spent most of my time heads down writing code.
 
 &gt; So I spent most of my time heads down writing code.

@@ -1,8 +1,9 @@
---
-Name: Considerations for Serverless Active-Active: Routing
-Slug: considerations-for-serverless-active-active-routing
-Summary: 
---
+---
+Name: 'Considerations for Serverless Active-Active: Routing'
+Slug: 'considerations-for-serverless-active-active-routing'
+Summary: ''
+---
+
 _(Part 1 of a series)_
 
 Building active-active in multiple regions can be expensive and complex. Serverless-native applications can make it simpler to serve users globally and enable more effective recoveries with less effort.
