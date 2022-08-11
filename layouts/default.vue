@@ -9,6 +9,11 @@
 <script>
 export default {
   head: {
+    // css: [
+    //   "/css/normalize.css",
+    //   "/css/webflow.css",
+    //   "/css/www-cyclic.webflow.css"
+    // ],
     script: [
       // { src: '/head.js' },
       // Supported since 1.0
@@ -18,7 +23,7 @@ export default {
         crossorigin: 'anonymous',
         body: true,
       },
-      { src: 'js/webflow.js', body: true },
+      { src: '/js/webflow.js', body: true },
       // { src: '/defer.js', defer: '' }
     ]
   }

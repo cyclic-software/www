@@ -1,5 +1,5 @@
 <template>
-    <div class="section wf-section"><img src="images/Rectangle-244.svg" loading="lazy" alt="" class="absolute-image full-width">
+    <div class="section wf-section"><img src="/images/Rectangle-244.svg" loading="lazy" alt="" class="absolute-image full-width">
     <div class="container center-align">
       <div class="text-box _600px">
         <h2>Full Stack Serverless Apps</h2>

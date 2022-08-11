@@ -20,8 +20,8 @@
   <script type="text/javascript">WebFont.load({  google: {    families: ["DM Sans:regular,500,700","Titillium Web:300,regular,600,700"]  }});</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.jpg" rel="apple-touch-icon">
+  <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="/images/webclip.jpg" rel="apple-touch-icon">
   <link href="https://www.cyclic.sh/" rel="canonical">
   <!-- script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="ABB76AVhaGbyYK2HpH9DWkPGUpoDrD3o";;analytics.SNIPPET_VERSION="4.15.3";
@@ -49,7 +49,7 @@
 </script -->
 </head>
 <body>
-  <img src="images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
+  <img src="/images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
   <div class="section hero home wf-section">
     <div class="container w-container">
       <div class="_12-columns tablet-center">
@@ -62,14 +62,14 @@
           <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
         </div>
         <div class="column desk-1 tab-0"></div>
-        <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" style="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
+        <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" style="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
       </div>
     </div>
   </div>
   <div class="section wf-section">
     <div class="container w-container">
       <div class="_12-columns tablet-center">
-        <div class="column desk-6"><img src="images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"></div>
+        <div class="column desk-6"><img src="/images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"></div>
         <div class="column desk-1 tab-0"></div>
         <div class="column desk-5">
           <div class="text-box">
@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="column desk-1 tab-0"></div>
-        <div class="column desk-6"><img src="images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image"></div>
+        <div class="column desk-6"><img src="/images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image"></div>
       </div>
     </div>
   </div>
@@ -138,21 +138,21 @@
           <div class="spacer _48"></div>
         </div>
         <div class="column desk-4">
-          <div class="text-box"><img src="images/Frame-98.svg" alt="" class="icon">
+          <div class="text-box"><img src="/images/Frame-98.svg" alt="" class="icon">
             <h3>Run locally, run in the cloud.</h3>
             <p>An execution environment that feels familiar on both local and in the cloud. Optimize for speed from idea to live in production.</p>
             <div class="spacer _24"></div>
           </div>
         </div>
         <div class="column desk-4">
-          <div class="text-box"><img src="images/Frame-98-1.svg" alt="" class="icon">
+          <div class="text-box"><img src="/images/Frame-98-1.svg" alt="" class="icon">
             <h3>Build and Deploy in seconds.</h3>
             <p>The fastest build system you have ever seen. Seriously, you will be shocked. We sometimes refresh the page because we think we are seeing cached results. For real, it is that fast.</p>
             <div class="spacer _24"></div>
           </div>
         </div>
         <div class="column desk-4">
-          <div class="text-box"><img src="images/Frame-101.svg" alt="" class="icon">
+          <div class="text-box"><img src="/images/Frame-101.svg" alt="" class="icon">
             <h3>Scale up and Scale out.</h3>
             <p>Built and deployed with global scale enterprise grade serverless primates. Go from proof of concept to global load without re-architecting your app. </p>
             <div class="spacer _24"></div>
@@ -163,17 +163,6 @@
   </div>
   <CtaFullStackApps />
 
-  <!-- <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60d0f076b69e2d55ce24614e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script> -->
-
 </body>
 </html>
 </template>
-
-<script>
-import FullStackApps from '~/components/cta/FullStackApps.vue';
-export default {
-    name: "IndexPage",
-    components: { FullStackApps }
-}
-</script>
