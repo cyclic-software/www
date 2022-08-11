@@ -25,7 +25,7 @@ export default {
         crossorigin: 'anonymous',
         body: true,
       },
-      { src: '@static/js/webflow.js', body: true },
+      { src: '/js/webflow.js', body: true },
       // { src: '/defer.js', defer: '' }
     ]
   },
