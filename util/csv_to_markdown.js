@@ -2,13 +2,7 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const {render} = require('mustache')
 
-const template = `--
-Name: {{Name}}
-Slug: {{Slug}}
-Summary: {{Summary}}
---
-{{{Post Body}}}
-`
+const template = fs.readFileSync('./util/posts.mustache').toString()
 
 const results = [];
 
@@ -18,15 +12,13 @@ const results = [];
   .pipe(csv())
   .on('data', (data) => results.push(data))
   .on('end', () => {
-    console.log("forEach")
+
     results.forEach((doc) => {
       let md = render(template, doc)
       if (doc.Slug === 'why-i-started-cyclic') {
         console.log(md)
       }
-
       fs.writeFileSync(`./content/posts/${doc.Slug}.md`,md)
-
     })
   });
 
