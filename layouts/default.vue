@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <div id="app">
     <Menu></Menu>
     <Nuxt></Nuxt>
     <Footer></Footer>
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
   head: {
-    // css: [
-    //   "/css/normalize.css",
-    //   "/css/webflow.css",
-    //   "/css/www-cyclic.webflow.css"
-    // ],
+    css: [
+      "/css/normalize.css",
+      "/css/webflow.css",
+      "/css/www-cyclic.webflow.css"
+    ],
     script: [
       // { src: '/head.js' },
       // Supported since 1.0
@@ -28,4 +28,4 @@ export default {
     ]
   }
 }
-</script>
+</script> -->
