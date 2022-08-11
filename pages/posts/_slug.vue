@@ -11,6 +11,7 @@
     async asyncData({ $content, params }) {
       const post = await $content('posts', params.slug).fetch()
 
+      console.log(JSON.stringify(params.slug,null,2))
       return { post }
     },
     methods: {
