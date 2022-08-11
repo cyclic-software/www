@@ -161,32 +161,19 @@
       </div>
     </div>
   </div>
-  <div class="section wf-section"><img src="images/Rectangle-244.svg" loading="lazy" alt="" class="absolute-image full-width">
-    <div class="container center-align">
-      <div class="text-box _600px">
-        <h2>Full Stack Serverless Apps</h2>
-        <p>Deploy a full stack serverless app on cyclic in seconds. Bring your own repo or fork and install a starter from our library:</p>
-        <div class="w-row">
-          <div class="w-col w-col-6">
-            <a href="https://app.cyclic.sh/api/login?utm_source=www&amp;utm_medium=web&amp;utm_campaign=cta" class="button white helloworld-cta w-button">DEPLOY ON CYCLIC 🚀</a>
-          </div>
-          <div class="w-col w-col-6">
-            <a href="https://docs.cyclic.sh/docs/intro" class="button white helloworld-cta w-button">READ THE DOCS 📒</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <CtaFullStackApps />
 
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60d0f076b69e2d55ce24614e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60d0f076b69e2d55ce24614e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script> -->
 
 </body>
 </html>
 </template>
 
 <script>
+import FullStackApps from '~/components/cta/FullStackApps.vue';
 export default {
-  name: 'IndexPage',
+    name: "IndexPage",
+    components: { FullStackApps }
 }
 </script>

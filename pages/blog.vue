@@ -115,23 +115,7 @@
       </div>
     </div>
   </div>
-  <div class="banner wf-section">
-    <div class="container w-container">
-      <div class="_12-columns align-center">
-        <div class="column desk-12"><img src="images/Rectangle-240-copy.svg" loading="lazy" alt="" class="absolute-image">
-          <div class="cta-box">
-            <div class="text-box _600px">
-              <h2>Launch a hello world</h2>
-              <p>Fork and deploy a hello world project onto Cyclic faster than it has taken to read this page. Experience the power.</p>
-              <div class="spacer _24"></div>
-              <a href="https://app.cyclic.sh/api/login?utm_source=www&amp;utm_medium=web&amp;utm_campaign=cta" target="_blank" class="button white w-button">Deploy on Cyclic 🚀</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <LaunchHelloWorld />
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60d0f076b69e2d55ce24614e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
 
@@ -140,7 +124,9 @@
 </template>
 
 <script>
+import LaunchHelloWorld from '~/components/cta/LaunchHelloWorld.vue';
 export default {
-  name: 'BlogPage',
+    name: "BlogPage",
+    components: { LaunchHelloWorld }
 }
 </script>
