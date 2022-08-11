@@ -3,4 +3,139 @@ Name: Its Always Sunny in us-east-1: The gang does business continuity
 Slug: its-always-sunny-in-us-east-1
 Summary: 
 --
-<div></div><p><em>TLDR: The gang experiences an AWS outage; customers report SHOWSTOPPERs; the gang triages the issues and attempts to implement an elaborate disaster recovery plan</em></p><p>It is 11:03 AM on a Thursday, US-EAST-1, Pennsylvania. You've been triple booked just right and everyone at each call thinks you're at the other call. In this rare moment of freedom, you are adding custom emojis to slack.</p><p>A message from a developer:</p><figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center"><div><img src="https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b2bac320ad6b1f2c29c14_nb5Pt8iNWIeakqh64ZRzCdyvwQJoh5dqa3DLMw3VuRharHKff1CBXKBUKWtXIIxBIXOcFpaMW6VXC-vq9STLnr4_H1O16CU8P2N6jGPXMaiaa7njhzSLGvsqih8h-zkX0OIMDeLs.png" width="auto" height="auto" loading="auto"></div></figure><ul><li>"dude you free? we're having failures in prod."</li></ul><p>This is unfortunate, it is your week on support rotation so the other calls cant get you out of this one.</p><h2>The triage process</h2><p>You've crafted your triage process over many incidents and honed cutting diagnostic inquisitions. The goal here is efficiency and the mitigation of risk to lunchtime and as always, the secondary objective to expose the truth about how the PR comment you left was ignored and best practices spitefully neglected.</p><p><strong>1. Estimate priority</strong>: Did a customer report it? Did we find it ourselves?</p><ul><li>"No we saw alarms but no one knows yet, support team is doing these manually"</li></ul><p><strong>2. Assess impact</strong>: How many have failed?</p><ul><li>"A few, we've seen it earlier this morning, we think it might be AWS or they might be one-offs"</li></ul><p><strong>3. Establish precise language:</strong> A few is not a number, earlier is not a timestamp. Did you check the AWS status page?</p><ul><li>"Just messaged support team. Checking AWS status now..."</li><li>"AWS status is ✅ ✅ ✅"</li></ul><p><strong>4. Identify patterns</strong>: Are they all failing the same way? What is the error signature?</p><ul><li>"Its <em>random</em>, some of them timed out after <strong><em>random</em></strong> time, some have errors <strong>randomly</strong>."</li></ul><p><strong>5. Analyze chain of events</strong>: What did we change last?</p><ul><li>"Nothing, the last deployment was two weeks ago"</li></ul><p>The nuances in this last question is that a lot happens outside of the standard change management process. Some of these off-the-record/alternative-record things covered in triage include:</p><ul><li>Configuration changes made to toggle features</li><li>New users introduced never before seen behaviors</li><li>Off-cycle hot-fixes deployed from feature branches</li></ul><p>These three, plus the normal sprint work is at best recorded into only four different systems of record. Each of the systems is almost certainly the best tool for its job and each probably even has excellent integration capabilities. Unfortunately, the four are integrated manually in excel by four different people producing out-of-sync csv exports.</p><p><strong>6. Initiate holy crusade</strong>: Some of the worst atrocities committed against software get to production under the guise of hot-fixes. The perpetrators must be identified.<br></p><ul><li>"We should call in _______, I think they were on the last incident call”</li></ul><p>‍</p><p>This continues as more participants join the call - until - even though AWS status page is still showing ✅✅✅, someone announces:</p><h3><strong>"Some people on twitter are saying AWS is having an outage in us-east-1"</strong></h3><p><em>If you get nothing else out of this article - please walk away with this: If</em> <em>you are having doubts about the status of AWS, check twitter.</em></p><p><strong>This is good news.</strong></p><p>While numerous system failure notifications are signaling that <strong>shit is hitting the fan</strong>, the mood on the call improves briefly as all are absolved of any potential guilt, its no ones fault.</p><h1><strong>Disaster </strong>🔥</h1><p>This calm is short lived, the customers have been notified. They've escalated pissed-ness from <a href="http://code-inline">CRITICAL</a> to <a href="http://code-inline">SHOWSTOPPER</a> (from the resting baseline of <a href="http://code-inline">URGENT</a>). They are asking for an ETA on the resolution and hourly updates on the status.</p><p>Large organizations have <em>Recovery Time Objective (RTO) </em>and <em>Recovery Point Objective (RPO)</em> standards for disaster/outage scenarios. RTO/RPO can be internal standards or sometimes compliance requirements. What RPO/RTO actually means is best illustrated with an example:</p><p><em>If you're playing a video game - a crash is a disaster. The time it takes to boot the game back up is the recovery time. When the game starts back up, you've lost some progress time and have to start from an earlier autosave - thats the recovery point.</em></p><p>The goal is to have systems in place to maintain business continuity by reducing data loss and minimizing downtime for end users. This is done by deploying redundant infrastructure and data backups in alternate locations since physical infrastructure is geographically vulnerable.</p><h1>Recovery Strategy</h1><p>The org's AWS technical account manager tries to reassure everyone by confirming that issue is <strong>only regional</strong>. Having seen an amazing disaster recovery demo from the tech team six months ago, an executive on the call, feeling like they're about to save the day asks:</p><ul><li>`"We built DR capability. Why can't we recover to east-2?"</li></ul><p>This is where we discover that DR capability is different from a DR demo proving that failover is possible. Software changes over time. If there is an expectation that the application has recovery capability, each change must be made with the consideration for how it will behave in failure scenarios. To be clear - not try/except wrapping some new code for some feature - but how will the system with this new code and feature behave when infrastructure around it starts to break. <strong>Adopting DR is a culture change that goes beyond the developer.</strong> Maintaining availability requires continuous overhead in time and effort on development, management and architecture.</p><p>The answer is to this question is as usual -</p><ul><li>"We could try it but we're not sure what would happen, we have to ask the devops lead, but they're out today."</li></ul><p>The contributing factors to this lack of confidence come from those same nuances of the <a href="http://code-inline">What did we change last?</a> question.</p><p>When the devops lead is finally located. They remember that something has changed since the DR demo. The recovery process has changed and someone has to write an additional script. They explain the functionality briefly but unfortunately they can't do it. They have “a hard stop” and have “to drop” to watch their pets and children on their day off.&nbsp; They will then hand-off to you.</p><p>35 highly paid managers on the call that are normally skeptical of pair programming -&nbsp; become an engaged operating theater audience to a couple of developers <a href="https://www.cyclic.sh/posts/write-shitty-code">hacking together a script</a> that will never make it to version control.</p><p>When the script is finally written, <strong>a decision must be made.</strong></p><h1>“Ok should we run it?“</h1><p>The story has had a number of twists so far. It was determined that the original recovery plan is out of date and had to be duct taped back together. The plan's original creators have given their warnings and <strong>someone new must own the success or failure of the recovery</strong>. The decision should be made with caution of course, and so, the risks need to be discussed.</p><p>QA will list the environments they would like the script to be tested in, the business execs will bring up the need to work together on this with other organizational units. A few more people will join the call for a final per-hour burn rate approaching a developer’s monthly salary.</p><p><strong>AWS will inevitably fix us-east-1, and very probably before the discussion concludes.</strong> Someone will interrupt to announce:</p><ul><li>"We're seeing less failures, looks like we're good!"</li></ul><p>Everyone congratulates everyone on their hard work. The tech team sees a bright and hopeful future. They vow to bring this up in the post-mortem as an indisputable argument to<a href="https://www.cyclic.sh/posts/we-sound-like-idiots-when-we-talk-about-technical-debt"> convince product to finally pay down the tech debt</a>.</p><p>‍</p><h1>⚠️<strong> Educational content</strong></h1><p>There are multiple <a href="https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/">very well documented strategies</a> and architecture patterns to achieving recovery objectives. While there is a number of these, they can be reduced to just two:</p><ul><li>Active-Active - multiple independent, regionally redundant and interoperable systems functioning concurrently and as mutual back-ups without needing to be manually switched over</li><li>Not Active-Active - dusty, manually run Rube Goldberg machines designed for impressive demos and can only be operated by one dude who happens to be on vacation </li></ul><figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center" data-rt-max-width=""><div><img src="https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b37698dc82a7ba4eda92f_BG_oAOIfVIFsvST2nqtZfBEzcpuAP6QipgKosUKp9EBYAQ_wUUDSvoXNoe1l7XW_4KIC_TZ9BTjVxmHgimWyA5p9Vp4_QGzRjIXuXmA3vId-F5K2OQlyPpEkdkS9b9ZFmzfEcOak.png" width="auto" height="auto" loading="auto"></div><figcaption>please share all of your great successes with manually orchestrating active-passive/pilot light recoveries in the comments</figcaption></figure><p>‍</p><p>There is nothing fundamentally wrong about the passive approaches to recovery. The real problem is that unless the organization has capacity to continuously pay the overhead of maintaining and practicing recovery strategies, the recovery plan will always be out of date like in the story above. In active-active configuration, application have to naturally become regionally agnostic and shifting from one region to another naturally has to be automatic.</p><p>It is true that for many systems, especially those built on always-on infrastructure that have a per-hour cost, active-active is really expensive. For every compute instance you have serving traffic, you need to have another that is also turned on in a different region.</p><p>On-demand pricing is common for most products calling themselves serverless. With that, redundancy doesn't have to cost double and with much of serverless being heavily config driven the complexity is also reduced.</p><p>‍</p><p><strong>We will be posting a series on building global applications with serverless. Check out the first part in the series &gt;&gt;</strong> <a href="https://www.cyclic.sh/posts/considerations-for-serverless-active-active-routing">Routing and Health Checks</a></p><p>‍</p><p>‍</p>
+_TLDR: The gang experiences an AWS outage; customers report SHOWSTOPPERs; the gang triages the issues and attempts to implement an elaborate disaster recovery plan_
+
+It is 11:03 AM on a Thursday, US-EAST-1, Pennsylvania. You&#39;ve been triple booked just right and everyone at each call thinks you&#39;re at the other call. In this rare moment of freedom, you are adding custom emojis to slack.
+
+A message from a developer:
+
+![](https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;623b2bac320ad6b1f2c29c14_nb5Pt8iNWIeakqh64ZRzCdyvwQJoh5dqa3DLMw3VuRharHKff1CBXKBUKWtXIIxBIXOcFpaMW6VXC-vq9STLnr4_H1O16CU8P2N6jGPXMaiaa7njhzSLGvsqih8h-zkX0OIMDeLs.png)
+
+*   &quot;dude you free? we&#39;re having failures in prod.&quot;
+
+This is unfortunate, it is your week on support rotation so the other calls cant get you out of this one.
+
+The triage process
+------------------
+
+You&#39;ve crafted your triage process over many incidents and honed cutting diagnostic inquisitions. The goal here is efficiency and the mitigation of risk to lunchtime and as always, the secondary objective to expose the truth about how the PR comment you left was ignored and best practices spitefully neglected.
+
+**1\. Estimate priority**: Did a customer report it? Did we find it ourselves?
+
+*   &quot;No we saw alarms but no one knows yet, support team is doing these manually&quot;
+
+**2\. Assess impact**: How many have failed?
+
+*   &quot;A few, we&#39;ve seen it earlier this morning, we think it might be AWS or they might be one-offs&quot;
+
+**3\. Establish precise language:** A few is not a number, earlier is not a timestamp. Did you check the AWS status page?
+
+*   &quot;Just messaged support team. Checking AWS status now...&quot;
+*   &quot;AWS status is ✅ ✅ ✅&quot;
+
+**4\. Identify patterns**: Are they all failing the same way? What is the error signature?
+
+*   &quot;Its _random_, some of them timed out after **_random_** time, some have errors **randomly**.&quot;
+
+**5\. Analyze chain of events**: What did we change last?
+
+*   &quot;Nothing, the last deployment was two weeks ago&quot;
+
+The nuances in this last question is that a lot happens outside of the standard change management process. Some of these off-the-record&#x2F;alternative-record things covered in triage include:
+
+*   Configuration changes made to toggle features
+*   New users introduced never before seen behaviors
+*   Off-cycle hot-fixes deployed from feature branches
+
+These three, plus the normal sprint work is at best recorded into only four different systems of record. Each of the systems is almost certainly the best tool for its job and each probably even has excellent integration capabilities. Unfortunately, the four are integrated manually in excel by four different people producing out-of-sync csv exports.
+
+**6\. Initiate holy crusade**: Some of the worst atrocities committed against software get to production under the guise of hot-fixes. The perpetrators must be identified.  
+
+*   &quot;We should call in \_\_\_\_\_\_\_, I think they were on the last incident call”
+
+‍
+
+This continues as more participants join the call - until - even though AWS status page is still showing ✅✅✅, someone announces:
+
+### **&quot;Some people on twitter are saying AWS is having an outage in us-east-1&quot;**
+
+_If you get nothing else out of this article - please walk away with this: If_ _you are having doubts about the status of AWS, check twitter._
+
+**This is good news.**
+
+While numerous system failure notifications are signaling that **shit is hitting the fan**, the mood on the call improves briefly as all are absolved of any potential guilt, its no ones fault.
+
+**Disaster** 🔥
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+
+This calm is short lived, the customers have been notified. They&#39;ve escalated pissed-ness from [CRITICAL](http:&#x2F;&#x2F;code-inline) to [SHOWSTOPPER](http:&#x2F;&#x2F;code-inline) (from the resting baseline of [URGENT](http:&#x2F;&#x2F;code-inline)). They are asking for an ETA on the resolution and hourly updates on the status.
+
+Large organizations have _Recovery Time Objective (RTO)_ and _Recovery Point Objective (RPO)_ standards for disaster&#x2F;outage scenarios. RTO&#x2F;RPO can be internal standards or sometimes compliance requirements. What RPO&#x2F;RTO actually means is best illustrated with an example:
+
+_If you&#39;re playing a video game - a crash is a disaster. The time it takes to boot the game back up is the recovery time. When the game starts back up, you&#39;ve lost some progress time and have to start from an earlier autosave - thats the recovery point._
+
+The goal is to have systems in place to maintain business continuity by reducing data loss and minimizing downtime for end users. This is done by deploying redundant infrastructure and data backups in alternate locations since physical infrastructure is geographically vulnerable.
+
+Recovery Strategy
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+
+The org&#39;s AWS technical account manager tries to reassure everyone by confirming that issue is **only regional**. Having seen an amazing disaster recovery demo from the tech team six months ago, an executive on the call, feeling like they&#39;re about to save the day asks:
+
+*   \&#x60;&quot;We built DR capability. Why can&#39;t we recover to east-2?&quot;
+
+This is where we discover that DR capability is different from a DR demo proving that failover is possible. Software changes over time. If there is an expectation that the application has recovery capability, each change must be made with the consideration for how it will behave in failure scenarios. To be clear - not try&#x2F;except wrapping some new code for some feature - but how will the system with this new code and feature behave when infrastructure around it starts to break. **Adopting DR is a culture change that goes beyond the developer.** Maintaining availability requires continuous overhead in time and effort on development, management and architecture.
+
+The answer is to this question is as usual -
+
+*   &quot;We could try it but we&#39;re not sure what would happen, we have to ask the devops lead, but they&#39;re out today.&quot;
+
+The contributing factors to this lack of confidence come from those same nuances of the [What did we change last?](http:&#x2F;&#x2F;code-inline) question.
+
+When the devops lead is finally located. They remember that something has changed since the DR demo. The recovery process has changed and someone has to write an additional script. They explain the functionality briefly but unfortunately they can&#39;t do it. They have “a hard stop” and have “to drop” to watch their pets and children on their day off.  They will then hand-off to you.
+
+35 highly paid managers on the call that are normally skeptical of pair programming -  become an engaged operating theater audience to a couple of developers [hacking together a script](https:&#x2F;&#x2F;www.cyclic.sh&#x2F;posts&#x2F;write-shitty-code) that will never make it to version control.
+
+When the script is finally written, **a decision must be made.**
+
+“Ok should we run it?“
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+
+The story has had a number of twists so far. It was determined that the original recovery plan is out of date and had to be duct taped back together. The plan&#39;s original creators have given their warnings and **someone new must own the success or failure of the recovery**. The decision should be made with caution of course, and so, the risks need to be discussed.
+
+QA will list the environments they would like the script to be tested in, the business execs will bring up the need to work together on this with other organizational units. A few more people will join the call for a final per-hour burn rate approaching a developer’s monthly salary.
+
+**AWS will inevitably fix us-east-1, and very probably before the discussion concludes.** Someone will interrupt to announce:
+
+*   &quot;We&#39;re seeing less failures, looks like we&#39;re good!&quot;
+
+Everyone congratulates everyone on their hard work. The tech team sees a bright and hopeful future. They vow to bring this up in the post-mortem as an indisputable argument to [convince product to finally pay down the tech debt](https:&#x2F;&#x2F;www.cyclic.sh&#x2F;posts&#x2F;we-sound-like-idiots-when-we-talk-about-technical-debt).
+
+‍
+
+⚠️ **Educational content**
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+
+There are multiple [very well documented strategies](https:&#x2F;&#x2F;aws.amazon.com&#x2F;blogs&#x2F;architecture&#x2F;disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud&#x2F;) and architecture patterns to achieving recovery objectives. While there is a number of these, they can be reduced to just two:
+
+*   Active-Active - multiple independent, regionally redundant and interoperable systems functioning concurrently and as mutual back-ups without needing to be manually switched over
+*   Not Active-Active - dusty, manually run Rube Goldberg machines designed for impressive demos and can only be operated by one dude who happens to be on vacation
+
+![](https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;623b37698dc82a7ba4eda92f_BG_oAOIfVIFsvST2nqtZfBEzcpuAP6QipgKosUKp9EBYAQ_wUUDSvoXNoe1l7XW_4KIC_TZ9BTjVxmHgimWyA5p9Vp4_QGzRjIXuXmA3vId-F5K2OQlyPpEkdkS9b9ZFmzfEcOak.png)
+
+please share all of your great successes with manually orchestrating active-passive&#x2F;pilot light recoveries in the comments
+
+‍
+
+There is nothing fundamentally wrong about the passive approaches to recovery. The real problem is that unless the organization has capacity to continuously pay the overhead of maintaining and practicing recovery strategies, the recovery plan will always be out of date like in the story above. In active-active configuration, application have to naturally become regionally agnostic and shifting from one region to another naturally has to be automatic.
+
+It is true that for many systems, especially those built on always-on infrastructure that have a per-hour cost, active-active is really expensive. For every compute instance you have serving traffic, you need to have another that is also turned on in a different region.
+
+On-demand pricing is common for most products calling themselves serverless. With that, redundancy doesn&#39;t have to cost double and with much of serverless being heavily config driven the complexity is also reduced.
+
+‍
+
+**We will be posting a series on building global applications with serverless. Check out the first part in the series &gt;&gt;** [Routing and Health Checks](https:&#x2F;&#x2F;www.cyclic.sh&#x2F;posts&#x2F;considerations-for-serverless-active-active-routing)
+
+‍
+
+‍

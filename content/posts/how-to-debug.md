@@ -3,4 +3,162 @@ Name: How to Debug
 Slug: how-to-debug
 Summary: 
 --
-<p>We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? If a line of code always breaks then the fix is direct. The system is linear. The action leads to a failure.</p><p>‍</p><p>How do I debug a bug that is intermittent? How do I debug something that works sometimes?</p><p>‍</p><p>Here are some reminders to myself next time I encounter a baffling debugging session.</p><p>‍</p><h2>Choose Learning</h2><p>‍</p><p>My greatest learnings come from debugging. This bug is an opportunity for me to learn more about this system. If I already knew what was causing the problem then I wouldn't have a bug. The fact that I have a bug that isn’t obvious to me on how to fix, by definition means I have a chance to learn.</p><p>‍</p><p>The system is giving me the gift of the chance to learn.</p><p>‍</p><p>Choose to take the opportunity to learn.</p><p>‍</p><h2>Chase the Error</h2><p>‍</p><p>Answer the question: "how do I make this fail every single time?"</p><p>‍</p><p>Instead of continuing to make the system work. Instead make the system fail. Go straight at the error. Maximize it. Increase the error rate. Trigger the error repeatedly.</p><p>‍</p><p>Focus on driving the error rate to 100%. Only then can I be sure any success is from my action and not inconsistency.</p><p>‍</p><p>Make predictions to test my understanding: "The system will fail, now (pushes button)"</p><p>‍</p><h2>Simplify</h2><p>‍</p><p>Once I can create the error on demand, I isolate. I begin simplifying the steps to trigger. Remove steps or hard code responses. Trim excess complexity not needed to cause error.</p><p>‍</p><p>If it takes 6 steps to reproduce, try turning each one off in order.</p><p>‍</p><p>Find the minimum degrees of freedom to still reproduce the error.</p><p>‍</p><h2>Assess the Inverse</h2><p>‍</p><p>Reminder: the error is not caused by something I understand. Look explicitly for areas where I assume the system is working.</p><p>‍</p><p>What are the parts of the system that I am sure are working? What if they weren’t working as I expected? Verify the components are actually working as I expect.</p><p>‍</p><p>Reminder: It’s not what we don’t know that gets us into trouble, it is what we know for sure that isn't true</p><p>‍</p><h2>Devise a Conclusive Measure</h2><p>‍</p><p>Brainstorm what report, measure, logging or data would definitely tell me what is causing the error. Maybe this won't tell me “why” the error is happening, but point me closer to "where" the error is being caused.</p><p>‍</p><p>Question: What piece of information would conclusively tell me what the problem was?</p><p>‍</p><h2>Take a Break</h2><p>‍</p><p>I might be making things worse. If I don’t know what causes the error I don’t know if I’m making it worse. If the situation allows for it, take a break.</p><p>‍</p><p>Get some air. Go for a walk. Breath.</p><p>‍</p><p>A clear relaxed mind is open for new ideas.</p><p>‍</p><p>Sleep on it. Pick it up tomorrow.</p><p>‍</p><h2>Explain How to Reproduce</h2><p>‍</p><p>Say it out loud.</p><p>Talk to myself.</p><p>Explain the steps to reproduce.</p><p>Start at the beginning.</p><p>Back up three steps and explain again.</p><p>Slower this time.</p><p>‍</p><h2>Summary</h2><p>‍</p><p>Hopefully this helps you debug an issue you are struggling with. If you have other techniques or improvements to these let me know: twitter.com/seekayel</p><p>‍</p><p>For those who jump to the end, here is the tldr:</p><p>‍</p><ol><li>Choose Learning</li><li>Chase the Error</li><li>Simplify</li><li>Assess the Inverse</li><li>Devise a Conclusive Measure</li><li>Take a Break</li><li>Explain How to Reproduce</li></ol><p>‍</p>
+We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? If a line of code always breaks then the fix is direct. The system is linear. The action leads to a failure.
+
+‍
+
+How do I debug a bug that is intermittent? How do I debug something that works sometimes?
+
+‍
+
+Here are some reminders to myself next time I encounter a baffling debugging session.
+
+‍
+
+Choose Learning
+---------------
+
+‍
+
+My greatest learnings come from debugging. This bug is an opportunity for me to learn more about this system. If I already knew what was causing the problem then I wouldn&#39;t have a bug. The fact that I have a bug that isn’t obvious to me on how to fix, by definition means I have a chance to learn.
+
+‍
+
+The system is giving me the gift of the chance to learn.
+
+‍
+
+Choose to take the opportunity to learn.
+
+‍
+
+Chase the Error
+---------------
+
+‍
+
+Answer the question: &quot;how do I make this fail every single time?&quot;
+
+‍
+
+Instead of continuing to make the system work. Instead make the system fail. Go straight at the error. Maximize it. Increase the error rate. Trigger the error repeatedly.
+
+‍
+
+Focus on driving the error rate to 100%. Only then can I be sure any success is from my action and not inconsistency.
+
+‍
+
+Make predictions to test my understanding: &quot;The system will fail, now (pushes button)&quot;
+
+‍
+
+Simplify
+--------
+
+‍
+
+Once I can create the error on demand, I isolate. I begin simplifying the steps to trigger. Remove steps or hard code responses. Trim excess complexity not needed to cause error.
+
+‍
+
+If it takes 6 steps to reproduce, try turning each one off in order.
+
+‍
+
+Find the minimum degrees of freedom to still reproduce the error.
+
+‍
+
+Assess the Inverse
+------------------
+
+‍
+
+Reminder: the error is not caused by something I understand. Look explicitly for areas where I assume the system is working.
+
+‍
+
+What are the parts of the system that I am sure are working? What if they weren’t working as I expected? Verify the components are actually working as I expect.
+
+‍
+
+Reminder: It’s not what we don’t know that gets us into trouble, it is what we know for sure that isn&#39;t true
+
+‍
+
+Devise a Conclusive Measure
+---------------------------
+
+‍
+
+Brainstorm what report, measure, logging or data would definitely tell me what is causing the error. Maybe this won&#39;t tell me “why” the error is happening, but point me closer to &quot;where&quot; the error is being caused.
+
+‍
+
+Question: What piece of information would conclusively tell me what the problem was?
+
+‍
+
+Take a Break
+------------
+
+‍
+
+I might be making things worse. If I don’t know what causes the error I don’t know if I’m making it worse. If the situation allows for it, take a break.
+
+‍
+
+Get some air. Go for a walk. Breath.
+
+‍
+
+A clear relaxed mind is open for new ideas.
+
+‍
+
+Sleep on it. Pick it up tomorrow.
+
+‍
+
+Explain How to Reproduce
+------------------------
+
+‍
+
+Say it out loud.
+
+Talk to myself.
+
+Explain the steps to reproduce.
+
+Start at the beginning.
+
+Back up three steps and explain again.
+
+Slower this time.
+
+‍
+
+Summary
+-------
+
+‍
+
+Hopefully this helps you debug an issue you are struggling with. If you have other techniques or improvements to these let me know: twitter.com&#x2F;seekayel
+
+‍
+
+For those who jump to the end, here is the tldr:
+
+‍
+
+1.  Choose Learning
+2.  Chase the Error
+3.  Simplify
+4.  Assess the Inverse
+5.  Devise a Conclusive Measure
+6.  Take a Break
+7.  Explain How to Reproduce
+
+‍
