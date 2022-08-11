@@ -12,8 +12,8 @@ category: AWS
 hidden: false
 featured: true
 public: Wed Dec 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61a68182a7f0432e99a2781e_tools.jpg
-thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61a68047deca8f1bd220fae5_reid-naaykens-M9A3YswhVAw-unsplash.jpg
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61a68182a7f0432e99a2781e_tools.jpg
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61a68047deca8f1bd220fae5_reid-naaykens-M9A3YswhVAw-unsplash.jpg
 ---
 If you have ever worked with AWS as a developer then you will know what I mean, AWS tools suck. They suck so bad there is an entire industry focused on solving for this pile of suck. For just Infrastructure as Code, for example, there are Terraform, Pulumi and Serverless. AWS is famous for &quot;listening to customers&quot;. So what gives? Why do their tools still feel clunky, complex and riddled with infuriating edge cases?  
 

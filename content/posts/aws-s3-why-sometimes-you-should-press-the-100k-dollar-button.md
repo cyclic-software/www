@@ -12,8 +12,8 @@ category: AWS
 hidden: false
 featured: false
 public: Wed Feb 16 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
-thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
 ---
 _(a short story inspired by true events)_
 

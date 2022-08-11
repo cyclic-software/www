@@ -12,8 +12,8 @@ category: Engineering
 hidden: true
 featured: false
 public: Thu Jun 16 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;62a74a26dc596b3c205de748_ryan-moreno-Lurw1nCIkLc-unsplash.jpg
-thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;62a74a26dc596b3c205de748_ryan-moreno-Lurw1nCIkLc-unsplash.jpg
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62a74a26dc596b3c205de748_ryan-moreno-Lurw1nCIkLc-unsplash.jpg
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62a74a26dc596b3c205de748_ryan-moreno-Lurw1nCIkLc-unsplash.jpg
 ---
 I work on Mac OSX and Linux command line environments. My tool kit is shaped by the needs I have. This is my tool box of tools that work with almost any command and help me go from just using the command line to being an expert.
 

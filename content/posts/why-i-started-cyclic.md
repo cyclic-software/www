@@ -12,8 +12,8 @@ category:
 hidden: false
 featured: false
 public: Wed Jun 23 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;60d3c50314bd829617b19d2e_cover.png
-thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;60d3c50314bd829617b19d2e_cover.png
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/60d3c50314bd829617b19d2e_cover.png
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/60d3c50314bd829617b19d2e_cover.png
 ---
 At my last company we had a micro-services architecture. We also focused on recruiting developers who were smart and dedicated, but not yet experienced. When they started we would task them to add some new functionality. This would require on the order of perhaps 20 to 50 lines of business logic.
 

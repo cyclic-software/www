@@ -12,8 +12,8 @@ category: Engineering
 hidden: false
 featured: true
 public: Wed Jan 26 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61e01ceaa92e5f6848495201_shitty-code-v2.png
-thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61e01ceaa92e5f6848495201_shitty-code-v2.png
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61e01ceaa92e5f6848495201_shitty-code-v2.png
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61e01ceaa92e5f6848495201_shitty-code-v2.png
 ---
 I know how to write good code.
 

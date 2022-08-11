@@ -12,8 +12,8 @@ category: Engineering
 hidden: false
 featured: false
 public: Wed Feb 09 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;6202e395cfd9c77ba4c35c73_simply-ask-product-meme-v2.png
-thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;6202e395cfd9c77ba4c35c73_simply-ask-product-meme-v2.png
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6202e395cfd9c77ba4c35c73_simply-ask-product-meme-v2.png
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6202e395cfd9c77ba4c35c73_simply-ask-product-meme-v2.png
 ---
 ### Does this Sound Familiar?
 

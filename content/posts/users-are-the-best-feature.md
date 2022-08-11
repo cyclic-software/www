@@ -12,8 +12,8 @@ category: Product
 hidden: false
 featured: true
 public: Wed Dec 08 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61af8a07adb8ff2730cbe040_nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg
-thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61af8a07adb8ff2730cbe040_nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61af8a07adb8ff2730cbe040_nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61af8a07adb8ff2730cbe040_nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg
 ---
 As an engineer I like to talk about the features of a product. I talk about the product’s implementation and how it was built. I get excited about the internal workings. I have spent days of my life working on features that were never used. I operated under a mental framework that users came from outside and were external to the product. I was concerned with building the product. The users would be there when I was done. So I spent most of my time heads down writing code.
 
