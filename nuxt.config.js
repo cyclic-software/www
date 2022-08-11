@@ -24,8 +24,10 @@ export default {
         integrity: 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=',
         crossorigin: 'anonymous',
         body: true,
+        defer: true,
+        async: true
       },
-      { src: '/js/webflow.js', body: true },
+      { src: '/js/webflow.js', body: true, defer: true, async: true},
       // { src: '/defer.js', defer: '' }
     ]
   },

@@ -6,14 +6,14 @@
       <div class="_12-columns tablet-center">
         <div class="column desk-6 tab-8 mob-12">
           <div>
-            <h1 data-w-id="18a9bc4c-33dd-e424-566d-cf277b93ef10" style="opacity:0" class="header-large">Full stack apps</h1>
-            <p data-w-id="4eea2083-f4cb-f1f4-0316-712ef7a1d16d" style="opacity:0" class="paragraph">Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.</p>
+            <h1 data-w-id="18a9bc4c-33dd-e424-566d-cf277b93ef10" xstyle="opacity:0" class="header-large">Full stack apps</h1>
+            <p data-w-id="4eea2083-f4cb-f1f4-0316-712ef7a1d16d" xstyle="opacity:0" class="paragraph">Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.</p>
             <div class="spacer _16"></div>
           </div>
           <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
         </div>
         <div class="column desk-1 tab-0"></div>
-        <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" style="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
+        <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" xstyle="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
       </div>
     </div>
   </div>
