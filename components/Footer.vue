@@ -20,8 +20,8 @@
         <div class="column desk-2 tab-4 mob-6">
           <div class="footer-links-container">
             <h5 class="footer-header">Company</h5>
-            <NuxtLink to="/pricing" class="footer-link">Pricing</NuxtLink>
-            <NuxtLink to="/blog" class="footer-link">Blog</NuxtLink>
+            <NuxtLink to="/pricing.html" class="footer-link">Pricing</NuxtLink>
+            <NuxtLink to="/blog.html" class="footer-link">Blog</NuxtLink>
             <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="footer-link">Documentation</a>
             <a href="release-notes.html" class="footer-link">Release Notes</a>
             <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
