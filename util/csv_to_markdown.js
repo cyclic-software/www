@@ -1,14 +1,33 @@
 const csv = require('csv-parser')
 const fs = require('fs')
+const {render} = require('mustache')
+
+const template = `--
+Name: {{Name}}
+Slug: {{Slug}}
+Summary: {{Summary}}
+--
+{{{Post Body}}}
+`
+
 const results = [];
 
-fs.createReadStream('./util/posts.csv')
+(async ()=>{
+
+  fs.createReadStream('./util/posts.csv')
   .pipe(csv())
   .on('data', (data) => results.push(data))
   .on('end', () => {
-    console.log(results);
+    console.log("forEach")
+    results.forEach((doc) => {
+      let md = render(template, doc)
+      if (doc.Slug === 'why-i-started-cyclic') {
+        console.log(md)
+      }
+
+      fs.writeFileSync(`./content/posts/${doc.Slug}.md`,md)
+
+    })
   });
 
-  results.forEach((doc) => {
-    
-  })
+})()
