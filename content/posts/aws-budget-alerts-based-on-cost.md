@@ -1,9 +1,20 @@
 ---
-Name: 'AWS Budget Alerts Based on Cost'
-Slug: 'aws-budget-alerts-based-on-cost'
-Summary: ''
+title: 'AWS Budget Alerts Based on Cost'
+slug: 'aws-budget-alerts-based-on-cost'
+summary: 'How to setup an AWS Budget and get notified of forecasted cost overruns using AWS::Budgets::Budget'
+colId: 60d0f077b69e2df6b324616c
+id: 60edf0cd76984c12bf652a8d
+createdAt: 'Tue Jul 13 2021 20:00:13 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Wed Feb 23 2022 16:15:49 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Wed Feb 23 2022 16:18:06 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: 
+hidden: false
+featured: false
+public: Wed Jul 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;60edf34edabd24d29fa406fd_Screen%20Shot%202021-07-13%20at%204.10.34%20PM.png
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;60edf34edabd24d29fa406fd_Screen%20Shot%202021-07-13%20at%204.10.34%20PM.png
 ---
-
 If you have used AWS you know how costs can sneak up on you. I have experience getting a heart stopping bill at a previous startup. With Cyclic I&#39;ve decided I want to start adding controls and alerts from the start.
 
 ‍

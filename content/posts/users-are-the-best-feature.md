@@ -1,9 +1,20 @@
 ---
-Name: 'Users Are the Best Feature'
-Slug: 'users-are-the-best-feature'
-Summary: ''
+title: 'Users Are the Best Feature'
+slug: 'users-are-the-best-feature'
+summary: 'With users a product is alive and useful. Without them the product is useless.'
+colId: 60d0f077b69e2df6b324616c
+id: 61af8d6271df5e0535de32b3
+createdAt: 'Tue Dec 07 2021 16:35:46 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Wed Feb 23 2022 16:17:27 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Wed Feb 23 2022 16:18:06 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Product
+hidden: false
+featured: true
+public: Wed Dec 08 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61af8a07adb8ff2730cbe040_nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61af8a07adb8ff2730cbe040_nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg
 ---
-
 As an engineer I like to talk about the features of a product. I talk about the product’s implementation and how it was built. I get excited about the internal workings. I have spent days of my life working on features that were never used. I operated under a mental framework that users came from outside and were external to the product. I was concerned with building the product. The users would be there when I was done. So I spent most of my time heads down writing code.
 
 &gt; So I spent most of my time heads down writing code.

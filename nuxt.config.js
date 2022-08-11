@@ -17,8 +17,6 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 
     script: [
-      // { src: '/head.js' },
-      // Supported since 1.0
       {
         src: 'https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60d0f076b69e2d55ce24614e',
         integrity: 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=',
@@ -26,9 +24,12 @@ export default {
         body: true,
         defer: true,
         async: true
+      },{
+        src: '/js/webflow.js',
+        body: true,
+        defer: true,
+        async: true
       },
-      { src: '/js/webflow.js', body: true, defer: true, async: true},
-      // { src: '/defer.js', defer: '' }
     ]
   },
 

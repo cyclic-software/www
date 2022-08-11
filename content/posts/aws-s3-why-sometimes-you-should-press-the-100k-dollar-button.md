@@ -1,9 +1,20 @@
 ---
-Name: 'AWS S3: Why sometimes you should press the $100k button'
-Slug: 'aws-s3-why-sometimes-you-should-press-the-100k-dollar-button'
-Summary: ''
+title: 'AWS S3: Why sometimes you should press the $100k button'
+slug: 'aws-s3-why-sometimes-you-should-press-the-100k-dollar-button'
+summary: ''
+colId: 60d0f077b69e2df6b324616c
+id: 620bfa2c2552ec6354ae5736
+createdAt: 'Tue Feb 15 2022 19:08:28 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Thu Feb 17 2022 14:13:58 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Thu Feb 17 2022 14:13:58 GMT+0000 (Coordinated Universal Time)'
+author: mike-korostelev
+category: AWS
+hidden: false
+featured: false
+public: Wed Feb 16 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
 ---
-
 _(a short story inspired by true events)_
 
 &gt; TLDR: Mere mortals implement best practices for S3 read and write performance, create a million billion s3 objects with their high performance system, try to clean up the really really expensive mess and find themselves in a _dimension as vast as space and as timeless as infinity.  

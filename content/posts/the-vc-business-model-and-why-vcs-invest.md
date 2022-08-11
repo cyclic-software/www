@@ -1,9 +1,20 @@
 ---
-Name: 'The VC Business Model and Why VCs Invest'
-Slug: 'the-vc-business-model-and-why-vcs-invest'
-Summary: ''
+title: 'The VC Business Model and Why VCs Invest'
+slug: 'the-vc-business-model-and-why-vcs-invest'
+summary: 'The majority of the confusion or difficulty I had raising Venture Capital was that I didn’t fully understand the VC business model. I didn’t understand the individual investors and their incentives. I didn’t appreciate the incentives for the fund itself. Nor did I understand what the fund’s investors (Limited Partners aka LPs) were expecting. Hopefully this will help you understand what I didn’t.'
+colId: 60d0f077b69e2df6b324616c
+id: 625d6e727cd492506affb41c
+createdAt: 'Mon Apr 18 2022 13:58:10 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Tue Apr 19 2022 18:23:51 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Wed Jun 08 2022 20:06:23 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Company
+hidden: false
+featured: false
+public: Tue Apr 19 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;625d6d59bf162325b02db845_VC-triangle.png
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;625d6d59bf162325b02db845_VC-triangle.png
 ---
-
 (photo credit [Charles Cushing](https:&#x2F;&#x2F;wonderstorms.substack.com&#x2F;p&#x2F;how-can-we-fix-the-market-for-solutions))  
   
 This article is intended for startup founders, particularly for those who are first timers. There is nothing extraordinary about my VC experiences. I have done the following: raised an angel round and two institutional rounds (and failed at two rounds?) at a company I co-founded in the GovTech&#x2F;Community space (SeeClickFix). I have participated in pitches as CTO of a pre-PMF (product market fit) mortgage tech company (HeavyWater). I have raised a friends-and-family round at my current Cloud Infrastructure company ([https:&#x2F;&#x2F;www.cyclic.sh](https:&#x2F;&#x2F;www.cyclic.sh))

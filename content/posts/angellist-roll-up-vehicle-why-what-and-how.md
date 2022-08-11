@@ -1,9 +1,20 @@
 ---
-Name: 'AngelList Roll Up Vehicles: Why, What and How'
-Slug: 'angellist-roll-up-vehicle-why-what-and-how'
-Summary: ''
+title: 'AngelList Roll Up Vehicles: Why, What and How'
+slug: 'angellist-roll-up-vehicle-why-what-and-how'
+summary: ''
+colId: 60d0f077b69e2df6b324616c
+id: 61018ddd164595787521f025
+createdAt: 'Wed Jul 28 2021 17:03:25 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Wed Feb 23 2022 16:16:04 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Wed Feb 23 2022 16:18:06 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Company
+hidden: false
+featured: false
+public: Wed Jul 28 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61034d0ea889c569b1d6a4fa_money_hero.jpg
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;6103420a99290433365bd13b_AngelList_Venture.svg
 ---
-
 I recently raised a friends and family round for Cyclic and used an AngelList Roll Up Vehicle (RUV). More on the round later. Multiple founder friends have asked about my experience and why I used an RUV. Here is the Why, What and How:
 
   

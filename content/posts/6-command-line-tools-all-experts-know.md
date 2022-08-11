@@ -1,9 +1,20 @@
 ---
-Name: '6 Command line Tools All Experts Know'
-Slug: '6-command-line-tools-all-experts-know'
-Summary: ''
+title: '6 Command line Tools All Experts Know'
+slug: '6-command-line-tools-all-experts-know'
+summary: 'Wow, your friends and colleagues. These tools make every other command at the command line more powerful.'
+colId: 60d0f077b69e2df6b324616c
+id: 62a74b9b2bbb3fdb87bc0a01
+createdAt: 'Mon Jun 13 2022 14:37:15 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Mon Jun 13 2022 15:03:03 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Mon Jun 13 2022 15:03:06 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Engineering
+hidden: true
+featured: false
+public: Thu Jun 16 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;62a74a26dc596b3c205de748_ryan-moreno-Lurw1nCIkLc-unsplash.jpg
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;62a74a26dc596b3c205de748_ryan-moreno-Lurw1nCIkLc-unsplash.jpg
 ---
-
 I work on Mac OSX and Linux command line environments. My tool kit is shaped by the needs I have. This is my tool box of tools that work with almost any command and help me go from just using the command line to being an expert.
 
   

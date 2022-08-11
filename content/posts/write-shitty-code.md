@@ -1,9 +1,20 @@
 ---
-Name: 'Write Shitty Code - why you should and feel good about it'
-Slug: 'write-shitty-code'
-Summary: ''
+title: 'Write Shitty Code - why you should and feel good about it'
+slug: 'write-shitty-code'
+summary: 'Why you should write MORE shitty code and feel good about it.'
+colId: 60d0f077b69e2df6b324616c
+id: 61dde0b3def972ccb1d8c38e
+createdAt: 'Tue Jan 11 2022 19:55:31 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Wed Feb 23 2022 16:14:59 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Wed Feb 23 2022 16:18:06 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Engineering
+hidden: false
+featured: true
+public: Wed Jan 26 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61e01ceaa92e5f6848495201_shitty-code-v2.png
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61e01ceaa92e5f6848495201_shitty-code-v2.png
 ---
-
 I know how to write good code.
 
   

@@ -1,9 +1,20 @@
 ---
-Name: 'Technical Debt: A Field Guide'
-Slug: 'technical-debt-a-field-guide'
-Summary: ''
+title: 'Technical Debt: A Field Guide'
+slug: 'technical-debt-a-field-guide'
+summary: 'As a software professional for almost 20 years I&#39;ve had more passionate discussions about technical debt than any other topic. From all these passionate discussions and online comments I have distilled a taxonomy of the dimensions of debt. What makes a reasoned discussion difficult is that they trade different quantities (mostly unmeasured) of different units across time with different potential probabilities of happening.'
+colId: 60d0f077b69e2df6b324616c
+id: 62223e6e5fc85c538f3d1460
+createdAt: 'Fri Mar 04 2022 16:29:34 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Tue Apr 19 2022 20:15:44 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Tue Apr 19 2022 20:15:44 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Engineering
+hidden: false
+featured: false
+public: Mon Mar 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
 ---
-
 &gt; I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](&#x2F;posts&#x2F;we-sound-like-idiots-when-we-talk-about-technical-debt) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say &quot;technical debt&quot;.
 
 ‍  

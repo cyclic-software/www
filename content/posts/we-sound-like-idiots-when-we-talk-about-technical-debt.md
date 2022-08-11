@@ -1,9 +1,20 @@
 ---
-Name: 'We sound like idiots when we talk about technical debt'
-Slug: 'we-sound-like-idiots-when-we-talk-about-technical-debt'
-Summary: ''
+title: 'We sound like idiots when we talk about technical debt'
+slug: 'we-sound-like-idiots-when-we-talk-about-technical-debt'
+summary: 'When we use the term technical debt with non-technical business colleagues, they assume, that technical debt is analogous to financial debt. After a few minutes of discussion they are usually relieved to find that there is no actual money problem. How quickly would the CFO get fired if they claimed &quot;we have a lot of debt&quot; but couldn’t produce a balance sheet with lenders, amounts, interest rates and terms?'
+colId: 60d0f077b69e2df6b324616c
+id: 6202c79a00fdb50ce95d263e
+createdAt: 'Tue Feb 08 2022 19:42:18 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Tue Feb 08 2022 21:41:49 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Tue Feb 08 2022 21:41:55 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Engineering
+hidden: false
+featured: false
+public: Wed Feb 09 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;6202e395cfd9c77ba4c35c73_simply-ask-product-meme-v2.png
+thumbnail: https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;6202e395cfd9c77ba4c35c73_simply-ask-product-meme-v2.png
 ---
-
 ### Does this Sound Familiar?
 
   
