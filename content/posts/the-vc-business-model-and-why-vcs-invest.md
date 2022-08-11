@@ -39,7 +39,7 @@ VC Fund Structure (photo credit [Angel List](https:&#x2F;&#x2F;learn.angellist.c
 
 ‍
 
-The LPs invest in the fund because they want to make money. The “Limited” in LP refers to the time the investor doesn’t spend working in the business. They send a check and that is their involvement.
+The LPs invest in the fund because they want to make money. The &quot;Limited&quot; in LP refers to the time the investor doesn’t spend working in the business. They send a check and that is their involvement.
 
 ‍
 
@@ -103,7 +103,7 @@ At this point they have transitioned to harvesting or running off the portfolio.
 
 ‍
 
-At the buffet they have switched to dessert and coffee. It would be an extraordinary turn of events such that you could convince them to take a scoop of some new main course. More likely they have raised another fund, probably at the end of the first year or two and any pitch would get investment from that fund. So effectively that VC is “loading their plate” even if one of their funds is in this phase of winding down.
+At the buffet they have switched to dessert and coffee. It would be an extraordinary turn of events such that you could convince them to take a scoop of some new main course. More likely they have raised another fund, probably at the end of the first year or two and any pitch would get investment from that fund. So effectively that VC is &quot;loading their plate&quot; even if one of their funds is in this phase of winding down.
 
 ‍
 
@@ -155,6 +155,6 @@ Conclusion
 
 ‍
 
-The tech twitter joke of “big if true” can be a helpful tldr guide for how VCs evaluate potential investments. Make sure you know where they are in their investing lifecycle to ensure you are spending your time wisely. Hopefully this was helpful. If you have any questions or if I wasn’t completely clear find me on twitter: [@seekayel](https:&#x2F;&#x2F;twitter.com&#x2F;seekayel)
+The tech twitter joke of &quot;big if true&quot; can be a helpful tldr guide for how VCs evaluate potential investments. Make sure you know where they are in their investing lifecycle to ensure you are spending your time wisely. Hopefully this was helpful. If you have any questions or if I wasn’t completely clear find me on twitter: [@seekayel](https:&#x2F;&#x2F;twitter.com&#x2F;seekayel)
 
 ‍

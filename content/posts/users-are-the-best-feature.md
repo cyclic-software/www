@@ -30,7 +30,7 @@ So you agree? Great!
 
 #### What is next?
 
-How do we magically &quot;get&quot; users? Where is the “hello world” for user acquisition? Where is the “npm init” for this feature?
+How do we magically &quot;get&quot; users? Where is the &quot;hello world&quot; for user acquisition? Where is the &quot;npm init&quot; for this feature?
 
 Well this post series is an attempt to catalogue the specific tactics and actions that have worked for me.
 

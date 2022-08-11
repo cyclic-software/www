@@ -8,7 +8,7 @@ This blog series is an extended version of a talk I gave at [Serverless Days NYC
 
   
 
-I&#39;m sure there is some product X that has feature Y that fixes issue Z. I either didn&#39;t know about it at the time, didn&#39;t have the budget, couldn&#39;t get it through vendor&#x2F;security review, product wouldn’t schedule it with our engineers or it didn&#39;t comply with enterprise architecture&#39;s plan for our software roadmap. As some guy once said: “You go to production with the tools you have, not the tools you want.”
+I&#39;m sure there is some product X that has feature Y that fixes issue Z. I either didn&#39;t know about it at the time, didn&#39;t have the budget, couldn&#39;t get it through vendor&#x2F;security review, product wouldn’t schedule it with our engineers or it didn&#39;t comply with enterprise architecture&#39;s plan for our software roadmap. As some guy once said: "You go to production with the tools you have, not the tools you want."
 
   
 

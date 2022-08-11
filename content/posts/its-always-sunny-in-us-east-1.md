@@ -52,7 +52,7 @@ These three, plus the normal sprint work is at best recorded into only four diff
 
 **6\. Initiate holy crusade**: Some of the worst atrocities committed against software get to production under the guise of hot-fixes. The perpetrators must be identified.  
 
-*   &quot;We should call in \_\_\_\_\_\_\_, I think they were on the last incident call”
+*   &quot;We should call in \_\_\_\_\_\_\_, I think they were on the last incident call"
 
 ‍
 
@@ -92,13 +92,13 @@ The answer is to this question is as usual -
 
 The contributing factors to this lack of confidence come from those same nuances of the [What did we change last?](http:&#x2F;&#x2F;code-inline) question.
 
-When the devops lead is finally located. They remember that something has changed since the DR demo. The recovery process has changed and someone has to write an additional script. They explain the functionality briefly but unfortunately they can&#39;t do it. They have “a hard stop” and have “to drop” to watch their pets and children on their day off.  They will then hand-off to you.
+When the devops lead is finally located. They remember that something has changed since the DR demo. The recovery process has changed and someone has to write an additional script. They explain the functionality briefly but unfortunately they can&#39;t do it. They have "a hard stop" and have "to drop" to watch their pets and children on their day off.  They will then hand-off to you.
 
 35 highly paid managers on the call that are normally skeptical of pair programming -  become an engaged operating theater audience to a couple of developers [hacking together a script](https:&#x2F;&#x2F;www.cyclic.sh&#x2F;posts&#x2F;write-shitty-code) that will never make it to version control.
 
 When the script is finally written, **a decision must be made.**
 
-“Ok should we run it?“
+"Ok should we run it?"
 &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
 
 The story has had a number of twists so far. It was determined that the original recovery plan is out of date and had to be duct taped back together. The plan&#39;s original creators have given their warnings and **someone new must own the success or failure of the recovery**. The decision should be made with caution of course, and so, the risks need to be discussed.

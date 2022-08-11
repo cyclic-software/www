@@ -68,7 +68,7 @@ These best practices are usually overlooked in early MVPs and objects are likely
 This is chalked up as a [repaying tech-debt](https:&#x2F;&#x2F;www.cyclic.sh&#x2F;posts&#x2F;we-sound-like-idiots-when-we-talk-about-technical-debt) and work is done to adapt the existing patterns to best practices. Processes that used to produce [app&#x2F;events&#x2F;login-123123.json](http:&#x2F;&#x2F;code-inline) are refactored to write [app&#x2F;events&#x2F;dt&#x3D;yyyy-mm-dd&#x2F;login-123123.json](http:&#x2F;&#x2F;code-inline) instead.  
 ‍_(Actually something like app&#x2F;events&#x2F;dt&#x3D;yyyy-mm-dd&#x2F;asdfasdfasdf.gz , building crawler schema to make parquet out of messy, dynamic json files is hard and you think you&#39;re smart and just enable gzip compression in firehose.)_  
 
-**Cool.** You configure the partition key [dt&#x3D;yyyy-mm-dd](http:&#x2F;&#x2F;code-inline) in the data catalog, write some documentation about how everyone should use date ranges to make queries efficient. All is well and the data science team can again do linear regressions aka “Machine Learning” to find out which events make the most money or, you know “drive business kpis”. 
+**Cool.** You configure the partition key [dt&#x3D;yyyy-mm-dd](http:&#x2F;&#x2F;code-inline) in the data catalog, write some documentation about how everyone should use date ranges to make queries efficient. All is well and the data science team can again do linear regressions aka &quot;Machine Learning&quot; to find out which events make the most money or, you know &quot;drive business kpis&quot;. 
 
   
 
@@ -102,7 +102,7 @@ Stop the bleeding
 
 Without much research, the prefix filter thing looks really good. Naturally, as it is with filters, everyone would need to decide what they want to keep and not keep.  That sounds like a mess of calls and meetings. On that dilemma, the (actually good) advice from your partners at AWS -
 
-&gt; “Your costs are accumulating, we can help you move the really old stuff to Glacier to stop the bleeding.”  
+&gt; &quot;Your costs are accumulating, we can help you move the really old stuff to Glacier to stop the bleeding.&quot;  
 &gt; ‍_\- AWS bros_
 
 There are obvious tradeoffs with Glacier. But since large scale reads, especially ones on old data are not often done, after some short all-hands discussions everyone agrees.

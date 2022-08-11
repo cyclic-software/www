@@ -30,11 +30,11 @@ Summary: ''
 
   
 
-When we use the term technical debt with non-technical business colleagues, they assume, that technical debt is analogous to financial debt. After a few minutes of discussion they are usually relieved to find that there is no actual money problem. Then after not seeing any tangible sign of a fire in the movie theater, they will then conclude that that we either don’t know what we are talking about or we are using the wrong terms or both.  Think about their context, how quickly would the CFO get fired if they claimed “we have a lot of debt” but couldn’t produce a balance sheet with lenders, amounts, interest rates and terms?
+When we use the term technical debt with non-technical business colleagues, they assume, that technical debt is analogous to financial debt. After a few minutes of discussion they are usually relieved to find that there is no actual money problem. Then after not seeing any tangible sign of a fire in the movie theater, they will then conclude that that we either don’t know what we are talking about or we are using the wrong terms or both.  Think about their context, how quickly would the CFO get fired if they claimed &quot;we have a lot of debt&quot; but couldn’t produce a balance sheet with lenders, amounts, interest rates and terms?
 
   
 
-&gt; how quickly would the CFO get fired if they claimed “we have a lot of debt” but couldn’t produce a balance sheet
+&gt; how quickly would the CFO get fired if they claimed &quot;we have a lot of debt&quot; but couldn’t produce a balance sheet
 
 ‍
 
@@ -54,11 +54,11 @@ In this staged conversation, what we communicated was that technical debt made o
 
   
 
-Companies and business leaders don’t care if jobs are hard or annoying or take longer than they “should”. The difference between a user story taking a day or 3 days is negligible compared to its business value. Companies and their leaders care about revenue and costs. They care about customers and growth. They care about time to market. If we want to have our non-technical colleagues listen and act, we need to either improve our use of the financial terms they understand or we need to translate our message into business outcomes that they do care about.
+Companies and business leaders don’t care if jobs are hard or annoying or take longer than they &quot;should&quot;. The difference between a user story taking a day or 3 days is negligible compared to its business value. Companies and their leaders care about revenue and costs. They care about customers and growth. They care about time to market. If we want to have our non-technical colleagues listen and act, we need to either improve our use of the financial terms they understand or we need to translate our message into business outcomes that they do care about.
 
 ‍  
 
-&gt; business leaders don’t care if jobs are hard or annoying or take longer than they “should” ... we need to translate our message into business outcomes that they do care about
+&gt; business leaders don’t care if jobs are hard or annoying or take longer than they &quot;should&quot; ... we need to translate our message into business outcomes that they do care about
 
 ‍  
 

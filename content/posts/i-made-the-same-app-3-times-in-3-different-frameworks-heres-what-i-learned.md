@@ -4,7 +4,7 @@ Slug: 'i-made-the-same-app-3-times-in-3-different-frameworks-heres-what-i-learne
 Summary: ''
 ---
 
-Angular, Svelte, Solid, React, Vue — there are so many frameworks out there. And you probably dealt with [the “framework dilemma”](https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;webdev&#x2F;comments&#x2F;ux2ov8&#x2F;how_do_you_guys_determine_which_frameworks_to_use&#x2F;) at some point in your career.
+Angular, Svelte, Solid, React, Vue — there are so many frameworks out there. And you probably dealt with [the "framework dilemma"](https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;webdev&#x2F;comments&#x2F;ux2ov8&#x2F;how_do_you_guys_determine_which_frameworks_to_use&#x2F;) at some point in your career.
 
 Some of us pursue React, the [most popular framework](https:&#x2F;&#x2F;insights.stackoverflow.com&#x2F;survey&#x2F;2021#most-loved-dreaded-and-wanted-webframe-want). And that’s completely understandable, because it being famous also implies that it’s the most demanded skill in the job market.
 
@@ -24,7 +24,7 @@ I always wondered how different it would be to build the **same app** with the s
 
 We’ll be exploring each of the aforementioned frameworks in its own piece, as part of a four-article series.
 
-We’ll build a [website for publicly sharing short-messages, called **“ithink”**](https:&#x2F;&#x2F;ithink.cyclic.app&#x2F;). It’s like Twitter, but with no accounts and you can’t delete what you post.
+We’ll build a [website for publicly sharing short-messages, called **"ithink"**](https:&#x2F;&#x2F;ithink.cyclic.app&#x2F;). It’s like Twitter, but with no accounts and you can’t delete what you post.
 
 ‍
 
@@ -94,7 +94,7 @@ Don’t worry if this looks intimidating. We’ll cover _all of it_ throughout t
 
 ### Configuring SEO
 
-You might have noticed that the title of our document is _“Vite App”_, with no immediately obvious way of changing it.
+You might have noticed that the title of our document is _"Vite App"_, with no immediately obvious way of changing it.
 
 It turns out that this is a great opportunity for us to delve into the first element: [index.html](http:&#x2F;&#x2F;code-inline). You’ve undoubtedly already seen this filename in a billion other places, but probably not in the context of Vue.
 
@@ -166,7 +166,7 @@ Pretty neat, huh?
 
 ### Listening to click events
 
-As it currently stands, the “new” button doesn’t do anything, and no one wants a useless button.
+As it currently stands, the "new" button doesn’t do anything, and no one wants a useless button.
 
 So let’s change that! We must listen to a click event, and [in Vue, events](https:&#x2F;&#x2F;vuejs.org&#x2F;guide&#x2F;components&#x2F;events.html) work like this:
 
@@ -178,7 +178,7 @@ We’ll come back to the openModal function later, when we actually create the m
 
 It’s time to put the src&#x2F;components folder to good use. This is where we’ll be housing all our custom components.[‍](https:&#x2F;&#x2F;codepen.io&#x2F;eludadev&#x2F;pen&#x2F;VwXaRbb)
 
-What you can see in the image above is the “New Modal” component, written into the NewModal.vue file.
+What you can see in the image above is the "New Modal" component, written into the NewModal.vue file.
 
 Create a new file at [src&#x2F;components&#x2F;NewModal.vue](http:&#x2F;&#x2F;code-inline). Fill it up with the usual SFC boilerplate:
 
@@ -194,7 +194,7 @@ Markup alone is not very useful without the JavaScript logic. Let’s attach eve
 
 ‍
 
-Okay, this is great! But notice that when you click on “post”, the page reloads. This is the default [behavior of HTML forms](https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTML&#x2F;Element&#x2F;form).
+Okay, this is great! But notice that when you click on "post", the page reloads. This is the default [behavior of HTML forms](https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTML&#x2F;Element&#x2F;form).
 
 Normally, we’d change that by calling [e.preventDefault](http:&#x2F;&#x2F;code-inline). But Vue focuses so much on simplicity that there’s a super-convenient shortcut:
 
@@ -218,7 +218,7 @@ What is a **reactive variable**?
 
 ‍  
 
-*   Say that we updated the value in a to 5. One thing we know for sure is that the [&lt;p&gt;](http:&#x2F;&#x2F;code-inline) element won’t change. It will always say “4”, unless we explicitly change it.
+*   Say that we updated the value in a to 5. One thing we know for sure is that the [&lt;p&gt;](http:&#x2F;&#x2F;code-inline) element won’t change. It will always say "4", unless we explicitly change it.
 *   Well, we don’t have to! With [reactivity](https:&#x2F;&#x2F;vuejs.org&#x2F;guide&#x2F;essentials&#x2F;reactivity-fundamentals.html), the DOM is automatically updated once the related variable is mutated.
 *   In Vue, reactive variables are created with ref, a function that takes any value and makes it reactive.
 
@@ -240,7 +240,7 @@ Okay, let’s head right back into the submit logic. We’ll create a new isLoad
 
 ### Getting user input from form elements
 
-Our “new modal” component can’t exist without the [&lt;textarea&gt;](http:&#x2F;&#x2F;code-inline) form element. But this raises an important question: _how do we keep the javascript code in-sync with the DOM content?_
+Our "new modal" component can’t exist without the [&lt;textarea&gt;](http:&#x2F;&#x2F;code-inline) form element. But this raises an important question: _how do we keep the javascript code in-sync with the DOM content?_
 
 In a nutshell, Vue has a shortcut way of dealing with form elements. And it’s quite convenient!
 
@@ -280,13 +280,13 @@ So, how do we tell Vue to only focus the textarea once it’s available? The ans
 
 ![](https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;62e02ecd52420b19a8e6d301_lifecycle.png)
 
-We want to utilize the “mounted” hook, which is called right after the component is added to the DOM. That’s when the &lt;textarea&gt; is shown, meaning that it’s not null:
+We want to utilize the "mounted" hook, which is called right after the component is added to the DOM. That’s when the &lt;textarea&gt; is shown, meaning that it’s not null:
 
 ‍
 
 ‍
 
-There are many more lifecycle hooks, and we usually use most of them. However, in our application, the “mounted” hook was more than enough. But just keep one thing in mind, you’ll see this concept again and again in every framework.
+There are many more lifecycle hooks, and we usually use most of them. However, in our application, the "mounted" hook was more than enough. But just keep one thing in mind, you’ll see this concept again and again in every framework.
 
 ### Closing the modal when clicked outside
 
@@ -318,7 +318,7 @@ Therefore, we need a way for the child — NewModal — to communicate with its 
 
 With Vue, it’s super-simple to define our own events, while dictating when they should be emitted, using _our_ own rules.
 
-Henceforth, whenever the modal needs to be closed, we emit the event “close” up into its parent.
+Henceforth, whenever the modal needs to be closed, we emit the event "close" up into its parent.
 
 Hey! Notice how we didn’t import defineEmits. That’s because it’s a compiler macro, so it’s always there by default.
 
@@ -350,7 +350,7 @@ And of course, don’t forget to add it to [App.vue](http:&#x2F;&#x2F;code-inlin
 
 We’ve seen how to trigger events from child to parent, and now, it’s time to _flip_ that formula around.
 
-Currently, our [ThoughtItem](http:&#x2F;&#x2F;code-inline) displays the same text: “Hello world!”
+Currently, our [ThoughtItem](http:&#x2F;&#x2F;code-inline) displays the same text: "Hello world!"
 
 But we want to show real data, which is held by the parent — [ThoughtList](http:&#x2F;&#x2F;code-inline) — in the [items](http:&#x2F;&#x2F;code-inline) reactive variable.
 

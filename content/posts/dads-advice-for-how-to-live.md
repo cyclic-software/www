@@ -33,7 +33,7 @@ So often our minds and our bodies live in two different places. Being present an
 
   
 
-This could mean carrying bags, cooking dinner, starting to sing to keep spirits up, offering help or asking for help. It is about identifying the need and doing it (or helping) regardless of “shoulds” or “jobs”. Sometimes what needs to be done is letting someone struggle through a task they are learning. Being with them sometimes is what needs to be done. 
+This could mean carrying bags, cooking dinner, starting to sing to keep spirits up, offering help or asking for help. It is about identifying the need and doing it (or helping) regardless of "shoulds" or "jobs". Sometimes what needs to be done is letting someone struggle through a task they are learning. Being with them sometimes is what needs to be done. 
 
   
   
