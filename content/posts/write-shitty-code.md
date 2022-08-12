@@ -23,7 +23,7 @@ Usually it means spending more time now to make the code better for some future 
 
   
 
-&gt; In software we rarely know what the future holds
+> In software we rarely know what the future holds
 
 ‍
 
@@ -42,4 +42,4 @@ When I have uncertainty about the future, cycle time is most important. It allow
 
   
 
-Any friction hurts my cycle time. This decreases the rate I can turn uncertainty into certainty aka learning. My longest term value is created by learning as quickly as possible, since it is a multiplier for all future code I write or systems I design. Said another way: As &quot;writing is re-writing
+Any friction hurts my cycle time. This decreases the rate I can turn uncertainty into certainty aka learning. My longest term value is created by learning as quickly as possible, since it is a multiplier for all future code I write or systems I design. Said another way: As "writing is re-writing

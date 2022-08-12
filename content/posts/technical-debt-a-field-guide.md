@@ -15,11 +15,11 @@ public: Mon Mar 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
 image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
 thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
 ---
-&gt; I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](&#x2F;posts&#x2F;we-sound-like-idiots-when-we-talk-about-technical-debt) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say &quot;technical debt&quot;.
+> I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](/posts/we-sound-like-idiots-when-we-talk-about-technical-debt) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say "technical debt".
 
 ‍  
 
-As a software professional for almost 20 years (do I get a watch or plaque soon?) I&#39;ve had more passionate discussions about technical debt than any other topic. It is right up there with the iconic 3rd rail topics: Tabs-v-Spaces, Mac-v-Windows, Java-v-Python and type systems.
+As a software professional for almost 20 years (do I get a watch or plaque soon?) I've had more passionate discussions about technical debt than any other topic. It is right up there with the iconic 3rd rail topics: Tabs-v-Spaces, Mac-v-Windows, Java-v-Python and type systems.
 
   
 
@@ -31,7 +31,7 @@ This is what a decision of technical debt could sound like applied to a non-soft
 
 *   do nothing, risking totaling the car if the engine over heats
 *   have it resolved in 15 mins for $25, by adding coolant, then $25 every month going forward, otherwise #badthingshappen
-*   have it patched by end of day for $150 but then be back in the same position if&#x2F;when the patch fails
+*   have it patched by end of day for $150 but then be back in the same position if/when the patch fails
 *   have it replaced for $300 but your car will be in the shop for a week for parts to be ordered
 
   
@@ -55,7 +55,7 @@ In this example it depends on:
 
   
 
-It is trivial to construct a scenario where the &quot;obvious&quot; choice would be any one of those options. The dimensions of the choice are:
+It is trivial to construct a scenario where the "obvious" choice would be any one of those options. The dimensions of the choice are:
 
 *   amount of money now vs later
 *   time till the car is working
@@ -63,12 +63,12 @@ It is trivial to construct a scenario where the &quot;obvious&quot; choice would
 
   
 
-Below is my attempt to at least describe and name the dimensions of technical debt akin to naming technical design patterns. If you think I missed a type or mischaracterized a type please tell me on twitter: [@seekayel](https:&#x2F;&#x2F;twitter.com&#x2F;seekayel)
+Below is my attempt to at least describe and name the dimensions of technical debt akin to naming technical design patterns. If you think I missed a type or mischaracterized a type please tell me on twitter: [@seekayel](https://twitter.com/seekayel)
 
   
 
 Dimensions of Debt
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+==================
 
 Change time cost
 ----------------
@@ -85,7 +85,7 @@ How you will hear it described:
 *   Next time we will first have to do x, y, z before we can make a change
 *   This will make unscheduled Project ABC that we want harder
 *   This is brittle and is more likely to break on the next change (increased error rate)
-*   On boarding&#x2F;teaching new people is harder
+*   On boarding/teaching new people is harder
 *   This is a tax on future changes
 
   
@@ -93,7 +93,7 @@ How you will hear it described:
 Financial Similarities:
 
 *   Bad credit score - all future borrowing will be more expensive
-*   Currency wide inflation&#x2F;devaluation - all future consumption becomes more expensive (assuming you are on a fixed income)
+*   Currency wide inflation/devaluation - all future consumption becomes more expensive (assuming you are on a fixed income)
 
   
 
@@ -117,7 +117,7 @@ How you will hear it described:
 Financial Translations
 
 *   Interest only loan - will need to continue to pay until you pay off principle
-*   Selling&#x2F;Buying insurance
+*   Selling/Buying insurance
 
   
 
@@ -126,14 +126,14 @@ Opportunity Cost
 
 Cost:
 
-*   Whole sets of features aren&#39;t considered or built due to existing code&#x2F;system&#x2F;design
+*   Whole sets of features aren't considered or built due to existing code/system/design
 
   
 
 How you will hear it described:
 
-*   We don&#39;t build X or Y
-*   We don&#39;t measure&#x2F;report on X or Y
+*   We don't build X or Y
+*   We don't measure/report on X or Y
 
   
 
@@ -141,13 +141,13 @@ Financial Similarities:
 
 *   Sunk cost fallacy
 *   Do you transition the same factory from producing lower value product to higher value product
-*   Career transition: forgo income, training&#x2F;education expense, moving costs for future income
+*   Career transition: forgo income, training/education expense, moving costs for future income
 
   
 
 Interpretation:
 
-This can be confused with the argument that actions aren&#39;t taken because the cost is too high. The focus here should be on the Opportunity that is missed. What could be but isn&#39;t, instead of the cost of what is.
+This can be confused with the argument that actions aren't taken because the cost is too high. The focus here should be on the Opportunity that is missed. What could be but isn't, instead of the cost of what is.
 
   
   
@@ -158,7 +158,7 @@ Organizational Risk
 
 Cost:
 
-*   The organization assumes: financial, reputational, operational or recruiting&#x2F;retention risk.
+*   The organization assumes: financial, reputational, operational or recruiting/retention risk.
 
   
 
@@ -166,7 +166,7 @@ How it is described:
 
 *   If X happens we will have to spend Y days scrambling to fix
 *   If it breaks we will have an outage
-*   If it breaks we will have a PR disaster&#x2F;go out of business
+*   If it breaks we will have a PR disaster/go out of business
 *   If it breaks we will be open to legal liability
 *   If it breaks we will have a security incident
 
@@ -176,7 +176,7 @@ Financial Similarities:
 
 *   Selling uncovered puts
 *   Selling uncovered calls
-*   Uninsured against fire&#x2F;flood&#x2F;earthquake
+*   Uninsured against fire/flood/earthquake
 *   Forgivable 0% interest only loan, but potential for demand payment
 
   
@@ -201,28 +201,28 @@ Cost:
 
 How it is described:
 
-*   The servers are too &quot;big&quot;
-*   The clusters aren&#39;t sized &quot;right&quot;
+*   The servers are too "big"
+*   The clusters aren't sized "right"
 *   We need to optimize process X for less memory
-*   We need to archive some&#x2F;all of our data&#x2F;logs
-*   We need to turn off things are aren&#39;t using
+*   We need to archive some/all of our data/logs
+*   We need to turn off things are aren't using
 
   
 
 Financial Similarities:
 
-*   That gym membership that still is charged to your card each month even though you don&#39;t go.
+*   That gym membership that still is charged to your card each month even though you don't go.
 
   
 
 Interpretation:
 
-This is pretty straight forward, everyone in the organization understands dollars as a unit of cost. Where this is becomes more complicated is in the tradeoffs for any change with: how long it will take, what risk the organization assumes implementing it and the project coordination time to ensure one team&#39;s waste isn&#39;t another teams KPI.
+This is pretty straight forward, everyone in the organization understands dollars as a unit of cost. Where this is becomes more complicated is in the tradeoffs for any change with: how long it will take, what risk the organization assumes implementing it and the project coordination time to ensure one team's waste isn't another teams KPI.
 
 ‍
 
 Postscript  
 
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+=============
 
 As a business person you will probably be more concerned about Opportunity Cost and Organizational Risk than Runtime Cost or Change Time Cost. What this means for developers is thinking how a particular project you would like prioritized maps to either Opportunity Cost or Organizational Risk is probably a more effective argument than the same for Runtime or Change time costs.

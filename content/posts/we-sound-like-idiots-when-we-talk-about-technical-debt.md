@@ -29,11 +29,11 @@ thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6202e395cfd9
 
 **Techie**: Yes, but we will have to do some workarounds. Working on the system is painful and what could have been a one day job will instead take a week. We really need to refactor!
 
-**Business person**: Ah. That&#39;s good news. Our number one priority right now is Big Co Inc.
+**Business person**: Ah. That's good news. Our number one priority right now is Big Co Inc.
 
   
 
-**Conclusion**: You don’t like your job because it is hard and&#x2F;or annoying. Will tell your dev manager to ask you to work on the weekend.
+**Conclusion**: You don’t like your job because it is hard and/or annoying. Will tell your dev manager to ask you to work on the weekend.
 
   
 
@@ -41,11 +41,11 @@ thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6202e395cfd9
 
   
 
-When we use the term technical debt with non-technical business colleagues, they assume, that technical debt is analogous to financial debt. After a few minutes of discussion they are usually relieved to find that there is no actual money problem. Then after not seeing any tangible sign of a fire in the movie theater, they will then conclude that that we either don’t know what we are talking about or we are using the wrong terms or both.  Think about their context, how quickly would the CFO get fired if they claimed &quot;we have a lot of debt&quot; but couldn’t produce a balance sheet with lenders, amounts, interest rates and terms?
+When we use the term technical debt with non-technical business colleagues, they assume, that technical debt is analogous to financial debt. After a few minutes of discussion they are usually relieved to find that there is no actual money problem. Then after not seeing any tangible sign of a fire in the movie theater, they will then conclude that that we either don’t know what we are talking about or we are using the wrong terms or both.  Think about their context, how quickly would the CFO get fired if they claimed "we have a lot of debt" but couldn’t produce a balance sheet with lenders, amounts, interest rates and terms?
 
   
 
-&gt; how quickly would the CFO get fired if they claimed &quot;we have a lot of debt&quot; but couldn’t produce a balance sheet
+> how quickly would the CFO get fired if they claimed "we have a lot of debt" but couldn’t produce a balance sheet
 
 ‍
 
@@ -53,7 +53,7 @@ In this unprepared conversation we miss a great opportunity to convince that bus
 
 ‍
 
-&gt; Instead we reinforce the business leader’s view that we may know about software but we don’t know about business
+> Instead we reinforce the business leader’s view that we may know about software but we don’t know about business
 
   
 
@@ -65,19 +65,19 @@ In this staged conversation, what we communicated was that technical debt made o
 
   
 
-Companies and business leaders don’t care if jobs are hard or annoying or take longer than they &quot;should&quot;. The difference between a user story taking a day or 3 days is negligible compared to its business value. Companies and their leaders care about revenue and costs. They care about customers and growth. They care about time to market. If we want to have our non-technical colleagues listen and act, we need to either improve our use of the financial terms they understand or we need to translate our message into business outcomes that they do care about.
+Companies and business leaders don’t care if jobs are hard or annoying or take longer than they "should". The difference between a user story taking a day or 3 days is negligible compared to its business value. Companies and their leaders care about revenue and costs. They care about customers and growth. They care about time to market. If we want to have our non-technical colleagues listen and act, we need to either improve our use of the financial terms they understand or we need to translate our message into business outcomes that they do care about.
 
 ‍  
 
-&gt; business leaders don’t care if jobs are hard or annoying or take longer than they &quot;should&quot; ... we need to translate our message into business outcomes that they do care about
+> business leaders don’t care if jobs are hard or annoying or take longer than they "should" ... we need to translate our message into business outcomes that they do care about
 
 ‍  
 
-To capture these opportunities we need to go back to the beginning. The only way to remedy these failures in communication is to refactor our language and use of terms. We need to better define technical debt and the terms we use to describe it. The use of units of dollars is a powerful tool to communicate to those not part of the software design, build, and run value stream. Let&#39;s start with how the non-technical listener will understand the terms of debt.
+To capture these opportunities we need to go back to the beginning. The only way to remedy these failures in communication is to refactor our language and use of terms. We need to better define technical debt and the terms we use to describe it. The use of units of dollars is a powerful tool to communicate to those not part of the software design, build, and run value stream. Let's start with how the non-technical listener will understand the terms of debt.
 
 ‍  
 
-&gt; using a unit of dollars is a powerful tool to communicate to those not part of building software
+> using a unit of dollars is a powerful tool to communicate to those not part of building software
 
 ‍
 

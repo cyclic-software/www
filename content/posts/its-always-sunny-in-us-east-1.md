@@ -82,7 +82,7 @@ Recovery Strategy
 
 The org&#39;s AWS technical account manager tries to reassure everyone by confirming that issue is **only regional**. Having seen an amazing disaster recovery demo from the tech team six months ago, an executive on the call, feeling like they&#39;re about to save the day asks:
 
-*   \&#x60;&quot;We built DR capability. Why can&#39;t we recover to east-2?&quot;
+*   `&quot;We built DR capability. Why can&#39;t we recover to east-2?&quot;
 
 This is where we discover that DR capability is different from a DR demo proving that failover is possible. Software changes over time. If there is an expectation that the application has recovery capability, each change must be made with the consideration for how it will behave in failure scenarios. To be clear - not try&#x2F;except wrapping some new code for some feature - but how will the system with this new code and feature behave when infrastructure around it starts to break. **Adopting DR is a culture change that goes beyond the developer.** Maintaining availability requires continuous overhead in time and effort on development, management and architecture.
 

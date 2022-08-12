@@ -20,15 +20,15 @@ I recently raised a friends and family round for Cyclic and used an AngelList Ro
   
 
 **TL;DR**
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+=========
 
   
 
-&gt; A Roll Up Vehicle is a legal entity that can take investments from multiple investors or entities and then invest that money as a single entity on your company’s cap table. Here are the pros and cons for using an AngelList RUV as part of a venture capital fundraising round:
+> A Roll Up Vehicle is a legal entity that can take investments from multiple investors or entities and then invest that money as a single entity on your company’s cap table. Here are the pros and cons for using an AngelList RUV as part of a venture capital fundraising round:
 
 ‍  
 
-![](https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;61034dd64ba727b1f9120503_angellist_ruv.png)
+![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61034dd64ba727b1f9120503_angellist_ruv.png)
 
 Visual depiction of how investments are rolled up onto your captable
 
@@ -37,7 +37,7 @@ Visual depiction of how investments are rolled up onto your captable
 
 *   Future rounds are simplified, exactly when most stressful
 *   Future rounds are cheaper ($)
-*   Investor&#39;s address and info is kept private
+*   Investor's address and info is kept private
 *   Simplified e-signature and funding for investors and company at time of investment
 
 ###   
@@ -46,7 +46,7 @@ Visual depiction of how investments are rolled up onto your captable
 ---------
 
 *   Some additional setup for the company (~1hr)
-*   Small additional cost (now only filing fees https:&#x2F;&#x2F;www.angellist.com&#x2F;blog&#x2F;eliminating-fees-for-roll-up-vehicles)
+*   Small additional cost (now only filing fees https://www.angellist.com/blog/eliminating-fees-for-roll-up-vehicles)
 *   Additional complexity describing to your investor who AngelList is and how they are involved
 
   
@@ -79,19 +79,19 @@ And one or more of these to apply:
 
   
 
-As a developer the complexity to go from your local to the cloud is increasing. This is driving cloud platform selection into a pre-design time decision. We are dedicated to solving both of these problems for developers. Our goal is to let you push to deploy while making cloud environment selection a runtime decision. Sign up for the [Cyclic Private Beta](https:&#x2F;&#x2F;app.cyclic.sh&#x2F;api&#x2F;login)  
+As a developer the complexity to go from your local to the cloud is increasing. This is driving cloud platform selection into a pre-design time decision. We are dedicated to solving both of these problems for developers. Our goal is to let you push to deploy while making cloud environment selection a runtime decision. Sign up for the [Cyclic Private Beta](https://app.cyclic.sh/api/login)  
 ‍[  
-](http:&#x2F;&#x2F;&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;console.cyclic-app.com&#x2F;api&#x2F;login&quot; class&#x3D;&quot;button white helloworld-cta w-button&quot;&gt;Deploy on Cyclic🚀&lt;&#x2F;a&gt;)
+](http://<a href="https://console.cyclic-app.com/api/login" class="button white helloworld-cta w-button">Deploy on Cyclic🚀</a>)
 
 ### **My Past Experience**
 
   
 
-At the last company I co-founded, we raised a convertible note and then two priced rounds over the course of 7 years. The deal terms were reasonably standard for VC deals. They included drag along provisions. We were first time founders and I think we did an &quot;ok&quot; job of keeping all of our investors updated on how the company was doing.
+At the last company I co-founded, we raised a convertible note and then two priced rounds over the course of 7 years. The deal terms were reasonably standard for VC deals. They included drag along provisions. We were first time founders and I think we did an "ok" job of keeping all of our investors updated on how the company was doing.
 
   
 
-Despite drag along rights (i.e. company able to &quot;drag&quot; small investors into a transaction if some percentage of shares in the company agree to the transaction), the lawyers involved with our second priced round wanted signed docs from all investors along with consent of spouse docs for any investment held by a person instead of trust or other entity. This meant that we needed to coordinate outreach to roughly ten angel investors, most of whom were non-professional angels. We needed to bring them up to speed on why we were raising, and explain we needed their signatures on documents for the round even though the company had drag along rights. Oh and by the way, we needed signatures from their spouses as well, leading them to have the same conversation with less fidelity with their spouse.
+Despite drag along rights (i.e. company able to "drag" small investors into a transaction if some percentage of shares in the company agree to the transaction), the lawyers involved with our second priced round wanted signed docs from all investors along with consent of spouse docs for any investment held by a person instead of trust or other entity. This meant that we needed to coordinate outreach to roughly ten angel investors, most of whom were non-professional angels. We needed to bring them up to speed on why we were raising, and explain we needed their signatures on documents for the round even though the company had drag along rights. Oh and by the way, we needed signatures from their spouses as well, leading them to have the same conversation with less fidelity with their spouse.
 
   
 
@@ -99,11 +99,11 @@ The more experienced angels who had larger checks generally understood the proce
 
   
 
-In a vacuum, handling  each of these conversations is manageable. However, once a closing date was set,  all of these small &quot;punch list&quot; items seemed to bubble to the surface. It seemed that there was a spike in the length of items remaining once the date was set. The 7 to 14 days before closing are among the most stressful for a co-founder. In my experience, having extra tasks and communication on my plate was extra stress at exactly the wrong time.
+In a vacuum, handling  each of these conversations is manageable. However, once a closing date was set,  all of these small "punch list" items seemed to bubble to the surface. It seemed that there was a spike in the length of items remaining once the date was set. The 7 to 14 days before closing are among the most stressful for a co-founder. In my experience, having extra tasks and communication on my plate was extra stress at exactly the wrong time.
 
   
 
-&gt; The 7 to 14 days before closing are among the most stressful for a co-founder... having extra tasks and communication on my plate was extra stress at exactly the wrong time.
+> The 7 to 14 days before closing are among the most stressful for a co-founder... having extra tasks and communication on my plate was extra stress at exactly the wrong time.
 
   
 
@@ -124,7 +124,7 @@ This means at the next funding round I will be able to sign on behalf of the RUV
 
   
 
-Sign up and on-boarding were easy. I wrote a blurb on the company, uploaded a deck or memo, filled in some deal terms, identified notable co&#x2F;lead-investors, targeted raise amount, and selected how I would pay the RUV fee (either company pays or investors pay). I didn’t have the exact form of the SAFE complete when I set up the RUV, it is only required at close, provided it is substantially the same terms as any of the listed co&#x2F;lead investors.
+Sign up and on-boarding were easy. I wrote a blurb on the company, uploaded a deck or memo, filled in some deal terms, identified notable co/lead-investors, targeted raise amount, and selected how I would pay the RUV fee (either company pays or investors pay). I didn’t have the exact form of the SAFE complete when I set up the RUV, it is only required at close, provided it is substantially the same terms as any of the listed co/lead investors.
 
   
 
@@ -132,7 +132,7 @@ For me there was some email back and forth with the AngelList team since they we
 
   
 
-My only complaints on the company product side are that the UI&#x2F;UX was a bit complicated for just doing the RUV. It seemed it was more focused on syndicates and funds. If there is any &quot;product&quot; work for the AngelList team this is probably where it is. For example: to get to the RUV page you navigate via the &quot;Deals&quot; menu item and the deal is listed under my &quot;Syndicate&quot;. This all sorta makes sense given the product is essentially a Syndicate where the fee and carry are 0%. However it doesn’t really make sense when I am the company founder doing a RUV. Additionally I didn’t find a way to set a per investor minimum, perhaps I just missed it in interface. These are minor points of friction but they left me with a feeling that it was still an early product that wasn’t fully polished yet.
+My only complaints on the company product side are that the UI/UX was a bit complicated for just doing the RUV. It seemed it was more focused on syndicates and funds. If there is any "product" work for the AngelList team this is probably where it is. For example: to get to the RUV page you navigate via the "Deals" menu item and the deal is listed under my "Syndicate". This all sorta makes sense given the product is essentially a Syndicate where the fee and carry are 0%. However it doesn’t really make sense when I am the company founder doing a RUV. Additionally I didn’t find a way to set a per investor minimum, perhaps I just missed it in interface. These are minor points of friction but they left me with a feeling that it was still an early product that wasn’t fully polished yet.
 
   
   
@@ -157,7 +157,7 @@ Let me know what you think. Did you find this helpful? Do you still have questio
 
 ‍
 
-You can: [Signup for our beta](https:&#x2F;&#x2F;app.cyclic.sh&#x2F;api&#x2F;login)
+You can: [Signup for our beta](https://app.cyclic.sh/api/login)
 
 ‍
 
@@ -165,4 +165,4 @@ Shoot me an email: kam.lasater@cyclic.sh
 
 ‍
 
-Give me a shout out on twitter: https:&#x2F;&#x2F;twitter.com&#x2F;seekayel
+Give me a shout out on twitter: https://twitter.com/seekayel

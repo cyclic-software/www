@@ -93,11 +93,11 @@ lambda pac man loves eating data and leaving it in &#x2F;tmp
 
   
 
-Well... lambda instances have a writable \&#x60;&#x2F;tmp\&#x60; folder where you can store temporary files. And somewhere in the AWS docs they describe how instances of your Lambda function are reused between invocations.
+Well... lambda instances have a writable `&#x2F;tmp` folder where you can store temporary files. And somewhere in the AWS docs they describe how instances of your Lambda function are reused between invocations.
 
   
 
-Some quick googling gets you a solution of clearing \&#x60;&#x2F;tmp\&#x60; at the start and&#x2F;or end of each invocation ([stack overflow ftw](https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;44108712&#x2F;aws-lambda-release-tmp-storage-after-each-execution)). Till that fix makes it to production you can just re-execute any failed step function runs.
+Some quick googling gets you a solution of clearing `&#x2F;tmp` at the start and&#x2F;or end of each invocation ([stack overflow ftw](https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;44108712&#x2F;aws-lambda-release-tmp-storage-after-each-execution)). Till that fix makes it to production you can just re-execute any failed step function runs.
 
   
 

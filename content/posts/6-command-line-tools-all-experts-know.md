@@ -28,7 +28,7 @@ Wow, your friends and colleagues. These tools make every other command at the co
 
   
 
-Pipe is awesome. It lets me connect the output of one command and &quot;pipe&quot; it into the input of another command. This is the universal glue that instantly lets me level up the effectiveness of my command line usage.
+Pipe is awesome. It lets me connect the output of one command and "pipe" it into the input of another command. This is the universal glue that instantly lets me level up the effectiveness of my command line usage.
 
   
 
@@ -49,22 +49,22 @@ Some commands take a file name as an argument. In cases where I want to use stdi
 
 I use this alot when I want to read a file from s3 and display it to the console or take the output from a command and write the file to s3.
 
-Print file to console: \&#x60;aws s3 cp s3:&#x2F;&#x2F;some-bucket-name&#x2F;awesome-file.json -\&#x60;
+Print file to console: `aws s3 cp s3://some-bucket-name/awesome-file.json -`
 
   
 
-**\&#x60;pbpaste\&#x60; and \&#x60;pbcopy\&#x60;**
+**`pbpaste` and `pbcopy`**
 ------------------------------
 
   
 
 These are technically commands as well. They interact with the paste buffer.
 
-On mac you can access your paste buffer using the paste-buffer-paste (pbpaste) and paste-buffer-copy (pbcopy) commands. I love how they keep my console clean especially when I have trying to transform a large chunk of text&#x2F;json
+On mac you can access your paste buffer using the paste-buffer-paste (pbpaste) and paste-buffer-copy (pbcopy) commands. I love how they keep my console clean especially when I have trying to transform a large chunk of text/json
 
 Example:
 
-\&#x60;aws s3 cp s3:&#x2F;&#x2F;some-bucket-name&#x2F;awesome-file.json - | pbcopy\&#x60;
+`aws s3 cp s3://some-bucket-name/awesome-file.json - | pbcopy`
 
 ‍
 
@@ -79,24 +79,24 @@ This is technically a command. It is a command that executes commands.
 
 It executes a command for every line of input it receives. The arguments you pass to xargs form the basis of the command to execute.
 
-Hint: use \&#x60;-J{}\&#x60; to substitute \&#x60;{}\&#x60; (or some other character string) in the middle of the command to execute or multiple times for that matter.
+Hint: use `-J{}` to substitute `{}` (or some other character string) in the middle of the command to execute or multiple times for that matter.
 
-Example: &lt;code&gt;pbpaste | xargs -J{} aws s3 cp {} -&lt;&#x2F;code&gt;
+Example: <code>pbpaste | xargs -J{} aws s3 cp {} -</code>
 
 ‍
 
-**\&#x60;2&gt;\&#x60; and \&#x60;2&gt;&amp;1\&#x60;**
+**`2>` and `2>&1`**
 -----------------------
 
   
 
 Sometimes I want to send stderr somewhere else other than the console. Using its number is the way.
 
-Send to trash: \&#x60;2&gt;&#x2F;dev&#x2F;null\&#x60;
+Send to trash: `2>/dev/null`
 
-Send to error log: \&#x60;2&gt; error-log.txt\&#x60;
+Send to error log: `2> error-log.txt`
 
-Combine with stdout: \&#x60;2&gt;&amp;1\&#x60;
+Combine with stdout: `2>&1`
 
   
 
@@ -109,14 +109,14 @@ Suspend the foreground process, run some other commands, then return the suspend
 
   
 
-**man + &#x2F; + n**
+**man + / + n**
 ---------------
 
   
 
 When I know the command but not the exact syntax my first source of information is the manual. Instead of searching google I search the manual.
 
-Example: \&#x60;man xargs\&#x60; then \&#x60;&#x2F;utility\&#x60; advance to next found instance with \&#x60;n\&#x60;
+Example: `man xargs` then `/utility` advance to next found instance with `n`
 
 ‍  
   

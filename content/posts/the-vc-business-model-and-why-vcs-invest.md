@@ -15,9 +15,9 @@ public: Tue Apr 19 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
 image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png
 thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png
 ---
-(photo credit [Charles Cushing](https:&#x2F;&#x2F;wonderstorms.substack.com&#x2F;p&#x2F;how-can-we-fix-the-market-for-solutions))  
+(photo credit [Charles Cushing](https://wonderstorms.substack.com/p/how-can-we-fix-the-market-for-solutions))  
   
-This article is intended for startup founders, particularly for those who are first timers. There is nothing extraordinary about my VC experiences. I have done the following: raised an angel round and two institutional rounds (and failed at two rounds?) at a company I co-founded in the GovTech&#x2F;Community space (SeeClickFix). I have participated in pitches as CTO of a pre-PMF (product market fit) mortgage tech company (HeavyWater). I have raised a friends-and-family round at my current Cloud Infrastructure company ([https:&#x2F;&#x2F;www.cyclic.sh](https:&#x2F;&#x2F;www.cyclic.sh))
+This article is intended for startup founders, particularly for those who are first timers. There is nothing extraordinary about my VC experiences. I have done the following: raised an angel round and two institutional rounds (and failed at two rounds?) at a company I co-founded in the GovTech/Community space (SeeClickFix). I have participated in pitches as CTO of a pre-PMF (product market fit) mortgage tech company (HeavyWater). I have raised a friends-and-family round at my current Cloud Infrastructure company ([https://www.cyclic.sh](https://www.cyclic.sh))
 
 ‍
 
@@ -30,7 +30,7 @@ The majority of the confusion or difficulty I had raising Venture Capital was th
 ‍
 
 The VC business model
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+=====================
 
 ‍
 
@@ -38,19 +38,19 @@ Venture funds are companies. Their purpose for existence is to make money from m
 
 ‍
 
-They are composed of Limited Partners (LPs) and a General Partner (GP). The GP is the company owned and run by the &quot;VC&quot; you meet at some networking event. The VC has formed these companies and raised money from LPs. Part of the structure of the fund is that it will exist for no more than 10 years. At the end of that time all proceeds or investment holdings will be sent back to the LPs (minus any fees for the GP).
+They are composed of Limited Partners (LPs) and a General Partner (GP). The GP is the company owned and run by the "VC" you meet at some networking event. The VC has formed these companies and raised money from LPs. Part of the structure of the fund is that it will exist for no more than 10 years. At the end of that time all proceeds or investment holdings will be sent back to the LPs (minus any fees for the GP).
 
 ‍
 
-![](https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;625dce5fe5890977b45753cb_vc-structure-angellist.png)
+![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625dce5fe5890977b45753cb_vc-structure-angellist.png)
 
-VC Fund Structure (photo credit [Angel List](https:&#x2F;&#x2F;learn.angellist.com&#x2F;articles&#x2F;venture-capital-fund#toc_8_H2))
-
-‍
+VC Fund Structure (photo credit [Angel List](https://learn.angellist.com/articles/venture-capital-fund#toc_8_H2))
 
 ‍
 
-The LPs invest in the fund because they want to make money. The &quot;Limited&quot; in LP refers to the time the investor doesn’t spend working in the business. They send a check and that is their involvement.
+‍
+
+The LPs invest in the fund because they want to make money. The "Limited" in LP refers to the time the investor doesn’t spend working in the business. They send a check and that is their involvement.
 
 ‍
 
@@ -63,7 +63,7 @@ The GP will charge carry, aka 20% of any profits from the investments they make.
 ‍
 
 The Lifecycle of a single VC fund
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+=================================
 
 ‍
 
@@ -76,7 +76,7 @@ First Years: Load up the Plate
 
 ‍
 
-As a new entrepreneur I didn&#39;t realize how critical time fit with a VC was. After they raise from their investors (LPs) they are on a time crunch to get the money invested. They want to invest in good companies but they only have about 1-3 years to invest. This means it is much easier to raise from a VC who has just raised. They are rapidly putting money to work. They just arrived at the buffet with an empty plate. Everything looks good and they don&#39;t have anything that is a better alternative already on their plate.
+As a new entrepreneur I didn't realize how critical time fit with a VC was. After they raise from their investors (LPs) they are on a time crunch to get the money invested. They want to invest in good companies but they only have about 1-3 years to invest. This means it is much easier to raise from a VC who has just raised. They are rapidly putting money to work. They just arrived at the buffet with an empty plate. Everything looks good and they don't have anything that is a better alternative already on their plate.
 
 ‍
 
@@ -89,7 +89,7 @@ After that first phase they transition into a slower but still active investment
 
 ‍
 
-These VCs won&#39;t tell you that they probably won&#39;t invest. They are happy to ask questions and probe into your business. They get tremendous market intelligence from taking these meetings. They get to see:
+These VCs won't tell you that they probably won't invest. They are happy to ask questions and probe into your business. They get tremendous market intelligence from taking these meetings. They get to see:
 
 *   What people are pitching (deal flow)
 
@@ -101,7 +101,7 @@ These VCs won&#39;t tell you that they probably won&#39;t invest. They are happy
 
 *   Potential insights for their current portfolio companies
 
-*   Optionality of investing in an amazing company&#x2F;founder eg maybe your company is the best investment they have seen in their professional life
+*   Optionality of investing in an amazing company/founder eg maybe your company is the best investment they have seen in their professional life
 
 ‍
 
@@ -114,12 +114,12 @@ At this point they have transitioned to harvesting or running off the portfolio.
 
 ‍
 
-At the buffet they have switched to dessert and coffee. It would be an extraordinary turn of events such that you could convince them to take a scoop of some new main course. More likely they have raised another fund, probably at the end of the first year or two and any pitch would get investment from that fund. So effectively that VC is &quot;loading their plate&quot; even if one of their funds is in this phase of winding down.
+At the buffet they have switched to dessert and coffee. It would be an extraordinary turn of events such that you could convince them to take a scoop of some new main course. More likely they have raised another fund, probably at the end of the first year or two and any pitch would get investment from that fund. So effectively that VC is "loading their plate" even if one of their funds is in this phase of winding down.
 
 ‍
 
 Outcome Fit
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+===========
 
 ‍
 
@@ -147,25 +147,25 @@ This would put the fund in the top-1% of VCs. A more likely outcome of those 10 
 
 ‍
 
-This would put the VC roughly at the median returns for all VC firms. You can read more over at this [great break down of VC returns](https:&#x2F;&#x2F;www.toptal.com&#x2F;finance&#x2F;venture-capital-consultants&#x2F;venture-capital-portfolio-strategy#strike-outs-dont-matter-in-vc).
+This would put the VC roughly at the median returns for all VC firms. You can read more over at this [great break down of VC returns](https://www.toptal.com/finance/venture-capital-consultants/venture-capital-portfolio-strategy#strike-outs-dont-matter-in-vc).
 
 ‍
 
-![](https:&#x2F;&#x2F;uploads-ssl.webflow.com&#x2F;60d0f077b69e2d8f2d246168&#x2F;625dd037e0bac549cf18edf9_venture-returns-sethlevine.png)
+![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625dd037e0bac549cf18edf9_venture-returns-sethlevine.png)
 
-Distribution of Returns on VC Investments (credit: [Seth Levine](https:&#x2F;&#x2F;www.sethlevine.com&#x2F;archives&#x2F;2014&#x2F;08&#x2F;venture-outcomes-are-even-more-skewed-than-you-think.html))
+Distribution of Returns on VC Investments (credit: [Seth Levine](https://www.sethlevine.com/archives/2014/08/venture-outcomes-are-even-more-skewed-than-you-think.html))
 
 ‍
 
-Let us step back and look at your company from the VC&#39;s perspective for a moment. They are evaluating if your company has the potential of returning 10-50x the investment they make. Only if the company passes that screen will they engage on if your company has a reasonable risk adjusted chance of making that outcome a reality.
+Let us step back and look at your company from the VC's perspective for a moment. They are evaluating if your company has the potential of returning 10-50x the investment they make. Only if the company passes that screen will they engage on if your company has a reasonable risk adjusted chance of making that outcome a reality.
 
 ‍
 
 Conclusion
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+==========
 
 ‍
 
-The tech twitter joke of &quot;big if true&quot; can be a helpful tldr guide for how VCs evaluate potential investments. Make sure you know where they are in their investing lifecycle to ensure you are spending your time wisely. Hopefully this was helpful. If you have any questions or if I wasn’t completely clear find me on twitter: [@seekayel](https:&#x2F;&#x2F;twitter.com&#x2F;seekayel)
+The tech twitter joke of "big if true" can be a helpful tldr guide for how VCs evaluate potential investments. Make sure you know where they are in their investing lifecycle to ensure you are spending your time wisely. Hopefully this was helpful. If you have any questions or if I wasn’t completely clear find me on twitter: [@seekayel](https://twitter.com/seekayel)
 
 ‍

@@ -21,7 +21,7 @@ However this would require 500 to 1000 lines of infrastructure code. Between pro
 
 When these developers went to build and deploy, they would encounter more troubles. If you have ever worked with AWS you will know that CloudFormation is not known for the predictability or clarity of its errors. If you have worked with API Gateway and Lambda you will know how quickly you can get lost in a dark thicket of abstractions and frameworks, each blurring and bending into the the next.
 
-Even when the infrastructure would provision without error the call paths and observability was lacking. The infinite power combined with the lack of knowledge of where to start reminded me of staring at the blinking command prompt the first time I loaded linux. &quot;Something is happening in here, I just don&#39;t know how or where&quot;
+Even when the infrastructure would provision without error the call paths and observability was lacking. The infinite power combined with the lack of knowledge of where to start reminded me of staring at the blinking command prompt the first time I loaded linux. "Something is happening in here, I just don't know how or where"
 
 I believe as experienced engineers we too often default to expecting those coming behind us to spend their time learning the same lessons we learned. Instead I want to clear the way for not yet experienced developers to go beyond what I have been able to accomplish. To do this we need new tools. And we need a new abstraction.
 

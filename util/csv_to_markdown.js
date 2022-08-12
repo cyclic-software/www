@@ -5,7 +5,7 @@ var TurndownService = require('turndown')
 
 var td = new TurndownService({
   preformattedCode: true,
-  codeBlockStyle: 'fenced'
+  codeBlockStyle: 'fenced',
 })
 
 const template = fs.readFileSync('./util/posts.mustache').toString()
@@ -22,9 +22,13 @@ const results = [];
     results.forEach((doc) => {
 
       doc.markdown = td.turndown(doc['Post Body'])
+        .split('\\`').join('`')
 
       let md = render(template, doc)
-      if (doc.Slug === 'why-i-started-cyclic') {
+      if (doc.Slug === '6-command-line-tools-all-experts-know') {
+        console.log(doc.markdown)
+        console.log('#########################################')
+        console.log('#########################################')
         console.log(md)
       }
 

@@ -15,15 +15,15 @@ public: Wed Jul 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
 image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/60edf34edabd24d29fa406fd_Screen%20Shot%202021-07-13%20at%204.10.34%20PM.png
 thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/60edf34edabd24d29fa406fd_Screen%20Shot%202021-07-13%20at%204.10.34%20PM.png
 ---
-If you have used AWS you know how costs can sneak up on you. I have experience getting a heart stopping bill at a previous startup. With Cyclic I&#39;ve decided I want to start adding controls and alerts from the start.
+If you have used AWS you know how costs can sneak up on you. I have experience getting a heart stopping bill at a previous startup. With Cyclic I've decided I want to start adding controls and alerts from the start.
 
 ‍
 
-I recently found that AWS added Cloud Formation support for Budgets ([AWS::Budgets::Budget](https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AWSCloudFormation&#x2F;latest&#x2F;UserGuide&#x2F;aws-resource-budgets-budget.html)). You can create a quick budget to to notify you of either actual COST limits or FORECASTED cost limits. Here is a sample Cloud Formation example.
+I recently found that AWS added Cloud Formation support for Budgets ([AWS::Budgets::Budget](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html)). You can create a quick budget to to notify you of either actual COST limits or FORECASTED cost limits. Here is a sample Cloud Formation example.
 
 ‍
 
-I have also been working on setting up [spike.sh](https:&#x2F;&#x2F;spike.sh) to use for an incident management and alerting platform. They accept SNS webhooks. So two Cloud Formation stacks later we can now get the budgets.amazonaws.com principal to publish alerts to an SNS topic that fires an https webhook at our spike.sh integration URL. This will trigger an incident and alerts.
+I have also been working on setting up [spike.sh](https://spike.sh) to use for an incident management and alerting platform. They accept SNS webhooks. So two Cloud Formation stacks later we can now get the budgets.amazonaws.com principal to publish alerts to an SNS topic that fires an https webhook at our spike.sh integration URL. This will trigger an incident and alerts.
 
 ‍
 
@@ -31,15 +31,15 @@ Launch a budget into your account:
 
 ‍
 
-Of course it wouldn&#39;t be AWS without a few sharp edges. So here are the caveats:
+Of course it wouldn't be AWS without a few sharp edges. So here are the caveats:
 
-*   We are publishing the &quot;Launch Stack&quot; button templates on Github. However Cloud Formation only accepts s3 urls for template bodies
-*   We are creating the S3 bucket to host the templates with Cloud Formation. However despite Requestor Pays being 7 years old there is no Cloud Formation support. Funny how Cfn requires S3 but then makes it hard to use Cfn to setup hosting of the templates ([github issue](https:&#x2F;&#x2F;github.com&#x2F;aws-cloudformation&#x2F;cloudformation-coverage-roadmap&#x2F;issues&#x2F;123))
-*   SNS topic policies only allows named service principals eg: &#39;budgets.amazonaws.com&#39; for some reason &#39;\*&#39; is invalid.
+*   We are publishing the "Launch Stack" button templates on Github. However Cloud Formation only accepts s3 urls for template bodies
+*   We are creating the S3 bucket to host the templates with Cloud Formation. However despite Requestor Pays being 7 years old there is no Cloud Formation support. Funny how Cfn requires S3 but then makes it hard to use Cfn to setup hosting of the templates ([github issue](https://github.com/aws-cloudformation/cloudformation-coverage-roadmap/issues/123))
+*   SNS topic policies only allows named service principals eg: 'budgets.amazonaws.com' for some reason '\*' is invalid.
 
 ‍
 
-All code can be found in this github repository ([cyclic-software&#x2F;budget-sns-alerts](https:&#x2F;&#x2F;github.com&#x2F;cyclic-software&#x2F;budget-sns-alerts))
+All code can be found in this github repository ([cyclic-software/budget-sns-alerts](https://github.com/cyclic-software/budget-sns-alerts))
 
 ‍
 
