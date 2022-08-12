@@ -104,7 +104,7 @@ Devise a Conclusive Measure
 
 ‍
 
-Brainstorm what report, measure, logging or data would definitely tell me what is causing the error. Maybe this won't tell me “why” the error is happening, but point me closer to "where" the error is being caused.
+Brainstorm what report, measure, logging or data would definitely tell me what is causing the error. Maybe this won't tell me "why" the error is happening, but point me closer to "where" the error is being caused.
 
 ‍
 

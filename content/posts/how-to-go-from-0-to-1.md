@@ -62,7 +62,7 @@ Now at Cyclic I try to push code everyday. The best days are when I build a new 
 Using my own products, I find I'm annoyed by the incomplete features. Small ux issues can really grate on me. I think this is the point.
 
   
-Repeat after me: “I am the first user. I am user number 1”
+Repeat after me: "I am the first user. I am user number 1"
 
 ‍
 

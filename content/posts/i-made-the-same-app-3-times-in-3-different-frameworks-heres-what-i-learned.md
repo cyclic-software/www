@@ -1,7 +1,7 @@
 ---
 title: 'I Made The Same App 3 Times in 3 Different Frameworks… Here’s What I Learned.'
 slug: 'i-made-the-same-app-3-times-in-3-different-frameworks-heres-what-i-learned'
-summary: 'Angular, Svelte, Solid, React, Vue - there are so many frameworks out there. And you probably dealt with the “framework dilemma” at some point in your career. Here is my experience with building the same app on 3 different frameworks.'
+summary: 'Angular, Svelte, Solid, React, Vue - there are so many frameworks out there. And you probably dealt with the "framework dilemma" at some point in your career. Here is my experience with building the same app on 3 different frameworks.'
 colId: 60d0f077b69e2df6b324616c
 id: 62d6cf8e5a94f13651e1b8cb
 createdAt: 'Tue Jul 19 2022 15:36:46 GMT+0000 (Coordinated Universal Time)'
@@ -15,7 +15,7 @@ public: Wed Jul 27 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
 image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6ceda1cb8bad773baa71e_top-wanted-frameworks.png
 thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6ceda1cb8bad773baa71e_top-wanted-frameworks.png
 ---
-Angular, Svelte, Solid, React, Vue — there are so many frameworks out there. And you probably dealt with [the “framework dilemma”](https://www.reddit.com/r/webdev/comments/ux2ov8/how_do_you_guys_determine_which_frameworks_to_use/) at some point in your career.
+Angular, Svelte, Solid, React, Vue — there are so many frameworks out there. And you probably dealt with [the "framework dilemma"](https://www.reddit.com/r/webdev/comments/ux2ov8/how_do_you_guys_determine_which_frameworks_to_use/) at some point in your career.
 
 Some of us pursue React, the [most popular framework](https://insights.stackoverflow.com/survey/2021#most-loved-dreaded-and-wanted-webframe-want). And that’s completely understandable, because it being famous also implies that it’s the most demanded skill in the job market.
 
@@ -35,7 +35,7 @@ I always wondered how different it would be to build the **same app** with the s
 
 We’ll be exploring each of the aforementioned frameworks in its own piece, as part of a four-article series.
 
-We’ll build a [website for publicly sharing short-messages, called **“ithink”**](https://ithink.cyclic.app/). It’s like Twitter, but with no accounts and you can’t delete what you post.
+We’ll build a [website for publicly sharing short-messages, called **"ithink"**](https://ithink.cyclic.app/). It’s like Twitter, but with no accounts and you can’t delete what you post.
 
 ‍<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="gOerqjg" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/eludapens/pen/gOerqjg">
@@ -132,7 +132,7 @@ Don’t worry if this looks intimidating. We’ll cover _all of it_ throughout t
 
 ### Configuring SEO
 
-You might have noticed that the title of our document is _“Vite App”_, with no immediately obvious way of changing it.
+You might have noticed that the title of our document is _"Vite App"_, with no immediately obvious way of changing it.
 
 It turns out that this is a great opportunity for us to delve into the first element: `index.html`. You’ve undoubtedly already seen this filename in a billion other places, but probably not in the context of Vue.
 
@@ -259,7 +259,7 @@ Pretty neat, huh?
 
 ### Listening to click events
 
-As it currently stands, the “new” button doesn’t do anything, and no one wants a useless button.
+As it currently stands, the "new" button doesn’t do anything, and no one wants a useless button.
 
 So let’s change that! We must listen to a click event, and [in Vue, events](https://vuejs.org/guide/components/events.html) work like this:
 
@@ -288,7 +288,7 @@ It’s time to put the src/components folder to good use. This is where we’ll 
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-What you can see in the image above is the “New Modal” component, written into the NewModal.vue file.
+What you can see in the image above is the "New Modal" component, written into the NewModal.vue file.
 
 Create a new file at `src/components/NewModal.vue`. Fill it up with the usual SFC boilerplate:
 
@@ -314,7 +314,7 @@ Markup alone is not very useful without the JavaScript logic. Let’s attach eve
 
 ‍
 
-Okay, this is great! But notice that when you click on “post”, the page reloads. This is the default [behavior of HTML forms](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
+Okay, this is great! But notice that when you click on "post", the page reloads. This is the default [behavior of HTML forms](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
 
 Normally, we’d change that by calling `e.preventDefault`. But Vue focuses so much on simplicity that there’s a super-convenient shortcut:
 
@@ -338,7 +338,7 @@ What is a **reactive variable**?
 
 ‍  
 
-*   Say that we updated the value in a to 5. One thing we know for sure is that the `<p>` element won’t change. It will always say “4”, unless we explicitly change it.
+*   Say that we updated the value in a to 5. One thing we know for sure is that the `<p>` element won’t change. It will always say "4", unless we explicitly change it.
 *   Well, we don’t have to! With [reactivity](https://vuejs.org/guide/essentials/reactivity-fundamentals.html), the DOM is automatically updated once the related variable is mutated.
 *   In Vue, reactive variables are created with ref, a function that takes any value and makes it reactive.
 
@@ -360,7 +360,7 @@ Okay, let’s head right back into the submit logic. We’ll create a new isLoad
 
 ### Getting user input from form elements
 
-Our “new modal” component can’t exist without the `<textarea>` form element. But this raises an important question: _how do we keep the javascript code in-sync with the DOM content?_
+Our "new modal" component can’t exist without the `<textarea>` form element. But this raises an important question: _how do we keep the javascript code in-sync with the DOM content?_
 
 In a nutshell, Vue has a shortcut way of dealing with form elements. And it’s quite convenient!
 
@@ -400,13 +400,13 @@ So, how do we tell Vue to only focus the textarea once it’s available? The ans
 
 ![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62e02ecd52420b19a8e6d301_lifecycle.png)
 
-We want to utilize the “mounted” hook, which is called right after the component is added to the DOM. That’s when the <textarea> is shown, meaning that it’s not null:
+We want to utilize the "mounted" hook, which is called right after the component is added to the DOM. That’s when the <textarea> is shown, meaning that it’s not null:
 
 ‍
 
 ‍
 
-There are many more lifecycle hooks, and we usually use most of them. However, in our application, the “mounted” hook was more than enough. But just keep one thing in mind, you’ll see this concept again and again in every framework.
+There are many more lifecycle hooks, and we usually use most of them. However, in our application, the "mounted" hook was more than enough. But just keep one thing in mind, you’ll see this concept again and again in every framework.
 
 ### Closing the modal when clicked outside
 
@@ -438,7 +438,7 @@ Therefore, we need a way for the child — NewModal — to communicate with its 
 
 With Vue, it’s super-simple to define our own events, while dictating when they should be emitted, using _our_ own rules.
 
-Henceforth, whenever the modal needs to be closed, we emit the event “close” up into its parent.
+Henceforth, whenever the modal needs to be closed, we emit the event "close" up into its parent.
 
 Hey! Notice how we didn’t import defineEmits. That’s because it’s a compiler macro, so it’s always there by default.
 
@@ -470,7 +470,7 @@ And of course, don’t forget to add it to `App.vue`:
 
 We’ve seen how to trigger events from child to parent, and now, it’s time to _flip_ that formula around.
 
-Currently, our `ThoughtItem` displays the same text: “Hello world!”
+Currently, our `ThoughtItem` displays the same text: "Hello world!"
 
 But we want to show real data, which is held by the parent — `ThoughtList` — in the `items` reactive variable.
 
