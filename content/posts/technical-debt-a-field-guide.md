@@ -29,10 +29,10 @@ From all these passionate discussions and online comments I have distilled a tax
 
 This is what a decision of technical debt could sound like applied to a non-software example. You take your car into the shop since the check engine light came on. The mechanic finds a slow leak in the radiator and offers you the following choices:
 
-*   do nothing, risking totaling the car if the engine over heats
-*   have it resolved in 15 mins for $25, by adding coolant, then $25 every month going forward, otherwise #badthingshappen
-*   have it patched by end of day for $150 but then be back in the same position if/when the patch fails
-*   have it replaced for $300 but your car will be in the shop for a week for parts to be ordered
+* do nothing, risking totaling the car if the engine over heats
+* have it resolved in 15 mins for $25, by adding coolant, then $25 every month going forward, otherwise #badthingshappen
+* have it patched by end of day for $150 but then be back in the same position if/when the patch fails
+* have it replaced for $300 but your car will be in the shop for a week for parts to be ordered
 
   
 
@@ -46,20 +46,20 @@ Well, that is impossible to answer. There is no right answer.
 
 In this example it depends on:
 
-*   your expected rate of some future events (how long will patch last? will leak get worse?)
-*   your need for the car to be working now (are you leaving on road trip vacation tomorrow?)
-*   your expected amount of future use of the car (are you planning to sell the car soon?)
-*   your bank account balance? (do you have any money?)
-*   your expected future cash flows (do you get paid next friday?)
-*   cost to borrow money (how much does your credit card charge?)
+* your expected rate of some future events (how long will patch last? will leak get worse?)
+* your need for the car to be working now (are you leaving on road trip vacation tomorrow?)
+* your expected amount of future use of the car (are you planning to sell the car soon?)
+* your bank account balance? (do you have any money?)
+* your expected future cash flows (do you get paid next friday?)
+* cost to borrow money (how much does your credit card charge?)
 
   
 
 It is trivial to construct a scenario where the "obvious" choice would be any one of those options. The dimensions of the choice are:
 
-*   amount of money now vs later
-*   time till the car is working
-*   expected usage of the car in the future
+* amount of money now vs later
+* time till the car is working
+* expected usage of the car in the future
 
   
 
@@ -75,25 +75,25 @@ Change time cost
 
 Cost:
 
-*   Any future changes take more time.
+* Any future changes take more time.
 
   
 
 How you will hear it described:
 
-*   If we want to make changes later we will first have to undue this work
-*   Next time we will first have to do x, y, z before we can make a change
-*   This will make unscheduled Project ABC that we want harder
-*   This is brittle and is more likely to break on the next change (increased error rate)
-*   On boarding/teaching new people is harder
-*   This is a tax on future changes
+* If we want to make changes later we will first have to undue this work
+* Next time we will first have to do x, y, z before we can make a change
+* This will make unscheduled Project ABC that we want harder
+* This is brittle and is more likely to break on the next change (increased error rate)
+* On boarding/teaching new people is harder
+* This is a tax on future changes
 
   
 
 Financial Similarities:
 
-*   Bad credit score - all future borrowing will be more expensive
-*   Currency wide inflation/devaluation - all future consumption becomes more expensive (assuming you are on a fixed income)
+* Bad credit score - all future borrowing will be more expensive
+* Currency wide inflation/devaluation - all future consumption becomes more expensive (assuming you are on a fixed income)
 
   
 
@@ -102,22 +102,22 @@ Runtime cost
 
 Cost:
 
-*   Fixed cost in time per unit of time (eg 2hrs per week)
-*   Fixed cost in time per unit of system usage (eg 1hr per 1,000 user signups)
+* Fixed cost in time per unit of time (eg 2hrs per week)
+* Fixed cost in time per unit of system usage (eg 1hr per 1,000 user signups)
 
   
 
 How you will hear it described:
 
-*   We have to spend X hours of support per week
+* We have to spend X hours of support per week
 *   20% of our staff hours works on escalations
 
   
 
 Financial Translations
 
-*   Interest only loan - will need to continue to pay until you pay off principle
-*   Selling/Buying insurance
+* Interest only loan - will need to continue to pay until you pay off principle
+* Selling/Buying insurance
 
   
 
@@ -126,22 +126,22 @@ Opportunity Cost
 
 Cost:
 
-*   Whole sets of features aren't considered or built due to existing code/system/design
+* Whole sets of features aren't considered or built due to existing code/system/design
 
   
 
 How you will hear it described:
 
-*   We don't build X or Y
-*   We don't measure/report on X or Y
+* We don't build X or Y
+* We don't measure/report on X or Y
 
   
 
 Financial Similarities:
 
-*   Sunk cost fallacy
-*   Do you transition the same factory from producing lower value product to higher value product
-*   Career transition: forgo income, training/education expense, moving costs for future income
+* Sunk cost fallacy
+* Do you transition the same factory from producing lower value product to higher value product
+* Career transition: forgo income, training/education expense, moving costs for future income
 
   
 
@@ -158,26 +158,26 @@ Organizational Risk
 
 Cost:
 
-*   The organization assumes: financial, reputational, operational or recruiting/retention risk.
+* The organization assumes: financial, reputational, operational or recruiting/retention risk.
 
   
 
 How it is described:
 
-*   If X happens we will have to spend Y days scrambling to fix
-*   If it breaks we will have an outage
-*   If it breaks we will have a PR disaster/go out of business
-*   If it breaks we will be open to legal liability
-*   If it breaks we will have a security incident
+* If X happens we will have to spend Y days scrambling to fix
+* If it breaks we will have an outage
+* If it breaks we will have a PR disaster/go out of business
+* If it breaks we will be open to legal liability
+* If it breaks we will have a security incident
 
   
 
 Financial Similarities:
 
-*   Selling uncovered puts
-*   Selling uncovered calls
-*   Uninsured against fire/flood/earthquake
-*   Forgivable 0% interest only loan, but potential for demand payment
+* Selling uncovered puts
+* Selling uncovered calls
+* Uninsured against fire/flood/earthquake
+* Forgivable 0% interest only loan, but potential for demand payment
 
   
 
@@ -195,23 +195,23 @@ Money Cost
 
 Cost:
 
-*   The organization pays more money aka US Dollars ($) than is strictly necessary.
+* The organization pays more money aka US Dollars ($) than is strictly necessary.
 
   
 
 How it is described:
 
-*   The servers are too "big"
-*   The clusters aren't sized "right"
-*   We need to optimize process X for less memory
-*   We need to archive some/all of our data/logs
-*   We need to turn off things are aren't using
+* The servers are too "big"
+* The clusters aren't sized "right"
+* We need to optimize process X for less memory
+* We need to archive some/all of our data/logs
+* We need to turn off things are aren't using
 
   
 
 Financial Similarities:
 
-*   That gym membership that still is charged to your card each month even though you don't go.
+* That gym membership that still is charged to your card each month even though you don't go.
 
   
 

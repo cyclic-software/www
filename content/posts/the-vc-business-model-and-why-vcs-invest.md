@@ -91,17 +91,17 @@ After that first phase they transition into a slower but still active investment
 
 These VCs won't tell you that they probably won't invest. They are happy to ask questions and probe into your business. They get tremendous market intelligence from taking these meetings. They get to see:
 
-*   What people are pitching (deal flow)
+* What people are pitching (deal flow)
 
-*   How is the market is responding to these pitches?
+* How is the market is responding to these pitches?
 
-*   Do you raise quickly? Do you struggle to raise? At what price? On what terms?
+* Do you raise quickly? Do you struggle to raise? At what price? On what terms?
 
-*   Benchmark strategy data for their current portfolio companies eg Are social ads working? What is your customer acquisition cost? What are your churn rates?
+* Benchmark strategy data for their current portfolio companies eg Are social ads working? What is your customer acquisition cost? What are your churn rates?
 
-*   Potential insights for their current portfolio companies
+* Potential insights for their current portfolio companies
 
-*   Optionality of investing in an amazing company/founder eg maybe your company is the best investment they have seen in their professional life
+* Optionality of investing in an amazing company/founder eg maybe your company is the best investment they have seen in their professional life
 
 ‍
 
@@ -129,21 +129,21 @@ A natural tendency when considering an endeavor (business or other) is to start 
 
 When the VC was raising money from LPs they put together a spreadsheet that described the basic economics of the venture fund. Roughly it modeled the following for 10 investments:
 
-*   5 will fail completely, the investments will be a complete loss
+* 5 will fail completely, the investments will be a complete loss
 
-*   3 will do ok, they will each return somewhere between 3x
+* 3 will do ok, they will each return somewhere between 3x
 
-*   1 will do great, it will return 10x
+* 1 will do great, it will return 10x
 
-*   1 will do amazing, it will return 25x+
+* 1 will do amazing, it will return 25x+
 
 ‍
 
 This would put the fund in the top-1% of VCs. A more likely outcome of those 10 investments is:
 
-*   6 will fail
-*   3 will do ok they will each return on average ~3x
-*   1 will do great, it will return ~5x
+* 6 will fail
+* 3 will do ok they will each return on average ~3x
+* 1 will do great, it will return ~5x
 
 ‍
 

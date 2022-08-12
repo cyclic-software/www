@@ -49,9 +49,9 @@ Well this post series is an attempt to catalogue the specific tactics and action
 
 #### Posts in this series:
 
-*   Users: Going from 0 to 1 (coming soon)
-*   Users: Going from 1 to 10 (coming soon)
-*   Users: Going from 10 to 100 (coming soon)
+* Users: Going from 0 to 1 (coming soon)
+* Users: Going from 1 to 10 (coming soon)
+* Users: Going from 10 to 100 (coming soon)
 
 ‍
 
@@ -59,8 +59,8 @@ Well this post series is an attempt to catalogue the specific tactics and action
 
 Other people have great write ups on what might work in general, current favorites:
 
-*   [Traction: How Any Startup Can Achieve Explosive Customer Growth](https://www.goodreads.com/pt/book/show/24693635-traction) (book on channels)
-*   [First 1000](https://www.first1000.co/) (substack of case studies)
-*   Which others?
+* [Traction: How Any Startup Can Achieve Explosive Customer Growth](https://www.goodreads.com/pt/book/show/24693635-traction) (book on channels)
+* [First 1000](https://www.first1000.co/) (substack of case studies)
+* Which others?
 
 ‍

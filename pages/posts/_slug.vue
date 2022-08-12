@@ -17,8 +17,7 @@
             <a href="#" class="link-2">@author-twitter</a>
           </div>
           <div class="div-block"></div>
-          <div class="text-block-7">Posted: </div>
-          <div class="text-block-5">Published: {{ formatDate(post.publishedOn) }}</div>
+          <div class="text-block-5">Posted: {{ formatDate(post.publishedOn) }}</div>
         </div>
         <div class="div-block-2">
           <a href="#" class="link-block w-inline-block w-clearfix">
@@ -54,26 +53,7 @@
       </div>
     </div>
 
-    <!-- <section id="subscribe-form" class="subscribe-form wf-section">
-      <div class="centered-container w-container">
-        <h2>Subscribe to posts</h2>
-        <p>Enter your email If you would like to get an email the next time we post.<br>We post about ~1-3x per month, and up to once a month about company news.<br></p>
-      </div>
-      <div class="container-5 w-container">
-        <div>
-          <div class="w-embed w-script">
-            <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js"></script>
-            <script>
-    hbspt.forms.create({
-    region: "na1",
-    portalId: "9213379",
-    formId: "37c53da9-83fc-4c77-af25-644648ce2eb2"
-  });
-  </script>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    <HubspotBlogForm />
 
 
     <!-- <div class="section small-padding wf-section">
@@ -98,6 +78,7 @@
         </div>
       </div>
     </div> -->
+
     <CtaLaunchHelloWorld></CtaLaunchHelloWorld>
   </div>
 </template>

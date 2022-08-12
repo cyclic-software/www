@@ -95,9 +95,9 @@ Notice that there is no judgment or statement if debt is good (**productive**) o
 
 This view of debt is much more inline with how companies reason about their debt. The primary questions are:
 
-1.  What is the cost of the debt?
-2.  What additional value will the debt buy?
-3.  What is the expected change to cash flow from this investment?
+1. What is the cost of the debt?
+2. What additional value will the debt buy?
+3. What is the expected change to cash flow from this investment?
 
   
 

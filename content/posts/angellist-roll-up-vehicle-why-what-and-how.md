@@ -157,7 +157,7 @@ Let me know what you think. Did you find this helpful? Do you still have questio
 
 ‍
 
-You can: [Signup for our beta](https://app.cyclic.sh/api/login)
+You can: [Signup for Cyclic](https://app.cyclic.sh/api/login)
 
 ‍
 
