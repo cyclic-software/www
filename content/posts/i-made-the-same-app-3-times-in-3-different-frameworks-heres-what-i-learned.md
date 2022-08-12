@@ -235,7 +235,7 @@ Hey! I hid the Tailwind class-names from the code snipped above. Browse our code
 
 So let me introduce… **Single File Components!** (SFCs)
 
-‍```html
+```html
 <script setup>
     // Javascript here
 </script>
@@ -263,7 +263,7 @@ As it currently stands, the “new” button doesn’t do anything, and no one w
 
 So let’s change that! We must listen to a click event, and [in Vue, events](https://vuejs.org/guide/components/events.html) work like this:
 
-‍```html
+```html
 <script setup>
     function openModal() {
         // TODO
@@ -292,7 +292,7 @@ What you can see in the image above is the “New Modal” component, written in
 
 Create a new file at `src/components/NewModal.vue`. Fill it up with the usual SFC boilerplate:
 
-‍```html
+```html
 <script setup>
     // NewModal.vue
 </script>
