@@ -12,8 +12,8 @@ category: Company
 hidden: false
 featured: false
 public: Tue Apr 19 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png
+image: 'https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png'
+thumbnail: 'https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png'
 ---
 (photo credit [Charles Cushing](https://wonderstorms.substack.com/p/how-can-we-fix-the-market-for-solutions))  
   
