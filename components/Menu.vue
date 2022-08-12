@@ -2,12 +2,14 @@
   <div data-collapse="small" data-animation="default" data-duration="400" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c319c" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
     <div class="nav-container w-container">
       <div class="logo-div">
-        <NuxtLink to="/" aria-current="page" class="nav-logo w-inline-block w--current"><img src="/images/Group-1.png" loading="lazy" width="68" alt="" class="image-2"></NuxtLink>
+        <nuxt-link to="/" aria-current="page" class="nav-logo w-inline-block w--current">
+          <img src="/images/Group-1.png" loading="lazy" width="68" alt="" class="image-2">
+        </nuxt-link>
       </div>
       <nav role="navigation" class="nav-content w-nav-menu">
         <div class="nav-menu">
-          <NuxtLink to="/pricing" class="nav-link w-nav-link">Pricing</NuxtLink>
-          <NuxtLink to="/blog" class="nav-link w-nav-link">Blog</NuxtLink>
+          <nuxt-link to="/pricing" class="nav-link w-nav-link">Pricing</nuxt-link>
+          <nuxt-link to="/blog" class="nav-link w-nav-link">Blog</nuxt-link>
           <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="nav-link w-nav-link">Docs</a>
           <a href="release-notes.html" target="_blank" class="nav-link w-nav-link">Release Notes</a>
         </div>
