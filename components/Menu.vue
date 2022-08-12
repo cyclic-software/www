@@ -7,7 +7,7 @@
       <nav role="navigation" class="nav-content w-nav-menu">
         <div class="nav-menu">
           <NuxtLink to="/pricing.html" class="nav-link w-nav-link">Pricing</NuxtLink>
-          <NuxtLink to="/blog.html" class="nav-link w-nav-link">Blog</NuxtLink>
+          <NuxtLink to="/blog" class="nav-link w-nav-link">Blog</NuxtLink>
           <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="nav-link w-nav-link">Docs</a>
           <a href="release-notes.html" target="_blank" class="nav-link w-nav-link">Release Notes</a>
         </div>

@@ -4,8 +4,8 @@
     <div class="footer-container w-container">
       <div class="_12-columns align-top">
         <div class="column desk-6 tab-12">
-          <a data-ix="logo" href="index.html" aria-current="page" class="footer-logo w-nav-brand w--current"><img src="/images/default-monochrome-white.svg" loading="lazy" alt="cyclic logo" class="image"></a>
-          <p class="paragraph-small no-margin">© 2021 <a href="index.html" aria-current="page" class="w--current">Cyclic Software</a><br></p>
+          <a data-ix="logo" href="/" aria-current="page" class="footer-logo w-nav-brand w--current"><img src="/images/default-monochrome-white.svg" loading="lazy" alt="cyclic logo" class="image"></a>
+          <p class="paragraph-small no-margin">© 2021 <a href="/" aria-current="page" class="w--current">Cyclic Software</a><br></p>
           <div class="spacer _64"></div>
         </div>
         <div class="column desk-2 tab-4 mob-6"></div>
@@ -21,7 +21,7 @@
           <div class="footer-links-container">
             <h5 class="footer-header">Company</h5>
             <NuxtLink to="/pricing.html" class="footer-link">Pricing</NuxtLink>
-            <NuxtLink to="/blog.html" class="footer-link">Blog</NuxtLink>
+            <NuxtLink to="/blog" class="footer-link">Blog</NuxtLink>
             <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="footer-link">Documentation</a>
             <a href="release-notes.html" class="footer-link">Release Notes</a>
             <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
