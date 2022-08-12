@@ -37,7 +37,12 @@ We’ll be exploring each of the aforementioned frameworks in its own piece, as 
 
 We’ll build a [website for publicly sharing short-messages, called **“ithink”**](https://ithink.cyclic.app/). It’s like Twitter, but with no accounts and you can’t delete what you post.
 
-‍
+‍<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="gOerqjg" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/gOerqjg">
+  It's Twitter, but you can't delete.</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 But first, we need an API
 -------------------------
@@ -50,11 +55,7 @@ A developer would normally spend hours and hours setting-up a database like this
 
 Luckily for us, we get a free instance of the AWS S3 Storage when we [use Cyclic](https://app.cyclic.sh/). No credit card is required.
 
-[
-
-![https://deploy.cyclic.app/button.svg](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6cf389192e7f60cbda7b0_button.svg)
-
-](https://deploy.cyclic.sh/ithink-corp/api)
+[![https://deploy.cyclic.app/button.svg](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6cf389192e7f60cbda7b0_button.svg)](https://deploy.cyclic.sh/ithink-corp/api)
 
 ‍
 
@@ -71,7 +72,7 @@ We can all agree that creating a boilerplate from scratch is exhausting. I mean,
 
 Luckily, Vue does all the work for us when we run the following command:
 
-[npm init vue@latest](http://code-inline)
+`npm init vue@latest`
 
 It will ask you a bunch of questions so you can create the optimal setup that best fits your project. So go ahead, and accept/reject the following questions:
 
@@ -87,13 +88,22 @@ It will ask you a bunch of questions so you can create the optimal setup that be
 
 We’ll see what each of these means throughout this article.
 
-Next up is installation. This time, you don’t have to do anything. Just kick-back, relax, and wait for [yarn](http://code-inline) to do its work! (of course, you can also use [npm](http://code-inline) if that’s your preference)
+Next up is installation. This time, you don’t have to do anything. Just kick-back, relax, and wait for `yarn` to do its work! (of course, you can also use `npm` if that’s your preference)
 
-‍
+```sh
+cd ithink
+yarn install # or npm install
+```
 
-‍
 
-This command will create a dead-simple boilerplate which comes with some defaults. Go ahead and run [yarn dev](http://code-inline) or [npm run dev](http://code-inline) and open up [http://localhost:3000](http://code-inline) in your browser. It’s already looking great, isn’t it?
+‍<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="oNqxVBY" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/oNqxVBY">
+  vue-0</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+This command will create a dead-simple boilerplate which comes with some defaults. Go ahead and run `yarn dev` or `npm run dev` and open up `http://localhost:3000` in your browser. It’s already looking great, isn’t it?
 
 You’ll see a semi-usable application describing Vue, with the addition of some links to its inner-workings.
 
@@ -101,77 +111,149 @@ Unfortunately, most of this stuff is useless to us. Therefore, we’ll erase mos
 
 Take some time to observe the folder structure. Notice the emphasis that it places on [decoupling](https://jamstack.org/glossary/decoupling/). Everything is where it’s supposed to be, making it a very clean and elegant architecture to work on.
 
+```
+tree .
+├── index.html
+├── package.json
+├── public
+│   └── favicon.ico
+├── README.md
+├── src
+│   ├── App.vue
+│   ├── components
+│   ├── index.css
+│   ├── main.js
+│   └── stores
+├── vite.config.js
+└── yarn.lock
+```
+
 Don’t worry if this looks intimidating. We’ll cover _all of it_ throughout this document.
 
 ### Configuring SEO
 
 You might have noticed that the title of our document is _“Vite App”_, with no immediately obvious way of changing it.
 
-It turns out that this is a great opportunity for us to delve into the first element: [index.html](http://code-inline). You’ve undoubtedly already seen this filename in a billion other places, but probably not in the context of Vue.
+It turns out that this is a great opportunity for us to delve into the first element: `index.html`. You’ve undoubtedly already seen this filename in a billion other places, but probably not in the context of Vue.
 
-So let’s dive into [index.html](http://code-inline), and update some defaults:
+So let’s dive into `index.html`, and update some defaults:
 
-We changed the title and added a description. Hence, quite simply, index.html is the entry-point to our application. It’s where you modify the [<head>](http://code-inline) meta-tags, add class-names to the top-most elements such as [<body>](http://code-inline) and [<html>](http://code-inline), and change the language of your website from English ("en") to say, French ("fr").
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    - <title>Vite App</title>
+    + <title>ithink</title>
+    + <meta name="description" content="Global online messaging, void of any borders." />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+```
 
-It’s also impossible to avoid speaking about [<div id="app"></div>](http://code-inline). As we’ll see in an upcoming section, this is where all-things-Vue are injected. So let’s keep on exploring!
+We changed the title and added a description. Hence, quite simply, index.html is the entry-point to our application. It’s where you modify the `<head>` meta-tags, add class-names to the top-most elements such as `<body>` and `<html>`, and change the language of your website from English ("en") to say, French ("fr").
+
+It’s also impossible to avoid speaking about `<div id="app"></div>`. As we’ll see in an upcoming section, this is where all-things-Vue are injected. So let’s keep on exploring!
 
 ### Changing the body color
 
-‍
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="BarKMEw" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/BarKMEw">
+  vue-1</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>‍
 
-‍
-
-The website we’re building has an overall dark theme, meaning that the [<body>](http://code-inline) color should be changed from white to dark.
+The website we’re building has an overall dark theme, meaning that the `<body>` color should be changed from white to dark.
 
 After [configuring TailwindCSS](https://tailwindcss.com/docs/guides/vite), we’ll start adding these changes to our document.
 
-You must’ve already created a [src/index.css](http://code-inline) file during your Tailwind configuration, and imported it from [src/main.js](http://code-inline). So, let’s add our custom styles:
+You must’ve already created a `src/index.css` file during your Tailwind configuration, and imported it from `src/main.js`. So, let’s add our custom styles:
 
-‍
+```css
+/* index.css */
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
 
-As you can see, we’re using the [@apply](http://code-inline) directive to _apply_ the [bg-stone-900](http://code-inline) utility to the body. If you’re not very Tailwind-savvy, [bg-stone-900](http://code-inline) is equivalent to the following CSS declaration:
+body {
+  @apply bg-stone-900;
+}
+```
 
-‍
+As you can see, we’re using the `@apply` directive to _apply_ the `bg-stone-900` utility to the body. If you’re not very Tailwind-savvy, `bg-stone-900` is equivalent to the following CSS declaration:
 
+```css
+body {
+    background: #1c1917;}
+```
 ‍
 
 ### Adding a header
 
-‍
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="qBoZvrN" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/qBoZvrN">
+  vue-2</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 It’s time to delve into our second-most element: App.vue. It’s the top-most component of our application.
 
-Whatever you put inside this file will go straight into [<div id="app"></div>](http://code-inline). Remember it? We mentioned it in the last paragraph of the section that covered [index.html](http://code-inline). See how it all fits together? Magical!
+Whatever you put inside this file will go straight into `<div id="app"></div>`. Remember it? We mentioned it in the last paragraph of the section that covered `index.html`. See how it all fits together? Magical!
 
 ![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62e02ea8cb6f0b99cc5ba095_hierarchy.png)
 
 And with all that said, let’s implement our overly-simplistic header:
 
+```html
+<template>
+    <!-- App.vue -->
+    <header>
+        <h1>ithink</h1>
+        <button>New</button>
+    </header>
+</template>
+```
+
 As you can see, we kept it pretty simply.
 
 Hey! I hid the Tailwind class-names from the code snipped above. Browse our code repository to see the full code.
 
-**_Ahem_**_,_ let’s address the elephant in the room. What the heck is [<template>](http://code-inline)?
+**_Ahem_**_,_ let’s address the elephant in the room. What the heck is `<template>`?
 
-*   Before we get into that, let me explain a fundamental concept to you.. **Web components!**
-*   Web components give developers the ability to create their own tags:
-*   [<profile-card>](http://code-inline), [<emoji>](http://code-inline), [<close-button>](http://code-inline), [<code-editor>](http://code-inline)
-*   **_It’s like magic!_** You get to encapsulate your own HTML, CSS, and JavaScript. Web components are an elegant way to create user-interfaces that resemble native apps. They’re the future of the web.
-*   If this sounds cool to you, you’re probably wondering how to create these things.
+* Before we get into that, let me explain a fundamental concept to you.. **Web components!**
+* Web components give developers the ability to create their own tags:
+* `<profile-card>`, `<emoji>`, `<close-button>`, `<code-editor>`
+* **_It’s like magic!_** You get to encapsulate your own HTML, CSS, and JavaScript. Web components are an elegant way to create user-interfaces that resemble native apps. They’re the future of the web.
+* If this sounds cool to you, you’re probably wondering how to create these things.
 
 So let me introduce… **Single File Components!** (SFCs)
 
-‍
+‍```html
+<script setup>
+    // Javascript here
+</script>
 
-‍
+<template>
+    <!-- HTML here -->
+</template>
 
-‍
+<style scoped>
+    /* CSS here */
+</style>
+```
 
 As you can see, SFCs split a component’s design into three logical parts, and they can come in any order:
 
-*   **JavaScript logic:** ([<script setup>](http://code-inline)) The brains of your component. Handles state, events, networking, etc…
-*   **HTML document:** ([<template>](http://code-inline)) The semantics of your component.
-*   **CSS declarations:** ([<style scoped>](http://code-inline)) The style of your component.
+*   **JavaScript logic:** (`<script setup>`) The brains of your component. Handles state, events, networking, etc…
+*   **HTML document:** (`<template>`) The semantics of your component.
+*   **CSS declarations:** (`<style scoped>`) The style of your component.
 
 Pretty neat, huh?
 
@@ -181,19 +263,46 @@ As it currently stands, the “new” button doesn’t do anything, and no one w
 
 So let’s change that! We must listen to a click event, and [in Vue, events](https://vuejs.org/guide/components/events.html) work like this:
 
-‍
+‍```html
+<script setup>
+    function openModal() {
+        // TODO
+        alert('button clicked!')
+    }
+</script>
+<template>
+    <button @click="openModal">New</button>
+</template>
+```
 
 We’ll come back to the openModal function later, when we actually create the modal!
 
 ### Creating a modal component
 
-It’s time to put the src/components folder to good use. This is where we’ll be housing all our custom components.[‍](https://codepen.io/eludadev/pen/VwXaRbb)
+It’s time to put the src/components folder to good use. This is where we’ll be housing all our custom components.
+
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="VwXaRbb" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/VwXaRbb">
+  vue-3</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 What you can see in the image above is the “New Modal” component, written into the NewModal.vue file.
 
-Create a new file at [src/components/NewModal.vue](http://code-inline). Fill it up with the usual SFC boilerplate:
+Create a new file at `src/components/NewModal.vue`. Fill it up with the usual SFC boilerplate:
 
-‍
+‍```html
+<script setup>
+    // NewModal.vue
+</script>
+
+<template>
+</template>
+
+<style scoped>
+</style>
+```
 
 Let’s get the markup out of the way: (remember to use [the right semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics))
 
@@ -207,7 +316,7 @@ Markup alone is not very useful without the JavaScript logic. Let’s attach eve
 
 Okay, this is great! But notice that when you click on “post”, the page reloads. This is the default [behavior of HTML forms](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
 
-Normally, we’d change that by calling [e.preventDefault](http://code-inline). But Vue focuses so much on simplicity that there’s a super-convenient shortcut:
+Normally, we’d change that by calling `e.preventDefault`. But Vue focuses so much on simplicity that there’s a super-convenient shortcut:
 
 ‍
 
@@ -229,7 +338,7 @@ What is a **reactive variable**?
 
 ‍  
 
-*   Say that we updated the value in a to 5. One thing we know for sure is that the [<p>](http://code-inline) element won’t change. It will always say “4”, unless we explicitly change it.
+*   Say that we updated the value in a to 5. One thing we know for sure is that the `<p>` element won’t change. It will always say “4”, unless we explicitly change it.
 *   Well, we don’t have to! With [reactivity](https://vuejs.org/guide/essentials/reactivity-fundamentals.html), the DOM is automatically updated once the related variable is mutated.
 *   In Vue, reactive variables are created with ref, a function that takes any value and makes it reactive.
 
@@ -251,7 +360,7 @@ Okay, let’s head right back into the submit logic. We’ll create a new isLoad
 
 ### Getting user input from form elements
 
-Our “new modal” component can’t exist without the [<textarea>](http://code-inline) form element. But this raises an important question: _how do we keep the javascript code in-sync with the DOM content?_
+Our “new modal” component can’t exist without the `<textarea>` form element. But this raises an important question: _how do we keep the javascript code in-sync with the DOM content?_
 
 In a nutshell, Vue has a shortcut way of dealing with form elements. And it’s quite convenient!
 
@@ -277,7 +386,7 @@ Hey! While there’s a simpler way to achieve the above (`<div :inert="isLoading
 
 ### Automatically focusing the <textarea>
 
-When the user opens the NewModal component, we know that their objective is to input into the [<textarea>](http://code-inline). So, wouldn’t it be convenient to save them the hassle of moving the cursor towards that form element?
+When the user opens the NewModal component, we know that their objective is to input into the `<textarea>`. So, wouldn’t it be convenient to save them the hassle of moving the cursor towards that form element?
 
 Let’s implement this feature! Counter-intuitively, we can’t do this:
 
@@ -339,7 +448,7 @@ Up until now, you couldn’t see NewModal, because it hasn’t been added to App
 
 With the code snippet above, the modal will always be open. So, let’s add some toggle magic:
 
-We took advantage of [v-if](http://code-inline) to show/hide the modal.
+We took advantage of `v-if` to show/hide the modal.
 
 And now we’re done with the NewModal component. Pretty simple, huh?
 
@@ -347,31 +456,31 @@ And now we’re done with the NewModal component. Pretty simple, huh?
 
 It’s time to delve into a new component, ThoughtList. This one will display a list of items, and we don’t know the length of that list before-hand.
 
-Let’s create a new file at [src/ThoughtList.vue](http://code-inline). In Vue, here’s how we repeat an element:
+Let’s create a new file at `src/ThoughtList.vue`. In Vue, here’s how we repeat an element:
 
-Surprisingly simple! It might be useful to split this component into two: [ThoughtList.vue](http://code-inline) and [ThoughtItem.vue](http://code-inline).
+Surprisingly simple! It might be useful to split this component into two: `ThoughtList.vue` and `ThoughtItem.vue`.
 
-So, we’ll change [src/ThoughtList.vue](http://code-inline) to:
+So, we’ll change `src/ThoughtList.vue` to:
 
-and the new [ThoughtItem.vue](http://code-inline) will contain:
+and the new `ThoughtItem.vue` will contain:
 
-And of course, don’t forget to add it to [App.vue](http://code-inline):
+And of course, don’t forget to add it to `App.vue`:
 
 ### Passing text from parent to child
 
 We’ve seen how to trigger events from child to parent, and now, it’s time to _flip_ that formula around.
 
-Currently, our [ThoughtItem](http://code-inline) displays the same text: “Hello world!”
+Currently, our `ThoughtItem` displays the same text: “Hello world!”
 
-But we want to show real data, which is held by the parent — [ThoughtList](http://code-inline) — in the [items](http://code-inline) reactive variable.
+But we want to show real data, which is held by the parent — `ThoughtList` — in the `items` reactive variable.
 
 The solution to this problem is called **Props** (properties). They’re like HTML attributes, if they could contain _anything_! (arrays, objects, and even functions!)
 
-So let’s make a little change to [ThoughtList.vue](http://code-inline):
+So let’s make a little change to `ThoughtList.vue`:
 
 Hey! It’s important to add the colon : before the prop name. It tells Vue to treat the content between "..." as JavaScript code (the item variable), instead of a String (the text "item").
 
-And now, we can access the text message in [ThoughtItem](http://code-inline) effortlessly:
+And now, we can access the text message in `ThoughtItem` effortlessly:
 
 ‍
 
@@ -437,9 +546,9 @@ Components with [top-level awaits](https://stackoverflow.com/questions/46515764/
 
 If we leave it like this, we’re gonna get the following error: (check your devtools console)
 
-Component [<Anonymous>](http://code-inline): setup function returned a promise, but no [<Suspense>](http://code-inline) boundary was found in the parent component tree. A component with async setup() must be nested in a [<Suspense>](http://code-inline) in order to be rendered.
+Component `<Anonymous>`: setup function returned a promise, but no `<Suspense>` boundary was found in the parent component tree. A component with async setup() must be nested in a `<Suspense>` in order to be rendered.
 
-It’s telling us that we should use a component called [<Suspense>](http://code-inline) as a parent to the [async component](https://vuejs.org/guide/components/async.html). [<Suspense>](http://code-inline) (see: https://vuejs.org/guide/built-ins/suspense.html) is a built-in Vue component, so we can use it anywhere in our app. Let’s use it in App.vue:
+It’s telling us that we should use a component called `<Suspense>` as a parent to the `async component](https://vuejs.org/guide/components/async.html). [<Suspense>` (see: https://vuejs.org/guide/built-ins/suspense.html) is a built-in Vue component, so we can use it anywhere in our app. Let’s use it in App.vue:
 
 It now works _perfectly_! Yay!
 
@@ -447,13 +556,13 @@ It now works _perfectly_! Yay!
 
 Currently, our ThoughtList component will be invisible until data is loaded. That’s inconvenient, and makes a great example of [bad UX](https://pencilandpaper.io/articles/ux-pattern-analysis-loading-feedback/).
 
-Thankfully, since we’re already using [<Suspense>](http://code-inline), we can directly tell it to show something else while its child is loading. Add this to App.vue:
+Thankfully, since we’re already using `<Suspense>`, we can directly tell it to show something else while its child is loading. Add this to App.vue:
 
 ‍
 
 ‍
 
-As you can see, anything within [<template #fallback>](http://code-inline) will be shown when ThoughtList is loading. Awesome!
+As you can see, anything within `<template #fallback>` will be shown when ThoughtList is loading. Awesome!
 
 But we can get even awesome-r than that. Let’s show a [loading skeleton](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)!
 

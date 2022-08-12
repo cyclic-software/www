@@ -41,19 +41,20 @@ _‍
   
 This **sounds like a disaster**, but it's not the end of the world, right? At least the problem is measurable. And after all, you can just delete a bunch of objects and move a bunch of the remaining junk to AWS Glacier (or whatever they just changed the name to).**‍**
 
-### **  
-Or can you?**
+### **Or can you?**
 
-##### **‍**⚠️ Documentation References Ahead ⚠️  
+##### **‍**⚠️ Documentation References Ahead ⚠️
 
 S3 objects are named by their Bucket and Prefix - For the S3 objects :
 
-[s3://my-bucket-us-east-2/app/events/login-123123.json  
-s3://my-bucket-us-east-2/app/events/logout-436564.json](http://code-block)
+```
+s3://my-bucket-us-east-2/app/events/login-123123.json  
+s3://my-bucket-us-east-2/app/events/logout-436564.json
+```
 
-The json files named [login-123123.json](http://code-inline) and [logout-436564.json](http://code-inline) are not actually in a folder called events nested in another called app. 
+The json files named `login-123123.json` and `logout-436564.json` are not actually in a folder called events nested in another called app. 
 
-The files are stored on a physical drive somewhere and indexed someplace else by the entire string [app/events/](http://code-inline) - called the prefix. The [/](http://code-inline) character is really just a rendered delimiter. You can actually specify [whatever you want](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) to be the delimiter for list/scan apis. 
+The files are stored on a physical drive somewhere and indexed someplace else by the entire string `app/events/` - called the prefix. The `/` character is really just a rendered delimiter. You can actually specify [whatever you want](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) to be the delimiter for list/scan apis. 
 
   
 Anyway, under the hood, these prefixes are used to shard and partition data in S3 buckets across whatever wires and metal boxes in physical data centers. Since any character can be a delimiter, this actually happens over time as AWS discovers the access patterns for the data. This is important because while AWS will adapt to any pattern - the prefix design drives access patterns for human developers and impacts performance in large scale high volume read and write applications.
@@ -64,7 +65,7 @@ The limits on reads and writes are:
 *   5,500 GET/HEAD requests per second per prefix  
     
 
-This means you can make up to 3500 write / 5500 read requests per second to add or look at [app/events/](http://code-inline) files. Higher than that, and you may experience [503](http://code-inline) or [429](http://code-inline) errors, especially with burst traffic.  
+This means you can make up to 3500 write / 5500 read requests per second to add or look at `app/events/` files. Higher than that, and you may experience `503` or `429` errors, especially with burst traffic.  
 
 When faced with the challenge of producing or accessing big data with practical performance - [Best practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html), enterprise support, and your technical account manager (TAM) will recommend that you:
 
@@ -74,12 +75,12 @@ When faced with the challenge of producing or accessing big data with practical 
 
 ### Tech debt
 
-These best practices are usually overlooked in early MVPs and objects are likely stored with the familiar [folder/file](http://code-inline) pattern. It doesn't take long for the issue to expose itself. The first performance issues are usually experienced on read when someone first tries large scale queries with tools like AWS Athena and competes with the customer-facing processes for S3 reads.  
+These best practices are usually overlooked in early MVPs and objects are likely stored with the familiar `folder/file` pattern. It doesn't take long for the issue to expose itself. The first performance issues are usually experienced on read when someone first tries large scale queries with tools like AWS Athena and competes with the customer-facing processes for S3 reads.  
 
-This is chalked up as a [repaying tech-debt](https://www.cyclic.sh/posts/we-sound-like-idiots-when-we-talk-about-technical-debt) and work is done to adapt the existing patterns to best practices. Processes that used to produce [app/events/login-123123.json](http://code-inline) are refactored to write [app/events/dt=yyyy-mm-dd/login-123123.json](http://code-inline) instead.  
+This is chalked up as a `repaying tech-debt](https://www.cyclic.sh/posts/we-sound-like-idiots-when-we-talk-about-technical-debt) and work is done to adapt the existing patterns to best practices. Processes that used to produce [app/events/login-123123.json` are refactored to write `app/events/dt=yyyy-mm-dd/login-123123.json` instead.  
 ‍_(Actually something like app/events/dt=yyyy-mm-dd/asdfasdfasdf.gz , building crawler schema to make parquet out of messy, dynamic json files is hard and you think you're smart and just enable gzip compression in firehose.)_  
 
-**Cool.** You configure the partition key [dt=yyyy-mm-dd](http://code-inline) in the data catalog, write some documentation about how everyone should use date ranges to make queries efficient. All is well and the data science team can again do linear regressions aka "Machine Learning" to find out which events make the most money or, you know "drive business kpis". 
+**Cool.** You configure the partition key `dt=yyyy-mm-dd` in the data catalog, write some documentation about how everyone should use date ranges to make queries efficient. All is well and the data science team can again do linear regressions aka "Machine Learning" to find out which events make the most money or, you know "drive business kpis". 
 
   
 
@@ -147,7 +148,7 @@ You will archive the logouts after 30 days and delete after a year for complianc
 
 ‍
 
-**Now here is the twist.** Somehow over many meetings, AWS support calls, etc - the story of how prefix filters work has morphed into how everyone wanted it to work.  Checking back in with support - you find out that [app/events/\*/login-\*.json](http://code-inline) and [app/events/\*/logout-\*.json](http://code-inline) is not actually going to magically scan wildcard patterns. It's the flip side of the partitioning coin. **The thing that makes reads and writes so performant makes it impossible to implement wildcards in lifecycle policies.**
+**Now here is the twist.** Somehow over many meetings, AWS support calls, etc - the story of how prefix filters work has morphed into how everyone wanted it to work.  Checking back in with support - you find out that `app/events/\*/login-\*.json` and `app/events/\*/logout-\*.json` is not actually going to magically scan wildcard patterns. It's the flip side of the partitioning coin. **The thing that makes reads and writes so performant makes it impossible to implement wildcards in lifecycle policies.**
 
 How did everyone come to the misunderstanding? (well other than by not reading the docs) Could it be coming across [similar language in docs for a different AWS service](https://docs.aws.amazon.com/mediastore/latest/ug/policies-object-lifecycle-components.html) that does have wildcards? Skimming over [blog posts](http://www.deplication.net/2019/02/aws-tip-wildcard-characters-in-s3.html) on the subject? The [S3 docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/intro-lifecycle-rules.html) not telling you explicitly that you can't do that? _(Comments welcome)_  
 

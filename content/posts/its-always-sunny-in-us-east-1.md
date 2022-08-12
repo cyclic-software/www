@@ -80,7 +80,7 @@ While numerous system failure notifications are signaling that **shit is hitting
 **Disaster** 🔥
 ===============
 
-This calm is short lived, the customers have been notified. They've escalated pissed-ness from [CRITICAL](http://code-inline) to [SHOWSTOPPER](http://code-inline) (from the resting baseline of [URGENT](http://code-inline)). They are asking for an ETA on the resolution and hourly updates on the status.
+This calm is short lived, the customers have been notified. They've escalated pissed-ness from `CRITICAL` to `SHOWSTOPPER` (from the resting baseline of `URGENT`). They are asking for an ETA on the resolution and hourly updates on the status.
 
 Large organizations have _Recovery Time Objective (RTO)_ and _Recovery Point Objective (RPO)_ standards for disaster/outage scenarios. RTO/RPO can be internal standards or sometimes compliance requirements. What RPO/RTO actually means is best illustrated with an example:
 
@@ -101,7 +101,7 @@ The answer is to this question is as usual -
 
 *   "We could try it but we're not sure what would happen, we have to ask the devops lead, but they're out today."
 
-The contributing factors to this lack of confidence come from those same nuances of the [What did we change last?](http://code-inline) question.
+The contributing factors to this lack of confidence come from those same nuances of the `What did we change last?` question.
 
 When the devops lead is finally located. They remember that something has changed since the DR demo. The recovery process has changed and someone has to write an additional script. They explain the functionality briefly but unfortunately they can't do it. They have “a hard stop” and have “to drop” to watch their pets and children on their day off.  They will then hand-off to you.
 
