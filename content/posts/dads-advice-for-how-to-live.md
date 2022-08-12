@@ -1,9 +1,20 @@
 ---
-Name: 'Dad&#39;s Advice for How to Live'
-Slug: 'dads-advice-for-how-to-live'
-Summary: ''
+title: 'Dad&#39;s Advice for How to Live'
+slug: 'dads-advice-for-how-to-live'
+summary: 'I was 16 and about to head off as the youngest member of a month-long wilderness sailing trip. The night before my departure my dad came into my room to check on my packing and inspect my gear. He got serious and gave me the following advice for how to stay alive, keep safe and make the most of my time.'
+colId: 60d0f077b69e2df6b324616c
+id: 620d51d392f146f0cba97c8a
+createdAt: 'Wed Feb 16 2022 19:34:43 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Wed Mar 02 2022 17:54:17 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Wed Mar 02 2022 17:55:32 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Company
+hidden: false
+featured: false
+public: Mon Feb 21 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/621667437c7f8c36dd910873_dads-advice-20220223-v2.png
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/621667437c7f8c36dd910873_dads-advice-20220223-v2.png
 ---
-
 I was 16 and about to head off as the youngest member of a month-long wilderness sailing trip. The night before my departure my dad came into my room to check on my packing and inspect my gear. He got serious and gave me the following advice for how to stay alive, keep safe and make the most of my time.
 
   
@@ -25,7 +36,7 @@ This is meant in all its forms and in its most expansive definition. Showing up 
 
   
 
-So often our minds and our bodies live in two different places. Being present and paying attention to both the internal and external is shockingly hard. The people around us can tell when we are checked in or checked out mentally or emotionally. As a parent I&#39;ve learned that kids are shockingly good at detecting emotional attention (or distraction ;).
+So often our minds and our bodies live in two different places. Being present and paying attention to both the internal and external is shockingly hard. The people around us can tell when we are checked in or checked out mentally or emotionally. As a parent I've learned that kids are shockingly good at detecting emotional attention (or distraction ;).
 
   
 
@@ -33,7 +44,7 @@ So often our minds and our bodies live in two different places. Being present an
 
   
 
-This could mean carrying bags, cooking dinner, starting to sing to keep spirits up, offering help or asking for help. It is about identifying the need and doing it (or helping) regardless of "shoulds" or "jobs". Sometimes what needs to be done is letting someone struggle through a task they are learning. Being with them sometimes is what needs to be done. 
+This could mean carrying bags, cooking dinner, starting to sing to keep spirits up, offering help or asking for help. It is about identifying the need and doing it (or helping) regardless of “shoulds” or “jobs”. Sometimes what needs to be done is letting someone struggle through a task they are learning. Being with them sometimes is what needs to be done. 
 
   
   
@@ -42,7 +53,7 @@ This could mean carrying bags, cooking dinner, starting to sing to keep spirits 
 
   
 
-In the context of the wilderness this meant if I wasn’t comfortable with the risks I needed to speak up. Sometimes keeping the group together is more important than the route that is taken. In those cases agree to keep the group together and disagree on the route. I&#39;ve heard others describe this as &quot;disagree then commit.&quot; This means taking a duty to fully express my opinion when we are discussing our plans. Then fully committing to making whichever plan we pick a success.
+In the context of the wilderness this meant if I wasn’t comfortable with the risks I needed to speak up. Sometimes keeping the group together is more important than the route that is taken. In those cases agree to keep the group together and disagree on the route. I've heard others describe this as "disagree then commit." This means taking a duty to fully express my opinion when we are discussing our plans. Then fully committing to making whichever plan we pick a success.
 
   
   

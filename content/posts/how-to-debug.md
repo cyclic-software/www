@@ -1,9 +1,20 @@
 ---
-Name: 'How to Debug'
-Slug: 'how-to-debug'
-Summary: ''
+title: 'How to Debug'
+slug: 'how-to-debug'
+summary: 'We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? Here are some reminders to myself next time I encounter a baffling debugging session.'
+colId: 60d0f077b69e2df6b324616c
+id: 62a1012c962578a33c7dd82b
+createdAt: 'Wed Jun 08 2022 20:06:04 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Wed Jun 08 2022 20:12:31 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Mon Jun 13 2022 15:03:06 GMT+0000 (Coordinated Universal Time)'
+author: kam-lasater
+category: Engineering
+hidden: false
+featured: false
+public: Thu Jun 09 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62a102a37f0978da6079c6f4_StockSnap_IQ2LORUXQB.jpg
+thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62a102a37f0978da6079c6f4_StockSnap_IQ2LORUXQB.jpg
 ---
-
 We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? If a line of code always breaks then the fix is direct. The system is linear. The action leads to a failure.
 
 ‍
@@ -21,7 +32,7 @@ Choose Learning
 
 ‍
 
-My greatest learnings come from debugging. This bug is an opportunity for me to learn more about this system. If I already knew what was causing the problem then I wouldn&#39;t have a bug. The fact that I have a bug that isn’t obvious to me on how to fix, by definition means I have a chance to learn.
+My greatest learnings come from debugging. This bug is an opportunity for me to learn more about this system. If I already knew what was causing the problem then I wouldn't have a bug. The fact that I have a bug that isn’t obvious to me on how to fix, by definition means I have a chance to learn.
 
 ‍
 
@@ -38,7 +49,7 @@ Chase the Error
 
 ‍
 
-Answer the question: &quot;how do I make this fail every single time?&quot;
+Answer the question: "how do I make this fail every single time?"
 
 ‍
 
@@ -50,7 +61,7 @@ Focus on driving the error rate to 100%. Only then can I be sure any success is 
 
 ‍
 
-Make predictions to test my understanding: &quot;The system will fail, now (pushes button)&quot;
+Make predictions to test my understanding: "The system will fail, now (pushes button)"
 
 ‍
 
@@ -84,7 +95,7 @@ What are the parts of the system that I am sure are working? What if they weren�
 
 ‍
 
-Reminder: It’s not what we don’t know that gets us into trouble, it is what we know for sure that isn&#39;t true
+Reminder: It’s not what we don’t know that gets us into trouble, it is what we know for sure that isn't true
 
 ‍
 
@@ -93,7 +104,7 @@ Devise a Conclusive Measure
 
 ‍
 
-Brainstorm what report, measure, logging or data would definitely tell me what is causing the error. Maybe this won&#39;t tell me "why" the error is happening, but point me closer to &quot;where&quot; the error is being caused.
+Brainstorm what report, measure, logging or data would definitely tell me what is causing the error. Maybe this won't tell me “why” the error is happening, but point me closer to "where" the error is being caused.
 
 ‍
 
@@ -146,7 +157,7 @@ Summary
 
 ‍
 
-Hopefully this helps you debug an issue you are struggling with. If you have other techniques or improvements to these let me know: twitter.com&#x2F;seekayel
+Hopefully this helps you debug an issue you are struggling with. If you have other techniques or improvements to these let me know: twitter.com/seekayel
 
 ‍
 
