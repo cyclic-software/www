@@ -88,11 +88,7 @@ As a developer the complexity to go from your local to the cloud is increasing. 
 
 ### **My Past Experience**
 
-  
-
 At the last company I co-founded, we raised a convertible note and then two priced rounds over the course of 7 years. The deal terms were reasonably standard for VC deals. They included drag along provisions. We were first time founders and I think we did an "ok" job of keeping all of our investors updated on how the company was doing.
-
-  
 
 Despite drag along rights (i.e. company able to "drag" small investors into a transaction if some percentage of shares in the company agree to the transaction), the lawyers involved with our second priced round wanted signed docs from all investors along with consent of spouse docs for any investment held by a person instead of trust or other entity. This meant that we needed to coordinate outreach to roughly ten angel investors, most of whom were non-professional angels. We needed to bring them up to speed on why we were raising, and explain we needed their signatures on documents for the round even though the company had drag along rights. Oh and by the way, we needed signatures from their spouses as well, leading them to have the same conversation with less fidelity with their spouse.
 
