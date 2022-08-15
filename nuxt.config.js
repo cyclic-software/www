@@ -60,6 +60,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -78,13 +79,31 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
+  sitemap: {
+    hostname: 'https://www.cyclic.sh',
+    gzip: true,
+    exclude: [
+      '/authors/eluda',
+      '/authors/kam-lasater',
+      '/authors/mike-korostelev'
+      // '/exclude-two'
+    ],
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
   generate: {
     async routes () {
       const { $content } = require('@nuxt/content')
-      const files = await $content({ deep: true }).only(['path']).fetch()
+      const files = await $content({ deep: true })
+        .where({ path: { $in: ['posts'] } })
+        .only(['path']).fetch()
       return files.map(file => file.path === '/index' ? '/' : file.path)
     }
   }
