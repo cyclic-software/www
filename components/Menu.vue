@@ -29,12 +29,13 @@
 
   export default {
     methods: {
-      handleScroll () {
+      handleScroll() {
         document.getElementById('nav-bar-animation').style['background-color'] = scale(window.pageYOffset);
         // console.log(window.scrollY)
       }
     },
     beforeMount () {
+      this.handleScroll()
       window.addEventListener('scroll', this.handleScroll);
     },
     beforeDestroy() {
