@@ -13,8 +13,9 @@
         <div class="byline">
           <div class="text-block-6">By:</div>
           <div>
-            <a href="#" class="link-3">{{post.author.name}}</a>
-            <a href="#" class="link-2">{{post.author.twitter}}</a>
+            <!-- <a href="#" class="link-3">{{post.author.name}}</a> -->
+            <div class="text-block-6">{{post.author.name}}</div>
+            <a :href="`https://twitter.com/${post.author.twitter}`" class="link-2">{{post.author.twitter}}</a>
           </div>
           <div class="div-block"></div>
           <div class="text-block-5">Posted: {{ formatDate(post.publishedOn) }}</div>
@@ -34,7 +35,7 @@
             </div>
             <div class="html-embed share-button w-embed">
               <a onclick="window.open(this.href, 'linkedin-share','width=530,height=600');return false;"
-    class="share-button" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.cyclic.sh/posts/">
+    class="share-button" target="_blank" :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://www.cyclic.sh/posts/${post.slug}`">
               </a>
               <!--
   Twitter <i class="icon"></i>
@@ -89,10 +90,10 @@
       const post = await $content('posts', params.slug).fetch()
       const author = await $content('authors', post.author).fetch()
 
-      console.log(JSON.stringify(params.slug,null,2))
-      console.log(JSON.stringify(author.slug,null,2))
-
       post.author = {...author, id: post.author}
+
+      // console.log(JSON.stringify(params.slug,null,2))
+      // console.log(JSON.stringify(post.author,null,2))
 
       return { post }
     },
