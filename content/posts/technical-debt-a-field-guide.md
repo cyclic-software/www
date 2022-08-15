@@ -153,8 +153,7 @@ This can be confused with the argument that actions aren't taken because the cos
   
 
 Organizational Risk  
-
-----------------------
+-------------------
 
 Cost:
 
@@ -190,8 +189,7 @@ This can be considered a compound dimension. It could include both the probabili
   
 
 Money Cost  
-
--------------
+----------
 
 Cost:
 
@@ -222,7 +220,6 @@ This is pretty straight forward, everyone in the organization understands dollar
 ‍
 
 Postscript  
-
-=============
+----------
 
 As a business person you will probably be more concerned about Opportunity Cost and Organizational Risk than Runtime Cost or Change Time Cost. What this means for developers is thinking how a particular project you would like prioritized maps to either Opportunity Cost or Organizational Risk is probably a more effective argument than the same for Runtime or Change time costs.
