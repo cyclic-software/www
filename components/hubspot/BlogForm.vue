@@ -19,6 +19,7 @@
       }
     },
     mounted() {
+      console.log(`in HubspotBlogForm create: ${this.create}`)
       if (this.create) {
         this.create = false
         console.log('about to create form')

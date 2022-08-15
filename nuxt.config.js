@@ -56,38 +56,47 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    ['@nuxtjs/axios', {
+      // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+      baseURL: '/',
+    }],
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    ['@nuxtjs/pwa', {
+      // PWA module configuration: https://go.nuxtjs.dev/pwa
+        manifest: {
+          lang: 'en',
+        },
+      },
+    ],
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    ['@nuxtjs/robots', {
+      UserAgent: '*',
+      Disallow: '/',
+      Sitemap: 'https://www.cyclic.sh/sitemap.xml'
+    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
+  // axios: {
+  //   // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+  //   baseURL: '/',
+  // },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'en',
-    },
-  },
+  // // PWA module configuration: https://go.nuxtjs.dev/pwa
+  // pwa: {
+  //   manifest: {
+  //     lang: 'en',
+  //   },
+  // },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
+  // // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
   sitemap: {
     hostname: 'https://www.cyclic.sh',
     gzip: true,
-    exclude: [
-      '/authors/eluda',
-      '/authors/kam-lasater',
-      '/authors/mike-korostelev'
-    ],
     defaults: {
       changefreq: 'daily',
       priority: 1,
