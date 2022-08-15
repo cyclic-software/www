@@ -87,7 +87,6 @@ export default {
       '/authors/eluda',
       '/authors/kam-lasater',
       '/authors/mike-korostelev'
-      // '/exclude-two'
     ],
     defaults: {
       changefreq: 'daily',

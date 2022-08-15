@@ -1,5 +1,5 @@
 <template>
-  <div data-collapse="small" data-animation="default" data-duration="400" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c319c" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
+  <div id="nav-bar-animation" data-collapse="small" data-animation="default" data-duration="400" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c319c" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
     <div class="nav-container w-container">
       <div class="logo-div">
         <nuxt-link to="/" aria-current="page" class="nav-logo w-inline-block w--current">
@@ -21,3 +21,26 @@
     </div>
   </div>
 </template>
+
+<script>
+  import chroma from "chroma-js"
+
+  var scale = chroma.scale(['#0b42d500', '#0b42d5']).domain([0, 400]);
+
+  export default {
+    methods: {
+      handleScroll () {
+        document.getElementById('nav-bar-animation').style['background-color'] = scale(window.pageYOffset);
+        // console.log(window.scrollY)
+      }
+    },
+    beforeMount () {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+  }
+
+</script>
+
