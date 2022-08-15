@@ -12,8 +12,8 @@ category:
 hidden: false
 featured: false
 public: Wed Jul 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: /content/60edf34edabd24d29fa406fd_Screen%20Shot%202021-07-13%20at%204.10.34%20PM.png
-thumbnail: /content/60edf34edabd24d29fa406fd_Screen%20Shot%202021-07-13%20at%204.10.34%20PM.png
+image: /content/60edf34edabd24d29fa406fd.png
+thumbnail: /content/60edf34edabd24d29fa406fd.png
 ---
 If you have used AWS you know how costs can sneak up on you. I have experience getting a heart stopping bill at a previous startup. With Cyclic I've decided I want to start adding controls and alerts from the start.
 

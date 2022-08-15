@@ -12,8 +12,8 @@ category: AWS
 hidden: false
 featured: false
 public: Wed Feb 16 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: /content/620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
-thumbnail: /content/620c1848220192d9c4b7ca2d_Screen%20Shot%202022-02-15%20at%204.16.44%20PM.png
+image: /content/620c1848220192d9c4b7ca2d.png
+thumbnail: /content/620c1848220192d9c4b7ca2d.png
 ---
 _(a short story inspired by true events)_
 
@@ -124,7 +124,7 @@ The 100 thousand dollar button
 
 You go back and press the button in the console. A message comes up asking you to confirm that you are aware that:
 
-![](/content/620d170b68d74639eb4fe9f1_Screen%20Shot%202022-02-16%20at%2010.23.35%20AM.png)
+![](/content/620d170b68d74639eb4fe9f1.png)
 
 But isn't there like a million billion objects?? How about a different storage class?  [Requests & data retrievals](https://aws.amazon.com/s3/pricing/) > Lifecycle Transition requests into (per 1,000 requests). Even though the s3 console does not produce the ominous warning when selecting other storage classes, [transitional request charges apply](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html). **Fuuuuuuuuu  
 ‍**  

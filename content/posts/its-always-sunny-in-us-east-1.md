@@ -12,8 +12,8 @@ category: AWS
 hidden: false
 featured: false
 public: Thu Mar 24 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: /content/623b4df73710503348866d01_Screen%20Shot%202022-03-23%20at%2012.42.07%20PM.png
-thumbnail: /content/623b4df73710503348866d01_Screen%20Shot%202022-03-23%20at%2012.42.07%20PM.png
+image: /content/623b4df73710503348866d01.png
+thumbnail: /content/623b4df73710503348866d01.png
 ---
 _TLDR: The gang experiences an AWS outage; customers report SHOWSTOPPERs; the gang triages the issues and attempts to implement an elaborate disaster recovery plan_
 
