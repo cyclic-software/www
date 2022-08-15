@@ -17,23 +17,15 @@ thumbnail: /content/62cc353558e85c0d7d460334_lambda-pac-man-100x42.png
 ---
 This blog series is an extended version of a talk I gave at [Serverless Days NYC 2022](https://nyc.serverlessdays.io/). The goal is to share ways that a "friend of mine" has failed at serverless to help level up the community. Just as the transportation industry shares accident report analysis with the whole industry to improve safety, we in the software community need to do the same. This is my attempt to do that.  
 
-  
-
 I'm sure there is some product X that has feature Y that fixes issue Z. I either didn't know about it at the time, didn't have the budget, couldn't get it through vendor/security review, product wouldn’t schedule it with our engineers or it didn't comply with enterprise architecture's plan for our software roadmap. As some guy once said: "You go to production with the tools you have, not the tools you want."
 
-  
 
-**Note:**‍
+**Note:**
+‍
+* Names have been changed to protect the innocent and not so innocent.
+* Only egos (and wallets) were harmed by the failures recounted here.
 
-*   Names have been changed to protect the innocent and not so innocent.
-*   Only egos (and wallets) were harmed by the failures recounted here.
-
-  
-
-**Serverless is Stateless**
-===========================
-
-  
+## Serverless is Stateless
 
 All the architecture posts talk about serverless as stateless computing. How serverless is so scalable because it scales out to satisfy increased load, and scales in when not needed. This all makes sense. Lambda is like a big thread pool in the sky. Got it.
 
@@ -47,15 +39,12 @@ I can set some parameters to manage the maximum and minimum number of threads an
 
 lambda be like  
 
-  
 
 Well, almost...
 
-  
 
-### **Use Case**
+### Use Case
 
-  
 
 Background job that receives batches (10's-100's) of PDFs from the client, splits them apart into individual pages (1-1000 per PDF) and does analysis on each page. The arrival rate from the client is lumpy. Primarily US working hours on a 5 min interval. Response is measured in hours. This feels like a perfect HelloWorld use case for StepFunctions doing orchestration and Lambda doing image manipulation.
 
@@ -63,11 +52,11 @@ Background job that receives batches (10's-100's) of PDFs from the client, split
 
 #### Lambda logic:
 
-*   Invoke with S3 path to file
-*   Read 10+mb files from S3 to /tmp
-*   Process file
-*   Write results to S3
-*   Respond with S3 path to transformed file
+* Invoke with S3 path to file
+* Read 10+mb files from S3 to /tmp
+* Process file
+* Write results to S3
+* Respond with S3 path to transformed file
 
 ‍
 
@@ -79,14 +68,12 @@ Everything works great until... inconsistent out of disk space errors, or no spa
 
   
 
-How to Fail
------------
+## How to Fail
+
 
   
 
-### **Problem**
-
-  
+### Problem
 
 Periodically a step function run will fail due to a Lambda invoke failing on no space left on device (or similar depending on os and language). Running the same file in dev/test doesn't reproduce the error. Re-running the step function in production succeeds.
 
@@ -164,48 +151,28 @@ Back to google. Apparently the image manipulation library I am using has a histo
 
 The lambda will then fail when it hits 12k unless it is recycled. The lambda instance can be recycled due to:
 
-*   a code deployment: new code, new instances
-*   update to environment variable: hence why turning on debugging suppressed errors.
-*   scaling down: a burst in load will scale out new instances and then scale back down. Only some instances survive.
+* a code deployment: new code, new instances
+* update to environment variable: hence why turning on debugging suppressed errors.
+* scaling down: a burst in load will scale out new instances and then scale back down. Only some instances survive.
 
   
 
-### **Solution v2**
-
-  
+### Solution v2
 
 Expand the IAM role permissions to allow the lambda permission to update itself (your security team might give you side eye for this, fair warning, send them this blog post, I'm sure it will convince them).
 
-  
-
 After completing the work of an invoke, call the lambda api to set an environment variable to a random value. We dubbed this the "self-immolation" solution.
-
-  
 
 ![](/content/62c868256c23997e757361fa_lambda-self-immolation.png)
 
 This lambda will self destruct in 3... 2... 1...
 
-  
-
 Hacky? Yeah.
 
-  
-
 Chaos for the lambda team? Probably.
-
   
+### YOLO 🤷  
 
 Did it work? Yes.
 
-🤷  
-
-=====
-
-‍
-
 Stay tuned, for more stories of #fail.
-
-  
-
-‍
