@@ -13,8 +13,8 @@
         <div class="byline">
           <div class="text-block-6">By:</div>
           <div>
-            <a href="#" class="link-3">{{post.author}}</a>
-            <a href="#" class="link-2">@author-twitter</a>
+            <a href="#" class="link-3">{{post.author.name}}</a>
+            <a href="#" class="link-2">{{post.author.twitter}}</a>
           </div>
           <div class="div-block"></div>
           <div class="text-block-5">Posted: {{ formatDate(post.publishedOn) }}</div>
@@ -87,8 +87,13 @@
   export default {
     async asyncData({ $content, params }) {
       const post = await $content('posts', params.slug).fetch()
+      const author = await $content('authors', post.author).fetch()
 
       console.log(JSON.stringify(params.slug,null,2))
+      console.log(JSON.stringify(author.slug,null,2))
+
+      post.author = {...author, id: post.author}
+
       return { post }
     },
     methods: {
