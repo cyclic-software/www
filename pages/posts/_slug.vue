@@ -23,9 +23,8 @@
         <div class="div-block-2">
           <a href="#" class="link-block w-inline-block w-clearfix">
             <div class="html-embed share-button w-embed">
-              <a onclick="window.open(this.href, 'twitter-share','width=580,height=296');return false;"
-    class="share-button" target="_blank" href="http://twitter.com/share?url=https://www.cyclic.sh/posts/&text=%20by%20" >
-              </a>
+              <!-- <a class="share-button" target="_blank" href="http://twitter.com/share?url=https://www.cyclic.sh/posts/&text=%20by%20" >
+              </a> -->
               <!--
   Reddit <i class="icon"></i>
   Envelope <i class="icon"></i>
@@ -34,9 +33,8 @@
   -->
             </div>
             <div class="html-embed share-button w-embed">
-              <a onclick="window.open(this.href, 'linkedin-share','width=530,height=600');return false;"
-    class="share-button" target="_blank" :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://www.cyclic.sh/posts/${post.slug}`">
-              </a>
+              <!-- <a class="share-button" target="_blank" :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://www.cyclic.sh/posts/${post.slug}`">
+              </a> -->
               <!--
   Twitter <i class="icon"></i>
   Reddit <i class="icon"></i>
