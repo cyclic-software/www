@@ -12,8 +12,8 @@ category: Engineering
 hidden: false
 featured: false
 public: Mon Mar 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
+image: /content/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
+thumbnail: /content/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
 ---
 > I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](/posts/we-sound-like-idiots-when-we-talk-about-technical-debt) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say "technical debt".
 
@@ -153,8 +153,7 @@ This can be confused with the argument that actions aren't taken because the cos
   
 
 Organizational Risk  
-
-----------------------
+-------------------
 
 Cost:
 
@@ -190,8 +189,7 @@ This can be considered a compound dimension. It could include both the probabili
   
 
 Money Cost  
-
--------------
+----------
 
 Cost:
 
@@ -222,7 +220,6 @@ This is pretty straight forward, everyone in the organization understands dollar
 ‍
 
 Postscript  
-
-=============
+----------
 
 As a business person you will probably be more concerned about Opportunity Cost and Organizational Risk than Runtime Cost or Change Time Cost. What this means for developers is thinking how a particular project you would like prioritized maps to either Opportunity Cost or Organizational Risk is probably a more effective argument than the same for Runtime or Change time costs.

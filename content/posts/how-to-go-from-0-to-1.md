@@ -12,8 +12,8 @@ category: Product
 hidden: false
 featured: false
 public: Wed Feb 02 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61f97760d364f7b2a2eef506_braden-collum-9HI8UJMSdZA-unsplash.jpg
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61f97760d364f7b2a2eef506_braden-collum-9HI8UJMSdZA-unsplash.jpg
+image: /content/61f97760d364f7b2a2eef506_braden-collum-9HI8UJMSdZA-unsplash.jpg
+thumbnail: /content/61f97760d364f7b2a2eef506_braden-collum-9HI8UJMSdZA-unsplash.jpg
 ---
 As a repeat founder I get the question from entrepreneurs and others: "how do you get your first users?"
 

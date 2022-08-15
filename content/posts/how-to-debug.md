@@ -12,8 +12,8 @@ category: Engineering
 hidden: false
 featured: false
 public: Thu Jun 09 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62a102a37f0978da6079c6f4_StockSnap_IQ2LORUXQB.jpg
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62a102a37f0978da6079c6f4_StockSnap_IQ2LORUXQB.jpg
+image: /content/62a102a37f0978da6079c6f4_StockSnap_IQ2LORUXQB.jpg
+thumbnail: /content/62a102a37f0978da6079c6f4_StockSnap_IQ2LORUXQB.jpg
 ---
 We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? If a line of code always breaks then the fix is direct. The system is linear. The action leads to a failure.
 

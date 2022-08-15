@@ -12,8 +12,8 @@ category: Company
 hidden: false
 featured: false
 public: Tue Apr 19 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: 'https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png'
-thumbnail: 'https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625d6d59bf162325b02db845_VC-triangle.png'
+image: '/content/625d6d59bf162325b02db845_VC-triangle.png'
+thumbnail: '/content/625d6d59bf162325b02db845_VC-triangle.png'
 ---
 (photo credit [Charles Cushing](https://wonderstorms.substack.com/p/how-can-we-fix-the-market-for-solutions))  
   
@@ -42,7 +42,7 @@ They are composed of Limited Partners (LPs) and a General Partner (GP). The GP i
 
 ‍
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625dce5fe5890977b45753cb_vc-structure-angellist.png)
+![](/content/625dce5fe5890977b45753cb_vc-structure-angellist.png)
 
 VC Fund Structure (photo credit [Angel List](https://learn.angellist.com/articles/venture-capital-fund#toc_8_H2))
 
@@ -151,7 +151,7 @@ This would put the VC roughly at the median returns for all VC firms. You can re
 
 ‍
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/625dd037e0bac549cf18edf9_venture-returns-sethlevine.png)
+![](/content/625dd037e0bac549cf18edf9_venture-returns-sethlevine.png)
 
 Distribution of Returns on VC Investments (credit: [Seth Levine](https://www.sethlevine.com/archives/2014/08/venture-outcomes-are-even-more-skewed-than-you-think.html))
 

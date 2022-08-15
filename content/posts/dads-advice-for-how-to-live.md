@@ -12,8 +12,8 @@ category: Company
 hidden: false
 featured: false
 public: Mon Feb 21 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/621667437c7f8c36dd910873_dads-advice-20220223-v2.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/621667437c7f8c36dd910873_dads-advice-20220223-v2.png
+image: /content/621667437c7f8c36dd910873_dads-advice-20220223-v2.png
+thumbnail: /content/621667437c7f8c36dd910873_dads-advice-20220223-v2.png
 ---
 I was 16 and about to head off as the youngest member of a month-long wilderness sailing trip. The night before my departure my dad came into my room to check on my packing and inspect my gear. He got serious and gave me the following advice for how to stay alive, keep safe and make the most of my time.
 

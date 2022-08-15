@@ -12,8 +12,8 @@ category: Company
 hidden: false
 featured: false
 public: Wed Jul 28 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61034d0ea889c569b1d6a4fa_money_hero.jpg
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6103420a99290433365bd13b_AngelList_Venture.svg
+image: /content/61034d0ea889c569b1d6a4fa_money_hero.jpg
+thumbnail: /content/6103420a99290433365bd13b_AngelList_Venture.svg
 ---
 I recently raised a friends and family round for Cyclic and used an AngelList Roll Up Vehicle (RUV). More on the round later. Multiple founder friends have asked about my experience and why I used an RUV. Here is the Why, What and How:
 
@@ -28,7 +28,7 @@ I recently raised a friends and family round for Cyclic and used an AngelList Ro
 
 ‍  
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61034dd64ba727b1f9120503_angellist_ruv.png)
+![](/content/61034dd64ba727b1f9120503_angellist_ruv.png)
 
 Visual depiction of how investments are rolled up onto your captable
 
@@ -80,16 +80,15 @@ And one or more of these to apply:
   
 
 As a developer the complexity to go from your local to the cloud is increasing. This is driving cloud platform selection into a pre-design time decision. We are dedicated to solving both of these problems for developers. Our goal is to let you push to deploy while making cloud environment selection a runtime decision. Sign up for the [Cyclic Private Beta](https://app.cyclic.sh/api/login)  
-‍[  
-](http://<a href="https://console.cyclic-app.com/api/login" class="button white helloworld-cta w-button">Deploy on Cyclic🚀</a>)
+‍
+<a href="https://deploy.cyclic.sh/cyclic-software/starter-express-api" target="_blank">
+    <img src="https://deploy.cyclic.sh/button.svg" />
+</a>
+
 
 ### **My Past Experience**
 
-  
-
 At the last company I co-founded, we raised a convertible note and then two priced rounds over the course of 7 years. The deal terms were reasonably standard for VC deals. They included drag along provisions. We were first time founders and I think we did an "ok" job of keeping all of our investors updated on how the company was doing.
-
-  
 
 Despite drag along rights (i.e. company able to "drag" small investors into a transaction if some percentage of shares in the company agree to the transaction), the lawyers involved with our second priced round wanted signed docs from all investors along with consent of spouse docs for any investment held by a person instead of trust or other entity. This meant that we needed to coordinate outreach to roughly ten angel investors, most of whom were non-professional angels. We needed to bring them up to speed on why we were raising, and explain we needed their signatures on documents for the round even though the company had drag along rights. Oh and by the way, we needed signatures from their spouses as well, leading them to have the same conversation with less fidelity with their spouse.
 
