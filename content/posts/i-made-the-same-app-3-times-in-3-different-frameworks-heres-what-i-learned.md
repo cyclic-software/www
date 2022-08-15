@@ -12,8 +12,8 @@ category: Engineering
 hidden: false
 featured: false
 public: Wed Jul 27 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6ceda1cb8bad773baa71e_top-wanted-frameworks.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6ceda1cb8bad773baa71e_top-wanted-frameworks.png
+image: /content/62d6ceda1cb8bad773baa71e_top-wanted-frameworks.png
+thumbnail: /content/62d6ceda1cb8bad773baa71e_top-wanted-frameworks.png
 ---
 Angular, Svelte, Solid, React, Vue — there are so many frameworks out there. And you probably dealt with [the "framework dilemma"](https://www.reddit.com/r/webdev/comments/ux2ov8/how_do_you_guys_determine_which_frameworks_to_use/) at some point in your career.
 
@@ -21,7 +21,7 @@ Some of us pursue React, the [most popular framework](https://insights.stackover
 
 Next up is Vue, and its second position in the popularity spectrum. Some people prefer Vue for the fact that it’s so lightweight and yet so scalable, and others love its simplicity and similarity to other frameworks.
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6d1173d02703377a9cef3_top-liked-frameworks.png)
+![](/content/62d6d1173d02703377a9cef3_top-liked-frameworks.png)
 
 Let’s take a leap of faith and change our selection criteria from popularity to likability.
 
@@ -55,7 +55,7 @@ A developer would normally spend hours and hours setting-up a database like this
 
 Luckily for us, we get a free instance of the AWS S3 Storage when we [use Cyclic](https://app.cyclic.sh/). No credit card is required.
 
-[![https://deploy.cyclic.app/button.svg](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62d6cf389192e7f60cbda7b0_button.svg)](https://deploy.cyclic.sh/ithink-corp/api)
+[![https://deploy.cyclic.app/button.svg](/content/62d6cf389192e7f60cbda7b0_button.svg)](https://deploy.cyclic.sh/ithink-corp/api)
 
 ‍
 
@@ -207,7 +207,7 @@ It’s time to delve into our second-most element: App.vue. It’s the top-most 
 
 Whatever you put inside this file will go straight into `<div id="app"></div>`. Remember it? We mentioned it in the last paragraph of the section that covered `index.html`. See how it all fits together? Magical!
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62e02ea8cb6f0b99cc5ba095_hierarchy.png)
+![](/content/62e02ea8cb6f0b99cc5ba095_hierarchy.png)
 
 And with all that said, let’s implement our overly-simplistic header:
 
@@ -398,7 +398,7 @@ The above code won’t work, because it’s the same as saying null.focus().
 
 So, how do we tell Vue to only focus the textarea once it’s available? The answer lies in [**lifecycle hooks**](https://vuejs.org/guide/essentials/lifecycle.html).
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62e02ecd52420b19a8e6d301_lifecycle.png)
+![](/content/62e02ecd52420b19a8e6d301_lifecycle.png)
 
 We want to utilize the "mounted" hook, which is called right after the component is added to the DOM. That’s when the <textarea> is shown, meaning that it’s not null:
 
@@ -498,7 +498,7 @@ This is where we’ll start working with the stores/ folder. So let’s create t
 
 ‍
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62e02ef269d01d02c0b009f1_pinia.png)
+![](/content/62e02ef269d01d02c0b009f1_pinia.png)
 
 ‍
 

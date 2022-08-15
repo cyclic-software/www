@@ -12,8 +12,8 @@ category: AWS
 hidden: false
 featured: false
 public: Thu Mar 24 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b489a8dc82ac713edaba0_Screen%20Shot%202022-03-23%20at%2012.19.24%20PM.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b489a8dc82ac713edaba0_Screen%20Shot%202022-03-23%20at%2012.19.24%20PM.png
+image: /content/623b489a8dc82ac713edaba0_Screen%20Shot%202022-03-23%20at%2012.19.24%20PM.png
+thumbnail: /content/623b489a8dc82ac713edaba0_Screen%20Shot%202022-03-23%20at%2012.19.24%20PM.png
 ---
 _(Part 1 of a series)_
 

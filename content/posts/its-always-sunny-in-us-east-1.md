@@ -12,8 +12,8 @@ category: AWS
 hidden: false
 featured: false
 public: Thu Mar 24 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b4df73710503348866d01_Screen%20Shot%202022-03-23%20at%2012.42.07%20PM.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b4df73710503348866d01_Screen%20Shot%202022-03-23%20at%2012.42.07%20PM.png
+image: /content/623b4df73710503348866d01_Screen%20Shot%202022-03-23%20at%2012.42.07%20PM.png
+thumbnail: /content/623b4df73710503348866d01_Screen%20Shot%202022-03-23%20at%2012.42.07%20PM.png
 ---
 _TLDR: The gang experiences an AWS outage; customers report SHOWSTOPPERs; the gang triages the issues and attempts to implement an elaborate disaster recovery plan_
 
@@ -21,7 +21,7 @@ It is 11:03 AM on a Thursday, US-EAST-1, Pennsylvania. You've been triple booked
 
 A message from a developer:
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b2bac320ad6b1f2c29c14_nb5Pt8iNWIeakqh64ZRzCdyvwQJoh5dqa3DLMw3VuRharHKff1CBXKBUKWtXIIxBIXOcFpaMW6VXC-vq9STLnr4_H1O16CU8P2N6jGPXMaiaa7njhzSLGvsqih8h-zkX0OIMDeLs.png)
+![](/content/623b2bac320ad6b1f2c29c14_nb5Pt8iNWIeakqh64ZRzCdyvwQJoh5dqa3DLMw3VuRharHKff1CBXKBUKWtXIIxBIXOcFpaMW6VXC-vq9STLnr4_H1O16CU8P2N6jGPXMaiaa7njhzSLGvsqih8h-zkX0OIMDeLs.png)
 
 *   "dude you free? we're having failures in prod."
 
@@ -132,7 +132,7 @@ There are multiple [very well documented strategies](https://aws.amazon.com/blog
 *   Active-Active - multiple independent, regionally redundant and interoperable systems functioning concurrently and as mutual back-ups without needing to be manually switched over
 *   Not Active-Active - dusty, manually run Rube Goldberg machines designed for impressive demos and can only be operated by one dude who happens to be on vacation
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/623b37698dc82a7ba4eda92f_BG_oAOIfVIFsvST2nqtZfBEzcpuAP6QipgKosUKp9EBYAQ_wUUDSvoXNoe1l7XW_4KIC_TZ9BTjVxmHgimWyA5p9Vp4_QGzRjIXuXmA3vId-F5K2OQlyPpEkdkS9b9ZFmzfEcOak.png)
+![](/content/623b37698dc82a7ba4eda92f_BG_oAOIfVIFsvST2nqtZfBEzcpuAP6QipgKosUKp9EBYAQ_wUUDSvoXNoe1l7XW_4KIC_TZ9BTjVxmHgimWyA5p9Vp4_QGzRjIXuXmA3vId-F5K2OQlyPpEkdkS9b9ZFmzfEcOak.png)
 
 please share all of your great successes with manually orchestrating active-passive/pilot light recoveries in the comments
 

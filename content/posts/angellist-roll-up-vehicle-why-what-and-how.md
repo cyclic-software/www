@@ -12,8 +12,8 @@ category: Company
 hidden: false
 featured: false
 public: Wed Jul 28 2021 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61034d0ea889c569b1d6a4fa_money_hero.jpg
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6103420a99290433365bd13b_AngelList_Venture.svg
+image: /content/61034d0ea889c569b1d6a4fa_money_hero.jpg
+thumbnail: /content/6103420a99290433365bd13b_AngelList_Venture.svg
 ---
 I recently raised a friends and family round for Cyclic and used an AngelList Roll Up Vehicle (RUV). More on the round later. Multiple founder friends have asked about my experience and why I used an RUV. Here is the Why, What and How:
 
@@ -28,7 +28,7 @@ I recently raised a friends and family round for Cyclic and used an AngelList Ro
 
 ‍  
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/61034dd64ba727b1f9120503_angellist_ruv.png)
+![](/content/61034dd64ba727b1f9120503_angellist_ruv.png)
 
 Visual depiction of how investments are rolled up onto your captable
 

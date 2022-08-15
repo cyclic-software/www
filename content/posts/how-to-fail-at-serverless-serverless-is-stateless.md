@@ -12,8 +12,8 @@ category: AWS
 hidden: false
 featured: false
 public: Sat Jul 09 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62cc3520191c331e4494f0c7_lambda-pac-man-1600x840.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62cc353558e85c0d7d460334_lambda-pac-man-100x42.png
+image: /content/62cc3520191c331e4494f0c7_lambda-pac-man-1600x840.png
+thumbnail: /content/62cc353558e85c0d7d460334_lambda-pac-man-100x42.png
 ---
 This blog series is an extended version of a talk I gave at [Serverless Days NYC 2022](https://nyc.serverlessdays.io/). The goal is to share ways that a "friend of mine" has failed at serverless to help level up the community. Just as the transportation industry shares accident report analysis with the whole industry to improve safety, we in the software community need to do the same. This is my attempt to do that.  
 
@@ -43,7 +43,7 @@ I can set some parameters to manage the maximum and minimum number of threads an
 
 ‍
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62c86713fed3b513be122ce8_i-dont-remember.gif)
+![](/content/62c86713fed3b513be122ce8_i-dont-remember.gif)
 
 lambda be like  
 
@@ -92,7 +92,7 @@ Periodically a step function run will fail due to a Lambda invoke failing on no 
 
 ‍
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62c866a26c2399e457733a1f_lambda-pac-man.png)
+![](/content/62c866a26c2399e457733a1f_lambda-pac-man.png)
 
 lambda pac man loves eating data and leaving it in /tmp
 
@@ -118,7 +118,7 @@ Nothing quite like shipping code copy-pasted from Stack Overflow. Nice.
 
 Success! Party!  
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62c867cdc310db14bbac6405_leo-congrats.gif)
+![](/content/62c867cdc310db14bbac6405_leo-congrats.gif)
 
 Stack Overflow code FTW!
 
@@ -182,7 +182,7 @@ After completing the work of an invoke, call the lambda api to set an environmen
 
   
 
-![](https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/62c868256c23997e757361fa_lambda-self-immolation.png)
+![](/content/62c868256c23997e757361fa_lambda-self-immolation.png)
 
 This lambda will self destruct in 3... 2... 1...
 

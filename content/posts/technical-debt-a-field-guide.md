@@ -12,8 +12,8 @@ category: Engineering
 hidden: false
 featured: false
 public: Mon Mar 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-image: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
-thumbnail: https://uploads-ssl.webflow.com/60d0f077b69e2d8f2d246168/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
+image: /content/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
+thumbnail: /content/6228d1d8265deba6e5d6c63f_tech-debt-as-seen-by-20220309.png
 ---
 > I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](/posts/we-sound-like-idiots-when-we-talk-about-technical-debt) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say "technical debt".
 
