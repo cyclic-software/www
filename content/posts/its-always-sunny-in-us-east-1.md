@@ -129,8 +129,8 @@ Everyone congratulates everyone on their hard work. The tech team sees a bright 
 
 There are multiple [very well documented strategies](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/) and architecture patterns to achieving recovery objectives. While there is a number of these, they can be reduced to just two:
 
-*   Active-Active - multiple independent, regionally redundant and interoperable systems functioning concurrently and as mutual back-ups without needing to be manually switched over
-*   Not Active-Active - dusty, manually run Rube Goldberg machines designed for impressive demos and can only be operated by one dude who happens to be on vacation
+* Active-Active - multiple independent, regionally redundant and interoperable systems functioning concurrently and as mutual back-ups without needing to be manually switched over
+* Not Active-Active - dusty, manually run Rube Goldberg machines designed for impressive demos and can only be operated by one dude who happens to be on vacation
 
 ![](/content/623b37698dc82a7ba4eda92f_BG_oAOIfVIFsvST2nqtZfBEzcpuAP6QipgKosUKp9EBYAQ_wUUDSvoXNoe1l7XW_4KIC_TZ9BTjVxmHgimWyA5p9Vp4_QGzRjIXuXmA3vId-F5K2OQlyPpEkdkS9b9ZFmzfEcOak.png)
 
