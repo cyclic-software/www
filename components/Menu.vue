@@ -31,7 +31,6 @@
     methods: {
       handleScroll() {
         document.getElementById('nav-bar-animation').style['background-color'] = scale(window.pageYOffset);
-        // console.log(window.scrollY)
       }
     },
     beforeMount () {
