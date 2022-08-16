@@ -15,7 +15,9 @@ export default {
         {hid: 'canonical', rel: 'canonical', href: `https://www.cyclic.sh${this.$route.path}` }
       ],
       meta: [
-        {hid: 'og:url', name: 'og:url', content: `https://www.cyclic.sh${this.$route.path}`},
+        {hid: 'og:url', property: 'og:url', content: `https://www.cyclic.sh${this.$route.path}`},
+        {hid: 'twitter:url', name: 'twitter:url', content: `https://www.cyclic.sh${this.$route.path}`},
+        {hid: 'twitter:domain', name: 'twitter:domain', content: 'https://www.cyclic.sh'},
       ]
     }
   }

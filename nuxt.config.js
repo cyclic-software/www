@@ -15,18 +15,20 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'og:locale', content: 'en_US'},
-      { hid: 'og:type', name: 'og:type', content: 'website'},
-      { name: 'og:site_name', content: 'Cyclic.sh'},
       { name: 'format-detection', content: 'telephone=no' },
 
+      { hid: 'og:locale', property: 'og:locale', content: 'en_US'},
+      { hid: 'og:type', property: 'og:type', content: 'website'},
+      { name: 'og:site_name', property: 'og:site_name', content: 'Cyclic.sh'},
+
       {hid: 'title', name: 'title', content: title},
-      {hid: 'og:title', name: 'og:title', content: title},
+      {hid: 'og:title', property: 'og:title', content: title},
       {hid: 'twitter:title', name: 'twitter:title', content: title},
 
-      {hid: 'og:description', name: 'og:description', content: description},
+      {hid: 'og:description', property: 'og:description', content: description},
       {hid: 'twitter:description', name: 'twitter:description', content: description},
       {hid: 'description', name: 'description', content: description}
+
     ],
     link: [{ hid: 'icon', rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 
