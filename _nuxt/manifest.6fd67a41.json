@@ -1,0 +1,10 @@
+{
+  "name": "www.cyclic.sh",
+  "short_name": "www.cyclic.sh",
+  "description": "## Build Setup",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
