@@ -1,5 +1,5 @@
 ---
-title: 'I Made The Same App 3 Times in 3 Different Frameworks… Here's What I Learned.'
+title: "I Made The Same App 3 Times in 3 Different Frameworks... Here's What I Learned."
 slug: 'i-made-the-same-app-3-times-in-3-different-frameworks-heres-what-i-learned'
 summary: 'Angular, Svelte, Solid, React, Vue - there are so many frameworks out there. And you probably dealt with the "framework dilemma" at some point in your career. Here is my experience with building the same app on 3 different frameworks.'
 colId: 60d0f077b69e2df6b324616c
@@ -190,7 +190,8 @@ As you can see, we're using the `@apply` directive to _apply_ the `bg-stone-900`
 
 ```css
 body {
-    background: #1c1917;}
+    background: #1c1917;
+}
 ```
 ‍
 
@@ -504,7 +505,7 @@ When the user opens the NewModal component, we know that their objective is to i
 
 Let's implement this feature! Counter-intuitively, we can't do this:
 
-‍```html
+```html
 <script setup>
     import { ref } from 'vue'
     const textarea = ref(null)
@@ -523,7 +524,7 @@ So, how do we tell Vue to only focus the textarea once it's available? The answe
 
 ![](/content/62e02ecd52420b19a8e6d301_lifecycle.png)
 
-We want to utilize the "mounted" hook, which is called right after the component is added to the DOM. That's when the <textarea> is shown, meaning that it's not null:
+We want to utilize the "mounted" hook, which is called right after the component is added to the DOM. That's when the `<textarea>` is shown, meaning that it's not null:
 
 ```javascript
 import { onMounted } from 'vue'
@@ -899,10 +900,10 @@ Let's move into ThoughtList, which will load data from the server in order to di
 
 ```html
 <script setup>
-import getThoughtsStore from "../stores/thoughts";
-const { load: loadItems } = getThoughtsStore();
+  import getThoughtsStore from "../stores/thoughts";
+  const { load: loadItems } = getThoughtsStore();
 
-await loadItems();
+  await loadItems();
 </script>
 ```
 
@@ -914,7 +915,7 @@ const { items } = getThoughtsStore(); // this is WRONG
 
 But counter-intuitively, this breaks the reactivity of the variable. Here's the right way of doing this:
 
-```
+```javascript
 import { storeToRefs } from "pinia";
 const { items } = storeToRefs(getThoughtsStore()); // CORRECT :)
 ```
@@ -923,12 +924,12 @@ Perfect!
 
 Notice how in our previous code example, we're using a top-level await to load the data in ThoughtList:
 
-‍```
+‍```html
 <script setup>
-import getThoughtsStore from "@/stores/thoughts";
-const { load: loadItems } = getThoughtsStore();
+  import getThoughtsStore from '@/stores/thoughts';
+  const { load: loadItems } = getThoughtsStore();
 
-await loadItems();
+  await loadItems();
 </script>
 ```
 
@@ -938,11 +939,11 @@ If we leave it like this, we're gonna get the following error: (check your devto
 
 Component `<Anonymous>`: setup function returned a promise, but no `<Suspense>` boundary was found in the parent component tree. A component with async setup() must be nested in a `<Suspense>` in order to be rendered.
 
-It's telling us that we should use a component called `<Suspense>` as a parent to the [`async component`](https://vuejs.org/guide/components/async.html). [`<Suspense>` (see: https://vuejs.org/guide/built-ins/suspense.html) is a built-in Vue component, so we can use it anywhere in our app. Let's use it in App.vue:
+It's telling us that we should use a component called `<Suspense>` as a parent to the [`async component`](https://vuejs.org/guide/components/async.html). [`<Suspense>`](https://vuejs.org/guide/built-ins/suspense.html) is a built-in Vue component, so we can use it anywhere in our app. Let's use it in App.vue:
 
 ```html
 <script setup>
-import ThoughtList from "./components/ThoughtList.vue";
+  import ThoughtList from "./components/ThoughtList.vue";
 </script>
 
 <template>
