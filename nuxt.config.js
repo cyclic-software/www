@@ -28,7 +28,7 @@ export default {
       {hid: 'twitter:description', name: 'twitter:description', content: description},
       {hid: 'description', name: 'description', content: description}
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ hid: 'icon', rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 
     script: [
       {

@@ -109,7 +109,9 @@
 
           {hid: 'og:description', name: 'og:description', content: this.post.summary },
           {hid: 'twitter:description', name: 'twitter:description', content: this.post.summary },
-          {hid: 'description', name: 'description', content: this.post.summary }
+          {hid: 'description', name: 'description', content: this.post.summary },
+
+          {hid: 'og:image', name: 'og:image', content: this.post.image },
         ]
       }
     },
