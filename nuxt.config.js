@@ -89,7 +89,8 @@ export default {
     '@nuxtjs/sitemap',
     ['@nuxtjs/robots', {
       UserAgent: '*',
-      Allow: '/',
+      Allow: '*',
+      Disallow: '',
       Sitemap: 'https://www-builder.cyclic.sh/sitemap.xml'
     }]
   ],
