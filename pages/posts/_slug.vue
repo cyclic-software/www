@@ -23,7 +23,7 @@
         <div class="div-block-2">
           <a href="#" class="link-block w-inline-block w-clearfix">
             <div class="html-embed share-button w-embed">
-              <!-- <a class="share-button" target="_blank" href="http://twitter.com/share?url=https://www-builder.cyclic.sh/posts/&text=%20by%20" >
+              <!-- <a class="share-button" target="_blank" href="http://twitter.com/share?url=https://www.cyclic.sh/posts/&text=%20by%20" >
               </a> -->
               <!--
   Reddit <i class="icon"></i>
@@ -33,7 +33,7 @@
   -->
             </div>
             <div class="html-embed share-button w-embed">
-              <!-- <a class="share-button" target="_blank" :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://www-builder.cyclic.sh/posts/${post.slug}`">
+              <!-- <a class="share-button" target="_blank" :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://www.cyclic.sh/posts/${post.slug}`">
               </a> -->
               <!--
   Twitter <i class="icon"></i>
@@ -111,8 +111,8 @@
           {hid: 'twitter:description', name: 'twitter:description', content: this.post.summary },
           {hid: 'description', name: 'description', content: this.post.summary },
 
-          {hid: 'og:image', property: 'og:image', content: `https://www-builder.cyclic.sh${this.post.image}` },
-          {hid: 'twitter:image', name: 'twitter:image', content: `https://www-builder.cyclic.sh${this.post.image}` },
+          {hid: 'og:image', property: 'og:image', content: `https://www.cyclic.sh${this.post.image}` },
+          {hid: 'twitter:image', name: 'twitter:image', content: `https://www.cyclic.sh${this.post.image}` },
           {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 
           {hid: 'twitter:label1', name: 'twitter:label1', content: 'Written by' },

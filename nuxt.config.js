@@ -29,8 +29,8 @@ export default {
       {hid: 'twitter:description', name: 'twitter:description', content: description},
       {hid: 'description', name: 'description', content: description},
 
-      {hid: 'og:image', property: 'og:image', content: `https://www-builder.cyclic.sh/summary_large_image.png` },
-      {hid: 'twitter:image', name: 'twitter:image', content: `https://www-builder.cyclic.sh/summary_large_image.png` },
+      {hid: 'og:image', property: 'og:image', content: `https://www.cyclic.sh/summary_large_image.png` },
+      {hid: 'twitter:image', name: 'twitter:image', content: `https://www.cyclic.sh/summary_large_image.png` },
       {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 
     ],
@@ -111,7 +111,7 @@ export default {
   content: {},
 
   sitemap: {
-    hostname: 'https://www-builder.cyclic.sh',
+    hostname: 'https://www.cyclic.sh',
     gzip: true,
     defaults: {
       changefreq: 'daily',
