@@ -506,6 +506,7 @@ When the user opens the NewModal component, we know that their objective is to i
 Let's implement this feature! Counter-intuitively, we can't do this:
 
 ```html
+<h1>blah blah</h1>
 <script setup>
     import { ref } from 'vue'
     const textarea = ref(null)
@@ -516,7 +517,7 @@ Let's implement this feature! Counter-intuitively, we can't do this:
 <template>
     <textarea ref="textarea"></textarea>
 </template>
-‍```
+```
 
 The above code won't work, because it's the same as saying null.focus().
 
@@ -924,9 +925,9 @@ Perfect!
 
 Notice how in our previous code example, we're using a top-level await to load the data in ThoughtList:
 
-‍```html
+```html
 <script setup>
-  import getThoughtsStore from '@/stores/thoughts';
+  import getThoughtsStore from "@/stores/thoughts";
   const { load: loadItems } = getThoughtsStore();
 
   await loadItems();
