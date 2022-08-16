@@ -1,3 +1,6 @@
+const title = "Cyclic.sh - Fullstack Javascript Apps - Deploy and Host in Seconds"
+const description = "Fullstack Javascript Apps: Front-end, Backend, Database, Scheduled tasks. All running with zero-config."
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -8,11 +11,22 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { name: 'og:locale', content: 'en_US'},
+      { hid: 'og:type', name: 'og:type', content: 'website'},
+      { name: 'og:site_name', content: 'Cyclic.sh'},
       { name: 'format-detection', content: 'telephone=no' },
+
+      {hid: 'title', name: 'title', content: title},
+      {hid: 'og:title', name: 'og:title', content: title},
+      {hid: 'twitter:title', name: 'twitter:title', content: title},
+
+      {hid: 'og:description', name: 'og:description', content: description},
+      {hid: 'twitter:description', name: 'twitter:description', content: description},
+      {hid: 'description', name: 'description', content: description}
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 

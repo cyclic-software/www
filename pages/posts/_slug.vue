@@ -84,6 +84,35 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: `${this.post.title} | cyclic.sh`,
+        meta: [
+          {hid: 'og:type', name: 'og:type', content: 'article'},
+
+          {hid: 'article:published_time', name: 'article:published_time', content: this.post.publishedOn},
+          // {hid: 'article:modified_time', name: 'article:modified_time', content: 'article'},
+          // {hid: 'article:expiration_time', name: 'article:expiration_time', content: 'article'},
+          {hid: 'article:author', name: 'article:author', content: this.post.author.name},
+          {hid: 'article:section', name: 'article:section', content: this.post.category},
+          // {hid: 'article:tag', name: 'article:tag', content: 'article'},
+          // article:published_time - datetime - When the article was first published.
+          // article:modified_time - datetime - When the article was last changed.
+          // article:expiration_time - datetime - When the article is out of date after.
+          // article:author - profile array - Writers of the article.
+          // article:section - string - A high-level section name. E.g. Technology
+          // article:tag - string array - Tag words associated with this article.
+
+          {hid: 'title', name: 'title', content: `${this.post.title} | cyclic.sh`},
+          {hid: 'og:title', name: 'og:title', content: `${this.post.title} | cyclic.sh`},
+          {hid: 'twitter:title', name: 'twitter:title', content: `${this.post.title} | cyclic.sh`},
+
+          {hid: 'og:description', name: 'og:description', content: this.post.summary },
+          {hid: 'twitter:description', name: 'twitter:description', content: this.post.summary },
+          {hid: 'description', name: 'description', content: this.post.summary }
+        ]
+      }
+    },
     async asyncData({ $content, params }) {
       const post = await $content('posts', params.slug).fetch()
       const author = await $content('authors', post.author).fetch()

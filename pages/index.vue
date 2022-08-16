@@ -119,8 +119,12 @@
 <script>
 export default {
   name: "Homepage",
-  head: {
-    title: "Cyclic.sh - APIs in seconds - Deploy and host in seconds"
-  },
+  head() {
+    return {
+      meta: [
+        {hid: "google-site-verification", name: "google-site-verification", content: "lmJwyO7CCfgF7HJ3lEAOAkbHn9JGkXKOa2o_iJsMAnQ"}
+      ]
+    }
+  }
 }
 </script>
