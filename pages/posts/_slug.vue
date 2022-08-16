@@ -114,6 +114,11 @@
           {hid: 'og:image', property: 'og:image', content: this.post.image },
           {hid: 'twitter:image', name: 'twitter:image', content: this.post.image },
           {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+
+          {hid: 'twitter:label1', name: 'twitter:label1', content: 'Written by' },
+          {hid: 'twitter:data1', name: 'twitter:data1', content: this.post.author.name },
+          {hid: 'twitter:label2', name: 'twitter:label2', content: 'Published On' },
+          {hid: 'twitter:data2', name: 'twitter:data2', content: this.post.publishedOn },
         ]
       }
     },
