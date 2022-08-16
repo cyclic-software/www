@@ -27,7 +27,11 @@ export default {
 
       {hid: 'og:description', property: 'og:description', content: description},
       {hid: 'twitter:description', name: 'twitter:description', content: description},
-      {hid: 'description', name: 'description', content: description}
+      {hid: 'description', name: 'description', content: description},
+
+      {hid: 'og:image', property: 'og:image', content: `https://www-builder.cyclic.sh/summary_large_image.png` },
+      {hid: 'twitter:image', name: 'twitter:image', content: `https://www-builder.cyclic.sh/summary_large_image.png` },
+      {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 
     ],
     link: [{ hid: 'icon', rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
