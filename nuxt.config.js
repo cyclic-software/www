@@ -19,7 +19,7 @@ export default {
 
       { hid: 'og:locale', property: 'og:locale', content: 'en_US'},
       { hid: 'og:type', property: 'og:type', content: 'website'},
-      { name: 'og:site_name', property: 'og:site_name', content: 'Cyclic.sh'},
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Cyclic.sh'},
 
       {hid: 'title', name: 'title', content: title},
       {hid: 'og:title', property: 'og:title', content: title},

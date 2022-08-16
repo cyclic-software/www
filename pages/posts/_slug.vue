@@ -111,8 +111,8 @@
           {hid: 'twitter:description', name: 'twitter:description', content: this.post.summary },
           {hid: 'description', name: 'description', content: this.post.summary },
 
-          {hid: 'og:image', property: 'og:image', content: this.post.image },
-          {hid: 'twitter:image', name: 'twitter:image', content: this.post.image },
+          {hid: 'og:image', property: 'og:image', content: `https://www.cyclic.sh${this.post.image}` },
+          {hid: 'twitter:image', name: 'twitter:image', content: `https://www.cyclic.sh${this.post.image}` },
           {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 
           {hid: 'twitter:label1', name: 'twitter:label1', content: 'Written by' },
