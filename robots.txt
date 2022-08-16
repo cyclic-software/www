@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: 
+Allow: /
 Sitemap: https://www-builder.cyclic.sh/sitemap.xml
