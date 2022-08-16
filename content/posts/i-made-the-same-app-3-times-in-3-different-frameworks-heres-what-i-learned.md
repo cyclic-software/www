@@ -29,9 +29,9 @@ Svelte is the most loved framework, and for good reason. Svelte places strong em
 
 I always wondered how different it would be to build the **same app** with the same features, but in **3 different frameworks**. For each one, I want to answer the following questions:
 
-*   How many errors will I encounter?
-*   How much code is there to write?
-*   How long does it take to build?
+- How many errors will I encounter?
+- How much code is there to write?
+- How long does it take to build?
 
 We’ll be exploring each of the aforementioned frameworks in its own piece, as part of a four-article series.
 
@@ -76,15 +76,15 @@ Luckily, Vue does all the work for us when we run the following command:
 
 It will ask you a bunch of questions so you can create the optimal setup that best fits your project. So go ahead, and accept/reject the following questions:
 
-*   Project name: **ithink**
-*   TypeScript? **No**
-*   JSX Support? **No**
-*   Vue Router? **No**
-*   Pinia? **Yes**
-*   Vitest? **No**
-*   Cypress? **No**
-*   ESLint? **No**
-*   Prettier? **No**
+- Project name: **ithink**
+- TypeScript? **No**
+- JSX Support? **No**
+- Vue Router? **No**
+- Pinia? **Yes**
+- Vitest? **No**
+- Cypress? **No**
+- ESLint? **No**
+- Prettier? **No**
 
 We’ll see what each of these means throughout this article.
 
@@ -251,9 +251,9 @@ So let me introduce… **Single File Components!** (SFCs)
 
 As you can see, SFCs split a component’s design into three logical parts, and they can come in any order:
 
-*   **JavaScript logic:** (`<script setup>`) The brains of your component. Handles state, events, networking, etc…
-*   **HTML document:** (`<template>`) The semantics of your component.
-*   **CSS declarations:** (`<style scoped>`) The style of your component.
+- **JavaScript logic:** (`<script setup>`) The brains of your component. Handles state, events, networking, etc…
+- **HTML document:** (`<template>`) The semantics of your component.
+- **CSS declarations:** (`<style scoped>`) The style of your component.
 
 Pretty neat, huh?
 
@@ -306,11 +306,43 @@ Create a new file at `src/components/NewModal.vue`. Fill it up with the usual SF
 
 Let’s get the markup out of the way: (remember to use [the right semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics))
 
-‍
+```html
+<template>
+  <div>
+    <dialog open>
+      <main>
+        <form method="dialog">
+            <label for="content">Content</label>
+            <textarea id="content"></textarea>
+
+            <button value="cancel">Cancel</button>
+            <button value="default">Post</button>
+        </form>
+      </main>
+      <footer>
+        <p>Whatever you write will become public.</p>
+      </footer>
+    </dialog>
+  </div>
+</template>
+```
 
 Markup alone is not very useful without the JavaScript logic. Let’s attach event handlers to our button elements:
 
-‍
+```html
+<script setup>
+    function close() {
+        // TODO
+    }
+</script>
+
+<template>
+    ...
+    <button value="cancel" @click="close">Cancel</button>
+    <button value="default">Post</button>
+    ...
+</template>
+```
 
 ‍
 
@@ -319,8 +351,21 @@ Okay, this is great! But notice that when you click on "post", the page reloads.
 Normally, we’d change that by calling `e.preventDefault`. But Vue focuses so much on simplicity that there’s a super-convenient shortcut:
 
 ‍
+```html
+<script setup>
+    function submit() {
+        // TODO
+    }
+</script>
 
-‍
+<template>
+    ...
+    <form method="dialog" @submit.prevent="submit">
+        ...
+    </form>
+    ...
+</template>
+```
 
 Would you look at that! We’re able to shorten e.preventDefault() to @submit.prevent. Now, we don’t even need to consider [the Event object](https://developer.mozilla.org/en-US/docs/Web/API/Event) anymore!
 
@@ -334,29 +379,49 @@ Let’s create a variable that tracks when our component is sending/receiving da
 
 What is a **reactive variable**?
 
-*   Consider the following scenario:
+- Consider the following scenario:
 
-‍  
+```javascript
+let a = 4
+document.getElementById('container').textContent = a // <p id="container">4</p>
+```
 
-*   Say that we updated the value in a to 5. One thing we know for sure is that the `<p>` element won’t change. It will always say "4", unless we explicitly change it.
-*   Well, we don’t have to! With [reactivity](https://vuejs.org/guide/essentials/reactivity-fundamentals.html), the DOM is automatically updated once the related variable is mutated.
-*   In Vue, reactive variables are created with ref, a function that takes any value and makes it reactive.
+- Say that we updated the value in a to 5. One thing we know for sure is that the `<p>` element won’t change. It will always say "4", unless we explicitly change it.
+- Well, we don’t have to! With [reactivity](https://vuejs.org/guide/essentials/reactivity-fundamentals.html), the DOM is automatically updated once the related variable is mutated.
+- In Vue, reactive variables are created with ref, a function that takes any value and makes it reactive.
 
-‍  
+```javascript
+‍import { ref } from 'vue'
+const a = ref(4)
+a.value = 5
+```
 
-*   Notice the addition of .value. It’s important, because if we did a = 5 we’d completely taking away the reactivity of the variable.
-*   Also, it doesn’t matter that a is a constant variable, because we’re only assigning to its .value property.
-*   Now look at the HTML:
+- Notice the addition of .value. It’s important, because if we did a = 5 we’d completely taking away the reactivity of the variable.
+- Also, it doesn’t matter that a is a constant variable, because we’re only assigning to its .value property.
+- Now look at the HTML:
 
-‍  
+```html
+‍<template>
+    <p>{{ a }}</p>
+</template>
+```
 
-*   Vue will replace {{ a }} with its value: a.value, and the double-brackets are _not_ optional.
-
-‍
+- Vue will replace {{ a }} with its value: a.value, and the double-brackets are _not_ optional.
 
 Okay, let’s head right back into the submit logic. We’ll create a new isLoading reactive variable, which will indicate when our app is in-contact with the server.
 
-‍
+```javascript
+import { ref } from 'vue'
+
+const isLoading = ref(false)
+async function submit() {
+    isLoading.value = true
+
+    // TODO: send data to server
+
+    isLoading.value = false
+}
+```
 
 ### Getting user input from form elements
 
@@ -364,35 +429,94 @@ Our "new modal" component can’t exist without the `<textarea>` form element. B
 
 In a nutshell, Vue has a shortcut way of dealing with form elements. And it’s quite convenient!
 
-‍
-
 As you can see, message is a reactive variable, so whenever the user types something into textarea, message will be instantly updated. That’s the magic of v-model!
 
 Hey! You may be getting tired from typing .value all the time. Thankfully, Vue has plans to change that.
 
 ### Making the modal inert while loading
 
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="QWmNogz" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/QWmNogz">
+  vue-4</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 When our app is loading (which is tracked by the isLoading variable that we saw in a previous section), we should disable interaction with it.
 
 This requires us getting access to a DOM element in JavaScript. The pure way of doing that is with body.querySelector(), but this approach is non-reactive. Plus, there’s a simpler alternative offered by Vue:
 
-‍
+‍```javascript
+<script setup>
+    import { ref } from 'vue'
+    const container = ref(null)
+</script>
+
+<template>
+    <div ref="container"></div>
+</template>
+```
 
 These are called [template refs](https://vuejs.org/guide/essentials/template-refs.html)! And although it says null, Vue will fill container with the DOM element <div ref="container"> when it’s created. It will also go back to null when it disappears.
 
 With this in hand, we can make our component inert while it’s loading:
 
+‍```vuejs
+<script setup>
+    import { ref } from 'vue'
+    const container = ref(null)
+
+    async function submit() {
+        isLoading.value = true;
+        dialog.value.setAttribute("inert", true);
+
+        // TODO: send data to server
+
+        dialog.value.removeAttribute("inert");
+        isLoading.value = false;
+    }
+</script>
+
+<template>
+    <div ref="container"></div>
+</template>
+
+<style scoped>
+dialog[inert] {
+  @apply filter brightness-90;
+}
+</style>
+```
+
 Hey! While there’s a simpler way to achieve the above (`<div :inert="isLoading">`), I just had to create an opportunity to teach you about template refs, which are a pretty important feature in VueJS.
 
 ### Automatically focusing the <textarea>
+
+
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="ExEKMQK" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/ExEKMQK">
+  vue-5</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 When the user opens the NewModal component, we know that their objective is to input into the `<textarea>`. So, wouldn’t it be convenient to save them the hassle of moving the cursor towards that form element?
 
 Let’s implement this feature! Counter-intuitively, we can’t do this:
 
-‍
+‍```vuejs
+<script setup>
+    import { ref } from 'vue'
+    const textarea = ref(null)
 
-‍
+    textarea.value.focus() // this is WRONG!
+</script>
+
+<template>
+    <textarea ref="textarea"></textarea>
+</template>
+‍```
 
 The above code won’t work, because it’s the same as saying null.focus().
 
@@ -402,13 +526,25 @@ So, how do we tell Vue to only focus the textarea once it’s available? The ans
 
 We want to utilize the "mounted" hook, which is called right after the component is added to the DOM. That’s when the <textarea> is shown, meaning that it’s not null:
 
-‍
+```javascript
+import { onMounted } from 'vue'
 
-‍
+onMounted(() => {
+    textarea.value.focus() // CORRECT! :)
+})
+```
 
 There are many more lifecycle hooks, and we usually use most of them. However, in our application, the "mounted" hook was more than enough. But just keep one thing in mind, you’ll see this concept again and again in every framework.
 
 ### Closing the modal when clicked outside
+
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="yLKOmKV" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/yLKOmKV">
+  vue-6</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 It’s a pretty common behavior in every modal to close it once the user clicks outside.
 
@@ -420,7 +556,24 @@ Our interest lies in the \[onClickOutside event\]([https://vueuse.org/core/onCli
 
 After [setting up @vueuse](https://vueuse.org/guide/), let’s add it to our component:
 
-‍
+```javascript
+<script setup>
+    import { ref } from 'vue'
+    import { onClickOutside } from '@vueuse/core'
+
+    // Close dialog when clicked outside
+    const container = ref(null)
+    onClickOutside(container, close)
+
+    function close() {
+        // TODO
+    }
+</script>
+
+<template>
+    <dialog ref="container">...</dialog>
+</template>
+```
 
 Fascinating how in one line of code, we’re able to implement such a seemingly complicating feature!
 
@@ -430,13 +583,21 @@ The modal has no way of telling whether its opened or closed, as only its parent
 
 But there’s one thing we know to be true, and it’s that the modal knows _when_ it should be closed:
 
-*   user clicked outside,
-*   user submitted,
-*   user canceled.
+- user clicked outside,
+- user submitted,
+- user canceled.
 
 Therefore, we need a way for the child — NewModal — to communicate with its parent, App. And the solution is quite simple: [Events](https://vuejs.org/guide/components/events.html)!
 
 With Vue, it’s super-simple to define our own events, while dictating when they should be emitted, using _our_ own rules.
+
+```javascript
+const emit = defineEmits(['close'])
+
+function close() {
+    emit('close')
+}
+```
 
 Henceforth, whenever the modal needs to be closed, we emit the event "close" up into its parent.
 
@@ -446,7 +607,37 @@ Hey! Notice how we didn’t import defineEmits. That’s because it’s a compil
 
 Up until now, you couldn’t see NewModal, because it hasn’t been added to App.vue yet. So, let’s change that:
 
+```javascript
+<script setup>
+    import NewModal from './components/NewModal.vue'
+</script>
+
+<template>
+    <NewModal />
+</template>
+```
+
 With the code snippet above, the modal will always be open. So, let’s add some toggle magic:
+
+```javascript
+<script setup>
+    import NewModal from './components/NewModal.vue'
+    import { ref } from 'vue'
+
+    const isModalOpen = ref(false)
+
+    function openModal() {
+        isModalOpen.value = true
+    }
+    function closeModal() {
+        isModalOpen.value = false
+    }
+</script>
+
+<template>
+    <NewModal v-if="isModalOpen" />
+</template>
+```
 
 We took advantage of `v-if` to show/hide the modal.
 
@@ -454,18 +645,77 @@ And now we’re done with the NewModal component. Pretty simple, huh?
 
 ### Creating a dynamic list of DOM elements
 
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="jOzqgpr" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/jOzqgpr">
+  vue-7</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
 It’s time to delve into a new component, ThoughtList. This one will display a list of items, and we don’t know the length of that list before-hand.
 
 Let’s create a new file at `src/ThoughtList.vue`. In Vue, here’s how we repeat an element:
+
+```html
+<script setup>
+    import { ref } from 'vue'
+    const items = ref(['hello', 'world!'])
+</script>
+
+<template>
+    <ul>
+        <li v-for="item in items">
+            <p>{{ item }}</p>
+        </li>
+    </ul>
+</template>
+```
 
 Surprisingly simple! It might be useful to split this component into two: `ThoughtList.vue` and `ThoughtItem.vue`.
 
 So, we’ll change `src/ThoughtList.vue` to:
 
+```html
+<script setup>
+    import { ref } from 'vue'
+    import ThoughtItem from './ThoughtItem.vue'
+
+    const items = ref(['hello', 'world!'])
+</script>
+
+<template>
+    <ul>
+        <li v-for="item in items">
+            <ThoughtItem />
+        </li>
+    </ul>
+</template>
+```
+
 and the new `ThoughtItem.vue` will contain:
+
+```html
+<template>
+  <p>
+    Hello world!
+  </p>
+</template>
+```
 
 And of course, don’t forget to add it to `App.vue`:
 
+```html
+<script setup>
+import ThoughtList from "./components/ThoughtList.vue";
+</script>
+
+<template>
+  <main>
+    <ThoughtList />
+  </main>
+</template>
+```
 ### Passing text from parent to child
 
 We’ve seen how to trigger events from child to parent, and now, it’s time to _flip_ that formula around.
@@ -478,11 +728,33 @@ The solution to this problem is called **Props** (properties). They’re like HT
 
 So let’s make a little change to `ThoughtList.vue`:
 
+```html
+<template>
+    <ul>
+        <li v-for="item in items">
+            <ThoughtItem :message="item" />
+        </li>
+    </ul>
+</template>
+```
+
 Hey! It’s important to add the colon : before the prop name. It tells Vue to treat the content between "..." as JavaScript code (the item variable), instead of a String (the text "item").
 
 And now, we can access the text message in `ThoughtItem` effortlessly:
 
-‍
+```html
+<script setup>
+defineProps({
+  message: String, // `message` has type String.
+});
+</script>
+
+<template>
+  <p>
+    {{ message }}
+  </p>
+</template>
+```
 
 Hey! Just like defineEmits, defineProps is a compiler macro and doesn’t require importing.
 
@@ -504,17 +776,93 @@ This is where we’ll start working with the stores/ folder. So let’s create t
 
 A store should always resemble this boilerplate, so use it as a starting-point:
 
-‍
+```javascript
+// thoughts.js
+import { defineStore } from 'pinia'
+
+export default defineStore('thoughts', {
+    state: () => ({
+        // Reactive variables here
+    }),
+
+    actions: {
+        // Methods here
+    }
+})
+```
 
 We created a store with the "thoughts" ID name.
 
 But _what_ is a store, you may ask? It’s simply a collection of reactive variables and methods that act on them:
 
-‍
+```javascript
+// thoughts.js
+import { defineStore } from 'pinia'
+
+export default defineStore('thoughts', {
+    state() {
+        return {
+            reactive_var: 1,
+            another_reactive_var: 'awesome!',
+            again_another_reactive_var: [0, 2, 4]
+        }
+    },
+
+    actions: {
+        my_method() {
+            // We can access all reactive variables here using `this.`
+            // NOTE: we don't have to use `.value` here!
+            this.reactive_var++
+            return this.another_reactive_var * 4.5
+        }
+    }
+})
+```
+
 
 Notice how we don’t have to use .value here. Awesome!
 
 Now, let’s create an actually useful store:
+
+```javascript
+// thoughts.js
+import { defineStore } from "pinia";
+
+export default defineStore("thoughts", {
+  state() {
+    return {
+      items: [],
+    };
+  },
+  actions: {
+    async load() {
+      // Fetch data from the Cyclic API
+      const res = await fetch("https://ithink-api.cyclic.app/", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const items = await res.json();
+
+      this.items = items;
+    },
+    async add(message) {
+      // Post data to the Cyclic API
+      await fetch("https://ithink-api.cyclic.app/", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          text: message,
+        }),
+      });
+
+      this.items.unshift(message);
+    },
+  },
+});
+```
 
 All we did here is declare an items reactive variable that will contain our most important data. We then defined the load method that should be called to load data from the server and assign it to items.
 
@@ -522,9 +870,27 @@ We also defined the add action, which asynchronously sends data to the server an
 
 ### Using real data in our application
 
+‍<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="BarKXOy" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/BarKXOy">
+  It's Twitter, but you can't delete.</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 Let’s connect our thoughts store with our application! We’ll start with NewModal:
 
-‍
+```html
+<script setup>
+    import getThoughtsStore from '../stores/thoughts.js'
+
+    const { add: addItem } = getThoughtsStore()
+
+    async function submit() {
+        await addItem(message.value)
+        close()
+    }
+</script>‍
+```
 
 We extracted the add function from the store by calling it as a function. Here, we called it getThoughtsStore, which is a convention when using Pinia.
 
@@ -532,15 +898,40 @@ Would you believe me if I told you that was it? Well, I never lie.
 
 Let’s move into ThoughtList, which will load data from the server in order to display it.
 
+```html
+<script setup>
+import getThoughtsStore from "../stores/thoughts";
+const { load: loadItems } = getThoughtsStore();
+
+await loadItems();
+</script>
+```
+
 And we also have to access the items reactive variable straight from the store. So let’s follow the same pattern here:
 
+```javascript
+const { items } = getThoughtsStore(); // this is WRONG
+```
+
 But counter-intuitively, this breaks the reactivity of the variable. Here’s the right way of doing this:
+
+```
+import { storeToRefs } from "pinia";
+const { items } = storeToRefs(getThoughtsStore()); // CORRECT :)
+```
 
 Perfect!
 
 Notice how in our previous code example, we’re using a top-level await to load the data in ThoughtList:
 
-‍
+‍```
+<script setup>
+import getThoughtsStore from "@/stores/thoughts";
+const { load: loadItems } = getThoughtsStore();
+
+await loadItems();
+</script>
+```
 
 Components with [top-level awaits](https://stackoverflow.com/questions/46515764/how-can-i-use-async-await-at-the-top-level) are called **async components**.
 
@@ -550,21 +941,60 @@ Component `<Anonymous>`: setup function returned a promise, but no `<Suspense>` 
 
 It’s telling us that we should use a component called `<Suspense>` as a parent to the `async component](https://vuejs.org/guide/components/async.html). [<Suspense>` (see: https://vuejs.org/guide/built-ins/suspense.html) is a built-in Vue component, so we can use it anywhere in our app. Let’s use it in App.vue:
 
+```
+<script setup>
+import ThoughtList from "./components/ThoughtList.vue";
+</script>
+
+<template>
+  <main>
+    <Suspense>
+      <ThoughtList />
+    </Suspense>
+  </main>
+</template>
+```
+
 It now works _perfectly_! Yay!
 
 ### Adding a loading state to our list
+
+<p class="codepen" data-height="600" data-default-tab="js,result" data-slug-hash="gOerqjg" data-preview="true" data-user="eludapens" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/gOerqjg">
+  It's Twitter, but you can't delete.</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Currently, our ThoughtList component will be invisible until data is loaded. That’s inconvenient, and makes a great example of [bad UX](https://pencilandpaper.io/articles/ux-pattern-analysis-loading-feedback/).
 
 Thankfully, since we’re already using `<Suspense>`, we can directly tell it to show something else while its child is loading. Add this to App.vue:
 
-‍
+```html
+<Suspense>
+    <ThoughtList />
 
-‍
+    <template #fallback>
+        <p>Loading...</p>
+    </template>
+</Suspense>
+```
 
 As you can see, anything within `<template #fallback>` will be shown when ThoughtList is loading. Awesome!
 
 But we can get even awesome-r than that. Let’s show a [loading skeleton](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)!
+
+```html
+<Suspense>
+    <ThoughtList />
+
+    <template #fallback>
+        <div class="flex flex-wrap gap-2">
+            <div v-for="i in 15" class="h-16 w-48 animate-pulse rounded bg-stone-50/10"></div>
+        </div>
+    </template>
+</Suspense>
+```
 
 You should know that i in 15 is a shortcut that Vue offers us to loop over the range \[1, …, 15\]. Super!
 
@@ -574,15 +1004,15 @@ And with that done, our app is now **complete!** Now that wasn’t so hard, was 
 
 We covered a handy amount of Vue features:
 
-*   [Suspense](https://vuejs.org/guide/built-ins/suspense.html) and [async components](https://vuejs.org/guide/components/async.html),
-*   [the @vueuse library](https://vueuse.org/functions),
-*   [reactive variables](https://vuejs.org/guide/essentials/reactivity-fundamentals.html),
-*   [skeleton loading](https://vuejs.org/guide/built-ins/suspense.html),
-*   [custom events](https://vuejs.org/guide/components/events.html),
-*   [lifecycle hooks](https://vuejs.org/guide/essentials/lifecycle.html),
-*   [template refs](https://vuejs.org/guide/essentials/template-refs.html),
-*   [v-for](https://vuejs.org/guide/essentials/list.html) and [v-if](https://vuejs.org/guide/essentials/conditional.html),
-*   [pinia](https://pinia.vuejs.org/).
+- [Suspense](https://vuejs.org/guide/built-ins/suspense.html) and [async components](https://vuejs.org/guide/components/async.html)
+- [The @vueuse library](https://vueuse.org/functions)
+- [Reactive variables](https://vuejs.org/guide/essentials/reactivity-fundamentals.html)
+- [Skeleton loading](https://vuejs.org/guide/built-ins/suspense.html)
+- [Custom events](https://vuejs.org/guide/components/events.html)
+- [Lifecycle hooks](https://vuejs.org/guide/essentials/lifecycle.html)
+- [Template refs](https://vuejs.org/guide/essentials/template-refs.html)
+- [v-for](https://vuejs.org/guide/essentials/list.html) and [v-if](https://vuejs.org/guide/essentials/conditional.html)
+- [Pinia](https://pinia.vuejs.org/)
 
 Some of these are common to all web frameworks, while some aren’t. We’ll compare Vue with the rest of its peers at the end of this series, so I suggest you keep on reading! Trust me, there’s a whole lot more to learn! 😄
 
