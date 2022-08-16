@@ -25,7 +25,7 @@
             <nuxt-link to="/pricing" class="footer-link">Pricing</nuxt-link>
             <nuxt-link to="/blog" class="footer-link">Blog</nuxt-link>
             <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="footer-link">Documentation</a>
-            <a href="release-notes.html" class="footer-link">Release Notes</a>
+            <!-- <a href="release-notes" class="footer-link">Release Notes</a> -->
             <nuxt-link to="/terms-of-service" class="footer-link">Terms of Service</nuxt-link>
           </div>
         </div>

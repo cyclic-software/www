@@ -11,7 +11,7 @@
           <nuxt-link to="/pricing" class="nav-link w-nav-link">Pricing</nuxt-link>
           <nuxt-link to="/blog" class="nav-link w-nav-link">Blog</nuxt-link>
           <a href="https://docs.cyclic.sh/docs/intro" target="_blank" class="nav-link w-nav-link">Docs</a>
-          <a href="release-notes.html" target="_blank" class="nav-link w-nav-link">Release Notes</a>
+          <!-- <a href="release-notes" target="_blank" class="nav-link w-nav-link">Release Notes</a> -->
         </div>
         <div class="nav-cta-button-container">
           <a href="https://app.cyclic.sh/api/login" data-w-id="bd6f9588-23b4-f07d-9f3a-b6bd5f4c31b7" class="nav-link filled w-nav-link">Sign In</a>

@@ -90,7 +90,7 @@ export default {
     ['@nuxtjs/robots', {
       UserAgent: '*',
       Disallow: '/',
-      Sitemap: 'https://www.cyclic.sh/sitemap.xml'
+      Sitemap: 'https://www-builder.cyclic.sh/sitemap.xml'
     }]
   ],
 
@@ -111,7 +111,7 @@ export default {
   content: {},
 
   sitemap: {
-    hostname: 'https://www.cyclic.sh',
+    hostname: 'https://www-builder.cyclic.sh',
     gzip: true,
     defaults: {
       changefreq: 'daily',
