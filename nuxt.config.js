@@ -55,6 +55,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "@static/css/titillium.css",
     "@static/css/normalize.css",
     "@static/css/webflow.css",
     "@static/css/www-cyclic.webflow.css"
