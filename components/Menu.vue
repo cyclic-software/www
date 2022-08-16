@@ -25,7 +25,7 @@
 <script>
   import chroma from "chroma-js"
 
-  var scale = chroma.scale(['#0b42d500', '#0b42d5']).domain([0, 650]);
+  var scale = chroma.scale(['#0f2c4100', '#0b42d5']).domain([0, 550]);
 
   export default {
     methods: {
