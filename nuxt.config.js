@@ -87,12 +87,6 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/sitemap',
-    ['@nuxtjs/robots', {
-      UserAgent: '*',
-      Allow: '*',
-      Disallow: '',
-      Sitemap: 'https://www-builder.cyclic.sh/sitemap.xml'
-    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
