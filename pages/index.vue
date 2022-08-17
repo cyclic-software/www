@@ -12,7 +12,7 @@
               Full stack apps
               </h1>
             <p class="paragraph">
-               Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.
+               Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our GitHub app and you will have a fully featured software pipeline. See how quick and easy hosting can be.
             </p>
             <div class="spacer _16"></div>
           </div>
@@ -33,7 +33,7 @@
       No Sleep
     </template>
     <template v-slot:text>
-      Cyclic Apps are available immediately on demand. Even on free tier. Cold starts so fast they feel instant. Say goodbye to waiting 30 seconds for containers to be provisioned and started.
+      Cyclic Apps are available immediately on demand. Even on free tier. Say hello to fast apps. Say goodbye to waiting 30 seconds for containers to be provisioned and started.
     </template>
   </SectionHero>
 
@@ -43,10 +43,10 @@
       <img src="/images/6.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
-      Integrated Data Storage
+      Integrated Database and Storage
     </template>
     <template v-slot:text>
-      Enable integrated S3 storage or a NoSQL DynamoDB table. Use industry leading data storage directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
+      Enable integrated NoSQL DynamoDB database table and S3 object storage. Use industry leading database and storage directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
     </template>
   </SectionHero>
 
@@ -56,10 +56,10 @@
       <img src="/images/4.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
-      Streaming Logs
+      Streaming Structured Logs
     </template>
     <template v-slot:text>
-      See your logs structured by requests to your server.
+      Cyclic brings together application and API logs to give you a single, clear and organized view of everything that happened in your application between request and response.
     </template>
   </SectionHero>
 
@@ -80,10 +80,10 @@
       <img src="/images/1.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
-      Scheduled API Calls
+      Serverless Cron
     </template>
     <template v-slot:text>
-      The power of cron with no servers, no daylight savings time hassles. Trigger HTTP calls to the second, adjusted for daylight savings time. Pick the route, payload and schedule that works for you.
+      The power of cron with no servers. Single second resolution triggering. Automatically adjusted for your timezone and daylight savings. Pick the route, payload and schedule that works for you.
     </template>
   </SectionHero>
 
@@ -99,7 +99,7 @@
     </template>
   </SectionHero>
 
-
+<!--
   <SectionHero left>
     <template v-slot:img>
       <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
@@ -123,7 +123,7 @@
       Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.
     </template>
   </SectionHero>
-
+ -->
 
 
   <SectionHero left>
@@ -133,9 +133,9 @@
     <template v-slot:title>
       See the product
     </template>
-    <template v-slot:text>
+    <!-- <template v-slot:text>
       Watch a 105 second demo highlighting some of the key features of the Cyclic platform.
-    </template>
+    </template> -->
   </SectionHero>
 
 
