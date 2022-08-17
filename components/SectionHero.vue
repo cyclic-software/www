@@ -3,9 +3,7 @@
     <div class="container w-container">
       <div class="_12-columns tablet-center">
         <div v-if="left" class="column desk-6">
-          <slot name="img">
-            <h1>🤩</h1>
-          </slot>
+          <slot name="img"></slot>
         </div>
         <div class="column desk-1 tab-0"></div>
         <div class="column desk-5">

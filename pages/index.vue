@@ -3,24 +3,31 @@
   <img src="/images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
 
 
-  <SectionHero>
-    <template v-slot:img>
-      <img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Screen shot of GitHub repo" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"/>
-    </template>
-    <template v-slot:title>
-      <h1 class="header-medium">Full stack apps</h1>
-    </template>
-    <template v-slot:text>
-      Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.
-      <div class="spacer _16"></div>
-      <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
-    </template>
-  </SectionHero>
+  <div class="section hero home wf-section">
+    <div class="container w-container">
+      <div class="_12-columns tablet-center">
+        <div class="column desk-6 tab-8 mob-12">
+          <div>
+            <h1 class="header-large">
+              Full stack apps
+              </h1>
+            <p class="paragraph">
+               Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.
+            </p>
+            <div class="spacer _16"></div>
+          </div>
+          <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
+        </div>
+        <div class="column desk-1 tab-0"></div>
+        <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" xstyle="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
+      </div>
+    </div>
+  </div>
 
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/3.svg" alt="Abstract tech icon illustration" width="525" class="center-image"/>
+      <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       No Sleep
@@ -33,7 +40,7 @@
   <SectionHero>
     <template v-slot:img>
       <i class="fa-solid fa-database"></i>
-      <img src="/images/9.svg" alt="Abstract tech icon illustration" width="503" class="center-image"/>
+      <img src="/images/9.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Integrated Data Storage
@@ -44,10 +51,69 @@
   </SectionHero>
 
 
+Push to Deploy
+Connect your GitHub repo. We will build, deploy and manage the hosting.
+
+Custom Domains
+Configure a custom domain (SSL certs included) with two DNS entries.
+
+Multi-regional
+Host in as many regions as you want. Serverless means horizontal. (paid)
+
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/3.svg" alt="Abstract tech icon illustration" width="525" class="center-image"/>
+      <img src="/images/logs_streaming.png" alt="Streaming logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Streaming Logs
+    </template>
+    <template v-slot:text>
+      See your logs structured by requests to your server.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <img src="/images/logs_structured.png" alt="Structured logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Log Search
+    </template>
+    <template v-slot:text>
+      Stop jumping between windows and scrolling through logs. Full text search your app logs with zero config, on paid plans.
+    </template>
+  </SectionHero>
+
+  <SectionHero left>
+    <template v-slot:img>
+      <img src="/images/logs_streaming.png" alt="Streaming logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Scheduled API Calls
+    </template>
+    <template v-slot:text>
+      The power of cron with no servers, no daylight savings time hassles. Trigger HTTP calls to the second, adjusted for daylight savings time. Pick the route, payload and schedule that works for you.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <img src="/images/logs_structured.png" alt="Structured logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Instant Environment Updates
+    </template>
+    <template v-slot:text>
+      Update environment variables without having to restart servers. Environment configuration changes are applied in real time to application instances with zero-downtime.
+    </template>
+  </SectionHero>
+
+
+
+  <SectionHero left>
+    <template v-slot:img>
+      <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Features not Infrastructure
@@ -59,7 +125,7 @@
 
   <SectionHero>
     <template v-slot:img>
-      <img src="/images/9.svg" alt="Abstract tech icon illustration" width="503" class="center-image"/>
+      <img src="/images/9.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Serverless without the headache
@@ -73,25 +139,25 @@
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/logs_streaming.png" alt="Streaming logs product screenshot" width="525" class="center-image"/>
+      <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
-      Streaming Logs
+      Features not Infrastructure
     </template>
     <template v-slot:text>
-      See your logs structured by requests to your server.
+      Focus on business logic. Use familiar web frameworks. No cryptic CloudFormation errors. No mysterious API Gateway errors. No YAML parse errors. No hunting for CloudWatch log groups. No wasted time.
     </template>
   </SectionHero>
 
   <SectionHero>
     <template v-slot:img>
-      <img src="/images/logs_structured.png" alt="Structured logs product screenshot" width="525" class="center-image"/>
+      <img src="/images/9.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
-      Log Search
+      Serverless without the headache
     </template>
     <template v-slot:text>
-      Full text search your logs out of the box, with zero config (paid)
+      Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.
     </template>
   </SectionHero>
 
@@ -101,12 +167,13 @@
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </template>
     <template v-slot:title>
-      Not sure? Watch a demo!
+      Want to see the product?
     </template>
-    <!-- <template v-slot:text>
-      Full text search your logs out of the box, with zero config (paid)
-    </template> -->
+    <template v-slot:text>
+      Watch a 105 second demo highlighting some of the key features of the Cyclic platform.
+    </template>
   </SectionHero>
+
 
 
 
