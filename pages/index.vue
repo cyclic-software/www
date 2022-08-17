@@ -43,6 +43,9 @@
       </div>
     </div>
   </div>
+
+  <CompanyStats />
+
   <!-- <div class="container-3 testimonial-block">
     <div class="h2-container testimonial-header">
       <h2 class="h2 dark">Testimonials that speak for themselves<br></h2>
@@ -117,14 +120,37 @@
 </template>
 
 <script>
+import CompanyStats from "../components/CompanyStats.vue";
 export default {
-  name: "Homepage",
-  head() {
-    return {
-      meta: [
-        {hid: "google-site-verification", name: "google-site-verification", content: "lmJwyO7CCfgF7HJ3lEAOAkbHn9JGkXKOa2o_iJsMAnQ"}
-      ]
-    }
-  }
+    name: "Homepage",
+    head() {
+        return {
+            meta: [
+                { hid: "google-site-verification", name: "google-site-verification", content: "lmJwyO7CCfgF7HJ3lEAOAkbHn9JGkXKOa2o_iJsMAnQ" }
+            ]
+        };
+    },
+    components: { CompanyStats }
 }
 </script>
+
+<style scoped>
+  .section.blue-gradient {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#245fff),
+      color-stop(77%, #0f2c41)
+    );
+    background-image: linear-gradient(180deg, #245fff, #0f2c41 77%);
+  }
+  /* .section.blue-gradient {
+    padding-right: 0px;
+    padding-left: 0px;
+  } */
+</style>
