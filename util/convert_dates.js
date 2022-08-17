@@ -1,3 +1,7 @@
+// cd content/posts
+// ls | xargs -I{} -n1 sh -c 'node ../../util/convert_dates.js "$1" > "$1".out' -- {}
+// rm *.md
+
 const readLine = require('readline');
 const fs = require('fs');
 const dayjs = require('dayjs')
