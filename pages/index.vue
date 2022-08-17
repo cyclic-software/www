@@ -12,7 +12,8 @@
               Full stack apps
               </h1>
             <p class="paragraph">
-               Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our GitHub app and you will have a fully featured software pipeline. See how quick and easy hosting can be.
+               Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our GitHub app and you
+               will have a fully featured software pipeline. See how quick and easy hosting can be.
             </p>
             <div class="spacer _16"></div>
           </div>
@@ -33,7 +34,8 @@
       No Sleep
     </template>
     <template v-slot:text>
-      Cyclic Apps are available immediately on demand. Even on free tier. Say hello to fast apps. Say goodbye to waiting 30 seconds for containers to be provisioned and started.
+      Cyclic Apps are available immediately on demand. Even on free tier. Say hello to fast apps. Say goodbye to waiting
+      30 seconds for containers to be provisioned and started.
     </template>
   </SectionHero>
 
@@ -46,7 +48,8 @@
       Integrated Database and Storage
     </template>
     <template v-slot:text>
-      Enable integrated NoSQL DynamoDB database table and S3 object storage. Use industry leading database and storage directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
+      Enable integrated NoSQL DynamoDB database table and S3 object storage. Use industry leading database and storage
+      directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
     </template>
   </SectionHero>
 
@@ -59,7 +62,8 @@
       Streaming Structured Logs
     </template>
     <template v-slot:text>
-      Cyclic brings together application and API logs to give you a single, clear and organized view of everything that happened in your application between request and response.
+      Cyclic brings together application and API logs to give you a single, clear and organized view of everything that
+      happened in your application between request and response.
     </template>
   </SectionHero>
 
@@ -83,7 +87,8 @@
       Serverless Cron
     </template>
     <template v-slot:text>
-      The power of cron with no servers. Single second resolution triggering. Automatically adjusted for your timezone and daylight savings. Pick the route, payload and schedule that works for you.
+      The power of cron with no servers. Single second resolution triggering. Automatically adjusted for your timezone
+      and daylight savings. Pick the route, payload and schedule that works for you.
     </template>
   </SectionHero>
 
@@ -95,7 +100,8 @@
       Instant Environment Updates
     </template>
     <template v-slot:text>
-      Update environment variables without having to restart servers. Environment configuration changes are applied in real time to application instances with zero-downtime.
+      Update environment variables without having to restart servers. Environment configuration changes are applied in
+      real time to application instances with zero-downtime.
     </template>
   </SectionHero>
 
@@ -126,20 +132,17 @@
  -->
 
 
-  <SectionHero left>
-    <template v-slot:img>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </template>
-    <template v-slot:title>
-      See the product
-    </template>
-    <!-- <template v-slot:text>
-      Watch a 105 second demo highlighting some of the key features of the Cyclic platform.
-    </template> -->
-  </SectionHero>
-
-
-
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="_12-columns tablet-center">
+        <div class="column desk-4"></div>
+        <div class="column desk-4">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="column desk-4"></div>
+      </div>
+    </div>
+  </div>
 
 
   <CompanyStats />
