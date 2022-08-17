@@ -1,13 +1,20 @@
 <template>
 <div>
   <img src="/images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
+
+
   <div class="section hero home wf-section">
     <div class="container w-container">
       <div class="_12-columns tablet-center">
         <div class="column desk-6 tab-8 mob-12">
           <div>
-            <h1 data-w-id="18a9bc4c-33dd-e424-566d-cf277b93ef10" xstyle="opacity:0" class="header-large">Full stack apps</h1>
-            <p data-w-id="4eea2083-f4cb-f1f4-0316-712ef7a1d16d" xstyle="opacity:0" class="paragraph">Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.</p>
+            <h1 class="header-large">
+              Full stack apps
+              </h1>
+            <p class="paragraph">
+               Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our GitHub app and you
+               will have a fully featured software pipeline. See how quick and easy hosting can be.
+            </p>
             <div class="spacer _16"></div>
           </div>
           <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
@@ -17,32 +24,126 @@
       </div>
     </div>
   </div>
-  <div class="section wf-section">
-    <div class="container w-container">
-      <div class="_12-columns tablet-center">
-        <div class="column desk-6"><img src="/images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"></div>
-        <div class="column desk-1 tab-0"></div>
-        <div class="column desk-5">
-          <div class="text-box">
-            <h2>Features not Infrastructure</h2>
-            <p>Focus on business logic. Use familiar web frameworks. No cryptic CloudFormation errors. No mysterious API Gateway errors. No YAML parse errors. No hunting for CloudWatch log groups. No wasted time.</p>
-          </div>
-        </div>
-      </div>
-      <div class="spacer _80"></div>
-      <div class="_12-columns tablet-center mob-swap">
-        <div class="column desk-5 tab-6">
-          <div class="text-box">
-            <h2>Serverless without the headache</h2>
-            <p>Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.</p>
-            <div class="spacer _16"></div>
-          </div>
-        </div>
-        <div class="column desk-1 tab-0"></div>
-        <div class="column desk-6"><img src="/images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image"></div>
-      </div>
-    </div>
-  </div>
+
+
+  <SectionHero left>
+    <template v-slot:img>
+      <img src="/images/5.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      No Sleep
+    </template>
+    <template v-slot:text>
+      Cyclic Apps are available immediately on demand. Even on free tier. Say hello to fast apps. Say goodbye to waiting
+      30 seconds for containers to be provisioned and started.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <i class="fa-solid fa-database"></i>
+      <img src="/images/6.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Integrated Database and Storage
+    </template>
+    <template v-slot:text>
+      Enable integrated NoSQL DynamoDB database table and S3 object storage. Use industry leading database and storage
+      directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
+    </template>
+  </SectionHero>
+
+
+  <SectionHero left>
+    <template v-slot:img>
+      <img src="/images/4.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Streaming Structured Logs
+    </template>
+    <template v-slot:text>
+      Cyclic brings together application and API logs to give you a single, clear and organized view of everything that
+      happened in your application between request and response.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <img src="/images/8.svg" alt="Structured logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Log Search
+    </template>
+    <template v-slot:text>
+      Stop jumping between windows and scrolling through logs. Full text search your app logs with zero config, on paid plans.
+    </template>
+  </SectionHero>
+
+  <SectionHero left>
+    <template v-slot:img>
+      <img src="/images/1.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Serverless Cron
+    </template>
+    <template v-slot:text>
+      The power of cron with no servers. Single second resolution triggering. Automatically adjusted for your timezone
+      and daylight savings. Pick the route, payload and schedule that works for you.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <img src="/images/10.svg" alt="Structured logs product screenshot" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Instant Environment Updates
+    </template>
+    <template v-slot:text>
+      Update environment variables without having to restart servers. Environment configuration changes are applied in
+      real time to application instances with zero-downtime.
+    </template>
+  </SectionHero>
+
+<!--
+  <SectionHero left>
+    <template v-slot:img>
+      <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Features not Infrastructure
+    </template>
+    <template v-slot:text>
+      Focus on business logic. Use familiar web frameworks. No cryptic CloudFormation errors. No mysterious API Gateway errors. No YAML parse errors. No hunting for CloudWatch log groups. No wasted time.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <img src="/images/9.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Serverless without the headache
+    </template>
+    <template v-slot:text>
+      Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.
+    </template>
+  </SectionHero>
+ -->
+
+  <SectionHero left>
+    <template v-slot:img>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </template>
+    <template v-slot:title>
+      Watch a product tour
+    </template>
+    <!-- <template v-slot:text>
+    </template> -->
+  </SectionHero>
+
+  <CompanyStats />
+
   <!-- <div class="container-3 testimonial-block">
     <div class="h2-container testimonial-header">
       <h2 class="h2 dark">Testimonials that speak for themselves<br></h2>
@@ -117,14 +218,38 @@
 </template>
 
 <script>
+import CompanyStats from "../components/CompanyStats.vue";
+import SectionHero from "~/components/SectionHero.vue";
 export default {
-  name: "Homepage",
-  head() {
-    return {
-      meta: [
-        {hid: "google-site-verification", name: "google-site-verification", content: "lmJwyO7CCfgF7HJ3lEAOAkbHn9JGkXKOa2o_iJsMAnQ"}
-      ]
-    }
-  }
+    name: "Homepage",
+    head() {
+        return {
+            meta: [
+                { hid: "google-site-verification", name: "google-site-verification", content: "lmJwyO7CCfgF7HJ3lEAOAkbHn9JGkXKOa2o_iJsMAnQ" }
+            ]
+        };
+    },
+    components: { CompanyStats, SectionHero }
 }
 </script>
+
+<style scoped>
+  .section.blue-gradient {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#245fff),
+      color-stop(77%, #0f2c41)
+    );
+    background-image: linear-gradient(180deg, #245fff, #0f2c41 77%);
+  }
+  /* .section.blue-gradient {
+    padding-right: 0px;
+    padding-left: 0px;
+  } */
+</style>

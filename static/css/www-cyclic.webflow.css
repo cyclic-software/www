@@ -345,6 +345,10 @@ blockquote {
 .section.blue {
   background-color: #245fff;
   color: #fff;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .section.no-padding {
@@ -365,8 +369,8 @@ blockquote {
 .section.blue-gradient {
   margin-right: 0px;
   margin-left: 0px;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 60px;
+  padding-left: 60px;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -375,6 +379,10 @@ blockquote {
     color-stop(77%, #0f2c41)
   );
   background-image: linear-gradient(180deg, #245fff, #0f2c41 77%);
+}
+.section.blue-gradient {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .section.half-padding {
@@ -2136,7 +2144,7 @@ blockquote {
 .center-image {
   display: block;
   margin-right: auto;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   margin-left: auto;
 }
 
@@ -4433,8 +4441,8 @@ blockquote {
   }
 
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .section.hero {
@@ -4934,10 +4942,6 @@ blockquote {
     margin-left: auto;
   }
 
-  .section.blue-gradient {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
 
   ._12-columns.flex-horizontal {
     -webkit-box-orient: horizontal;
