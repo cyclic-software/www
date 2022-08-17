@@ -17,6 +17,34 @@
     </template>
   </SectionHero>
 
+
+  <SectionHero left>
+    <template v-slot:img>
+      <img src="/images/3.svg" alt="Abstract tech icon illustration" width="525" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      No Sleep
+    </template>
+    <template v-slot:text>
+      Cyclic Apps are available immediately on demand. Even on free tier. Cold starts so fast they feel instant. Say goodbye to waiting 30 seconds for containers to be provisioned and started.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <i class="fa-solid fa-database"></i>
+      <img src="/images/9.svg" alt="Abstract tech icon illustration" width="503" class="center-image"/>
+    </template>
+    <template v-slot:title>
+      Integrated Data Storage
+    </template>
+    <template v-slot:text>
+      Enable integrated S3 storage or a NoSQL DynamoDB table. Use industry leading data storage directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
+    </template>
+  </SectionHero>
+
+
+
   <SectionHero left>
     <template v-slot:img>
       <img src="/images/3.svg" alt="Abstract tech icon illustration" width="525" class="center-image"/>
@@ -40,6 +68,8 @@
       Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.
     </template>
   </SectionHero>
+
+
 
   <SectionHero left>
     <template v-slot:img>
