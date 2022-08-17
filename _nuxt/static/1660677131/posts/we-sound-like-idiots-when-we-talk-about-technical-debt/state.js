@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1660677131",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fwe-sound-like-idiots-when-we-talk-about-technical-debt",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"7d342c88"}}}}(null));
