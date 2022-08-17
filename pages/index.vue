@@ -5,7 +5,7 @@
 
   <SectionHero>
     <template v-slot:img>
-      <img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"/>
+      <img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Screen shot of GitHub repo" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"/>
     </template>
     <template v-slot:title>
       <h1 class="header-medium">Full stack apps</h1>
@@ -19,7 +19,7 @@
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"/>
+      <img src="/images/3.svg" alt="Abstract tech icon illustration" width="525" class="center-image"/>
     </template>
     <template v-slot:title>
       Features not Infrastructure
@@ -31,7 +31,7 @@
 
   <SectionHero>
     <template v-slot:img>
-      <img src="/images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image"/>
+      <img src="/images/9.svg" alt="Abstract tech icon illustration" width="503" class="center-image"/>
     </template>
     <template v-slot:title>
       Serverless without the headache
@@ -41,16 +41,9 @@
     </template>
   </SectionHero>
 
-
-
-
-
-
-
-
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/logs_streaming.png" alt="Streaming logs" width="525" class="center-image"/>
+      <img src="/images/logs_streaming.png" alt="Streaming logs product screenshot" width="525" class="center-image"/>
     </template>
     <template v-slot:title>
       Streaming Logs
@@ -62,7 +55,7 @@
 
   <SectionHero>
     <template v-slot:img>
-      <img src="/images/logs_structured.png" alt="Streaming logs" width="525" class="center-image"/>
+      <img src="/images/logs_structured.png" alt="Structured logs product screenshot" width="525" class="center-image"/>
     </template>
     <template v-slot:title>
       Log Search
