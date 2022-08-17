@@ -27,7 +27,7 @@
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
+      <img src="/images/5.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       No Sleep
@@ -40,7 +40,7 @@
   <SectionHero>
     <template v-slot:img>
       <i class="fa-solid fa-database"></i>
-      <img src="/images/9.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
+      <img src="/images/1.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Integrated Data Storage
@@ -49,16 +49,6 @@
       Enable integrated S3 storage or a NoSQL DynamoDB table. Use industry leading data storage directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
     </template>
   </SectionHero>
-
-
-Push to Deploy
-Connect your GitHub repo. We will build, deploy and manage the hosting.
-
-Custom Domains
-Configure a custom domain (SSL certs included) with two DNS entries.
-
-Multi-regional
-Host in as many regions as you want. Serverless means horizontal. (paid)
 
 
   <SectionHero left>
@@ -87,7 +77,7 @@ Host in as many regions as you want. Serverless means horizontal. (paid)
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/logs_streaming.png" alt="Streaming logs product screenshot" width="400" class="center-image"/>
+      <img src="/images/6.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Scheduled API Calls
@@ -99,7 +89,7 @@ Host in as many regions as you want. Serverless means horizontal. (paid)
 
   <SectionHero>
     <template v-slot:img>
-      <img src="/images/logs_structured.png" alt="Structured logs product screenshot" width="400" class="center-image"/>
+      <img src="/images/10.svg" alt="Structured logs product screenshot" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Instant Environment Updates
@@ -110,7 +100,6 @@ Host in as many regions as you want. Serverless means horizontal. (paid)
   </SectionHero>
 
 
-
   <SectionHero left>
     <template v-slot:img>
       <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
@@ -135,31 +124,6 @@ Host in as many regions as you want. Serverless means horizontal. (paid)
     </template>
   </SectionHero>
 
-
-
-  <SectionHero left>
-    <template v-slot:img>
-      <img src="/images/3.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
-    </template>
-    <template v-slot:title>
-      Features not Infrastructure
-    </template>
-    <template v-slot:text>
-      Focus on business logic. Use familiar web frameworks. No cryptic CloudFormation errors. No mysterious API Gateway errors. No YAML parse errors. No hunting for CloudWatch log groups. No wasted time.
-    </template>
-  </SectionHero>
-
-  <SectionHero>
-    <template v-slot:img>
-      <img src="/images/9.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
-    </template>
-    <template v-slot:title>
-      Serverless without the headache
-    </template>
-    <template v-slot:text>
-      Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.
-    </template>
-  </SectionHero>
 
 
   <SectionHero left>
