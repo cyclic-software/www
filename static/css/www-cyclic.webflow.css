@@ -519,6 +519,7 @@ blockquote {
   background-color: transparent;
   box-shadow: none;
   color: #fff;
+  outline: white;
 }
 
 .button.outline-white:hover {
@@ -527,8 +528,8 @@ blockquote {
 }
 
 .button.outline-white:active {
-  border-color: #159418;
-  background-color: #159418;
+  border-color: #1c40db;
+  background-color: #1c40db;
 }
 
 .spacer {

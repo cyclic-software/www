@@ -1,16 +1,27 @@
 <template>
   <div>
     <div class="wrapper">
-      <div class="section wf-section">
+      <div class="section">
         <div class="container center-align w-container">
           <div class="text-box center-align">
             <h1>Pay for what you use.</h1>
-            <p data-w-id="4eea2083-f4cb-f1f4-0316-712ef7a1d16d">Consumption based pricing lets you start small and pay as you grow. No up front commitments or licensing games.</p>
+            <p>
+              Consumption based pricing lets you start free and pay as your needs and app grows.
+            </p>
+            <h3>
+              All plans include:
+            </h3>
+            <ul>
+              <li>Serverless that just works</li>
+              <li>Blazing fast builds</li>
+              <li>Branch based preview env</li>
+              <li>Enterprise grade architecture</li>
+            </ul>
             <div class="spacer _48"></div>
           </div>
           <div class="_12-columns align-stretch align-center">
-            <div class="column desk-4">
-              <div data-w-id="8726d104-f3b9-994a-9652-3d1c71c7d972" xstyle="opacity:0" class="pricing-card">
+            <div class="column desk-3">
+              <div class="pricing-card">
                 <div class="top-block"></div>
                 <h2>Start</h2>
                 <p>Generous free tier lets you prototype and learn.</p>
@@ -21,40 +32,60 @@
                 <p class="paragraph-small">up to 100,000 invokes / month</p>
                 <div class="tick-list w-richtext">
                   <ul role="list">
-                    <li>Enterprise grade architecture</li>
-                    <li>Blazing fast builds</li>
-                    <li>Serverless that just works</li>
-                    <li>Integrated CI/CD</li>
-                    <li>Sensible rate limits</li>
-                    <li>A sense of accomplishment</li>
+                    <li>Up to 3 apps</li>
+                    <li>API rate limits</li>
+                    <li>7 day log retention</li>
+                    <li>Community support</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="column desk-4">
-              <div data-w-id="8726d104-f3b9-994a-9652-3d1c71c7d981" xstyle="opacity:0" class="pricing-card blue">
+            <div class="column desk-3">
+              <div class="pricing-card">
+                <div class="top-block"></div>
+                <h2>Solo</h2>
+                <p>
+                  Unlock additional developer productivity features.
+                </p>
+                <div class="spacer _24"></div>
+                <a href="https://app.cyclic.sh/api/login" class="button no-margin w-button">Get Started</a>
+                <div class="spacer _24"></div>
+                <h3 class="no-margin">$9<span class="regular"> /month</span></h3>
+                <p class="paragraph-small">minimum against consumption charges</p>
+                <div class="tick-list w-richtext">
+                  <ul role="list">
+                    <li>Search structured logs</li>
+                    <li>Private repositories</li>
+                    <li>Log retention 1 month</li>
+                    <li>Email support</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="column desk-3">
+              <div class="pricing-card blue">
                 <div class="top-block blue"></div>
                 <h2>Grow</h2>
-                <p>Scale up your usage and get your team on boarded.</p>
+                <p>
+                  Take your apps to the next level.
+                </p>
                 <div class="spacer _24"></div>
-                <a href="https://app.cyclic.sh/api/login?utm_source=www&amp;utm_medium=web&amp;utm_campaign=pricing" class="button no-margin w-button">Get Started</a>
+                <a href="https://app.cyclic.sh/api/login" class="button no-margin w-button">Get Started</a>
                 <div class="spacer _24"></div>
-                <h3 class="no-margin">Usage based but ....<span class="regular"></span></h3>
-                <div class="text-block-3"><span>FREE</span> while in BETA</div>
+                <h3 class="no-margin">$199<span class="regular"> /month</span></h3>
                 <p class="paragraph-small"><br></p>
                 <div class="tick-list w-richtext">
                   <ul role="list">
                     <li>Organization GitHub accounts</li>
-                    <li>Private repository support</li>
-                    <li>Branch based builds</li>
+                    <li>Private repositories</li>
                     <li>Encrypted environment variables.</li>
                     <li>Email support</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="column desk-4">
-              <div data-w-id="8726d104-f3b9-994a-9652-3d1c71c7d990" xstyle="opacity:0" class="pricing-card dark-blue">
+            <div class="column desk-3">
+              <div class="pricing-card dark-blue">
                 <h2>Scale</h2>
                 <p>Data governance, Security, Compliance and Auditing handled.</p>
                 <div class="spacer _24"></div>
@@ -77,7 +108,10 @@
           </div>
         </div>
       </div>
-      <!-- <div class="section no-padding mobile-hidden wf-section">
+
+
+
+      <!-- <div class="section no-padding mobile-hidden">
         <div class="spacer _80"></div>
         <div class="container">
           <div class="pricing-grid">
@@ -156,7 +190,7 @@
           </div>
         </div>
       </div>
-      <div class="section no-padding wf-section">
+      <div class="section no-padding">
         <div class="spacer _80"></div>
         <div class="container">
           <div class="_12-columns align-center">
@@ -165,7 +199,7 @@
               <h2>Got any questions? We have the answers.</h2>
               <div class="spacer _32"></div>
               <div class="questions">
-                <a href="#" data-ix="show-answer" data-w-id="df555d80-9944-680f-471d-4ca3ecf69dcc" class="question-container w-inline-block">
+                <a href="#" data-ix="show-answer" class="question-container w-inline-block">
                   <div class="question">
                     <h4>What happens if I run out of credit?</h4><img src="images/Dropdown-Arrow.svg" alt="" class="question-arrow-icon">
                   </div>
@@ -173,7 +207,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   </div>
                 </a>
-                <a href="#" data-ix="show-answer" data-w-id="df555d80-9944-680f-471d-4ca3ecf69dde" class="question-container w-inline-block">
+                <a href="#" data-ix="show-answer" class="question-container w-inline-block">
                   <div class="question">
                     <h4>How is pricing calculated?</h4><img src="images/Dropdown-Arrow.svg" alt="" class="question-arrow-icon">
                   </div>
@@ -181,7 +215,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                 </a>
-                <a href="#" data-ix="show-answer" data-w-id="df555d80-9944-680f-471d-4ca3ecf69de7" class="question-container w-inline-block">
+                <a href="#" data-ix="show-answer" class="question-container w-inline-block">
                   <div class="question">
                     <h4>How does adding members work?</h4><img src="images/Dropdown-Arrow.svg" alt="" class="question-arrow-icon">
                   </div>
@@ -189,7 +223,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   </div>
                 </a>
-                <a href="#" data-ix="show-answer" data-w-id="ad2cc192-dc62-1903-70cc-5d97f276c533" class="question-container w-inline-block">
+                <a href="#" data-ix="show-answer" class="question-container w-inline-block">
                   <div class="question">
                     <h4>What happens when I change plans?</h4><img src="images/Dropdown-Arrow.svg" alt="" class="question-arrow-icon">
                   </div>
@@ -197,7 +231,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                 </a>
-                <a href="#" data-ix="show-answer" data-w-id="d0320ee7-94e2-787f-93a6-b9164ba97bb3" class="question-container w-inline-block">
+                <a href="#" data-ix="show-answer" class="question-container w-inline-block">
                   <div class="question">
                     <h4>Can I change my payment method?</h4><img src="images/Dropdown-Arrow.svg" alt="" class="question-arrow-icon">
                   </div>
@@ -205,7 +239,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                   </div>
                 </a>
-                <a href="#" data-ix="show-answer" data-w-id="20bc0931-7af5-b7e8-3541-05a34e3d0215" class="question-container w-inline-block">
+                <a href="#" data-ix="show-answer" class="question-container w-inline-block">
                   <div class="question">
                     <h4>How does removing members work?</h4><img src="images/Dropdown-Arrow.svg" alt="" class="question-arrow-icon">
                   </div>
@@ -220,6 +254,10 @@
         </div>
         <div class="spacer _80"></div>
       </div> -->
+
+
+      <div class="spacer _64"></div>
+
       <CtaLaunchHelloWorld></CtaLaunchHelloWorld>
     </div>
   </div>
