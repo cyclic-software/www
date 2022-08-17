@@ -131,19 +131,16 @@
   </SectionHero>
  -->
 
-
-  <div class="section wf-section">
-    <div class="container w-container">
-      <div class="_12-columns tablet-center">
-        <div class="column desk-4"></div>
-        <div class="column desk-4">
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="column desk-4"></div>
-      </div>
-    </div>
-  </div>
-
+  <SectionHero left>
+    <template v-slot:img>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </template>
+    <template v-slot:title>
+      Watch a product tour
+    </template>
+    <!-- <template v-slot:text>
+    </template> -->
+  </SectionHero>
 
   <CompanyStats />
 
