@@ -2144,7 +2144,7 @@ blockquote {
 .center-image {
   display: block;
   margin-right: auto;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   margin-left: auto;
 }
 
@@ -4441,8 +4441,8 @@ blockquote {
   }
 
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .section.hero {

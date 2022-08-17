@@ -14,7 +14,7 @@
         <div class="column desk-4">
           <div class="text-box">
             <h2 class="header-large">1,853</h2>
-            <p>Developers use the service</p>
+            <p>Developers use Cyclic</p>
           </div>
           <div class="spacer _32"></div>
         </div>
