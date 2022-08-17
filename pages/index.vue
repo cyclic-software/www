@@ -73,6 +73,18 @@
   </SectionHero>
 
 
+  <SectionHero left>
+    <template v-slot:img>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </template>
+    <template v-slot:title>
+      Not sure? Watch a demo!
+    </template>
+    <!-- <template v-slot:text>
+      Full text search your logs out of the box, with zero config (paid)
+    </template> -->
+  </SectionHero>
+
 
 
 
