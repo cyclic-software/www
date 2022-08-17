@@ -1,6 +1,22 @@
 <template>
 <div>
   <img src="/images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
+
+
+  <SectionHero>
+    <template v-slot:img>
+      <img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"/>
+    </template>
+    <template v-slot:title>
+      Full stack apps
+    </template>
+    <template v-slot:text>
+      Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.
+      <div class="spacer _16"></div>
+      <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
+    </template>
+  </SectionHero>
+<!--
   <div class="section hero home wf-section">
     <div class="container w-container">
       <div class="_12-columns tablet-center">
@@ -17,10 +33,12 @@
           <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
         </div>
         <div class="column desk-1 tab-0"></div>
-        <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" xstyle="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
+        <div class="column desk-5 tab-10 mob-12">
+          <img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></img>
+        </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <SectionHero left>
     <template v-slot:img>
