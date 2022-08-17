@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1660757607",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Faws-s3-why-sometimes-you-should-press-the-100k-dollar-button",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"a1734d9e"}}}}(null));
