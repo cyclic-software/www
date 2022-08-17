@@ -40,7 +40,7 @@
   <SectionHero>
     <template v-slot:img>
       <i class="fa-solid fa-database"></i>
-      <img src="/images/1.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
+      <img src="/images/6.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Integrated Data Storage
@@ -53,7 +53,7 @@
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/logs_streaming.png" alt="Streaming logs product screenshot" width="400" class="center-image"/>
+      <img src="/images/4.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Streaming Logs
@@ -65,7 +65,7 @@
 
   <SectionHero>
     <template v-slot:img>
-      <img src="/images/logs_structured.png" alt="Structured logs product screenshot" width="400" class="center-image"/>
+      <img src="/images/8.svg" alt="Structured logs product screenshot" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Log Search
@@ -77,7 +77,7 @@
 
   <SectionHero left>
     <template v-slot:img>
-      <img src="/images/6.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
+      <img src="/images/1.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
       Scheduled API Calls
@@ -131,7 +131,7 @@
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </template>
     <template v-slot:title>
-      Want to see the product?
+      See the product
     </template>
     <template v-slot:text>
       Watch a 105 second demo highlighting some of the key features of the Cyclic platform.
