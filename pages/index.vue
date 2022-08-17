@@ -6,8 +6,12 @@
       <div class="_12-columns tablet-center">
         <div class="column desk-6 tab-8 mob-12">
           <div>
-            <h1 data-w-id="18a9bc4c-33dd-e424-566d-cf277b93ef10" xstyle="opacity:0" class="header-large">Full stack apps</h1>
-            <p data-w-id="4eea2083-f4cb-f1f4-0316-712ef7a1d16d" xstyle="opacity:0" class="paragraph">Connect your nodejs github repo, let us build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.</p>
+            <h1 class="header-large">
+              Full stack apps
+            </h1>
+            <p class="paragraph">
+              Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our github app and you will have a fully featured software pipeline. See how quick and easy hosting can be.
+            </p>
             <div class="spacer _16"></div>
           </div>
           <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
@@ -17,32 +21,30 @@
       </div>
     </div>
   </div>
-  <div class="section wf-section">
-    <div class="container w-container">
-      <div class="_12-columns tablet-center">
-        <div class="column desk-6"><img src="/images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"></div>
-        <div class="column desk-1 tab-0"></div>
-        <div class="column desk-5">
-          <div class="text-box">
-            <h2>Features not Infrastructure</h2>
-            <p>Focus on business logic. Use familiar web frameworks. No cryptic CloudFormation errors. No mysterious API Gateway errors. No YAML parse errors. No hunting for CloudWatch log groups. No wasted time.</p>
-          </div>
-        </div>
-      </div>
-      <div class="spacer _80"></div>
-      <div class="_12-columns tablet-center mob-swap">
-        <div class="column desk-5 tab-6">
-          <div class="text-box">
-            <h2>Serverless without the headache</h2>
-            <p>Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.</p>
-            <div class="spacer _16"></div>
-          </div>
-        </div>
-        <div class="column desk-1 tab-0"></div>
-        <div class="column desk-6"><img src="/images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image"></div>
-      </div>
-    </div>
-  </div>
+
+  <SectionHero>
+    <template v-slot:img>
+      <img src="/images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"></img>
+    </template>
+    <template v-slot:title>
+      Features not Infrastructure
+    </template>
+    <template v-slot:text>
+      Focus on business logic. Use familiar web frameworks. No cryptic CloudFormation errors. No mysterious API Gateway errors. No YAML parse errors. No hunting for CloudWatch log groups. No wasted time.
+    </template>
+  </SectionHero>
+
+  <SectionHero>
+    <template v-slot:img>
+      <img src="/images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image">
+    </template>
+    <template v-slot:title>
+      Serverless without the headache
+    </template>
+    <template v-slot:text>
+      Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.</p>
+    </template>
+  </SectionHero>
 
   <CompanyStats />
 
@@ -121,6 +123,7 @@
 
 <script>
 import CompanyStats from "../components/CompanyStats.vue";
+import SectionHero from "~/components/SectionHero.vue";
 export default {
     name: "Homepage",
     head() {
@@ -130,7 +133,7 @@ export default {
             ]
         };
     },
-    components: { CompanyStats }
+    components: { CompanyStats, SectionHero }
 }
 </script>
 
