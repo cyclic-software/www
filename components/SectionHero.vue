@@ -2,7 +2,7 @@
   <div class="section wf-section">
     <div class="container w-container">
       <div class="_12-columns tablet-center">
-        <div class="column desk-6">
+        <div v-if="left" class="column desk-6">
           <slot name="img"></slot>
         </div>
         <div class="column desk-1 tab-0"></div>
@@ -16,16 +16,18 @@
             </p>
           </div>
         </div>
+        <div v-if="!left" class="column desk-6">
+          <slot name="img"></slot>
+        </div>
       </div>
-      <div class="spacer _80"></div>
     </div>
   </div>
 </template>
 
-<!-- <script>
+<script>
 export default {
   props: {
     left: Boolean
   }
 }
-</script> -->
+</script>

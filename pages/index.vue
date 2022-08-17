@@ -22,9 +22,9 @@
     </div>
   </div>
 
-  <SectionHero>
+  <SectionHero left>
     <template v-slot:img>
-      <img src="/images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"></img>
+      <img src="/images/3.svg" alt="Desktop and Mobile illustration" width="525" class="center-image"/>
     </template>
     <template v-slot:title>
       Features not Infrastructure
@@ -36,13 +36,13 @@
 
   <SectionHero>
     <template v-slot:img>
-      <img src="/images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image">
+      <img src="/images/9.svg" alt="Desktop and Mobile illustration" width="503" class="center-image"/>
     </template>
     <template v-slot:title>
       Serverless without the headache
     </template>
     <template v-slot:text>
-      Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.</p>
+      Most serverless offerings ask you to trade runtime operations headaches for design and build time headaches. Instead make your serverless framework and infrastructure work for you.
     </template>
   </SectionHero>
 
