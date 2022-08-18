@@ -100,17 +100,24 @@
       <div class="section">
         <div class="container center-align w-container">
           <div class="_12-columns align-stretch align-center"></div>
-            <div class="column desk-12">
+            <div class="column desk-2"></div>
+            <div class="column desk-8">
               <div class="pricing-card dark-blue">
                 <h2>Scale</h2>
-                <p>Data governance, Security, Compliance and Auditing handled.</p>
+                <p>
+                  Data governance, Security, Compliance and Auditing handled.
+                </p>
                 <div class="spacer _24"></div>
-                <a href="mailto:hello@cyclic.sh?subject=Cyclic%20Sales%20inquiry" class="button secondary w-button">Contact Sales</a>
+                <div style="max-width: 300px;">
+                  <a href="mailto:hello@cyclic.sh?subject=Cyclic%20Sales%20inquiry" class="button secondary w-button">Schedule a Review</a>
+                </div>
                 <div class="spacer _24"></div>
                 <h3 class="no-margin">Based on requirements<span class="regular"></span></h3>
                 <p class="paragraph-small"><br></p>
                 <div class="tick-list w-richtext">
                   <ul>
+                    <li>Configurable data retention</li>
+                    <li>Multi-region Active-Active</li>
                     <li>BYO Cloud Account</li>
                     <li>BYO IdP / SSO</li>
                     <li>SOC2/PCI/HIPAA</li>
@@ -121,6 +128,7 @@
                 <div class="top-block dark-blue"></div>
               </div>
             </div>
+            <div class="column desk-2"></div>
           </div>
         </div>
       </div>
