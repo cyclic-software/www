@@ -4544,10 +4544,18 @@ blockquote {
     display: none;
   }
 
+  .column.desk-2 {
+    display: none;
+    width: 0;
+  }
+
   .column.desk-2.tab-4.mob-6 {
     width: 50%;
   }
 
+  .column.desk-8 {
+    width: 100%;
+  }
   .column.desk-8.tab-10.mob-12 {
     width: 100%;
   }
