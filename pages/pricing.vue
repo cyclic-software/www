@@ -100,7 +100,7 @@
 
       <div class="section">
         <div class="container center-align w-container">
-          <div class="_12-columns align-stretch align-center"></div>
+          <div class="_12-columns align-stretch align-center">
             <div class="column desk-2"></div>
             <div class="column desk-8">
               <div class="pricing-card dark-blue">
@@ -131,7 +131,9 @@
                     class="button w-button">Schedule a Review</a>
                 </div>
 
+              </div>
             </div>
+            <div class="column desk-2"></div>
           </div>
         </div>
       </div>
@@ -167,4 +169,13 @@ export default {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+@media screen and (max-width: 991px) {
+
+  .col-2 {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}
+
 </style>
