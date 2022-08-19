@@ -66,7 +66,7 @@
                     <li>Email support</li>
                   </ul>
                 </div>
-                <p>(Refer friends and earn free hosting! Give $10 Get $10)</p>
+                <p>(Learn about our <a href="https://app.cyclic.sh/#/account">referral program</a>)</p>
               </div>
             </div>
             <div class="column desk-4">
@@ -85,6 +85,7 @@
                 <div class="tick-list w-richtext">
                   <ul>
                     <li>Unlimited apps</li>
+                    <li>Unlimited users</li>
                     <li>Organization GitHub accounts</li>
                     <li>Unlimited Cron tasks</li>
                     <li>90 day log retention</li>
