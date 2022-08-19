@@ -44,6 +44,11 @@ export default {
         body: true,
         defer: true,
         async: true
+      },{
+        src: '/js/webflow.js',
+        body: true,
+        defer: true,
+        async: true
       },
     ]
   },
