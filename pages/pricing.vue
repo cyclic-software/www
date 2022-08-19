@@ -126,7 +126,9 @@
                 <div class="spacer _48"></div>
 
                 <div style="width: 100%; text-align:center;">
-                  <a style="display: inline-block;" href="mailto:hello@cyclic.sh?subject=Cyclic%20Sales%20inquiry" class="button secondary w-button">Schedule a Review</a>
+                  <a style="display: inline-block;"
+                    target="_blank" href="https://cyclic.typeform.com/to/HNNO8Bkp"
+                    class="button w-button">Schedule a Review</a>
                 </div>
 
             </div>
