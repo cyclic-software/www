@@ -406,7 +406,7 @@ blockquote {
   border-style: solid;
   border-width: 2px;
   border-color: #245fff;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 4px;
   background-color: #245fff;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03);
   -webkit-transition: border-color 200ms ease, color 200ms ease,
@@ -519,6 +519,7 @@ blockquote {
   background-color: transparent;
   box-shadow: none;
   color: #fff;
+  outline: white;
 }
 
 .button.outline-white:hover {
@@ -527,8 +528,8 @@ blockquote {
 }
 
 .button.outline-white:active {
-  border-color: #159418;
-  background-color: #159418;
+  border-color: #1c40db;
+  background-color: #1c40db;
 }
 
 .spacer {
