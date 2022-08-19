@@ -41,8 +41,8 @@
               </div>
             </div>
             <div class="column desk-4">
-              <div class="pricing-card">
-                <div class="top-block"></div>
+              <div class="pricing-card blue">
+                <div class="top-block blue"></div>
                 <h2>Solo</h2>
                 <p>
                   Unlock additional developer productivity features.
@@ -66,11 +66,12 @@
                     <li>Email support</li>
                   </ul>
                 </div>
+                <p>(Refer friends and earn free hosting! Give $10 Get $10)</p>
               </div>
             </div>
             <div class="column desk-4">
-              <div class="pricing-card blue">
-                <div class="top-block blue"></div>
+              <div class="pricing-card">
+                <div class="top-block"></div>
                 <h2>Grow</h2>
                 <p>
                   Take your company and apps to the next level.
@@ -78,7 +79,7 @@
                 <div class="spacer _24"></div>
                 <a href="https://app.cyclic.sh/api/login" class="button no-margin w-button">Buy</a>
                 <div class="spacer _24"></div>
-                <h3 class="no-margin">$199<span class="regular"> /month</span></h3>
+                <h3 class="no-margin">$299<span class="regular"> /month</span></h3>
                 <p class="paragraph-small"><br></p>
                 <p>All of Solo plus:</p>
                 <div class="tick-list w-richtext">
@@ -103,39 +104,48 @@
             <div class="column desk-2"></div>
             <div class="column desk-8">
               <div class="pricing-card dark-blue">
-                <h2>Scale</h2>
+                <h2>Enterprise Scale</h2>
                 <p>
-                  Data governance, Security, Compliance and Auditing handled.
+                  Specialized data governance, security, compliance and auditing handled. Schedule a review
+                  and we can tailor a solution that meets your requirements.
                 </p>
-                <div class="spacer _24"></div>
-                <div style="max-width: 300px;">
-                  <a href="mailto:hello@cyclic.sh?subject=Cyclic%20Sales%20inquiry" class="button secondary w-button">Schedule a Review</a>
-                </div>
-                <div class="spacer _24"></div>
-                <h3 class="no-margin">Based on requirements<span class="regular"></span></h3>
-                <p class="paragraph-small"><br></p>
+                <p class="paragraph-small"></p>
                 <div class="tick-list w-richtext">
-                  <ul>
+                  <ul class="col-2">
                     <li>Configurable data retention</li>
+                    <li>Log drains</li>
                     <li>Multi-region Active-Active</li>
                     <li>BYO Cloud Account</li>
                     <li>BYO IdP / SSO</li>
                     <li>SOC2/PCI/HIPAA</li>
+                    <li>Annual architectural reviews</li>
                     <li>Dedicated relationship manager</li>
-                    <li>Architectural reviews</li>
                   </ul>
                 </div>
-                <div class="top-block dark-blue"></div>
-              </div>
+
+                <div class="spacer _48"></div>
+
+                <div style="width: 100%; text-align:center;">
+                  <a style="display: inline-block;" href="mailto:hello@cyclic.sh?subject=Cyclic%20Sales%20inquiry" class="button secondary w-button">Schedule a Review</a>
+                </div>
+
             </div>
-            <div class="column desk-2"></div>
           </div>
         </div>
       </div>
 
       <div class="spacer _64"></div>
 
-      <CtaLaunchHelloWorld></CtaLaunchHelloWorld>
+      <!--  <CtaLaunchHelloWorld></CtaLaunchHelloWorld> -->
+
     </div>
   </div>
 </template>
+
+<style scoped>
+.col-2 {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+</style>
