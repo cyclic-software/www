@@ -51,7 +51,7 @@
   </div>
 </nav> -->
 
-  <nav id="menu" class="navbar navbar-expand-sm navbar-light">
+  <nav id="menu" class="navbar navbar-expand-sm navbar-dark">
     <nuxt-link to="/" class="navbar-brand">
       <img src="/images/cyclic-logo.png" class="logo-img"/>
     </nuxt-link>
@@ -59,21 +59,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <nuxt-link to="/pricing" class="nav-link">Pricing</nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link to="/blog" class="nav-link">Blog</nuxt-link>
-        </li>
-      </ul>
-      <ul class="navbar-nav" style="float: right">
-        <li class="nav-item">
-          <a href="https://app.cyclic.sh/api/login">Sign In</a>
-        </li>
-      </ul>
+      <nuxt-link to="/pricing" class="nav-item nav-link">Pricing</nuxt-link>
+      <nuxt-link to="/blog" class="nav-item nav-link">Blog</nuxt-link>
+      <a href="https://app.cyclic.sh/api/login" class="nav-item nav-link" style="float: right;">Sign In</a>
     </div>
   </nav>
+
 
 </template>
 
