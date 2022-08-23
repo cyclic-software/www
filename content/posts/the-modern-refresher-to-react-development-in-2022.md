@@ -65,7 +65,12 @@ If you’re not using Linux or MacOS for programming, check out this [cheat-shee
 
 Don’t worry if it takes unusually long for these commands to execute. They may take longer to run if you have a slower internet connection. Please give it some time, as you only need to run it once per project.
 
-[Scroll Capture 2022-08-10 at 8.34.52 PM.webm](/content/react-dev-2022/Scroll_Capture_2022-08-10_at_8.34.52_PM.webm)
+
+<br><br>
+<video src="/content/react-dev-2022/Scroll_Capture_2022-08-10_at_8.34.52_PM.webm" playsinline autoplay muted loop style="max-width: 730px;"></video>
+<br><br>
+
+
 
 When these commands finally cease to run, a new tab will automatically open in your current web browser. While not much, the source-code behind it is critical to the development that we’re gonna do in this article.
 
@@ -88,7 +93,7 @@ As their name suggests, [components](https://en.wikipedia.org/wiki/Model%E2%80%9
 
 Another step that we would do in this stage is to set-up [TailwindCSS](https://tailwindcss.com/docs/guides/create-react-app) and [FontAwesome](https://fontawesome.com/docs/web/use-with/react/) as they’re used in this project. These packages both contain *detailed* guides that will help you set them up for yourself. This is just another consequence of the wide popularity of React.
 
-No beginner tutorial covers this, but there’s a little secret in programming that you should start practicing as soon as possible. It’s the use of [linters](https://en.wikipedia.org/wiki/Lint_(software)), programs that enforce [style-guides in your code](https://airbnb.io/javascript/react/) and catch bugs before they happen. I recommend using `[eslint](https://eslint.org/docs/latest/user-guide/getting-started)`, the most popular linter in the JavaScript world. Setting-it up is easy, as covering in the linked guide.
+No beginner tutorial covers this, but there’s a little secret in programming that you should start practicing as soon as possible. It’s the use of [linters](https://en.wikipedia.org/wiki/Lint_(software)), programs that enforce [style-guides in your code](https://airbnb.io/javascript/react/) and catch bugs before they happen. I recommend using [`eslint`](https://eslint.org/docs/latest/user-guide/getting-started), the most popular linter in the JavaScript world. Setting-it up is easy, as covering in the linked guide.
 
 ## How do we create a component in React?
 
@@ -571,8 +576,9 @@ It’s also important to add the following changes to the `package.json` file:
 	}
 }
 ```
-
-[output.mp4](/content/react-dev-2022/output.mp4)
+<br><br>
+<video src="/content/react-dev-2022/output.mp4" controls="controls" style="max-width: 730px;"></video>
+<br><br>
 
 With that done, all it takes to launch our app to the world-wide-web is creating a Cyclic account and clicking the **DEPLOY** button. Trust me, it’s so satisfying seeing it do all the work *for you!* And you can even choose your own free subdomain afterwards! 😃
 
