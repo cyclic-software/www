@@ -249,7 +249,13 @@ toggleModal = () => {
 
 ## How do we create multiple components in React?
 
-[https://codepen.io/eludapens/pen/XWEPeaw?editors=1010](https://codepen.io/eludapens/pen/XWEPeaw?editors=1010)
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="XWEPeaw" data-preview="true" data-user="eludapens" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/XWEPeaw">
+  React ithink 2</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 Aside from the main component, applications are composed of a ton of UI parts that must all be organized in an effective fashion. We created the `components/` folder for *this* reason; it’s time to finally put it to use!
 
@@ -396,7 +402,12 @@ export async function postMessage(message) {
 
 ## How do we close a modal when clicked outside in React?
 
-[https://codepen.io/eludapens/pen/RwMYLjp?editors=0010](https://codepen.io/eludapens/pen/RwMYLjp?editors=0010)
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="RwMYLjp" data-preview="true" data-user="eludapens" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/RwMYLjp">
+  React ithink 3</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 One feature that we see again and again in websites is the ability to close pop-ups by tapping anywhere outside their area. This is clearly positive for the user-experience of our application, so it’s not crazy that we’re gonna be adding it, even in this high-level tutorial. 
 
@@ -424,7 +435,13 @@ Notice how we’re also making-use of yet another hook, `useRef`. It’s one of 
 
 ## How do we display a list of items in React?
 
-[https://codepen.io/eludapens/pen/KKoxXrJ?editors=0010](https://codepen.io/eludapens/pen/KKoxXrJ?editors=0010)
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="KKoxXrJ" data-preview="true" data-user="eludapens" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/KKoxXrJ">
+  React ithink 4</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 Good news! We’re done with the modal component! But we’re still missing one major part of our application: the list of messages. Not much is new here, so let’s just create a new component file named `message-list.js` in the `components/` directory as usual.
 
