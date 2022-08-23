@@ -97,7 +97,14 @@ No beginner tutorial covers this, but there’s a little secret in programming t
 
 ## How do we create a component in React?
 
-[https://codepen.io/eludapens/pen/zYWJENQ?editors=1010](https://codepen.io/eludapens/pen/zYWJENQ?editors=1010)
+
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="zYWJENQ" data-preview="true" data-user="eludapens" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/eludapens/pen/zYWJENQ">
+  React ithink 1</a> by Eluda (<a href="https://codepen.io/eludapens">@eludapens</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 As it currently stands, our app is not functional. This stems from the fact that the `index.js` script is still empty, and that’s because we just created it.
 
