@@ -1,5 +1,51 @@
+const fs = require('fs').promises;
+const path = require('path');
+
+const hostname = process.NODE_ENV === 'production' ? 'https://www.cyclic.sh' : 'http://localhost:3000';
+// console.log(process.env)
 const title = "Cyclic.sh - Fullstack Javascript Apps - Deploy and Host in Seconds"
 const description = "Fullstack Javascript Apps: Front-end, Backend, Database, Scheduled tasks. All running with zero-config."
+
+
+let posts = [];
+
+const constructFeedItem = async (post, dir, hostname) => {
+  //note the path used here, we are using a dummy page with an empty layout in order to not send that data along with our other content
+  // const filePath = path.join(__dirname, `dist/rss/posts/${post.slug}/index.html`);
+  const filePath = path.join(__dirname, `dist/posts/${post.slug}/index.html`);
+  const content = await fs.readFile(filePath, 'utf8');
+  const url = `${hostname}/${dir}/${post.slug}`;
+
+  console.log(url)
+
+  return {
+    title: post.title,
+    id: url,
+    link: url,
+    description: post.description,
+    content: content
+  }
+}
+const create = async (feed, args) => {
+  const [filePath, ext] = args;
+  feed.options = {
+    title: "Cyclic Blog",
+    description: "Company blog for Cyclic Software. All about startups, serverless, technical stories and advice.",
+    link: `${hostname}/blog/rss.${ext}`
+  }
+  const { $content } = require('@nuxt/content')
+  if (posts === null || posts.length === 0) {
+    posts = await $content(filePath)
+              .where({ "hidden": { "$ne": true } })
+              .sortBy("publishedOn", "desc")
+              .fetch();
+  }
+  for (const post of posts) {
+    const feedItem = await constructFeedItem(post, filePath, hostname);
+    feed.addItem(feedItem);
+  }
+  return feed;
+}
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -91,6 +137,7 @@ export default {
     ],
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/feed',
     '@nuxtjs/sitemap',
   ],
 
@@ -100,15 +147,24 @@ export default {
   //   baseURL: '/',
   // },
 
-  // // PWA module configuration: https://go.nuxtjs.dev/pwa
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
   // pwa: {
   //   manifest: {
   //     lang: 'en',
   //   },
   // },
 
-  // // Content module configuration: https://go.nuxtjs.dev/config-content
+  // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  // Feed module configuration: https://content.nuxtjs.org/v1/community/integrations/
+  feed: [{
+    path: '/blog/rss.xml',
+    create,
+    cacheTime: 1000 * 60 * 60, // 1hr
+    type: 'rss2',
+    data: ['posts','xml']
+  }],
 
   sitemap: {
     hostname: 'https://www.cyclic.sh',
@@ -130,7 +186,16 @@ export default {
       const files = await $content({ deep: true })
         .where({ path: { $in: ['posts'] } })
         .only(['path']).fetch()
-      return files.map(file => file.path === '/index' ? '/' : file.path)
+      // console.log(files)
+      let baseRoutes = files.map((file) => {
+        let res = file.path === '/index' ? '/' : file.path
+        console.log(`${file} => ${res}`)
+        return res
+      })
+      let rssRoutes = files.map(file => file.path === '/index' ? '/' : '/rss'+file.path)
+      // console.log(baseRoutes)
+      // console.log(rssRoutes)
+      return [...baseRoutes,...rssRoutes]
     }
   }
 }

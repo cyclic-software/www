@@ -54,7 +54,6 @@
 </template>
 
 <script>
-import LaunchHelloWorld from '~/components/cta/LaunchHelloWorld.vue'
   export default {
     async asyncData({ $content, params }) {
         const posts = await $content("posts")
@@ -66,6 +65,5 @@ import LaunchHelloWorld from '~/components/cta/LaunchHelloWorld.vue'
             posts
         };
     },
-    components: { LaunchHelloWorld }
-}
+  }
 </script>
