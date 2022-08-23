@@ -17,7 +17,7 @@
 <div>
   <b-navbar id="menu" toggleable="md" type="dark" variant="none" fixed="top">
     <b-navbar-brand to="/" class="navbar-brand">
-        <img src="/images/cyclic-logo.png" class="logo-img"/>
+      <img src="/images/cyclic-logo.png" class="logo-img"/>
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -36,13 +36,31 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
+  <div class="sp-65"></div>
 </div>
 
 </template>
 
 
 <style scoped>
+  :root {
+    --menu-height: 65px;
+  }
+  .navbar-collapse.collapse.show {
+    background: #0f2c41;
+    width: 100%;
+  }
+  .navbar-brand {
+    min-width: 85px;
+    /* min-height: 55px; */
+  }
+  #nav-collapse .show {
+    padding-left: 120px;
+  }
   #menu {
+    min-height: 65px;
+  }
+  .sp-65 {
     min-height: 65px;
   }
   /* li.nav-item {
@@ -67,7 +85,7 @@
 <script>
   import chroma from "chroma-js"
 
-  var scale = chroma.scale(['#0f2c4100', '#0b42d5']).domain([0, 40]);
+  var scale = chroma.scale(['#0f2c4100', '#0f2c41']).domain([0, 40]); //#0b42d5
 
   export default {
     methods: {
