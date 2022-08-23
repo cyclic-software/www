@@ -42,6 +42,9 @@
 
 
 <style scoped>
+  #menu {
+    min-height: 65px;
+  }
   /* li.nav-item {
     margin-bottom: 0px
   } */
@@ -54,7 +57,9 @@
     z-index: 200;
   } */
   .logo-img {
-    height: 60px
+    position: fixed;
+    top: 5px;
+    height: 55px
   }
 </style>
 
@@ -62,7 +67,7 @@
 <script>
   import chroma from "chroma-js"
 
-  var scale = chroma.scale(['#0f2c4100', '#0b42d5']).domain([0, 550]);
+  var scale = chroma.scale(['#0f2c4100', '#0b42d5']).domain([0, 40]);
 
   export default {
     methods: {
