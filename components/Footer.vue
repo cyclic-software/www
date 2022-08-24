@@ -19,9 +19,18 @@
         <div class="column desk-2 tab-4 mob-6">
           <div class="footer-links-container">
             <h5 class="footer-header">Share</h5>
-            <a href="https://github.com/cyclic-software" target="_blank" class="footer-link">Github</a>
-            <a href="https://discord.cyclic.sh" target="_blank" class="footer-link">Discord</a>
-            <a href="https://twitter.com/cyclicsoftware" target="_blank" class="footer-link">Twitter</a>
+            <a href="https://github.com/cyclic-software" target="_blank" class="footer-link">
+              GitHub <i class="fab fa-github"></i>
+            </a>
+            <a href="https://discord.cyclic.sh" target="_blank" class="footer-link">
+              Discord <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://twitter.com/cyclicsoftware" target="_blank" class="footer-link">
+              Twitter <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/cyclic-software/about" target="_blank" class="footer-link">
+              LinkedIn <i class="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
         <div class="column desk-2 tab-4 mob-6">
