@@ -308,7 +308,7 @@ class App extends React.Component {
 }
 ```
 
-We also can't forget about the toggle logic that we just implemented in the last section of this article, so we must put it to use. It's easy to tell React to __conditionally__ show an element based on a Boolean **state variable**. The syntax that I'm about to introduce is quite new, and it's special to **JSX**:
+We also can't forget about the toggle logic that we just implemented in the last section of this article, so we must put it to use. It's easy to tell React to *conditionally* show an element based on a Boolean **state variable**. The syntax that I'm about to introduce is quite new, and it's special to **JSX**:
 
 ```jsx
 { this.state.isModalOpen && <Modal/> }
