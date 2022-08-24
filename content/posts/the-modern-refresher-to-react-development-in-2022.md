@@ -606,7 +606,7 @@ It's also important to add the following changes to the `package.json` file:
 
 With that done, all it takes to launch our app to the world-wide-web is creating a Cyclic account and clicking the **DEPLOY** button. Trust me, it's so satisfying seeing it do all the work *for you!* And you can even choose your own free subdomain afterwards! 😃
 
-![https://deploy.cyclic.app/button.svg](https://deploy.cyclic.app/button.svg)
+[![Deploy to Cyclic Button](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/ithink-corp/api)
 
 ## Conclusion
 
