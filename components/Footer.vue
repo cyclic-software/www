@@ -10,12 +10,17 @@
           <p class="paragraph-small no-margin">© 2021-2022 <a href="/" aria-current="page" class="w--current">Cyclic Software</a><br></p>
           <div class="spacer _64"></div>
         </div>
-        <div class="column desk-2 tab-4 mob-6"></div>
+        <div class="column desk-2 tab-4 mob-6">
+          <h5 class="footer-header">Compare</h5>
+          <div class="footer-links-container">
+            <nuxt-link to="vs-heroku">vs Heroku</nuxt-link>
+          </div>
+        </div>
         <div class="column desk-2 tab-4 mob-6">
           <div class="footer-links-container">
-            <h5 class="footer-header">Social</h5>
+            <h5 class="footer-header">Share</h5>
             <a href="https://github.com/cyclic-software" target="_blank" class="footer-link">Github</a>
-            <a href="https://discord.cyclic.sh" target="_blank" class="footer-link">Discord </a>
+            <a href="https://discord.cyclic.sh" target="_blank" class="footer-link">Discord</a>
             <a href="https://twitter.com/cyclicsoftware" target="_blank" class="footer-link">Twitter</a>
           </div>
         </div>
