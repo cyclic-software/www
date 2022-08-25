@@ -10,7 +10,7 @@
   </div>
 
   <b-container class="feature-matrix">
-    <b-row class="header-row">
+    <b-row class="header">
       <b-col cols="6">Compute</b-col>
       <b-col>Cyclic</b-col> <b-col>Heroku</b-col>
     </b-row>
@@ -35,7 +35,7 @@
   <div class="spacer-64"></div>
 
   <b-container class="feature-matrix">
-    <b-row class="header-row">
+    <b-row class="header">
       <b-col cols="6">Storage</b-col>
       <b-col>Cyclic</b-col> <b-col>Heroku</b-col>
     </b-row>
@@ -52,7 +52,7 @@
   <div class="spacer-64"></div>
 
   <b-container class="feature-matrix">
-    <b-row class="header-row">
+    <b-row class="header">
       <b-col cols="6">DevX</b-col>
       <b-col>Cyclic</b-col><b-col>Heroku</b-col>
     </b-row>
@@ -73,7 +73,7 @@
   <div class="spacer-64"></div>
 
   <b-container class="feature-matrix">
-    <b-row class="header-row">
+    <b-row class="header">
       <b-col cols="6">Pricing</b-col>
       <b-col>Cyclic</b-col> <b-col>Heroku</b-col>
     </b-row>
@@ -105,8 +105,27 @@
 
 <style scoped>
 
-.feature-matrix {
-  border: 1px;
+.feature-matrix .header {
+  background: gray;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.feature-matrix .header .col-6 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.row .col {
+  text-align: center;
+}
+
+.feature-matrix .row:not(.header) {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    /* background-color: rgba(86,61,124,.15); */
+    border: 1px solid white;/* rgba(86,61,124,.2); */
 }
 
 .spacer-32 {
