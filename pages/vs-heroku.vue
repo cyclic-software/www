@@ -2,9 +2,18 @@
 <div class="wrapper">
   <div class="section hero">
     <p>
-      Heroku is the one of the best known PaaS (Platform as a Service). It was founded in 2007 (two years before Node.js was first released)
+      Heroku is the one of the best known PaaS (Platform as a Service) vendors.
+      It was founded in 2007 (two years before Node.js was first released).
     </p>
   </div>
+
+  <b-container>
+    <b-row class="feature-matrix">
+      <b-col cols="8">1 of 3</b-col>
+      <b-col>2 of 3</b-col>
+      <b-col>3 of 3</b-col>
+    </b-row>
+  </b-container>
 
   <div class="section">
     <h2>Similar features of both:</h2>
@@ -38,3 +47,10 @@
 </template>
 
 
+<style scoped>
+
+.feature-matrix b-col {
+  border: 1px;
+}
+
+</style>

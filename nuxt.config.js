@@ -60,7 +60,7 @@ export default {
     title,
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
       { name: 'format-detection', content: 'telephone=no' },
 
       { hid: 'og:locale', property: 'og:locale', content: 'en_US'},
@@ -122,6 +122,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     ['@nuxtjs/axios', {
       // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
