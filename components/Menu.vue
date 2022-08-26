@@ -79,6 +79,10 @@
     top: 5px;
     height: 55px
   }
+  .nav-item{
+    margin: 10px
+
+  }
 </style>
 
 
