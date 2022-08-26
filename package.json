@@ -20,6 +20,7 @@
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
+    "bootstrap-vue": "^2.22.0",
     "chroma-js": "^2.4.2",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
