@@ -112,7 +112,7 @@
                 </p>
                 <p class="paragraph-small"></p>
                 <div class="tick-list w-richtext">
-                  <ul class="col-2">
+                  <ul>
                     <li>Configurable data retention</li>
                     <li>Log drains</li>
                     <li>Multi-region Active-Active</li>
