@@ -26,6 +26,7 @@
       <b-navbar-nav>
         <b-nav-item to="/pricing">Pricing</b-nav-item>
         <b-nav-item to="/blog">Blog</b-nav-item>
+        <b-nav-item href="https://docs.cyclic.sh/" target="_blank">Docs</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
