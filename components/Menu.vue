@@ -60,6 +60,28 @@
   }
   #menu {
     min-height: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+
+
+/* // Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+  @media (min-width: 576px) {
+    #menu {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media (min-width: 992px) {
+    #menu {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
   }
   .sp-65 {
     min-height: 65px;
