@@ -14,7 +14,7 @@
     </div>
   </nav> -->
 
-<div>
+<div id="menubar">
   <b-navbar id="menu" toggleable="md" type="dark" variant="none" fixed="top">
     <b-navbar-brand to="/" class="navbar-brand">
       <img src="/images/cyclic-logo.png" class="logo-img"/>
@@ -64,6 +64,9 @@
     margin-left: auto;
     max-width: 1200px;
   }
+  #menubar {
+    background: red;
+  }
 
 
 /* // Medium devices (tablets, 768px and up)
@@ -104,7 +107,6 @@
   }
   .nav-item{
     margin: 10px
-
   }
 </style>
 
