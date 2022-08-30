@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
 
-  <div class="section hero">
+  <!-- <div class="section hero">
     <div class="container ">
       <div class="_12-columns tablet-center">
         <div class="column desk-6 tab-8 mob-12">
@@ -46,14 +46,60 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-
+  <b-container>
+    <b-row>
+      <b-col sm="1"></b-col>
+      <b-col md="8" align-self="center">
+        <h1>
+          Heroku vs Cyclic
+        </h1>
+        <div class="spacer _16"></div>
+        <p class="paragraph">
+            Heroku is the one of the best known PaaS (Platform as a Service) vendors.
+          It was founded in 2007 (two years before Node.js was first released). Both
+          Heroku and Cyclic offer a similar set of standard basic features.
+        </p>
+        <p>
+          Heroku is built around a concept of "Dynos". These are lightweight containers
+          that are priced liked servers but have some attributes of on-demand serverless
+          style runtimes with elastic scale up. The downside is that you still pay for idle.
+        </p>
+        <p>
+          Cyclic is a good alternative to Heroku if you are looking for a modern cloud architecture,
+          serverless hosting infrastructure, easy on-boarding experience, a bursty or
+          inconsistent workload. Or if self-hosting is required (BYO cloud account).
+        </p>
+        <p>
+          Pay for the requests you use, auto-scale from the start.
+        </p>
+        <p>
+          Here is a breakdown Heroku compared to Cyclic on individual features:
+        </p>
+        <div class="spacer _16"></div>
+      </b-col>
+      <b-col md="3" align-self="center">
+        <b-row align-h="center">
+          <b-col cols="12" align-self="center">
+            <div class="vs-images">
+              <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
+              <!-- <div class="spacer _16"></div> -->
+              <div>vs</div>
+              <!-- <div class="spacer _16"></div> -->
+              <img class="vs-image" src="/images/logos/icon-dark.svg" width="150px"/>
+            </div>
+          </b-col>
+        </b-row>
+      </b-col>
+      <b-col sm="1"></b-col>
+    </b-row>
+  </b-container>
 
 
   <b-container>
     <b-row align-h="center">
-      <b-col cols="2"></b-col>
+      <b-col md="2"></b-col>
       <b-col>
           <b-container class="feature-matrix">
             <b-row class="header" align-h="center">
@@ -144,13 +190,16 @@
             <b-row align-h="center">
               <b-col cols="6">Consumption based pricing (stop paying for idle capacity)</b-col>
               <b-col cols="3">✔︎</b-col>
-              <b-col cols="3"><strong>X</strong></b-col>
+              <b-col cols="3">
+                <strong>X</strong>
+                <small>(discountinued as of 11/28/2022)</small>
+              </b-col>
             </b-row>
           </b-container>
 
           <div class="spacer-64"></div>
       </b-col>
-      <b-col cols="2"></b-col>
+      <b-col md="2"></b-col>
     </b-row>
   </b-container>
 
@@ -190,6 +239,15 @@ export default {
 
 
 <style scoped>
+
+.vs-images {
+  display: grid;
+  grid-template-columns: auto 20px auto;
+}
+
+.vs-image {
+  
+}
 
 .feature-matrix .header {
   background: darkblue;
