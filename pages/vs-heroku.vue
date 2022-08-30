@@ -1,62 +1,42 @@
+<script>
+const title = "Heroku vs Cyclic: Feature and pricing comparison | cyclic.sh"
+const description = "Heroku compared to Cyclic for features, pricing and developer experience."
+export default {
+  head: {
+    title,
+    meta: [
+
+      {hid: 'title', name: 'title', content: title},
+      {hid: 'og:title', property: 'og:title', content: title},
+      {hid: 'twitter:title', name: 'twitter:title', content: title},
+
+      {hid: 'og:description', property: 'og:description', content: description},
+      {hid: 'twitter:description', name: 'twitter:description', content: description},
+      {hid: 'description', name: 'description', content: description},
+
+      // {hid: 'og:image', property: 'og:image', content: `https://www.cyclic.sh/summary_large_image.png` },
+      // {hid: 'twitter:image', name: 'twitter:image', content: `https://www.cyclic.sh/summary_large_image.png` },
+      // {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+
+    ],
+  }
+}
+</script>
+
+
 <template>
 <div class="wrapper">
 
-  <!-- <div class="section hero">
-    <div class="container ">
-      <div class="_12-columns tablet-center">
-        <div class="column desk-6 tab-8 mob-12">
-          <div>
-            <h1 class="header-large">
-              Heroku vs Cyclic
-            </h1>
-            <div class="spacer _16"></div>
-            <p class="paragraph">
-               Heroku is the one of the best known PaaS (Platform as a Service) vendors.
-              It was founded in 2007 (two years before Node.js was first released). Both
-              Heroku and Cyclic offer a similar set of standard basic features.
-            </p>
-            <p>
-              Heroku is built around a concept of "Dynos". These are lightweight containers
-              that are priced liked servers but have some attributes of on-demand serverless
-              style runtimes with elastic scale up. The downside is that you still pay for idle.
-            </p>
-            <p>
-              Cyclic is a good alternative to Heroku if you are looking for a modern cloud architecture,
-              serverless hosting infrastructure, easy on-boarding experience, a bursty or
-              inconsistent workload. Or if self-hosting is required (BYO cloud account).
-            </p>
-            <p>
-              Pay for the requests you use, auto-scale from the start.
-            </p>
-            <p>
-              Here is a breakdown Heroku compared to Cyclic on individual features:
-            </p>
-            <div class="spacer _16"></div>
-          </div>
-        </div>
-        <div class="column desk-1 tab-0"></div>
-        <div class="column desk-5 tab-10 mob-12">
-          <div class="row" style="vertical-align:bottom;">
-            <img src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
-            <div class="spacer _16"></div>
-            <p>vs</p>
-            <div class="spacer _16"></div>
-            <img src="/images/logos/icon-dark.svg" width="150px"/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
-  <b-container>
+  <b-container class="hero">
     <b-row>
       <b-col sm="1"></b-col>
-      <b-col md="8" align-self="center">
+      <b-col md="6" align-self="center">
         <h1>
           Heroku vs Cyclic
         </h1>
-        <div class="spacer _16"></div>
-        <p class="paragraph">
+        <div class="spacer-32"></div>
+        <p>
             Heroku is the one of the best known PaaS (Platform as a Service) vendors.
           It was founded in 2007 (two years before Node.js was first released). Both
           Heroku and Cyclic offer a similar set of standard basic features.
@@ -70,27 +50,25 @@
           Cyclic is a good alternative to Heroku if you are looking for a modern cloud architecture,
           serverless hosting infrastructure, easy on-boarding experience, a bursty or
           inconsistent workload. Or if self-hosting is required (BYO cloud account).
-        </p>
-        <p>
           Pay for the requests you use, auto-scale from the start.
         </p>
         <p>
           Here is a breakdown Heroku compared to Cyclic on individual features:
         </p>
-        <div class="spacer _16"></div>
       </b-col>
-      <b-col md="3" align-self="center">
-        <b-row align-h="center">
-          <b-col cols="12" align-self="center">
+      <!-- <b-col lg="1" ></b-col> -->
+      <b-col md="3" class="hero-images" align-self="center">
+        <!-- <b-row align-h="center">
+          <b-col cols="12" align-self="center"> -->
             <div class="vs-images">
               <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
-              <!-- <div class="spacer _16"></div> -->
-              <div>vs</div>
-              <!-- <div class="spacer _16"></div> -->
+              <!-- <div class="spacer-16"></div> -->
+              <div class="vs-text">vs</div>
+              <!-- <div class="spacer-16"></div> -->
               <img class="vs-image" src="/images/logos/icon-dark.svg" width="150px"/>
             </div>
-          </b-col>
-        </b-row>
+          <!-- </b-col>
+        </b-row> -->
       </b-col>
       <b-col sm="1"></b-col>
     </b-row>
@@ -113,7 +91,7 @@
               <b-col cols="3">Paid</b-col>
             </b-row>
             <b-row align-h="center">
-              <b-col cols="6">Cold start time</b-col>
+              <b-col cols="6">Inactivity Delay</b-col>
               <b-col cols="3">~200ms</b-col>
               <b-col cols="3">~30s</b-col>
             </b-row>
@@ -203,57 +181,57 @@
     </b-row>
   </b-container>
 
-
-  <!-- <CtaLaunchHelloWorld></CtaLaunchHelloWorld> -->
-
   <CtaFullStackApps></CtaFullStackApps>
 
 </div>
 </template>
 
 
-<script>
-const title = "Heroku vs Cyclic: Feature and pricing comparison | cyclic.sh"
-const description = "Heroku compared to Cyclic for features, pricing and developer experience."
-export default {
-  head: {
-    title,
-    meta: [
-
-      {hid: 'title', name: 'title', content: title},
-      {hid: 'og:title', property: 'og:title', content: title},
-      {hid: 'twitter:title', name: 'twitter:title', content: title},
-
-      {hid: 'og:description', property: 'og:description', content: description},
-      {hid: 'twitter:description', name: 'twitter:description', content: description},
-      {hid: 'description', name: 'description', content: description},
-
-      // {hid: 'og:image', property: 'og:image', content: `https://www.cyclic.sh/summary_large_image.png` },
-      // {hid: 'twitter:image', name: 'twitter:image', content: `https://www.cyclic.sh/summary_large_image.png` },
-      // {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
-
-    ],
-  }
-}
-</script>
-
-
 <style scoped>
 
+.hero {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  max-width: 800px;
+  margin-bottom: 0px;
+  font-size: 65px;
+  line-height: 1.15em;
+}
+
+.hero-images {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .vs-images {
   display: grid;
-  grid-template-columns: auto 20px auto;
+  grid-template-columns: auto 55px auto;
+  place-items: center;
 }
 
 .vs-image {
-  
+  /* min-width: 150px; */
+  max-width: 150px;
+  /* min-height: 150px; */
+  max-height: 150px;
 }
 
+.vs-text {
+  vertical-align: middle;
+  font-size: 40px;
+  align-self: center;
+  text-align: center;
+  xmin-width: 75px;
+}
+
+
 .feature-matrix .header {
-  background: darkblue;
+  background: #2e59c7;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-radius: 3px 3px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .feature-matrix .header {
@@ -266,12 +244,22 @@ export default {
 }
 
 .feature-matrix .row:not(.header) {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    /* background-color: rgba(86,61,124,.15); */
-    border: 1px solid white;/* rgba(86,61,124,.2); */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  /* background-color: rgba(86,61,124,.15); */
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.feature-matrix .row:not(.header):last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+.spacer-16 {
+  min-height: 16;
+  max-height: 16;
+  min-width: 16;
+  max-width: 16;
+}
 .spacer-32 {
   min-height: 32px;
   max-height: 32px;

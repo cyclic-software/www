@@ -65,7 +65,19 @@
     max-width: 1200px;
   }
   #menubar {
-    xbackground: red;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 100%;
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    flex-direction: column;
+    justify-content: center;
   }
 
 
@@ -74,7 +86,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
 
-  @media (min-width: 576px) {
+  /* @media (min-width: 576px) {
     #menu {
       padding-left: 40px;
       padding-right: 40px;
@@ -85,7 +97,7 @@
       padding-left: 80px;
       padding-right: 80px;
     }
-  }
+  } */
   .sp-65 {
     min-height: 65px;
   }
