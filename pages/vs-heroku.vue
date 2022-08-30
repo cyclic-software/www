@@ -163,6 +163,32 @@
 </template>
 
 
+<script>
+const title = "Heroku vs Cyclic: Feature and pricing comparison | cyclic.sh"
+const description = "Heroku compared to Cyclic for features, pricing and developer experience."
+export default {
+  head: {
+    title,
+    meta: [
+
+      {hid: 'title', name: 'title', content: title},
+      {hid: 'og:title', property: 'og:title', content: title},
+      {hid: 'twitter:title', name: 'twitter:title', content: title},
+
+      {hid: 'og:description', property: 'og:description', content: description},
+      {hid: 'twitter:description', name: 'twitter:description', content: description},
+      {hid: 'description', name: 'description', content: description},
+
+      // {hid: 'og:image', property: 'og:image', content: `https://www.cyclic.sh/summary_large_image.png` },
+      // {hid: 'twitter:image', name: 'twitter:image', content: `https://www.cyclic.sh/summary_large_image.png` },
+      // {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+
+    ],
+  }
+}
+</script>
+
+
 <style scoped>
 
 .feature-matrix .header {
