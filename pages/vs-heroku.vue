@@ -30,8 +30,8 @@ export default {
 
   <b-container class="hero">
     <b-row>
-      <b-col sm="1"></b-col>
-      <b-col md="6" align-self="center">
+      <b-col lg="1"></b-col>
+      <b-col md="6" lg="5" align-self="center">
         <h1>
           Heroku vs Cyclic
         </h1>
@@ -57,9 +57,7 @@ export default {
         </p>
       </b-col>
       <!-- <b-col lg="1" ></b-col> -->
-      <b-col md="3" class="hero-images" align-self="center">
-        <!-- <b-row align-h="center">
-          <b-col cols="12" align-self="center"> -->
+      <b-col md="6" lg="5" class="hero-images" align-self="center">
             <div class="vs-images">
               <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
               <!-- <div class="spacer-16"></div> -->
@@ -70,7 +68,7 @@ export default {
           <!-- </b-col>
         </b-row> -->
       </b-col>
-      <b-col sm="1"></b-col>
+      <b-col lg="1"></b-col>
     </b-row>
   </b-container>
 
