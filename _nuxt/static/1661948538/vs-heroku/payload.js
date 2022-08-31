@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/vs-heroku", {data:[{}],fetch:{},mutations:void 0});
