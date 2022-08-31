@@ -3949,9 +3949,9 @@ blockquote {
 }
 
 @media screen and (min-width: 1280px) {
-  body {
+  /* body {
     margin-top: 10px;
-  }
+  } */
 
   .button {
     border-color: #3868e3;
