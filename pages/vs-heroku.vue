@@ -121,7 +121,7 @@ export default {
             <b-row align-h="center">
               <b-col cols="6">Integrated object storage</b-col>
               <b-col cols="3">S3</b-col>
-              <b-col cols="3">extra addon</b-col>
+              <b-col cols="3">Extra addon</b-col>
             </b-row>
           </b-container>
 
@@ -146,7 +146,7 @@ export default {
             <b-row align-h="center">
               <b-col cols="6">Zero-config</b-col>
               <b-col cols="3">✔︎</b-col>
-              <b-col cols="3">x</b-col>
+              <b-col cols="3"><strong>X</strong></b-col>
             </b-row>
           </b-container>
 
@@ -167,11 +167,13 @@ export default {
               <b-col cols="6">Consumption based pricing (stop paying for idle capacity)</b-col>
               <b-col cols="3">✔︎</b-col>
               <b-col cols="3">
-                <strong>X</strong>
-                <small>(discountinued as of 11/28/2022)</small>
+                <strong>X</strong><sup>1</sup>
               </b-col>
             </b-row>
           </b-container>
+          <p class="footnote">
+            <small>[1] Heroku free tier discountinued as of 11/28/2022</small>
+          </p>
 
           <div class="spacer-64"></div>
       </b-col>
@@ -221,23 +223,13 @@ h1 {
   font-size: 40px;
   align-self: center;
   text-align: center;
-  xmin-width: 75px;
 }
-
-
 .feature-matrix .header {
   background: #2e59c7;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 5px 5px 0px 0px;
-}
-
-.feature-matrix .header {
   font-size: 1.5rem;
-  text-align: left;
-}
-
-.row .col {
   text-align: left;
 }
 
@@ -252,6 +244,40 @@ h1 {
   border-radius: 0px 0px 5px 5px;
 }
 
+/* Small aka under Medium of ≥768 */
+@media screen and (max-width: 767px) {
+  .feature-matrix .header {
+    font-size: 1.2rem;
+  }
+
+  .feature-matrix .row:not(.header) {
+
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+/* X-Small aka under Small of ≥567 */
+@media screen and (max-width: 576px) {
+  .feature-matrix .header {
+    font-size: 1.1rem;
+  }
+
+  .feature-matrix .row:not(.header) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.row .col {
+  text-align: left;
+}
+
+
+.footnote {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .spacer-16 {
   min-height: 16;
   max-height: 16;
