@@ -41,6 +41,7 @@
             <a href="https://docs.cyclic.sh/" target="_blank" class="footer-link">Documentation</a>
             <!-- <a href="release-notes" class="footer-link">Release Notes</a> -->
             <nuxt-link to="/terms-of-service" class="footer-link">Terms of Service</nuxt-link>
+            <nuxt-link to="/privacy-policy" class="footer-link">Privacy Policy</nuxt-link>
           </div>
         </div>
       </div>
