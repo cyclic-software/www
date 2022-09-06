@@ -41,7 +41,6 @@
 
   <SectionHero>
     <template v-slot:img>
-      <i class="fa-solid fa-database"></i>
       <img src="/images/6.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
     </template>
     <template v-slot:title>
