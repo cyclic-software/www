@@ -1,3 +1,41 @@
+
+<script>
+  const title = "Cyclic.sh Pricing: Start for free pay for what you use, migrate to your own cloud"
+  const description = "Free to start - Compare pricing plans that let you grow on your terms. Host in your cloud account when you are ready."
+  const imageUrl = '/og/pricing_summary_large_image.png'
+
+  export default {
+    data() {
+      return {
+        stripe: (process.env.dev)? {
+          solo: "https://buy.stripe.com/test_3cs6qA6i7awJczmdQQ",
+          grow: "https://buy.stripe.com/test_14kbKUfSH8oBare3cd"
+        } : {
+          solo: "https://buy.stripe.com/dR6g091JE2e45XObII",
+          grow: "https://buy.stripe.com/3cs01b0FAaKAfyo7st"
+        }
+      }
+    },
+    head: {
+      title,
+      meta: [
+
+        {hid: 'title', name: 'title', content: title},
+        {hid: 'og:title', property: 'og:title', content: title},
+        {hid: 'twitter:title', name: 'twitter:title', content: title},
+
+        {hid: 'og:description', property: 'og:description', content: description},
+        {hid: 'twitter:description', name: 'twitter:description', content: description},
+        {hid: 'description', name: 'description', content: description},
+
+        {hid: 'og:image', property: 'og:image', content: imageUrl },
+        {hid: 'twitter:image', name: 'twitter:image', content: imageUrl },
+        {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      ],
+    }
+  }
+</script>
+
 <template>
   <div>
     <div class="wrapper">
@@ -146,22 +184,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      stripe: (process.env.dev)? {
-        solo: "https://buy.stripe.com/test_3cs6qA6i7awJczmdQQ",
-        grow: "https://buy.stripe.com/test_14kbKUfSH8oBare3cd"
-      } : {
-        solo: "https://buy.stripe.com/dR6g091JE2e45XObII",
-        grow: "https://buy.stripe.com/3cs01b0FAaKAfyo7st"
-      }
-    }
-  },
-}
-</script>
 
 
 <style scoped>
