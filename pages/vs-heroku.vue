@@ -1,7 +1,7 @@
 <script>
 const title = "Heroku vs Cyclic: Feature and pricing comparison | cyclic.sh"
 const description = "Heroku compared to Cyclic for features, pricing and developer experience."
-const imageUrl = "/og/cyclic_vs_heroku_summary_large_image.png"
+const imageUrl = "https://www.cyclic.sh/og/cyclic_vs_heroku_summary_large_image.png"
 export default {
   head: {
     title,
