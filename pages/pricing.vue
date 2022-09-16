@@ -2,7 +2,7 @@
 <script>
   const title = "Cyclic.sh Pricing: Start for free pay for what you use, migrate to your own cloud"
   const description = "Free to start - Compare pricing plans that let you grow on your terms. Host in your cloud account when you are ready."
-  const imageUrl = '/og/pricing_summary_large_image.png'
+  const imageUrl = 'https://www.cyclic.sh/og/pricing_summary_large_image.png'
 
   export default {
     data() {
