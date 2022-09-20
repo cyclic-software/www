@@ -1,3 +1,22 @@
+<script>
+  const title = "Sign Up for Cyclic | cyclic.sh"
+  const description = "Sign up to deploy full stack javascript apps."
+  export default {
+    head: {
+      title,
+      meta: [
+        {hid: 'title', name: 'title', content: title},
+        {hid: 'og:title', property: 'og:title', content: title},
+        {hid: 'twitter:title', name: 'twitter:title', content: title},
+
+        {hid: 'og:description', property: 'og:description', content: description},
+        {hid: 'twitter:description', name: 'twitter:description', content: description},
+        {hid: 'description', name: 'description', content: description},
+      ],
+    }
+  }
+  </script>
+
 <template>
 
 <div class="wrapper">
@@ -20,22 +39,6 @@
 </div>
 
 </template>
-
-<script>
-import CompanyStats from "../components/CompanyStats.vue";
-import SectionHero from "~/components/SectionHero.vue";
-export default {
-    name: "Homepage",
-    head() {
-        return {
-            meta: [
-                { hid: "google-site-verification", name: "google-site-verification", content: "lmJwyO7CCfgF7HJ3lEAOAkbHn9JGkXKOa2o_iJsMAnQ" }
-            ]
-        };
-    },
-    components: { CompanyStats, SectionHero }
-}
-</script>
 
 <style scoped>
 
