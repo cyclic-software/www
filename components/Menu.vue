@@ -118,7 +118,7 @@
     width: 100%;
     padding-right: 40px;
     padding-left: 40px;
-    transition:  background-color 0.2s;
+    transition:  background-color 0.3s;
   }
 
   .sp-65 {
