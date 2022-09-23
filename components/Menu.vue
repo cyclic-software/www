@@ -67,7 +67,6 @@
           this.dark = v;
       },
       collapsed(v){
-        console.log(v)
         let menubar = document.getElementById('menubar')
         if(v)menubar.classList.remove('menu_collapsed')
         if(!v)menubar.classList.add('menu_collapsed')
