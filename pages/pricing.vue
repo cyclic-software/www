@@ -98,13 +98,14 @@
                     <li>10 apps</li>
                     <li>Private GitHub repositories</li>
                     <li>10 Cron tasks per app</li>
-                    <li>Search structured logs</li>
+                    <li>Search structured logs<sup>*</sup></li>
                     <li>Branch based preview envs</li>
                     <li>30 day log retention</li>
                     <li>Email support</li>
                   </ul>
                 </div>
                 <p>(Learn about our <a href="https://app.cyclic.sh/#/account">referral program</a>)</p>
+                <p><sup>*</sup> Coming soon</p>
               </div>
             </div>
             <div class="column desk-4">
