@@ -2,16 +2,16 @@
 title: 'Talking About Failure'
 slug: 'talking-about-failure'
 summary: 'Talking about failure can be scary. We need to improve the culture in software to encourage us all to share our stories of failure.'
-createdAt: 'Tue Sep 20 2022 00:00:00 GMT+0000 (Coordinated Universal Time)'
-updatedAt: 'Tue Sep 20 2022 00:00:00 GMT+0000 (Coordinated Universal Time)'
-publishedOn: 'Tue Sep 20 2022 00:00:00 GMT+0000 (Coordinated Universal Time)'
+createdAt: 'Tue Sep 27 2022 00:00:00 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Tue Sep 27 2022 00:00:00 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Tue Sep 27 2022 00:00:00 GMT+0000 (Coordinated Universal Time)'
 author: kam-lasater
 category: Engineering
-hidden: true
+hidden: false
 featured: false
-public: Tue Sep 20 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+public: Tue Sep 27 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
 image: /content/aw-snap.png
-thumbnail: /content/aw-snap.png
+thumbnail: /content/aw-snap-vertical.png
 ---
 When I was a younger I went on several rock climbing and mountaineering expeditions. I was exposed to some instructors and practitioners that took staying safe in the mountains very seriously. One of them carried a book from The American Alpine Club on climbing accidents. The accidents were never the cause of a single bad choice. They were caused by a series of decisions, taken over time, that combined to create the conditions for the accident.
 
