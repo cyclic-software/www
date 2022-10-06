@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-      <!-- <h1>Posts</h1> -->
 
         <div class="section hero blog wf-section">
           <div class="container w-container">
@@ -48,7 +47,7 @@
       </ul> -->
     </div>
 
-    <LaunchHelloWorld></LaunchHelloWorld>
+    <HubspotBlogForm />
   </div>
 
 </template>
