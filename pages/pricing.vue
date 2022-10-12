@@ -5,17 +5,6 @@
   const imageUrl = 'https://www.cyclic.sh/og/pricing_summary_large_image.png'
 
   export default {
-    data() {
-      return {
-        stripe: (process.env.dev)? {
-          solo: "https://buy.stripe.com/test_3cs6qA6i7awJczmdQQ",
-          grow: "https://buy.stripe.com/test_14kbKUfSH8oBare3cd"
-        } : {
-          solo: "https://buy.stripe.com/dR6g091JE2e45XObII",
-          grow: "https://buy.stripe.com/3cs01b0FAaKAfyo7st"
-        }
-      }
-    },
     head: {
       title,
       meta: [
@@ -86,7 +75,7 @@
                   Unlock additional developer productivity features.
                 </p>
                 <div class="spacer _24"></div>
-                <a :href="stripe.solo" target="_blank" class="button no-margin w-button">Upgrade</a>
+                <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Upgrade</a>
                 <div class="spacer _24"></div>
                 <h3 class="no-margin">$9<span class="regular"> /month</span></h3>
                 <p class="paragraph-small">
@@ -104,7 +93,7 @@
                     <li>Email support</li>
                   </ul>
                 </div>
-                <p>(Learn about our <a href="https://app.cyclic.sh/#/account">referral program</a>)</p>
+                <p>(Learn about our <a href="https://app.cyclic.sh/#/plan">referral program</a>)</p>
                 <p><sup>*</sup> Coming soon</p>
               </div>
             </div>
@@ -116,7 +105,7 @@
                   Take your company and apps to the next level.
                 </p>
                 <div class="spacer _24"></div>
-                <a :href="stripe.grow" target="_blank" class="button no-margin w-button">Buy</a>
+                <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Buy</a>
                 <div class="spacer _24"></div>
                 <h3 class="no-margin">$299<span class="regular"> /month</span></h3>
                 <p class="paragraph-small"><br></p>
