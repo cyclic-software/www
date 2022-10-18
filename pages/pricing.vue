@@ -58,7 +58,7 @@
                     <li>1GB Object Storage (AWS S3)</li>
                     <li>1GB Database Storage (AWS DynamoDB)</li>
                     <li>Unlimited blazing fast builds</li>
-                    <li>Public GitHub repositories</li>
+                    <li>Personal GitHub repositories</li>
                     <li>Hosted close to you</li>
                     <li>3 Cron tasks per app</li>
                     <li>7 day log retention</li>
@@ -85,7 +85,6 @@
                 <div class="tick-list w-richtext">
                   <ul>
                     <li>10 apps</li>
-                    <li>Private GitHub repositories</li>
                     <li>10 Cron tasks per app</li>
                     <li>Search structured logs<sup>*</sup></li>
                     <li>Branch based preview envs</li>
