@@ -1,6 +1,6 @@
 <template>
     <div class="example_code">
-        <prism-editor v-model="example_code" class="my-editor" :highlight="highlighter" line-numbers></prism-editor>
+        <prism-editor v-model="example_code" class="my-editor" :highlight="highlighter" line-numbers readonly></prism-editor>
     </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
     components: {  PrismEditor },
     data() {
       return {
-        example_code: `const express = require('express')
+        example_code: `const express = require('express') 
 const app = express()
 
 app.get('/', (req, res) => {
@@ -64,6 +64,9 @@ app.listen(3000)
     }
   pre.prism-editor__editor span{
     background: none!important;
+    }
+    .prism-editor__line-width-calc{
+        display: none;
     }
 
 

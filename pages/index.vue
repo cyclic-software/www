@@ -61,7 +61,7 @@
       <b-col sm="4"></b-col>
       <b-col sm="4">
         <div class="text-center">
-              <b-button class="m-1" href="/api/login" variant='primary' size="lg">
+              <b-button class="m-1" @click="click_deploy" variant='primary' size="lg">
                       <i class='fab  fa-github mr-2'></i>  Deploy with GitHub
               </b-button>
 
@@ -407,6 +407,18 @@ export default {
         };
     },
     components: { CompanyStats, SectionHero, ExampleCode },
+    methods:{
+      async click_deploy(){
+
+            let res = await gtag('event', 'click deploy', {
+              'app_name': 'myAppName',
+              'screen_name': 'Home'
+            });
+            console.log(res)
+
+
+      }
+    }
 
 
 }
