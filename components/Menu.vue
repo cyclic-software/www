@@ -33,7 +33,10 @@
 
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="https://app.cyclic.sh/api/login">
+            <b-nav-item 
+            href="#"
+            @click.prevent="sign_in('https://app.cyclic.sh/api/login', $event)" 
+            >
               Sign In
             </b-nav-item>
           </b-navbar-nav>
@@ -78,6 +81,24 @@
       }
     },
     methods: {
+      async sign_in(url, e){
+          try{
+              let session_seconds = parseInt(e.timeStamp/1000)
+                await gtag('event', 'sign_in', {
+                'event_label' : window.location.href,
+                'event_category' : 'sign_in',
+                'value' : session_seconds,
+
+                'page' : window.location,
+                'session_seconds': session_seconds,
+                'event_callback': function() {
+                    window.location = url
+                  }
+                });  
+            }catch(e){
+                window.location = url
+            }
+      },
       handleScroll() {
         if(window.pageYOffset){
           this.scrolled = true;
