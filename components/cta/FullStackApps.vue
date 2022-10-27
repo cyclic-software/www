@@ -1,6 +1,5 @@
 <template>
     <div class="section wf-section wide">
-    <img src="/images/Rectangle-244.svg" loading="lazy" alt="" class="top-gradient absolute-image full-width">
     <div class="container center-align">
       <div class="spacer _64"></div>
       <div class="text-box _600px">
@@ -39,4 +38,5 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
 </style>

@@ -1,8 +1,154 @@
 <template>
 <div>
-  <img src="/images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image">
+    <div class="header_image fade_loop main_splash">      
+      <!-- <img src="/images/Rectangle-240.svg" loading="lazy" alt="" class="absolute-image"> -->
+    </div>
+<div class="home_content">
+  <b-container>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <b-row>
+      <b-col lg="12">
+        <div class="text-center">
+          <h1 class="header-large" style="font-size:75px;">
+                Full Stack Apps
+                </h1>
+              <p class="paragraph caption">
+                Connect your GitHub repo. We will build, deploy and manage the hosting. 
+              </p>
+              <p class=" caption">
+                Front-ends - Back-ends - Data - APIs - Bots
+              </p>
+        </div>
+      </b-col>
+    </b-row>
+  </b-container>
+  <div class="spacer _16"></div>
+  <b-container class="mt-5">
+   <b-row>
+      <b-col sm="6">
+        <example-code/>
+        <div class=" mt-3">
+          <p class="paragraph caption">
+              No bloat, framework agnostic,  asdfasdf
+          </p>
+        </div>
+      </b-col>
+      <b-col sm="6">
+        <div class="text-center video_box" style="max-height:220px; overflow: hidden;">
+          <video autoplay loop muted>
+              <source src="/images/deploy_tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>  
+        </div>
+        <div class=" mt-3">
+          <p class="paragraph caption">
+              Go from <code>git push</code> to go-live in <strong>under 10 seconds</strong>.
+          </p>
+        </div>
+      </b-col>
+    </b-row>
+  
 
 
+  </b-container>
+
+
+  <b-container class="mt-5">
+    <b-row>
+      <b-col sm="4"></b-col>
+      <b-col sm="4">
+        <div class="text-center">
+              <b-button class="m-1" href="/api/login" variant='primary' size="lg">
+                      <i class='fab  fa-github mr-2'></i>  Deploy with GitHub
+              </b-button>
+
+              <!-- <b-button class="m-1" href=" https://docs.cyclic.sh/docs/intro" target="_blank"
+              variant='warning' size="md">
+                      Documentation
+              </b-button> -->
+            </div>
+      </b-col>
+      <b-col sm="4"></b-col>
+    </b-row> 
+  </b-container>
+
+
+  <div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+
+  <b-container class="mt-5">
+   <b-row>
+      <b-col sm="4">
+        <div class="feature1">
+          <h3>frameworks</h3>
+          <div class="caption">
+            Cyclic Apps are available immediately on demand. 
+            Even on free tier. 
+            Say hello to fast apps. Say goodbye to waiting
+            30 seconds for containers to be provisioned and started.
+          </div>
+        </div>
+      </b-col>
+      <b-col sm="4">
+        <div class="feature1">
+          <h3>languages</h3>
+        </div>
+      </b-col>
+      <b-col sm="4">
+        <div class="feature1">
+        </div>
+      </b-col>
+    </b-row>
+  </b-container>
+
+  
+  <b-container class="mt-5">
+   <b-row>
+      <b-col sm="4">
+        <div class="feature1">
+          <h3>No Sleep</h3>
+          <div class="caption">
+            Cyclic Apps are available immediately on demand. 
+            Even on free tier. 
+            Say hello to fast apps. Say goodbye to waiting
+            30 seconds for containers to be provisioned and started.
+          </div>
+        </div>
+      </b-col>
+      <b-col sm="4">
+        <div class="feature1">
+          <h3>Database and Storage</h3>
+        </div>
+      </b-col>
+      <b-col sm="4">
+        <div class="feature1">
+          <h3>Serverless Cron</h3>
+        </div>
+      </b-col>
+    </b-row>
+  </b-container>
+
+  
+</div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<!-- 
   <div class="section hero home wf-section">
     <div class="container w-container">
       <div class="_12-columns tablet-center">
@@ -12,19 +158,25 @@
               Full stack apps
               </h1>
             <p class="paragraph">
-               Connect your GitHub repo. We will build, deploy and manage the hosting. Authorize our GitHub app and you
-               will have a fully featured software pipeline. See how quick and easy hosting can be.
+               Connect your GitHub repo. We will build, deploy and manage the hosting. 
             </p>
             <div class="spacer _16"></div>
           </div>
           <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
         </div>
         <div class="column desk-1 tab-0"></div>
-        <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" xstyle="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
+        <div class="column desk-5 tab-10 mob-12">
+          <video autoplay loop muted>
+            <source src="/images/deploy_tour.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>  
+          <img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" xstyle="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w">
+        
+        </div>
       </div>
     </div>
   </div>
-
+ -->
 
   <SectionHero left>
     <template v-slot:img>
@@ -53,7 +205,7 @@
   </SectionHero>
 
 
-  <SectionHero left>
+  <!-- <SectionHero left>
     <template v-slot:img>
       <img src="/images/4.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
     </template>
@@ -64,9 +216,9 @@
       Cyclic brings together application and API logs to give you a single, clear and organized view of everything that
       happened in your application between request and response.
     </template>
-  </SectionHero>
+  </SectionHero> -->
 
-  <SectionHero>
+  <!-- <SectionHero>
     <template v-slot:img>
       <img src="/images/8.svg" alt="Structured logs product screenshot" width="400" class="center-image"/>
     </template>
@@ -76,7 +228,7 @@
     <template v-slot:text>
       Stop jumping between windows and scrolling through logs. Full text search your app logs with zero config, on paid plans.
     </template>
-  </SectionHero>
+  </SectionHero> -->
 
   <SectionHero left>
     <template v-slot:img>
@@ -91,6 +243,8 @@
     </template>
   </SectionHero>
 
+
+
   <SectionHero>
     <template v-slot:img>
       <img src="/images/10.svg" alt="Structured logs product screenshot" width="400" class="center-image"/>
@@ -103,6 +257,9 @@
       real time to application instances with zero-downtime.
     </template>
   </SectionHero>
+
+
+
 
 <!--
   <SectionHero left>
@@ -229,8 +386,17 @@
 </template>
 
 <script>
+
+
+
+
 import CompanyStats from "../components/CompanyStats.vue";
 import SectionHero from "~/components/SectionHero.vue";
+import ExampleCode from "~/components/ExampleCode.vue";
+
+
+
+
 export default {
     name: "Homepage",
     head() {
@@ -240,11 +406,15 @@ export default {
             ]
         };
     },
-    components: { CompanyStats, SectionHero }
+    components: { CompanyStats, SectionHero, ExampleCode },
+
+
 }
 </script>
 
 <style scoped>
+
+
   .section.blue-gradient {
     margin-right: 0px;
     margin-left: 0px;
@@ -263,4 +433,87 @@ export default {
     padding-right: 0px;
     padding-left: 0px;
   } */
+
+  .home_content{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+
+  .header_image {
+            background-image: url(/images/Rectangle-240.svg);
+            background-repeat: no-repeat;
+            /* background-position: left top; */
+            /* padding-top: 95px; */
+            /* margin-bottom: 60px; */
+            animation: fade_loop 8s  infinite;
+            /* -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; */
+            position: absolute;
+            /* z-index: 1000; */
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            width: 100%;
+         }
+         
+         /* @-webkit-keyframes fade_loop {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         } */
+         
+         @keyframes fade_loop {
+            0% {
+               opacity: 0.9;
+               transform: translateX(0px) scale(1);
+            }
+            50% {
+               opacity: 1;
+               transform: translateX(-20px) scale(1.07);
+            }
+            100% {
+               opacity: 0.9;
+               transform: translateX(0px) scale(1);
+            }
+         }
+         
+         .fade_loop {
+            -webkit-animation-name: fade_loop;
+            animation-name: fade_loop;
+         }
+
+.video_box{
+  border: 2px solid #292929;
+  border-radius: 5px;
+}
+
+.caption{
+  text-align: center;;
+  color: #bdbdbd
+}
+    
+
+
+.main_splash{
+   background:var(--background-pattern-dark);
+      padding: 20px;
+    color:white;
+ 
+}
+
+.main_splash{
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 11%,var(--background-color)),var(--background-pattern-dark)!important;
+}
+
+
+
 </style>

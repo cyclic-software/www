@@ -1,0 +1,37 @@
+:root{
+    --darkblue: #000D64;
+    --blue: #2E59C7;
+    --primary-blue: #3868E3;
+    --lightblue: #98B1EF;
+    --lightgray: #D7D7D7;
+    --darkgray: #9F9F9F;
+    --gray: #C4C4C4;
+    --black: #292929;
+    --red: #CA3000;
+    --orange: #EC5500;
+    --green: #039500;
+    --dark-green: #209123;
+    --yellow: #ECC600;
+    --success: #039500;
+    --borders-radius: 5px;
+    --pink: #e83e8c;
+    --darkpink: #6c1d42;
+    --background-pattern-dark: url("../images/dark_bg.png");
+    --background-pattern-light: url("../images/cyclic_pattern.svg");
+    --code-error: #400b0b;
+    --text-color: black;
+    --highlight-color: var(--primary-blue);
+    --shadow-close:  0px 2px 4px rgba(0, 0, 0, 0.075);
+    --shadow-mid:  0px 8px 16px rgba(0, 0, 0, 0.15);
+    --shadow-far:  0px 16px 48px rgba(0, 0, 0, 0.176);
+    --background-color: black;
+}
+
+
+h1,h2 {
+    letter-spacing: 2px;
+}
+
+.paragraph{
+    letter-spacing: 0.2px;;
+}

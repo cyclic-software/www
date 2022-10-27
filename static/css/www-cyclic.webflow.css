@@ -194,7 +194,7 @@
 }
 
 body {
-  background-color: #0f2c41;
+  background-color: black;
   font-family: 'Titillium Web', sans-serif;
   color: #fff;
   font-size: 1em;
@@ -394,7 +394,7 @@ blockquote {
   display: none;
 }
 
-.button {
+/* .button {
   min-height: 48px;
   margin-bottom: 16px;
   margin-left: 0px;
@@ -530,7 +530,7 @@ blockquote {
 .button.outline-white:active {
   border-color: #1c40db;
   background-color: #1c40db;
-}
+} */
 
 .spacer {
   display: block;
@@ -3426,7 +3426,7 @@ blockquote {
   right: -147%;
 }
 
-.btn {
+/* .btn {
   padding: 15px 25px;
   border-radius: 5px;
   background-color: #3862ec;
@@ -3440,11 +3440,11 @@ blockquote {
 .btn:hover {
   background-color: #213ea0;
 }
-
+*/
 .carousel-mask {
   overflow: visible;
   width: 40%;
-}
+} 
 
 .section-2 {
   overflow: hidden;
