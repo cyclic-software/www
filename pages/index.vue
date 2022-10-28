@@ -247,7 +247,7 @@ export default {
       async sign_up(url, e){
           try{
               let session_seconds = parseInt(e.timeStamp/1000)
-                await gtag('event', 'sign_up', {
+                await gtag('event', 'cta_hero_deploy_starter_now', {
                 'event_label' : window.location.href,
                 'event_category' : 'sign_up',
                 'value' : session_seconds,
