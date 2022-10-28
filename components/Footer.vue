@@ -13,7 +13,7 @@
         <div class="column desk-2 tab-4 mob-6">
           <h5 class="footer-header">Compare</h5>
           <div class="footer-links-container">
-            <nuxt-link to="vs-heroku">vs Heroku</nuxt-link>
+            <nuxt-link to="/vs-heroku">vs Heroku</nuxt-link>
           </div>
         </div>
         <div class="column desk-2 tab-4 mob-6">
