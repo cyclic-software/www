@@ -33,6 +33,7 @@
         </p>
         <div class="spacer _16"></div>
         <a href="https://app.cyclic.sh/api/login"
+          @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
          class="button-2 w-button">Sign Up</a>
       </b-col>
     </b-row>
@@ -55,11 +56,9 @@ export default {
                 'page' : window.location,
                 'session_seconds': session_seconds,
                 'event_callback': function() {
-                    window.location = url
                   }
                 });  
             }catch(e){
-                window.location = url
             }
       }
     }

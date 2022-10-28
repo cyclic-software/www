@@ -22,6 +22,7 @@
           <b-navbar-nav class="ml-auto">
             <b-nav-item 
             href="https://app.cyclic.sh/api/login"
+            @click="sign_in('https://app.cyclic.sh/api/login', $event)" 
             >
               Sign In
             </b-nav-item>
@@ -78,11 +79,9 @@
                 'page' : window.location,
                 'session_seconds': session_seconds,
                 'event_callback': function() {
-                    window.location = url
                   }
                 });  
             }catch(e){
-                window.location = url
             }
       },
       handleScroll() {
