@@ -16,6 +16,7 @@
         <div class="w-row">
           <div class="w-col w-col-6">
             <a href="https://app.cyclic.sh/api/login"
+             @click="sign_up('https://app.cyclic.sh/api/login?utm_source=www&amp;utm_medium=web&amp;utm_campaign=cta', $event)"
              class="button white helloworld-cta w-button">DEPLOY ON CYCLIC 🚀</a>
           </div>
           <div class="w-col w-col-6">
