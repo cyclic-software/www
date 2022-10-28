@@ -17,8 +17,11 @@
             </p>
             <div class="spacer _16"></div>
           </div>
-          <a href="#" 
-          @click.prevent="sign_up('https://app.cyclic.sh/api/login', $event)" 
+          <a href="https://app.cyclic.sh/api/login" 
+          @click.prevent="
+          ga_event('sign_up', ()=>{
+            window.location ='https://app.cyclic.sh/api/login'
+          })" 
           class="button-2 w-button">Deploy a starter now!</a>
         </div>
         <div class="column desk-1 tab-0"></div>
@@ -231,6 +234,10 @@
 </template>
 
 <script>
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 import CompanyStats from "../components/CompanyStats.vue";
 import SectionHero from "~/components/SectionHero.vue";
 export default {
@@ -245,6 +252,14 @@ export default {
     components: { CompanyStats, SectionHero },
     methods:{
       async sign_up(url, e){
+        console.log('aaaaaaa')
+        await sleep(3000)
+        console.log('aaaaaaa')
+        // this.$router.go('https://app.cyclic.sh/api/login')
+        // @click.prevent="ga_event('sign_up', ()=>{
+        //     window.location ='https://app.cyclic.sh/api/login'
+        //   })" 
+        return false
           try{
               let session_seconds = parseInt(e.timeStamp/1000)
                 await gtag('event', 'sign_up', {

@@ -8,6 +8,14 @@
 
 
 <script>
+import Vue from 'vue'
+import global from '../mixins/global'
+
+Vue.mixin(global)
+// Vue.prototype.window = window;
+
+
+
 export default {
   head() {
     return {
