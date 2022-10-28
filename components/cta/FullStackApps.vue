@@ -15,7 +15,7 @@
         <div class="spacer _16"></div>
         <div class="w-row">
           <div class="w-col w-col-6">
-            <a href="#"
+            <a href="https://app.cyclic.sh/api/login"
              @click.prevent="sign_up('https://app.cyclic.sh/api/login?utm_source=www&amp;utm_medium=web&amp;utm_campaign=cta', $event)"
              class="button white helloworld-cta w-button">DEPLOY ON CYCLIC 🚀</a>
           </div>

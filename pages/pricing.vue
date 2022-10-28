@@ -44,7 +44,7 @@
                 <h2>Free Forever</h2>
                 <p>Generous free tier lets you prototype and learn.</p>
                 <div class="spacer _24"></div>
-                <a href="#"
+                <a href="https://app.cyclic.sh/api/login"
                   @click.prevent="sign_up('https://app.cyclic.sh/api/login', $event)" 
                  class="button outline-white w-button">Start</a>
                 <div class="spacer _24"></div>

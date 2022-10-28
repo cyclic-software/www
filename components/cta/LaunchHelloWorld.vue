@@ -8,7 +8,7 @@
               <h2>Launch a hello world</h2>
               <p>Fork and deploy a hello world project onto Cyclic faster than it has taken to read this page. Experience the power.</p>
               <div class="spacer _24"></div>
-              <a href="#"
+              <a href="https://app.cyclic.sh/api/login"
               @click.prevent="sign_up('https://app.cyclic.sh/api/login?utm_source=www&utm_medium=web&utm_campaign=cta', $event)" 
                target="_blank" class="button white w-button">Deploy on Cyclic 🚀</a>
             </div>

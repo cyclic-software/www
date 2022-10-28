@@ -17,7 +17,7 @@
             </p>
             <div class="spacer _16"></div>
           </div>
-          <a href="#" 
+          <a href="https://app.cyclic.sh/api/login" 
           @click.prevent="sign_up('https://app.cyclic.sh/api/login', $event)" 
           class="button-2 w-button">Deploy a starter now!</a>
         </div>
