@@ -33,7 +33,6 @@
         </p>
         <div class="spacer _16"></div>
         <a href="https://app.cyclic.sh/api/login"
-          @click.prevent="sign_up('https://app.cyclic.sh/api/login', $event)" 
          class="button-2 w-button">Sign Up</a>
       </b-col>
     </b-row>

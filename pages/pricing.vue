@@ -45,7 +45,6 @@
                 <p>Generous free tier lets you prototype and learn.</p>
                 <div class="spacer _24"></div>
                 <a href="https://app.cyclic.sh/api/login"
-                  @click.prevent="sign_up('https://app.cyclic.sh/api/login', $event)" 
                  class="button outline-white w-button">Start</a>
                 <div class="spacer _24"></div>
                 <h3 class="no-margin">$0<span class="regular">/month</span></h3>
