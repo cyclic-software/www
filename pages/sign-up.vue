@@ -32,8 +32,7 @@
           will have a fully featured software pipeline. See how quick and easy hosting can be.
         </p>
         <div class="spacer _16"></div>
-        <a href="#"
-          @click.prevent="sign_up('https://app.cyclic.sh/api/login', $event)" 
+        <a href="https://app.cyclic.sh/api/login"
          class="button-2 w-button">Sign Up</a>
       </b-col>
     </b-row>

@@ -21,8 +21,7 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-item 
-            href="#"
-            @click.prevent="sign_in('https://app.cyclic.sh/api/login', $event)" 
+            href="https://app.cyclic.sh/api/login"
             >
               Sign In
             </b-nav-item>
