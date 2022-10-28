@@ -17,7 +17,9 @@
             </p>
             <div class="spacer _16"></div>
           </div>
-          <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
+          <a href="#" 
+          @click.prevent="sign_up('https://app.cyclic.sh/api/login', $event)" 
+          class="button-2 w-button">Deploy a starter now!</a>
         </div>
         <div class="column desk-1 tab-0"></div>
         <div class="column desk-5 tab-10 mob-12"><img class="hero-screenshot" src="/images/Screen-Shot-2021-06-21-at-2.53.30-PM.png" alt="Desktop and Mobile illustration" xstyle="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 71vw, (max-width: 991px) 64vw, 56vw" data-w-id="d4198aa4-5a08-cff0-3f9f-1696bf5129eb" srcset="/images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-500.png 500w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-800.png 800w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1080.png 1080w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM-p-1600.png 1600w, /images/Screen-Shot-2021-06-21-at-2.53.30-PM.png 1606w"></div>
@@ -240,7 +242,27 @@ export default {
             ]
         };
     },
-    components: { CompanyStats, SectionHero }
+    components: { CompanyStats, SectionHero },
+    methods:{
+      async sign_up(url, e){
+          try{
+              let session_seconds = parseInt(e.timeStamp/1000)
+                await gtag('event', 'cta_hero_deploy_starter_now', {
+                'event_label' : window.location.href,
+                'event_category' : 'sign_up',
+                'value' : session_seconds,
+
+                'page' : window.location,
+                'session_seconds': session_seconds,
+                'event_callback': function() {
+                    window.location = url
+                  }
+                });  
+            }catch(e){
+                window.location = url
+            }
+      }
+    }
 }
 </script>
 

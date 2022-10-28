@@ -1,18 +1,5 @@
 <template>
 
-  <!-- <nav id="menu" class="navbar navbar-expand-sm navbar-dark">
-    <nuxt-link to="/" class="navbar-brand">
-      <img src="/images/cyclic-logo.png" class="logo-img"/>
-    </nuxt-link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <nuxt-link to="/pricing" class="nav-item nav-link">Pricing</nuxt-link>
-      <nuxt-link to="/blog" class="nav-item nav-link">Blog</nuxt-link>
-      <a href="https://app.cyclic.sh/api/login" class="nav-item nav-link" style="float: right;">Sign In</a>
-    </div>
-  </nav> -->
 <div>
   <div id="menubar">
     <b-navbar id="menu" toggleable="md" type="dark" variant="none">
@@ -33,7 +20,10 @@
 
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="https://app.cyclic.sh/api/login">
+            <b-nav-item 
+            href="#"
+            @click.prevent="sign_in('https://app.cyclic.sh/api/login', $event)" 
+            >
               Sign In
             </b-nav-item>
           </b-navbar-nav>
@@ -78,6 +68,24 @@
       }
     },
     methods: {
+      async sign_in(url, e){
+          try{
+              let session_seconds = parseInt(e.timeStamp/1000)
+                await gtag('event', 'header_sign_in', {
+                'event_label' : window.location.href,
+                'event_category' : 'sign_in',
+                'value' : session_seconds,
+
+                'page' : window.location,
+                'session_seconds': session_seconds,
+                'event_callback': function() {
+                    window.location = url
+                  }
+                });  
+            }catch(e){
+                window.location = url
+            }
+      },
       handleScroll() {
         if(window.pageYOffset){
           this.scrolled = true;
