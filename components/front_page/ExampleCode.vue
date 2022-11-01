@@ -45,8 +45,9 @@ app.listen(3000)
 
 <style >
 .my-editor {
-    border-radius:5px;
-    background: #292929;
+    border-radius:8px;
+    /* background: #292929; */
+    background: black;
     font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;
     font-size: 14px;
     line-height: 1.5;

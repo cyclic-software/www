@@ -13,7 +13,7 @@
       <b-col lg="12">
         <div class="text-center">
           <h1 class="header-large" style="font-size:75px;">
-                Full Stack Apps
+                Full stack apps
                 </h1>
               <p class="paragraph caption">
                 Connect your GitHub repo. We will build, deploy and manage the hosting. 
@@ -29,7 +29,7 @@
         <example-code/>
         <div class=" mt-3">
           <p class="paragraph caption">
-              No bloat, framework agnostic,  asdfasdf
+              Start with what you know.
           </p>
         </div>
       </b-col>
@@ -80,51 +80,15 @@
 <div class="spacer _16"></div>
 
   <frameworks />
-
-  
-  <b-container class="mt-5">
-   <b-row>
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>No Sleep</h3>
-          <div class="caption">
-            Cyclic Apps are available immediately on demand. 
-            Even on free tier. 
-            Say hello to fast apps. Say goodbye to waiting
-            30 seconds for containers to be provisioned and started.
-          </div>
-        </div>
-      </b-col>
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>Worldwide</h3>
-        </div>
-      </b-col>
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>Database and Storage</h3>
-        </div>
-      </b-col>
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>Precision Cron</h3>
-        </div>
-      </b-col>
-
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>Hyper scale</h3>
-        </div>
-      </b-col>
-
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>Serverless</h3>
-        </div>
-      </b-col>
-
-    </b-row>
-  </b-container>
+  <div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+  <big-feature />
 
   
 </div>
@@ -387,6 +351,8 @@
 import CompanyStats from "../components/CompanyStats.vue";
 import SectionHero from "~/components/SectionHero.vue";
 import ExampleCode from "~/components/front_page/ExampleCode.vue";
+import BigFeatures from "~/components/front_page/BigFeatures.vue";
+import BigFeature from "~/components/front_page/BigFeature.vue";
 import Frameworks from "~/components/front_page/Frameworks.vue";
 
 
@@ -401,7 +367,11 @@ export default {
             ]
         };
     },
-    components: { CompanyStats, SectionHero, ExampleCode,Frameworks },
+    components: { CompanyStats, SectionHero, ExampleCode,
+      Frameworks,
+      BigFeatures,
+      BigFeature
+     },
     methods:{
       async sign_up(url, e){
           try{
@@ -457,7 +427,7 @@ export default {
             /* background-position: left top; */
             /* padding-top: 95px; */
             /* margin-bottom: 60px; */
-            animation: fade_loop 8s  infinite;
+            /* animation: fade_loop 8s  infinite; */
             /* -webkit-animation-duration: 10s;
             animation-duration: 10s;
             -webkit-animation-fill-mode: both;
@@ -504,7 +474,7 @@ export default {
 
 .video_box{
   border: 2px solid #292929;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .caption{

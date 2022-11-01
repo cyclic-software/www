@@ -1,33 +1,28 @@
 <template>
-    <b-container class="mt-5">
+    <b-container class=" feature-container">
         <b-row>
-            <b-col sm="2" align-self="center">
-                <h3>Build Anything</h3>
+            <b-col  align-self="center" sm="2">
+                <div class="f-header">Build Anything</div>
             </b-col>
-            <b-col class="build-things">
+            <b-col class="build-things" align-self="center">
                 <div class="build-thing">
-                    <h3>Frontends</h3>
-                    <div><i class="fas fa-window-maximize"></i></div>
+                    <i class="fas fa-window-maximize"></i> 
+                        Frontends
                 </div>
                 <div class="build-thing">
-                    <h3>Backends</h3>
-                    <div><i class="fas fa-server"></i></div>
+                    <i class="fas fa-server"></i> Backends
                 </div>
                 <div class="build-thing">
-                    <h3>APIs</h3>
-                    <div><i class="fas fa-server"></i></div>
+                    <i class="fas fa-code"></i> APIs
                 </div>
                 <div class="build-thing">
-                    <h3>Data</h3>
-                    <div><i class="fas fa-server"></i></div>
+                    <i class="fas fa-cube"></i> Data
                 </div>
                 <div class="build-thing">
-                    <h3>Bots</h3>
-                    <div><i class="fas fa-server"></i></div>
+                    <i class="fas fa-robot"></i> Bots
                 </div>
                 <div class="build-thing">
-                    <h3>Cron</h3>
-                    <div><i class="fas fa-server"></i></div>
+                    <i class="fas fa-stopwatch"></i> Cron
                 </div>
             </b-col>
         </b-row>
@@ -36,15 +31,37 @@
 </template>
 
 <style scoped>
+.f-header{
+    font-size:20px;
+    font-weight:500;
+    text-align: center;;
+    color: var(--h-white);
+    border-right: 2px solid var(--h-white);
+}
+h4 {
+    color: var(--h-white);
+    font-size: 20px;
+}
+.feature-container{
+    border: 1px solid #152553;
+    padding: 20px;
+    border-radius: 8px;;
+    box-shadow: 0px 0px 60px 4px #162859;
+}
+
+/* @keyframes glow{
+  to {
+    box-shadow: 0px 0px 30px 20px #535FED;
+  }
+} */
 .build-things{
     display: flex
 }
 .build-thing{
     width: 20%;
-    margin: 10px;
-    /* display */
-}
-.build-thing h3{
-    font-size: 24px;
+    /* height: 30px; */
+    text-align: center;;
+    font-size: 20px;
+    font-weight: 100;
 }
 </style>
