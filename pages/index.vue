@@ -18,9 +18,6 @@
               <p class="paragraph caption">
                 Connect your GitHub repo. We will build, deploy and manage the hosting. 
               </p>
-              <p class=" caption">
-                Front-ends - Back-ends - Data - APIs - Bots
-              </p>
         </div>
       </b-col>
     </b-row>
@@ -61,7 +58,7 @@
       <b-col sm="4"></b-col>
       <b-col sm="4">
         <div class="text-center">
-              <b-button class="m-1" @click="click_deploy" variant='primary' size="lg">
+              <b-button class="m-1" @click="sign_up" variant='primary' size="lg">
                       <i class='fab  fa-github mr-2'></i>  Deploy with GitHub
               </b-button>
 
@@ -82,30 +79,7 @@
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
 
-  <b-container class="mt-5">
-   <b-row>
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>frameworks</h3>
-          <div class="caption">
-            Cyclic Apps are available immediately on demand. 
-            Even on free tier. 
-            Say hello to fast apps. Say goodbye to waiting
-            30 seconds for containers to be provisioned and started.
-          </div>
-        </div>
-      </b-col>
-      <b-col sm="4">
-        <div class="feature1">
-          <h3>languages</h3>
-        </div>
-      </b-col>
-      <b-col sm="4">
-        <div class="feature1">
-        </div>
-      </b-col>
-    </b-row>
-  </b-container>
+  <frameworks />
 
   
   <b-container class="mt-5">
@@ -123,14 +97,32 @@
       </b-col>
       <b-col sm="4">
         <div class="feature1">
+          <h3>Worldwide</h3>
+        </div>
+      </b-col>
+      <b-col sm="4">
+        <div class="feature1">
           <h3>Database and Storage</h3>
         </div>
       </b-col>
       <b-col sm="4">
         <div class="feature1">
-          <h3>Serverless Cron</h3>
+          <h3>Precision Cron</h3>
         </div>
       </b-col>
+
+      <b-col sm="4">
+        <div class="feature1">
+          <h3>Hyper scale</h3>
+        </div>
+      </b-col>
+
+      <b-col sm="4">
+        <div class="feature1">
+          <h3>Serverless</h3>
+        </div>
+      </b-col>
+
     </b-row>
   </b-container>
 
@@ -394,7 +386,8 @@
 
 import CompanyStats from "../components/CompanyStats.vue";
 import SectionHero from "~/components/SectionHero.vue";
-import ExampleCode from "~/components/ExampleCode.vue";
+import ExampleCode from "~/components/front_page/ExampleCode.vue";
+import Frameworks from "~/components/front_page/Frameworks.vue";
 
 
 
@@ -408,7 +401,7 @@ export default {
             ]
         };
     },
-    components: { CompanyStats, SectionHero },
+    components: { CompanyStats, SectionHero, ExampleCode,Frameworks },
     methods:{
       async sign_up(url, e){
           try{

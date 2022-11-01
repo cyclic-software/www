@@ -6,15 +6,9 @@
 
 <script>
 
-import { highlight, languages } from 'prismjs/components/prism-core';
-import 'vue-prism-editor/dist/prismeditor.min.css'; // import the styles somewhere
-import 'prismjs/components/prism-clike';
-import 'prismjs/components/prism-javascript';
-import 'prismjs/themes/prism-tomorrow.css'; // import syntax highlighting styles
-
-
+import Prism from '~/plugins/prism'
 import { PrismEditor } from 'vue-prism-editor';
-
+import 'vue-prism-editor/dist/prismeditor.min.css'; // import the styles somewhere
 
 
 
@@ -26,18 +20,21 @@ export default {
 const app = express()
 
 app.get('/', (req, res) => {
-    console.log("Just got a request!")
     return res.send('Yo!')
 })
 
 app.listen(3000)
+
 `,
       }
     },
-
+    mounted() {
+      console.log(Prism)
+        // Prism.highlightAll()
+    },
     methods: {
       highlighter(code) {
-         let colored = highlight(code, languages.js)
+         let colored = Prism.highlight(code, Prism.languages.js)
         return colored; // languages.<insert language> to return html with markup
       },
     }
