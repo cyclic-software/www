@@ -162,7 +162,9 @@
             </p>
             <div class="spacer _16"></div>
           </div>
-          <a href="http://app.cyclic.sh/api/login" class="button-2 w-button">Deploy a starter now!</a>
+          <a href="https://app.cyclic.sh/api/login" 
+          @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+          class="button-2 w-button">Deploy a starter now!</a>
         </div>
         <div class="column desk-1 tab-0"></div>
         <div class="column desk-5 tab-10 mob-12">
@@ -406,21 +408,25 @@ export default {
             ]
         };
     },
-    components: { CompanyStats, SectionHero, ExampleCode },
+    components: { CompanyStats, SectionHero },
     methods:{
-      async click_deploy(){
+      async sign_up(url, e){
+          try{
+              let session_seconds = parseInt(e.timeStamp/1000)
+                await gtag('event', 'cta_hero_deploy_starter_now', {
+                'event_label' : window.location.href,
+                'event_category' : 'sign_up',
+                'value' : session_seconds,
 
-            let res = await gtag('event', 'click deploy', {
-              'app_name': 'myAppName',
-              'screen_name': 'Home'
-            });
-            console.log(res)
-
-
+                'page' : window.location,
+                'session_seconds': session_seconds,
+                'event_callback': function() {
+                  }
+                });  
+            }catch(e){
+            }
       }
     }
-
-
 }
 </script>
 

@@ -160,7 +160,7 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-
+  
   // Feed module configuration: https://content.nuxtjs.org/v1/community/integrations/
   feed: [{
     path: '/blog/rss.xml',
@@ -201,5 +201,8 @@ export default {
       // console.log(rssRoutes)
       return [...baseRoutes,...rssRoutes]
     }
-  }
+  },
+  router: {
+    base: '/'
+  },
 }
