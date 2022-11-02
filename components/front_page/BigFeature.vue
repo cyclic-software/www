@@ -80,21 +80,13 @@
 </template>
 
 <style scoped>
-em{
-  color: var(--pink)
-}
 p {
   color: var(--h-white)
 }
 p strong {
   color: orange;;
 }
-.metal{
-  color: rgb(255,242,181);
-  background-image: linear-gradient(rgb(255 255 255) 42%, rgb(183 183 183) 73%);
-    -webkit-background-clip:text;
-	-webkit-text-fill-color: transparent;
-}
+
 .f-header{
     font-size:20px;
     font-weight:500;
@@ -111,6 +103,7 @@ h4 {
     padding: 20px;
     border-radius: 8px;; */
     font-size: 110px;
+    /* text-shadow: 0px 0px 80px #324f9f; */
     text-shadow: 0px 0px 80px #ca95ffa6;
     color: black;
 }
@@ -126,8 +119,8 @@ h4 {
     /* border: 1px solid #152553; */
     padding: 20px;
     border-radius: 8px;;
-    box-shadow: 21px 0px 124px -26px #3f1841;
-    /* box-shadow: 21px 0px 124px -26px #162859; */
+    /* box-shadow: 21px 0px 124px -26px #3f1841; */
+    box-shadow: 21px 0px 124px -26px #162859;
     min-height: 500px;
     padding: 100px 50px;
     /* margin: auto 10px; */

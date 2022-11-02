@@ -12,7 +12,7 @@
     <b-row>
       <b-col lg="12">
         <div class="text-center">
-          <h1 class="header-large" style="font-size:75px;">
+          <h1 class="header-large metal" style="font-size:75px;">
                 Full stack apps
                 </h1>
               <p class="paragraph caption">
@@ -59,7 +59,7 @@
       <b-col sm="4">
         <div class="text-center">
               <b-button class="m-1" @click="sign_up" variant='primary' size="lg">
-                      <i class='fab  fa-github mr-2'></i>  Deploy with GitHub
+                      <i class='fab  fa-github mr-2'></i>  Deploy Now
               </b-button>
 
               <!-- <b-button class="m-1" href=" https://docs.cyclic.sh/docs/intro" target="_blank"
@@ -96,6 +96,8 @@
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
   <languages />
 
   
@@ -111,7 +113,61 @@
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
+
+<db-feature />
 <div class="spacer _16"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>Database and Storage</h1>
+<p>you get to use aws without an account</p>
+<br>
+<h1>Precision Cron</h1>
+<p>cron is accurate to the second, timezone safe</p>
+<br>
+<h1>Instant Environment Updates</h1>
+<p>update your runtime without downtime</p>
+<br>
+<h1>Intelligent Code Scanning</h1>
+<p>identifies common errors, env vars</p>
+<br>
+<h1>Logs and Metrics</h1>
+<p>detailed metrics, realtime and historical req res logs</p>
+
+<br>
+<h1>Built in Auth</h1>
+<p>get basic security out of the box</p>
+
+
+
 <!-- 
   <div class="section hero home wf-section">
     <div class="container w-container">
@@ -359,7 +415,7 @@
 import CompanyStats from "../components/CompanyStats.vue";
 import SectionHero from "~/components/SectionHero.vue";
 import ExampleCode from "~/components/front_page/ExampleCode.vue";
-import BigFeatures from "~/components/front_page/BigFeatures.vue";
+import DbFeature from "~/components/front_page/DbFeature.vue";
 import BigFeature from "~/components/front_page/BigFeature.vue";
 import Frameworks from "~/components/front_page/Frameworks.vue";
 import Languages from "~/components/front_page/Languages.vue";
@@ -378,7 +434,7 @@ export default {
     },
     components: { CompanyStats, SectionHero, ExampleCode,
       Frameworks,
-      BigFeatures,
+      DbFeature,
       Languages,
       BigFeature
      },
