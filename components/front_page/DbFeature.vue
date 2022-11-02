@@ -12,11 +12,11 @@
           <em>AWS account not required.</em>
         </p>
       </b-col>
-      <b-col sm="6">
-        <div>
-          <img src="/images/amazon-logo.png"/>
-          <img src="/images/amazon-dynamodb-logo.png"/>
-          <img src="/images/amazon-s3.png"/>
+      <b-col sm="6" class="text-right">
+        <div class="aws-grid">
+          <img class="aws-logo" width="150px" src="/images/amazon-logo.png"/>
+          <img class="dynamo-logo" width="180px" src="/images/amazon-dynamodb-logo.png"/>
+          <img class="s3-logo" width="200px" src="/images/amazon-s3.png"/>
         </div>
       </b-col>
 
@@ -42,7 +42,7 @@ p strong {
 .hubble {
   position: relative;
   padding: 100px;
-  height: 500px;
+  height: 400px;
   display: block;
   /* background-image: url('/images/hubble.jpg'); */
   /* background-size: cover; */
@@ -50,6 +50,30 @@ p strong {
 
 }
 
+.aws-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+}
+.aws-grid img{
+  filter:  invert(100%);
+}
+.aws-logo{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: center;;
+  justify-self: center;;
+}
+.dynamo-logo{
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.s3-logo{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin-left: -10px;
+}
 /* .hubble:after {
   content: '';
   position: absolute;

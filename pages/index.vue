@@ -111,10 +111,19 @@
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
+
+<db-feature />
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
 
-<db-feature />
+<cron-feature />
 <div class="spacer _16"></div>
 
 <br>
@@ -416,6 +425,7 @@ import CompanyStats from "../components/CompanyStats.vue";
 import SectionHero from "~/components/SectionHero.vue";
 import ExampleCode from "~/components/front_page/ExampleCode.vue";
 import DbFeature from "~/components/front_page/DbFeature.vue";
+import CronFeature from "~/components/front_page/CronFeature.vue";
 import BigFeature from "~/components/front_page/BigFeature.vue";
 import Frameworks from "~/components/front_page/Frameworks.vue";
 import Languages from "~/components/front_page/Languages.vue";
@@ -436,6 +446,7 @@ export default {
       Frameworks,
       DbFeature,
       Languages,
+      CronFeature,
       BigFeature
      },
     methods:{
