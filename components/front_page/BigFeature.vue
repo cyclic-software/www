@@ -87,7 +87,7 @@ p {
   color: var(--h-white)
 }
 p strong {
-  color: white;
+  color: orange;;
 }
 .metal{
   color: rgb(255,242,181);
@@ -111,7 +111,8 @@ h4 {
     padding: 20px;
     border-radius: 8px;; */
     font-size: 110px;
-    text-shadow: 0px 0px 80px #95b2ff;
+    text-shadow: 0px 0px 80px #ca95ffa6;
+    color: black;
 }
 
 .worldwide{
@@ -125,7 +126,8 @@ h4 {
     /* border: 1px solid #152553; */
     padding: 20px;
     border-radius: 8px;;
-    box-shadow: 21px 0px 124px -26px #162859;
+    box-shadow: 21px 0px 124px -26px #3f1841;
+    /* box-shadow: 21px 0px 124px -26px #162859; */
     min-height: 500px;
     padding: 100px 50px;
     /* margin: auto 10px; */
