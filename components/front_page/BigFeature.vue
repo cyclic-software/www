@@ -111,7 +111,7 @@ h4 {
     padding: 20px;
     border-radius: 8px;; */
     font-size: 110px;
-    text-shadow: 0px 0px 80px #3657b1;
+    text-shadow: 0px 0px 80px #95b2ff;
 }
 
 .worldwide{
@@ -122,7 +122,7 @@ h4 {
 
 }
 .feature-container{
-    border: 1px solid #152553;
+    /* border: 1px solid #152553; */
     padding: 20px;
     border-radius: 8px;;
     box-shadow: 21px 0px 124px -26px #162859;

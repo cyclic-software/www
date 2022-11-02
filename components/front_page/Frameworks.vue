@@ -43,7 +43,7 @@ h4 {
     font-size: 20px;
 }
 .feature-container{
-    border: 1px solid #152553;
+    /* border: 1px solid #152553; */
     padding: 20px;
     border-radius: 8px;;
     box-shadow: 0px 0px 60px 4px #162859;

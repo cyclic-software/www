@@ -89,6 +89,14 @@
 <div class="spacer _16"></div>
 <div class="spacer _16"></div>
   <big-feature />
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+  <languages />
 
   
 </div>
@@ -354,6 +362,7 @@ import ExampleCode from "~/components/front_page/ExampleCode.vue";
 import BigFeatures from "~/components/front_page/BigFeatures.vue";
 import BigFeature from "~/components/front_page/BigFeature.vue";
 import Frameworks from "~/components/front_page/Frameworks.vue";
+import Languages from "~/components/front_page/Languages.vue";
 
 
 
@@ -370,6 +379,7 @@ export default {
     components: { CompanyStats, SectionHero, ExampleCode,
       Frameworks,
       BigFeatures,
+      Languages,
       BigFeature
      },
     methods:{
@@ -422,7 +432,6 @@ export default {
   
 
   .header_image {
-            background-image: url(/images/Rectangle-240.svg);
             background-repeat: no-repeat;
             /* background-position: left top; */
             /* padding-top: 95px; */
@@ -440,7 +449,18 @@ export default {
             height: 100vh;
             width: 100%;
          }
-         
+  
+.main_splash{
+   background:var(--background-pattern-dark);
+      padding: 20px;
+    color:white;
+ 
+}
+
+.main_splash{
+  background: linear-gradient(to bottom,rgba(0,0,0,0) -11%,var(--background-color)),var(--background-pattern-dark)!important;
+}
+
          /* @-webkit-keyframes fade_loop {
             0% {
                opacity: 0;
@@ -473,7 +493,7 @@ export default {
          }
 
 .video_box{
-  border: 2px solid #292929;
+  /* border: 2px solid #292929; */
   border-radius: 8px;
 }
 
@@ -483,17 +503,6 @@ export default {
 }
     
 
-
-.main_splash{
-   background:var(--background-pattern-dark);
-      padding: 20px;
-    color:white;
- 
-}
-
-.main_splash{
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 11%,var(--background-color)),var(--background-pattern-dark)!important;
-}
 
 
 

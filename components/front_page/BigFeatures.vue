@@ -5,7 +5,7 @@
         <div class="feature1">
           <h3>No Sleep</h3>
           <div class="caption">
-            Cyclic Apps are available immediately on demand. 
+            Your apps are available immediately on demand. 
             Even on free tier. 
             Say hello to fast apps. Say goodbye to waiting
             30 seconds for containers to be provisioned and started.
@@ -59,7 +59,7 @@ h4 {
     font-size: 20px;
 }
 .feature-container{
-    border: 1px solid #152553;
+    /* border: 1px solid #152553; */
     padding: 20px;
     border-radius: 8px;;
     box-shadow: 0px 0px 60px 4px #162859;
