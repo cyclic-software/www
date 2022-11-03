@@ -121,7 +121,7 @@ h4 {
     border-radius: 8px;;
     /* box-shadow: 21px 0px 124px -26px #3f1841; */
     box-shadow: 21px 0px 124px -26px #162859;
-    min-height: 500px;
+    height: 640px;
     padding: 100px 50px;
     /* margin: auto 10px; */
 }

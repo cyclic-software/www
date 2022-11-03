@@ -396,7 +396,7 @@
       </div>
     </div>
   </div> -->
-  <div class="section blue-gradient wf-section">
+  <div class="  bottom_gradient wf-section">
     <div class="container w-container">
       <div class="_12-columns align-top">
         <div class="column desk-12">
@@ -546,6 +546,10 @@ export default {
 }
 
 .main_splash{
+  background: linear-gradient(to bottom,rgba(0,0,0,0) -11%,var(--background-color)),var(--background-pattern-dark)!important;
+}
+
+.bottom_gradient{
   background: linear-gradient(to bottom,rgba(0,0,0,0) -11%,var(--background-color)),var(--background-pattern-dark)!important;
 }
 

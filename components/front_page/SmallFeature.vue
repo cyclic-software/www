@@ -3,7 +3,7 @@
       <div class="">
       <b-row>
 
-        <b-col align-self="center"  md="4">
+        <b-col  md="4">
             <div class="feature-container">
               <div class="text-center" >
               <br>
@@ -11,17 +11,14 @@
               <br>
             </div>
             <p class="text-center">
-              Cyclic Apps are <strong>available immediately</strong> and on demand. 
-              <br>
-              Say goodbye to waiting 30 seconds for containers to be spun up.
-              <br>
-              <em>Even on free tier.</em> 
+              A continuously improving static analysis tool-set helps you 
+              <strong>identify common issues</strong> and save time.
             </p>
           </div>
         </b-col>
         
 
-        <b-col align-self="center"  md="4">
+        <b-col   md="4">
             <div class="feature-container">
               <div class="text-center" >
               <br>
@@ -29,11 +26,8 @@
               <br>
             </div>
             <p class="text-center">
-              Cyclic Apps are <strong>available immediately</strong> and on demand. 
-              <br>
-              Say goodbye to waiting 30 seconds for containers to be spun up.
-              <br>
-              <em>Even on free tier.</em> 
+              Real time, <strong>zero downtime</strong> environment variable configuration for 
+               all application instances.
             </p>
           </div>
         </b-col>
@@ -48,11 +42,8 @@
               <br>
             </div>
             <p class="text-center">
-              Cyclic Apps are <strong>available immediately</strong> and on demand. 
-              <br>
-              Say goodbye to waiting 30 seconds for containers to be spun up.
-              <br>
-              <em>Even on free tier.</em> 
+              Keep your projects private as you build by 
+              applying <strong>route-specific auth</strong> out of the box.
             </p>
           </div>
         </b-col>
@@ -72,11 +63,10 @@
               <br>
             </div>
             <p class="text-center">
-              Cyclic Apps are <strong>available immediately</strong> and on demand. 
+              Eliminate an entire class of maintenance, security and scale concerns.
               <br>
-              Say goodbye to waiting 30 seconds for containers to be spun up.
               <br>
-              <em>Even on free tier.</em> 
+              <strong>On-demand infrastructure with zero cost at idle. </strong>
             </p>
           </div>
         </b-col>
