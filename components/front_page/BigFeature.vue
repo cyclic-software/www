@@ -104,7 +104,7 @@ h4 {
     border-radius: 8px;; */
     font-size: 110px;
     /* text-shadow: 0px 0px 80px #324f9f; */
-    text-shadow: 0px 0px 80px #ca95ffa6;
+    text-shadow: 0px 0px 80px #c998fbc0;
     color: black;
 }
 
