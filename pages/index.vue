@@ -518,7 +518,9 @@ export default {
     margin: 0 auto;
   }
   
-
+.header-large{
+  font-weight:900 ;
+}
   .header_image {
             background-repeat: no-repeat;
             /* background-position: left top; */
