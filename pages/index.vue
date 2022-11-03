@@ -125,6 +125,7 @@
 
 <cron-feature />
 <div class="spacer _16"></div>
+<logs-feature />
 
 <br>
 <br>
@@ -426,6 +427,7 @@ import SectionHero from "~/components/SectionHero.vue";
 import ExampleCode from "~/components/front_page/ExampleCode.vue";
 import DbFeature from "~/components/front_page/DbFeature.vue";
 import CronFeature from "~/components/front_page/CronFeature.vue";
+import LogsFeature from "~/components/front_page/LogsFeature.vue";
 import BigFeature from "~/components/front_page/BigFeature.vue";
 import Frameworks from "~/components/front_page/Frameworks.vue";
 import Languages from "~/components/front_page/Languages.vue";
@@ -447,6 +449,7 @@ export default {
       DbFeature,
       Languages,
       CronFeature,
+      LogsFeature,
       BigFeature
      },
     methods:{
