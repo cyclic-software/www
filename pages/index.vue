@@ -125,39 +125,35 @@
 
 <cron-feature />
 <div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
 <logs-feature />
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<div class="spacer _16"></div>
+<headline-thing />
+<br>
+<br>
+<br>
+<br>
+<small-feature />
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<h1>Database and Storage</h1>
+<!-- <h1>Database and Storage</h1>
 <p>you get to use aws without an account</p>
 <br>
 <h1>Precision Cron</h1>
@@ -175,7 +171,7 @@
 <br>
 <h1>Built in Auth</h1>
 <p>get basic security out of the box</p>
-
+ -->
 
 
 <!-- 
@@ -209,7 +205,7 @@
     </div>
   </div>
  -->
-
+<!-- 
   <SectionHero left>
     <template v-slot:img>
       <img src="/images/5.svg" alt="Abstract technical illustration" width="400" class="center-image"/>
@@ -235,7 +231,7 @@
       directly integrated, with permissions and environment variables pre-configured. Install the sdk and start making requests.
     </template>
   </SectionHero>
-
+ -->
 
   <!-- <SectionHero left>
     <template v-slot:img>
@@ -261,7 +257,7 @@
       Stop jumping between windows and scrolling through logs. Full text search your app logs with zero config, on paid plans.
     </template>
   </SectionHero> -->
-
+<!-- 
   <SectionHero left>
     <template v-slot:img>
       <img src="/images/1.svg" alt="Streaming logs product screenshot" width="400" class="center-image"/>
@@ -288,7 +284,7 @@
       Update environment variables without having to restart servers. Environment configuration changes are applied in
       real time to application instances with zero-downtime.
     </template>
-  </SectionHero>
+  </SectionHero> -->
 
 
 
@@ -320,9 +316,12 @@
  -->
 
 
-  <SectionHero left>
-    <template v-slot:img>
-      <iframe
+  <!-- <SectionHero left>
+    <template v-slot:img> -->
+      <b-container >
+        <b-row>
+            <b-col sm="6">
+              <iframe
         width="560"
         height="315"
         src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8"
@@ -334,13 +333,28 @@
         srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href='https://www.youtube-nocookie.com/embed/iK3ael3pQw8?autoplay=1'><img src='https://i.ytimg.com/vi/iK3ael3pQw8/hqdefault.jpg' alt='Cyclic - Full stack serverless hosting platform'><span>▶</span></a>"
       >
       </iframe>
-    </template>
-    <template v-slot:title>
+
+            </b-col>
+            <b-col class=" text-center" sm="6" align-self="center">
+              <h1 class="header-large metal" style="font-size:45px;">
       Watch a product tour
-    </template>
+    </h1>
+            </b-col>
+        </b-row>
+  </b-container>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  
+    <!-- </template> -->
+    
     <!-- <template v-slot:text>
     </template> -->
-  </SectionHero>
+  <!-- </SectionHero> -->
 
   <CompanyStats />
 
@@ -429,8 +443,10 @@ import DbFeature from "~/components/front_page/DbFeature.vue";
 import CronFeature from "~/components/front_page/CronFeature.vue";
 import LogsFeature from "~/components/front_page/LogsFeature.vue";
 import BigFeature from "~/components/front_page/BigFeature.vue";
+import SmallFeature from "~/components/front_page/SmallFeature.vue";
 import Frameworks from "~/components/front_page/Frameworks.vue";
 import Languages from "~/components/front_page/Languages.vue";
+import HeadlineThing from "~/components/front_page/HeadlineThing.vue";
 
 
 
@@ -450,7 +466,9 @@ export default {
       Languages,
       CronFeature,
       LogsFeature,
-      BigFeature
+      BigFeature,
+      SmallFeature,
+      HeadlineThing,
      },
     methods:{
       async sign_up(url, e){

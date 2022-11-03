@@ -1,7 +1,5 @@
 <template>
     <b-container class="hubble">
-      
-
       <b-row>
         <b-col sm="6" align-self="center" >
           <h2 class="metal">Complete Visibility</h2>
@@ -15,17 +13,16 @@
         <b-col sm="6">
 
           <div class="logs-header">
-        <div class="text-center video_box" style="max-width:450px; overflow: hidden;">
-          <video autoplay loop muted>
-              <source src="/images/logs_demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>  
-        </div>
-        <div class="metrics-img">
-          <img src="/images/metrics.png"/>
-        </div>
-
-      </div>
+            <div class="text-center video_box" style="max-width:450px; overflow: hidden;">
+              <video autoplay loop muted>
+                  <source src="/images/logs_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>  
+            </div>
+            <div class="metrics-img">
+              <img src="/images/metrics.png"/>
+            </div>
+          </div>
 
         </b-col>
       
@@ -75,28 +72,33 @@ p strong {
 .hubble {
   position: relative;
   padding: 100px;
+  padding-top: 70px;
   height: 400px;
   display: block;
   /* background-image: url('/images/hubble.jpg'); */
   background-size: cover;
-  background-position: bottom;
+  /* background-position: bottom; */
 
-  /* background-image: radial-gradient(circle at bottom,rgba(0,0,0,0) 1%,black),url(/images/cron_clock.png); */
+  background-image: radial-gradient(circle at bottom,rgba(0,0,0,0) 1%,black),url(/images/logs.png);
+  background-position-y: -57px;
+  background-repeat: no-repeat;
 
 }
 
 
 .logs-header{
-  height: 300px;
+  height: 100%;
   width: 600px;
   position: relative;
   margin: auto;
+  /* box-shadow: 21px 0px 124px -26px #162859; */
 }
 .metrics-img{
   position:absolute;
-  bottom: 0px;
+  bottom: -30px;
   width: 300px;
-  right: 0px;
+  right: 30px;
+  
 
 }
 
