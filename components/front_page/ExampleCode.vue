@@ -100,9 +100,9 @@ export default {
 
 <style >
 .example_code{
-  height: 210px;
-  max-height: 210px;
-   /* overflow: hidden;; */
+  height: 217px;
+  max-height: 217px;
+   overflow: hidden;;
 }
 .my-editor {
     border-radius:8px;

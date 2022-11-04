@@ -151,6 +151,9 @@ export default {
 }
 
 @media screen and (max-width: 991px) {
+  .video_box{
+    box-shadow: 0px 0px 120px 4px #101e44;
+  }
   .big-headline{
     margin-left: 30px;
   }

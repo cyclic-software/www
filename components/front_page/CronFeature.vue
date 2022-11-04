@@ -10,7 +10,9 @@
         <strong>1 second precision</strong> triggering, automatically adjusted for timezone
       and daylight savings.
         <br>
-        </p>
+        <br>
+        <em>Even on free tier.</em>
+      </p>
       </b-col>
       
 

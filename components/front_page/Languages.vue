@@ -61,7 +61,7 @@ h4 {
 .build-thing i{
         margin-right: 5px;
     }
-    
+
 @media screen and (max-width: 991px) {
     .feature-container{
         margin: 15px auto;
@@ -71,7 +71,9 @@ h4 {
     }
     .f-header{
         border-right: none;
-        margin-bottom: 30px;;
+        margin-bottom: 40px;;
+        font-size: 25px; 
+
     }
     .build-things{
         display: grid;

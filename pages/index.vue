@@ -5,7 +5,7 @@
       <div class="front-page-spacer"></div>
       <hero/>
 
-      <div class="front-page-spacer"></div>
+      <div class="front-page-spacer "></div>
       <frameworks/>
       <!-- <div class="front-page-spacer spacer-smaller"></div> -->
       <big-feature/>

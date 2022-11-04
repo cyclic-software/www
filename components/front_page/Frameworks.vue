@@ -83,7 +83,8 @@ h4 {
     }
     .f-header{
         border-right: none;
-        margin-bottom: 30px;;
+        margin-bottom: 40px;;
+        font-size: 25px;        
     }
     .build-things{
         display: grid;
