@@ -147,4 +147,11 @@ p strong {
     font-size: 20px;
     font-weight: 100;
 }
+
+@media screen and (max-width: 991px) {
+  .feature-container{
+    min-height: 250px;
+    height: 250px;
+  }
+}
 </style>
