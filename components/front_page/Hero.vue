@@ -132,6 +132,8 @@ export default {
 }
 .btn-primary, .btn-primary:active{
     background-color: var(--pink);
+    border-color: var(--pink);
+    
 }
 .btn-primary:hover, .btn-primary:focus{
     background-color: var(--darkpink);
