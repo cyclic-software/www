@@ -39,7 +39,12 @@
 </template>
 <style scoped>
 .s{
-  background: var(--background-pattern-dark);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) -21%,
+      var(--background-color)
+    ),
+    var(--background-pattern-dark) !important;
   border-radius: 8px;;
 }
 

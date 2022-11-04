@@ -49,7 +49,9 @@ h4 {
     /* width: 20%; */
     /* height: 30px; */
     text-align: center;;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 35px;;
+    letter-spacing: 2px;;
     font-weight: 100;
 }
 </style>

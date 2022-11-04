@@ -1,5 +1,5 @@
 <template>
-    <b-container>
+    <!-- <b-container> -->
       <div class="  bottom_gradient wf-section">
         <div class="container w-container">
           <div class="_12-columns align-top">
@@ -31,12 +31,29 @@
           </div>
         </div>
       </div>
-    </b-container>
+    <!-- </b-container> -->
 
 </template>
 
 <style scoped>
 @import './front_page.css';
-
-
+h2,h3{
+  font-size: 25px;
+      line-height: 35px;;
+      letter-spacing: 2px;;
+      font-weight: 300;;
+}
+.column p{
+  color: var(--h-white)
+}
+/* .bottom_gradient{
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) -21%,
+      var(--background-color)
+    ),
+    var(--background-pattern-dark) !important;
+  border-radius: 8px;;
+} */
+    
 </style>

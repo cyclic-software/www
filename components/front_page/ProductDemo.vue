@@ -1,9 +1,15 @@
 <template>
     <b-container>
       <b-row>
-            <b-col sm="6">
+            <b-col sm="6" class="text-center" align-self="center">
+              <h1 class="header-large  m-5" style="font-size:45px;">
+      Watch a product tour
+    </h1>
+
+            </b-col>
+            <b-col class=" text-center" sm="6" align-self="center">
               <iframe
-        width="560"
+        width="100%"
         height="315"
         src="https://www.youtube-nocookie.com/embed/iK3ael3pQw8"
         title="YouTube video player"
@@ -15,11 +21,7 @@
       >
       </iframe>
 
-            </b-col>
-            <b-col class=" text-center" sm="6" align-self="center">
-              <h1 class="header-large metal" style="font-size:45px;">
-      Watch a product tour
-    </h1>
+      
             </b-col>
         </b-row>
     </b-container>
@@ -28,6 +30,8 @@
 
 <style scoped>
 @import './front_page.css';
-
+h1{
+  font-weight: 100;;
+}
 
 </style>
