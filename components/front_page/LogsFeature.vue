@@ -15,6 +15,7 @@
           <div class="logs-header">
             <div class="text-center video_box" style="max-width:450px; overflow: hidden;">
               <video autoplay loop muted>
+                    <img src="/images/logs_demo.png" title="Your browser does not support the <video> tag"/>
                   <source src="/images/logs_demo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>  
