@@ -17,7 +17,11 @@
               hosting.
             </p>
                 <!-- <div class="text-center"> -->
-                  <b-button class="m-1" @click="sign_up" variant="primary" size="lg">
+                  <b-button
+                  href="https://app.cyclic.sh/api/login" 
+                  class="m-1" 
+                  @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+                  variant="primary" size="lg">
                     <i class="fab fa-github mr-2"></i> Deploy Now
                   </b-button>
                 <!-- </div>
@@ -48,7 +52,7 @@
             style="max-height: 220px; overflow: hidden"
           >
             <video autoplay loop muted>
-              <img src="/images/product/product-parent-hero.jpg" title="Your browser does not support the <video> tag">
+              <img src="/images/deploy_tour.png" title="Your browser does not support the <video> tag">
               <source src="/images/deploy_tour.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -57,64 +61,6 @@
         </b-col>
       </b-row>
     </b-container>
-<!--     
-    <b-container>
-      <b-row>
-        <b-col lg="12">
-          <div class="text-center">
-            <h1 class="header-large metal" style="font-size: 75px">
-              Full stack apps
-            </h1>
-            <p class="paragraph caption">
-              Connect your GitHub repo. We will build, deploy and manage the
-              hosting.
-            </p>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
-
-    <b-container class="mt-5">
-      <b-row>
-        <b-col sm="6">
-          <example-code />
-          <div class="mt-3">
-            <p class="paragraph caption">Start with what you know.</p>
-          </div>
-        </b-col>
-        <b-col sm="6">
-          <div
-            class="text-center video_box"
-            style="max-height: 220px; overflow: hidden"
-          >
-            <video autoplay loop muted>
-              <source src="/images/deploy_tour.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="mt-3">
-            <p class="paragraph caption">
-              Go from <code>git push</code> to go-live in
-              <strong>under 10 seconds</strong>.
-            </p>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
-
-    <b-container class="mt-5">
-      <b-row>
-        <b-col sm="4"></b-col>
-        <b-col sm="4">
-          <div class="text-center">
-            <b-button class="m-1" @click="sign_up" variant="primary" size="lg">
-              <i class="fab fa-github mr-2"></i> Deploy Now
-            </b-button>
-          </div>
-        </b-col>
-        <b-col sm="4"></b-col>
-      </b-row>
-    </b-container> -->
   </div>
 </template>
 
@@ -127,14 +73,13 @@ export default {
     ExampleCode
   },
   methods:{
-      async sign_up(url, e){
+    async sign_up(url, e){
           try{
               let session_seconds = parseInt(e.timeStamp/1000)
                 await gtag('event', 'cta_hero_deploy_starter_now', {
                 'event_label' : window.location.href,
                 'event_category' : 'sign_up',
                 'value' : session_seconds,
-
                 'page' : window.location,
                 'session_seconds': session_seconds,
                 'event_callback': function() {
