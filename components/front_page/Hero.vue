@@ -52,11 +52,11 @@
             style="max-height: 220px; overflow: hidden"
           >
             <!-- <video autoplay="autoplay" muted loop> -->
-            <video playsinline="playsinline" autoplay muted loop>
-              <img src="/images/deploy_tour.gif" title="Your browser does not support the <video> tag">
+              <img src="/images/deploy_tour.gif" >
+            <!-- <video playsinline="playsinline" autoplay muted loop>
                 Your browser does not support the video tag.
               <source src="/images/deploy_tour.mp4" type="video/mp4" />
-            </video>
+            </video> -->
           </div>
           
         </b-col>

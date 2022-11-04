@@ -14,11 +14,11 @@
 
           <div class="logs-header">
             <div class="text-center video_box" style="max-width:450px; overflow: hidden;">
-              <video playsinline="playsinline" autoplay muted loop>
-                    <img src="/images/logs_demo.png" title="Your browser does not support the <video> tag"/>
+              <img src="/images/logs_demo.gif" />
+              <!-- <video playsinline="playsinline" autoplay muted loop>
                   <source src="/images/logs_demo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-                </video>  
+                </video>   -->
             </div>
             <div class="metrics-img">
               <img src="/images/metrics.png"/>
