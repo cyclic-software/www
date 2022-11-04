@@ -16,6 +16,15 @@
                We will build, deploy and manage the
               hosting.
             </p>
+                <!-- <div class="text-center"> -->
+                  <b-button class="m-1" @click="sign_up" variant="primary" size="lg">
+                    <i class="fab fa-github mr-2"></i> Deploy Now
+                  </b-button>
+                <!-- </div>
+              </b-col>
+              <b-col sm="4"></b-col>
+            </b-row> -->
+            
           </div>
         </b-col>
         <b-col lg="6"  align-self="center">
@@ -161,5 +170,12 @@ export default {
     color: white;
     scale: 1.1;
     margin-right: 13px;
+  }
+
+  .caption {
+    /* text-align: center; */
+    color: #bdbdbd;
+    /* margin-left: -44px; */
+    font-size: 18px;
   }
 </style>
