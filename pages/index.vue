@@ -2,19 +2,33 @@
   <div>
     <div class="header_image fade_loop main_splash"></div>
     <div class="home_content">
-      <hero />
-      <frameworks />
-      <big-feature />
-      <languages />
-      <db-feature />
-      <cron-feature />
-      <logs-feature />
-      <headline-thing />
-      <small-feature />
-      <CompanyStats />
-      <product-demo />
-      <blurbs />
-      <CtaFullStackApps />
+      <div class="front-page-spacer"></div>
+      <hero/>
+
+      <div class="front-page-spacer"></div>
+      <frameworks/>
+      <div class="front-page-spacer"></div>
+      <big-feature/>
+      <div class="front-page-spacer"></div>
+      <languages/>
+      <div class="front-page-spacer"></div>
+      <db-feature/>
+      <div class="front-page-spacer"></div>
+      <cron-feature/>
+      <div class="front-page-spacer"></div>
+      <logs-feature/>
+      <div class="front-page-spacer"></div>
+      <headline-thing class='mb-5'/>
+      <small-feature/>
+      <div class="front-page-spacer"></div>
+      <CompanyStats/>
+      <div class="front-page-spacer"></div>
+      <product-demo/>
+      <div class="front-page-spacer"></div>
+      <blurbs/>
+      <div class="front-page-spacer"></div>
+      <CtaFullStackApps/>
+      <div class="front-page-spacer"></div>
     </div>
   </div>
 </template>
@@ -67,6 +81,9 @@ export default {
 </script>
 
 <style scoped>
+.front-page-spacer{
+  height: 150px;
+}
 .home_content {
   max-width: 1400px;
   margin: 0 auto;
@@ -100,26 +117,6 @@ export default {
     var(--background-pattern-dark) !important;
 }
 
-.bottom_gradient {
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) -11%,
-      var(--background-color)
-    ),
-    var(--background-pattern-dark) !important;
-}
-
-/* @-webkit-keyframes fade_loop {
-            0% {
-               opacity: 0;
-               -webkit-transform: translateY(-20px);
-            }
-            100% {
-               opacity: 1;
-               -webkit-transform: translateY(0);
-            }
-         } */
-
 @keyframes fade_loop {
   0% {
     opacity: 0.9;
@@ -139,14 +136,5 @@ export default {
   -webkit-animation-name: fade_loop;
   animation-name: fade_loop;
 }
-
-.video_box {
-  /* border: 2px solid #292929; */
-  border-radius: 8px;
-}
-
-.caption {
-  text-align: center;
-  color: #bdbdbd;
-}
+  
 </style>
