@@ -35,14 +35,16 @@
           <div class="mb-1">
             <div class="paragraph caption steps">
               <div class="circle_number">1</div>
-              Start with what you know.</div>
+              <div class="step-caption">Start with what you know.</div></div>
           </div>
           <example-code />
           <br>
           <div class="mb-1 mt-5">
             <div class="paragraph caption steps">
-              <div class="circle_number">2</div> Go from <code>git push</code> to go-live in
-              <strong>under 10 seconds</strong>.
+              <div class="circle_number">2</div>
+              <div class="step-caption">Go from <code>git push</code> to go-live in
+                <strong>under 10 seconds</strong>.
+              </div> 
             </div>
           </div>
           
@@ -109,6 +111,7 @@ export default {
 }
   .circle_number {
     width: 30px;
+    min-width: 30px;
     height: 30px;
     border-radius: 50%;
     text-align: center;
@@ -139,7 +142,13 @@ export default {
 .btn-primary:hover, .btn-primary:focus{
     background-color: var(--darkpink);
 }
-
+.steps{
+  display: flex;
+  align-items: center;
+}
+.step-caption{
+  /* display: inline-block; */
+}
 
 @media screen and (max-width: 991px) {
   .big-headline{
