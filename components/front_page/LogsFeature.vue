@@ -93,6 +93,10 @@ p strong {
         padding: 10% !important;
         height: 450px !important; 
     }
+
+    .metrics-img{
+      display: block;
+    }
   
   
 

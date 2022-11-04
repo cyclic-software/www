@@ -70,6 +70,9 @@ h4 {
     font-weight: 100;
 }
 
+.build-thing i{
+        margin-right: 5px;
+    }
 
 @media screen and (max-width: 991px) {
     .feature-container{
