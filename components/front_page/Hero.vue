@@ -51,10 +51,11 @@
             class="text-center video_box"
             style="max-height: 220px; overflow: hidden"
           >
-            <video autoplay loop muted>
-              <img src="/images/deploy_tour.png" title="Your browser does not support the <video> tag">
+            <!-- <video autoplay="autoplay" muted loop> -->
+            <video playsinline="playsinline" autoplay muted loop>
+              <img src="/images/deploy_tour.gif" title="Your browser does not support the <video> tag">
+                Your browser does not support the video tag.
               <source src="/images/deploy_tour.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
           </div>
           
