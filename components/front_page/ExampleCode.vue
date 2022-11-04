@@ -53,7 +53,6 @@ export default {
       pad_lines(){
           let lines = this.example_code.split('\n').length
             if(lines < 9){
-              console.log('pad')
               for(let i=0; i<= 9-lines; i++){
                 this.example_code = this.example_code + '\n'
               }
@@ -66,13 +65,13 @@ export default {
           let c = 0 
           while (c < code.length){
             this.example_code = code.slice(0,c)
-            c+=18;
+            c+=28;
             this.pad_lines()
-            await sleep(100);
+            await sleep(50);
           }
           this.example_code = code
           this.pad_lines()
-          await sleep(2000)
+          await sleep(2500)
           code_index +=1
           if(code_index == codes.length){
             code_index = 0;

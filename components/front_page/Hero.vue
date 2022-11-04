@@ -19,10 +19,20 @@
           </div>
         </b-col>
         <b-col lg="6"  align-self="center">
-          <example-code />
-          <div class="mt-3">
-            <p class="paragraph caption">Start with what you know.</p>
+          <div class="mb-1">
+            <div class="paragraph caption">
+              <div class="circle_number">1</div>
+              Start with what you know.</div>
           </div>
+          <example-code />
+          <br>
+          <div class="mb-1 mt-5">
+            <div class="paragraph caption">
+              <div class="circle_number">2</div> Go from <code>git push</code> to go-live in
+              <strong>under 10 seconds</strong>.
+            </div>
+          </div>
+          
 
           <div
             class="text-center video_box"
@@ -32,12 +42,6 @@
               <source src="/images/deploy_tour.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
-          <div class="mt-3">
-            <p class="paragraph caption">
-              Go from <code>git push</code> to go-live in
-              <strong>under 10 seconds</strong>.
-            </p>
           </div>
           
         </b-col>
@@ -144,4 +148,18 @@ export default {
   height: 90px;
   /* font-family: Raleway, sans-serif; */
 }
+  .circle_number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid white;
+    display: inline-block;
+    line-height: 24px;
+    font-weight: 900;
+    margin-left: -11px;
+    color: white;
+    scale: 1.1;
+    margin-right: 13px;
+  }
 </style>
