@@ -27,6 +27,7 @@
 </template>
 
 <style scoped>
+@import './front_page.css';
 h2{
   font-size: 30px;
   font-weight: 100;
@@ -80,6 +81,16 @@ p strong {
   top: 0; left: 0; bottom: 0; right: 0;
   box-shadow: inset 0px 0px 150px black;
 } */
+
+
+@media screen and (max-width: 991px) {
+    .hubble{
+        padding: 10% !important;
+        height: 450px !important; 
+    }
+  }
+  
+  
 
 
 </style>

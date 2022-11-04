@@ -1,31 +1,35 @@
 <template>
-    <b-container class=" feature-container">
+    <b-container class="">
+        <div class="feature-container">
         <b-row>
             <b-col  align-self="center" sm="2">
                 <div class="f-header">Build Anything</div>
             </b-col>
-            <b-col class="build-things" align-self="center">
-                <div class="build-thing">
-                    <i class="fas fa-window-maximize"></i> 
-                        Frontends
-                </div>
-                <div class="build-thing">
-                    <i class="fas fa-server"></i> Backends
-                </div>
-                <div class="build-thing">
-                    <i class="fas fa-code"></i> APIs
-                </div>
-                <div class="build-thing">
-                    <i class="fas fa-cube"></i> Data
-                </div>
-                <div class="build-thing">
-                    <i class="fas fa-robot"></i> Bots
-                </div>
-                <div class="build-thing">
-                    <i class="fas fa-stopwatch"></i> Cron
+            <b-col align-self="center">
+                <div class="build-things">
+                    <div class="build-thing">
+                        <i class="fas fa-window-maximize"></i> 
+                            Frontends
+                    </div>
+                    <div class="build-thing">
+                        <i class="fas fa-server"></i> Backends
+                    </div>
+                    <div class="build-thing">
+                        <i class="fas fa-code"></i> APIs
+                    </div>
+                    <div class="build-thing">
+                        <i class="fas fa-cube"></i> Data
+                    </div>
+                    <div class="build-thing">
+                        <i class="fas fa-robot"></i> Bots
+                    </div>
+                    <div class="build-thing">
+                        <i class="fas fa-stopwatch"></i> Cron
+                    </div>
                 </div>
             </b-col>
         </b-row>
+    </div>
   </b-container>
 
 </template>
@@ -47,6 +51,7 @@ h4 {
     padding: 20px;
     border-radius: 8px;;
     box-shadow: 0px 0px 60px 4px #162859;
+    margin-bottom: 100px;
 }
 
 /* @keyframes glow{
@@ -64,4 +69,33 @@ h4 {
     font-size: 20px;
     font-weight: 100;
 }
+
+
+@media screen and (max-width: 991px) {
+    .feature-container{
+        margin: 15px auto;
+        padding: 30px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 120px 4px #101e44;
+    }
+    .f-header{
+        border-right: none;
+        margin-bottom: 30px;;
+    }
+    .build-things{
+        display: grid;
+        text-align:left;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+    }
+    .build-thing{
+        text-align: left;
+        width: 100%;
+        color: var(--h-white)
+    }
+    .build-thing i{
+        margin-right: 5px;
+    }
+  }
+  
 </style>

@@ -3,7 +3,7 @@
     <b-container>
       <b-row>
         <b-col lg="6" align-self="center">
-          <div class="ml-5" >
+          <div class="big-headline" >
             <div class="big-head">full</div>
             <div class="big-head">stack</div>
             <div class="big-head">apps</div>
@@ -27,16 +27,16 @@
             
           </div>
         </b-col>
-        <b-col lg="6"  align-self="center">
+        <b-col lg="6"  align-self="center" class="right-hero">
           <div class="mb-1">
-            <div class="paragraph caption">
+            <div class="paragraph caption steps">
               <div class="circle_number">1</div>
               Start with what you know.</div>
           </div>
           <example-code />
           <br>
           <div class="mb-1 mt-5">
-            <div class="paragraph caption">
+            <div class="paragraph caption steps">
               <div class="circle_number">2</div> Go from <code>git push</code> to go-live in
               <strong>under 10 seconds</strong>.
             </div>
@@ -152,6 +152,9 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;800;900&display=swap');
 @import './front_page.css';
+.big-headline{
+  margin-left: 50px;
+}
 .big-head{
   font-size:100px;
   font-weight:900;
@@ -188,5 +191,22 @@ export default {
 .btn-primary:hover, .btn-primary:focus{
     background-color: var(--darkpink);
 }
+
+
+@media screen and (max-width: 991px) {
+  .big-headline{
+    margin-left: 30px;
+  }
+    .right-hero{
+      margin-top: 100px;
+    }
+    .steps{
+      margin-left: 10px;
+      /* text-align: center;; */
+    }
+
+  }
+  
+  
 
 </style>

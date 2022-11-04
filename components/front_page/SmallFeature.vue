@@ -3,7 +3,7 @@
       <div class="">
       <b-row>
 
-        <b-col  md="4">
+        <b-col  lg="4">
             <div class="feature-container">
               <div class="text-center" >
               <br>
@@ -18,7 +18,7 @@
         </b-col>
         
 
-        <b-col   md="4">
+        <b-col   lg="4">
             <div class="feature-container">
               <div class="text-center" >
               <br>
@@ -34,7 +34,7 @@
         
 
 
-        <b-col align-self="center"  md="4">
+        <b-col align-self="center"  lg="4">
             <div class="feature-container">
               <div class="text-center" >
               <br>
@@ -51,11 +51,11 @@
       </b-row>
       <b-row>
 
-        <b-col align-self="center"  md="4">
+        <b-col align-self="center"  lg="4">
         </b-col>
         
 
-        <b-col align-self="center"  md="4">
+        <b-col align-self="center"  lg="4">
             <div class="feature-container">
               <div class="text-center" >
               <br>
@@ -73,7 +73,7 @@
         
 
 
-        <b-col align-self="center"  md="4">
+        <b-col align-self="center"  lg="4">
         </b-col>
         
       </b-row>

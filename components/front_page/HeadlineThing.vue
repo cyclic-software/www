@@ -54,4 +54,10 @@ h4 {
     letter-spacing: 2px;;
     font-weight: 100;
 }
+
+@media screen and (max-width: 991px) {
+    .build-thing{
+        margin-top: 60px;
+    }
+}
 </style>

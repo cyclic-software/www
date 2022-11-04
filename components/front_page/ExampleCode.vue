@@ -90,6 +90,10 @@ export default {
 
 
 <style >
+.example_code{
+  max-height: 220px;
+   /* overflow: hidden;; */
+}
 .my-editor {
     border-radius:8px;
     /* background: #292929; */
@@ -100,7 +104,8 @@ export default {
     padding: 5px;
     caret-color: white;
     height: fit-content;
-    max-height: 1000px;
+    max-height: 400px;
+    overflow:hidden;
     max-width: 100%;
     min-height: 200px;
   }

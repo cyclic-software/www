@@ -2,7 +2,7 @@
     <b-container>
       <div class="">
       <b-row>
-        <b-col align-self="center"  md="4">
+        <b-col align-self="center"  lg="4">
           <div class="feature-container">
             <div class="text-center" >
             <div class="f-image"><i class="fas fa-bolt"></i></div>
@@ -20,12 +20,14 @@
             <br>
             <br>
             <em>Even on free tier.</em> 
+            <br>
+            <br>
 
           </p>
           </div>
         </b-col>
         
-        <b-col align-self="center"  md="4">
+        <b-col align-self="center"  lg="4">
           <div class="feature-container worldwide">
             <div class="text-center" >
             <h1 class="metal">Worldwide</h1>
@@ -51,7 +53,7 @@
           </div>
         </b-col>
 
-        <b-col align-self="center"  md="4">
+        <b-col align-self="center"  lg="4">
           <div class="feature-container">
             <div class="text-center" >
             <div class="f-image"><i class="fas fa-rocket"></i></div>
@@ -118,7 +120,6 @@ h4 {
     background-color: black;
     margin: 15px auto;
     /* border: 1px solid #152553; */
-    padding: 20px;
     border-radius: 8px;;
     /* box-shadow: 21px 0px 124px -26px #3f1841; */
     box-shadow: 21px 0px 124px -26px #162859;
@@ -144,4 +145,17 @@ h4 {
 }
 
 
+@media screen and (max-width: 991px) {
+  h1{
+    font-weight: 300;
+  }
+  .feature-container{
+    padding: 60px 50px;
+    height: auto;
+  }
+  .f-image{
+    font-size: 80px;
+    text-shadow: 0px 0px 50px #4a75eb;
+  }
+}
 </style>

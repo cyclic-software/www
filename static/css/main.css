@@ -38,3 +38,16 @@
 em{
     color: var(--pink)
   }
+
+  
+
+
+@media screen and (max-width: 991px) {
+    #index-page p{
+        font-size: 17px;
+    }
+    h2{
+        font-weight: 300 !important; 
+    }
+  }
+  

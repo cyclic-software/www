@@ -34,29 +34,9 @@
 </template>
 
 <script>
-export default {
-  data: {
-    scrollPosition: null
-  },
-  
-  methods: {
-    updateScroll() {
-      // console.log(this.scrollPosition)
-      console.log(this.$el.getBoundingClientRect().top)
-      // this.scrollPosition = window.scrollY
-    }
-  },
-  
-  mounted() {
-    // window.removeEventListener('scroll', this.updateScroll)
-    // window.addEventListener('scroll', this.updateScroll);
-  },
-  destroy() {
-    // window.removeEventListener('scroll', this.updateScroll)
-  }
-}
 </script>
 <style scoped>
+@import './front_page.css';
 h2{
   font-size: 30px;
   font-weight: 100;
@@ -75,10 +55,7 @@ p strong {
   padding-top: 70px;
   height: 400px;
   display: block;
-  /* background-image: url('/images/hubble.jpg'); */
   background-size: cover;
-  /* background-position: bottom; */
-
   background-image: radial-gradient(circle at bottom,rgba(0,0,0,0) 1%,black),url(/images/logs.png);
   background-position-y: -57px;
   background-repeat: no-repeat;
@@ -102,4 +79,23 @@ p strong {
 
 }
 
+
+
+@media screen and (max-width: 991px) {
+    .logs-header{
+      max-width: 100%;;
+      margin-top:30px;
+    }
+
+
+    .hubble{
+        padding: 10% !important;
+        height: 450px !important; 
+    }
+  
+  
+
+  }
+  
+  
 </style>

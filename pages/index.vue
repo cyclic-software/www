@@ -7,11 +7,11 @@
 
       <div class="front-page-spacer"></div>
       <frameworks/>
-      <div class="front-page-spacer"></div>
+      <!-- <div class="front-page-spacer spacer-smaller"></div> -->
       <big-feature/>
-      <div class="front-page-spacer"></div>
+      <div class="front-page-spacer spacer-smaller"></div>
       <languages/>
-      <div class="front-page-spacer"></div>
+      <div class="front-page-spacer spacer-smaller"></div>
       <db-feature/>
       <div class="front-page-spacer"></div>
       <cron-feature/>
@@ -159,6 +159,12 @@ em{
 .fade_loop {
   -webkit-animation-name: fade_loop;
   animation-name: fade_loop;
+}
+
+@media screen and (max-width: 991px) {
+  .spacer-smaller{
+    height: 20px;
+  }
 }
   
 </style>

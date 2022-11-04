@@ -1,5 +1,6 @@
 <template>
-    <b-container class=" feature-container">
+    <b-container >
+        <div class=" feature-container">
         <b-row>
             <b-col  align-self="center" sm="2">
                 <div class="f-header">Runtimes</div>
@@ -16,6 +17,7 @@
                 </div>
             </b-col>
         </b-row>
+    </div>
   </b-container>
 
 </template>
@@ -55,4 +57,31 @@ h4 {
     font-size: 20px;
     font-weight: 100;
 }
+
+
+@media screen and (max-width: 991px) {
+    .feature-container{
+        margin: 15px auto;
+        padding: 30px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 120px 4px #101e44;
+    }
+    .f-header{
+        border-right: none;
+        margin-bottom: 30px;;
+    }
+    .build-things{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .build-thing{
+        /* text-align: left; */
+        color: var(--h-white)
+    }
+    .build-thing i{
+        margin-right: 5px;
+    }
+  }
+  
 </style>

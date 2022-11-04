@@ -44,6 +44,7 @@ export default {
 }
 </script>
 <style scoped>
+@import './front_page.css';
 h2{
   font-size: 30px;
   font-weight: 100;
@@ -69,5 +70,14 @@ p strong {
 
 }
 
+
+@media screen and (max-width: 991px) {
+    .hubble{
+        padding: 10% !important;
+        height: 450px !important; 
+    }
+  }
+  
+  
 
 </style>
