@@ -11,20 +11,24 @@ import { PrismEditor } from 'vue-prism-editor';
 import 'vue-prism-editor/dist/prismeditor.min.css'; // import the styles somewhere
 
 let codes = [
-`const express = require('express') 
+`// express.js API
+
+const express = require('express') 
 const app = express()
 
 app.get('/', (req, res) => {
     return res.send('Yo!')
 })
-
 app.listen(3000)
-
 `,
-`const root = ReactDOM.createRoot(document.getElementById('root'));
+`// React Site
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<h1>Hello, world!</h1>);`,
-`const MongoClient = require('mongodb').MongoClient;
+`// MongoDB
+
+const MongoClient = require('mongodb').MongoClient;
 
 MongoClient.connect(process.env.DB_URL, function(err, db) {
   if(!err) {
@@ -41,7 +45,11 @@ export default {
     components: {  PrismEditor },
     data() {
       return {
-        example_code: '',
+        example_code: `
+        
+        
+        
+        `,
       }
     },
     mounted() {
@@ -52,21 +60,22 @@ export default {
     methods: {
       pad_lines(){
           let lines = this.example_code.split('\n').length
-            if(lines < 9){
+            if(lines <= 9){
               for(let i=0; i<= 9-lines; i++){
                 this.example_code = this.example_code + '\n'
               }
             }
       },
       async loop_codes() {
+        this.pad_lines()
         let code_index = 0;
         while (true){
           let code = codes[code_index]
           let c = 0 
           while (c < code.length){
             this.example_code = code.slice(0,c)
-            c+=28;
             this.pad_lines()
+            c+=28;
             await sleep(50);
           }
           this.example_code = code
@@ -91,7 +100,8 @@ export default {
 
 <style >
 .example_code{
-  max-height: 220px;
+  height: 210px;
+  max-height: 210px;
    /* overflow: hidden;; */
 }
 .my-editor {
