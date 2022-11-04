@@ -36,7 +36,6 @@
 </template>
 
 <style scoped>
-@import './front_page.css';
 h2,h3{
   font-size: 25px;
       line-height: 35px;;

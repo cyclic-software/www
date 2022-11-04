@@ -99,7 +99,6 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;800;900&display=swap');
-@import './front_page.css';
 .big-headline{
   margin-left: 50px;
 }

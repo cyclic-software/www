@@ -1,7 +1,6 @@
 
 export default {
     data(){
-        console.log(process)
         return{
             // window: window,
             // console: console             

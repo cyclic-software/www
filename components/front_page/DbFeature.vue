@@ -27,7 +27,6 @@
 </template>
 
 <style scoped>
-@import './front_page.css';
 h2{
   font-size: 30px;
   font-weight: 100;
