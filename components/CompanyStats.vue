@@ -47,5 +47,7 @@
     var(--background-pattern-dark) !important;
   border-radius: 8px;;
 }
-
+h2{
+  font-weight: bold;
+}
 </style>
