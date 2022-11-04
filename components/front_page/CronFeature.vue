@@ -22,29 +22,6 @@
 
 </template>
 
-<script>
-export default {
-  data: {
-    scrollPosition: null
-  },
-  
-  methods: {
-    updateScroll() {
-      // console.log(this.scrollPosition)
-      console.log(this.$el.getBoundingClientRect().top)
-      // this.scrollPosition = window.scrollY
-    }
-  },
-  
-  mounted() {
-    // window.removeEventListener('scroll', this.updateScroll)
-    // window.addEventListener('scroll', this.updateScroll);
-  },
-  destroy() {
-    // window.removeEventListener('scroll', this.updateScroll)
-  }
-}
-</script>
 <style scoped>
 h2{
   font-size: 30px;
