@@ -2,7 +2,7 @@
     <b-container class="hubble">
     <b-row>
     <b-col sm="6">
-      <h2 class="metal">Database and Storage</h2>
+      <h2 class="">Database and Storage</h2>
       <p>
         Cyclic apps get you access to the best AWS has to offer.
         <br>

@@ -86,7 +86,9 @@ p {
 p strong {
   color: orange;;
 }
-
+h1{
+  font-weight: 100;;
+}
 .f-header{
     font-size:20px;
     font-weight:500;
@@ -113,6 +115,8 @@ h4 {
 
 }
 .feature-container{
+    background-color: black;
+    margin: 15px auto;
     /* border: 1px solid #152553; */
     padding: 20px;
     border-radius: 8px;;
@@ -138,4 +142,6 @@ h4 {
     font-size: 20px;
     font-weight: 100;
 }
+
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="index-page">
     <div class="header_image fade_loop main_splash"></div>
     <div class="home_content">
       <div class="front-page-spacer"></div>
@@ -81,6 +81,30 @@ export default {
 </script>
 
 <style scoped>
+
+
+#index-page{
+  background-color: black !important;
+}
+h1,h2 {
+    letter-spacing: 2px;
+}
+
+.paragraph{
+    letter-spacing: 0.2px;;
+}
+
+.btn-primary, .btn-primary:active{
+    background-color: var(--pink);
+}
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--darkpink);
+}
+
+em{
+    color: var(--pink)
+  }
+
 .front-page-spacer{
   height: 150px;
 }

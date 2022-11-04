@@ -48,6 +48,7 @@
             style="max-height: 220px; overflow: hidden"
           >
             <video autoplay loop muted>
+              <img src="/images/product/product-parent-hero.jpg" title="Your browser does not support the <video> tag">
               <source src="/images/deploy_tour.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -173,9 +174,19 @@ export default {
   }
 
   .caption {
-    /* text-align: center; */
     color: #bdbdbd;
-    /* margin-left: -44px; */
     font-size: 18px;
   }
+
+.video_box{
+  border-radius: 8px;
+  height:400px;
+}
+.btn-primary, .btn-primary:active{
+    background-color: var(--pink);
+}
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--darkpink);
+}
+
 </style>

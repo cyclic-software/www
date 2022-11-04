@@ -28,29 +28,13 @@
     --h-white: #bdbdbd
 }
 
+
 .metal{
     color: rgb(255,242,181);
     background-image: linear-gradient(rgb(255 255 255) 42%, rgb(183 183 183) 73%);
       -webkit-background-clip:text;
       -webkit-text-fill-color: transparent;
 }
-
-
-h1,h2 {
-    letter-spacing: 2px;
-}
-
-.paragraph{
-    letter-spacing: 0.2px;;
-}
-
-.btn-primary, .btn-primary:active{
-    background-color: var(--pink);
-}
-.btn-primary:hover, .btn-primary:focus{
-    background-color: var(--darkpink);
-}
-
 em{
     color: var(--pink)
   }

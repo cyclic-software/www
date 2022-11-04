@@ -3,7 +3,7 @@
     <b-row>
       <b-col sm="6" class="text-right"></b-col>
     <b-col sm="6">
-      <h2 class="metal">Precision Cron</h2>
+      <h2 class="">Precision Cron</h2>
       <p>
         Powerful API-native cron capability built into every app.
         <br>

@@ -2,7 +2,7 @@
     <b-container class="hubble">
       <b-row>
         <b-col sm="6" align-self="center" >
-          <h2 class="metal">Complete Visibility</h2>
+          <h2 class="">Complete Visibility</h2>
           <p>
             Know what's going on in the backend in real time.
             <br>
