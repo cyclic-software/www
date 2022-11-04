@@ -1,6 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
+
 const hostname = process.NODE_ENV === 'production' ? 'https://www.cyclic.sh' : 'http://localhost:3000';
 // console.log(process.env)
 const title = "Cyclic.sh - Fullstack Javascript Apps - Deploy and Host in Seconds"
@@ -104,11 +105,12 @@ export default {
     "@static/css/titillium.css",
     "@static/css/normalize.css",
     "@static/css/webflow.css",
-    "@static/css/www-cyclic.webflow.css"
+    "@static/css/www-cyclic.webflow.css",
+    "@static/css/main.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/prism' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

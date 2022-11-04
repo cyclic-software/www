@@ -1,0 +1,161 @@
+<template>
+    <b-container>
+      <div class="">
+      <b-row>
+        <b-col align-self="center"  lg="4">
+          <div class="feature-container">
+            <div class="text-center" >
+            <div class="f-image"><i class="fas fa-bolt"></i></div>
+            <br>
+            <br>
+            <h1 class="metal">No Sleep</h1>
+            <br>
+            <br>
+          </div>
+          <p class="text-center">
+            Cyclic Apps are <strong>available immediately</strong> and on demand. 
+            <br>
+            <br>
+            Say goodbye to waiting 30 seconds for containers to be spun up.
+            <br>
+            <br>
+            <em>Even on free tier.</em> 
+            <br>
+            <br>
+
+          </p>
+          </div>
+        </b-col>
+        
+        <b-col align-self="center"  lg="4">
+          <div class="feature-container worldwide">
+            <div class="text-center" >
+            <h1 class="metal">Worldwide</h1>
+            <br>
+            <br>
+          </div>
+          <p class="text-center">
+            Code is deployed to where you are. 
+            <br>
+            <br>
+            <strong>Smart caching</strong> helps you deliver the best performance globally.
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+          </p>
+          </div>
+        </b-col>
+
+        <b-col align-self="center"  lg="4">
+          <div class="feature-container">
+            <div class="text-center" >
+            <div class="f-image"><i class="fas fa-rocket"></i></div>
+            <br>
+            <br>
+            <h1 class="metal">Hyper-Scale</h1>
+            <br>
+            <br>
+          </div>
+          <p class="text-center">
+            Scale up and down <strong>instantly</strong>.
+            <br>
+            <br>
+            1GB serverless compute handles <strong>EACH individual request</strong>.
+            <br>
+            <br>
+
+          </p>
+          </div>
+        </b-col>
+      </b-row>
+
+      </div>
+    </b-container>
+
+</template>
+
+<style scoped>
+p {
+  color: var(--h-white)
+}
+p strong {
+  color: orange;;
+}
+h1{
+  font-weight: 100;;
+}
+.f-header{
+    font-size:20px;
+    font-weight:500;
+    text-align: center;;
+    color: var(--h-white);
+    border-right: 2px solid var(--h-white);
+}
+h4 {
+    color: var(--h-white);
+    font-size: 20px;
+}
+.f-image{
+    font-size: 110px;
+    text-shadow: 0px 0px 80px #324f9f;
+    /* text-shadow: 0px 0px 80px #c998fbc0; */
+    color: black;
+}
+
+.worldwide{
+  background-image: url("/images/earth_rise.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.feature-container{
+    background-color: black;
+    margin: 15px auto;
+    /* border: 1px solid #152553; */
+    border-radius: 8px;;
+    /* box-shadow: 21px 0px 124px -26px #3f1841; */
+    box-shadow: 21px 0px 124px -26px #162859;
+    height: 640px;
+    padding: 100px 50px;
+    /* margin: auto 10px; */
+}
+
+/* @keyframes glow{
+  to {
+    box-shadow: 0px 0px 30px 20px #535FED;
+  }
+} */
+.build-things{
+    display: flex
+}
+.build-thing{
+    width: 20%;
+    /* height: 30px; */
+    text-align: center;;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 991px) {
+  h1{
+    font-weight: 300;
+  }
+  .feature-container{
+    padding: 60px 50px;
+    height: auto;
+  }
+  .f-image{
+    font-size: 80px;
+    text-shadow: 0px 0px 50px #4a75eb;
+  }
+}
+</style>

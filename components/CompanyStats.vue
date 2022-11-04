@@ -1,6 +1,7 @@
 <template>
-    <div class="section blue wf-section">
-      <img src="images/Rectangle-240-copy.svg" loading="lazy" alt="" class="absolute-image">
+    <div class="s">
+    <!-- <div class="secstion  wf-section"> -->
+      <!-- <img src="images/Rectangle-240-copy.svg" loading="lazy" alt="" class="absolute-image"> -->
     <div class="container">
       <div class="spacer _32"></div>
       <div class="_12-columns align-center">
@@ -36,3 +37,17 @@
     </div>
   </div>
 </template>
+<style scoped>
+.s{
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) -21%,
+      var(--background-color)
+    ),
+    var(--background-pattern-dark) !important;
+  border-radius: 8px;;
+}
+h2{
+  font-weight: bold;
+}
+</style>
