@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-container>
+  <div class="hero">
+    <!-- <b-container> -->
       <b-row>
         <b-col lg="6" align-self="center">
           <div class="big-headline" >
@@ -63,7 +63,7 @@
           
         </b-col>
       </b-row>
-    </b-container>
+    <!-- </b-container> -->
   </div>
 </template>
 
@@ -99,6 +99,23 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;800;900&display=swap');
+
+.hero{
+  position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 100%;
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .big-headline{
   margin-left: 50px;
 }
@@ -150,6 +167,9 @@ export default {
 }
 
 @media screen and (max-width: 991px) {
+  .hero{
+    max-width: calc(100vw - 40px);
+  }
   .video_box{
     box-shadow: 0px 0px 120px 4px #101e44;
   }
