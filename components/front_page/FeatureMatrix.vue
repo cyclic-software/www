@@ -20,7 +20,7 @@
         
         <b-col align-self="center"   lg="6">
           <div class="matrix mt-5">
-            <div>Inactivity Timeout/Delay</div> <div class="check">None - Apps Always On</div>
+            <div>Inactivity Timeout/Delay</div> <div class="check">None - Apps Never Sleep</div>
             <div>Hourly Limit</div> <div class="check">None - Unlimited</div>
             <div>Compute</div> <div class="check">1024 MB RAM</div>
             <div>Autoscaling</div> <div class="check">10 x 1024 MB</div>
