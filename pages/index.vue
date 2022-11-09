@@ -23,6 +23,8 @@
       <div class="front-page-spacer"></div>
       <CompanyStats/>
       <div class="front-page-spacer"></div>
+      <feature-matrix/>
+      <div class="front-page-spacer"></div>
       <product-demo/>
       <div class="front-page-spacer"></div>
       <blurbs/>
@@ -48,6 +50,7 @@ import HeadlineThing from '~/components/front_page/HeadlineThing.vue'
 import ProductDemo from '~/components/front_page/ProductDemo.vue'
 import Blurbs from '~/components/front_page/Blurbs.vue'
 import Hero from '~/components/front_page/Hero.vue'
+import FeatureMatrix from '~/components/front_page/FeatureMatrix.vue'
 
 export default {
   name: 'Homepage',
@@ -76,6 +79,7 @@ export default {
     HeadlineThing,
     ProductDemo,
     Hero,
+    FeatureMatrix,
   },
 }
 </script>
