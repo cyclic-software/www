@@ -1,6 +1,5 @@
 <template>
   <div class="hero">
-    <!-- <b-container> -->
       <b-row>
         <b-col lg="6" align-self="center">
           <div class="big-headline" >
@@ -63,7 +62,6 @@
           
         </b-col>
       </b-row>
-    <!-- </b-container> -->
   </div>
 </template>
 
