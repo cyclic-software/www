@@ -3,7 +3,7 @@
     <div class="header_image fade_loop main_splash"></div>
     <div class="home_content">
       <div class="front-page-spacer"></div>
-      <heroZ/>
+      <hero/>
 
       <div class="front-page-spacer "></div>
       <frameworks/>
