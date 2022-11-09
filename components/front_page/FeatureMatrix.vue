@@ -34,8 +34,8 @@
             <div>Edge Locations</div> <div class="check">18+ Cloud Regions</div>
             <div>Smart Caching</div> <div class="check">300+ Locations</div>
             <div>Precision Cron</div> <div class="check">3 jobs/app</div>
-            <div>Logs History (Application)</div> <div class="check">7 Days</div>
-            <div>Logs History (Network)</div> <div class="check">7 Days</div>
+            <div>Logs History - Application</div> <div class="check">7 Days</div>
+            <div>Logs History - Network</div> <div class="check">7 Days</div>
             <div>SSL Certificates</div> <div class="check">✓</div>
             <div>Custom Subdomains</div> <div class="check">✓</div>
             <div>BYO Domain</div> <div class="check">✓</div>
