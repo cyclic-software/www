@@ -49,7 +49,7 @@
                  class="button outline-white w-button">Start</a>
                 <div class="spacer _24"></div>
                 <h3 class="no-margin">$0<span class="regular">/month</span></h3>
-                <p class="paragraph-small">subject to fair use</p>
+                <p class="paragraph-small">subject to fair use, quotas are per-app</p>
                 <div class="tick-list w-richtext">
                   <div class="matrix ">
                     <div class="catg">Apps</div> <div class="check">3 apps</div>
