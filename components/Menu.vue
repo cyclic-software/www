@@ -24,6 +24,12 @@
             href="https://app.cyclic.sh/api/login"
             @click="sign_in('https://app.cyclic.sh/api/login', $event)" 
             >
+              Sign Up
+            </b-nav-item>
+            <b-nav-item 
+            href="https://app.cyclic.sh/api/login"
+            @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+            >
               Sign In
             </b-nav-item>
           </b-navbar-nav>
@@ -74,6 +80,22 @@
                 await gtag('event', 'header_sign_in', {
                 'event_label' : window.location.href,
                 'event_category' : 'sign_in',
+                'value' : session_seconds,
+
+                'page' : window.location,
+                'session_seconds': session_seconds,
+                'event_callback': function() {
+                  }
+                });  
+            }catch(e){
+            }
+      },
+      async sign_up(url, e){
+          try{
+              let session_seconds = parseInt(e.timeStamp/1000)
+                await gtag('event', 'header_sign_up', {
+                'event_label' : window.location.href,
+                'event_category' : 'sign_up',
                 'value' : session_seconds,
 
                 'page' : window.location,
