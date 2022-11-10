@@ -261,14 +261,14 @@ export default {
 }
 
 .catg{
-  font-size: 0.7em;
+  font-size: 15px;
   color: var(--h-white);
 }
 .catg:before{
   width: 10px;
   height: 10px;
   content: '';
-  padding-left: 30px;
+  padding-left: 20px;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjUgMS41TDUgMTBMMSA2IiBzdHJva2U9IiMyNDVGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
   background-position: 0px 6px;
   background-size: 16px;

@@ -31,7 +31,7 @@
             <div>Integrated Database</div> <div class="check">1 GB</div>
             <div>Integrated Object Storage</div> <div class="check">1 GB</div>
             <div>Builds</div> <div class="check">Unlimited</div>
-            <div>Edge Locations</div> <div class="check">18+ Cloud Regions</div>
+            <div>Edge Locations</div> <div class="check">Closest of 18+ Regions</div>
             <div>Smart Caching</div> <div class="check">300+ Locations</div>
             <div>Precision Cron</div> <div class="check">3 jobs/app</div>
             <div>Logs History - Application</div> <div class="check">7 Days</div>
