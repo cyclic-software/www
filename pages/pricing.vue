@@ -52,7 +52,7 @@
                 <p class="paragraph-small">subject to fair use</p>
                 <!-- <p></p> -->
                 <div class="tick-list w-richtext">
-                  <ul>
+                  <!-- <ul>
                     <li>3 apps</li>
                     <li>100,000 API requests</li>
                     <li>1GB runtime memory</li>
@@ -65,7 +65,39 @@
                     <li>3 Cron tasks per app</li>
                     <li>7 day log retention</li>
                     <li>Community support</li>
-                  </ul>
+                  </ul> -->
+                  <div class="matrix ">
+                    <div class="catg">Apps</div> <div class="check">3 apps</div>
+                    <div class="catg">Inactivity Delay</div> <div class="check">None - Apps Never Sleep</div>
+                    <div class="catg">Hourly Limit</div> <div class="check">None - Unlimited</div>
+                    <div class="catg">Compute</div> <div class="check">1024 MB RAM</div>
+                    <div class="catg">Autoscaling</div> <div class="check">10 x 1024 MB</div>
+                    <div class="catg">API Requests</div> <div class="check">100,000/month per app</div>
+                    <div class="catg">Languages</div> <div class="check">JavaScript<br>TypeScript<br> Python<sup>*</sup></div>
+                    <div class="catg">Repositories</div> <div class="check">Personal</div>
+                    <div class="catg">Database</div> <div class="check">1 GB (DynamoDB)</div>
+                    <div class="catg">Permanent Storage</div> <div class="check">1 GB (S3)</div>
+                    <div class="catg">Builds</div> <div class="check">Unlimited</div>
+                    <div class="catg">Edge Locations</div> <div class="check">18+ Cloud Regions</div>
+                    <div class="catg">Smart Caching</div> <div class="check">300+ Locations</div>
+                    <div class="catg">Precision Cron</div> <div class="check">3 jobs/app</div>
+                    <div class="catg">Logs Retention</div> <div class="check">7 Days</div>
+                    <div class="catg">SSL Certificates</div> <div class="check">✓</div>
+                    <div class="catg">Custom Subdomains</div> <div class="check">✓</div>
+                    <div class="catg">BYO Domain</div> <div class="check">✓</div>
+                    <div class="catg">Build on <code>git push</code></div> <div class="check">✓</div>
+                    <div class="catg">Support</div> <div class="check">Community</div>
+          
+                  </div>
+                   <br>
+                   <br>
+                   <p>
+                     * Want to try Cyclic with Python?
+                     <br>
+                     > <a href="https://cyclic.typeform.com/to/baT1BAHZ">Join Wait List</a> 
+
+                   </p>
+                  <br>
                 </div>
               </div>
             </div>
@@ -83,8 +115,23 @@
                 <p class="paragraph-small">
                   plus consumption charges beyond quota
                 </p>
-                <p>All of Free plus:</p>
+                <!-- <p>All of Free plus:</p> -->
                 <div class="tick-list w-richtext">
+
+                  <div class="matrix ">
+                    <div class="catg">Apps</div> <div class="check">10 apps</div>
+                    <div class="catg">Repositories</div> <div class="check">Personal <br> Private</div>
+                    <div class="catg">Precision Cron</div> <div class="check">10 jobs/app</div>
+                    <div class="catg">Logs Retention</div> <div class="check">30 Days</div>
+                    <div class="catg">Logs Search</div> <div class="check">✓<sup> coming soon</sup></div>
+                    <div class="catg">Branch Environments</div> <div class="check">✓</div>
+                    <div class="catg">Support</div> <div class="check">Email</div>
+                    
+                  </div>
+                  <br>
+                  <div class="catg">Including everything in "Free Forever"</div>
+
+<!-- 
                   <ul>
                     <li>10 apps</li>
                     <li>10 Cron tasks per app</li>
@@ -92,10 +139,14 @@
                     <li>Branch based preview envs</li>
                     <li>30 day log retention</li>
                     <li>Email support</li>
-                  </ul>
+                  </ul> -->
                 </div>
-                <p>(Learn about our <a href="https://app.cyclic.sh/#/plan">referral program</a>)</p>
-                <p><sup>*</sup> Coming soon</p>
+                <br>
+                <br>
+                <p> 
+                  Bring friends, get apps and credits! 
+                  <br>
+                  > <a href="https://app.cyclic.sh/#/plan">Referral Program</a></p>
               </div>
             </div>
             <div class="column desk-4">
@@ -109,17 +160,33 @@
                 <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Buy</a>
                 <div class="spacer _24"></div>
                 <h3 class="no-margin">$299<span class="regular"> /month</span></h3>
-                <p class="paragraph-small"><br></p>
-                <p>All of Solo plus:</p>
+                <p class="paragraph-small">
+                  plus consumption charges beyond quota
+                </p>
+                <!-- <p>All of Solo plus:</p> -->
                 <div class="tick-list w-richtext">
-                  <ul>
+
+                  <div class="matrix ">
+                    <div class="catg">Apps</div> <div class="check">Unlimited apps</div>
+                    <div class="catg">Repositories</div> <div class="check">Personal <br>Private <br>Organizational</div>
+                    <div class="catg">Precision Cron</div> <div class="check">Unlimited jobs</div>
+                    <div class="catg">Logs Retention</div> <div class="check">90 Days</div>
+                    <div class="catg">Users</div> <div class="check">Unlimited users</div>
+                    <div class="catg">Support</div> <div class="check">Chat</div>
+                    
+                  </div>
+                  <br>
+                  <div class="catg">Including everything in "Solo"</div>
+
+
+                  <!-- <ul>
                     <li>Unlimited apps</li>
                     <li>Unlimited users</li>
                     <li>Organization GitHub accounts</li>
                     <li>Unlimited Cron tasks</li>
                     <li>90 day log retention</li>
                     <li>Chat support</li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -214,6 +281,37 @@ export default {
     -webkit-columns: 1;
     -moz-columns: 1;
   }
+}
+
+.matrix{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  /* color: var(--h-white); */
+  font-size: 18px;
+  justify-items: left;
+  text-align: left;;
+}
+
+.catg{
+  font-size: 0.7em;
+  color: var(--h-white);
+}
+.catg:before{
+  width: 10px;
+  height: 10px;
+  content: '';
+  padding-left: 30px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjUgMS41TDUgMTBMMSA2IiBzdHJva2U9IiMyNDVGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
+  background-position: 0px 6px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.matrix .check{
+  color: #dce3f0;
+  line-height: 1.25em;
 }
 
 </style>
