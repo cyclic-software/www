@@ -50,22 +50,7 @@
                 <div class="spacer _24"></div>
                 <h3 class="no-margin">$0<span class="regular">/month</span></h3>
                 <p class="paragraph-small">subject to fair use</p>
-                <!-- <p></p> -->
                 <div class="tick-list w-richtext">
-                  <!-- <ul>
-                    <li>3 apps</li>
-                    <li>100,000 API requests</li>
-                    <li>1GB runtime memory</li>
-                    <li>512MB /tmp storage</li>
-                    <li>1GB Object Storage (AWS S3)</li>
-                    <li>1GB Database Storage (AWS DynamoDB)</li>
-                    <li>Unlimited blazing fast builds</li>
-                    <li>Personal GitHub repositories</li>
-                    <li>Hosted close to you</li>
-                    <li>3 Cron tasks per app</li>
-                    <li>7 day log retention</li>
-                    <li>Community support</li>
-                  </ul> -->
                   <div class="matrix ">
                     <div class="catg">Apps</div> <div class="check">3 apps</div>
                     <div class="catg">Inactivity Delay</div> <div class="check">None - Apps Never Sleep</div>
@@ -131,15 +116,6 @@
                   <br>
                   <div class="catg">Including everything in "Free Forever"</div>
 
-<!-- 
-                  <ul>
-                    <li>10 apps</li>
-                    <li>10 Cron tasks per app</li>
-                    <li>Search structured logs<sup>*</sup></li>
-                    <li>Branch based preview envs</li>
-                    <li>30 day log retention</li>
-                    <li>Email support</li>
-                  </ul> -->
                 </div>
                 <br>
                 <br>
@@ -177,16 +153,6 @@
                   </div>
                   <br>
                   <div class="catg">Including everything in "Solo"</div>
-
-
-                  <!-- <ul>
-                    <li>Unlimited apps</li>
-                    <li>Unlimited users</li>
-                    <li>Organization GitHub accounts</li>
-                    <li>Unlimited Cron tasks</li>
-                    <li>90 day log retention</li>
-                    <li>Chat support</li>
-                  </ul> -->
                 </div>
               </div>
             </div>
