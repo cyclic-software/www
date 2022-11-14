@@ -22,13 +22,13 @@
           <b-navbar-nav class="ml-auto">
             <b-nav-item 
             href="https://app.cyclic.sh/api/login"
-            @click="sign_in('https://app.cyclic.sh/api/login', $event)" 
+            @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
             >
               Sign Up
             </b-nav-item>
             <b-nav-item 
             href="https://app.cyclic.sh/api/login"
-            @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+            @click="sign_in('https://app.cyclic.sh/api/login', $event)" 
             >
               Sign In
             </b-nav-item>
