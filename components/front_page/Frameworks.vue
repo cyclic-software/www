@@ -51,9 +51,9 @@ export default {
     async trackClick(text, e) {
       try {
         let session_seconds = parseInt(e.timeStamp / 1000)
-        await gtag('event', 'build_things', {
+        await gtag('event', text, {
           'event_label': window.location.href,
-          'event_category': text,
+          'event_category': 'build_things',
           'value': session_seconds,
           'page': window.location,
           'session_seconds': session_seconds,
