@@ -8,23 +8,34 @@
             <b-col align-self="center">
                 <div class="build-things">
                     <div class="build-thing">
-                        <i class="fas fa-window-maximize"></i> 
-                            Frontends
+                      <a href="https://docs.cyclic.sh/overview/starters#frontends" @click="trackClick('frontends', $event)" >
+                        <i class="fas fa-window-maximize"></i> Frontends
+                      </a>
                     </div>
                     <div class="build-thing">
+                      <a href="https://docs.cyclic.sh/overview/starters#apis" @click="trackClick('backends', $event)" >
                         <i class="fas fa-server"></i> Backends
+                      </a>
                     </div>
                     <div class="build-thing">
+                      <a href="https://docs.cyclic.sh/overview/starters#apis" @click="trackClick('apis', $event)" >
                         <i class="fas fa-code"></i> APIs
+                      </a>
                     </div>
                     <div class="build-thing">
+                      <a href="https://docs.cyclic.sh/overview/starters#data" @click="trackClick('data', $event)" >
                         <i class="fas fa-cube"></i> Data
+                      </a>
                     </div>
                     <div class="build-thing">
+                      <a href="https://docs.cyclic.sh/overview/starters#bots" @click="trackClick('bots', $event)" >
                         <i class="fas fa-robot"></i> Bots
+                      </a>
                     </div>
                     <div class="build-thing">
+                      <a href="https://docs.cyclic.sh/serverless/on-demand#cron-tasks" @click="trackClick('cron', $event)" >
                         <i class="fas fa-stopwatch"></i> Cron
+                      </a>
                     </div>
                 </div>
             </b-col>
@@ -33,6 +44,27 @@
   </b-container>
 
 </template>
+
+<script>
+export default {
+  methods: {
+    async trackClick(text, e) {
+      try {
+        let session_seconds = parseInt(e.timeStamp / 1000)
+        await gtag('event', text, {
+          'event_label': window.location.href,
+          'event_category': 'build_things',
+          'value': session_seconds,
+          'page': window.location,
+          'session_seconds': session_seconds,
+          'event_callback': function () { }
+        });
+      } catch (e) {
+      }
+    },
+  }
+}
+</script>
 
 <style scoped>
 .f-header{
@@ -84,7 +116,7 @@ h4 {
     .f-header{
         border-right: none;
         margin-bottom: 40px;;
-        font-size: 25px;        
+        font-size: 25px;
     }
     .build-things{
         display: grid;
@@ -101,5 +133,5 @@ h4 {
         margin-right: 5px;
     }
   }
-  
+
 </style>
