@@ -103,6 +103,11 @@ export default {
   height: 217px;
   max-height: 217px;
    overflow: hidden;;
+   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.example_code::-webkit-scrollbar {
+  display: none;
 }
 .my-editor {
     border-radius:8px;
@@ -118,7 +123,13 @@ export default {
     overflow:hidden;
     max-width: 100%;
     min-height: 200px;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   }
+
+  .my-editor::-webkit-scrollbar {
+  display: none;
+}
   pre.prism-editor__editor{
       color: #a79435 !important;
     }
