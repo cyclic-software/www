@@ -169,9 +169,115 @@ export default {
 
 <style scoped>
 
+p strong {
+  color: orange;;
+}
 
 .hero {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+h1 {
+  max-width: 800px;
+  margin-bottom: 0px;
+  font-size: 65px;
+  line-height: 1.15em;
+}
+
+.hero-images {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.vs-images {
+  display: grid;
+  grid-template-columns: auto 55px auto;
+  place-items: center;
+}
+
+.vs-image {
+  /* min-width: 150px; */
+  max-width: 150px;
+  /* min-height: 150px; */
+  max-height: 150px;
+}
+
+.vs-text {
+  vertical-align: middle;
+  font-size: 40px;
+  align-self: center;
+  text-align: center;
+}
+.feature-matrix .header {
+  background: #2e59c7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.feature-matrix .row:not(.header) {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  /* background-color: rgba(86,61,124,.15); */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.feature-matrix .row:not(.header):last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* Small aka under Medium of ≥768 */
+@media screen and (max-width: 767px) {
+  .feature-matrix .header {
+    font-size: 1.2rem;
+  }
+
+  .feature-matrix .row:not(.header) {
+
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+/* X-Small aka under Small of ≥567 */
+@media screen and (max-width: 576px) {
+  .feature-matrix .header {
+    font-size: 1.1rem;
+  }
+
+  .feature-matrix .row:not(.header) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.row .col {
+  text-align: left;
+}
+
+
+.footnote {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.spacer-16 {
+  min-height: 16;
+  max-height: 16;
+  min-width: 16;
+  max-width: 16;
+}
+.spacer-32 {
+  min-height: 32px;
+  max-height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+}
+.spacer-64 {
+  min-height: 64px;
+  max-height: 64px;
+  min-width: 64px;
+  max-width: 64px;
 }
 </style>
