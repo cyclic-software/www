@@ -32,10 +32,14 @@ export default {
   <b-container class="hero">
     <b-row>
       <b-col lg="1"></b-col>
-      <b-col md="7" lg="5" align-self="center">
-        <h1>
+      <b-col><h1>
           Investors
-        </h1>
+        </h1></b-col>
+    </b-row>
+    <b-row>
+      <b-col lg="1"></b-col>
+      <b-col md="7" lg="5" align-self="center">
+        
         <div class="spacer-32"></div>
         
         <!-- cyclic is a thing that is built and it works -->
@@ -71,12 +75,26 @@ export default {
           We believe that you should not have to think about cloud infrastructure when you code, the same way you don't think about transistors.
         </p>
 
-        <!--we are blowing up  -->
-        <h4>20k+ developers agree</h4>
+        <h4>We have reached 20k+ developers</h4>
         <p>
           Our vision is being shared by more and more people every day. Over the past few months, we have grown exponentially to over 20 thousand developers with 5 thousand active weekly. 
           So far together, we have deployed code over 200 thousand times!
         </p>
+        <p>
+          We hope to help hundreds of thousands of developers by honing our product, introducing support for more programming languages and engaging more dev communities. 
+        </p>
+           
+          
+        
+        
+        
+        <!-- join us on this journey  -->
+
+      </b-col>
+      <!-- <b-col lg="1" ></b-col> -->
+      <b-col md="5" lg="5"  >
+          <!--we are blowing up  -->
+       
         <!-- <p>
           New on-demand, cloud-native services are enabling <strong>global scale applications with zero idle cost</strong> 
           while at the same time increasing the granularity and complexity of cloud.
@@ -95,24 +113,24 @@ export default {
           Cyclic itself is a showcase of what is possible. We are a team of two engineers, and are able to manage workloads from thousands of users. 
         </p>
            -->
-           
-          
-        
-        
-        
-        <!-- join us on this journey  -->
+        <div class="text-center mt-5">
 
-      </b-col>
-      <!-- <b-col lg="1" ></b-col> -->
-      <b-col md="5" lg="5"  align-self="center" class="text-center">
-        <div>cool image here</div>
-        <h3>Join us on this journey</h3>
+        
         <div>
-          <small>
-            sign up for our investor update asdfasfsdf asdfasdf sadf
-          </small>
+          <img src="images/logos/big_logo.png" width="300px"/>
         </div>
-        <div>typeform link</div>
+        <h3 class="mt-5">Join us on this journey</h3>
+        <div>
+          <p>
+            To keep up with our progress or if you'd like to chat - 
+          </p>
+          <p class="mt-3">
+              <a href=""
+              @click="track()" 
+                 class="button outline-white w-button">Sign up for our investor update newsletter.</a>
+            </p>
+        </div>
+        </div>
       </b-col>
       <b-col lg="1"></b-col>
     </b-row>
@@ -123,8 +141,37 @@ export default {
 </div>
 </template>
 
+<script>
+
+  export default {
+    methods: {
+      async track(url, e){
+          try{
+              let session_seconds = parseInt(e.timeStamp/1000)
+                await gtag('event', 'investor_newsletter_sign_up', {
+                'event_label' : window.location.href,
+                'event_category' : 'typeform_link',
+                'value' : session_seconds,
+
+                'page' : window.location,
+                'session_seconds': session_seconds,
+                'event_callback': function() {
+                  }
+                });  
+            }catch(e){
+            }
+      },
+  }
+
+</script>
+
 
 <style scoped>
+
+.typeform-link{
+  color: orange;;
+  font-weight: 500;
+}
 p strong {
   color: orange;;
 }
