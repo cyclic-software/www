@@ -64,7 +64,7 @@ export default {
 
         <p>
           New on-demand, cloud-native services are enabling <strong>global scale applications with zero idle cost</strong>. 
-          Innovative organizations are making investments into architecting with these primitives to reduce operating costs, accelerate time to market and feedback cycle. 
+          Innovative organizations are making investments into architecting with these primitives to reduce operating costs, reduce feedback cycle and accelerate time to market. 
         </p>
         <p>
           At the same time, complexity has grown. An individual developer lacks tooling and cannot hope to realize these benefits
