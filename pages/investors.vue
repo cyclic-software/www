@@ -44,25 +44,29 @@ export default {
 
         <h4>Software is changing</h4>
         <p>
-          Cloud native <strong>serverless</strong> architectures are enabling applications to grow from zero to global
-          without redesign. They have <strong>zero cost at rest</strong>, and pricing structures that match cost to work
-          done. Despite additional complexity of tooling, architecture and orchestration, innovative organizations are
-          adopting these technologies.
+          <!-- Cloud native <strong>serverless</strong> architectures are enabling applications to grow from zero to global
+          without redesign.  -->
+          New cloud native <strong>serverless infrastructures</strong> are enabling flexible global scale applications. 
+          They have <strong>zero cost at rest</strong> and are priced to match cost to value. 
+          Innovative organizations are adopting these technologies for these benefits despite additional complexity of tooling, design and orchestration.
         </p>
         <div class="spacer-32"></div>
 
         <h4>Lower barriers - faster time to market</h4>
         <p>
-          The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
           An individual developer, without learning a totally new stack or support from a platform team, lacks access
-          to this massive potential. Cyclic eliminates barriers to meet developers where they are and enables even the
+          to this massive potential. The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
+          Cyclic eliminates barriers to meet developers where they are and enables even the
           most junior developer to take advantage of these technologies.
         </p>
 
         <div class="spacer-32"></div>
         <h4>A good start and yet so much more to do</h4>
         <p>
-          Over 20,000 developers have found us and signed up. Thousands use Cyclic on a daily basis. We started with
+          Over <strong>20,000 developers have found us</strong> and signed up. Thousands use Cyclic on a daily basis.
+        </p>
+        <p>
+          We started with
           Javascript/Node.js <strong>full stack apps</strong>, but our vision extends well beyond that. We are a small
           team, crazy enough to think we will empower the next 20 million developers and are experienced enough to know
           we can't do it alone. Join us on our journey.
