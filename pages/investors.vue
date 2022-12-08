@@ -48,14 +48,14 @@ export default {
           without redesign.  -->
           New cloud native <strong>serverless infrastructures</strong> are enabling flexible global scale applications. 
           They have <strong>zero cost at rest</strong> and are priced to match cost to value. 
-          Innovative organizations are adopting these technologies for these benefits despite additional complexity of tooling, design and orchestration.
+          Innovative organizations are adopting these technologies for these benefits despite complexity of tooling, design and orchestration.
         </p>
         <div class="spacer-32"></div>
 
         <h4>Lower barriers - faster time to market</h4>
         <p>
-          An individual developer, without learning a totally new stack or support from a platform team, lacks access
-          to this massive potential. The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
+          Without the support of a platform team, an individual developer lacks access to this massive potential.
+          The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
           Cyclic eliminates barriers to meet developers where they are. So even the most junior developer can take advantage of these technologies.
 ies.
         </p>
