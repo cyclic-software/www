@@ -57,7 +57,6 @@ export default {
           Without the support of a platform team, an individual developer lacks access to this massive potential.
           The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
           Cyclic eliminates barriers to meet developers where they are. So even the most junior developer can take advantage of these technologies.
-ies.
         </p>
 
         <div class="spacer-32"></div>
@@ -86,7 +85,7 @@ ies.
           <h3 class="mt-5">Intrigued?</h3>
           <div>
             <p>
-              Keep updated on our progress or schedule a call:
+              Stay updated on our progress or schedule a call:
             </p>
             <p class="mt-4">
                 <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www"
