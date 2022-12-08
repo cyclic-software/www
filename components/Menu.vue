@@ -15,6 +15,8 @@
             <b-nav-item to="/pricing">Pricing</b-nav-item>
             <b-nav-item to="/blog">Blog</b-nav-item>
             <b-nav-item href="https://docs.cyclic.sh/" target="_blank">Docs</b-nav-item>
+            <b-nav-item 
+            to="/investors">Investors</b-nav-item>
             <b-nav-item to="/vs-heroku">vs Heroku</b-nav-item>
           </b-navbar-nav>
 
