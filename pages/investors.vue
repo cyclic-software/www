@@ -89,7 +89,7 @@ export default {
               Keep updated on our progress or schedule a call:
             </p>
             <p class="mt-4">
-                <a href=""
+                <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www&id=Segment-ID"
                 @click="track()"
                   class="button outline-white w-button">Subscribe to Investor Updates</a>
               </p>
