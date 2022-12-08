@@ -48,7 +48,7 @@ export default {
           without redesign.  -->
           New cloud native <strong>serverless infrastructures</strong> are enabling flexible global scale applications. 
           They have <strong>zero cost at rest</strong> and are priced to match cost to value. 
-          Innovative organizations are adopting these technologies for these benefits despite complexity of tooling, design and orchestration.
+          Innovative organizations are adopting these technologies despite complexity of tooling, design and orchestration.
         </p>
         <div class="spacer-32"></div>
 
