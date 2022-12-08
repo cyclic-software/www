@@ -63,15 +63,18 @@ export default {
         <div class="spacer-32"></div>
         <h4>A good start and yet so much more to do</h4>
         <p>
-          Over <strong>20,000 developers have found us</strong> and signed up. Thousands use Cyclic on a daily basis.
+          Over <strong>20,000 developers have found us</strong> and signed up and thousands use Cyclic on a daily basis.
         </p>
         <p>
           We started with
           Javascript/Node.js <strong>full stack apps</strong>, but our vision extends well beyond that. We are a small
           team, crazy enough to think we will empower the next 20 million developers and are experienced enough to know
-          we can't do it alone. Join us on our journey.
+          we can't do it alone.
+          <br>
         </p>
-
+        <p>
+          Join us on our journey.
+        </p>
       </b-col>
       <!-- <b-col lg="1" ></b-col> -->
       <b-col md="5" lg="5"  >
