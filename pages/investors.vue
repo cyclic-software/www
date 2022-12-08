@@ -46,8 +46,8 @@ export default {
         <p>
           <!-- Cloud native <strong>serverless</strong> architectures are enabling applications to grow from zero to global
           without redesign.  -->
-          New cloud native <strong>serverless infrastructures</strong> are enabling flexible global scale applications. 
-          They have <strong>zero cost at rest</strong> and are priced to match cost to value. 
+          New cloud native <strong>serverless infrastructures</strong> are enabling flexible global scale applications.
+          They have <strong>zero cost at rest</strong> and are priced to match cost to value.
           Innovative organizations are adopting these technologies despite complexity of tooling, design and orchestration.
         </p>
         <div class="spacer-32"></div>
@@ -89,7 +89,7 @@ ies.
               Keep updated on our progress or schedule a call:
             </p>
             <p class="mt-4">
-                <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www&id=Segment-ID"
+                <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www"
                 @click="track()"
                   class="button outline-white w-button">Subscribe to Investor Updates</a>
               </p>
@@ -119,9 +119,8 @@ ies.
 
                 'page' : window.location,
                 'session_seconds': session_seconds,
-                'event_callback': function() {
-                  }
-                });
+                'event_callback': function() { }
+              });
             }catch(e){
             }
       }
