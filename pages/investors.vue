@@ -32,7 +32,7 @@ export default {
   <b-container class="hero">
     <b-row>
       <b-col lg="1"></b-col>
-      <b-col md="6" lg="5" align-self="center">
+      <b-col md="7" lg="5" align-self="center">
         <h1>
           Investors
         </h1>
@@ -42,7 +42,7 @@ export default {
         <h4>Cyclic is a next-gen full stack web application platform</h4>
         <p>
           Cyclic <strong>eliminates learning curve</strong> and provides the incredible developer experience to 
-          unlock the massive potential of next-gen serverless infrastructure that has been out of reach for developers. 
+          unlock the massive potential of next-gen serverless infrastructure so far out of reach for developers. 
           <!-- The massive potential of next-gen serverless infrastructure has previously been out of reach for developers. 
           Cyclic eliminates the learning curve and provides the incredible developer experience to unlock that massive potential.  -->
         </p>
@@ -54,39 +54,59 @@ export default {
         </p> -->
 
         <!-- there is a problem in the world -->
-        <h4>Software is changing</h4>
+        <h4>Cloud software is changing</h4>
+        <!-- There is a fundamental shift happening in how software is built.  -->
+
+
         <p>
-          <!-- There is a fundamental shift happening in how software is built.  -->
           New on-demand, cloud-native services are enabling <strong>global scale applications with zero idle cost</strong>. 
           Innovative organizations are making investments into architecting with these primitives to reduce operating costs, accelerate time to market and feedback cycle. 
         </p>
         <p>
-          Cloud complexity has An individual developer cannot hope to realize these benefits without totally switching their stack
-          
+          At the same time, complexity has grown. An individual developer lacks tooling and cannot hope to realize these benefits
+          without support from a platform team, a cloud architect and totally switching their stack.
+        </p>
+        <!--we have a big vision  -->
+        <p>
+          We believe that you should not have to think about cloud infrastructure when you code, the same way you don't think about transistors.
         </p>
 
-          
-           support from a platform team, a cloud architect and 
-          On the other hand this has increased granularity and complexity to a point where 
-          
-          <!-- <p>Expectations have grown and it is the norm for to build infrastructure on Cloud services AWS, Azure and GCP have grown in complexity  </p> -->
-        
-        <!--we have a big vision  -->
         <!--we are blowing up  -->
+        <h4>20k+ developers agree</h4>
+        <p>
+          Our vision is being shared by more and more people every day. Over the past few months, we have grown exponentially to over 20 thousand developers with 5 thousand active weekly. 
+          So far together, we have deployed code over 200 thousand times!
+        </p>
+        <!-- <p>
+          New on-demand, cloud-native services are enabling <strong>global scale applications with zero idle cost</strong> 
+          while at the same time increasing the granularity and complexity of cloud.
+        </p> -->
+          
+          <!-- 
+            the granularity is making the cloud increasingly more complex. An individual developer cannot hope to realize these benefits
+          without support from a platform team, a cloud architect and totally switching their stack, -->
+          <!-- <p>Expectations have grown and it is the norm for to build infrastructure on Cloud services AWS, Azure and GCP have grown in complexity  </p> -->
+          
+
+          
+           
+          
+        
+        
+        
         <!-- join us on this journey  -->
 
       </b-col>
       <!-- <b-col lg="1" ></b-col> -->
-      <b-col md="6" lg="5" class="hero-images" align-self="center">
-            <div class="vs-images">
-              <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
-              <!-- <div class="spacer-16"></div> -->
-              <div class="vs-text">vs</div>
-              <!-- <div class="spacer-16"></div> -->
-              <img class="vs-image" src="/images/logos/icon-dark.svg" width="150px"/>
-            </div>
-          <!-- </b-col>
-        </b-row> -->
+      <b-col md="5" lg="5"  align-self="center" class="text-center">
+        <div>cool image here</div>
+        <h3>Join us on this journey</h3>
+        <div>
+          <small>
+            sign up for our investor update asdfasfsdf asdfasdf sadf
+          </small>
+        </div>
+        <div>typeform link</div>
       </b-col>
       <b-col lg="1"></b-col>
     </b-row>
