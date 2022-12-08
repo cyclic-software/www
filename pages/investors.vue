@@ -56,8 +56,8 @@ export default {
         <p>
           An individual developer, without learning a totally new stack or support from a platform team, lacks access
           to this massive potential. The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
-          Cyclic eliminates barriers to meet developers where they are and enables even the
-          most junior developer to take advantage of these technologies.
+          Cyclic eliminates barriers to meet developers where they are. So even the most junior developer can take advantage of these technologies.
+ies.
         </p>
 
         <div class="spacer-32"></div>
