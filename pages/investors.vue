@@ -39,7 +39,7 @@ export default {
         <div class="spacer-32"></div>
         
         <!-- cyclic is a thing that is built and it works -->
-        <h4>Cyclic is a next-gen full stack web application platform</h4>
+        <h4>Next-gen full stack web application platform</h4>
         <p>
           Cyclic <strong>eliminates learning curve</strong> and provides the incredible developer experience to 
           unlock the massive potential of next-gen serverless infrastructure so far out of reach for developers. 
@@ -86,9 +86,15 @@ export default {
             the granularity is making the cloud increasingly more complex. An individual developer cannot hope to realize these benefits
           without support from a platform team, a cloud architect and totally switching their stack, -->
           <!-- <p>Expectations have grown and it is the norm for to build infrastructure on Cloud services AWS, Azure and GCP have grown in complexity  </p> -->
-          
 
-          
+    
+          <!-- team -->
+<!--           
+        <h4>If we can do it you can do it</h4>
+        <p>
+          Cyclic itself is a showcase of what is possible. We are a team of two engineers, and are able to manage workloads from thousands of users. 
+        </p>
+           -->
            
           
         
