@@ -122,7 +122,7 @@ export default {
         <h3 class="mt-5">Join us on this journey</h3>
         <div>
           <p>
-            To keep up with our progress or if you'd like to chat - 
+            To keep up with our progress or if you'd like to chat:
           </p>
           <p class="mt-3">
               <a href=""
