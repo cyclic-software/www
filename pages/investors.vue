@@ -56,7 +56,7 @@ export default {
         <!-- <p>
           Cyclic provides an incredible developer experience to unlock the massive potential of next-gen serverless infrastructure, previously out of reach to all but experts. 
         </p> -->
-
+        <div class="spacer-32"></div>
         <!-- there is a problem in the world -->
         <h4>Cloud software is changing</h4>
         <!-- There is a fundamental shift happening in how software is built.  -->
@@ -64,7 +64,7 @@ export default {
 
         <p>
           New on-demand, cloud-native services are enabling <strong>global scale applications with zero idle cost</strong>. 
-          Innovative organizations are making investments into architecting with these primitives to reduce operating costs, reduce feedback cycle and accelerate time to market. 
+          Innovative organizations are making investments into architecting with these primitives to reduce operating costs, feedback cycle and accelerate time to market. 
         </p>
         <p>
           At the same time, complexity has grown. An individual developer lacks tooling and cannot hope to realize these benefits
@@ -75,6 +75,7 @@ export default {
           We believe that you should not have to think about cloud infrastructure when you code, the same way you don't think about transistors.
         </p>
 
+        <div class="spacer-32"></div>
         <h4>We have reached 20k+ developers</h4>
         <p>
           Our vision is being shared by more and more people every day. Over the past few months, we have grown exponentially to over 20 thousand developers with 5 thousand active weekly. 
@@ -113,18 +114,20 @@ export default {
           Cyclic itself is a showcase of what is possible. We are a team of two engineers, and are able to manage workloads from thousands of users. 
         </p>
            -->
+           
         <div class="text-center mt-5">
 
         
         <div>
           <img src="images/logos/big_logo.png" width="300px"/>
         </div>
+        <div class="spacer-32"></div>
         <h3 class="mt-5">Join us on this journey</h3>
         <div>
           <p>
             To keep up with our progress or if you'd like to chat:
           </p>
-          <p class="mt-3">
+          <p class="mt-4">
               <a href=""
               @click="track()" 
                  class="button outline-white w-button">Sign up for our investor update newsletter.</a>
