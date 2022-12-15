@@ -25,7 +25,7 @@
             <a href="https://discord.cyclic.sh" target="_blank" class="footer-link">
               Discord <i class="fab fa-discord"></i>
             </a>
-            <a href="https://twitter.com/cyclicsoftware" target="_blank" class="footer-link">
+            <a href="https://twitter.com/cyclic_sh" target="_blank" class="footer-link">
               Twitter <i class="fab fa-twitter"></i>
             </a>
             <a href="https://www.linkedin.com/company/cyclic-software/about" target="_blank" class="footer-link">
