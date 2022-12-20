@@ -2,9 +2,9 @@
 title: 'How to Build a Telegram Bot Using Typescript & Node.js'
 slug: 'how-to-build-a-telegram-bot'
 summary: 'Make your Telegram the talk of the town with a wildly simple bot hosted in the cloud. Greet your friends and family with text effects and more.'
-colId: 
-id: 
-createdAt: 
+colId: 60d0f077b69e2df6b324616c
+id: 626002160aff6f33232d263f
+createdAt: 'Tue Dec 20 2022 11:35:38 GMT+0000 (Coordinated Universal Time'
 updatedAt: 
 publishedOn: 
 author: eluda
