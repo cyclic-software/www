@@ -4,16 +4,16 @@ slug: 'how-to-build-a-telegram-bot'
 summary: 'Make your Telegram the talk of the town with a wildly simple bot hosted in the cloud. Greet your friends and family with text effects and more.'
 colId: 60d0f077b69e2df6b324616c
 id: 626002160aff6f33232d263f
-createdAt: 'Tue Dec 20 2022 11:35:38 GMT+0000 (Coordinated Universal Time'
-updatedAt: 
-publishedOn: 
+createdAt: 'Tue Dec 20 2022 11:35:38 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Wed Dec 21 2022 11:27:38 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Wed Dec 21 2022 11:27:38 GMT+0000 (Coordinated Universal Time)'
 author: eluda
 category: Engineering
 hidden: false
 featured: false
-public: 
-image: 
-thumbnail: 
+public: 'Wed Dec 21 2022 12:30:38 GMT+0000 (Coordinated Universal Time)'
+image: /content/telegrambot.banner.png
+thumbnail: /content/telegrambot.banner.png
 ---
 
 ## Introduction
@@ -27,9 +27,9 @@ And seeing as Telegram bots are built on an HTTP-based API, you’ll be using th
 ### Prerequisites
 
 Before writing any code, make sure to have the following programs installed on your computer:
-- [Telegram client.](https://telegram.org/)
-- [Node.js](https://nodejs.org/en/download/) v14+, NPM v6+, and cURL.
-- VS Code, or any other IDE of choice.
+* [Telegram client.](https://telegram.org/)
+* [Node.js](https://nodejs.org/en/download/) v14+, NPM v6+, and cURL.
+* VS Code, or any other IDE of choice.
 
 You’ll be using [Cyclic](https://www.cyclic.sh/) to host this project on the cloud, so make sure to take advantage of the Free Forever tier.
 
@@ -57,7 +57,7 @@ npm install
 ```
 
 #### Getting your Telegram bot API token
-(img)
+![](/content/botfather.access.gif)
 
 Using the Telegram client, start a conversation with the [@BotFather](https://telegram.me/BotFather). 
 
@@ -112,12 +112,12 @@ Follow that by executing the bot script:
 ```bash
 npm run dev
 ```
-(img)
+![](/content/botfather.newbot.png)
 
 And boom! You’ve got yourself a dead-simple bot running on your computer. You can test-it out by sending it a message on Telegram; you may want to follow the link previously given to you by [@BotFather](https://telegram.me/BotFather).
 
 ## Handle basic commands
-(img)
+![](/content/botcommands.basic.gif)
 Telegram bots can handle commands, which aren’t much different from ordinary messages. The syntax for such interactions follows the following format:
 
 ```typescript
@@ -166,7 +166,7 @@ npm run dev
 ```
 
 #### A more advanced example
-(img)
+![](/content/advancedcommands.bot.gif)
 Let’s now do a more advanced example. Other inline keyboards may contain general buttons, whose actions can be handled to the furthest extent.
 Handle the `/effect`command, and make it apply bold, italic, and a bunch more effects to text:
 
@@ -280,12 +280,12 @@ for (const effect of allEffects) {
 ```
 
 ## Handle Inline Queries
-(img)
+![](/content/inlinequeries.bot.gif)
 
 Telegram bots support inline queries, a feature which enables them to be invoked from any chat within Telegram by calling them with their “@” username. Let’s use this to allow users to apply text effects in any conversation using your bot.
 
 #### Enabling inline mode for your Telegram bot
-(img)
+![](/content/enableinlinemode.bot.gif)
 
 By default, this feature comes disabled. Contact [@BotFather](https://telegram.me/BotFather) to enable it:
 1. /mybots
@@ -334,7 +334,7 @@ Modified: ${modifiedText}`,
 ```
 
 ## Polish the Telegram Bot
-(img)
+![](/content/polishthebot.png)
 
 It’s often useful for Telegram bots to display a list of supported commands, and while we’re already doing that in the introductory message, there’s a more formal way of doing so, and it’s as simple as one command:
 
@@ -392,7 +392,7 @@ if (process.env.NODE_ENV === "production") {
 }
 ```
 
-Pushing all files to a Github Repository
+#### Pushing all files to a Github Repository
 It’s imperative that we use a Github repository to store our bot files so we can deploy it to the cloud. After [creating a new repository](https://github.com/new) (either public or private), run the following commands to link it with your local Git instance, replacing `<YOUR-GH-REPO-LINK>` with your repo’s URL:
 
 ```bash
@@ -416,19 +416,19 @@ It’s free forever, and no credit card is required.
 
 Note that you must sign up using the same Github account that you used to create your bot’s repository.
 
-(img) 
+![](/content/deploywithcyclic.bot.gif)
 
 Open your [Cyclic dashboard](https://app.cyclic.sh/#/), click on the Deploy button and switch to the “Link your own” tab. Search for your bot’s repo and click on the “Connect” button. Then sit back and watch it do all the work for you!
 
-(img)
+![](/content/editvariables.bot.gif)
 
 The final step is setting the same environment variables as you did in the `.env` file. Open your Cyclic deployment’s dashboard page, switch to the Variables page and set the appropriate values for the environment variables:
 - NODE_ENV: production
 - TELEGRAM_TOKEN: your bot’s API token (same as `.env` file)
 
-Connecting your Telegram bot to your Cyclic server
+#### Connecting your Telegram bot to your Cyclic server
 
-(img)
+![](/content/connecttelegram.png)
 
 You want to tell Telegram to send the Webhook requests to your Cyclic server. So conclude this project by copying your Cyclic deployment’s URL and running these commands:
 
@@ -446,12 +446,12 @@ And boom! Your bot’s now actively running on the cloud! You may stop your loca
 You’ve successfully reached the end of this tutorial! There are many more things you could add to this bot, including but not limited to games, error handling and internationalization.
 
 You may also want to learn more about Telegram bots:
-- [https://grammy.dev/guide/inline-queries.html](https://grammy.dev/guide/inline-queries.html)
-- [https://grammy.dev/plugins/keyboard.html](https://grammy.dev/plugins/keyboard.html)
-- [https://grammy.dev/guide/deployment-types.html](https://grammy.dev/guide/deployment-types.html)
+* [https://grammy.dev/guide/inline-queries.html](https://grammy.dev/guide/inline-queries.html)
+* [https://grammy.dev/plugins/keyboard.html](https://grammy.dev/plugins/keyboard.html)
+* [https://grammy.dev/guide/deployment-types.html](https://grammy.dev/guide/deployment-types.html)
 
 And here are some resources to advance your knowledge about serverless computing:
-- [Cyclic vs Heroku](https://www.cyclic.sh/vs-heroku)
-- [Considerations for Serverless Active-Active: Routing](https://www.cyclic.sh/posts/considerations-for-serverless-active-active-routing/)
-- [How to Fail at Serverless: Serverless is Stateless](https://www.cyclic.sh/posts/how-to-fail-at-serverless-serverless-is-stateless/)
-- [Creating and Deploying a RESTful API on Serverless Infrastructure](https://docs.cyclic.sh/tutorials/rest-api-and-dynamodb/part-1)
+* [Cyclic vs Heroku](https://www.cyclic.sh/vs-heroku)
+* [Considerations for Serverless Active-Active: Routing](https://www.cyclic.sh/posts/considerations-for-serverless-active-active-routing/)
+* [How to Fail at Serverless: Serverless is Stateless](https://www.cyclic.sh/posts/how-to-fail-at-serverless-serverless-is-stateless/)
+* [Creating and Deploying a RESTful API on Serverless Infrastructure](https://docs.cyclic.sh/tutorials/rest-api-and-dynamodb/part-1)
