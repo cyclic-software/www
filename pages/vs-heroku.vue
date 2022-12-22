@@ -38,7 +38,7 @@ export default {
         </h1>
         <div class="spacer-32"></div>
         <p>
-            Heroku is the one of the best known PaaS (Platform as a Service) vendors.
+            Heroku is one of the best known PaaS (Platform as a Service) vendors.
           It was founded in 2007 (two years before Node.js was first released). Both
           Heroku and Cyclic offer a similar set of standard basic features.
         </p>
