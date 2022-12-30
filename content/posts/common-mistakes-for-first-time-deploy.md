@@ -30,7 +30,7 @@ However, depending on how your app is configured, there are a few speed bumps yo
 
 ### Speed bump #1: No more nodemon
 
-It's generally considered best practice to used the npm module [nodemon](https://www.npmjs.com/package/nodemon) during development because it watches for file changes as your are working. However nodemon isn't needed in production.
+It's generally considered best practice to used the npm module [nodemon](https://www.npmjs.com/package/nodemon) during development because it watches for file changes as you are working. However nodemon isn't needed in production.
 
 If you are using nodemon to run your app locally, you’ll need to update the start script that tells Cyclic how to run the application before you deploy your app. 
 
@@ -43,7 +43,7 @@ Congratulations! Your build is complete!
 
 ![](/content/yourelive.bumps.png)
 
-> Tip: As of Node 18, you can bypass nodemon and run your code using  ```node --watch index.js``` and that will help you avoid the following error above as well.
+> Tip: As of Node 18, running with the ```--watch``` flag gets you the same file change detection as nodemon, but without the extra dependency, e.g. ```node --watch index.js```
 
 
 ### Speed bump #2: Environment Variables
