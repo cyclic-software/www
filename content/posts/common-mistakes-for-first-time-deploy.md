@@ -11,25 +11,28 @@ author: rachel-schipull
 category: Engineering
 hidden: false
 featured: false
-public: 
+public: 'Fri Dec 30 2022 10:33:20 GMT+0000 (Coordinated Universal Time)'
 image: /content/speedbump.bumps.jpg
 thumbnail: /content/speedbump.bumps.jpg
 ---
 
 ### Here’s the scenario:  
 
-You’ve heard amazing things about Cyclic. It’s so easy, fast, and simple to get your app hosted. You are ready to take the plunge.
+You’ve heard amazing things about Cyclic. It’s so easy, fast, and simple to get your app hosted. You are ready to take the plunge. 
 
 You gather your Github and your Node.js full stack app and head over to [Cyclic.sh](https://www.cyclic.sh/). You sign in with Github and you are ready to hit deploy.
 
 Yeah, go for it! We’re cheering you on. 🎉
 
-However, depending on how your app is configured, there are a few speed bumps you might hit before your build is running smoothly. So, keep reading to be prepared.
+However, depending on how your app is configured, there are a few speed bumps you might hit before your build is running smoothly. Keep reading to be prepared and get over those speedbumps for a smooth deploy!
+
 
 
 ### Speed bump #1: No more nodemon
 
-If you are using the npm module [nodemon](https://www.npmjs.com/package/nodemon) to run your app locally, you’ll need to update the script that tells Cyclic how to run the application. 
+It's generally considered best practice to used the npm module [nodemon](https://www.npmjs.com/package/nodemon) during development because it watches for file changes as your are working. However nodemon isn't needed in production.
+
+If you are using nodemon to run your app locally, you’ll need to update the start script that tells Cyclic how to run the application before you deploy your app. 
 
 Luckily for you, Cyclic will scan your repository before the build starts and provide you with a message to this effect. Look at that! Cyclic tells you exactly what to do.
 
@@ -40,10 +43,16 @@ Congratulations! Your build is complete!
 
 ![](/content/yourelive.bumps.png)
 
+> Tip: As of Node 18, you can bypass nodemon and run your code using  ```node --watch index.js``` and that will help you avoid the following error above as well.
+
 
 ### Speed bump #2: Environment Variables
 
-Sometimes users get caught up in the excitement of completing a build and forget to add their environment variables to Cyclic. You’ll be able to see under the “Logs” tab that your application isn’t communicating with your database or any other errors that missing vars would bring. Time to add those vars in the “Variables” tab. 
+Sometimes users get caught up in the excitement of completing a build and forget to add their environment variables to Cyclic. Cyclic can see the variables you've used in your project and will give you a little push to add them the moment your build is complete.
+
+![](/content/varswarning.bumps.png)
+
+If that message doesn't catch you, you’ll be able to see under the “Logs” tab that your application isn’t communicating with your database or any other errors that missing vars would bring, such as something being "undefined" or "not a string". Time to add those vars in the “Variables” tab. 
 
 There are already some variables in there, like your pre-populated Cyclic URL. All you have to do is add any additional variables in using the key/value pairing at the bottom.
 
@@ -65,6 +74,7 @@ Our docs have an excellent example of how to structure your MongoClient and mong
 TLDR? You have to connect to MongoDB before your code starts to listen for requests, otherwise they may be missed entirely. 
 
 Once you’ve updated your MongoClient code, you should be seeing all 200s in the logs. 
+
 ![](/content/allgreenlogs.bumps.png)
 
 Speed bumps traversed! That site is live. Quick, share it with all your friends!
