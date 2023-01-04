@@ -103,7 +103,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "@static/css/titillium.css",
-    "@static/css/normalize.css",
+    // "@static/css/normalize.css",
     "@static/css/webflow.css",
     "@static/css/www-cyclic.webflow.css",
     "@static/css/main.css",
@@ -117,10 +117,11 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
     '@/modules/generator',
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxt/postcss8',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/composition-api/module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -144,6 +145,14 @@ export default {
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
   ],
+
+  // Fonts.
+  googleFonts: {
+    families: {
+      Inter: true,
+      Figtree: true
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   // axios: {
@@ -181,7 +190,14 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      }
+    }
+  },
 
   generate: {
     fallback: '404.html',
