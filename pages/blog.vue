@@ -1,50 +1,71 @@
 <template>
-  <div>
-    <div>
+  <div class="w-full space-y-10">
+    <div class="px-10 pt-20 max-w-screen-xl mx-auto space-y-10">
+      <!--************ HEADER ************-->
+      <div class="">
+        <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
+          cyclic blog
+        </h1>
 
-        <div class="section hero blog wf-section">
-          <div class="container w-container">
-            <div>
-              <h1 data-w-id="301e4b28-a4f7-97b8-61de-27ca493eee34" xstyle="opacity:0" class="header-large">Our Blog</h1>
-            </div>
-          </div>
-        </div>
+        <p class="text-gray-400 mb-8 text-xl">
+          Our journey, our story, and the lessons we've learnt building a system for systems.
+        </p>
 
-        <div class="container-2 blog-container">
-          <div class="blog-list-wrapper w-dyn-list">
-            <div role="list" class="blog-list w-dyn-items">
-              <div role="listitem" class="blog-div w-dyn-item" v-for="post of posts" :key="post.slug">
-                <a class="blog-item w-inline-block" :href="`/posts/${post.slug}`">
-                  <div class="blog-content">
-                    <div class="author-sideflex">
-                      <div class="label small">{{post.author}}</div>
-                    </div>
-                    <h5 class="blog-title">{{post.title}}</h5>
-                    <div class="link">Read more</div>
-                    <div class="category-label">{{post.category}}</div>
+        <!-- <form class="w-64">
+          <input
+            type="text"
+            placeholder="Search posts..."
+            class="h-full w-full rounded-[999px] py-2 px-3 bg-transparent border border-white/20
+            focus:border-white"
+          >
+        </form> -->
+      </div>
+
+      <!--************ POSTS ************-->
+      <div role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6
+      sm:gap-8 lg:gap-10">
+        <a role="listitem" class="col-span-1" v-for="post of posts" :key="post.slug"
+        :href="`/posts/${post.slug}`">
+          <div class="flex flex-col gap-3">
+            <!-- DATE -->
+            <!-- <div class="flex flex-col border-r border-sky-500 pr-2 h-max w-max
+            text-gray-300">
+              <span class="text-2xl font-bold">02</span>
+              <span class="uppercase text-xs tracking-[2px]">jan</span>
+            </div> -->
+
+            <!-- IMAGE & CONTENT -->
+            <!-- <div class="flex items-center gap-4"> -->
+              <img
+                :src="post.thumbnail"
+                :alt="post.title"
+                class="w-full h-60 object-cover rounded-xl"
+              >
+
+              <div class="space-y-4">
+                <div class="w-full flex items-center justify-between">
+                  <div class="text-xs px-2 py-1 border border-black rounded-full
+                  capitalize text-gray-300">
+                    {{ post.category || 'general' }}
                   </div>
-                  <img :src="post.thumbnail" alt="" class="blog-item-image">
-                </a>
-              </div>
-            </div>
-            <div v-if="posts.length <= 0" class="w-dyn-empty">
-              <div>No items found.</div>
-            </div>
-          </div>
-        </div>
 
-      <!-- <ul>
-        <li v-for="post of posts" :key="post.slug">
-          <nuxt-link :to="{name: 'blog-slug', params: {slug: post.slug}}">
-            <img :src="post.thumbnail" />
-            <div>
-              <h2>{{post.title}}</h2>
-              <p>{{post.author}}</p>
-              <p>{{post.summary}}</p>
-            </div>
-          </nuxt-link>
-        </li>
-      </ul> -->
+                  <span class="text-xs text-sky-500 font-semibold capitalize">
+                    by {{ post.author }}
+                  </span>
+                </div>
+
+                <h2 class="text-4xl font-bold tracking-tight">{{ post.title }}</h2>
+
+                <p class="text-sm text-gray-400">{{ post.summary.slice(0, 100) }}...</p>
+              </div>
+            <!-- </div> -->
+          </div>
+        </a>
+
+        <!-- <div class="col-span-1 bg-black">
+          Hello
+        </div> -->
+      </div>
     </div>
 
     <HubspotBlogForm />
