@@ -31,24 +31,27 @@
       <div class="section">
         <div class="container center-align w-container">
           <div class="text-box center-align">
-            <h1>Pay for what you use.</h1>
+            <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
+              Pay for what you use.
+            </h1>
             <p>
               Consumption based pricing lets you start free and pay as your needs and app grows.
             </p>
             <div class="spacer _48"></div>
           </div>
+
           <div class="_12-columns align-stretch align-center">
             <div class="column desk-4">
-              <div class="pricing-card">
+              <div class="pricing-card space-y-4">
                 <div class="top-block"></div>
-                <h2>Free Forever</h2>
+                <h2 class="text-4xl font-bold">Free Forever</h2>
                 <p>Generous free tier lets you prototype and learn.</p>
                 <div class="spacer _24"></div>
                 <a href="https://app.cyclic.sh/api/login"
                   @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
                  class="button outline-white w-button">Start</a>
                 <div class="spacer _24"></div>
-                <h3 class="no-margin">$0<span class="regular">/month</span></h3>
+                <h3 class="no-margin text-2xl">$0<span class="regular">/month</span></h3>
                 <p class="paragraph-small">subject to fair use, quotas are per-app</p>
                 <div class="tick-list w-richtext">
                   <div class="matrix ">
@@ -86,17 +89,18 @@
                 </div>
               </div>
             </div>
+
             <div class="column desk-4">
-              <div class="pricing-card blue">
+              <div class="pricing-card blue space-y-4">
                 <div class="top-block blue"></div>
-                <h2>Solo</h2>
+                <h2 class="text-4xl font-bold">Solo</h2>
                 <p>
                   Unlock additional developer productivity features.
                 </p>
                 <div class="spacer _24"></div>
                 <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Upgrade</a>
                 <div class="spacer _24"></div>
-                <h3 class="no-margin">$9<span class="regular"> /month</span></h3>
+                <h3 class="no-margin text-2xl">$9<span class="regular"> /month</span></h3>
                 <p class="paragraph-small">
                   plus consumption charges beyond quota
                 </p>
@@ -125,17 +129,18 @@
                   > <a href="https://app.cyclic.sh/#/plan">Referral Program</a></p>
               </div>
             </div>
+
             <div class="column desk-4">
-              <div class="pricing-card">
+              <div class="pricing-card space-y-4">
                 <div class="top-block"></div>
-                <h2>Grow</h2>
+                <h2 class="text-4xl font-bold">Grow</h2>
                 <p>
                   Take your company and apps to the next level.
                 </p>
                 <div class="spacer _24"></div>
                 <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Buy</a>
                 <div class="spacer _24"></div>
-                <h3 class="no-margin">$299<span class="regular"> /month</span></h3>
+                <h3 class="no-margin text-2xl">$299<span class="regular"> /month</span></h3>
                 <p class="paragraph-small">
                   plus consumption charges beyond quota
                 </p>
@@ -166,8 +171,8 @@
           <div class="_12-columns align-stretch align-center">
             <div class="column desk-2"></div>
             <div class="column desk-8">
-              <div class="pricing-card dark-blue">
-                <h2>Enterprise Scale</h2>
+              <div class="pricing-card dark-blue space-y-4">
+                <h2 class="text-4xl font-bold">Enterprise Scale</h2>
                 <p>
                   Specialized data governance, security, compliance and auditing handled. Schedule a review
                   and we can tailor a solution that meets your requirements.
