@@ -2,32 +2,29 @@
   <div class="hero">
       <b-row>
         <b-col lg="6" align-self="center">
-          <div class="big-headline" >
-            <div class="big-head">full</div>
-            <div class="big-head">stack</div>
-            <div class="big-head">apps</div>
-            <!-- <h1 class="header-large metal" style="font-size: 75px">
-              Full stack apps
-            </h1> -->
-            <p class="caption">
+          <div class="ml-12 space-y-10">
+            <div class="">
+              <p class="big-head">full</p>
+              <p class="big-head">stack</p>
+              <p class="big-head">apps</p>
+            </div>
+
+            <p class="text-gray-400">
               Connect your GitHub repo.
               <br>
                We will build, deploy and manage the
               hosting.
             </p>
-                <!-- <div class="text-center"> -->
-                  <b-button
-                  href="https://app.cyclic.sh/api/login" 
-                  class="m-1" 
-                  @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
-                  variant="primary" size="lg">
-                    <i class="fab fa-github mr-2"></i> Deploy Now
-                  </b-button>
-                <!-- </div>
-              </b-col>
-              <b-col sm="4"></b-col>
-            </b-row> -->
-            
+
+            <div class="">
+              <b-button
+              href="https://app.cyclic.sh/api/login" 
+              class="m-1" 
+              @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+              variant="primary" size="lg">
+                <i class="fab fa-github mr-2"></i> Deploy Now
+              </b-button>
+            </div>
           </div>
         </b-col>
         <b-col lg="6"  align-self="center" class="right-hero">
@@ -118,10 +115,7 @@ export default {
   margin-left: 50px;
 }
 .big-head{
-  font-size:100px;
-  font-weight:900;
-  height: 90px;
-  /* font-family: Raleway, sans-serif; */
+  @apply !text-8xl tracking-tight font-black !leading-[1];
 }
   .circle_number {
     width: 30px;
