@@ -27,44 +27,31 @@
         <a role="listitem" class="col-span-1" v-for="post of posts" :key="post.slug"
         :href="`/posts/${post.slug}`">
           <div class="flex flex-col gap-3">
-            <!-- DATE -->
-            <!-- <div class="flex flex-col border-r border-sky-500 pr-2 h-max w-max
-            text-gray-300">
-              <span class="text-2xl font-bold">02</span>
-              <span class="uppercase text-xs tracking-[2px]">jan</span>
-            </div> -->
-
             <!-- IMAGE & CONTENT -->
-            <!-- <div class="flex items-center gap-4"> -->
-              <img
-                :src="post.thumbnail"
-                :alt="post.title"
-                class="w-full h-60 object-cover rounded-xl"
-              >
+            <img
+              :src="post.thumbnail"
+              :alt="post.title"
+              class="w-full h-60 object-cover rounded-xl"
+            >
 
-              <div class="space-y-4">
-                <div class="w-full flex items-center justify-between">
-                  <div class="text-xs px-2 py-1 border border-black rounded-full
-                  capitalize text-gray-300">
-                    {{ post.category || 'general' }}
-                  </div>
-
-                  <span class="text-xs text-sky-500 font-semibold capitalize">
-                    by {{ post.author }}
-                  </span>
+            <div class="space-y-4">
+              <div class="w-full flex items-center justify-between">
+                <div class="text-xs px-2 py-1 border border-black rounded-full
+                capitalize text-gray-300">
+                  {{ post.category || 'general' }}
                 </div>
 
-                <h2 class="text-4xl font-bold tracking-tight">{{ post.title }}</h2>
-
-                <p class="text-sm text-gray-400">{{ post.summary.slice(0, 100) }}...</p>
+                <span class="text-xs text-sky-500 font-semibold capitalize">
+                  by {{ post.author }}
+                </span>
               </div>
-            <!-- </div> -->
+
+              <h2 class="text-4xl font-bold tracking-tight">{{ post.title }}</h2>
+
+              <p class="text-sm text-gray-400">{{ post.summary.slice(0, 100) }}...</p>
+            </div>
           </div>
         </a>
-
-        <!-- <div class="col-span-1 bg-black">
-          Hello
-        </div> -->
       </div>
     </div>
 
