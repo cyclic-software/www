@@ -163,7 +163,7 @@
   }
   
   .dark, .menu_collapsed{
-    @apply bg-neutral-900/95 border-b border-b-white/10 backdrop-blur-sm;
+    @apply bg-black/90 border-b border-b-white/10 backdrop-blur-sm;
   }
 
 
