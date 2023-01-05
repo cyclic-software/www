@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
     body {
         @apply font-sans;
     }
+} */
+
+.gradient-bg {
+    @apply bg-gradient-to-b from-black to-neutral-900;
 }
 
 :root{

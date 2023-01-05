@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Figtree', 'Inter', 'sans-serif']
+        'sans': ['Titillium+Web', 'sans-serif']
       }
     },
   },
