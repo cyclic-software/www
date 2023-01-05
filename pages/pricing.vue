@@ -27,188 +27,190 @@
 
 <template>
   <div>
-    <div class="wrapper max-w-screen-xl mx-auto">
-      <div class="section">
-        <div class="container center-align w-container">
-          <div class="text-box center-align">
-            <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
-              Pay for what you use.
-            </h1>
-            <p>
-              Consumption based pricing lets you start free and pay as your needs and app grows.
-            </p>
-            <div class="spacer _48"></div>
+    <div class="wrapper gradient-bg">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="section">
+          <div class="container center-align w-container">
+            <div class="text-box center-align">
+              <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
+                Pay for what you use.
+              </h1>
+              <p>
+                Consumption based pricing lets you start free and pay as your needs and app grows.
+              </p>
+              <div class="spacer _48"></div>
+            </div>
+
+            <div class="_12-columns align-stretch align-center">
+              <div class="column desk-4">
+                <div class="pricing-card space-y-4">
+                  <div class="top-block"></div>
+                  <h2 class="text-4xl font-bold">Free Forever</h2>
+                  <p>Generous free tier lets you prototype and learn.</p>
+                  <div class="spacer _24"></div>
+                  <a href="https://app.cyclic.sh/api/login"
+                    @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+                  class="button outline-white w-button">Start</a>
+                  <div class="spacer _24"></div>
+                  <h3 class="no-margin text-2xl">$0<span class="regular">/month</span></h3>
+                  <p class="paragraph-small">subject to fair use, quotas are per-app</p>
+                  <div class="tick-list w-richtext">
+                    <div class="matrix ">
+                      <div class="catg">Apps</div> <div class="check">3 apps</div>
+                      <div class="catg">Inactivity Delay</div> <div class="check">None - Apps Never Sleep</div>
+                      <div class="catg">Hourly Limit</div> <div class="check">None - Unlimited</div>
+                      <div class="catg">Compute</div> <div class="check">1024 MB RAM</div>
+                      <div class="catg">Autoscaling</div> <div class="check">10 x 1024 MB</div>
+                      <div class="catg">API Requests</div> <div class="check">100,000/month per app</div>
+                      <div class="catg">Languages</div> <div class="check">JavaScript<br>TypeScript<br> Python<sup>*</sup></div>
+                      <div class="catg">Repositories</div> <div class="check">Personal</div>
+                      <div class="catg">Database</div> <div class="check">1 GB (DynamoDB)</div>
+                      <div class="catg">Permanent Storage</div> <div class="check">1 GB (S3)</div>
+                      <div class="catg">Builds</div> <div class="check">Unlimited</div>
+                      <div class="catg">Edge Locations</div> <div class="check">18+ Cloud Regions</div>
+                      <div class="catg">Smart Caching</div> <div class="check">300+ Locations</div>
+                      <div class="catg">Precision Cron</div> <div class="check">3 jobs/app</div>
+                      <div class="catg">Logs Retention</div> <div class="check">7 Days</div>
+                      <div class="catg">SSL Certificates</div> <div class="check">✓</div>
+                      <div class="catg">Custom Subdomains</div> <div class="check">✓</div>
+                      <div class="catg">BYO Domain</div> <div class="check">✓</div>
+                      <div class="catg">Build on <code>git push</code></div> <div class="check">✓</div>
+                      <div class="catg">Support</div> <div class="check">Community</div>
+            
+                    </div>
+                    <br>
+                    <br>
+                    <p>
+                      * Want to try Cyclic with Python?
+                      <br>
+                      > <a href="https://cyclic.typeform.com/to/baT1BAHZ">Join Wait List</a> 
+
+                    </p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column desk-4">
+                <div class="pricing-card blue space-y-4">
+                  <div class="top-block blue"></div>
+                  <h2 class="text-4xl font-bold">Solo</h2>
+                  <p>
+                    Unlock additional developer productivity features.
+                  </p>
+                  <div class="spacer _24"></div>
+                  <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Upgrade</a>
+                  <div class="spacer _24"></div>
+                  <h3 class="no-margin text-2xl">$9<span class="regular"> /month</span></h3>
+                  <p class="paragraph-small">
+                    plus consumption charges beyond quota
+                  </p>
+                  <!-- <p>All of Free plus:</p> -->
+                  <div class="tick-list w-richtext">
+
+                    <div class="matrix ">
+                      <div class="catg">Apps</div> <div class="check">10 apps</div>
+                      <div class="catg">Repositories</div> <div class="check">Personal <br> Private</div>
+                      <div class="catg">Precision Cron</div> <div class="check">10 jobs/app</div>
+                      <div class="catg">Logs Retention</div> <div class="check">30 Days</div>
+                      <div class="catg">Logs Search</div> <div class="check">✓<sup> coming soon</sup></div>
+                      <div class="catg">Branch Environments</div> <div class="check">✓</div>
+                      <div class="catg">Support</div> <div class="check">Email</div>
+                      
+                    </div>
+                    <br>
+                    <div class="catg">Including everything in "Free Forever"</div>
+
+                  </div>
+                  <br>
+                  <br>
+                  <p> 
+                    Bring friends, get apps and credits! 
+                    <br>
+                    > <a href="https://app.cyclic.sh/#/plan">Referral Program</a></p>
+                </div>
+              </div>
+
+              <div class="column desk-4">
+                <div class="pricing-card space-y-4">
+                  <div class="top-block"></div>
+                  <h2 class="text-4xl font-bold">Grow</h2>
+                  <p>
+                    Take your company and apps to the next level.
+                  </p>
+                  <div class="spacer _24"></div>
+                  <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Buy</a>
+                  <div class="spacer _24"></div>
+                  <h3 class="no-margin text-2xl">$299<span class="regular"> /month</span></h3>
+                  <p class="paragraph-small">
+                    plus consumption charges beyond quota
+                  </p>
+                  <!-- <p>All of Solo plus:</p> -->
+                  <div class="tick-list w-richtext">
+
+                    <div class="matrix ">
+                      <div class="catg">Apps</div> <div class="check">Unlimited apps</div>
+                      <div class="catg">Repositories</div> <div class="check">Personal <br>Private <br>Organizational</div>
+                      <div class="catg">Precision Cron</div> <div class="check">Unlimited jobs</div>
+                      <div class="catg">Logs Retention</div> <div class="check">90 Days</div>
+                      <div class="catg">Users</div> <div class="check">Unlimited users</div>
+                      <div class="catg">Support</div> <div class="check">Chat</div>
+                      
+                    </div>
+                    <br>
+                    <div class="catg">Including everything in "Solo"</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div class="_12-columns align-stretch align-center">
-            <div class="column desk-4">
-              <div class="pricing-card space-y-4">
-                <div class="top-block"></div>
-                <h2 class="text-4xl font-bold">Free Forever</h2>
-                <p>Generous free tier lets you prototype and learn.</p>
-                <div class="spacer _24"></div>
-                <a href="https://app.cyclic.sh/api/login"
-                  @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
-                 class="button outline-white w-button">Start</a>
-                <div class="spacer _24"></div>
-                <h3 class="no-margin text-2xl">$0<span class="regular">/month</span></h3>
-                <p class="paragraph-small">subject to fair use, quotas are per-app</p>
-                <div class="tick-list w-richtext">
-                  <div class="matrix ">
-                    <div class="catg">Apps</div> <div class="check">3 apps</div>
-                    <div class="catg">Inactivity Delay</div> <div class="check">None - Apps Never Sleep</div>
-                    <div class="catg">Hourly Limit</div> <div class="check">None - Unlimited</div>
-                    <div class="catg">Compute</div> <div class="check">1024 MB RAM</div>
-                    <div class="catg">Autoscaling</div> <div class="check">10 x 1024 MB</div>
-                    <div class="catg">API Requests</div> <div class="check">100,000/month per app</div>
-                    <div class="catg">Languages</div> <div class="check">JavaScript<br>TypeScript<br> Python<sup>*</sup></div>
-                    <div class="catg">Repositories</div> <div class="check">Personal</div>
-                    <div class="catg">Database</div> <div class="check">1 GB (DynamoDB)</div>
-                    <div class="catg">Permanent Storage</div> <div class="check">1 GB (S3)</div>
-                    <div class="catg">Builds</div> <div class="check">Unlimited</div>
-                    <div class="catg">Edge Locations</div> <div class="check">18+ Cloud Regions</div>
-                    <div class="catg">Smart Caching</div> <div class="check">300+ Locations</div>
-                    <div class="catg">Precision Cron</div> <div class="check">3 jobs/app</div>
-                    <div class="catg">Logs Retention</div> <div class="check">7 Days</div>
-                    <div class="catg">SSL Certificates</div> <div class="check">✓</div>
-                    <div class="catg">Custom Subdomains</div> <div class="check">✓</div>
-                    <div class="catg">BYO Domain</div> <div class="check">✓</div>
-                    <div class="catg">Build on <code>git push</code></div> <div class="check">✓</div>
-                    <div class="catg">Support</div> <div class="check">Community</div>
-          
+
+        <div class="section">
+          <div class="container center-align w-container">
+            <div class="_12-columns align-stretch align-center">
+              <div class="column desk-2"></div>
+              <div class="column desk-8">
+                <div class="pricing-card dark-blue space-y-4">
+                  <h2 class="text-4xl font-bold">Enterprise Scale</h2>
+                  <p>
+                    Specialized data governance, security, compliance and auditing handled. Schedule a review
+                    and we can tailor a solution that meets your requirements.
+                  </p>
+                  <p class="paragraph-small"></p>
+                  <div class="tick-list w-richtext">
+                    <ul>
+                      <li>Configurable data retention</li>
+                      <li>Log drains</li>
+                      <li>Multi-region Active-Active</li>
+                      <li>BYO Cloud Account</li>
+                      <li>BYO IdP / SSO</li>
+                      <li>SOC2/PCI/HIPAA</li>
+                      <li>Annual architectural reviews</li>
+                      <li>Dedicated relationship manager</li>
+                    </ul>
                   </div>
-                   <br>
-                   <br>
-                   <p>
-                     * Want to try Cyclic with Python?
-                     <br>
-                     > <a href="https://cyclic.typeform.com/to/baT1BAHZ">Join Wait List</a> 
 
-                   </p>
-                  <br>
+                  <div class="spacer _48"></div>
+
+                  <div style="width: 100%; text-align:center;">
+                    <a style="display: inline-block;"
+                      target="_blank" href="https://cyclic.typeform.com/to/HNNO8Bkp"
+                      class="button w-button">Schedule a Review</a>
+                  </div>
+
                 </div>
               </div>
-            </div>
-
-            <div class="column desk-4">
-              <div class="pricing-card blue space-y-4">
-                <div class="top-block blue"></div>
-                <h2 class="text-4xl font-bold">Solo</h2>
-                <p>
-                  Unlock additional developer productivity features.
-                </p>
-                <div class="spacer _24"></div>
-                <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Upgrade</a>
-                <div class="spacer _24"></div>
-                <h3 class="no-margin text-2xl">$9<span class="regular"> /month</span></h3>
-                <p class="paragraph-small">
-                  plus consumption charges beyond quota
-                </p>
-                <!-- <p>All of Free plus:</p> -->
-                <div class="tick-list w-richtext">
-
-                  <div class="matrix ">
-                    <div class="catg">Apps</div> <div class="check">10 apps</div>
-                    <div class="catg">Repositories</div> <div class="check">Personal <br> Private</div>
-                    <div class="catg">Precision Cron</div> <div class="check">10 jobs/app</div>
-                    <div class="catg">Logs Retention</div> <div class="check">30 Days</div>
-                    <div class="catg">Logs Search</div> <div class="check">✓<sup> coming soon</sup></div>
-                    <div class="catg">Branch Environments</div> <div class="check">✓</div>
-                    <div class="catg">Support</div> <div class="check">Email</div>
-                    
-                  </div>
-                  <br>
-                  <div class="catg">Including everything in "Free Forever"</div>
-
-                </div>
-                <br>
-                <br>
-                <p> 
-                  Bring friends, get apps and credits! 
-                  <br>
-                  > <a href="https://app.cyclic.sh/#/plan">Referral Program</a></p>
-              </div>
-            </div>
-
-            <div class="column desk-4">
-              <div class="pricing-card space-y-4">
-                <div class="top-block"></div>
-                <h2 class="text-4xl font-bold">Grow</h2>
-                <p>
-                  Take your company and apps to the next level.
-                </p>
-                <div class="spacer _24"></div>
-                <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Buy</a>
-                <div class="spacer _24"></div>
-                <h3 class="no-margin text-2xl">$299<span class="regular"> /month</span></h3>
-                <p class="paragraph-small">
-                  plus consumption charges beyond quota
-                </p>
-                <!-- <p>All of Solo plus:</p> -->
-                <div class="tick-list w-richtext">
-
-                  <div class="matrix ">
-                    <div class="catg">Apps</div> <div class="check">Unlimited apps</div>
-                    <div class="catg">Repositories</div> <div class="check">Personal <br>Private <br>Organizational</div>
-                    <div class="catg">Precision Cron</div> <div class="check">Unlimited jobs</div>
-                    <div class="catg">Logs Retention</div> <div class="check">90 Days</div>
-                    <div class="catg">Users</div> <div class="check">Unlimited users</div>
-                    <div class="catg">Support</div> <div class="check">Chat</div>
-                    
-                  </div>
-                  <br>
-                  <div class="catg">Including everything in "Solo"</div>
-                </div>
-              </div>
+              <div class="column desk-2"></div>
             </div>
           </div>
         </div>
+
+        <div class="spacer _64"></div>
+
+        <!--  <CtaLaunchHelloWorld></CtaLaunchHelloWorld> -->
       </div>
-
-
-      <div class="section">
-        <div class="container center-align w-container">
-          <div class="_12-columns align-stretch align-center">
-            <div class="column desk-2"></div>
-            <div class="column desk-8">
-              <div class="pricing-card dark-blue space-y-4">
-                <h2 class="text-4xl font-bold">Enterprise Scale</h2>
-                <p>
-                  Specialized data governance, security, compliance and auditing handled. Schedule a review
-                  and we can tailor a solution that meets your requirements.
-                </p>
-                <p class="paragraph-small"></p>
-                <div class="tick-list w-richtext">
-                  <ul>
-                    <li>Configurable data retention</li>
-                    <li>Log drains</li>
-                    <li>Multi-region Active-Active</li>
-                    <li>BYO Cloud Account</li>
-                    <li>BYO IdP / SSO</li>
-                    <li>SOC2/PCI/HIPAA</li>
-                    <li>Annual architectural reviews</li>
-                    <li>Dedicated relationship manager</li>
-                  </ul>
-                </div>
-
-                <div class="spacer _48"></div>
-
-                <div style="width: 100%; text-align:center;">
-                  <a style="display: inline-block;"
-                    target="_blank" href="https://cyclic.typeform.com/to/HNNO8Bkp"
-                    class="button w-button">Schedule a Review</a>
-                </div>
-
-              </div>
-            </div>
-            <div class="column desk-2"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="spacer _64"></div>
-
-      <!--  <CtaLaunchHelloWorld></CtaLaunchHelloWorld> -->
 
     </div>
   </div>

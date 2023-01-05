@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full space-y-10">
+  <div class="w-full space-y-10 gradient-bg">
     <div class="px-10 pt-20 max-w-screen-xl mx-auto space-y-10">
       <!--************ HEADER ************-->
       <div class="">
@@ -24,7 +24,7 @@
       <!--************ POSTS ************-->
       <div role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6
       sm:gap-8 lg:gap-10">
-        <a role="listitem" class="col-span-1" v-for="post of posts" :key="post.slug"
+        <a role="listitem" class="col-span-1 group hover:no-underline" v-for="post of posts" :key="post.slug"
         :href="`/posts/${post.slug}`">
           <div class="flex flex-col gap-3">
             <!-- IMAGE & CONTENT -->
@@ -46,7 +46,7 @@
                 </span>
               </div>
 
-              <h2 class="text-4xl font-bold tracking-tight">{{ post.title }}</h2>
+              <h2 class="text-4xl font-bold tracking-tight group-hover:underline">{{ post.title }}</h2>
 
               <p class="text-sm text-gray-400">{{ post.summary.slice(0, 100) }}...</p>
             </div>

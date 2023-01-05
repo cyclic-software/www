@@ -26,165 +26,165 @@ export default {
 
 
 <template>
-<div class="wrapper max-w-screen-xl mx-auto">
+  <div class="wrapper gradient-bg">
+    <div class="max-w-screen-xl mx-auto">
+      <b-container class="hero">
+        <b-row>
+          <b-col lg="1"></b-col>
+          <b-col md="6" lg="5" align-self="center" class="space-y-4">
+            <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
+              Heroku vs Cyclic
+            </h1>
+            <div class="spacer-32"></div>
+            <p>
+                Heroku is one of the best known PaaS (Platform as a Service) vendors.
+              It was founded in 2007 (two years before Node.js was first released). Both
+              Heroku and Cyclic offer a similar set of standard basic features.
+            </p>
+            <p>
+              Heroku is built around a concept of "Dynos". These are lightweight containers
+              that are priced liked servers but have some attributes of on-demand serverless
+              style runtimes with elastic scale up. The downside is that you still pay for idle.
+            </p>
+            <p>
+              Cyclic is a good alternative to Heroku if you are looking for a modern cloud architecture,
+              serverless hosting infrastructure, easy on-boarding experience, a bursty or
+              inconsistent workload. Or if self-hosting is required (BYO cloud account).
+              Pay for the requests you use, auto-scale from the start.
+            </p>
+            <p>
+              Here is a breakdown Heroku compared to Cyclic on individual features:
+            </p>
+          </b-col>
+          <!-- <b-col lg="1" ></b-col> -->
+          <b-col md="6" lg="5" class="hero-images" align-self="center">
+                <div class="vs-images">
+                  <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
+                  <!-- <div class="spacer-16"></div> -->
+                  <div class="vs-text">vs</div>
+                  <!-- <div class="spacer-16"></div> -->
+                  <img class="vs-image" src="/images/logos/icon-dark.svg" width="150px"/>
+                </div>
+              <!-- </b-col>
+            </b-row> -->
+          </b-col>
+          <b-col lg="1"></b-col>
+        </b-row>
+      </b-container>
 
 
-  <b-container class="hero">
-    <b-row>
-      <b-col lg="1"></b-col>
-      <b-col md="6" lg="5" align-self="center" class="space-y-4">
-        <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
-          Heroku vs Cyclic
-        </h1>
-        <div class="spacer-32"></div>
-        <p>
-            Heroku is one of the best known PaaS (Platform as a Service) vendors.
-          It was founded in 2007 (two years before Node.js was first released). Both
-          Heroku and Cyclic offer a similar set of standard basic features.
-        </p>
-        <p>
-          Heroku is built around a concept of "Dynos". These are lightweight containers
-          that are priced liked servers but have some attributes of on-demand serverless
-          style runtimes with elastic scale up. The downside is that you still pay for idle.
-        </p>
-        <p>
-          Cyclic is a good alternative to Heroku if you are looking for a modern cloud architecture,
-          serverless hosting infrastructure, easy on-boarding experience, a bursty or
-          inconsistent workload. Or if self-hosting is required (BYO cloud account).
-          Pay for the requests you use, auto-scale from the start.
-        </p>
-        <p>
-          Here is a breakdown Heroku compared to Cyclic on individual features:
-        </p>
-      </b-col>
-      <!-- <b-col lg="1" ></b-col> -->
-      <b-col md="6" lg="5" class="hero-images" align-self="center">
-            <div class="vs-images">
-              <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
-              <!-- <div class="spacer-16"></div> -->
-              <div class="vs-text">vs</div>
-              <!-- <div class="spacer-16"></div> -->
-              <img class="vs-image" src="/images/logos/icon-dark.svg" width="150px"/>
-            </div>
-          <!-- </b-col>
-        </b-row> -->
-      </b-col>
-      <b-col lg="1"></b-col>
-    </b-row>
-  </b-container>
+      <b-container>
+        <b-row align-h="center">
+          <b-col md="2"></b-col>
+          <b-col>
+              <b-container class="feature-matrix">
+                <b-row class="header" align-h="center">
+                  <b-col cols="6">Compute</b-col>
+                  <b-col cols="3">Cyclic</b-col>
+                  <b-col cols="3">Heroku</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Always on</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                  <b-col cols="3">Paid</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Inactivity Delay</b-col>
+                  <b-col cols="3">~200ms</b-col>
+                  <b-col cols="3">~30s</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Global app deployment</b-col>
+                  <b-col cols="3">22 regions</b-col>
+                  <b-col cols="3">2 regions</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Self hosting option (Bring Your Own Cloud)</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                  <b-col cols="3"><strong>X</strong></b-col>
+                </b-row>
+              </b-container>
 
+              <div class="spacer-64"></div>
 
-  <b-container>
-    <b-row align-h="center">
-      <b-col md="2"></b-col>
-      <b-col>
-          <b-container class="feature-matrix">
-            <b-row class="header" align-h="center">
-              <b-col cols="6">Compute</b-col>
-              <b-col cols="3">Cyclic</b-col>
-              <b-col cols="3">Heroku</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Always on</b-col>
-              <b-col cols="3">✔︎</b-col>
-              <b-col cols="3">Paid</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Inactivity Delay</b-col>
-              <b-col cols="3">~200ms</b-col>
-              <b-col cols="3">~30s</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Global app deployment</b-col>
-              <b-col cols="3">22 regions</b-col>
-              <b-col cols="3">2 regions</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Self hosting option (Bring Your Own Cloud)</b-col>
-              <b-col cols="3">✔︎</b-col>
-              <b-col cols="3"><strong>X</strong></b-col>
-            </b-row>
-          </b-container>
+              <b-container class="feature-matrix">
+                <b-row class="header" align-h="center">
+                  <b-col cols="6">Storage</b-col>
+                  <b-col cols="3">Cyclic</b-col>
+                  <b-col cols="3">Heroku</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Integrated database</b-col>
+                  <b-col cols="3">DynamoDB</b-col>
+                  <b-col cols="3">PostgreSQL</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Integrated object storage</b-col>
+                  <b-col cols="3">S3</b-col>
+                  <b-col cols="3">Extra addon</b-col>
+                </b-row>
+              </b-container>
 
-          <div class="spacer-64"></div>
+              <div class="spacer-64"></div>
 
-          <b-container class="feature-matrix">
-            <b-row class="header" align-h="center">
-              <b-col cols="6">Storage</b-col>
-              <b-col cols="3">Cyclic</b-col>
-              <b-col cols="3">Heroku</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Integrated database</b-col>
-              <b-col cols="3">DynamoDB</b-col>
-              <b-col cols="3">PostgreSQL</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Integrated object storage</b-col>
-              <b-col cols="3">S3</b-col>
-              <b-col cols="3">Extra addon</b-col>
-            </b-row>
-          </b-container>
+              <b-container class="feature-matrix">
+                <b-row class="header" align-h="center">
+                  <b-col cols="6">DevX</b-col>
+                  <b-col cols="3">Cyclic</b-col>
+                  <b-col cols="3">Heroku</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Push to deploy</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">GitHub app integration</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Zero-config</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                  <b-col cols="3"><strong>X</strong></b-col>
+                </b-row>
+              </b-container>
 
-          <div class="spacer-64"></div>
+              <div class="spacer-64"></div>
 
-          <b-container class="feature-matrix">
-            <b-row class="header" align-h="center">
-              <b-col cols="6">DevX</b-col>
-              <b-col cols="3">Cyclic</b-col>
-              <b-col cols="3">Heroku</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Push to deploy</b-col>
-              <b-col cols="3">✔︎</b-col>
-              <b-col cols="3">✔︎</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">GitHub app integration</b-col>
-              <b-col cols="3">✔︎</b-col>
-              <b-col cols="3">✔︎</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Zero-config</b-col>
-              <b-col cols="3">✔︎</b-col>
-              <b-col cols="3"><strong>X</strong></b-col>
-            </b-row>
-          </b-container>
+              <b-container class="feature-matrix">
+                <b-row class="header" align-h="center">
+                  <b-col cols="6">Pricing</b-col>
+                  <b-col cols="3">Cyclic</b-col>
+                  <b-col cols="3">Heroku</b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Free tier</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                  <b-col cols="3"><strong>X</strong></b-col>
+                </b-row>
+                <b-row align-h="center">
+                  <b-col cols="6">Consumption based pricing (stop paying for idle capacity)</b-col>
+                  <b-col cols="3">✔︎</b-col>
+                  <b-col cols="3">
+                    <strong>X</strong><sup>1</sup>
+                  </b-col>
+                </b-row>
+              </b-container>
+              <p class="footnote">
+                <small>[1] Heroku free tier discountinued as of 11/28/2022</small>
+              </p>
 
-          <div class="spacer-64"></div>
+              <div class="spacer-64"></div>
+          </b-col>
+          <b-col md="2"></b-col>
+        </b-row>
+      </b-container>
 
-          <b-container class="feature-matrix">
-            <b-row class="header" align-h="center">
-              <b-col cols="6">Pricing</b-col>
-              <b-col cols="3">Cyclic</b-col>
-              <b-col cols="3">Heroku</b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Free tier</b-col>
-              <b-col cols="3">✔︎</b-col>
-              <b-col cols="3"><strong>X</strong></b-col>
-            </b-row>
-            <b-row align-h="center">
-              <b-col cols="6">Consumption based pricing (stop paying for idle capacity)</b-col>
-              <b-col cols="3">✔︎</b-col>
-              <b-col cols="3">
-                <strong>X</strong><sup>1</sup>
-              </b-col>
-            </b-row>
-          </b-container>
-          <p class="footnote">
-            <small>[1] Heroku free tier discountinued as of 11/28/2022</small>
-          </p>
+      <CtaFullStackApps></CtaFullStackApps>
+    </div>
 
-          <div class="spacer-64"></div>
-      </b-col>
-      <b-col md="2"></b-col>
-    </b-row>
-  </b-container>
-
-  <CtaFullStackApps></CtaFullStackApps>
-
-</div>
+  </div>
 </template>
 
 
