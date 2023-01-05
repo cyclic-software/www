@@ -11,7 +11,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply mb-6;
+    @apply mb-6 font-semibold;
   }
 
   ol, ul {
@@ -102,8 +102,4 @@
     border-top: 2px solid rgba(255,255,255, 0.1);
     margin: 2rem 0;
   }
-}
-
-.hello {
-  text-transform: uppercase;
 }
