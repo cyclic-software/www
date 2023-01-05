@@ -94,7 +94,7 @@
   
   blockquote {
     border-left: 5px solid #245fff;
-    padding-left: 1rem;
+    @apply mb-10 pl-8;
   }
   
   hr {
