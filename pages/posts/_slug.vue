@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full gradient-bg">
     <div class="px-4 lg:px-0 max-w-screen-lg mx-auto space-y-10">
       <!-- IMAGE SECTION -->
       <img :src="post.image" alt="" class="w-full rounded-2xl">
@@ -11,9 +11,11 @@
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3">
             <!-- DATE -->
-            <div class="flex flex-col border-r border-r-white/20 pr-3 text-gray-300">
-              <span class="font-black text-xl">02</span>
-              <span class="uppercase text-xs font-medium tracking-widest">mar 22</span>
+            <div class="flex flex-col border-r border-r-white/20 pr-3 text-gray-400">
+              <span class="font-black text-2xl">{{ formatDate(post.publishedOn).day }}</span>
+              <span class="uppercase text-xs font-medium tracking-widest">
+                {{ formatDate(post.publishedOn).month + ' ' + formatDate(post.publishedOn).year }}
+              </span>
             </div>
 
             <!-- AUTHOR -->
@@ -104,8 +106,21 @@
     },
     methods: {
         formatDate(date) {
-          const options = { year: 'numeric', month: 'long', day: 'numeric' }
-          return new Date(date).toLocaleDateString('en', options)
+          // const options = { year: 'numeric', month: 'long', day: 'numeric' }
+          // return new Date(date).toLocaleDateString('en', options)
+          const dateObj = new Date(date)
+          const day = dateObj.getDate()
+          const month = dateObj
+            .toLocaleString('default', { month: 'long' })
+            .slice(0, 3)
+          
+          const year = dateObj.getFullYear()
+
+          return {
+            day,
+            month,
+            year
+          }
         }
     }
   }
