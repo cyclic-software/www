@@ -8,7 +8,7 @@
     "dev:serve": "serve ./dist",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "node -v && nuxt generate",
+    "generate": "env && node -v && nuxt generate",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:prettier",
     "lintfix": "prettier --write --list-different .",
