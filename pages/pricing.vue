@@ -27,7 +27,7 @@
 
 <template>
   <div>
-    <div class="wrapper">
+    <div class="wrapper max-w-screen-xl mx-auto">
       <div class="section">
         <div class="container center-align w-container">
           <div class="text-box center-align">

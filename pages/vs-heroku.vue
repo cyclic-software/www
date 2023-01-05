@@ -26,7 +26,7 @@ export default {
 
 
 <template>
-<div class="wrapper">
+<div class="wrapper max-w-screen-xl mx-auto">
 
 
   <b-container class="hero">

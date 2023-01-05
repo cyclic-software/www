@@ -26,7 +26,7 @@ export default {
 
 
 <template>
-<div class="wrapper">
+<div class="wrapper max-w-screen-xl mx-auto">
 
 
   <b-container class="hero">
@@ -79,7 +79,7 @@ export default {
       <b-col md="5" lg="5"  >
         <div class="text-center mt-5 space-y-2">
           <div>
-            <img src="images/logos/big_logo.png" width="300px"/>
+            <img class="mx-auto" src="images/logos/big_logo.png" width="300px"/>
           </div>
           <div class="spacer-32"></div>
           <h3 class="mt-5 text-3xl font-bold">Intrigued?</h3>
