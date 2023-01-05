@@ -150,8 +150,9 @@ export default {
   // Fonts.
   googleFonts: {
     families: {
+      'Titillium+Web': true,
       Inter: true,
-      Figtree: true
+      Figtree: true,
     }
   },
 
