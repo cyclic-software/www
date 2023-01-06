@@ -1,82 +1,53 @@
 <template>
-  <div>
-    <div class="section half-padding wf-section">
-      <div class="container w-container">
-        <div class="blog-image-header">
-          <img :src="post.image" alt="" class="image-cover">
-        </div>
-      </div>
-    </div>
-    <div class="section small-padding wf-section">
-      <div data-w-id="cb94c0a0-2bab-b0c9-9da8-d93e4ab951f6" xstyle="opacity:0" class="blog-container w-container">
-        <h1>{{ post.title }}</h1>
-        <div class="byline">
-          <div class="text-block-6">By:</div>
-          <div>
-            <!-- <a href="#" class="link-3">{{post.author.name}}</a> -->
-            <div class="text-block-6">{{post.author.name}}</div>
-            <a :href="`https://twitter.com/${post.author.twitter}`" class="link-2">{{post.author.twitter}}</a>
+  <div class="w-full gradient-bg">
+    <div class="px-4 lg:px-0 max-w-screen-lg mx-auto space-y-10">
+      <!-- IMAGE SECTION -->
+      <img :src="post.image" alt="" class="w-full rounded-2xl">
+
+      <!-- TITLE & META SECTION -->
+      <div class="space-y-4 border-b border-b-white/10 pb-4">
+        <h1 class="text-6xl font-black tracking-tight">{{ post.title }}</h1>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <!-- DATE -->
+            <div class="flex flex-col border-r border-r-white/20 pr-3 text-gray-400">
+              <span class="font-black text-2xl">{{ formatDate(post.publishedOn).day }}</span>
+              <span class="uppercase text-xs font-medium tracking-widest">
+                {{ formatDate(post.publishedOn).month + ' ' + formatDate(post.publishedOn).year }}
+              </span>
+            </div>
+
+            <!-- AUTHOR -->
+            <span class="text-sm font-medium text-blue-400">By {{ post.author.name }}</span>
           </div>
-          <div class="div-block"></div>
-          <div class="text-block-5">Posted: {{ formatDate(post.publishedOn) }}</div>
-        </div>
-        <div class="div-block-2">
-          <a href="#" class="link-block w-inline-block w-clearfix">
-            <div class="html-embed share-button w-embed">
-              <!-- <a class="share-button" target="_blank" href="http://twitter.com/share?url=https://www.cyclic.sh/posts/&text=%20by%20" >
-              </a> -->
-              <!--
-  Reddit <i class="icon"></i>
-  Envelope <i class="icon"></i>
-  Slack <i class="icon"></i>
-  Hacker News <i class="icon"></i>
-  -->
-            </div>
-            <div class="html-embed share-button w-embed">
-              <!-- <a class="share-button" target="_blank" :href="`https://www.linkedin.com/sharing/share-offsite/?url=https://www.cyclic.sh/posts/${post.slug}`">
-              </a> -->
-              <!--
-  Twitter <i class="icon"></i>
-  Reddit <i class="icon"></i>
-  Envelope <i class="icon"></i>
-  Slack <i class="icon"></i>
-  Hacker News <i class="icon"></i>
-  -->
-            </div>
-          </a>
-        </div>
-        <div class="spacer _32"></div>
-        <div class="rich-text w-richtext">
-          <nuxt-content :document="post"></nuxt-content>
+
+          <!-- CATEGORY -->
+          <div class="text-xs px-2 py-1 border border-white/20 rounded-full
+          capitalize text-gray-300">
+            {{ post.category || 'general' }}
+          </div>
         </div>
       </div>
+
+      <!-- CONTENT SECTION -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <!-- BODY -->
+        <div class="col-span-1 lg:col-span-2">
+          <div class="rich-text w-richtext">
+            <nuxt-content :document="post" class="post-body"></nuxt-content>
+          </div>
+        </div>
+
+        <!-- SIDE PANEL -->
+        <div class="col-span-1">
+          
+        </div>
+      </div>
+
     </div>
 
     <HubspotBlogForm />
-
-
-    <!-- <div class="section small-padding wf-section">
-      <div class="container w-container">
-        <h2>Related Posts</h2>
-        <div class="spacer _24"></div>
-        <div class="w-dyn-list">
-          <div role="list" class="_12-columns align-stretch w-dyn-items">
-            <div role="listitem" class="column desk-4 w-dyn-item">
-              <a href="#" class="blog-card w-inline-block"><img src="" alt="" class="card-thumbnail">
-                <div class="card-text-container">
-                  <div class="card-tag"></div>
-                  <h4 class="card-title"></h4>
-                  <p class="card-summary"></p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="w-dyn-empty">
-            <div>No items found.</div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <CtaLaunchHelloWorld></CtaLaunchHelloWorld>
   </div>
@@ -135,8 +106,21 @@
     },
     methods: {
         formatDate(date) {
-          const options = { year: 'numeric', month: 'long', day: 'numeric' }
-          return new Date(date).toLocaleDateString('en', options)
+          // const options = { year: 'numeric', month: 'long', day: 'numeric' }
+          // return new Date(date).toLocaleDateString('en', options)
+          const dateObj = new Date(date)
+          const day = dateObj.getDate()
+          const month = dateObj
+            .toLocaleString('default', { month: 'long' })
+            .slice(0, 3)
+          
+          const year = dateObj.getFullYear()
+
+          return {
+            day,
+            month,
+            year
+          }
         }
     }
   }

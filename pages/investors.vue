@@ -26,81 +26,81 @@ export default {
 
 
 <template>
-<div class="wrapper">
+<div class="wrapper gradient-bg">
+  <div class="max-w-screen-xl mx-auto">
 
+    <b-container class="hero">
+      <b-row>
+        <b-col lg="1"></b-col>
+        <b-col><h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
+            Investors
+          </h1></b-col>
+      </b-row>
+      <b-row>
+        <b-col lg="1"></b-col>
+        <b-col md="7" lg="5" align-self="center" class="space-y-4 text-lg">
 
-  <b-container class="hero">
-    <b-row>
-      <b-col lg="1"></b-col>
-      <b-col><h1>
-          Investors
-        </h1></b-col>
-    </b-row>
-    <b-row>
-      <b-col lg="1"></b-col>
-      <b-col md="7" lg="5" align-self="center">
-
-        <div class="spacer-32"></div>
-
-        <h4>Software is changing</h4>
-        <p>
-          <!-- Cloud native <strong>serverless</strong> architectures are enabling applications to grow from zero to global
-          without redesign.  -->
-          New cloud native <strong>serverless infrastructures</strong> are enabling flexible global scale applications.
-          They have <strong>zero cost at rest</strong> and are priced to match cost to value.
-          Innovative organizations are adopting these technologies despite complexity of tooling, design and orchestration.
-        </p>
-        <div class="spacer-32"></div>
-
-        <h4>Lower barriers - faster time to market</h4>
-        <p>
-          Without the support of a platform team, an individual developer lacks access to this massive potential.
-          The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
-          Cyclic eliminates barriers to meet developers where they are. So even the most junior developer can take advantage of these technologies.
-        </p>
-
-        <div class="spacer-32"></div>
-        <h4>A good start and yet so much more to do</h4>
-        <p>
-          Over <strong>20,000 developers have found us</strong> and signed up and thousands use Cyclic on a daily basis.
-        </p>
-        <p>
-          We started with
-          Javascript/Node.js <strong>full stack apps</strong>, but our vision extends well beyond that. We are a small
-          team, crazy enough to think we will empower the next 20 million developers and are experienced enough to know
-          we can't do it alone.
-          <br>
-        </p>
-        <p>
-          Join us on our journey.
-        </p>
-      </b-col>
-      <!-- <b-col lg="1" ></b-col> -->
-      <b-col md="5" lg="5"  >
-        <div class="text-center mt-5">
-          <div>
-            <img src="images/logos/big_logo.png" width="300px"/>
-          </div>
           <div class="spacer-32"></div>
-          <h3 class="mt-5">Intrigued?</h3>
-          <div>
-            <p>
-              Stay updated on our progress or schedule a call:
-            </p>
-            <p class="mt-4">
-                <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www"
-                @click="track()"
-                  class="button outline-white w-button">Subscribe to Investor Updates</a>
+
+          <h4 class="text-2xl font-bold">Software is changing</h4>
+          <p>
+            <!-- Cloud native <strong>serverless</strong> architectures are enabling applications to grow from zero to global
+            without redesign.  -->
+            New cloud native <strong>serverless infrastructures</strong> are enabling flexible global scale applications.
+            They have <strong>zero cost at rest</strong> and are priced to match cost to value.
+            Innovative organizations are adopting these technologies despite complexity of tooling, design and orchestration.
+          </p>
+          <div class="spacer-32"></div>
+
+          <h4 class="text-2xl font-bold">Lower barriers - faster time to market</h4>
+          <p>
+            Without the support of a platform team, an individual developer lacks access to this massive potential.
+            The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
+            Cyclic eliminates barriers to meet developers where they are. So even the most junior developer can take advantage of these technologies.
+          </p>
+
+          <div class="spacer-32"></div>
+          <h4 class="text-2xl font-bold">A good start and yet so much more to do</h4>
+          <p>
+            Over <strong>20,000 developers have found us</strong> and signed up and thousands use Cyclic on a daily basis.
+          </p>
+          <p>
+            We started with
+            Javascript/Node.js <strong>full stack apps</strong>, but our vision extends well beyond that. We are a small
+            team, crazy enough to think we will empower the next 20 million developers and are experienced enough to know
+            we can't do it alone.
+            <br>
+          </p>
+          <p>
+            Join us on our journey.
+          </p>
+        </b-col>
+        <!-- <b-col lg="1" ></b-col> -->
+        <b-col md="5" lg="5"  >
+          <div class="text-center mt-5 space-y-2">
+            <div>
+              <img class="mx-auto" src="images/logos/big_logo.png" width="300px"/>
+            </div>
+            <div class="spacer-32"></div>
+            <h3 class="mt-5 text-3xl font-bold">Intrigued?</h3>
+            <div>
+              <p>
+                Stay updated on our progress or schedule a call:
               </p>
+              <p class="mt-4">
+                  <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www"
+                  @click="track()"
+                    class="button outline-white w-button">Subscribe to Investor Updates</a>
+                </p>
+            </div>
           </div>
-        </div>
-      </b-col>
-      <b-col lg="1"></b-col>
-    </b-row>
-  </b-container>
+        </b-col>
+        <b-col lg="1"></b-col>
+      </b-row>
+    </b-container>
 
-  <CtaFullStackApps></CtaFullStackApps>
-
+    <CtaFullStackApps></CtaFullStackApps>
+  </div>
 </div>
 </template>
 

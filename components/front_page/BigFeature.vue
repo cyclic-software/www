@@ -8,11 +8,11 @@
             <div class="f-image"><i class="fas fa-bolt"></i></div>
             <br>
             <br>
-            <h1 class="metal">No Sleep</h1>
+            <h1 class="metal text-5xl">No Sleep</h1>
             <br>
             <br>
           </div>
-          <p class="text-center">
+          <p class="text-center text-lg">
             Cyclic Apps are <strong>available immediately</strong> and on demand. 
             <br>
             <br>
@@ -30,11 +30,11 @@
         <b-col align-self="center"  lg="4">
           <div class="feature-container worldwide">
             <div class="text-center" >
-            <h1 class="metal">Worldwide</h1>
+            <h1 class="metal text-5xl">Worldwide</h1>
             <br>
             <br>
           </div>
-          <p class="text-center">
+          <p class="text-center text-lg">
             Code is deployed to where you are. 
             <br>
             <br>
@@ -59,11 +59,11 @@
             <div class="f-image"><i class="fas fa-rocket"></i></div>
             <br>
             <br>
-            <h1 class="metal">Hyper-Scale</h1>
+            <h1 class="metal text-5xl">Hyper-Scale</h1>
             <br>
             <br>
           </div>
-          <p class="text-center">
+          <p class="text-center text-lg">
             Scale up and down <strong>instantly</strong>.
             <br>
             <br>

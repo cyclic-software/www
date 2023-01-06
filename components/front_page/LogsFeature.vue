@@ -2,8 +2,8 @@
     <b-container class="hubble">
       <b-row>
         <b-col sm="6" align-self="center" >
-          <h2 class="">Complete Visibility</h2>
-          <p>
+          <h2 class="mb-4">Complete Visibility</h2>
+          <p class="text-lg">
             Know what's going on in the backend in real time.
             <br>
             A unique <strong>fusion of API and application logs</strong> tells the complete story of each request. 

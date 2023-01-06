@@ -2,11 +2,11 @@
     <div class="section wf-section wide">
     <div class="container center-align">
       <div class="spacer _64"></div>
-      <div class="text-box _600px">
-        <h2>
+      <div class="text-box _600px space-y-4">
+        <h2 class="text-4xl font-bold">
           Full Stack Serverless Apps
         </h2>
-        <p>
+        <p class="text-lg">
           Deploy a full stack serverless app on cyclic in seconds. Bring your own repo or fork and install a starter from
           our library:
         </p>
