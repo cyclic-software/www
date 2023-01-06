@@ -42,7 +42,7 @@
                 </div>
 
                 <span class="text-xs text-sky-500 font-semibold capitalize">
-                  by {{ post.author }}
+                  by {{ post.author.split('-').join(' ') }}
                 </span>
               </div>
 
