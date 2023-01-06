@@ -38,7 +38,7 @@ export default {
       </b-row>
       <b-row>
         <b-col lg="1"></b-col>
-        <b-col md="7" lg="5" align-self="center" class="space-y-4">
+        <b-col md="7" lg="5" align-self="center" class="space-y-4 text-lg">
 
           <div class="spacer-32"></div>
 
