@@ -2,8 +2,8 @@
     <b-container class="hubble">
     <b-row>
     <b-col sm="6">
-      <h2 class="">Database and Storage</h2>
-      <p>
+      <h2 class="mb-4">Database and Storage</h2>
+      <p class="text-lg">
         Cyclic apps get you access to the best AWS has to offer.
         <br>
         Industry leading NoSQL <strong>AWS DynamoDB</strong> and <strong>AWS S3</strong> storage directly integrated.

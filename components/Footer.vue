@@ -11,14 +11,14 @@
           <div class="spacer _64"></div>
         </div>
         <div class="column desk-2 tab-4 mob-6">
-          <h5 class="footer-header">Compare</h5>
+          <h5 class="footer-header mb-4">Compare</h5>
           <div class="footer-links-container">
             <nuxt-link to="/vs-heroku">vs Heroku</nuxt-link>
           </div>
         </div>
         <div class="column desk-2 tab-4 mob-6">
           <div class="footer-links-container">
-            <h5 class="footer-header">Share</h5>
+            <h5 class="footer-header mb-4">Share</h5>
             <a href="https://github.com/cyclic-software" target="_blank" class="footer-link">
               GitHub <i class="fab fa-github"></i>
             </a>
@@ -35,7 +35,7 @@
         </div>
         <div class="column desk-2 tab-4 mob-6">
           <div class="footer-links-container">
-            <h5 class="footer-header">Company</h5>
+            <h5 class="footer-header mb-4">Company</h5>
             <nuxt-link to="/pricing" class="footer-link">Pricing</nuxt-link>
             <nuxt-link to="/blog" class="footer-link">Blog</nuxt-link>
             <a href="https://docs.cyclic.sh/" target="_blank" class="footer-link">Documentation</a>

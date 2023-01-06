@@ -7,7 +7,7 @@
           cyclic blog
         </h1>
 
-        <p class="text-gray-400 mb-8 text-xl">
+        <p class="text-gray-400 mb-10 text-lg">
           Our journey, our story, and the lessons we've learnt building a system for systems.
         </p>
 

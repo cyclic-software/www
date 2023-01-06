@@ -3,8 +3,8 @@
     <b-row>
       <b-col sm="6" class="text-right"></b-col>
     <b-col sm="6">
-      <h2 class="">Precision Cron</h2>
-      <p>
+      <h2 class="mb-4">Precision Cron</h2>
+      <p class="text-lg">
         Powerful API-native cron capability built into every app.
         <br>
         <strong>1 second precision</strong> triggering, automatically adjusted for timezone
