@@ -42,7 +42,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.4.4",
     "csv-parser": "^3.0.0",
-    "dayjs": "^1.11.5",
+    "dayjs": "^1.11.7",
     "eslint-config-prettier": "^8.3.0",
     "jest": "^27.4.4",
     "mustache": "^2.3.2",
