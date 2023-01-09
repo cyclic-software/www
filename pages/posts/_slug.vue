@@ -35,7 +35,12 @@
         <!-- BODY -->
         <div class="col-span-1 lg:col-span-2">
           <div class="rich-text w-richtext">
-            <nuxt-content :document="post" class="post-body"></nuxt-content>
+            <nuxt-content
+              :document="post"
+              class="prose prose-xl prose-invert prose-a:text-sky-300
+              prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
+              prose-img:rounded-xl"
+            ></nuxt-content>
           </div>
         </div>
 
