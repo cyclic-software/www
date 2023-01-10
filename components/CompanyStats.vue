@@ -14,21 +14,21 @@
         </div> -->
         <div class="column desk-4">
           <div class="text-box space-y-1">
-            <h2 class="header-large">4,260+</h2>
+            <h2 class="header-large">3,860+</h2>
             <p class="text-lg">Developers active this week</p>
           </div>
           <div class="spacer _32"></div>
         </div>
         <div class="column desk-4">
           <div class="text-box space-y-1">
-            <h2 class="header-large">25,860+</h2>
+            <h2 class="header-large">30,560+</h2>
             <p class="text-lg">Developers on Cyclic</p>
           </div>
           <div class="spacer _32"></div>
         </div>
         <div class="column desk-4">
           <div class="text-box space-y-1">
-            <h2 class="header-large">273,600+</h2>
+            <h2 class="header-large">322,200+</h2>
             <p class="text-lg">Builds triggered</p>
           </div>
           <div class="spacer _32"></div>
