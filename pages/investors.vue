@@ -62,7 +62,7 @@ export default {
           <div class="spacer-32"></div>
           <h4 class="text-2xl font-bold">A good start and yet so much more to do</h4>
           <p>
-            Over <strong>20,000 developers have found us</strong> and signed up and thousands use Cyclic on a daily basis.
+            Over <strong>30,000 developers have found us</strong> and signed up and thousands use Cyclic on a daily basis.
           </p>
           <p>
             We started with
