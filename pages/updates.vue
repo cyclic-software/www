@@ -23,15 +23,15 @@
   
         <!--************ UPDATES ************-->
         <div class="col-span-1 xl:col-span-3 space-y-10">
-          <div v-for="update of updates" :key="update.slug" class="space-y-4">
+          <div v-for="update of updates" :key="update.key" class="space-y-4">
             <div class="space-y-2">
-              <h3 class="text-3xl font-semibold">{{ update.name }}</h3>
+              <h3 class="text-3xl font-semibold">{{ update.props.title }}</h3>
               <p class="text-sky-500 text-sm">
-                {{ new Date(update['release-date']).toDateString() }}
+                {{ new Date(update.props.created).toDateString() }}
               </p>
             </div>
 
-            <div class="prose prose-lg prose-invert" v-html="update['post-body']"></div>
+            <div class="prose prose-lg prose-invert" v-html="$md.render(update.props.content || '')"></div>
           </div>
         </div>
       </div>
@@ -42,9 +42,11 @@
 <script>
 export default {
   async asyncData() {
-    const data = await fetch('https://app.cyclic.sh/api/cms')
+    const data = await fetch('https://rn.cyclic.app/api/posts')
       .then(res => res.json())
-      
+    
+    console.log(data)
+
     return {
       updates: data
     }
