@@ -23,6 +23,7 @@
   
         <!--************ UPDATES ************-->
         <div class="col-span-1 xl:col-span-3 space-y-10">
+          <div class="text-sm" v-if="loading">Loading updates...</div>
           <div v-for="update of updates" :key="update.key" class="space-y-4">
             <div class="space-y-2">
               <h3 class="text-3xl font-semibold">{{ update.props.title }}</h3>
@@ -41,14 +42,19 @@
 
 <script>
 export default {
-  async asyncData() {
+  async created() {
+    this.loading = true
     const data = await fetch('https://rn.cyclic.app/api/posts')
       .then(res => res.json())
     
-    console.log(data)
+    this.updates = data
+    this.loading = false
+  },
 
+  data() {
     return {
-      updates: data
+      updates: [],
+      loading: false
     }
   }
 }
