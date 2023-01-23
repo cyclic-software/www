@@ -69,7 +69,6 @@
             .sortBy("createdAt", 'desc')
             .fetch();
 
-        console.log(posts[0])
         return {
             posts
         };
