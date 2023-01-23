@@ -66,8 +66,10 @@
         const posts = await $content("posts")
             // .only(['title', 'description', 'img', 'slug', 'author'])
             .where({ "hidden": { "$ne": true } })
-            .sortBy("publishedOn", 'desc')
+            .sortBy("createdAt", 'desc')
             .fetch();
+
+        console.log(posts[0])
         return {
             posts
         };
