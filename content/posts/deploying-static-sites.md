@@ -11,9 +11,9 @@ author: rachel-schipull
 category: engineering
 hidden: false
 featured: false
-public: 
+public: 'Wed Jan 25 2023 12:12:23 GMT+0000 (Coordinated Universal Time)'
 image: /content/staticsitebanner.jpg
-thumbnail: /content/statiscsitebanner.jpg
+thumbnail: /content/staticsitebanner.jpg
 ---
 
 ## Did you know you have options?
@@ -78,7 +78,8 @@ And just to hammer it home, if we head over to the dashboard, we can see the Sta
 
 So there it is, the simplest use for Advanced Build Options and the first step on our journey towards understanding  how to use all the bells and whistles Cyclic has to offer. 
 
-I'll have more on Build Options soon, but if you have questions in the meantime, come chat with us in Discord: [discord.cyclic.sh](https://discord.cyclic.sh).
+Prefer a video overview of this process? Check it out below: [![](/content/youtubestatic.jpg)](https://youtu.be/-B98D6x8mBg)
 
+I'll have more on Build Options soon, but if you have questions in the meantime, come chat with us in Discord: [discord.cyclic.sh](https://discord.cyclic.sh).
 
 _Want to see the cheat codes on my Sneaky Calc, [click here](https://sneakycalc.cyclic.app)._
