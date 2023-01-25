@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full gradient-bg">
+  <div class="w-full gradient-bg pb-20">
     <div class="px-4 lg:px-0 max-w-screen-lg mx-auto space-y-10">
       <!-- IMAGE SECTION -->
       <img :src="post.image" alt="" class="w-full rounded-2xl">
