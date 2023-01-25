@@ -24,8 +24,20 @@
         <!--************ UPDATES ************-->
         <div class="col-span-1 xl:col-span-3 space-y-10">
           <div class="text-sm" v-if="loading">Loading updates...</div>
-          <div v-for="update of updates" :key="update.key" class="space-y-4">
+          <div
+            v-for="update of updates"
+            :key="update.key"
+            class="space-y-6 border-b border-white/10 pb-6"
+          >
             <div class="space-y-2">
+              <div class="pb-2">
+                <img
+                  v-if="update.props.image.length"
+                  :src="update.props.image"
+                  :alt="update.props.title"
+                  class="w-96 h-auto rounded-xl"
+                >
+              </div>
               <h3 class="text-3xl font-semibold">{{ update.props.title }}</h3>
               <p class="text-sky-500 text-sm">
                 {{ new Date(update.props.created).toDateString() }}
