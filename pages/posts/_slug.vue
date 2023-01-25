@@ -5,7 +5,7 @@
       <img :src="post.image" alt="" class="w-full rounded-2xl">
 
       <!-- TITLE & META SECTION -->
-      <div class="space-y-4 border-b border-b-white/10 pb-4">
+      <div class="space-y-8 border-b border-b-white/10 pb-6">
         <h1 class="text-6xl font-black tracking-tight">{{ post.title }}</h1>
 
         <div class="flex items-center justify-between">
