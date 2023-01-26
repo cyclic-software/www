@@ -32,7 +32,7 @@
             <div class="space-y-2">
               <div class="pb-2">
                 <img
-                  v-if="update.props.image.length"
+                  v-if="update.props.image"
                   :src="update.props.image"
                   :alt="update.props.title"
                   class="w-96 h-auto rounded-xl"

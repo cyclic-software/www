@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && nuxt",
     "dev:csvToMarkdown": "node ./util/csv_to_markdown.js",
     "dev:serve": "serve ./dist",
     "build": "nuxt build",
