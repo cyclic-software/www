@@ -81,6 +81,11 @@ export default {
     Hero,
     FeatureMatrix,
   },
+  async created(){
+    // warmup cms 
+    await fetch('https://release-notes.cyclic.app/_healthcheck')
+      .then(res => res.json())
+  }
 }
 </script>
 

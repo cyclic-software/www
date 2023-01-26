@@ -56,7 +56,7 @@
 export default {
   async created() {
     this.loading = true
-    const data = await fetch('https://rn.cyclic.app/api/posts')
+    const data = await fetch('https://release-notes.cyclic.app/api/posts')
       .then(res => res.json())
     
     this.updates = data
