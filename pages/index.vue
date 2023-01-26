@@ -84,7 +84,7 @@ export default {
   async created(){
     // warmup cms 
     await fetch('https://release-notes.cyclic.app/_healthcheck')
-      .then(res => res.json())
+      .then(res => res.text())
   }
 }
 </script>
