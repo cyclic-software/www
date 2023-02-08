@@ -90,7 +90,7 @@
           </div>
         </div>
 
-        <!-- ********** VS HEROKU ********** -->
+        <!-- ********** PRODUCTS ********** -->
         <div class="space-y-4">
           <h4 class="text-base font-semibold">Products</h4>
   
@@ -100,6 +100,13 @@
               class="text-base !no-underline text-neutral-400 hover:text-white transition"
             >
               vs Heroku
+            </nuxt-link>
+            
+            <nuxt-link
+              to="/updates"
+              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+            >
+              Product Updates
             </nuxt-link>
           </div>
         </div>

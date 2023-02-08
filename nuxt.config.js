@@ -145,7 +145,20 @@ export default {
     '@nuxt/content',
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
+    '@nuxtjs/markdownit'
   ],
+
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
+  },
 
   // Fonts.
   googleFonts: {
