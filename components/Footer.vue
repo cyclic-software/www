@@ -124,7 +124,7 @@
         </nuxt-link>
   
         <p class="paragraph-small no-margin">
-          © 2021-2022 <a href="/" aria-current="page" class="w--current">Cyclic Software</a>
+          © 2021-{{ (1900+(new Date()).getYear()) }} <a href="/" aria-current="page" class="w--current">Cyclic Software</a>
         </p>
       </div>
 
