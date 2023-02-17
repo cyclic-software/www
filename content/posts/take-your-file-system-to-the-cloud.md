@@ -22,7 +22,7 @@ We all know Node.js is an amazing tool and has many fantastic built-in modules. 
 
 The `fs` module is incredibly helpful because it allows you to write, read, update, delete (and more!) files in your local system. Furthermore, you can do any of these actions synchronously or async, which gives you (the developer) a lot of freedom in how files are accessed and stored.
 
-As powerful as the `fs` module is, it loses its functionality when you move to production. You aren’t accessing the local system anymore. So long, and thanks for all the fish.
+As powerful as the `fs` module is, in production relying on the local file system of a server puts the data at a big risk. And with serverless, not even possible. So long, and thanks for all the fish.
 
 But what if that wasn’t how it was? What if you could use cloud storage instead? And what if you didn’t have to learn everything about AWS to make it work?
 
@@ -33,20 +33,20 @@ That’s what we’re here to discuss. Read on for a quick tutorial on how to sw
 If you are brand new to the Node file system module, I would suggest familiarizing yourself with the different methods and how to use it locally before you jump into the Cyclic.sh s3fs npm module.
 
 Here’s a few tips: 
-* The `fs` module supports sync and async methods, which is great! But it can also be confusing if you don’t have a strong handle on the event loop and the order your requests will enter and exit. It’s important to do some testing!
-*  Some `fs` methods are straightforward, however some are unconventional, for example: 
+* The ```fs``` module supports sync and async methods, which is great! But it can also be confusing if you don’t have a strong handle on the event loop and the order your requests will enter and exit. It’s important to do some testing!
+*  Some ```fs``` methods are straightforward, however some are unconventional, for example: 
     - The method most commonly used for “delete” is “unlink”. 
-    - The method for “update” is “appendFile”. 
-* There are dozens of methods included in the `fs` module. I would recommend learning more about it directly from Node.js in their documentation: [https://nodejs.org/api/fs.html#file-system](https://nodejs.org/api/fs.html#file-system)
+    - The method for "save" is "writeFile". 
+* There are dozens of methods included in the ```fs``` module. I would recommend learning more about it directly from Node.js in their documentation: [https://nodejs.org/api/fs.html#file-system](https://nodejs.org/api/fs.html#file-system)
 * If it’s your first time trying out the file system in Node.js, it might be a good idea to try a couple short tutorials to learn the ropes. These two are clear and easy to follow: 
    - [Fs Module Node.js](https://youtu.be/a6dRdtOy4Bg)
    - [A Beginner's Guide To The File System Module In Node.js](https://youtu.be/QkwHP4d01xA)
 ---  
-### Moving from `fs` to `s3fs`
+### Moving from ```fs``` to ```s3fs```
 
-Once you have a simple application using the `fs` in your local environment, you can deploy the application to Cyclic. 
+Once you have a simple application using the ```fs``` in your local environment, you can deploy the application to Cyclic. 
 
-However, you’ll notice if you try to use any of the methods you were using locally, you may receive a `EROFS` error. This is expected because once your application is deployed to production it no longer has access to the local file system. 
+However, you’ll notice if you try to use any of the methods you were using locally, you may receive a ```EROFS``` error. This is expected because once your application is deployed to production it no longer has access to the local file system. 
 
 If only there were a way to use the same methods in production!
 
@@ -56,19 +56,25 @@ This is the moment we’ve been waiting for, so how do we set this up?
 
 Well first things first, we need to install the module.
 
-```npm install @cyclic.sh/s3fs```
+```bash
+npm install @cyclic.sh/s3fs
+```
 
-Then where you are requiring the `fs` module:
+Then where you are requiring the ```fs``` module:
 
-```const fs = require(‘fs’)```
+```typescript
+const fs = require(‘fs’)
+```
 
 Change it to:
 
-```const fs = require(‘@cyclic.sh/s3fs’)```
+```typescript
+const fs = require(‘@cyclic.sh/s3fs’)
+```
 
 The module allows you to write to an AWS S3 bucket that is automatically connected to your application when you first deploy it to Cyclic. There are a couple things we need to do to give you access to that bucket.
 
-The bucket name is already populated in Cyclic when you deploy, you can find it under the variables tab. The key is always “CYCLIC_BUCKET_NAME” and the value follows the pattern of “cyclic-randomly-generated-app-name-aws-region-0#”.
+The bucket name is already populated in Cyclic when you deploy, you can find it under the variables tab. The environment variable is ```CYCLIC_BUCKET_NAME``` and the value follows the pattern of ```cyclic-randomly-generated-app-name-aws-region-0#```.
 
 If you would like to write to the bucket while you are in your local, you will need to validate your AWS connection. (If you do not do this, your app will default to your local `fs`, and you will receive a warning.)
 
@@ -85,7 +91,7 @@ Run your application locally and see what happens!
 
 ### S3fs in Production
 
-Your application is already on Cyclic, but if you push an update you should notice those `EROFS` errors have disappeared.
+Your application is already on Cyclic, so when you push an update you should notice those `EROFS` errors have disappeared.
 
 In the example of this (very) [simple sample application](https://github.com/rachelschipull/s3fs-okay), when you visit the root route, it writes the date to a file when it is called, as well as prints “Hello World!” to the DOM.
 
