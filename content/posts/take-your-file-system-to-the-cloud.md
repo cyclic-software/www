@@ -4,14 +4,14 @@ slug: 'take-your-file-system-to-the-cloud'
 summary: 'A quick overview of the Node.js file system module and how to swap it out for the Cyclic S3fs npm module. You can use the same methods as the fs module and enjoy the convenience of S3 buckets without the hassle of AWS.'
 colId: 60d0f077b69e2df6b324616c
 id: 626002160aff6f33232d263h
-createdAt: 'Fri Feb 17 2022 10:35:38 GMT+0000 (Coordinated Universal Time)'
-updatedAt: 'Fri Feb 17 2022 10:35:38 GMT+0000 (Coordinated Universal Time)'
-publishedOn: 'Fri Feb 17 2022 10:35:38 GMT+0000 (Coordinated Universal Time)'
+createdAt: 'Fri Feb 17 2023 10:35:38 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Fri Feb 17 2023 10:35:38 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Fri Feb 17 2023 10:35:38 GMT+0000 (Coordinated Universal Time)'
 author: rachel-schipull
 category: Engineering
 hidden: false
 featured: false
-public: 'Fri Feb 17 2022 10:35:38 GMT+0000 (Coordinated Universal Time)'
+public: 'Fri Feb 17 2023 10:35:38 GMT+0000 (Coordinated Universal Time)'
 image: /content/digital-cloud.jpg
 thumbnail: /content/digital-cloud.jpg
 ---
