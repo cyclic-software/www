@@ -39,7 +39,7 @@ Resources:
             Cookies:
               Forward: all
             QueryString: true
-          TargetOriginId: logrocket
+          TargetOriginId: www
         Enabled: true
         IPV6Enabled: true
         Origins:
