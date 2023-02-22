@@ -40,6 +40,7 @@ Resources:
               Forward: all
             QueryString: true
           TargetOriginId: www
+          ViewerProtocolPolicy: redirect-to-https
         Enabled: true
         IPV6Enabled: true
         Origins:
