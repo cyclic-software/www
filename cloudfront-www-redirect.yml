@@ -12,7 +12,7 @@ Parameters:
 
   ControlSslCertCf:
     Type: String #must be a us-east-1 cert because cloudfront
-    Default: 'arn:aws:acm:us-east-1:542703605194:certificate/45cafc06-56af-4184-9903-35459f4411d8'
+    Default: 'arn:aws:acm:us-east-1:296033832429:certificate/7ca785fe-f71f-4592-8842-f155e94534e0'
     Description: ACM cert arn for *.cyclic.sh and cyclic.sh in us-east-1 for CloudFront
 
 Resources:
