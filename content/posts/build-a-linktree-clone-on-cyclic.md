@@ -20,7 +20,11 @@ thumbnail: /content/linksthumb.jpg
 
 Why use a pre-built link sharing service and share your data when you can build your own? In this tutorial, we’ll use Create React App, TailwindCSS, and Cyclic.sh to help you set up your very own link site. 
 
-(Wanna fast forward and just use the template? Check out the [Cyclinks repo here](https://github.com/rachelschipull/cyclinks))
+**Wanna fast forward and just use the template?** Check out the [Cyclinks repo here](https://github.com/cyclic-software/cyclinks)
+or just tap this button:
+<a href="https://deploy.cyclic.sh/cyclic-software/cyclinks">
+    <img src="https://deploy.cyclic.sh/button.svg" />
+</a>
 
 ---
 
@@ -28,13 +32,13 @@ First things first, let’s kick it off by creating a new React app with Create 
 
 ![](/content/createreact.png)
 
-Once you have forked and cloned this repo locally, take a second to ```npm install``` to install the included dependencies that come with the starter.
+Once you have forked and cloned this repo locally, take a second to `npm install` to install the included dependencies that come with the starter.
 
 The next step is to install TailwindCSS. Don’t be intimidated by Tailwind, it just takes a couple steps to get it working.
 
-First, ```npm install -D tailwindcss``` and then run the command ```npx tailwind init``` to create a ‘tailwind.config.js’ file. 
+First, `npm install -D tailwindcss` and then run the command `npx tailwind init` to create a ‘tailwind.config.js’ file. 
 
-In the Tailwind config file, you need to give it access to the content you would like Tailwind to be able to affect. Under content add ```’./src/**/*.{js,ts,jsx,tsx}’,``` and ```'./src/components/**/*.{js,ts,jsx,tsx}'```
+In the Tailwind config file, you need to give it access to the content you would like Tailwind to be able to affect. Under content add `’./src/**/*.{js,ts,jsx,tsx}’,` and `'./src/components/**/*.{js,ts,jsx,tsx}'`
 
 ![](/content/exports.png)
 
@@ -49,8 +53,7 @@ There’s so much more you can add to the Tailwind config file, but for now we�
 This adds the Tailwind to your CSS so that all the layers are able to access Tailwind’s capabilities. Nice! Let's move on to the application.
 
 
-
-First things first, if you want to see what Create React App looks like fresh out the gate, use the command ```npm run dev```. That should spin up a version of the template on "https://localhost:3000" and you can check it out.
+First things first, if you want to see what Create React App looks like fresh out the gate, use the command `npm run dev`. That should spin up a version of the template on "https://localhost:3000" and you can check it out.
 
 If you run the application right, now we’ll see a standard template from Create React App. There are a few things built in that we can keep, other things we'll modify, the rest can be ignored or trashed. 
 
@@ -76,10 +79,10 @@ import profilepicrs from ‘../profilepicrs.jpg’
 ```
 
 We’ll then create the Header function that will be exported. You can use the styling I’ve provided with TailwindCSS below. Just a few notes: 
-- In React, remember to use ```className``` instead of ```class```.
-- The ```img``` tag will style the image.
-- The ```h1``` tag is for your name or alias, I have it set up to be animated and pulse between two colors of blue, but that’s easily changed to a different color or made static.
-- The ```p``` tag is for your title or tagline.
+- In React, remember to use `className` instead of `class`.
+- The `img` tag will style the image.
+- The `h1` tag is for your name or alias, I have it set up to be animated and pulse between two colors of blue, but that’s easily changed to a different color or made static.
+- The `p` tag is for your title or tagline.
 - For more information on how to style items in TailwindCSS be sure to check out their style guide.
 
 Get your Header component going on: 
@@ -101,7 +104,7 @@ function Header() {
 
 The next part is the meat of the project, it’s where we get our LINKS!!
 
-First, you need to add a file called `cyclinks.json` (you could also just call it ‘links.json’, but what’s the fun in that?). You’ll need to create your json with the following format: 
+First, you need to add a file called `cyclinks.json` (you could also just call it `links.json`, but what’s the fun in that?). You’ll need to create your json with the following format: 
 ```
 [
  {
@@ -194,7 +197,7 @@ import Header from './components/Header'
 import Cyclinks from './components/Cyclinks'
 import Footer from './components/Footer'
 ```
-Then within the App function, you’ll need to replace the Create React App template with our three components inside the top level ```<div>```.
+Then within the App function, you’ll need to replace the Create React App template with our three components inside the top level `<div>`.
 ```
 function App() {
   return (
@@ -207,11 +210,11 @@ function App() {
 }
 ```
 
-Don’t take out the ```export default App;``` at the bottom! That’s important. 
+Don’t take out the `export default App;` at the bottom! That’s important. 
 
 Ok, let’s see how it looks.
 
-Enter ```npm run dev``` in the terminal and you should see something to the effect of: 
+Enter `npm run dev` in the terminal and you should see something to the effect of: 
 
 ![](/content/compiled.png)
 
@@ -228,7 +231,7 @@ I decided to add a background image of stars (because why not). That update went
 }
 ```
 
-Because it was added to the App, I needed to adjust the style in the App.js as well so that the image wasn’t cut off in different viewports. I accomplished this by adding a style tag to the ```<div>``` encompassing all the components. 
+Because it was added to the App, I needed to adjust the style in the App.js as well so that the image wasn’t cut off in different viewports. I accomplished this by adding a style tag to the `<div>` encompassing all the components. 
 
 ```
 <div className="App" style={{height:'100vh'}}>
@@ -245,7 +248,7 @@ There are a few optimizations I’d like to create for this project. For example
 - A variety of link colors
 - Using Font Awesome icons instead of or in additiona to emoji
 
-What ideas do you have for making Cyclinks cooler? Let me know or submit a PR: [https://github.com/rachelschipull/cyclinks](https://github.com/rachelschipull/cyclinks). Have ideas for other demos or tutorials you want to see, drop us a line in [Discord](https://discord.cyclic.sh).
+What ideas do you have for making Cyclinks cooler? Let me know or submit a PR: [https://github.com/cyclic-software/cyclinks](https://github.com/cyclic-software/cyclinks). Have ideas for other demos or tutorials you want to see, drop us a line in [Discord](https://discord.cyclic.sh).
 
 
 
