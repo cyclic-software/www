@@ -31,7 +31,6 @@ If you want, you can fork the starter right here:
     <img src="https://deploy.cyclic.sh/button.svg" />
 </a>
 
-
 ![](/content/createreact.png)
 
 Once you have forked and cloned this repo locally, take a second to `npm install` to install the included dependencies that come with the starter.
