@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1678718792",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fi-made-the-same-app-3-times-in-3-different-frameworks-heres-what-i-learned",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"20544913"}},globalRefs:{}}}(null));
