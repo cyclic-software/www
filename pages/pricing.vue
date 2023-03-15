@@ -49,7 +49,7 @@
                   <p>Generous free tier lets you prototype and learn.</p>
                   <div class="spacer _24"></div>
                   <a href="https://app.cyclic.sh/api/login"
-                    @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+                    @click="sign_up('https://app.cyclic.sh/api/login', $event)"
                   class="button outline-white w-button">Start</a>
                   <div class="spacer _24"></div>
                   <h3 class="no-margin text-2xl">$0<span class="regular">/month</span></h3>
@@ -73,17 +73,16 @@
                       <div class="catg">Logs Retention</div> <div class="check">7 Days</div>
                       <div class="catg">SSL Certificates</div> <div class="check">✓</div>
                       <div class="catg">Custom Subdomains</div> <div class="check">✓</div>
-                      <div class="catg">BYO Domain</div> <div class="check">✓</div>
                       <div class="catg">Build on <code>git push</code></div> <div class="check">✓</div>
                       <div class="catg">Support</div> <div class="check">Community</div>
-            
+
                     </div>
                     <br>
                     <br>
                     <p>
                       * Want to try Cyclic with Python?
                       <br>
-                      > <a href="https://cyclic.typeform.com/to/baT1BAHZ">Join Wait List</a> 
+                      > <a href="https://cyclic.typeform.com/to/baT1BAHZ">Join Wait List</a>
 
                     </p>
                     <br>
@@ -94,29 +93,29 @@
               <div class="column desk-4">
                 <div class="pricing-card blue space-y-4">
                   <div class="top-block blue"></div>
-                  <h2 class="text-4xl font-bold">Solo</h2>
+                  <h2 class="text-4xl font-bold">Usage based</h2>
                   <p>
                     Unlock additional developer productivity features.
                   </p>
                   <div class="spacer _24"></div>
                   <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Upgrade</a>
                   <div class="spacer _24"></div>
-                  <h3 class="no-margin text-2xl">$9<span class="regular"> /month</span></h3>
+                  <h3 class="no-margin text-2xl">$3<span class="regular"> /month</span></h3>
                   <p class="paragraph-small">
-                    plus consumption charges beyond quota
+                    plus $0.50 / 10k invokes beyond quota
                   </p>
                   <!-- <p>All of Free plus:</p> -->
                   <div class="tick-list w-richtext">
 
                     <div class="matrix ">
-                      <div class="catg">Apps</div> <div class="check">10 apps</div>
                       <div class="catg">Repositories</div> <div class="check">Personal <br> Private</div>
                       <div class="catg">Precision Cron</div> <div class="check">10 jobs/app</div>
                       <div class="catg">Logs Retention</div> <div class="check">30 Days</div>
                       <div class="catg">Logs Search</div> <div class="check">✓<sup> coming soon</sup></div>
                       <div class="catg">Branch Environments</div> <div class="check">✓</div>
+                      <div class="catg">BYO Domain</div> <div class="check">✓</div>
                       <div class="catg">Support</div> <div class="check">Email</div>
-                      
+
                     </div>
                     <br>
                     <div class="catg">Including everything in "Free Forever"</div>
@@ -124,8 +123,8 @@
                   </div>
                   <br>
                   <br>
-                  <p> 
-                    Bring friends, get apps and credits! 
+                  <p>
+                    Bring friends, get apps and credits!
                     <br>
                     > <a href="https://app.cyclic.sh/#/plan">Referral Program</a></p>
                 </div>
@@ -155,7 +154,7 @@
                       <div class="catg">Logs Retention</div> <div class="check">90 Days</div>
                       <div class="catg">Users</div> <div class="check">Unlimited users</div>
                       <div class="catg">Support</div> <div class="check">Chat</div>
-                      
+
                     </div>
                     <br>
                     <div class="catg">Including everything in "Solo"</div>
@@ -231,7 +230,7 @@ export default {
                 'session_seconds': session_seconds,
                 'event_callback': function() {
                   }
-                });  
+                });
             }catch(e){
             }
       }
