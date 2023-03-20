@@ -127,7 +127,7 @@
                   <br>
                   <br>
                   <p>
-                    Bring friends, get apps and credits!
+                    Bring friends, get credits!
                     <br>
                     > <a href="https://app.cyclic.sh/#/plan">Referral Program</a></p>
                 </div>
