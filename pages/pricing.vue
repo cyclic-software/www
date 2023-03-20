@@ -56,12 +56,13 @@
                   <p class="paragraph-small">subject to fair use, quotas are per-app</p>
                   <div class="tick-list w-richtext">
                     <div class="matrix ">
-                      <div class="catg">Apps</div> <div class="check">3 apps</div>
+                      <div class="catg">Apps</div> <div class="check">1 app</div>
                       <div class="catg">Inactivity Delay</div> <div class="check">None - Apps Never Sleep</div>
                       <div class="catg">Hourly Limit</div> <div class="check">None - Unlimited</div>
                       <div class="catg">Compute</div> <div class="check">1024 MB RAM</div>
-                      <div class="catg">Autoscaling</div> <div class="check">10 x 1024 MB</div>
-                      <div class="catg">API Requests</div> <div class="check">100,000/month per app</div>
+                      <div class="catg">Duration</div> <div class="check">10s</div>
+                      <div class="catg">Autoscaling</div> <div class="check">100 x 1024 MB</div>
+                      <div class="catg">API Requests</div> <div class="check">10,000/month per app</div>
                       <div class="catg">Languages</div> <div class="check">JavaScript<br>TypeScript<br> Python<sup>*</sup></div>
                       <div class="catg">Repositories</div> <div class="check">Personal</div>
                       <div class="catg">Database</div> <div class="check">1 GB (DynamoDB)</div>
@@ -102,20 +103,22 @@
                   <div class="spacer _24"></div>
                   <h3 class="no-margin text-2xl">$3<span class="regular"> /month</span></h3>
                   <p class="paragraph-small">
-                    plus $0.50 / 10k invokes beyond quota
+                    plus consumption charges beyond quota
                   </p>
                   <!-- <p>All of Free plus:</p> -->
                   <div class="tick-list w-richtext">
 
                     <div class="matrix ">
+                      <div class="catg">Apps</div> <div class="check">Unlimited</div>
+                      <div class="catg">Accelerated Startup</div> <div class="check">✓</div>
+                      <div class="catg">Custom Domains</div> <div class="check">✓</div>
                       <div class="catg">Repositories</div> <div class="check">Personal <br> Private</div>
-                      <div class="catg">Precision Cron</div> <div class="check">10 jobs/app</div>
-                      <div class="catg">Logs Retention</div> <div class="check">30 Days</div>
-                      <div class="catg">Logs Search</div> <div class="check">✓<sup> coming soon</sup></div>
+                      <div class="catg">Duration</div> <div class="check">30s</div>
+                      <div class="catg">API Requests</div> <div class="check">$0.50 / 10k invokes</div>
+                      <div class="catg">File storage (S3)</div> <div class="check">$0.05 /GB /month</div>
+                      <div class="catg">Precision Cron</div> <div class="check">Up to every minute</div>
                       <div class="catg">Branch Environments</div> <div class="check">✓</div>
-                      <div class="catg">BYO Domain</div> <div class="check">✓</div>
                       <div class="catg">Support</div> <div class="check">Email</div>
-
                     </div>
                     <br>
                     <div class="catg">Including everything in "Free Forever"</div>
@@ -131,46 +134,6 @@
               </div>
 
               <div class="column desk-4">
-                <div class="pricing-card space-y-4">
-                  <div class="top-block"></div>
-                  <h2 class="text-4xl font-bold">Grow</h2>
-                  <p>
-                    Take your company and apps to the next level.
-                  </p>
-                  <div class="spacer _24"></div>
-                  <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Buy</a>
-                  <div class="spacer _24"></div>
-                  <h3 class="no-margin text-2xl">$299<span class="regular"> /month</span></h3>
-                  <p class="paragraph-small">
-                    plus consumption charges beyond quota
-                  </p>
-                  <!-- <p>All of Solo plus:</p> -->
-                  <div class="tick-list w-richtext">
-
-                    <div class="matrix ">
-                      <div class="catg">Apps</div> <div class="check">Unlimited apps</div>
-                      <div class="catg">Repositories</div> <div class="check">Personal <br>Private <br>Organizational</div>
-                      <div class="catg">Precision Cron</div> <div class="check">Unlimited jobs</div>
-                      <div class="catg">Logs Retention</div> <div class="check">90 Days</div>
-                      <div class="catg">Users</div> <div class="check">Unlimited users</div>
-                      <div class="catg">Support</div> <div class="check">Chat</div>
-
-                    </div>
-                    <br>
-                    <div class="catg">Including everything in "Solo"</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="section">
-          <div class="container center-align w-container">
-            <div class="_12-columns align-stretch align-center">
-              <div class="column desk-2"></div>
-              <div class="column desk-8">
                 <div class="pricing-card dark-blue space-y-4">
                   <h2 class="text-4xl font-bold">Enterprise Scale</h2>
                   <p>
@@ -182,6 +145,7 @@
                     <ul>
                       <li>Configurable data retention</li>
                       <li>Log drains</li>
+                      <li>Configurable Log Retention</li>
                       <li>Multi-region Active-Active</li>
                       <li>BYO Cloud Account</li>
                       <li>BYO IdP / SSO</li>
@@ -201,7 +165,6 @@
 
                 </div>
               </div>
-              <div class="column desk-2"></div>
             </div>
           </div>
         </div>
