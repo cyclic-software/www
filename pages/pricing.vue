@@ -36,7 +36,7 @@
                 Pay for what you use.
               </h1>
               <p>
-                Consumption based pricing lets you start free and pay as your needs and app grows.
+                Usage based pricing lets you start free and pay as your needs and app grows.
               </p>
               <div class="spacer _48"></div>
             </div>
@@ -46,7 +46,7 @@
                 <div class="pricing-card space-y-4">
                   <div class="top-block"></div>
                   <h2 class="text-4xl font-bold">Free Forever</h2>
-                  <p>Generous free tier lets you prototype and learn.</p>
+                  <p>Generous free tier. Prototype and learn.</p>
                   <div class="spacer _24"></div>
                   <a href="https://app.cyclic.sh/api/login"
                     @click="sign_up('https://app.cyclic.sh/api/login', $event)"
@@ -96,27 +96,26 @@
                   <div class="top-block blue"></div>
                   <h2 class="text-4xl font-bold">Usage based</h2>
                   <p>
-                    Unlock additional developer productivity features.
+                    Pay for what you use. Link value to cost.
                   </p>
                   <div class="spacer _24"></div>
                   <a href="https://app.cyclic.sh/#/plan" target="_blank" class="button no-margin w-button">Upgrade</a>
                   <div class="spacer _24"></div>
-                  <h3 class="no-margin text-2xl">$3<span class="regular"> /month</span></h3>
                   <p class="paragraph-small">
-                    plus consumption charges beyond quota
+                    Consumption charges beyond quota
                   </p>
                   <!-- <p>All of Free plus:</p> -->
                   <div class="tick-list w-richtext">
 
                     <div class="matrix ">
-                      <div class="catg">Apps</div> <div class="check">Unlimited</div>
+                      <div class="catg">Apps</div> <div class="check">$3/ app environment /month</div>
                       <div class="catg">Accelerated Startup</div> <div class="check">✓</div>
                       <div class="catg">Custom Domains</div> <div class="check">✓</div>
                       <div class="catg">Repositories</div> <div class="check">Personal <br> Private</div>
                       <div class="catg">Duration</div> <div class="check">30s</div>
-                      <div class="catg">API Requests</div> <div class="check">$0.50 / 10k invokes</div>
+                      <div class="catg">API Requests</div> <div class="check">$0.50 /10,000 invokes</div>
                       <div class="catg">File storage (S3)</div> <div class="check">$0.05 /GB /month</div>
-                      <div class="catg">Precision Cron</div> <div class="check">Up to every minute</div>
+                      <div class="catg">Precision Cron</div> <div class="check">Up to every second</div>
                       <div class="catg">Branch Environments</div> <div class="check">✓</div>
                       <div class="catg">Support</div> <div class="check">Email</div>
                     </div>
@@ -133,6 +132,42 @@
                 </div>
               </div>
 
+
+              <div class="column desk-4">
+                <div class="pricing-card blue space-y-4">
+                  <div class="top-block blue"></div>
+                  <h2 class="text-4xl font-bold">Collaboration</h2>
+                  <p>
+                    Unlock additional developer productivity features.
+                  </p>
+                  <div class="spacer _24"></div>
+                  <a href="https://cyclic.typeform.com/to/HNNO8Bkp" target="_blank" class="button no-margin w-button">Get Started</a>
+                  <div class="spacer _24"></div>
+                  <h3 class="no-margin text-2xl">$29<span class="regular"> /team member</span></h3>
+                  <p class="paragraph-small">
+                    When paid annually.
+                  </p>
+                  <!-- <p>All of Free plus:</p> -->
+                  <div class="tick-list w-richtext">
+
+                    <div class="matrix ">
+                      <div class="catg">Apps</div> <div class="check">Unlimited</div>
+                      <div class="catg">Repositories</div> <div class="check">Personal<br>Private<br>Organization</div>
+                      <div class="catg">Precision Cron</div> <div class="check">Unlimited</div>
+                      <div class="catg">Support</div> <div class="check">Chat</div>
+                    </div>
+                    <br>
+                    <div class="catg">Usage based charges beyond quota.</div>
+
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+
+
+            <div class="_12-columns align-stretch align-center">
               <div class="column desk-4">
                 <div class="pricing-card dark-blue space-y-4">
                   <h2 class="text-4xl font-bold">Enterprise Scale</h2>
@@ -166,6 +201,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
