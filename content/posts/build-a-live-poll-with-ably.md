@@ -94,7 +94,7 @@ Inside `/src` create a folder called `/views`. Inside `/views`, add a new file a
 
 Also inside `/src` create a folder called `/public`. Inside `/public`, add a new file and name it `main.js`. This will have your clientside JavaScript.
 
-Finally, add a `/poll` folder. Add two TypeScript files to this folder: `poll.controller.ts` and `poll.server.ts`. We'll come back to these when we add the functionality for our poll. Woo!
+Finally, add a `/poll` folder. Add two TypeScript files to this folder: `poll.controller.ts` and `poll.service.ts`. We'll come back to these when we add the functionality for our poll. Woo!
 
 Now that we've got our structure laid out, let's get to coding.
 
@@ -192,7 +192,7 @@ import { Controller, Post, Res, Body } from '@nestjs/common';
 import { PollService } from './poll.service';
 ```
 
-We know there's nothing in `poll.service` yet, but there will be soon!
+We know there's nothing in `poll.service.ts` yet, but there will be soon!
 
 Next we'll create the poll controller, inject the poll service, and create an async vote function within a Post, because this is serverless after all.
 
@@ -242,13 +242,13 @@ import { Controller } from '@nestjs/common';
 async create(poll) {  
     const ably = require('ably');
 
-    // replace ABLY_ROOT_KEY with your API Subscribe key (second default key in Ably)   
+    // replace ABLY_SUBSCRIBE_KEY with your API Subscribe key (second default key in Ably)   
     const ablyclient = new ably.Realtime(ABLY_SUBSCRIBE_KEY);
 ```
 
 The reason we use the subscribe key here is because users need to subscribe to the channel to see updates, but we don't want them to be able to publish or change our API settings.
 
-Finish the page with the following:
+Finish `poll.service.ts` with the following:
 ```typescript
 const channel = ablyclient.channels.get('ably-nest');  
 
@@ -279,8 +279,8 @@ and
 
 ```typescript
 @Module({
-  imports: [ConfigModule.forRoot()],
-  controllers: [AppController, PollController, ConfigController],
+  imports: [],
+  controllers: [AppController, PollController],
   providers: [AppService, PollService],
 })
 ```
@@ -299,7 +299,7 @@ eventform.addEventListener('submit', (e) => {
         console.log(data);  
     });  
     e.preventDefault();  
-    });
+});
 ```
 
 Next we'll start to plot our graph of answers, first by creating chart for the answers and asking Ably to update them in REAL TIME.
@@ -311,25 +311,28 @@ const chartContainer = document.querySelector('#chart-container');
     
 if (chartContainer) {
     const chart = new CanvasJS.Chart('chart-container', {
-        animationEnabled: true,theme: 'theme1',title: {text: 'Midnight Snacks'},data: [{type: 'column',dataPoints: dataPoints}]});
+        animationEnabled: true,theme: 'theme1',title: {text: 'Midnight Snacks'},data: [{type: 'column',dataPoints: dataPoints}]
+    });
     
-        chart.render();  
+    chart.render();  
   
         //insert your subscriber ABLY key 
-        const Ably = new Ably.Realtime(ABLY_SUB_KEY);
-        const ably = ably.channels.get('ably-nest');
-        channel.subscribe('vote', function(poll) {
+    const Ably = new Ably.Realtime(ABLY_SUB_KEY);
+    const ably = ably.channels.get('ably-nest');
+    channel.subscribe('vote', function(poll) {
               
-            dataPoints = dataPoints.map(x => {  
-                if (x.label == poll.data.snack) {  
-                    x.y += poll.data.points;  
-                    return x;  
-                } else {  
-                    return x;  
-                }  
-            });  
-            chart.render();  
-        })
+        dataPoints = dataPoints.map(x => {  
+            if (x.label == poll.data.snack) {  
+                x.y += poll.data.points;  
+                return x;  
+            } else {  
+                return x;  
+            }  
+        });  
+
+        chart.render();  
+
+    })
 }
 ```
 
