@@ -190,7 +190,7 @@
           transition">
             <div class="space-y-4">
               <h4 class="text-3xl font-semibold">Usage Based</h4>
-              <p class="text-neutral-300">Pay for what you use and get the maximum value out of cost.</p>
+              <p class="text-neutral-300">Pay for what you use. Link value to cost.</p>
             </div>
 
             <div class="space-y-5">
