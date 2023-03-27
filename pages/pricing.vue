@@ -95,7 +95,7 @@
                   <i class="ri-checkbox-circle-fill text-primary"></i>
                   <p class="text-neutral-200">1024 MB RAM Compute</p>
                 </div>
-                
+
                 <div class="flex items-center gap-2">
                   <i class="ri-checkbox-circle-fill text-primary"></i>
                   <p class="text-neutral-200">10s duration</p>
@@ -282,12 +282,12 @@
             </div>
           </div>
 
-          <!-- ****** COLLABORATE PLAN ****** -->
+          <!-- ****** TEAM PLAN ****** -->
           <div class="flex flex-col gap-7 p-6 border !border-neutral-800
           bg-neutral-800/10 rounded-2xl hover:!border-white
           transition">
             <div class="space-y-4">
-              <h4 class="text-3xl font-semibold">Collaborate</h4>
+              <h4 class="text-3xl font-semibold">Team</h4>
               <p class="text-neutral-300">Unlock additional developer productivity features.</p>
             </div>
 
@@ -342,9 +342,9 @@
               </div>
             </div>
           </div>
-          
+
         </div>
-        
+
         <!-- ****** ENTERPRISE PLAN ****** -->
         <div class="flex flex-col gap-7 p-6 border !border-neutral-800
         bg-neutral-800/10 rounded-2xl hover:!border-white
