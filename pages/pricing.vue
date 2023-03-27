@@ -343,79 +343,80 @@
             </div>
           </div>
           
-          <!-- ****** ENTERPRISE PLAN ****** -->
-          <div class="flex flex-col gap-7 p-6 border !border-neutral-800
-          bg-neutral-800/10 rounded-2xl hover:!border-white
-          transition">
-            <div class="space-y-4">
-              <h4 class="text-3xl font-semibold">Enterprise Scale</h4>
-              <p class="text-neutral-300">
-                Specialized data governance, security, compliance and auditing handled. Schedule a review
-                and we can tailor a solution that meets your requirements.
-              </p>
-            </div>
-  
-            <div class="space-y-5">
-              <hr class="border-neutral-800">
-  
-              <div class="space-y-2">
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Configurable data retention</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Log drains</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Configurable Log Retention</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Multi-region Active-Active</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">BYO Cloud Account</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">BYO IdP / SSO</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">SOC2/PCI/HIPAA</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Annual architectural reviews</p>
-                </div>
-  
-                <div class="flex items-center gap-2">
-                  <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Dedicated relationship manager</p>
-                </div>
+        </div>
+        
+        <!-- ****** ENTERPRISE PLAN ****** -->
+        <div class="flex flex-col gap-7 p-6 border !border-neutral-800
+        bg-neutral-800/10 rounded-2xl hover:!border-white
+        transition">
+          <div class="space-y-4">
+            <h4 class="text-3xl font-semibold">Enterprise Scale</h4>
+            <p class="text-neutral-300">
+              Specialized data governance, security, compliance and auditing handled. Schedule a review
+              and we can tailor a solution that meets your requirements.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <hr class="border-neutral-800">
+
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">Configurable data retention</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">Log drains</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">Configurable Log Retention</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">Multi-region Active-Active</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">BYO Cloud Account</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">BYO IdP / SSO</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">SOC2/PCI/HIPAA</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">Annual architectural reviews</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <i class="ri-checkbox-circle-fill text-primary"></i>
+                <p class="text-neutral-200">Dedicated relationship manager</p>
               </div>
             </div>
-  
-            <a
-              href="https://cyclic.typeform.com/to/HNNO8Bkp"
-              target="_blank"
-              class="w-full flex items-center justify-center rounded-xl py-3 px-6
-              bg-primary text-white font-semibold text-lg hover:no-underline cursor-pointer
-              hover:-translate-y-1 transition"
-            >
-              Schedule a Review
-            </a>
           </div>
+
+          <a
+            href="https://cyclic.typeform.com/to/HNNO8Bkp"
+            target="_blank"
+            class="w-full flex items-center justify-center rounded-xl py-3 px-6
+            bg-primary text-white font-semibold text-lg hover:no-underline cursor-pointer
+            hover:-translate-y-1 transition lg:max-w-xs ml-auto"
+          >
+            Schedule a Review
+          </a>
         </div>
 
       </div>
