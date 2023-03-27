@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1679929652",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fdads-advice-for-how-to-live",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"d94da7fb"}},globalRefs:{}}}(null));
