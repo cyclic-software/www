@@ -261,7 +261,7 @@
 
                 <div class="flex items-center gap-2">
                   <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Precision Cron upto every second</p>
+                  <p class="text-neutral-200">Precision Cron every minute</p>
                 </div>
 
                 <div class="flex items-center gap-2">
