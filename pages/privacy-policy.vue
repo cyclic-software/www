@@ -1,10 +1,15 @@
 <template>
-  <div class="section wf-section">
-    <div class="container w-container">
-      <h1 class="no-margin">Privacy Policy</h1>
-      <div class="spacer _16"></div>
+  <div class="wrapper gradient-bg">
+    <div class="max-w-screen-lg mx-auto space-y-10 py-8 px-4 lg:!px-0">
+      <h1 class="text-4xl xl:text-5xl font-black capitalize m-0 mb-4 tracking-tight">
+        Privacy Policy
+      </h1>
+
       <p class="paragraph-small">Last updated September 2022</p>
-      <div class="w-richtext">
+
+      <div class="w-richtext prose prose-xl prose-invert prose-a:text-sky-300
+      prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
+      prose-img:rounded-xl prose-h5:text-white prose-h5:font-semibold">
         <h3>1. Introduction</h3>
 
 <p>Welcome Cyclic Software, Inc. ("us", "we", or "our") operates https://app.cyclic.sh (hereinafter referred to as "Service").
