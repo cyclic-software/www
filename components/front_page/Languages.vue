@@ -10,7 +10,7 @@
                     <i class="fab fa-js"></i> JavaScript / TypeScript
                 </div>
                 <div class="build-thing">
-                    <i class="fab fa-python"></i> Python <sup><small>Coming Soon</small></sup>
+                    <i class="fab fa-python"></i> Python <sup><small>BETA</small></sup>
                 </div>
                 <div class="build-thing">
                     <i class="fas fa-tools"></i> Custom <sup><small>Coming Soon</small></sup>
@@ -72,7 +72,7 @@ h4 {
     .f-header{
         border-right: none;
         margin-bottom: 40px;;
-        font-size: 25px; 
+        font-size: 25px;
 
     }
     .build-things{
@@ -88,5 +88,5 @@ h4 {
         margin-right: 5px;
     }
   }
-  
+
 </style>

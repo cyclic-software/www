@@ -8,7 +8,6 @@
             <b-col class=" text-center" sm="8" align-self="center">
                 <div class="build-thing">
                     Must-Have Cloud Tools and Architecture for Tomorrow's Standards
-                    <!-- <i class="fab fa-python"></i> Python <sup><small>Coming Soon</small></sup> -->
                 </div>
             </b-col>
             <b-col sm="2"></b-col>

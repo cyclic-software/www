@@ -113,7 +113,7 @@
 
                 <div class="flex items-center gap-2">
                   <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Javascript, Typescript, Python<sup>*</sup></p>
+                  <p class="text-neutral-200">Javascript, Typescript, Python<sup>BETA</sup></p>
                 </div>
 
                 <div class="flex items-center gap-2">
@@ -176,10 +176,6 @@
                   <p class="text-neutral-200">Community Support</p>
                 </div>
 
-                <div class="mt-4 text-neutral-300">
-                  <sup>*</sup>Want to try Cyclic with Python?
-                  <a class="text-primary" href="https://cyclic.typeform.com/to/baT1BAHZ">Join waitlist</a>.
-                </div>
               </div>
             </div>
           </div>
