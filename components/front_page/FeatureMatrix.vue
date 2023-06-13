@@ -37,7 +37,6 @@
             <div>Logs History - Network</div> <div class="check">7 Days</div>
             <div>SSL Certificates</div> <div class="check">✓</div>
             <div>Custom Subdomains</div> <div class="check">✓</div>
-            <div>BYO Domain</div> <div class="check">✓</div>
             <div>Build on <code>git push</code></div> <div class="check">✓</div>
 
           </div>
