@@ -16,7 +16,7 @@ thumbnail: /content/linksthumb.jpg
 
 # Files with Secrets in Nodejs
 
-In our journey as Node.js developers, we often deal with various external services such as Google Cloud or Firebase. These services require us to provide certain credentials that authenticate our application and grant it the necessary permissions to interact with the respective service. This post is about to handle large secrets or files that contain private keys. Google provides files like this for named a few different things: `serviceAccount.json` or sometimes `serviceAccountCredentials.json` this file contains secret data and is used to authenticate against Firebase.
+In our journey as Node.js developers, we often deal with various external services such as Google Cloud or Firebase. These services require us to provide credentials that authenticate our application and grant it the necessary permissions to interact with the respective service. This post is about to handle large secrets or files that contain private keys. Google provides files like this. You will see them named a few different things: `serviceAccount.json` or sometimes `serviceAccountCredentials.json`. This file contains secret data and is used to authenticate against Google Cloud and/or Firebase.
 
 
 ## Why an Account Service JSON File is Needed for Google and/or Firebase
