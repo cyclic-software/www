@@ -28,10 +28,7 @@ The JSON file includes several important pieces of information such as the `proj
 As you can guess from the information contained within the JSON file, it's crucial that we keep these files secret and safe. If this file falls into the wrong hands, malicious users could use our `private_key` to impersonate our application and misuse the services, causing serious security issues. They could potentially access our Firebase data, use our Google Cloud resources, and even incur costs on our Google Cloud account.
 
 ## Problems with Storing the File as a String in Environment Variables
-A common practice is to store sensitive data in environment variables, and you might be tempted to do the same with this JSON file. However, when working with services like AWS Lambda, this approach can lead to a few problems.
-
-The issue is the AWS Lambda environment variable size limit. AWS Lambda limits the total size of all [environment variables to a maximum of 4KB](https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html#:~:text=The%20total%20size%20of%20all%20environment%20variables%20doesn%27t%20exceed%204%20KB.). Our JSON file along with a few other variables can easily exceed this limit, making it impossible to store the entire file in an environment variable.
-
+A common practice is to store sensitive data in environment variables. If you do this on AWS Lambda you can run into an issue. AWS Lambda limits the total size of all [environment variables to a maximum of 4KB](https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html#:~:text=The%20total%20size%20of%20all%20environment%20variables%20doesn%27t%20exceed%204%20KB.). Our JSON file along with a few other variables can easily exceed this limit, making it impossible to store the entire file in an environment variable. Worse case scenario is you are able to deploy your code and you only hit the environment variable size limit when you try to update another variable on some future release.
 
 ## Why You Shouldn't Commit Secrets to Your Git Repo
 It might seem convenient to just commit the JSON file to our Git repository, but yeah, that is a very bad idea. Once a file is committed to a Git repository, its history remains there even if the file is later removed. This means that anyone with access to our repository's history can find these secrets.
