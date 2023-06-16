@@ -42,7 +42,7 @@
                 </div>
 
                 <span class="text-xs text-sky-500 font-semibold capitalize">
-                  by {{ post.author }}
+                  by {{ post.author.split('-').join(' ') }}
                 </span>
               </div>
 
@@ -66,8 +66,9 @@
         const posts = await $content("posts")
             // .only(['title', 'description', 'img', 'slug', 'author'])
             .where({ "hidden": { "$ne": true } })
-            .sortBy("publishedOn", "desc")
+            .sortBy("createdAt", 'desc')
             .fetch();
+
         return {
             posts
         };

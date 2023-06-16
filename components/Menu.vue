@@ -18,6 +18,7 @@
             <b-nav-item 
             to="/investors">Investors</b-nav-item>
             <b-nav-item to="/vs-heroku">vs Heroku</b-nav-item>
+            <b-nav-item to="/updates">Product Updates</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->

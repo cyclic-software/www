@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full gradient-bg">
+  <div class="w-full gradient-bg pb-20">
     <div class="px-4 lg:px-0 max-w-screen-lg mx-auto space-y-10">
       <!-- IMAGE SECTION -->
       <img :src="post.image" alt="" class="w-full rounded-2xl">
 
       <!-- TITLE & META SECTION -->
-      <div class="space-y-4 border-b border-b-white/10 pb-4">
+      <div class="space-y-8 border-b border-b-white/10 pb-6">
         <h1 class="text-6xl font-black tracking-tight">{{ post.title }}</h1>
 
         <div class="flex items-center justify-between">
@@ -35,7 +35,12 @@
         <!-- BODY -->
         <div class="col-span-1 lg:col-span-2">
           <div class="rich-text w-richtext">
-            <nuxt-content :document="post" class="post-body"></nuxt-content>
+            <nuxt-content
+              :document="post"
+              class="prose prose-xl prose-invert prose-a:text-sky-300
+              prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
+              prose-img:rounded-xl"
+            ></nuxt-content>
           </div>
         </div>
 
