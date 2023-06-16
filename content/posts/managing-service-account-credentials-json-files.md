@@ -80,6 +80,6 @@ Sample format:
 
 # tldr
 
-1) Don't store account secrets in git unless you want to start crypto mining for someone else.
-1) If environment variables are too small for your needs consider using an encrypted secure file.
+1) Don't store account secrets in git unless you want to let everyone crypto mine on your server.
+1) If you hit size limits on environment variables, consider using an encrypted secure file.
 1) Have a good time. Coding is fun.
