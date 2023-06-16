@@ -1,19 +1,30 @@
 <template>
-  <div class="banner wf-section">
-    <div class="container w-container">
-      <div class="_12-columns align-center">
-        <div class="column desk-12"><img src="/images/Rectangle-240-copy.svg" loading="lazy" alt="" class="absolute-image">
-          <div class="cta-box">
-            <div class="text-box _600px">
-              <h2>Launch a hello world</h2>
-              <p>Fork and deploy a hello world project onto Cyclic faster than it has taken to read this page. Experience the power.</p>
-              <div class="spacer _24"></div>
-              <a href="https://app.cyclic.sh/api/login"
-              @click="sign_up('https://app.cyclic.sh/api/login?utm_source=www&utm_medium=web&utm_campaign=cta', $event)" 
-               target="_blank" class="button white w-button">Deploy on Cyclic 🚀</a>
-            </div>
-          </div>
-        </div>
+  <div class="px-4 sm:px-0">
+    <div class="relative w-full max-w-screen-xl h-80 mx-auto bg-[#245fff]
+    rounded-xl overflow-hidden">
+      <img
+        src="/images/Rectangle-240-copy.svg"
+        loading="lazy"
+        alt=""
+        class="absolute top-0 left-0"
+      >
+  
+      <div class="absolute w-full h-full z-[1] flex flex-col items-center
+      justify-center p-4 text-center">
+        <h2 class="text-4xl font-bold mb-3">Launch a hello world</h2>
+
+        <p class="text-lg w-full sm:w-[50%] mb-6">
+          Fork and deploy a hello world project onto Cyclic faster than it has taken to read this page. Experience the power.
+        </p>
+
+        <a
+          href="https://app.cyclic.sh/api/login"
+          @click="sign_up('https://app.cyclic.sh/api/login?utm_source=www&utm_medium=web&utm_campaign=cta', $event)"
+          target="_blank"
+          class="button white w-button"
+        >
+          Deploy on Cyclic 🚀
+        </a>
       </div>
     </div>
   </div>

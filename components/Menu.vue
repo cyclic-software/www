@@ -1,8 +1,8 @@
 <template>
 
-<div>
+<div class="mb-4">
   <div id="menubar">
-    <b-navbar id="menu" toggleable="md" type="dark" variant="none">
+    <b-navbar class="max-w-screen-xl mx-auto" id="menu" toggleable="md" type="dark" variant="none">
       <!-- <div id="menu-content"> -->
         <b-navbar-brand to="/" class="navbar-brand">
           <img src="/images/cyclic-logo.png" class="logo-img"/>
@@ -18,6 +18,7 @@
             <b-nav-item 
             to="/investors">Investors</b-nav-item>
             <b-nav-item to="/vs-heroku">vs Heroku</b-nav-item>
+            <b-nav-item to="/updates">Product Updates</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
@@ -132,6 +133,7 @@
   :root {
     --menu-height: 65px;
   }
+  
   .navbar-brand {
     min-width: 85px;
   }
@@ -162,7 +164,7 @@
   }
   
   .dark, .menu_collapsed{
-    background:#0f2c41; ;;
+    @apply bg-black/90 border-b border-b-white/10 backdrop-blur-sm;
   }
 
 

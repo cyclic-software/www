@@ -1,10 +1,10 @@
 <template>
   <section id="subscribe-form" class="subscribe-form wf-section">
     <div class="centered-container w-container">
-      <h2>Subscribe to posts</h2>
+      <h2 class="font-bold text-4xl mb-4">Subscribe to posts</h2>
       <p>Enter your email If you would like to get an email the next time we post.<br>We post about ~1-2x per month, and up to once a month about company news.<br></p>
     </div>
-    <div class="container-5 w-container">
+    <div class="container-5 w-container mt-4">
       <div id="embedded-form"></div>
     </div>
   </section>

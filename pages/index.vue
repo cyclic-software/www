@@ -1,7 +1,7 @@
 <template>
   <div id="index-page">
     <div class="header_image fade_loop main_splash"></div>
-    <div class="home_content">
+    <div class="max-w-screen-xl mx-auto">
       <div class="front-page-spacer"></div>
       <hero/>
 
@@ -81,6 +81,10 @@ export default {
     Hero,
     FeatureMatrix,
   },
+  async created(){
+    // warmup cms 
+    await fetch('https://release-notes.cyclic.app/_healthcheck')
+  }
 }
 </script>
 
@@ -111,10 +115,6 @@ em{
 
 .front-page-spacer{
   height: 150px;
-}
-.home_content {
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 .header-large {

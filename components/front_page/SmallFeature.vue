@@ -7,10 +7,10 @@
             <div class="feature-container">
               <div class="text-center" >
               <br>
-              <h2 class="metal">Code Scanning</h2>
+              <h2 class="metal mb-3">Code Scanning</h2>
               <br>
             </div>
-            <p class="text-center">
+            <p class="text-center text-lg">
               A continuously improving static analysis tool-set helps you 
               <strong>identify common issues</strong> and save time.
             </p>
@@ -22,10 +22,10 @@
             <div class="feature-container">
               <div class="text-center" >
               <br>
-              <h2 class="metal">Instant Update</h2>
+              <h2 class="metal mb-3">Instant Update</h2>
               <br>
             </div>
-            <p class="text-center">
+            <p class="text-center text-lg">
               Real time, <strong>zero downtime</strong> environment variable configuration for 
                all application instances.
             </p>
@@ -38,10 +38,10 @@
             <div class="feature-container">
               <div class="text-center" >
               <br>
-              <h2 class="metal">Built-In Auth</h2>
+              <h2 class="metal mb-3">Built-In Auth</h2>
               <br>
             </div>
-            <p class="text-center">
+            <p class="text-center text-lg">
               Keep your projects private as you build by 
               applying <strong>route-specific auth</strong> out of the box.
             </p>
@@ -59,10 +59,10 @@
             <div class="feature-container">
               <div class="text-center" >
               <br>
-              <h2 class="metal">Fully Serverless</h2>
+              <h2 class="metal mb-3">Fully Serverless</h2>
               <br>
             </div>
-            <p class="text-center">
+            <p class="text-center text-lg">
               Eliminate an entire class of maintenance, security and scale concerns.
               <br>
               <br>
