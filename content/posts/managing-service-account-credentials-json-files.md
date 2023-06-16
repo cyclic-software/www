@@ -2,16 +2,16 @@
 title: 'Managing Service Account JSON Files or Files with Secrets in Nodejs'
 slug: 'managing-service-account-credentials-json-files'
 summary: ''
-createdAt: 'Fri June 9 2023 19:35:38 GMT+0000 (Coordinated Universal Time)'
-updatedAt: 'Fri June 9 2023 19:35:38 GMT+0000 (Coordinated Universal Time)'
-publishedOn: 'Fri June 9 2023 19:35:38 GMT+0000 (Coordinated Universal Time)'
+createdAt: 'Fri June 16 2023 13:35:38 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Fri June 16 2023 13:35:38 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Fri June 16 2023 13:35:38 GMT+0000 (Coordinated Universal Time)'
 author: kam-lasater
 category: Engineering
 hidden: false
 featured: false
-public: 'Fri June 9 2023 19:35:38 GMT+0000 (Coordinated Universal Time)'
-image: /content/linksthumb.jpg
-thumbnail: /content/linksthumb.jpg
+public: 'Fri June 16 2023 13:35:38 GMT+0000 (Coordinated Universal Time)'
+image: /content/secure-file-dalle2.png
+thumbnail: /content/secure-file-dalle2.png
 ---
 
 # Files with Secrets in Nodejs
