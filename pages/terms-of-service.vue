@@ -1,36 +1,41 @@
 <template>
-  <div class="section wf-section">
-    <div class="container w-container">
-      <h1 class="no-margin">Terms of Service</h1>
-      <div class="spacer _16"></div>
+  <div class="wrapper gradient-bg">
+    <div class="max-w-screen-lg mx-auto space-y-10 py-8 px-4 lg:!px-0">
+      <h1 class="text-4xl xl:text-5xl font-black capitalize m-0 mb-4 tracking-tight">
+        Terms of Service
+      </h1>
+
       <p class="paragraph-small">Last updated February 2022</p>
-      <div class="w-richtext">
+
+      <div class="prose prose-xl prose-invert prose-a:text-sky-300
+      prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
+      prose-img:rounded-xl prose-h5:text-white prose-h5:font-semibold">
         <h3>1. Introduction</h3>
         <p>Welcome to Cyclic. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services and applications (the &quot;Services&quot;). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at:</p>
         <p>Email: hello@cyclic.sh<br><br>These Terms of Use (the &quot;Terms&quot;) are a binding contract between you and Cyclic Software, Inc (&quot;Cyclic,&quot; &quot;we&quot; and &quot;us&quot;). Your use of the Services in any way means that you agree to all of these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document as well as those in any <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>. Your use of or participation in certain Services may also be subject to additional policies, rules and/or conditions (&quot;Additional Terms&quot;), which are incorporated herein by reference, and you understand and agree that by using or participating in any such Services, you agree to also comply with these Additional Terms.</p>
         <p>Please read these Terms carefully. They cover important information about Services provided to you and any charges, taxes, and fees we bill you. These Terms include information about future changes to these Terms, automatic renewals, limitations of liability, a class action waiver and resolution of disputes by arbitration instead of in court. PLEASE NOTE THAT YOUR USE OF AND ACCESS TO OUR SERVICES ARE SUBJECT TO THE FOLLOWING TERMS; IF YOU DO NOT AGREE TO ALL OF THE FOLLOWING, YOU MAY NOT USE OR ACCESS THE SERVICES IN ANY MANNER. ARBITRATION NOTICE AND CLASS ACTION WAIVER: EXCEPT FOR CERTAIN TYPES OF DISPUTES DESCRIBED IN THE ARBITRATION AGREEMENT SECTION BELOW, YOU AGREE THAT DISPUTES BETWEEN YOU AND US WILL BE RESOLVED BY BINDING, INDIVIDUAL ARBITRATION AND YOU WAIVE YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT OR CLASS-WIDE ARBITRATION.</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>2. Will these Terms ever change?</h3>
         <p>We are constantly trying to improve our Services, so these Terms may need to change along with our Services. We reserve the right to change the Terms at any time, but if we do, we will place a notice on our site located at https://cyclic.sh, send you an email, and/or notify you by some other means.</p>
         <p>If you don't agree with the new Terms, you are free to reject them; unfortunately, that means you will no longer be able to use the Services. If you use the Services in any way after a change to the Terms is effective, that means you agree to all of the changes.</p>
         <p>Except for changes by us as described here, no other amendment or modification of these Terms will be effective unless in writing and signed by both you and us.</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>3. What about my privacy?<br></h3>
         <p>Cyclic takes the privacy of its users very seriously. Please click here for the current Cyclic <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>.</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <p>Children's Online Privacy Protection Act</p>
         <p>The Children's Online Privacy Protection Act (&quot;COPPA&quot;) requires that online service providers obtain parental consent before they knowingly collect personally identifiable information online from children who are under 13 years of age. We do not knowingly collect or solicit personally identifiable information from children under 13 years of age; if you are a child under 13 years of age, please do not attempt to register for or otherwise use the Services or send us any personal information. If we learn we have collected personal information from a child under 13 years of age, we will delete that information as quickly as possible. If you believe that a child under 13 years of age may have provided us personal information, please contact us at support@cyclic.sh.<br>‍</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>4. What are the basics of using Cyclic?<br></h3>
         <p>You may be required to sign up for an account, select a password and user name (&quot;Cyclic User ID&quot;), and provide us with certain information or data, such as your contact information. You promise to provide us with accurate, complete, and updated registration information about yourself. You may not select as your Cyclic User ID a name that you do not have the right to use, or another person's name with the intent to impersonate that person. You may not transfer your account to anyone else without our prior written permission.</p>
         <p>Additionally, you may be able to access certain parts or features of the Services by using your account credentials from other services (each, a &quot;Third Party Account&quot;), such as those offered by GitHub or others. By using the Services through a Third Party Account, you permit us to access certain information from such account for use by the Services. You are ultimately in control of how much information is accessible to us and may exercise such control by adjusting your privacy settings on your Third Party Account.</p>
         <p>You represent and warrant that you are an individual of legal age to form a binding contract (or if not, you've received your parent's or guardian's permission to use the Services and have gotten your parent or guardian to agree to these Terms on your behalf). If you're agreeing to these Terms on behalf of an organization or entity, you represent and warrant that you are authorized to agree to these Terms on that organization's or entity's behalf and bind them to these Terms (in which case, the references to &quot;you&quot; and &quot;your&quot; in these Terms, except for in this sentence, refer to that organization or entity).</p>
         <p>You will only use the Services for your own internal, personal, non-commercial use, and not on behalf of or for the benefit of any third party, and only in a manner that complies with all laws that apply to you. If your use of the Services is prohibited by applicable laws, then you aren't authorized to use the Services. We can't and won't be responsible for your using the Services in a way that breaks the law.</p>
         <p>You will not share your Cyclic User ID, account or password with anyone, and you must protect the security of your Cyclic User ID, account, password and any other access tools or credentials. You're responsible for any activity associated with your Cyclic User ID and account.<br>‍</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>5. What about messaging?<br></h3>
         <p>As part of the Services, you may receive communications through the Services, including messages that Cyclic sends you (for example, via email). When signing up for the Services, you will receive a welcome message and instructions on how to stop receiving messages.</p>
-        <p>‍<br></p>
+        <!-- <p>‍<br></p> -->
         <h3>6. Are there restrictions in how I can use the Services?</h3>
         <p>You represent, warrant, and agree that you will not provide or contribute anything, including any Content or User Submission (as those terms are defined below), to the Services, or otherwise use or interact with the Services, in a manner that:</p>
         <ul role="list">
@@ -46,24 +51,24 @@
           <li>decompiles, reverse engineers, or otherwise attempts to obtain the source code or underlying ideas or information of or relating to the Services.</li>
           <li>A violation of any of the foregoing is grounds for termination of your right to use or access the Services.</li>
         </ul>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>7. What are my rights in the Services?</h3>
         <p>The materials displayed or performed or available on or through the Services, including, but not limited to, text, graphics, data, articles, photos, images, illustrations, User Submissions (as defined below) and so forth (all of the foregoing, the &quot;Content&quot;) are protected by copyright and/or other intellectual property laws. You promise to abide by all copyright notices, trademark rules, information, and restrictions contained in any Content you access through the Services, and you won't use, copy, reproduce, modify, translate, publish, broadcast, transmit, distribute, perform, upload, display, license, sell, commercialize or otherwise exploit for any purpose any Content not owned by you, (i) without the prior consent of the owner of that Content or (ii) in a way that violates someone else's (including Cyclic&#x27;s) rights.</p>
         <p>Subject to these Terms, we grant each user of the Services a worldwide, non-exclusive, non-sublicensable and non-transferable license to use (i.e., to download and display locally) Content solely for purposes of using the Services. Use, reproduction, modification, distribution or storage of any Content for any purpose other than using the Services is expressly prohibited without prior written permission from us. You understand that Cyclic owns the Services. You won't modify, publish, transmit, participate in the transfer or sale of, reproduce (except as expressly provided in this Section), create derivative works based on, or otherwise exploit any of the Services. The Services may allow you to copy or download certain Content, but please remember that even where these functionalities exist, all the restrictions in this section still apply.</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>8. What about anything I contribute to the Services - do I have to grant any licenses to Cyclic or to other users?</h3>
-        <p>User Submissions</p>
+        <h5>User Submissions</h5>
         <p>Anything you post, upload, share, store, or otherwise provide through the Services is your &quot;User Submission&quot;. Some User Submissions may be viewable by other users. You are solely responsible for all User Submissions you contribute to the Services. You represent that all User Submissions submitted by you are accurate, complete, up-to-date, and in compliance with all applicable laws, rules and regulations.</p>
         <p>You agree that you will not post, upload, share, store, or otherwise provide through the Services any User Submissions that: (i) infringe any third party&#x27;s copyrights or other rights (e.g., trademark, privacy rights, etc.); (ii) contain sexually explicit content or pornography; (iii) contain hateful, defamatory, or discriminatory content or incite hatred against any individual or group; (iv) exploit minors; (v) depict unlawful acts or extreme violence; (vi) depict animal cruelty or extreme violence towards animals; (vii) promote fraudulent schemes, multi-level marketing (MLM) schemes, get rich quick schemes, online gaming and gambling, cash gifting, work from home businesses, or any other dubious money-making ventures; or (viii) that violate any law.</p>
-        <p>Licenses</p>
+        <h5>Licenses</h5>
         <p>In order to display your User Submissions on the Services, and to allow other users to enjoy them (where applicable), you grant us certain rights in those User Submissions (see below for more information). Please note that all of the following licenses are subject to our <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link> to the extent they relate to User Submissions that are also your personally-identifiable information.</p>
         <p>By submitting User Submissions through the Services, you hereby do and shall grant Cyclic a worldwide, non-exclusive, perpetual, royalty-free, fully paid, sublicensable and transferable license to use, edit, modify, truncate, aggregate, reproduce, distribute, prepare derivative works of, display, perform, and otherwise fully exploit the User Submissions in connection with this site, the Services and our (and our successors' and assigns') businesses, including without limitation for promoting and redistributing part or all of this site or the Services (and derivative works thereof) in any media formats and through any media channels (including, without limitation, third party websites and feeds), and including after your termination of your account or the Services. You also hereby do and shall grant each user of this site and/or the Services a non-exclusive, perpetual license to access your User Submissions through this site and/or the Services, and to use, edit, modify, reproduce, distribute, prepare derivative works of, display and perform such User Submissions, including after your termination of your account or the Services. For clarity, the foregoing license grants to us and our users do not affect your other ownership or license rights in your User Submissions, including the right to grant additional licenses to your User Submissions, unless otherwise agreed in writing. You represent and warrant that you have all rights to grant such licenses to us without infringement or violation of any third party rights, including without limitation, any privacy rights, publicity rights, copyrights, trademarks, contract rights, or any other intellectual property or proprietary rights.</p>
         <p>Finally, you understand and agree that Cyclic, in performing the required technical steps to provide the Services to our users (including you), may need to make changes to your User Submissions to conform and adapt those User Submissions to the technical requirements of connection networks, devices, services, or media, and the foregoing licenses include the rights to do so.</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>9. What if I see something on the Services that infringes my copyright?</h3>
         <p>In accordance with the DMCA, we've adopted the following policy toward copyright infringement. We reserve the right to (1) block access to or remove material that we believe in good faith to be copyrighted material that has been illegally copied and distributed by any of our advertisers, affiliates, content providers, members or users and (2) remove and discontinue service to repeat offenders.</p>
-        <p>‍</p>
-        <p>1. Procedure for Reporting Copyright Infringements</p>
+        <!-- <p>‍</p> -->
+        <h5>1. Procedure for Reporting Copyright Infringements</h5>
         <p>If you believe that material or content residing on or accessible through the Services infringes your copyright (or the copyright of someone whom you are authorized to act on behalf of), please send a notice of copyright infringement containing the following information to Cyclic&#x27;s Designated Agent to Receive Notification of Claimed Infringement (our &quot;Designated Agent,&quot; whose contact details are listed below):<br></p>
         <ul role="list">
           <li>A physical or electronic signature of a person authorized to act on behalf of the owner of the copyright that has been allegedly infringed;</li>
@@ -79,8 +84,8 @@
           <li>notify the content provider who is accused of infringement that we have removed or disabled access to the applicable material; and</li>
           <li>terminate such content provider&#x27;s access to the Services if he or she is a repeat offender.</li>
         </ul>
-        <p>‍</p>
-        <p>2. Procedure to Supply a Counter-Notice to the Designated Agent</p>
+        <!-- <p>‍</p> -->
+        <h5>2. Procedure to Supply a Counter-Notice to the Designated Agent</h5>
         <p>If the content provider believes that the material that was removed (or to which access was disabled) is not infringing, or the content provider believes that it has the right to post and use such material from the copyright owner, the copyright owner&#x27;s agent, or, pursuant to the law, the content provider may send us a counter-notice containing the following information to the Designated Agent:</p>
         <ul role="list">
           <li>A physical or electronic signature of the content provider;</li>
@@ -94,7 +99,7 @@
         <p>Attn: DMCA Designated Agent</p>
         <p>766 Beacom Ln</p>
         <p>Merion Station, PA 19066</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>10. Who is responsible for what I see and do on the Services?</h3>
         <p>Any information or Content publicly posted or privately transmitted through the Services is the sole responsibility of the person from whom such Content originated, and you access all such information and Content at your own risk, and we aren't liable for any errors or omissions in that information or Content or for any damages or loss you might suffer in connection with it. We cannot control and have no duty to take any action regarding how you may interpret and use the Content or what actions you may take as a result of having been exposed to the Content, and you hereby release us from all liability for you having acquired or not acquired Content through the Services. We can't guarantee the identity of any users with whom you interact in using the Services and are not responsible for which users gain access to the Services.</p>
         <p>You are responsible for all Content you contribute, in any manner, to the Services, and you represent and warrant you have all rights necessary to do so, in the manner in which you contribute it.</p>
@@ -102,38 +107,38 @@
         <p>Cyclic has no control over, and assumes no responsibility for, the content, accuracy, privacy policies, or practices of or opinions expressed in any third-party websites or by any third party that you interact with through the Services. In addition, Cyclic will not and cannot monitor, verify, censor or edit the content of any third-party site or service. We encourage you to be aware when you leave the Services and to read the terms and conditions and privacy policy of each third-party website or service that you visit or utilize. By using the Services, you release and hold us harmless from any and all liability arising from your use of any third-party website or service.</p>
         <p>Your interactions with organizations and/or individuals found on or through the Services, including payment and delivery of goods or services, and any other terms, conditions, warranties or representations associated with such dealings, are solely between you and such organizations and/or individuals. You should make whatever investigation you feel necessary or appropriate before proceeding with any online or offline transaction with any of these third parties. You agree that Cyclic shall not be responsible or liable for any loss or damage of any sort incurred as the result of any such dealings.</p>
         <p>If there is a dispute between participants on this site or Services, or between users and any third party, you agree that Cyclic is under no obligation to become involved. In the event that you have a dispute with one or more other users, you release Cyclic, its directors, officers, employees, agents, and successors from claims, demands, and damages of every kind or nature, known or unknown, suspected or unsuspected, disclosed or undisclosed, arising out of or in any way related to such disputes and/or our Services. You shall and hereby do waive California Civil Code Section 1542 or any similar law of any jurisdiction, which says in substance: &quot;A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party.&quot;</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>11. Will Cyclic ever change the Services?</h3>
         <p>We're always trying to improve our Services, so they may change over time. We may suspend or discontinue any part of the Services, or we may introduce new features or impose limits on certain features or restrict access to parts or all of the Services. We'll try to give you notice when we make a material change to the Services that would adversely affect you, but this isn't always practical. We reserve the right to remove any Content from the Services at any time, for any reason (including, but not limited to, if someone alleges you contributed that Content in violation of these Terms), in our sole discretion, and without notice.</p>
-        <p>‍</p>
+        <!-- <p>‍</p> -->
         <h3>12. Do the Services cost anything?</h3>
         <p>The Services may be free or we may charge a fee for using the Services. If you are using a free version of the Services, we will notify you before any Services you are then using begin carrying a fee, and if you wish to continue using such Services, you must pay all applicable fees for such Services.</p>
-        <p>‍</p>
-        <p>Paid Services</p>
+        <!-- <p>‍</p> -->
+        <h5>Paid Services</h5>
         <p>Certain of our Services may be subject to payments now or in the future (the &quot;Paid Services&quot;). Please see our Paid Services page for a description of the current Paid Services. Please note that any payment terms presented to you in the process of using or signing up for a Paid Service are deemed part of these Terms.</p>
-        <p>‍</p>
-        <p>Billing</p>
+        <!-- <p>‍</p> -->
+        <h5>Billing</h5>
         <p>We use a third-party payment processor (the &quot;Payment Processor&quot;) to bill you through a payment account linked to your account on the Services (your &quot;Billing Account&quot;) for use of the Paid Services. The processing of payments will be subject to the terms, conditions and privacy policies of the Payment Processor in addition to these Terms.Currently, we use Stripe, Inc. as our Payment Processor. You can access Stripe's Terms of Service at https://stripe.com/us/checkout/legal and their Privacy Policy at https://stripe.com/us/privacy. We are not responsible for any error by, or other acts or omissions of, the Payment Processor. By choosing to use Paid Services, you agree to pay us, through the Payment Processor, all charges at the prices then in effect for any use of such Paid Services in accordance with the applicable payment terms, and you authorize us, through the Payment Processor, to charge your chosen payment provider (your &quot;Payment Method&quot;). You agree to make payment using that selected Payment Method. We reserve the right to correct any errors or mistakes that the Payment Processor makes even if it has already requested or received payment.</p>
-        <p>‍</p>
-        <p>Payment Method</p>
+        <!-- <p>‍</p> -->
+        <h5>Payment Method</h5>
         <p>The terms of your payment will be based on your Payment Method and may be determined by agreements between you and the financial institution, credit card issuer or other provider of your chosen Payment Method. If we, through the Payment Processor, do not receive payment from you, you agree to pay all amounts due on your Billing Account upon demand.</p>
-        <p>‍</p>
-        <p>Recurring Billing</p>
+        <!-- <p>‍</p> -->
+        <h5>Recurring Billing</h5>
         <p>Some of the Paid Services may consist of an initial period, for which there is a one-time charge, followed by recurring period charges as agreed to by you. By choosing a recurring payment plan, you acknowledge that such Services have an initial and recurring payment feature and you accept responsibility for all recurring charges prior to cancellation. WE MAY SUBMIT PERIODIC CHARGES (E.G., MONTHLY) WITHOUT FURTHER AUTHORIZATION FROM YOU, UNTIL YOU PROVIDE PRIOR NOTICE (RECEIPT OF WHICH IS CONFIRMED BY US) THAT YOU HAVE TERMINATED THIS AUTHORIZATION OR WISH TO CHANGE YOUR PAYMENT METHOD. SUCH NOTICE WILL NOT AFFECT CHARGES SUBMITTED BEFORE WE REASONABLY COULD ACT. TO TERMINATE YOUR AUTHORIZATION OR CHANGE YOUR PAYMENT METHOD, GO TO ACCOUNT SETTINGS</p>
-        <p>‍</p>
-        <p>Current Information Required</p>
+        <!-- <p>‍</p> -->
+        <h5>Current Information Required</h5>
         <p>YOU MUST PROVIDE CURRENT, COMPLETE AND ACCURATE INFORMATION FOR YOUR BILLING ACCOUNT. YOU MUST PROMPTLY UPDATE ALL INFORMATION TO KEEP YOUR BILLING ACCOUNT CURRENT, COMPLETE AND ACCURATE (SUCH AS A CHANGE IN BILLING ADDRESS, CREDIT CARD NUMBER, OR CREDIT CARD EXPIRATION DATE), AND YOU MUST PROMPTLY NOTIFY US OR OUR PAYMENT PROCESSOR IF YOUR PAYMENT METHOD IS CANCELED (E.G., FOR LOSS OR THEFT) OR IF YOU BECOME AWARE OF A POTENTIAL BREACH OF SECURITY, SUCH AS THE UNAUTHORIZED DISCLOSURE OR USE OF YOUR USER NAME OR PASSWORD. CHANGES TO SUCH INFORMATION CAN BE MADE AT ACCOUNT SETTINGS.IF YOU FAIL TO PROVIDE ANY OF THE FOREGOING INFORMATION, YOU AGREE THAT WE MAY CONTINUE CHARGING YOU FOR ANY USE OF PAID SERVICES UNDER YOUR BILLING ACCOUNT UNLESS YOU HAVE TERMINATED YOUR PAID SERVICES AS SET FORTH ABOVE.</p>
-        <p>‍</p>
-        <p>Change in Amount Authorized</p>
+        <!-- <p>‍</p> -->
+        <h5>Change in Amount Authorized</h5>
         <p>If the amount to be charged to your Billing Account varies from the amount you pre-authorized (other than due to the imposition or change in the amount of state sales taxes), you have the right to receive, and we shall provide, notice of the amount to be charged and the date of the charge before the scheduled date of the transaction. Any agreement you have with your payment provider will govern your use of your Payment Method. You agree that we may accumulate charges incurred and submit them as one or more aggregate charges during or at the end of each billing cycle.</p>
-        <p>‍</p>
-        <p>Auto-Renewal for Paid Services</p>
+        <!-- <p>‍</p> -->
+        <h5>Auto-Renewal for Paid Services</h5>
         <p>Unless you opt out of auto-renewal, which can be done through your account settings, any Paid Services you have signed up for will be automatically extended for successive renewal periods of the same duration as the subscription term originally selected, at the then-current non-promotional rate. To change or resign your Paid Services at any time, go to account settings. If you terminate a Paid Service, you may use your subscription until the end of your then-current term, and your subscription will not be renewed after your then-current term expires. However, you will not be eligible for a prorated refund of any portion of the subscription fee paid for the then-current subscription period. IF YOU DO NOT WANT TO CONTINUE TO BE CHARGED ON A RECURRING MONTHLY BASIS, YOU MUST CANCEL THE APPLICABLE PAID SERVICE THROUGH YOUR ACCOUNT SETTINGS OR TERMINATE YOUR CYCLIC ACCOUNT BEFORE THE END OF THE RECURRING TERM. PAID SERVICES CANNOT BE TERMINATED BEFORE THE END OF THE PERIOD FOR WHICH YOU HAVE ALREADY PAID, AND EXCEPT AS EXPRESSLY PROVIDED IN THESE TERMS, CYCLIC WILL NOT REFUND ANY FEES THAT YOU HAVE ALREADY PAID.</p>
-        <p>‍</p>
-        <p>Reaffirmation of Authorization</p>
+        <!-- <p>‍</p> -->
+        <h5>Reaffirmation of Authorization</h5>
         <p>Your non-termination or continued use of a Paid Service reaffirms that we are authorized to charge your Payment Method for that Paid Service. We may submit those charges for payment and you will be responsible for such charges. This does not waive our right to seek payment directly from you. Your charges may be payable in advance, in arrears, per usage, or as otherwise described when you initially selected to use the Paid Service.</p>
-        <p>‍</p>
-        <p>Free Trials and Other Promotions</p>
+        <!-- <p>‍</p> -->
+        <h5>Free Trials and Other Promotions</h5>
         <p>Any free trial or other promotion that provides access to a Paid Service must be used within the specified time of the trial. You must stop using a Paid Service before the end of the trial period in order to avoid being charged for that Paid Service. If you cancel prior to the end of the trial period and are inadvertently charged for a Paid Service, please contact us at support@cyclic.sh.</p>
         <p>‍</p>
         <h3>13. What if I want to stop using the Services?</h3>
@@ -147,58 +152,54 @@
         <p>From time to time Cyclic may offer rewards or incentives for referring others to the Services. For details of any current referral offers, please see our referral page. The referring user (&quot;Referrer&quot;) may refer individuals or entities who are neither current customers of Cyclic nor registered users of the Services (&quot;Referee&quot;). A registered user is a person or entity that already has an existing account with Cyclic. There is no limit to the number of referrals that Referrer can make, nor the cumulative rewards or incentives that the Referrer may receive through such special offer, unless otherwise indicated.Referrer will receive the stated reward or incentive for each Referee sent by the Referrer that completes the required action described in that specific offer (such as signing up for an account or making a purchase). All Referees must be first-time recipients of the offer, and multiple referrals to the same individual or entity will be disregarded. Cyclic reserves the right to modify or terminate any special offers at any time and to revoke from Referrer and Referee the special offer at Cyclic&#x27;s discretion for any reason or for no reason whatsoever. If Cyclic determines that Referrer or Referee is attempting to obtain unfair advantage or otherwise violate the terms or spirit of such special offer, Cyclic reserves the right to (a) revoke any rewards or incentives issued to either Referrer or Referee and/or (b) charge the Referrer or Referee for any rewards or incentives (1) used by Referrer or Referee prior to such revocation or (2) issued by Cyclic to any ineligible Referrer or Referee. All special offers are subject to any other terms, conditions and restrictions set forth on the Services or presented in connection with the special offer.</p>
         <p>‍</p>
         <h3>15. What else do I need to know?</h3>
-        <p>Warranty Disclaimer.</p>
+        <h5>Warranty Disclaimer.</h5>
         <p>Cyclic and its licensors, suppliers, partners, parent, subsidiaries or affiliated entities, and each of their respective officers, directors, members, employees, consultants, contract employees, representatives and agents, and each of their respective successors and assigns (Cyclic and all such parties together, the &quot;Cyclic Parties&quot;) make no representations or warranties concerning the Services, including without limitation regarding any Content contained in or accessed through the Services, and the Cyclic Parties will not be responsible or liable for the accuracy, copyright compliance, legality, or decency of material contained in or accessed through the Services or any claims, actions, suits procedures, costs, expenses, damages or liabilities arising out of use of, or in any way related to your participation in, the Services. The Cyclic Parties make no representations or warranties regarding suggestions or recommendations of services or products offered or purchased through or in connection with the Services. THE SERVICES AND CONTENT ARE PROVIDED BY CYCLIC (AND ITS LICENSORS AND SUPPLIERS) ON AN &quot;AS-IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR THAT USE OF THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE. SOME STATES DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
         <p>‍</p>
-        <p>Limitation of Liability.</p>
+        <h5>Limitation of Liability.</h5>
         <p>TO THE FULLEST EXTENT ALLOWED BY APPLICABLE LAW, UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, TORT, CONTRACT, STRICT LIABILITY, OR OTHERWISE) SHALL ANY OF THE CYCLIC PARTIES BE LIABLE TO YOU OR TO ANY OTHER PERSON FOR (A) ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES OF ANY KIND, INCLUDING DAMAGES FOR LOST PROFITS, BUSINESS INTERRUPTION, LOSS OF DATA, LOSS OF GOODWILL, WORK STOPPAGE, ACCURACY OF RESULTS, OR COMPUTER FAILURE OR MALFUNCTION, (B) ANY SUBSTITUTE GOODS, SERVICES OR TECHNOLOGY, (C) ANY AMOUNT, IN THE AGGREGATE, IN EXCESS OF THE GREATER OF (I) ONE-HUNDRED ($100) DOLLARS OR (II) THE AMOUNTS PAID AND/OR PAYABLE BY YOU TO CYCLIC IN CONNECTION WITH THE SERVICES IN THE TWELVE (12) MONTH PERIOD PRECEDING THIS APPLICABLE CLAIM OR (D) ANY MATTER BEYOND OUR REASONABLE CONTROL. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL OR CERTAIN OTHER DAMAGES, SO THE ABOVE LIMITATION AND EXCLUSIONS MAY NOT APPLY TO YOU.</p>
         <p>‍</p>
-        <p>Indemnity</p>
+        <h5>Indemnity</h5>
         <p>To the fullest extent allowed by applicable law, you agree to indemnify and hold the Cyclic Parties harmless from and against any and all claims, liabilities, damages (actual and consequential), losses and expenses (including attorneys' fees) arising from or in any way related to any claims relating to (a) your use of the Services (including any actions taken by a third party using your account), and (b) your violation of these Terms. In the event of such a claim, suit, or action (&quot;Claim&quot;), we will attempt to provide notice of the Claim to the contact information we have for your account (provided that failure to deliver such notice shall not eliminate or reduce your indemnification obligations hereunder).</p>
         <p>‍</p>
-        <p>Assignment</p>
+        <h5>Assignment</h5>
         <p>You may not assign, delegate or transfer these Terms or your rights or obligations hereunder, or your Services account, in any way (by operation of law or otherwise) without Cyclic&#x27;s prior written consent. We may transfer, assign, or delegate these Terms and our rights and obligations without consent.</p>
         <p>‍</p>
-        <p>Choice of Law</p>
+        <h5>Choice of Law</h5>
         <p>These Terms are governed by and will be construed under the Federal Arbitration Act, applicable federal law, and the laws of the State of Pennsylvania, without regard to the conflicts of laws provisions thereof.</p>
         <p>‍</p>
-        <p>Arbitration Agreement</p>
+        <h5>Arbitration Agreement</h5>
         <p>Please read the following ARBITRATION AGREEMENT carefully because it requires you to arbitrate certain disputes and claims with Cyclic and limits the manner in which you can seek relief from Cyclic. Both you and Cyclic acknowledge and agree that for the purposes of any dispute arising out of or relating to the subject matter of these Terms, Cyclic&#x27;s officers, directors, employees and independent contractors (&quot;Personnel&quot;) are third-party beneficiaries of these Terms, and that upon your acceptance of these Terms, Personnel will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as the third-party beneficiary hereof.</p>
         <p>‍</p>
-        <p>(a) Arbitration Rules; Applicability of Arbitration Agreement</p>
+        <h5>(a) Arbitration Rules; Applicability of Arbitration Agreement</h5>
         <p>The parties shall use their best efforts to settle any dispute, claim, question, or disagreement arising out of or relating to the subject matter of these Terms directly through good-faith negotiations, which shall be a precondition to either party initiating arbitration. If such negotiations do not resolve the dispute, it shall be finally settled by binding arbitration in Montgomery County, Pennsylvania. The arbitration will proceed in the English language, in accordance with the JAMS Streamlined Arbitration Rules and Procedures (the &quot;Rules&quot;) then in effect, by one commercial arbitrator with substantial experience in resolving intellectual property and commercial contract disputes. The arbitrator shall be selected from the appropriate list of JAMS arbitrators in accordance with such Rules. Judgment upon the award rendered by such arbitrator may be entered in any court of competent jurisdiction.</p>
         <p>‍</p>
-        <p>(b) Costs of Arbitration</p>
+        <h5>(b) Costs of Arbitration</h5>
         <p>The Rules will govern payment of all arbitration fees. Cyclic will pay all arbitration fees for claims less than seventy-five thousand ($75,000) dollars. Cyclic will not seek its attorneys' fees and costs in arbitration unless the arbitrator determines that your claim is frivolous.</p>
         <p>‍</p>
-        <p>(c) Small Claims Court; Infringement</p>
+        <h5>(c) Small Claims Court; Infringement</h5>
         <p>Either you or Cyclic may assert claims, if they qualify, in small claims court in Montgomery County, Pennsylvania or any United States county where you live or work. Furthermore, notwithstanding the foregoing obligation to arbitrate disputes, each party shall have the right to pursue injunctive or other equitable relief at any time, from any court of competent jurisdiction, to prevent the actual or threatened infringement, misappropriation or violation of a party&#x27;s copyrights, trademarks, trade secrets, patents or other intellectual property rights.</p>
         <p>‍</p>
-        <p>(d) Waiver of Jury Trial</p>
+        <h5>(d) Waiver of Jury Trial</h5>
         <p>YOU AND CYCLIC WAIVE ANY CONSTITUTIONAL AND STATUTORY RIGHTS TO GO TO COURT AND HAVE A TRIAL IN FRONT OF A JUDGE OR JURY. You and Cyclic are instead choosing to have claims and disputes resolved by arbitration. Arbitration procedures are typically more limited, more efficient, and less costly than rules applicable in court and are subject to very limited review by a court. In any litigation between you and Cyclic over whether to vacate or enforce an arbitration award, YOU AND CYCLIC WAIVE ALL RIGHTS TO A JURY TRIAL, and elect instead to have the dispute be resolved by a judge.</p>
         <p>‍</p>
-        <p>(e) Waiver of Class or Consolidated Actions</p>
+        <h5>(e) Waiver of Class or Consolidated Actions</h5>
         <p>ALL CLAIMS AND DISPUTES WITHIN THE SCOPE OF THIS ARBITRATION AGREEMENT MUST BE ARBITRATED OR LITIGATED ON AN INDIVIDUAL BASIS AND NOT ON A CLASS BASIS. CLAIMS OF MORE THAN ONE CUSTOMER OR USER CANNOT BE ARBITRATED OR LITIGATED JOINTLY OR CONSOLIDATED WITH THOSE OF ANY OTHER CUSTOMER OR USER. If however, this waiver of class or consolidated actions is deemed invalid or unenforceable, neither you nor Cyclic is entitled to arbitration; instead all claims and disputes will be resolved in a court as set forth in (g) below.</p>
         <p>‍</p>
-        <p>(f) Opt-out</p>
+        <h5>(f) Opt-out</h5>
         <p>You have the right to opt out of the provisions of this Section by sending written notice of your decision to opt out to the following address: 766 Beacom Ln, Merion Station, PA 19066 postmarked within thirty (30) days of first accepting these Terms. You must include (i) your name and residence address, (ii) the email address and/or telephone number associated with your account, and (iii) a clear statement that you want to opt out of these Terms' arbitration agreement.</p>
         <p>‍</p>
-        <p>(g) Exclusive Venue</p>
+        <h5>(g) Exclusive Venue</h5>
         <p>If you send the opt-out notice in (f), and/or in any circumstances where the foregoing arbitration agreement permits either you or Cyclic to litigate any dispute arising out of or relating to the subject matter of these Terms in court, then the foregoing arbitration agreement will not apply to either party, and both you and Cyclic agree that any judicial proceeding (other than small claims actions) will be brought in the state or federal courts located in, respectively, Montgomery County, Pennsylvania, or the federal district in which that county falls.</p>
         <p>‍</p>
-        <p>(h) Severability</p>
+        <h5>(h) Severability</h5>
         <p>If the prohibition against class actions and other claims brought on behalf of third parties contained above is found to be unenforceable, then all of the preceding language in this Arbitration Agreement section will be null and void. This arbitration agreement will survive the termination of your relationship with Cyclic.</p>
         <p>‍</p>
-        <p>Miscellaneous</p>
+        <h5>Miscellaneous</h5>
         <p>You will be responsible for paying, withholding, filing, and reporting all taxes, duties, and other governmental assessments associated with your activity in connection with the Services, provided that the Cyclic may, in its sole discretion, do any of the foregoing on your behalf or for itself as it sees fit. The failure of either you or us to exercise, in any way, any right herein shall not be deemed a waiver of any further rights hereunder. If any provision of these Terms are found to be unenforceable or invalid, that provision will be limited or eliminated, to the minimum extent necessary, so that these Terms shall otherwise remain in full force and effect and enforceable. You and Cyclic agree that these Terms are the complete and exclusive statement of the mutual understanding between you and Cyclic, and that these Terms supersede and cancel all previous written and oral agreements, communications and other understandings relating to the subject matter of these Terms. You hereby acknowledge and agree that you are not an employee, agent, partner, or joint venture of Cyclic, and you do not have any authority of any kind to bind Cyclic in any respect whatsoever.</p>
         <p>‍</p>
         <p>Except as expressly set forth in the section above regarding the arbitration agreement, you and Cyclic agree there are no third-party beneficiaries intended under these Terms.</p>
         <p>‍</p>
         <p>fin.<br></p>
-      </div>
-      <div class="spacer _48"></div>
-      <div class="_12-columns">
-        <div class="column desk-8"></div>
       </div>
     </div>
   </div>
