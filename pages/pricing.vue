@@ -194,7 +194,7 @@
                 <span class="text-primary text-2xl font-bold">$</span>
 
                 <p class="text-7xl text-white font-semibold">
-                  3
+                  6
                 </p>
 
                 <div class="">/ app environment / month</div>
