@@ -194,7 +194,7 @@
                 <span class="text-primary text-2xl font-bold">$</span>
 
                 <p class="text-7xl text-white font-semibold">
-                  3
+                  6
                 </p>
 
                 <div class="">/ app environment / month</div>
@@ -222,7 +222,7 @@
 
                 <div class="flex items-center gap-2">
                   <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">$3 / app environment / month</p>
+                  <p class="text-neutral-200">$6 / app environment / month</p>
                 </div>
 
                 <div class="flex items-center gap-2">
