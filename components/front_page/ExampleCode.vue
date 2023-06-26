@@ -36,6 +36,35 @@ MongoClient.connect(process.env.DB_URL, function(err, db) {
   }
 });
 `
+,
+`// Python Flask
+from flask import Flask
+import os
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, world!'
+`
+,
+`
+// GoLang
+package main
+import (
+	"net/http"
+)
+
+func helloHandler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("Hello, world!"))
+}
+
+func main() {
+	http.HandleFunc("/", helloHandler)
+	http.ListenAndServe(":8080", nil)
+}
+
+`
 ]
 
 const sleep = ms =>
