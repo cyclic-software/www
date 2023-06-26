@@ -14,7 +14,7 @@
                 </div>
                 <div class="build-thing">
                     <i class="fab fa-python"></i> GoLang <sup><small>BETA</small></sup>
-                </div>
+                </div> 
                 <div class="build-thing">
                     <i class="fas fa-tools"></i> Custom <sup><small>Coming Soon</small></sup>
                 </div>
