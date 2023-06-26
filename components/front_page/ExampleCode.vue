@@ -48,8 +48,7 @@ def hello_world():
     return 'Hello, world!'
 `
 ,
-`
-// GoLang
+`// GoLang
 package main
 import (
 	"net/http"
