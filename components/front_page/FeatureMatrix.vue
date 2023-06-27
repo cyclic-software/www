@@ -24,7 +24,7 @@
             <div>Hourly Limit</div> <div class="check">None - Unlimited</div>
             <div>Compute</div> <div class="check">1024 MB RAM</div>
             <div>Autoscaling</div> <div class="check">10 x 1024 MB</div>
-            <div>API Requests</div> <div class="check">100,000/month per app</div>
+            <div>API Requests</div> <div class="check">10,000/month per app</div>
             <div>Languages</div> <div class="check">JavaScript<br>TypeScript<br> Python<sup>BETA</sup>
             </div>
             <div>Integrated Database</div> <div class="check">1 GB</div>
