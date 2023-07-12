@@ -113,7 +113,7 @@
 
                 <div class="flex items-center gap-2">
                   <i class="ri-checkbox-circle-fill text-primary"></i>
-                  <p class="text-neutral-200">Javascript, Typescript, Python<sup>BETA</sup></p>
+                  <p class="text-neutral-200">Javascript, Typescript, Python<sup>BETA</sup>, Go<sup>BETA</sup></p>
                 </div>
 
                 <div class="flex items-center gap-2">
