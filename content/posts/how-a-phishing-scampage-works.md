@@ -12,8 +12,8 @@ category: engineering
 hidden: false
 featured: false
 public: 'Fri Aug 18 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
-# image: /content/staticsitebanner.jpg
-# thumbnail: /content/staticsitebanner.jpg
+image: /content/scampage-blog/pizza-hacker.jpeg
+thumbnail: /content/scampage-blog/pizza-hacker.jpeg
 ---
 
 
