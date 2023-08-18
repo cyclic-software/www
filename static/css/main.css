@@ -23,6 +23,11 @@ code[class*="language-"], pre[class*="language-"] {
     content:"" !important;
 }
 
+.prose-xl :where(figcaption):not(:where([class~="not-prose"] *)) {
+    font-size: 0.9em;
+    margin-top: -1em;
+}
+
 code[class*="language-"], pre[class*="language-"]  code{
     color:#C4C4C4 !important;
 }

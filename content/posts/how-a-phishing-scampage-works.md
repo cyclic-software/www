@@ -56,6 +56,7 @@ By far the most common and probably the most crudely implemented phishing scam w
 
 <p align="center">
     <img src="/content/scampage-blog/ms2.png" width="650px"></img>
+    <figcaption align = "center">The Microsoft login page is the most common scam we've seen hosted on cyclic.sh</figcaption>
 </p>
 
 #### The code 
@@ -77,6 +78,7 @@ This code obfuscated, encoded to hide its contents - in case the we or another h
 
 <p align="center">
     <img src="/content/scampage-blog/ms3.png" width="650px"></img>
+    <figcaption align = "center">Obfuscated code is rendered in browser with `document.write`</figcaption>
 </p>
 
 The login takes place in a sequence of prompts, just like the real thing. The username is captured in `index.html`, the user is then redirected to `login2.html` which prompts the user for their password. On submit, the credential pair is ajax posted to a PHP url. 
@@ -90,7 +92,8 @@ Another very common scam we see targets Adobe's document cloud.
 
 <p align="center">
     <img src="/content/scampage-blog/adobe.png" width="650px" ></img>
-
+    <figcaption align = "center">Another common scam targets Adobe, Netflix, and others with similar backend code</figcaption>
+</p>
 
 While Adobe and Netfix have been most common as of late, we've seen almost identical backend code for various frontends targeting America First Credit Union, CapitalOne, DHL, Netflix and others. 
 #### The code
@@ -99,12 +102,14 @@ Implementation here is a more sophisticated full stack express site built using 
 
 <p align="center">
     <img src="/content/scampage-blog/netflix_files.png" width="150px"></img>
+    <figcaption align = "center">Phishing site file structure</figcaption>
 </p>
 
 Mimicking the authentic login sequence, the frontend is separated into multiple `.edge` files rendered with the [express-edge](https://github.com/ecrmnn/express-edge) view engine. The CSS and HTML have been ripped off from the real login page:
 
 <p align="center">
     <img src="/content/scampage-blog/netflix_frontend.png" width="650px"></img>
+    <figcaption align = "center">The frontend is a clone that uses html ripped off from the original site</figcaption>
 </p>
 
 All the links to the Privacy Policy, Help Center and TOS still work and point to the real targets. The big difference is the form post on the scam page points to `/auth/login`.
@@ -113,13 +118,14 @@ All the links to the Privacy Policy, Help Center and TOS still work and point to
 
 #### `app.js`
 
-The `/auth/login` route is implemented in a controller. 
+First lets look at `app.js` before looking at the `/auth/login` controller:
 
 <p align="center">
     <img src="/content/scampage-blog/netflix_appjs.png" width="650px"></img>
+    <figcaption align = "center">The sites implements an anti-bot middleware</figcaption>
 </p>
 
-Before looking at that, suspiciously authored by a git user with the name `Disney Plus`, there is something interesting in the  `app.js` file.
+Suspiciously authored by a git user with the name `Disney Plus`, there is something interesting in the  `app.js` file.
 
 ```js
 // Bot Detection Middlewares
@@ -325,6 +331,7 @@ While no longer hosted at the `rose-lauchheim.de` domain, Pizzeria Rose seems to
 
 <p align="center"> 
     <img src="/content/scampage-blog/food.png" width="650px"></img>
+    <figcaption align = "center">An actual pizza from Pizzeria Rosa in Lauchheim, Germany</figcaption>
 </p>
 
 The unexpected association with pizza might be kind of funny, but it underscores a critical point: no business is immune from the reach of cyber threats. Even a small local business like Pizzeria Rose can become an unwitting participant in a larger malicious campaign. It is a reminder that that cybersecurity is not just a concern for large corporations.
