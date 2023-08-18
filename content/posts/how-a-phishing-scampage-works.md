@@ -21,7 +21,7 @@ thumbnail: /content/scampage-blog/pizza-hacker.jpeg
 
 There are a lot of dirty things you can do on the internet. There are disinformation campaigns, pirated movies, scams and cyber bullies, there is all you can eat pornography, spyware and even dubious dark web assassins.
 
-As a hosting provider, we do what is probably the dirtiest internet thing of all - we run code sent to us by total strangers.
+**As a hosting provider, we do what is probably the dirtiest internet thing of them all - we run code sent to us by total strangers.**
 
 At cyclic.sh, 99.9% of our users are awesome curious engineers, talented developers and entrepreneurs. Unfortunately a few of you (and you know who you are) (and we know who you are) are not so awesome. In this post we showcase some of the common scams that those not-so-awesome few have tried to get away with.
 
