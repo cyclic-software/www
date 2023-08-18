@@ -277,7 +277,7 @@ In September, GitHub is turning on MFA by default. That will help. What about Te
 ## The mystery
 
 
-The thing that stood out to me was the Telegram message header:
+When browsing the code, something stood out to me. The Telegram message header:
 ```
 `👾 SHAKESWORDE | NETFL1X | USER_${ipAddress}\n\n` +
 ```
