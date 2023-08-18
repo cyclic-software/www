@@ -282,7 +282,7 @@ When browsing the code, something stood out to me. The Telegram message header:
 `👾 SHAKESWORDE | NETFL1X | USER_${ipAddress}\n\n` +
 ```
 
-What is `SHAKESWORDE`? Is it some kind of cool 1337 haxor name? 
+What or who is `SHAKESWORDE`? Is it some kind of cool 1337 haxor name? 
 
 <p align="center">
     <img src="https://media0.giphy.com/media/Q2W4hziDOyzu0/giphy.gif?cid=ecf05e470qrb82k3b4fvpxh5l7l3up9tyefvhfmm09cntn3u&ep=v1_gifs_search&rid=giphy.gif&ct=g"/>
