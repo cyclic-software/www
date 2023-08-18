@@ -270,7 +270,7 @@ Unfortunately, in the brief interval between the scam emails being sent, detecti
 
 For hosting providers, both DAST and SAST are critical to identifying such scams before they even go live. While it is still very easy to create disposable GitHub accounts, many are obvious. Combining suspicious code detection with user traits helps us flag and triage malicious activity. 
 
-In September, GitHub's turning on MFA by default will help. What about Telegram and Proton? Time to step up and take action against malicious disposable accounts on your platforms. 
+In September, GitHub is turning on MFA by default. That will help. What about Telegram and Proton? Time to step up and take action against malicious disposable accounts on your platforms. 
 
 
 
