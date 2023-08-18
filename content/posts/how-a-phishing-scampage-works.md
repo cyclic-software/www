@@ -268,7 +268,7 @@ Phishing sites are disposable and can be stood up quickly. An orchestrated email
 
 Unfortunately, in the brief interval between the scam emails being sent, detection occurring, notification of the domain owner, and subsequent takedown - Some will fall for it. 
 
-For hosting providers, both DAST and SAST (Dynamic and Static Application Security Testing) are critical to identifying such scams before they even go live. While it is still very easy to create disposable GitHub accounts, many are obvious. Combining suspicious code detection with user traits helps us flag and triage malicious activity. 
+For service providers like us, both DAST and SAST (Dynamic and Static Application Security Testing) are critical to identifying such scams before they even go live. While it is still very easy to create disposable GitHub accounts, many are obvious. Combining suspicious code detection with user traits helps us flag and triage malicious activity. 
 
 In September, GitHub is turning on MFA by default. That will help. What about Telegram and Proton? Time to step up and take action against malicious disposable accounts on your platforms. 
 
