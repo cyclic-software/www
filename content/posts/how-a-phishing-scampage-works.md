@@ -21,7 +21,7 @@ There are a lot of dirty things you can do on the internet. There are disinforma
 
 **As a hosting provider, we do what is probably the dirtiest internet thing of them all - we run code sent to us by total strangers.**
 
-At cyclic.sh, 99.9% of our users are awesome curious engineers, talented developers and entrepreneurs. Unfortunately a few of you (and you know who you are) (and we know who you are) are not so awesome. In this post we showcase some of the common scams that those not-so-awesome few have tried to get away with.
+At cyclic.sh, 99.9% of our users are awesome curious engineers, talented developers and innovative entrepreneurs. Unfortunately a few of you (and you know who you are) (and we know who you are) are not so awesome. In this post we showcase some of the common scams that those not-so-awesome few have tried to get away with.
 
 The serverless nature of the platform naturally limits (does not eliminate) the capacity for many types of malicious behavior like vulnerability scanning, crypto mining,  brute force, etc. Unfortunately executing phishing attacks is still very much possible.  
 
