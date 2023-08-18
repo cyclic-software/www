@@ -130,7 +130,7 @@ Suspiciously authored by a git user with the name `Disney Plus`, there is someth
 app.use(antibot);
 ```
 
-There are good guys crawling the web looking for malicious sites like this. The scammers don't want to be found. While this attacker is not masking their code to subvert static analysis, they are are trying to protect the scam site against dynamic scans. For example if Google is scanning links in the body of email in your GMail inbox. 
+There are good guys crawling the web looking for malicious sites like this. The scammers don't want to be found. While this attacker is not masking their code to subvert static analysis, they are are trying to protect the scam site against dynamic scans. For example if Google is scanning links in the email body in your GMail inbox. 
 
 ```js
 // antibot.js
