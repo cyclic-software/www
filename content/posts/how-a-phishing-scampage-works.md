@@ -43,7 +43,7 @@ We've also found that most phishing scams are not perpetrated by lone wolf hacke
 There are different implementations but the shared anatomy is:
 - Legit looking domain or path that you wouldn't look at twice
 - Legit looking frontend that looks just like the real thing
-- Some backend to anonymously exfiltrate captured data to the bad guys via:
+- Backend to anonymously exfiltrate captured data to the bad guys via:
   - Email (most often @proton.me) 
   - Telegram 
   - Discord 
