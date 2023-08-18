@@ -300,9 +300,11 @@ So I googled it -
 
 Google's result seemed to find a site that lists some names of banks. Looks relevant.. 
 
-`https://rose-lauchheim.de/zmcheldj/scampages.html` as well as the root domain `https://rose-lauchheim.de` are down.
+The page from the result - `https://rose-lauchheim.de/zmcheldj/scampages.html` as well as the root domain `https://rose-lauchheim.de` are down.
 
-No luck for `scampages.html` on the Wayback Machine. I did find that the root domain was captured in 2022: 
+Maybe Wayback Machine caught it?
+
+No luck for `scampages.html` but the root domain was captured in 2022: 
 
 <p align="center">
     <img src="/content/scampage-blog/pizza.png" width="650px"></img>
