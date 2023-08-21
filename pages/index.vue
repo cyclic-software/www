@@ -1,15 +1,13 @@
 <template>
   <div id="index-page">
-    <div class="header_image fade_loop main_splash"></div>
-    <div class="max-w-screen-xl mx-auto">
-      <div class="front-page-spacer"></div>
+    <!-- <div class="header_image fade_loop main_splash"></div> -->
+    <div class="pt-20">
       <hero/>
-
-      <div class="front-page-spacer "></div>
+      <Steps />
+      <Supported />
+      <WhyCyclic />
       <frameworks/>
-      <!-- <div class="front-page-spacer spacer-smaller"></div> -->
       <big-feature/>
-      <div class="front-page-spacer spacer-smaller"></div>
       <languages/>
       <div class="front-page-spacer spacer-smaller"></div>
       <db-feature/>
@@ -51,6 +49,9 @@ import ProductDemo from '~/components/front_page/ProductDemo.vue'
 import Blurbs from '~/components/front_page/Blurbs.vue'
 import Hero from '~/components/front_page/Hero.vue'
 import FeatureMatrix from '~/components/front_page/FeatureMatrix.vue'
+import Steps from '~/components/front_page/Steps.vue'
+import Supported from '~/components/front_page/Supported.vue'
+import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
 
 export default {
   name: 'Homepage',
@@ -80,7 +81,10 @@ export default {
     ProductDemo,
     Hero,
     FeatureMatrix,
-  },
+    Steps,
+    Supported,
+    WhyCyclic
+},
   async created(){
     // warmup cms 
     await fetch('https://release-notes.cyclic.app/_healthcheck')
@@ -91,9 +95,9 @@ export default {
 <style scoped>
 
 
-#index-page{
+/* #index-page{
   background-color: black !important;
-}
+} */
 h1,h2 {
     letter-spacing: 2px;
 }

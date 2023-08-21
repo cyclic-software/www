@@ -1,136 +1,135 @@
 <template>
+  <nav id="menubar" class="fixed top-0 left-0 w-full z-50 bg-neutral-900 h-20 border-b border-neutral-800
+  flex items-center px-4 sm:px-0">
+    <div class="flex items-center justify-between w-full max-w-6xl mx-auto">
+      <!-- ********* BRAND & LINKS********* -->
+      <div class="flex items-center gap-5">
+        <Brand />
 
-<div class="mb-4">
-  <div id="menubar">
-    <b-navbar class="max-w-screen-xl mx-auto" id="menu" toggleable="md" type="dark" variant="none">
-      <!-- <div id="menu-content"> -->
-        <b-navbar-brand to="/" class="navbar-brand">
-          <img src="/images/cyclic-logo.png" class="logo-img"/>
-        </b-navbar-brand>
+        <div class="hidden md:block h-5 border-l border-neutral-700"></div>
 
-        <b-navbar-toggle target="nav-collapse" ></b-navbar-toggle>
+        <div class="hidden md:flex items-center gap-5">
+          <Navlink name="pricing" path="/pricing" />
+          <Navlink name="blog" path="/blog" />
+          <a class="text-sm capitalize" href="https://docs.cyclic.sh/" target="_blank">docs</a>
+          <Navlink name="vs Heroku" path="/vs-heroku" />
+          <Navlink name="updates" path="/updates" />
+        </div>
+      </div>
 
-        <b-collapse id="nav-collapse" is-nav @show="collapsed=false;" @hidden="collapsed=true;">
-          <b-navbar-nav>
-            <b-nav-item to="/pricing">Pricing</b-nav-item>
-            <b-nav-item to="/blog">Blog</b-nav-item>
-            <b-nav-item href="https://docs.cyclic.sh/" target="_blank">Docs</b-nav-item>
-            <b-nav-item 
-            to="/investors">Investors</b-nav-item>
-            <b-nav-item to="/vs-heroku">vs Heroku</b-nav-item>
-            <b-nav-item to="/updates">Product Updates</b-nav-item>
-          </b-navbar-nav>
+      <!-- ********* CONTROLS ********* -->
+      <div class="flex !items-center gap-5">
+        <a
+          href="https://app.cyclic.sh/api/login"
+          @click="sign_in('https://app.cyclic.sh/api/login', $event)"
+          class="m-0 text-sm capitalize"
+        >
+          login
+        </a>
 
-          <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item 
-            href="https://app.cyclic.sh/api/login"
-            @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
-            >
-              Sign Up
-            </b-nav-item>
-            <b-nav-item 
-            href="https://app.cyclic.sh/api/login"
-            @click="sign_in('https://app.cyclic.sh/api/login', $event)" 
-            >
-              Sign In
-            </b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
-      <!-- </div> -->
-    </b-navbar>
-  </div>
-  <div class="sp-65"></div>
-</div>
-
+        <a
+          href="https://app.cyclic.sh/api/login"
+          @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+          class="button button-primary m-0 w-max"
+        >sign up</a>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
   import chroma from "chroma-js"
+  import Brand from "./Brand.vue";
+  import Navlink from "./Navlink.vue";
 
   var scale = chroma.scale(['#0f2c4100', '#0f2c41']).domain([0, 40]); //#0b42d5
 
   export default {
-    data(){
-      return {
-        dark: false,
-        scrolled: false,
-        collapsed: null,
-      }
+    data() {
+        return {
+            dark: false,
+            scrolled: false,
+            collapsed: null
+        };
     },
-    mounted(){
-      this.handleScroll()
+    mounted() {
+        this.handleScroll();
     },
-    watch:{
-      scrolled(v){
-          this.dark = v;
-      },
-      collapsed(v){
-        let menubar = document.getElementById('menubar')
-        if(v)menubar.classList.remove('menu_collapsed')
-        if(!v)menubar.classList.add('menu_collapsed')
-      },
-      dark(v){
-        let menubar = document.getElementById('menubar')
-        if(v)menubar.classList.add('dark')
-        if(!v)menubar.classList.remove('dark')
-      }
+    watch: {
+        scrolled(v) {
+            this.dark = v;
+        },
+        collapsed(v) {
+            let menubar = document.getElementById('menubar');
+            if (v)
+                menubar.classList.remove('menu_collapsed');
+            if (!v)
+                menubar.classList.add('menu_collapsed');
+        },
+        dark(v) {
+            let menubar = document.getElementById('menubar');
+            if (v)
+                menubar.classList.add('dark');
+            if (!v)
+                menubar.classList.remove('dark');
+        }
     },
     methods: {
-      async sign_in(url, e){
-          try{
-              let session_seconds = parseInt(e.timeStamp/1000)
+        async sign_in(url, e) {
+            try {
+                let session_seconds = parseInt(e.timeStamp / 1000);
                 await gtag('event', 'header_sign_in', {
-                'event_label' : window.location.href,
-                'event_category' : 'sign_in',
-                'value' : session_seconds,
-
-                'page' : window.location,
-                'session_seconds': session_seconds,
-                'event_callback': function() {
-                  }
-                });  
-            }catch(e){
+                    'event_label': window.location.href,
+                    'event_category': 'sign_in',
+                    'value': session_seconds,
+                    'page': window.location,
+                    'session_seconds': session_seconds,
+                    'event_callback': function () {
+                    }
+                });
             }
-      },
-      async sign_up(url, e){
-          try{
-              let session_seconds = parseInt(e.timeStamp/1000)
+            catch (e) {
+            }
+        },
+        async sign_up(url, e) {
+            try {
+                let session_seconds = parseInt(e.timeStamp / 1000);
                 await gtag('event', 'header_sign_up', {
-                'event_label' : window.location.href,
-                'event_category' : 'sign_up',
-                'value' : session_seconds,
-
-                'page' : window.location,
-                'session_seconds': session_seconds,
-                'event_callback': function() {
-                  }
-                });  
-            }catch(e){
+                    'event_label': window.location.href,
+                    'event_category': 'sign_up',
+                    'value': session_seconds,
+                    'page': window.location,
+                    'session_seconds': session_seconds,
+                    'event_callback': function () {
+                    }
+                });
             }
-      },
-      handleScroll() {
-        if(window.pageYOffset){
-          this.scrolled = true;
+            catch (e) {
+            }
+        },
+        handleScroll() {
+            if (window.pageYOffset) {
+                this.scrolled = true;
+            }
+            else {
+                this.scrolled = false;
+            }
         }
-        else{
-          this.scrolled = false;
-        }
-      }
     },
-    beforeMount () {
-      window.addEventListener('scroll', this.handleScroll);
+    beforeMount() {
+        window.addEventListener('scroll', this.handleScroll);
     },
     beforeDestroy() {
-      window.removeEventListener('scroll', this.handleScroll);
-    }
-  }
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    components: { Brand, Navlink }
+}
 
 </script>
 
 
 <style scoped>
-  :root {
+  /* :root {
     --menu-height: 65px;
   }
   
@@ -165,7 +164,7 @@
   
   .dark, .menu_collapsed{
     @apply bg-black/90 border-b border-b-white/10 backdrop-blur-sm;
-  }
+  } */
 
 
 
