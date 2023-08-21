@@ -29,6 +29,10 @@
     @apply max-w-6xl mx-auto px-4 py-32 lg:px-0;
 }
 
+.common-section {
+    @apply flex flex-col items-center gap-8;
+}
+
 :root{
     --darkblue: #000D64;
     --blue: #2E59C7;

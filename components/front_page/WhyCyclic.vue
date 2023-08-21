@@ -1,5 +1,5 @@
 <template>
-  <section class="section flex flex-col items-center gap-8">
+  <section class="section common-section">
     <!-- ********* PILL TEXT ********* -->
     <Pill text="Loads of benefits" />
     
