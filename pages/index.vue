@@ -6,6 +6,7 @@
       <Steps />
       <Supported />
       <WhyCyclic />
+      <TrustedBy />
       <frameworks/>
       <big-feature/>
       <languages/>
@@ -52,6 +53,7 @@ import FeatureMatrix from '~/components/front_page/FeatureMatrix.vue'
 import Steps from '~/components/front_page/Steps.vue'
 import Supported from '~/components/front_page/Supported.vue'
 import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
+import TrustedBy from '~/components/front_page/TrustedBy.vue'
 
 export default {
   name: 'Homepage',
@@ -83,7 +85,8 @@ export default {
     FeatureMatrix,
     Steps,
     Supported,
-    WhyCyclic
+    WhyCyclic,
+    TrustedBy
 },
   async created(){
     // warmup cms 
