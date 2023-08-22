@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1690478320",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fhow-to-pass-9-aws-certifications-in-14-months",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"1d6be991"}},globalRefs:{}}}(null));
