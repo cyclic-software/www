@@ -23,13 +23,10 @@
       <CompanyStats/>
       <div class="front-page-spacer"></div> -->
       <feature-matrix/>
-      <div class="front-page-spacer"></div>
+      <Infrastructure />
       <product-demo/>
-      <div class="front-page-spacer"></div>
-      <blurbs/>
-      <div class="front-page-spacer"></div>
-      <CtaFullStackApps/>
-      <div class="front-page-spacer"></div>
+      <!-- <blurbs/>
+      <CtaFullStackApps/> -->
     </div>
   </div>
 </template>
@@ -54,6 +51,7 @@ import Steps from '~/components/front_page/Steps.vue'
 import Supported from '~/components/front_page/Supported.vue'
 import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
 import TrustedBy from '~/components/front_page/TrustedBy.vue'
+import Infrastructure from '~/components/front_page/Infrastructure.vue'
 
 export default {
   name: 'Homepage',
@@ -86,7 +84,8 @@ export default {
     Steps,
     Supported,
     WhyCyclic,
-    TrustedBy
+    TrustedBy,
+    Infrastructure
 },
   async created(){
     // warmup cms 
