@@ -33,6 +33,10 @@
     @apply flex flex-col items-center gap-8;
 }
 
+.blue-shadow {
+    box-shadow: 10px 0px 60px 4px #162859;
+}
+
 :root{
     --darkblue: #000D64;
     --blue: #2E59C7;
