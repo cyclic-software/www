@@ -26,8 +26,8 @@ export default {
 
 
 <template>
-  <div class="wrapper gradient-bg">
-    <div class="max-w-screen-xl mx-auto">
+  <section class="section">
+    <div class="">
       <b-container class="hero">
         <b-row>
           <b-col lg="1"></b-col>
@@ -184,7 +184,7 @@ export default {
       <CtaFullStackApps></CtaFullStackApps>
     </div>
 
-  </div>
+  </section>
 </template>
 
 
