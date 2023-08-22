@@ -14,8 +14,8 @@
       </p>
     </div>
     
-    <div class="border !border-neutral-700 rounded-3xl flex items-center justify-around p-5
-    gap-16 mt-10 bg-neutral-800/20 w-full">
+    <div class="border !border-neutral-700 rounded-3xl flex flex-col sm:flex-row items-center justify-around p-5
+    gap-16 mt-10 bg-neutral-800/20 w-full flex-wrap">
       <StatCard
         stat="5,600+"
         text="Developers active this week"

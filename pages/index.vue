@@ -7,7 +7,7 @@
       <Supported />
       <WhyCyclic />
       <TrustedBy />
-      <frameworks/>
+      <!-- <frameworks/>
       <big-feature/>
       <languages/>
       <div class="front-page-spacer spacer-smaller"></div>
@@ -21,7 +21,7 @@
       <small-feature/>
       <div class="front-page-spacer"></div>
       <CompanyStats/>
-      <div class="front-page-spacer"></div>
+      <div class="front-page-spacer"></div> -->
       <feature-matrix/>
       <div class="front-page-spacer"></div>
       <product-demo/>
