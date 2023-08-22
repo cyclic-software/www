@@ -2,7 +2,39 @@
   <div id="index-page">
     <div class="header_image fade_loop main_splash"></div>
     <div class="max-w-screen-xl mx-auto">
-      <div class="front-page-spacer"></div>
+      
+    <b-alert show class="header-alert">
+      <div class="b-content">
+        <b-row>
+        <b-col md="3" align-self="center">
+          <h2>Bring Cyclic to Work</h2>
+        </b-col>
+        <b-col md="7" align-self="center">
+        <p>
+          We are growing the product for teams and are looking for design partners.
+        <br>
+
+          Are you part of a team that could use Cyclic at work?
+      </p>
+    </b-col>
+    <b-col md=2 align-self="center">
+      <b-button
+                  href="https://cyclic.typeform.com/to/HNNO8Bkp"
+                  class="m-1"
+                  target="_blank"
+                  variant="warning" size="lg">
+                  Lets talk!
+                  </b-button>
+    </b-col>
+      </b-row>
+     
+    </div>
+  </b-alert> 
+  <br><br> 
+  <br>
+      
+    
+      <!-- <div class="front-page-spacer"></div> -->
       <hero/>
 
       <div class="front-page-spacer "></div>
@@ -171,4 +203,53 @@ em{
   }
 }
   
+  .banner{
+    /* position: absolute;
+    width: 100%;
+    z-index: 90; */
+  }
+  
+  .b-content{
+    max-width: 1250px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .b-content h2{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    letter-spacing: normal;;
+    font-size:25px;
+    font-weight:500;
+    /* color: white; */
+  }
+  .b-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1.1rem;; */
+  }
+  .b-content ul{
+    margin-left: 20px;
+  }
+  .header-alert{
+    color: white;
+    /* color: #ffc008; */
+    background-color: #080e20;
+    border-radius: 10px;
+    /* backdrop-filter: blur(5px); */
+    border: 0px solid #ffc008;
+    animation: popup 0.2s;
+
+  }
+
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 </style>
