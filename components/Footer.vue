@@ -1,7 +1,7 @@
 <template>
-  <footer class="border-t border-white/20 py-16 px-6 sm:px-10 xl:px-20
+  <footer class="border-t border-white/20 py-16 px-6 sm:px-0
   bg-black/20 backdrop-blur">
-    <div class="flex flex-col md:flex-row gap-20 justify-between max-w-screen-xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-20 justify-between max-w-6xl mx-auto">
       <!-- ********** LINKS ********** -->
       <div class="flex flex-wrap gap-16 sm:gap-20">
         <!-- ********** COMPANY ********** -->
@@ -113,17 +113,17 @@
       </div>
   
       <!-- ********** BRAND ********** -->
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-6">
         <nuxt-link
           data-ix="logo"
           to="/"
           aria-current="page"
           class=""
         >
-          <img src="/images/default-monochrome-white.svg" loading="lazy" alt="cyclic logo" class="w-40 h-auto">
+          <img src="/images/default-monochrome-white.svg" loading="lazy" alt="cyclic logo" class="w-32 h-auto">
         </nuxt-link>
   
-        <p class="paragraph-small no-margin">
+        <p class="text-sm text-neutral-400">
           © 2021-{{ (1900+(new Date()).getYear()) }} <a href="/" aria-current="page" class="w--current">Cyclic Software</a>
         </p>
       </div>
