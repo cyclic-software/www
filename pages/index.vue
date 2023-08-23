@@ -25,6 +25,7 @@
       <feature-matrix/>
       <Infrastructure />
       <product-demo/>
+      <Campaign />
       <!-- <blurbs/>
       <CtaFullStackApps/> -->
     </div>
@@ -52,6 +53,7 @@ import Supported from '~/components/front_page/Supported.vue'
 import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
 import TrustedBy from '~/components/front_page/TrustedBy.vue'
 import Infrastructure from '~/components/front_page/Infrastructure.vue'
+import Campaign from '~/components/front_page/Campaign.vue'
 
 export default {
   name: 'Homepage',
@@ -85,7 +87,8 @@ export default {
     Supported,
     WhyCyclic,
     TrustedBy,
-    Infrastructure
+    Infrastructure,
+    Campaign
 },
   async created(){
     // warmup cms 
