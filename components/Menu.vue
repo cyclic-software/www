@@ -1,37 +1,58 @@
 <template>
-  <nav id="menubar" class="fixed top-0 left-0 w-full z-50 bg-neutral-900 h-20 border-b border-neutral-800
-  flex items-center px-4 sm:px-0">
-    <div class="flex items-center justify-between w-full max-w-6xl mx-auto">
-      <!-- ********* BRAND & LINKS********* -->
-      <div class="flex items-center gap-5">
-        <Brand />
-
-        <div class="hidden md:block h-5 border-l border-neutral-700"></div>
-
-        <div class="hidden md:flex items-center gap-5">
-          <Navlink name="pricing" path="/pricing" />
-          <Navlink name="blog" path="/blog" />
-          <a class="text-sm capitalize text-neutral-300 hover:text-white transition" href="https://docs.cyclic.sh/" target="_blank">docs</a>
-          <Navlink name="vs Heroku" path="/vs-heroku" />
-          <Navlink name="updates" path="/updates" />
+  <nav id="menubar" class="fixed top-0 left-0 w-full z-50 bg-neutral-900">
+    <div class="border-b border-neutral-800 px-4 sm:px-0 py-4">
+      <div class="flex items-center justify-between w-full max-w-6xl mx-auto">
+        <!-- ********* BRAND & LINKS********* -->
+        <div class="flex items-center gap-5">
+          <Brand />
+  
+          <div class="hidden md:block h-5 border-l border-neutral-700"></div>
+  
+          <div class="hidden md:flex items-center gap-5">
+            <Navlink name="pricing" path="/pricing" />
+            <Navlink name="blog" path="/blog" />
+            <a class="text-sm capitalize text-neutral-300 hover:text-white transition" href="https://docs.cyclic.sh/" target="_blank">docs</a>
+            <Navlink name="vs Heroku" path="/vs-heroku" />
+            <Navlink name="updates" path="/updates" />
+          </div>
+        </div>
+  
+        <!-- ********* CONTROLS ********* -->
+        <div class="flex !items-center gap-5">
+          <a
+            href="https://app.cyclic.sh/api/login"
+            @click="sign_in('https://app.cyclic.sh/api/login', $event)"
+            class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
+          >
+            login
+          </a>
+  
+          <a
+            href="https://app.cyclic.sh/api/login"
+            @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+            class="button button-primary m-0 w-max"
+          >sign up</a>
         </div>
       </div>
+    </div>
 
-      <!-- ********* CONTROLS ********* -->
-      <div class="flex !items-center gap-5">
-        <a
-          href="https://app.cyclic.sh/api/login"
-          @click="sign_in('https://app.cyclic.sh/api/login', $event)"
-          class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
-        >
-          login
-        </a>
-
-        <a
-          href="https://app.cyclic.sh/api/login"
-          @click="sign_up('https://app.cyclic.sh/api/login', $event)"
-          class="button button-primary m-0 w-max"
-        >sign up</a>
+    <div v-if="show_banner" class="border-b border-neutral-700 px-4 sm:px-0 py-2 bg-neutral-800">
+      <div class="max-w-6xl mx-auto flex items-center gap-4 text-sm">
+        <p class="font-semibold">Bring Cyclic to Work</p>
+        <div class="h-3 w-px border-l !border-neutral-600"></div>
+        <p class="text-neutral-300">
+          We are growing the product for teams and are looking for design partners. Are you part of a team that could use Cyclic at work?
+          <a
+            href="https://cyclic.typeform.com/to/HNNO8Bkp"
+            class="text-sky-400 capitalize underline"
+            target="_blank"
+          >
+            let's talk
+          </a>
+        </p>
+        <button class="text-neutral-400 hover:text-white transition" @click="show_banner=false">
+          <i class="ri-close-line"></i>
+        </button>
       </div>
     </div>
   </nav>
@@ -49,7 +70,8 @@
         return {
             dark: false,
             scrolled: false,
-            collapsed: null
+            collapsed: null,
+            show_banner: true
         };
     },
     mounted() {
