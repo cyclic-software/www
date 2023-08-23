@@ -11,7 +11,7 @@
         <div class="hidden md:flex items-center gap-5">
           <Navlink name="pricing" path="/pricing" />
           <Navlink name="blog" path="/blog" />
-          <a class="text-sm capitalize" href="https://docs.cyclic.sh/" target="_blank">docs</a>
+          <a class="text-sm capitalize text-neutral-300 hover:text-white transition" href="https://docs.cyclic.sh/" target="_blank">docs</a>
           <Navlink name="vs Heroku" path="/vs-heroku" />
           <Navlink name="updates" path="/updates" />
         </div>
@@ -22,7 +22,7 @@
         <a
           href="https://app.cyclic.sh/api/login"
           @click="sign_in('https://app.cyclic.sh/api/login', $event)"
-          class="m-0 text-sm capitalize"
+          class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
         >
           login
         </a>
