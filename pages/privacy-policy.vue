@@ -1,15 +1,29 @@
 <template>
-  <div class="wrapper gradient-bg">
-    <div class="max-w-screen-lg mx-auto space-y-10 py-8 px-4 lg:!px-0">
-      <h1 class="text-4xl xl:text-5xl font-black capitalize m-0 mb-4 tracking-tight">
-        Privacy Policy
-      </h1>
+  <section class="section space-y-12">
+    <div class="common-section">
+      <!-- ********* PILL TEXT ********* -->
+      <Pill text="Read carefully" />
+      
+      <!-- ********* CTA TEXTS ********* -->
+      <div class="space-y-6">
+        <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
+          privacy policy
+        </h2>
+    
+        <p class="text-center text-neutral-300">
+          Stay up to date with our privacy policy.
+        </p>
+      </div>
+    </div>
 
-      <p class="paragraph-small">Last updated September 2022</p>
+    <hr class="border-neutral-800">
+
+    <div class="mx-auto w-full lg:w-[80%] space-y-12">
+        <p class="text-sm text-sky-400">Last updated February 2022</p>
 
       <div class="w-richtext prose prose-xl prose-invert prose-a:text-sky-300
       prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
-      prose-img:rounded-xl prose-h5:text-white prose-h5:font-semibold">
+      prose-img:rounded-xl prose-h5:text-white prose-h5:font-semibold mx-auto">
         <h3>1. Introduction</h3>
 
 <p>Welcome Cyclic Software, Inc. ("us", "we", or "our") operates https://app.cyclic.sh (hereinafter referred to as "Service").
@@ -347,11 +361,8 @@ If you have any questions about this Privacy Policy, please contact us:
 <p>
 By email: support@cyclic.sh
 </p>
-      </div>
-      <div class="spacer _48"></div>
-      <div class="_12-columns">
-        <div class="column desk-8"></div>
-      </div>
-    </div>
-  </div>
+</p>
+        </div>
+        </div>
+</section>
 </template>
