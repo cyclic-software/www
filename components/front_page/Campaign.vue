@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="flex flex-col md:flex-row md:items-center border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10">
+    <div class="flex flex-col gap-8 md:flex-row md:items-center border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10">
       <div class="space-y-5">
         <h2 class="text-3xl font-semibold">Bring Cyclic to Work</h2>
         <hr class="border-primary w-10">
