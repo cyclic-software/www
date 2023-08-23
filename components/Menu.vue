@@ -1,6 +1,6 @@
 <template>
-  <nav id="menubar" class="fixed top-0 left-0 w-full z-50 bg-neutral-900">
-    <div class="border-b border-neutral-800 px-4 sm:px-0 py-4">
+  <nav id="menubar" class="fixed top-0 left-0 w-full z-50 bg-neutral-900/90 backdrop-blur">
+    <div class="border-b border-neutral-800 px-4 sm:px-0 py-3">
       <div class="flex items-center justify-between w-full max-w-6xl mx-auto">
         <!-- ********* BRAND & LINKS********* -->
         <div class="flex items-center gap-5">
