@@ -5,7 +5,9 @@
       {{ step_num }}
     </div>
 
-    <div class="h-60 w-full bg-neutral-800 rounded-2xl"></div>
+    <div class="h-60 w-full  rounded-2xl">
+      <slot></slot>
+    </div>
 
     <h3 class="text-2xl">{{ text }}</h3>
   </div>
