@@ -3,7 +3,7 @@
     class="flex items-center gap-2 cursor-pointer"
     @click="() => { $router.push('/') }"
   >
-    <svg class="h-10 w-auto" viewBox="0 0 46 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg :class="`${small ? 'h-5' : 'h-10'} w-auto`" viewBox="0 0 46 95" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 39.4075H22.2347L33.0741 46.4445H11.1173L0 39.4075Z" class="fill-primary dark:fill-white"/>
       <path d="M2.11108 28.8518H22.9265L33.074 46.4444H12.5188L2.11108 28.8518Z" class="fill-white" fill-opacity="0.75"/>
       <path d="M4.9259 18.2964H23.849L33.0741 46.4445H14.3875L4.9259 18.2964Z" class="fill-white" fill-opacity="0.65"/>
@@ -23,6 +23,6 @@
 <script>
   export default {
     name: 'Brand',
-    props: ['hideText']
+    props: ['hideText', 'small']
   }
 </script>
