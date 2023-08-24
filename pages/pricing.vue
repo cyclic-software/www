@@ -185,12 +185,12 @@
       </div>
 
       <!-- ****** BUILD PLAN ****** -->
-      <div class="flex flex-col gap-7 p-6 border !border-neutral-800
+      <div class="flex flex-col gap-7 p-6 border !border-white
       bg-neutral-800/10 rounded-2xl hover:!border-white
       transition">
         <div class="space-y-4">
           <h4 class="text-2xl font-semibold">Usage Based</h4>
-          <p class="text-neutral-300">Pay for what you use. Link value to cost.</p>
+          <p class="text-neutral-300">Only pay for what you use and link value to cost.</p>
         </div>
 
         <div class="space-y-5">
