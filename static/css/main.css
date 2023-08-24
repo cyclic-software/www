@@ -26,7 +26,7 @@
 }
 
 .section {
-    @apply max-w-6xl mx-auto px-4 py-32 lg:px-0;
+    @apply max-w-6xl mx-auto px-4 py-32 xl:!px-0;
 }
 
 .common-section {
