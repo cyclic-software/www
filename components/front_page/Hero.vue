@@ -21,7 +21,7 @@
         class="button button-primary m-0 text-base w-max"
         @click="sign_up('https://app.cyclic.sh/api/login', $event)"
       >
-        <Brand :hideText="true" />
+        <Brand :hideText="true" :small="true" />
         deploy now
       </a>
 
