@@ -12,6 +12,7 @@
             <Navlink name="pricing" path="/pricing" />
             <Navlink name="blog" path="/blog" />
             <a class="text-sm capitalize text-neutral-300 hover:text-white transition" href="https://docs.cyclic.sh/" target="_blank">docs</a>
+            <Navlink name="investors" path="/investors" />
             <Navlink name="vs Heroku" path="/vs-heroku" />
             <Navlink name="updates" path="/updates" />
           </div>
@@ -80,7 +81,6 @@
       </div>
 
       <div class="grid grid-cols-1 gap-5 pt-24 px-6" @click="menu_open=false">
-
         <nuxt-link
           class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
           rounded-lg transition w-full"
@@ -96,6 +96,14 @@
           to="/blog"
         >
           blog
+        </nuxt-link>
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/investors"
+        >
+          investors
         </nuxt-link>
 
         <nuxt-link
