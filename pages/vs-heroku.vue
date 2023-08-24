@@ -28,13 +28,28 @@ export default {
 <template>
   <section class="section">
     <div class="">
-      <b-container class="hero pt-20">
+      <div class="pt-20 space-y-12">
+        <div class="common-section">
+          <!-- ********* PILL TEXT ********* -->
+          <Pill text="One v One" />
+          
+          <!-- ********* CTA TEXTS ********* -->
+          <div class="space-y-6">
+            <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
+              Heroku vs Cyclic
+            </h2>
+        
+            <p class="text-center text-neutral-300">
+              Take a look at how Cyclic compares to Heroku.
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-neutral-800">
+
         <b-row>
           <b-col lg="1"></b-col>
           <b-col md="6" lg="5" align-self="center" class="space-y-4 text-lg">
-            <h1 class="text-7xl font-black capitalize m-0 mb-4">
-              Heroku vs Cyclic
-            </h1>
             <div class="spacer-32"></div>
             <p>
                 Heroku is one of the best known PaaS (Platform as a Service) vendors.
@@ -70,7 +85,7 @@ export default {
           </b-col>
           <b-col lg="1"></b-col>
         </b-row>
-      </b-container>
+      </div>
 
 
       <b-container>

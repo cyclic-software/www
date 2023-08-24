@@ -27,13 +27,25 @@ export default {
 
 <template>
   <section class="section">
-    <b-container class="hero pt-20">
-      <b-row>
-        <b-col lg="1"></b-col>
-        <b-col><h1 class="text-7xl font-black capitalize m-0 mb-4">
-            Investors
-          </h1></b-col>
-      </b-row>
+    <b-container class="pt-20 space-y-12">
+      <div class="common-section">
+          <!-- ********* PILL TEXT ********* -->
+          <Pill text="Invest in Cyclic" />
+          
+          <!-- ********* CTA TEXTS ********* -->
+          <div class="space-y-6">
+            <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
+              Investors
+            </h2>
+        
+            <p class="text-center text-neutral-300">
+              Cyclic is the future of cloud.
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-neutral-800">
+
       <b-row>
         <b-col lg="1"></b-col>
         <b-col md="7" lg="5" align-self="center" class="space-y-4 text-lg">
