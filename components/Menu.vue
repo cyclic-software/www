@@ -73,19 +73,21 @@
         <i class="ri-close-line"></i>
       </button>
 
-      <div class="absolute top-4 left-4">
-        <Brand />
+      <div class="absolute top-4 left-4" @click="menu_open=false">
+        <nuxt-link class="hover:no-underline" to="/">
+          <Brand />
+        </nuxt-link>
       </div>
 
       <div class="grid grid-cols-1 gap-5 pt-24 px-6" @click="menu_open=false">
 
-          <nuxt-link
-            class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-            rounded-lg transition w-full"
-            to="/pricing"
-          >
-            pricing
-          </nuxt-link>
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition w-full"
+          to="/pricing"
+        >
+          pricing
+        </nuxt-link>
 
 
         <nuxt-link
