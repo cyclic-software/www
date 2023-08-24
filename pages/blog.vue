@@ -1,6 +1,6 @@
 <template>
   <section class="section common-section w-full gap-10">
-    <div class="common-section">
+    <div class="common-section pt-20">
       <!-- ********* PILL TEXT ********* -->
       <Pill text="Get to know us" />
       

@@ -28,11 +28,11 @@ export default {
 <template>
   <section class="section">
     <div class="">
-      <b-container class="hero">
+      <b-container class="hero pt-20">
         <b-row>
           <b-col lg="1"></b-col>
           <b-col md="6" lg="5" align-self="center" class="space-y-4 text-lg">
-            <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
+            <h1 class="text-7xl font-black capitalize m-0 mb-4">
               Heroku vs Cyclic
             </h1>
             <div class="spacer-32"></div>
