@@ -30,26 +30,15 @@
         </div>
       </div>
 
-      <!-- CONTENT SECTION -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <!-- BODY -->
-        <div class="col-span-1 lg:col-span-2">
-          <div class="rich-text w-richtext">
-            <nuxt-content
-              :document="post"
-              class="prose prose-xl prose-invert prose-a:text-sky-300
-              prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
-              prose-img:rounded-xl"
-            ></nuxt-content>
-          </div>
-        </div>
 
-        <!-- SIDE PANEL -->
-        <div class="col-span-1">
-          
-        </div>
+      <div class="grid grid-cols-1">
+        <nuxt-content
+          :document="post"
+          class="prose prose-xl prose-invert prose-a:text-sky-300
+          prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
+          prose-img:rounded-xl mx-auto w-full lg:w-max"
+        ></nuxt-content>
       </div>
-
     </div>
 
     <HubspotBlogForm />
