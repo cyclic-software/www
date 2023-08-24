@@ -19,19 +19,27 @@
   
         <!-- ********* CONTROLS ********* -->
         <div class="flex !items-center gap-5">
-          <a
-            href="https://app.cyclic.sh/api/login"
-            @click="sign_in('https://app.cyclic.sh/api/login', $event)"
-            class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
-          >
-            login
-          </a>
-  
-          <a
-            href="https://app.cyclic.sh/api/login"
-            @click="sign_up('https://app.cyclic.sh/api/login', $event)"
-            class="button button-primary m-0 w-max"
-          >sign up</a>
+          <button class="flex items-center justify-center h-10 w-10 border rounded-xl !border-neutral-700
+          bg-neutral-800/20 hover:!border-white transition md:hidden"
+          @click="menu_open=!menu_open">
+            <i class="ri-menu-line"></i>
+          </button>
+
+          <div class="hidden md:flex items-center gap-5">
+            <a
+              href="https://app.cyclic.sh/api/login"
+              @click="sign_in('https://app.cyclic.sh/api/login', $event)"
+              class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
+            >
+              login
+            </a>
+    
+            <a
+              href="https://app.cyclic.sh/api/login"
+              @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+              class="button button-primary m-0 w-max"
+            >sign up</a>
+          </div>
         </div>
       </div>
     </div>
@@ -55,6 +63,85 @@
         </button>
       </div>
     </div>
+
+    <!-- MOBILE MENU -->
+    <div :class="`fixed top-0 right-0 ${menu_open ? 'translate-x-0':'translate-x-full'} flex flex-col md:hidden w-full h-screen
+    bg-neutral-800 border-l border-neutral-700 transition`">
+      <button class="flex items-center justify-center h-10 w-10 border rounded-xl !border-neutral-700
+      bg-neutral-800/20 hover:!border-white transition md:hidden absolute top-4 right-5"
+      @click="menu_open=false">
+        <i class="ri-close-line"></i>
+      </button>
+
+      <div class="absolute top-4 left-4">
+        <Brand />
+      </div>
+
+      <div class="grid grid-cols-1 gap-5 pt-24 px-6" @click="menu_open=false">
+
+          <nuxt-link
+            class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+            rounded-lg transition w-full"
+            to="/pricing"
+          >
+            pricing
+          </nuxt-link>
+
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/blog"
+        >
+          blog
+        </nuxt-link>
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/vs-heroku"
+        >
+          vs heroku
+        </nuxt-link>
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/updates"
+        >
+          updates
+        </nuxt-link>
+
+        <a
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          href="https://docs.cyclic.sh/"
+          target="_blank"
+        >
+          docs
+        </a>
+
+
+      </div>
+
+      <div class="grid grid-cols-1 mt-10 px-6 gap-2">
+        <a
+          href="https://app.cyclic.sh/api/login"
+          @click="sign_in('https://app.cyclic.sh/api/login', $event)"
+          class="border !border-neutral-700 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
+          gap-2 hover:no-underline hover:!border-white transition w-full"
+        >
+          login
+        </a>
+
+        <a
+          href="https://app.cyclic.sh/api/login"
+          @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+          class="bg-primary text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
+          gap-2 hover:no-underline hover:scale-105 transition w-full"
+        >sign up</a>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -71,7 +158,8 @@
             dark: false,
             scrolled: false,
             collapsed: null,
-            show_banner: true
+            show_banner: true,
+            menu_open: false
         };
     },
     mounted() {
