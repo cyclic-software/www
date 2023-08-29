@@ -1,5 +1,5 @@
 <template>
-  <section class="section grid grid-cols-1 sm:grid-cols-3 gap-4">
+  <section class="section grid grid-cols-1 sm:grid-cols-3 gap-20 sm:gap-4">
     <StepCard :step_num="1" text="Start with what you know">
       <ExampleCode />
     </StepCard>
