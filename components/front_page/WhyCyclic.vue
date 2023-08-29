@@ -37,7 +37,7 @@
       />
 
       <BenefitCard
-        icon=""
+        icon="ri-pulse-line"
         title="Spike resistant"
         text="Scale up and down instantly. 1GB serverless compute handles EACH individual request."
         no_border="top"
