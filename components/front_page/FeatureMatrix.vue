@@ -1,7 +1,7 @@
 <template>
   <section class="section common-section">
     <!-- ********* PILL TEXT ********* -->
-    <Pill text="A free tier on steroids" />
+    <Pill text="A free tier that's actually useful" />
     
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">

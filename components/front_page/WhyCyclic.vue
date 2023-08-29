@@ -1,7 +1,7 @@
 <template>
   <section class="section common-section">
     <!-- ********* PILL TEXT ********* -->
-    <Pill text="Loads of benefits" />
+    <Pill text="Build bigger" />
     
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">
