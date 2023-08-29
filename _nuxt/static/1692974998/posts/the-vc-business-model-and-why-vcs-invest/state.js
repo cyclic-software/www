@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1692974998",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fthe-vc-business-model-and-why-vcs-invest",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"71a7132f"}},globalRefs:{}}}(null));
