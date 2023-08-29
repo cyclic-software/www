@@ -267,9 +267,9 @@ That is about the end of the story, after the attacker gets these messages, they
 
 Phishing sites are disposable and can be stood up quickly. An orchestrated email campaign can direct thousands of visitors to a fraudulent site within a short time. Props to the folks over at [Netcraft](https://netcraft.com); they're on the ball with reporting these shady sites to domain owners.
 
-Unfortunately, in the brief interval between the scam emails being sent, detection occurring, notification of the domain owner, and subsequent takedown - Some will fall for it. 
+Unfortunately, in the brief interval between the scam emails being sent, detection occurring, notification of the domain owner, and subsequent takedown - Some will fall for it. Delaying detection for as long as possible is key for these scams. We've showed just two of the ways it is done.  
 
-For service providers like us, both DAST and SAST (Dynamic and Static Application Security Testing) are critical to identifying such scams before they even go live. While it is still very easy to create disposable GitHub accounts, many are obvious. Combining suspicious code detection with user traits helps us flag and triage malicious activity. 
+For service providers like us, both DAST and SAST (Dynamic and Static Application Security Testing) are critical to identifying such scams before they even go live. While it is still very easy to create disposable GitHub accounts to distribute this code, most disposable accounts are obvious. Combining suspicious code detection with user traits helps us flag and triage malicious activity. 
 
 In September, GitHub is turning on MFA by default. That will help. What about Telegram and Proton? Time to step up and take action against malicious disposable accounts on your platforms. 
 
