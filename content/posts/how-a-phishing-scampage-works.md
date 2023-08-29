@@ -43,6 +43,7 @@ We've also found that most phishing scams are not perpetrated by lone wolf hacke
 There are different implementations but the shared anatomy is:
 - Legit looking domain or path that you wouldn't look at twice
 - Legit looking frontend that looks just like the real thing
+- Some mechanism to hide code from security scan
 - Backend to anonymously exfiltrate captured data to the bad guys via:
   - Email (most often @proton.me) 
   - Telegram 
@@ -71,7 +72,7 @@ This one is a simple hello-world express.js site serving two static files `index
 <script type='text/javascript'> str='x3Cx21x44x4Fx43x54x59x.....2Fx68x74x6Dx6Cx3E'; document.write(unescape(str.replace(/x/g,'%'))); </script>
 ```
 
-This code obfuscated, encoded to hide its contents - in case the we or another host is doing static analysis during deployment. Most crawler bots do not execute javascript so the contents would be obfuscated from them also. When loaded in a victim's browser, `document.write` renders those malicious jQuery `$`'s. 
+This code obfuscated, encoded to hide its contents. Most crawler bots do not execute javascript. The contents would also be hidden from a host like us that is doing static analysis during deployment. When loaded in a victim's browser, `document.write` renders those malicious jQuery `$`'s. 
 
 
 <p align="center">
