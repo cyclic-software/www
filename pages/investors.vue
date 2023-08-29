@@ -26,22 +26,32 @@ export default {
 
 
 <template>
-<div class="wrapper gradient-bg">
-  <div class="max-w-screen-xl mx-auto">
+  <section class="section">
+    <b-container class="pt-20 space-y-12">
+      <div class="common-section">
+          <!-- ********* PILL TEXT ********* -->
+          <Pill text="Invest in Cyclic" />
+          
+          <!-- ********* CTA TEXTS ********* -->
+          <div class="space-y-6">
+            <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
+              Investors
+            </h2>
+        
+            <p class="text-center text-neutral-300">
+              Cyclic is the future of cloud.
+            </p>
+          </div>
+        </div>
 
-    <b-container class="hero">
-      <b-row>
-        <b-col lg="1"></b-col>
-        <b-col><h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
-            Investors
-          </h1></b-col>
-      </b-row>
+        <hr class="border-neutral-800">
+
       <b-row>
         <b-col lg="1"></b-col>
         <b-col md="7" lg="5" align-self="center" class="space-y-4 text-lg">
-
+    
           <div class="spacer-32"></div>
-
+    
           <h4 class="text-2xl font-bold">Software is changing</h4>
           <p>
             <!-- Cloud native <strong>serverless</strong> architectures are enabling applications to grow from zero to global
@@ -51,14 +61,14 @@ export default {
             Innovative organizations are adopting these technologies despite complexity of tooling, design and orchestration.
           </p>
           <div class="spacer-32"></div>
-
+    
           <h4 class="text-2xl font-bold">Lower barriers - faster time to market</h4>
           <p>
             Without the support of a platform team, an individual developer lacks access to this massive potential.
             The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
             Cyclic eliminates barriers to meet developers where they are. So even the most junior developer can take advantage of these technologies.
           </p>
-
+    
           <div class="spacer-32"></div>
           <h4 class="text-2xl font-bold">A good start and yet so much more to do</h4>
           <p>
@@ -90,7 +100,8 @@ export default {
               <p class="mt-4">
                   <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www"
                   @click="track()"
-                    class="button outline-white w-button">Subscribe to Investor Updates</a>
+                    class="border !border-neutral-700 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
+                    gap-2 hover:no-underline hover:!border-white transition w-max mx-auto">Subscribe to Investor Updates</a>
                 </p>
             </div>
           </div>
@@ -98,10 +109,9 @@ export default {
         <b-col lg="1"></b-col>
       </b-row>
     </b-container>
-
+    
     <CtaFullStackApps></CtaFullStackApps>
-  </div>
-</div>
+  </section>
 </template>
 
 <script>

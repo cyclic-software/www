@@ -1,47 +1,14 @@
 <template>
   <div id="index-page">
-    <div class="header_image fade_loop main_splash"></div>
-    <div class="max-w-screen-xl mx-auto">
-      
-    <b-alert show class="header-alert">
-      <div class="b-content">
-        <b-row>
-        <b-col md="3" align-self="center">
-          <h2>Bring Cyclic to Work</h2>
-        </b-col>
-        <b-col md="7" align-self="center">
-        <p>
-          We are growing the product for teams and are looking for design partners.
-        <br>
-
-          Are you part of a team that could use Cyclic at work?
-      </p>
-    </b-col>
-    <b-col md=2 align-self="center">
-      <b-button
-                  href="https://cyclic.typeform.com/to/HNNO8Bkp"
-                  class="m-1"
-                  target="_blank"
-                  variant="warning" size="lg">
-                  Lets talk!
-                  </b-button>
-    </b-col>
-      </b-row>
-     
-    </div>
-  </b-alert> 
-  <br><br> 
-  <br>
-      
-    
-      <!-- <div class="front-page-spacer"></div> -->
+    <!-- <div class="header_image fade_loop main_splash"></div> -->
+    <div class="pt-20">
       <hero/>
-
-      <div class="front-page-spacer "></div>
-      <frameworks/>
-      <!-- <div class="front-page-spacer spacer-smaller"></div> -->
+      <Steps />
+      <Supported />
+      <WhyCyclic />
+      <TrustedBy />
+      <!-- <frameworks/>
       <big-feature/>
-      <div class="front-page-spacer spacer-smaller"></div>
       <languages/>
       <div class="front-page-spacer spacer-smaller"></div>
       <db-feature/>
@@ -54,15 +21,13 @@
       <small-feature/>
       <div class="front-page-spacer"></div>
       <CompanyStats/>
-      <div class="front-page-spacer"></div>
+      <div class="front-page-spacer"></div> -->
       <feature-matrix/>
-      <div class="front-page-spacer"></div>
+      <Infrastructure />
       <product-demo/>
-      <div class="front-page-spacer"></div>
-      <blurbs/>
-      <div class="front-page-spacer"></div>
-      <CtaFullStackApps/>
-      <div class="front-page-spacer"></div>
+      <Campaign />
+      <!-- <blurbs/>
+      <CtaFullStackApps/> -->
     </div>
   </div>
 </template>
@@ -83,6 +48,12 @@ import ProductDemo from '~/components/front_page/ProductDemo.vue'
 import Blurbs from '~/components/front_page/Blurbs.vue'
 import Hero from '~/components/front_page/Hero.vue'
 import FeatureMatrix from '~/components/front_page/FeatureMatrix.vue'
+import Steps from '~/components/front_page/Steps.vue'
+import Supported from '~/components/front_page/Supported.vue'
+import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
+import TrustedBy from '~/components/front_page/TrustedBy.vue'
+import Infrastructure from '~/components/front_page/Infrastructure.vue'
+import Campaign from '~/components/front_page/Campaign.vue'
 
 export default {
   name: 'Homepage',
@@ -112,7 +83,13 @@ export default {
     ProductDemo,
     Hero,
     FeatureMatrix,
-  },
+    Steps,
+    Supported,
+    WhyCyclic,
+    TrustedBy,
+    Infrastructure,
+    Campaign
+},
   async created(){
     // warmup cms 
     await fetch('https://release-notes.cyclic.app/_healthcheck')
@@ -123,9 +100,9 @@ export default {
 <style scoped>
 
 
-#index-page{
+/* #index-page{
   background-color: black !important;
-}
+} */
 h1,h2 {
     letter-spacing: 2px;
 }

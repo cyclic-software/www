@@ -1,15 +1,29 @@
 <template>
-  <div class="wrapper gradient-bg">
-    <div class="max-w-screen-lg mx-auto space-y-10 py-8 px-4 lg:!px-0">
-      <h1 class="text-4xl xl:text-5xl font-black capitalize m-0 mb-4 tracking-tight">
-        Terms of Service
-      </h1>
+  <section class="section space-y-12">
+    <div class="common-section pt-20">
+      <!-- ********* PILL TEXT ********* -->
+      <Pill text="Read carefully" />
+      
+      <!-- ********* CTA TEXTS ********* -->
+      <div class="space-y-6">
+        <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
+          terms of service
+        </h2>
+    
+        <p class="text-center text-neutral-300">
+          Stay up to date with our terms of service.
+        </p>
+      </div>
+    </div>
 
-      <p class="paragraph-small">Last updated February 2022</p>
+    <hr class="border-neutral-800">
 
+    <div class="mx-auto w-full lg:w-[80%] space-y-12">
+      <p class="text-sm text-sky-400">Last updated February 2022</p>
+  
       <div class="prose prose-xl prose-invert prose-a:text-sky-300
       prose-blockquote:text-2xl prose-blockquote:border-sky-600 prose-h4:text-2xl
-      prose-img:rounded-xl prose-h5:text-white prose-h5:font-semibold">
+      prose-img:rounded-xl prose-h5:text-white prose-h5:font-semibold mx-auto">
         <h3>1. Introduction</h3>
         <p>Welcome to Cyclic. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services and applications (the &quot;Services&quot;). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at:</p>
         <p>Email: hello@cyclic.sh<br><br>These Terms of Use (the &quot;Terms&quot;) are a binding contract between you and Cyclic Software, Inc (&quot;Cyclic,&quot; &quot;we&quot; and &quot;us&quot;). Your use of the Services in any way means that you agree to all of these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document as well as those in any <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>. Your use of or participation in certain Services may also be subject to additional policies, rules and/or conditions (&quot;Additional Terms&quot;), which are incorporated herein by reference, and you understand and agree that by using or participating in any such Services, you agree to also comply with these Additional Terms.</p>
@@ -202,5 +216,7 @@
         <p>fin.<br></p>
       </div>
     </div>
-  </div>
+
+    
+  </section>
 </template>

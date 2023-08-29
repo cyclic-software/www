@@ -83,7 +83,7 @@ export default {
     ],
     link: [
       { hid: 'icon', rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css' },
     ],
 
     script: [
@@ -107,8 +107,8 @@ export default {
   css: [
     "@static/css/titillium.css",
     // "@static/css/normalize.css",
-    "@static/css/webflow.css",
-    "@static/css/www-cyclic.webflow.css",
+    // "@static/css/webflow.css",
+    // "@static/css/www-cyclic.webflow.css",
     "@static/css/main.css",
     "@static/css/custom.scss",
   ],
@@ -168,7 +168,7 @@ export default {
     families: {
       'Titillium+Web': true,
       Inter: true,
-      Figtree: true,
+      Figtree: [400,500,600,700,800,900],
     }
   },
 
