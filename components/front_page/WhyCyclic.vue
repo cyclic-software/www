@@ -37,7 +37,7 @@
       />
 
       <BenefitCard
-        icon=""
+        icon="ri-pulse-line"
         title="Spike resistant"
         text="Up to 100 concurrent requests per second per app. Up to 10gb compute per request - thats 1TB per second of available compute."
         no_border="top"

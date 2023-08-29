@@ -16,127 +16,127 @@
 
     <div class="border !border-neutral-700 rounded-2xl mt-10 p-6 w-full lg:w-2/3
     space-y-5 bg-neutral-800/20">
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Inactivity Delay</p>
-        <p class="text-white">None - Apps Never Sleep</p>
+        <p class="text-white text-end">None - Apps Never Sleep</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Hourly Limit</p>
-        <p class="text-white">None - Unlimited</p>
+        <p class="text-white text-end">None - Unlimited</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Compute</p>
-        <p class="text-white">1024 MB RAM</p>
+        <p class="text-white text-end">1024 MB RAM</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Autoscaling</p>
-        <p class="text-white">10 x 1024 MB</p>
+        <p class="text-white text-end">10 x 1024 MB</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">API Requests</p>
-        <p class="text-white">10,000 / month / app</p>
+        <p class="text-white text-end">10,000 / month / app</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Languages</p>
 
         <div class="text-end">
-          <p class="text-white">JavaScript</p>
-          <p class="text-white">TypeScript</p>
-          <p class="text-white">Python</p>
-          <p class="text-white">Go</p>
+          <p class="text-white text-end">JavaScript</p>
+          <p class="text-white text-end">TypeScript</p>
+          <p class="text-white text-end">Python</p>
+          <p class="text-white text-end">Go</p>
         </div>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Integrated Database</p>
         <p class="text-white">1 GB (AWS DynamoDB)</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Integrated Object Storage</p>
         <p class="text-white">1 GB (AWS S3)</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Builds</p>
-        <p class="text-white">Unlimited</p>
+        <p class="text-white text-end">Unlimited</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Edge Locations</p>
-        <p class="text-white">Closest of 18+ Regions</p>
+        <p class="text-white text-end">Closest of 18+ Regions</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Smart Caching</p>
-        <p class="text-white">300+ Locations</p>
+        <p class="text-white text-end">300+ Locations</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Precision Cron</p>
-        <p class="text-white">3 jobs / app</p>
+        <p class="text-white text-end">3 jobs / app</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Logs History - Application</p>
-        <p class="text-white">7 Days</p>
+        <p class="text-white text-end">7 Days</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Logs History - Network</p>
-        <p class="text-white">7 Days</p>
+        <p class="text-white text-end">7 Days</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">SSL Certificates</p>
-        <p class="text-white">✓</p>
+        <p class="text-white text-end">✓</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Custom Subdomains</p>
-        <p class="text-white">✓</p>
+        <p class="text-white text-end">✓</p>
       </div>
 
       <hr class="border-neutral-800">
 
-      <div class="flex items-center justify-between gap-20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Build on <code>git push</code></p>
-        <p class="text-white">✓</p>
+        <p class="text-white text-end">✓</p>
       </div>
     </div>
 

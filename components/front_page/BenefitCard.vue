@@ -20,8 +20,8 @@
     computed: {
       getBorder() {
         if (!this.no_border) return 'border'
-        if (this.no_border === 'top') return 'border-l border-b border-r'
-        if (this.no_border === 'bottom') return 'border-l border-t border-r'
+        if (this.no_border === 'top') return 'border lg:border-l lg:border-b lg:border-r lg:!border-t-0'
+        if (this.no_border === 'bottom') return 'border lg:border-l lg:border-t lg:border-r lg:!border-b-0'
       }
     },
     props: {

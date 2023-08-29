@@ -1,10 +1,10 @@
 <template>
-  <section class="section flex flex-col items-center gap-8">
+  <section class="section flex flex-col items-center gap-10 lg:gap-8">
     <!-- ********* PILL TEXT ********* -->
     <Pill text="Launch with confidence" />
     
     <!-- ********* CTA TEXTS ********* -->
-    <div class="space-y-6">
+    <div class="space-y-8">
       <h1 class="font-extrabold text-6xl lg:text-8xl tracking-normal text-center">
         Escape infrastructure. Unleash ideas.
       </h1>
