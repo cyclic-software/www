@@ -4,14 +4,14 @@ slug: 'how-a-phishing-scampage-works'
 summary: 'The post discusses phishing scams on free hosting platforms like ours, exposing techniques like obfuscation and bot detection avoidance, and unveils the vulnerabilities of legitimate websites.'
 colId: 60d0f077b69e2df6b324616c
 id: 620d51d392f146f0cba97c8f
-createdAt: 'Fri Aug 18 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
-updatedAt: 'Fri Aug 18 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
-publishedOn: 'Fri Aug 18 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
+createdAt: 'Fri Aug 29 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
+updatedAt: 'Fri Aug 29 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
+publishedOn: 'Fri Aug 29 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
 author: mike-korostelev
 category: engineering
 hidden: false
 featured: false
-public: 'Fri Aug 18 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
+public: 'Fri Aug 29 2023 19:34:43 GMT+0000 (Coordinated Universal Time)'
 image: /content/scampage-blog/pizza-hacker.jpeg
 thumbnail: /content/scampage-blog/pizza-hacker.jpeg
 ---
