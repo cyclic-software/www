@@ -1,6 +1,6 @@
 <template>
   <section class="section space-y-12">
-    <div class="common-section">
+    <div class="common-section pt-20">
       <!-- ********* PILL TEXT ********* -->
       <Pill text="Read carefully" />
       
