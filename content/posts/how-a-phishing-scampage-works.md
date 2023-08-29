@@ -17,7 +17,7 @@ thumbnail: /content/scampage-blog/pizza-hacker.jpeg
 ---
 
 
-There are a lot of dirty things you can do on the internet. There are disinformation campaigns, pirated movies, scams and cyber bullies, there is all you can eat pornography, spyware and even dubious dark web assassins.
+There are a lot of dirty things you can do on the internet. There are disinformation campaigns, pirated movies, scams and cyber bullies. There is all you can eat pornography, spyware and even dubious dark web assassins.
 
 **As a hosting provider, we do what is probably the dirtiest internet thing of them all - we run code sent to us by total strangers.**
 
