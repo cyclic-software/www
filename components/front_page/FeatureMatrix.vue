@@ -6,11 +6,11 @@
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">
       <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
-        Researching Cyclic? Just want the free tier specs?
+        Researching Cyclic? Just want the specs?
       </h2>
   
       <p class="text-center text-neutral-300">
-        Here are our amazing <strong>Free</strong> tier features
+        Get started now. Here is what you get with the <strong>Free</strong> tier:
       </p>
     </div>
 
@@ -39,7 +39,7 @@
 
       <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Autoscaling</p>
-        <p class="text-white text-end">10 x 1024 MB</p>
+        <p class="text-white text-end">100 x 1024 MB</p>
       </div>
 
       <hr class="border-neutral-800">
@@ -152,11 +152,11 @@
       </a>
 
       <a
-        href="https://docs.cyclic.sh/"
+        href="/pricing"
         class="button button-outline m-0 w-max"
         target="_blank"
       >
-        Read Docs
+        Get more features
       </a>
     </div>
   </section>

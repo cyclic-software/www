@@ -11,7 +11,7 @@
         </h2>
     
         <p class="text-center text-neutral-300">
-          Our journey, our story, and the lessons we've learnt building a system for systems.
+          Our journey, our story, and the lessons we've learned building a system for systems.
         </p>
       </div>
     </div>

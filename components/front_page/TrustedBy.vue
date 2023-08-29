@@ -10,7 +10,7 @@
       </h2>
   
       <p class="text-center text-neutral-300">
-        We have a thriving and growing developer community. Become part of it.
+        We have a thriving and growing developer community. Become part of it. <a target="_blank" href="https://discord.cyclic.sh" class="text-sky-500">Join our Discord</a> and say hi!
       </p>
     </div>
     

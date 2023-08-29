@@ -50,10 +50,11 @@ import StepCard from './StepCard.vue';
 }
 .logs_gif{
   filter: contrast(1.4);
+  height: 220px;
 }
 .metrics-img{
   position:absolute;
-  bottom: -20px;
+  bottom: -10px;
   width: 250px;
   right: 10px;
 

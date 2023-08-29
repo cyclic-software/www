@@ -180,4 +180,53 @@ em{
   }
 }
   
+  .banner{
+    /* position: absolute;
+    width: 100%;
+    z-index: 90; */
+  }
+  
+  .b-content{
+    max-width: 1250px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .b-content h2{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    letter-spacing: normal;;
+    font-size:25px;
+    font-weight:500;
+    /* color: white; */
+  }
+  .b-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1.1rem;; */
+  }
+  .b-content ul{
+    margin-left: 20px;
+  }
+  .header-alert{
+    color: white;
+    /* color: #ffc008; */
+    background-color: #080e20;
+    border-radius: 10px;
+    /* backdrop-filter: blur(5px); */
+    border: 0px solid #ffc008;
+    animation: popup 0.2s;
+
+  }
+
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 </style>

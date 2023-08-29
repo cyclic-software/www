@@ -1,16 +1,16 @@
 <template>
   <section class="section common-section">
     <!-- ********* PILL TEXT ********* -->
-    <Pill text="Build bigger" />
+    <Pill text="Build better" />
     
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">
       <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
-        Why deploy your apps on Cyclic
+        Why deploy on Cyclic
       </h2>
   
       <p class="text-center text-neutral-300">
-        Cyclic allows developers to focus on what really matters - building.
+        Modern web applications out of the box. Cost efficient, secure, fault tolerant, scalable and fast.
       </p>
     </div>
 
@@ -46,7 +46,7 @@
       <BenefitCard
         icon="ri-arrow-up-down-line"
         title="Roll forward, roll back"
-        text="Switch to different versions of your app's deployments."
+        text="Switch to different versions of your deployments with built in CI/CD for every app."
         no_border="bottom"
       />
 

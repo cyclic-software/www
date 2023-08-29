@@ -46,11 +46,11 @@
     </div>
 
     <div v-if="show_banner" class="border-b border-neutral-700 px-4 sm:px-0 py-2 bg-neutral-800">
-      <div class="max-w-6xl mx-auto flex items-center gap-4 text-sm">
-        <p class="font-semibold">Bring Cyclic to Work</p>
+      <div class="max-w-6xl mx-auto flex items-center gap-3 text-sm">
+        <p class="font-semibold">Cyclic at Work</p>
         <div class="h-3 w-px border-l !border-neutral-600"></div>
         <p class="text-neutral-300">
-          We are growing the product for teams and are looking for design partners. Are you part of a team that could use Cyclic at work?
+          We are growing and looking for design partners. Part of a team that could use Cyclic at work?
           <a
             href="https://cyclic.typeform.com/to/HNNO8Bkp"
             class="text-sky-400 capitalize underline"

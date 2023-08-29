@@ -10,7 +10,7 @@
       </h2>
   
       <p class="text-center text-neutral-300">
-        Join our cool C.E.O, Kam, for a quick tour of Cyclic.
+        Join our CEO Kam, for a quick tour of Cyclic.
       </p>
     </div>
 

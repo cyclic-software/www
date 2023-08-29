@@ -10,7 +10,7 @@
       </h1>
   
       <p class="text-center text-neutral-300 text-lg">
-        Build and run <strong>modern cloud-native applications</strong> without piling on to the full stack.
+        Build and run <strong>modern cloud-native serverless applications</strong> without piling on to the full stack.
         <!-- Connect your GitHub repo. We’ll build, deploy and manage the hosting. -->
       </p>
     </div>
