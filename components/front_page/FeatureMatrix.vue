@@ -6,7 +6,7 @@
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">
       <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
-        Researching Cyclic? Just want the free specs?
+        Researching Cyclic? Just want the free tier specs?
       </h2>
   
       <p class="text-center text-neutral-300">
@@ -66,14 +66,14 @@
 
       <div class="flex items-center justify-between gap-20">
         <p class="text-neutral-300">Integrated Database</p>
-        <p class="text-white">1 GB</p>
+        <p class="text-white">1 GB (AWS DynamoDB)</p>
       </div>
 
       <hr class="border-neutral-800">
 
       <div class="flex items-center justify-between gap-20">
         <p class="text-neutral-300">Integrated Object Storage</p>
-        <p class="text-white">1 GB</p>
+        <p class="text-white">1 GB (AWS S3)</p>
       </div>
 
       <hr class="border-neutral-800">

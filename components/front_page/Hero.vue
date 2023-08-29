@@ -6,11 +6,12 @@
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">
       <h1 class="font-extrabold text-6xl lg:text-8xl tracking-normal text-center">
-        Hosting for your next idea
+        Escape infrastructure. Unleash ideas.
       </h1>
   
       <p class="text-center text-neutral-300 text-lg">
-        All you have to do is connect your GitHub repo. We’ll build, deploy and manage the hosting.
+        Build and run <strong>modern cloud-native applications</strong> without piling on to the full stack.
+        <!-- Connect your GitHub repo. We’ll build, deploy and manage the hosting. -->
       </p>
     </div>
 
@@ -35,7 +36,7 @@
     </div>
 
     <!-- ********* CYCLIC PREVIEW ********* -->
-    <img class="rounded-3xl mt-8 preview w-[90%]" src="/images/preview.png" alt="">
+    <img class="rounded-3xl mt-8 preview w-[95%]" src="/images/preview1.png" alt="">
   </section>
 </template>
 

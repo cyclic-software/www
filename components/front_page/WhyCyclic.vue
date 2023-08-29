@@ -18,7 +18,7 @@
       <BenefitCard
         icon="ri-flashlight-fill"
         title="No sleep"
-        text="Cyclic Apps are available immediately and on demand. Say goodbye to waiting 30 seconds for containers to be spun up. Even on free tier."
+        text="Cyclic Apps are available immediately and on demand. No waiting 30 seconds for containers to be spun up. Even on free tier."
         no_border="top"
       />
 
@@ -39,7 +39,7 @@
       <BenefitCard
         icon=""
         title="Spike resistant"
-        text="Scale up and down instantly. 1GB serverless compute handles EACH individual request."
+        text="Up to 100 concurrent requests per second per app. Up to 10gb compute per request - thats 1TB per second of available compute."
         no_border="top"
       />
 
@@ -53,7 +53,7 @@
       <BenefitCard
         icon="ri-money-dollar-circle-fill"
         title="Match cost and value"
-        text="Only pay for what you use."
+        text="Pay for what you use. Translate between cost and business value with consumption based pricing."
         no_border="bottom"
       />
     </div>
