@@ -32,7 +32,8 @@ code[class*="language-"], pre[class*="language-"] {
 code[class*="language-"], pre[class*="language-"]  code{
     color:#C4C4C4 !important;
 }
-/* @layer base {
+
+@layer base {
     body {
         @apply font-sans bg-neutral-900 text-white;
     }
