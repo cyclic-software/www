@@ -5,7 +5,7 @@
     
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-8">
-      <h1 class="font-extrabold text-6xl lg:text-8xl tracking-normal text-center">
+      <h1 class="font-extrabold text-5xl sm:text-6xl lg:text-8xl tracking-normal text-center">
         Escape infrastructure. Unleash ideas.
       </h1>
   
