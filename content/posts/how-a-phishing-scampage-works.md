@@ -87,10 +87,10 @@ In all instances of this scam, the target url pointed to a `.php` file on what l
 In this instance `finish.php` was likely injected into the host maliciously by exploiting one of those PHP vulnerabilities. These `.php` files simply use php's  `mail` function to then forward the credentials to some email set up by the attackers. 
 
 ### Case Study - "Adobe/Netflix Scam"
-Another very common scam we see targets Adobe's document cloud.
+Another very common scam we see targets your Netflix account.
 
 <p align="center">
-    <img src="/content/scampage-blog/adobe.png" width="650px" ></img>
+    <img src="/content/scampage-blog/netflix.png" width="650px" ></img>
     <figcaption align = "center">Another common scam targets Adobe, Netflix, and others with similar backend code</figcaption>
 </p>
 
