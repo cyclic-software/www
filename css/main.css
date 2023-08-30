@@ -4,6 +4,35 @@
 @tailwind utilities;
 
 
+code[class*="language-"], pre[class*="language-"] {
+    font-size: small !important;;
+    text-shadow: none !important;
+}
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+    background: none !important;
+}
+
+
+.prose code{
+    font-weight: 200;
+    color: var(--pink)   !important;
+}
+.prose code::before{
+    content:"" !important;
+}
+.prose code::after{
+    content:"" !important;
+}
+
+.prose-xl :where(figcaption):not(:where([class~="not-prose"] *)) {
+    font-size: 0.9em;
+    margin-top: -1em;
+}
+
+code[class*="language-"], pre[class*="language-"]  code{
+    color:#C4C4C4 !important;
+}
+
 @layer base {
     body {
         @apply font-sans bg-neutral-900 text-white;
