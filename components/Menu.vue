@@ -28,6 +28,24 @@
 
           <div class="hidden md:flex items-center gap-5">
             <a
+              href="https://github.com/cyclic-software"
+              target="_blank"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
+              flex items-center gap-2.5"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://discord.cyclic.sh"
+              target="_blank"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
+              flex items-center gap-2.5"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
+
+            <a
               href="https://app.cyclic.sh/api/login"
               @click="sign_in('https://app.cyclic.sh/api/login', $event)"
               class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
@@ -135,6 +153,26 @@
       </div>
 
       <div class="grid grid-cols-1 mt-10 px-6 gap-2">
+        <div class="flex justify-center gap-4 py-4">
+          <a
+              href="https://github.com/cyclic-software"
+              target="_blank"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
+              flex items-center gap-2.5"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://discord.cyclic.sh"
+              target="_blank"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
+              flex items-center gap-2.5"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
+        </div>
+
         <a
           href="https://app.cyclic.sh/api/login"
           @click="sign_in('https://app.cyclic.sh/api/login', $event)"
