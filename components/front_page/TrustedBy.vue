@@ -29,14 +29,25 @@
         text="Builds triggered"
       />
     </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="overflow-x-auto w-full pb-6">
+      <div class="flex gap-5 w-max">
+        <Testimonial />
+        <Testimonial />
+        <Testimonial />
+        <Testimonial />
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import StatCard from './StatCard.vue';
+import Testimonial from './Testimonial.vue';
 
   export default {
     name: 'TrustedBy',
-    components: { StatCard }
+    components: { StatCard, Testimonial }
 }
 </script>
