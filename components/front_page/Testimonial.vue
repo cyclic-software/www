@@ -15,7 +15,7 @@
 
       <div class="">
         <p class="text-neutral-200">John Doe</p>
-        <p class="text-sm text-neutral-400">Founder at Nuclear AI</p>
+        <p class="!text-sm text-neutral-400">Founder at Nuclear AI</p>
       </div>
     </div>
   </div>
