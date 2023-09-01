@@ -155,22 +155,22 @@
       <div class="grid grid-cols-1 mt-10 px-6 gap-2">
         <div class="flex justify-center gap-4 py-4">
           <a
-              href="https://github.com/cyclic-software"
-              target="_blank"
-              class="text-sm !no-underline text-neutral-400 hover:text-white transition
-              flex items-center gap-2.5"
-            >
-              <i class="fab fa-github"></i>
-            </a>
+            href="https://github.com/cyclic-software"
+            target="_blank"
+            class="text-sm !no-underline text-neutral-400 hover:text-white transition
+            flex items-center gap-2.5"
+          >
+            <i class="fab fa-github"></i>
+          </a>
 
-            <a
-              href="https://discord.cyclic.sh"
-              target="_blank"
-              class="text-sm !no-underline text-neutral-400 hover:text-white transition
-              flex items-center gap-2.5"
-            >
-              <i class="fab fa-discord"></i>
-            </a>
+          <a
+            href="https://discord.cyclic.sh"
+            target="_blank"
+            class="text-sm !no-underline text-neutral-400 hover:text-white transition
+            flex items-center gap-2.5"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
         </div>
 
         <a
