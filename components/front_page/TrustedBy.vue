@@ -15,7 +15,29 @@
     </div>
 
     <!-- ********* COMPANIES ********* -->
-    <!-- <div class=""></div> -->
+    <div class="overflow-hidden w-full relative py-5">
+      <div class="marquee flex w-full gap-12">
+        <a href="#" class="text-7xl text-neutral-400 hover:text-white transition">
+          <i class="ri-google-fill"></i>
+        </a>
+
+        <a href="#" class="text-7xl text-neutral-400 hover:text-white transition">
+          <i class="ri-google-fill"></i>
+        </a>
+        
+        <a href="#" class="text-7xl text-neutral-400 hover:text-white transition">
+          <i class="ri-google-fill"></i>
+        </a>
+
+        <a href="#" class="text-7xl text-neutral-400 hover:text-white transition">
+          <i class="ri-google-fill"></i>
+        </a>
+
+        <a href="#" class="text-7xl text-neutral-400 hover:text-white transition">
+          <i class="ri-google-fill"></i>
+        </a>
+      </div>
+    </div>
 
     <!-- ********* STATS ********* -->
     <div class="border !border-neutral-700 rounded-3xl flex flex-col sm:flex-row items-center justify-around p-5
@@ -66,3 +88,18 @@ import { testimonials } from './testimonials';
     }
 }
 </script>
+
+<style scoped>
+  .marquee {
+    animation: marquee 20s linear infinite; /* Adjust duration as needed */
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
