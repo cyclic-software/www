@@ -33,11 +33,11 @@
       <!-- ********* CTA TEXTS ********* -->
       <div class="space-y-6">
         <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
-          Pay for what you use.
+          Only pay for what you use.
         </h2>
     
         <p class="text-center text-neutral-300">
-          Usage based pricing lets you start free and pay as your needs and app grows.
+          Pricing scales up and down with your usage. Match cost and value.
         </p>
       </div>
     </div>
@@ -46,7 +46,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
       <!-- ****** BUILD PLAN ****** -->
-      <div class="flex flex-col gap-7 p-6 border !border-white
+      <div class="flex flex-col gap-7 p-6 border !border-neutral-800
       bg-neutral-800/10 rounded-2xl hover:!border-white
       transition">
         <div class="space-y-4">
@@ -144,7 +144,7 @@
       </div>
 
       <!-- ****** TEAM PLAN ****** -->
-      <div class="flex flex-col gap-7 p-6 border !border-neutral-800
+      <div class="flex flex-col gap-7 p-6 border !border-white
       bg-neutral-800/10 rounded-2xl hover:!border-white
       transition">
         <div class="space-y-4">
