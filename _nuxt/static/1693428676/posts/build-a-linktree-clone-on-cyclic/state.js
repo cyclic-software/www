@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1693428676",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fbuild-a-linktree-clone-on-cyclic",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"df9ff3c1"}},globalRefs:{}}}(null));
