@@ -41,7 +41,7 @@
               </span>
             </div>
 
-            <h2 class="text-3xl font-bold tracking-tight group-hover:underline">{{ post.title }}</h2>
+            <h2 class="text-3xl font-bold group-hover:underline">{{ post.title }}</h2>
 
             <p class="text-sm text-gray-400">{{ post.summary.slice(0, 100) }}...</p>
           </div>

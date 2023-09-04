@@ -11,14 +11,14 @@
           <div class="flex flex-col gap-3 text-xs">
             <nuxt-link
               to="/pricing"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               Pricing
             </nuxt-link>
   
             <nuxt-link
               to="/blog"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               Blog
             </nuxt-link>
@@ -26,21 +26,21 @@
             <a
               href="https://docs.cyclic.sh/"
               target="_blank"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               Documentation
             </a>
 
             <nuxt-link
               to="/terms-of-service"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               Terms of Service
             </nuxt-link>
   
             <nuxt-link
               to="/privacy-policy"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               Privacy Policy
             </nuxt-link>
@@ -55,7 +55,7 @@
             <a
               href="https://github.com/cyclic-software"
               target="_blank"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
               GitHub <i class="fab fa-github"></i>
@@ -64,7 +64,7 @@
             <a
               href="https://discord.cyclic.sh"
               target="_blank"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
               Discord <i class="fab fa-discord"></i>
@@ -73,7 +73,7 @@
             <a
               href="https://twitter.com/cyclic_sh"
               target="_blank"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
               Twitter <i class="fab fa-twitter"></i>
@@ -82,10 +82,19 @@
             <a
               href="https://www.linkedin.com/company/cyclic-software/about"
               target="_blank"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
               LinkedIn <i class="fab fa-linkedin"></i>
+            </a>
+  
+            <a
+              href="https://www.youtube.com/@CyclicSh"
+              target="_blank"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
+              flex items-center gap-2.5"
+            >
+              Youtube <i class="fab fa-youtube"></i>
             </a>
           </div>
         </div>
@@ -97,14 +106,14 @@
           <div class="flex flex-col gap-3 text-xs">
             <nuxt-link
               to="/vs-heroku"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               vs Heroku
             </nuxt-link>
             
             <nuxt-link
               to="/updates"
-              class="text-base !no-underline text-neutral-400 hover:text-white transition"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               Product Updates
             </nuxt-link>

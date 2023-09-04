@@ -13,7 +13,11 @@
         We have a thriving and growing developer community. Become part of it. <a target="_blank" href="https://discord.cyclic.sh" class="text-sky-500">Join our Discord</a> and say hi!
       </p>
     </div>
-    
+
+    <!-- ********* COMPANIES ********* -->
+    <!-- <div class=""></div> -->
+
+    <!-- ********* STATS ********* -->
     <div class="border !border-neutral-700 rounded-3xl flex flex-col sm:flex-row items-center justify-around p-5
     gap-16 mt-10 bg-neutral-800/20 w-full sm:flex-wrap">
       <StatCard
@@ -21,22 +25,33 @@
         text="Developers active this week"
       />
       <StatCard
-        stat="85,150+"
+        stat="95,000+"
         text="Developers on Cyclic"
       />
       <StatCard
-        stat="963,000+"
+        stat="1,000,000+"
         text="Builds triggered"
       />
     </div>
+
+    <!-- ********* TESTIMONIALS ********* -->
+    <!-- <div class="overflow-x-auto w-full pb-6">
+      <div class="flex gap-5 w-max">
+        <Testimonial />
+        <Testimonial />
+        <Testimonial />
+        <Testimonial />
+      </div>
+    </div> -->
   </section>
 </template>
 
 <script>
 import StatCard from './StatCard.vue';
+import Testimonial from './Testimonial.vue';
 
   export default {
     name: 'TrustedBy',
-    components: { StatCard }
+    components: { StatCard, Testimonial }
 }
 </script>

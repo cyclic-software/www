@@ -106,11 +106,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "@static/css/titillium.css",
-    // "@static/css/normalize.css",
-    // "@static/css/webflow.css",
-    // "@static/css/www-cyclic.webflow.css",
     "@static/css/main.css",
-    "@static/css/custom.scss",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

@@ -24,6 +24,7 @@
       <div class="front-page-spacer"></div> -->
       <feature-matrix/>
       <Infrastructure />
+      <Blurbs />
       <product-demo/>
       <Campaign />
       <!-- <blurbs/>
