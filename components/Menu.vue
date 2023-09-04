@@ -1,136 +1,293 @@
 <template>
+  <nav id="menubar" class="fixed top-0 left-0 w-full z-50 bg-neutral-900/95 backdrop-blur">
+    <div class="border-b border-neutral-800 px-4 sm:px-0 py-3">
+      <div class="flex items-center justify-between w-full max-w-6xl mx-auto">
+        <!-- ********* BRAND & LINKS********* -->
+        <div class="flex items-center gap-5">
+          <Brand />
+  
+          <div class="hidden md:block h-5 border-l border-neutral-700"></div>
+  
+          <div class="hidden md:flex items-center gap-5">
+            <Navlink name="pricing" path="/pricing" />
+            <Navlink name="blog" path="/blog" />
+            <a class="text-sm capitalize text-neutral-300 hover:text-white transition" href="https://docs.cyclic.sh/" target="_blank">docs</a>
+            <Navlink name="investors" path="/investors" />
+            <Navlink name="vs Heroku" path="/vs-heroku" />
+            <Navlink name="updates" path="/updates" />
+          </div>
+        </div>
+  
+        <!-- ********* CONTROLS ********* -->
+        <div class="flex !items-center gap-5">
+          <button class="flex items-center justify-center h-10 w-10 border rounded-xl !border-neutral-700
+          bg-neutral-800/20 hover:!border-white transition md:hidden"
+          @click="menu_open=!menu_open">
+            <i class="ri-menu-line"></i>
+          </button>
 
-<div class="mb-4">
-  <div id="menubar">
-    <b-navbar class="max-w-screen-xl mx-auto" id="menu" toggleable="md" type="dark" variant="none">
-      <!-- <div id="menu-content"> -->
-        <b-navbar-brand to="/" class="navbar-brand">
-          <img src="/images/cyclic-logo.png" class="logo-img"/>
-        </b-navbar-brand>
-
-        <b-navbar-toggle target="nav-collapse" ></b-navbar-toggle>
-
-        <b-collapse id="nav-collapse" is-nav @show="collapsed=false;" @hidden="collapsed=true;">
-          <b-navbar-nav>
-            <b-nav-item to="/pricing">Pricing</b-nav-item>
-            <b-nav-item to="/blog">Blog</b-nav-item>
-            <b-nav-item href="https://docs.cyclic.sh/" target="_blank">Docs</b-nav-item>
-            <b-nav-item 
-            to="/investors">Investors</b-nav-item>
-            <b-nav-item to="/vs-heroku">vs Heroku</b-nav-item>
-            <b-nav-item to="/updates">Product Updates</b-nav-item>
-          </b-navbar-nav>
-
-          <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item 
-            href="https://app.cyclic.sh/api/login"
-            @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
+          <div class="hidden md:flex items-center gap-5">
+            <a
+              href="https://github.com/cyclic-software"
+              target="_blank"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
+              flex items-center gap-2.5"
             >
-              Sign Up
-            </b-nav-item>
-            <b-nav-item 
-            href="https://app.cyclic.sh/api/login"
-            @click="sign_in('https://app.cyclic.sh/api/login', $event)" 
-            >
-              Sign In
-            </b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
-      <!-- </div> -->
-    </b-navbar>
-  </div>
-  <div class="sp-65"></div>
-</div>
+              <i class="fab fa-github"></i>
+            </a>
 
+            <a
+              href="https://discord.cyclic.sh"
+              target="_blank"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition
+              flex items-center gap-2.5"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
+
+            <a
+              href="https://app.cyclic.sh/api/login"
+              @click="sign_in('https://app.cyclic.sh/api/login', $event)"
+              class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
+            >
+              login
+            </a>
+    
+            <a
+              href="https://app.cyclic.sh/api/login"
+              @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+              class="button button-primary m-0 w-max"
+            >sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="show_banner" class="border-b border-neutral-700 px-4 sm:px-0 py-2 bg-neutral-800">
+      <div class="max-w-6xl mx-auto flex items-center gap-3 text-sm">
+        <p class="font-semibold">Cyclic at Work</p>
+        <div class="h-3 w-px border-l !border-neutral-600"></div>
+        <p class="text-neutral-300">
+          We are growing and looking for design partners. Part of a team that could use Cyclic at work?
+          <a
+            href="https://cyclic.typeform.com/to/HNNO8Bkp"
+            class="text-sky-400 capitalize underline"
+            target="_blank"
+          >
+            let's talk
+          </a>
+        </p>
+        <button class="text-neutral-400 hover:text-white transition" @click="show_banner=false">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div :class="`fixed top-0 right-0 ${menu_open ? 'translate-x-0':'translate-x-full'} flex flex-col md:hidden w-full h-screen
+    bg-neutral-800 border-l border-neutral-700 transition`">
+      <button class="flex items-center justify-center h-10 w-10 border rounded-xl !border-neutral-700
+      bg-neutral-800/20 hover:!border-white transition md:hidden absolute top-4 right-5"
+      @click="menu_open=false">
+        <i class="ri-close-line"></i>
+      </button>
+
+      <div class="absolute top-4 left-4" @click="menu_open=false">
+        <nuxt-link class="hover:no-underline" to="/">
+          <Brand />
+        </nuxt-link>
+      </div>
+
+      <div class="grid grid-cols-1 gap-5 pt-24 px-6" @click="menu_open=false">
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition w-full"
+          to="/pricing"
+        >
+          pricing
+        </nuxt-link>
+
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/blog"
+        >
+          blog
+        </nuxt-link>
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/investors"
+        >
+          investors
+        </nuxt-link>
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/vs-heroku"
+        >
+          vs heroku
+        </nuxt-link>
+
+        <nuxt-link
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          to="/updates"
+        >
+          updates
+        </nuxt-link>
+
+        <a
+          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition"
+          href="https://docs.cyclic.sh/"
+          target="_blank"
+        >
+          docs
+        </a>
+
+
+      </div>
+
+      <div class="grid grid-cols-1 mt-10 px-6 gap-2">
+        <div class="flex justify-center gap-4 py-4">
+          <a
+            href="https://github.com/cyclic-software"
+            target="_blank"
+            class="text-sm !no-underline text-neutral-400 hover:text-white transition
+            flex items-center gap-2.5"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://discord.cyclic.sh"
+            target="_blank"
+            class="text-sm !no-underline text-neutral-400 hover:text-white transition
+            flex items-center gap-2.5"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+
+        <a
+          href="https://app.cyclic.sh/api/login"
+          @click="sign_in('https://app.cyclic.sh/api/login', $event)"
+          class="border !border-neutral-700 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
+          gap-2 hover:no-underline hover:!border-white transition w-full"
+        >
+          login
+        </a>
+
+        <a
+          href="https://app.cyclic.sh/api/login"
+          @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+          class="bg-primary text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
+          gap-2 hover:no-underline hover:scale-105 transition w-full"
+        >sign up</a>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
   import chroma from "chroma-js"
+  import Brand from "./Brand.vue";
+  import Navlink from "./Navlink.vue";
 
   var scale = chroma.scale(['#0f2c4100', '#0f2c41']).domain([0, 40]); //#0b42d5
 
   export default {
-    data(){
-      return {
-        dark: false,
-        scrolled: false,
-        collapsed: null,
-      }
+    data() {
+        return {
+            dark: false,
+            scrolled: false,
+            collapsed: null,
+            show_banner: true,
+            menu_open: false
+        };
     },
-    mounted(){
-      this.handleScroll()
+    mounted() {
+        this.handleScroll();
     },
-    watch:{
-      scrolled(v){
-          this.dark = v;
-      },
-      collapsed(v){
-        let menubar = document.getElementById('menubar')
-        if(v)menubar.classList.remove('menu_collapsed')
-        if(!v)menubar.classList.add('menu_collapsed')
-      },
-      dark(v){
-        let menubar = document.getElementById('menubar')
-        if(v)menubar.classList.add('dark')
-        if(!v)menubar.classList.remove('dark')
-      }
+    watch: {
+        scrolled(v) {
+            this.dark = v;
+        },
+        collapsed(v) {
+            let menubar = document.getElementById('menubar');
+            if (v)
+                menubar.classList.remove('menu_collapsed');
+            if (!v)
+                menubar.classList.add('menu_collapsed');
+        },
+        dark(v) {
+            let menubar = document.getElementById('menubar');
+            if (v)
+                menubar.classList.add('dark');
+            if (!v)
+                menubar.classList.remove('dark');
+        }
     },
     methods: {
-      async sign_in(url, e){
-          try{
-              let session_seconds = parseInt(e.timeStamp/1000)
+        async sign_in(url, e) {
+            try {
+                let session_seconds = parseInt(e.timeStamp / 1000);
                 await gtag('event', 'header_sign_in', {
-                'event_label' : window.location.href,
-                'event_category' : 'sign_in',
-                'value' : session_seconds,
-
-                'page' : window.location,
-                'session_seconds': session_seconds,
-                'event_callback': function() {
-                  }
-                });  
-            }catch(e){
+                    'event_label': window.location.href,
+                    'event_category': 'sign_in',
+                    'value': session_seconds,
+                    'page': window.location,
+                    'session_seconds': session_seconds,
+                    'event_callback': function () {
+                    }
+                });
             }
-      },
-      async sign_up(url, e){
-          try{
-              let session_seconds = parseInt(e.timeStamp/1000)
+            catch (e) {
+            }
+        },
+        async sign_up(url, e) {
+            try {
+                let session_seconds = parseInt(e.timeStamp / 1000);
                 await gtag('event', 'header_sign_up', {
-                'event_label' : window.location.href,
-                'event_category' : 'sign_up',
-                'value' : session_seconds,
-
-                'page' : window.location,
-                'session_seconds': session_seconds,
-                'event_callback': function() {
-                  }
-                });  
-            }catch(e){
+                    'event_label': window.location.href,
+                    'event_category': 'sign_up',
+                    'value': session_seconds,
+                    'page': window.location,
+                    'session_seconds': session_seconds,
+                    'event_callback': function () {
+                    }
+                });
             }
-      },
-      handleScroll() {
-        if(window.pageYOffset){
-          this.scrolled = true;
+            catch (e) {
+            }
+        },
+        handleScroll() {
+            if (window.pageYOffset) {
+                this.scrolled = true;
+            }
+            else {
+                this.scrolled = false;
+            }
         }
-        else{
-          this.scrolled = false;
-        }
-      }
     },
-    beforeMount () {
-      window.addEventListener('scroll', this.handleScroll);
+    beforeMount() {
+        window.addEventListener('scroll', this.handleScroll);
     },
     beforeDestroy() {
-      window.removeEventListener('scroll', this.handleScroll);
-    }
-  }
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    components: { Brand, Navlink }
+}
 
 </script>
 
 
 <style scoped>
-  :root {
+  /* :root {
     --menu-height: 65px;
   }
   
@@ -165,7 +322,7 @@
   
   .dark, .menu_collapsed{
     @apply bg-black/90 border-b border-b-white/10 backdrop-blur-sm;
-  }
+  } */
 
 
 

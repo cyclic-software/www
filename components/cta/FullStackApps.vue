@@ -1,32 +1,32 @@
 <template>
-    <div class="section wf-section wide">
-    <div class="container center-align">
-      <div class="spacer _64"></div>
-      <div class="text-box _600px space-y-4">
-        <h2 class="text-4xl font-bold">
-          Full Stack Serverless Apps
-        </h2>
-        <p class="text-lg">
-          Deploy a full stack serverless app on cyclic in seconds. Bring your own repo or fork and install a starter from
-          our library:
-        </p>
+  <section class="section">
+    <div class="common-section border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10">
+      <h2 class="text-4xl font-bold">
+        Full Stack Serverless Apps
+      </h2>
 
-        <div class="spacer _16"></div>
-        <div class="w-row">
-          <div class="w-col w-col-6">
-            <a href="https://app.cyclic.sh/api/login"
-             @click="sign_up('https://app.cyclic.sh/api/login?utm_source=www&amp;utm_medium=web&amp;utm_campaign=cta', $event)"
-             class="button white helloworld-cta w-button">DEPLOY ON CYCLIC 🚀</a>
-          </div>
-          <div class="w-col w-col-6">
-            <a href="https://docs.cyclic.sh/docs/intro" class="button white helloworld-cta w-button">READ THE DOCS 📒</a>
-          </div>
-        </div>
-        <div class="spacer _16"></div>
+      <p class="text-neutral-300">
+        Deploy a full stack serverless app on cyclic in seconds. Bring your own repo or fork and install a starter from
+        our library:
+      </p>
 
+      <div class="flex flex-col md:flex-row items-center md:justify-center gap-3 w-full">
+        <a href="https://app.cyclic.sh/api/login"
+          @click="sign_up('https://app.cyclic.sh/api/login?utm_source=www&amp;utm_medium=web&amp;utm_campaign=cta', $event)"
+          class="bg-primary text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
+          gap-2 hover:no-underline hover:scale-105 transition w-full md:w-max"
+        >
+          Deploy on Cyclic 🚀
+        </a>
+
+        <a
+          href="https://docs.cyclic.sh/docs/intro"
+          class="border !border-neutral-700 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
+          gap-2 hover:no-underline hover:!border-white transition w-full md:w-max"
+        >Read the Docs 📒</a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 
