@@ -1,69 +1,165 @@
 <template>
-    <b-container>
-        <b-row>
-          <b-col sm="2"></b-col>
-            <b-col class=" text-center" sm="8" align-self="center">
-                <div class="matrix-header">
-                    Researching Cyclic? Just want the specs?
-                </div>
-                <div class="matrix-header mt-2">
-                  Here are <strong>free</strong> tier features:
-                </div>
-            </b-col>
-            <b-col sm="2"></b-col>
-        </b-row>
+  <section class="section common-section">
+    <!-- ********* PILL TEXT ********* -->
+    <Pill text="A free tier that's actually useful" />
+    
+    <!-- ********* CTA TEXTS ********* -->
+    <div class="space-y-6">
+      <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
+        Researching Cyclic? Just want the specs?
+      </h2>
+  
+      <p class="text-center text-neutral-300">
+        Get started now. Here is what you get with the <strong>Free</strong> tier:
+      </p>
+    </div>
 
+    <div class="border !border-neutral-700 rounded-2xl mt-10 p-6 w-full lg:w-2/3
+    space-y-5 bg-neutral-800/20">
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Inactivity Delay</p>
+        <p class="text-white text-end">None - Apps Never Sleep</p>
+      </div>
 
-      <b-row>
-        <b-col align-self="center"  lg="3">
-        </b-col>
+      <hr class="border-neutral-800">
 
-        <b-col align-self="center"   lg="6">
-          <div class="matrix mt-5">
-            <div>Inactivity Timeout/Delay</div> <div class="check">None - Apps Never Sleep</div>
-            <div>Hourly Limit</div> <div class="check">None - Unlimited</div>
-            <div>Compute</div> <div class="check">1024 MB RAM</div>
-            <div>Autoscaling</div> <div class="check">10 x 1024 MB</div>
-            <div>API Requests</div> <div class="check">100,000/month per app</div>
-            <div>Languages</div> <div class="check">JavaScript<br>TypeScript<br> Python<sup>BETA</sup>
-            </div>
-            <div>Integrated Database</div> <div class="check">1 GB</div>
-            <div>Integrated Object Storage</div> <div class="check">1 GB</div>
-            <div>Builds</div> <div class="check">Unlimited</div>
-            <div>Edge Locations</div> <div class="check">Closest of 18+ Regions</div>
-            <div>Smart Caching</div> <div class="check">300+ Locations</div>
-            <div>Precision Cron</div> <div class="check">3 jobs/app</div>
-            <div>Logs History - Application</div> <div class="check">7 Days</div>
-            <div>Logs History - Network</div> <div class="check">7 Days</div>
-            <div>SSL Certificates</div> <div class="check">✓</div>
-            <div>Custom Subdomains</div> <div class="check">✓</div>
-            <div>Build on <code>git push</code></div> <div class="check">✓</div>
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Hourly Limit</p>
+        <p class="text-white text-end">None - Unlimited</p>
+      </div>
 
-          </div>
+      <hr class="border-neutral-800">
 
-        </b-col>
-        <b-col align-self="center"  lg="3">
-        </b-col>
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Compute</p>
+        <p class="text-white text-end">1024 MB RAM</p>
+      </div>
 
-      </b-row>
+      <hr class="border-neutral-800">
 
-      <b-row class="mt-5">
-          <b-col sm="4"></b-col>
-            <b-col class=" text-center" sm="4" align-self="center">
-              <b-button
-                  href="https://app.cyclic.sh/api/login"
-                  class="m-1"
-                  @click="sign_up('https://app.cyclic.sh/api/login', $event)"
-                  variant="primary" size="lg">
-                    <i class="fab fa-github mr-2"></i> Deploy Now
-                  </b-button>
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Autoscaling</p>
+        <p class="text-white text-end">100 x 1024 MB</p>
+      </div>
 
-            </b-col>
-            <b-col sm="4"></b-col>
-      </b-row>
+      <hr class="border-neutral-800">
 
-    </b-container>
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">API Requests</p>
+        <p class="text-white text-end">10,000 / month / app</p>
+      </div>
 
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Languages</p>
+
+        <div class="text-end">
+          <p class="text-white text-end">JavaScript</p>
+          <p class="text-white text-end">TypeScript</p>
+          <p class="text-white text-end">Python</p>
+          <p class="text-white text-end">Go</p>
+        </div>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Integrated Database</p>
+        <p class="text-white">1 GB (AWS DynamoDB)</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Integrated Object Storage</p>
+        <p class="text-white">1 GB (AWS S3)</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Builds</p>
+        <p class="text-white text-end">Unlimited</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Edge Locations</p>
+        <p class="text-white text-end">Closest of 18+ Regions</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Smart Caching</p>
+        <p class="text-white text-end">300+ Locations</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Precision Cron</p>
+        <p class="text-white text-end">3 jobs / app</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Logs History - Application</p>
+        <p class="text-white text-end">7 Days</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Logs History - Network</p>
+        <p class="text-white text-end">7 Days</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">SSL Certificates</p>
+        <p class="text-white text-end">✓</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Custom Subdomains</p>
+        <p class="text-white text-end">✓</p>
+      </div>
+
+      <hr class="border-neutral-800">
+
+      <div class="flex items-center justify-between gap-10 lg:gap-20">
+        <p class="text-neutral-300">Build on <code>git push</code></p>
+        <p class="text-white text-end">✓</p>
+      </div>
+    </div>
+
+    <!-- ********* CONTROLS ********* -->
+    <div class="flex items-center justify-center gap-3 w-full">
+      <a
+        href="https://app.cyclic.sh/api/login"
+        class="button button-primary m-0 text-base w-max"
+        @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+      >
+        <Brand :hideText="true" :small="true" />
+        deploy now
+      </a>
+
+      <a
+        href="/pricing"
+        class="button button-outline m-0 w-max"
+        target="_blank"
+      >
+        Get more features
+      </a>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -98,50 +194,13 @@ export default {
 
 
 <style scoped>
-h2{
-  font-size: 30px;
-  font-weight: 100;
-}
-p {
-  color: var(--h-white)
-}
+
 p strong {
   color: orange;;
 }
 
-.btn-primary, .btn-primary:active{
-    background-color: var(--pink);
-    border-color: var(--pink);
 
-}
-.btn-primary:hover, .btn-primary:focus{
-    background-color: var(--darkpink);
-}
 
-.matrix-header{
-  margin: 0 40px;
-    /* width: 20%; */
-    /* height: 30px; */
-    text-align: center;;
-    font-size: 25px;
-    line-height: 35px;;
-    letter-spacing: 2px;;
-    font-weight: 100;
-}
-.matrix-header strong{
-  color: orange;;
-}
-
-.matrix{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 10px;
-  color: var(--h-white);
-  font-size: 18px;
-  justify-items: left;
-  text-align: left;;
-}
 
 .check{
   /* color: orange; */

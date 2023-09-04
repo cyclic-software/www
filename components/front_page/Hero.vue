@@ -1,75 +1,57 @@
 <template>
-  <div class="hero">
-      <b-row>
-        <b-col lg="6" align-self="center">
-          <div class="ml-12 space-y-10">
-            <div class="">
-              <p class="big-head">full</p>
-              <p class="big-head">stack</p>
-              <p class="big-head">apps</p>
-            </div>
+  <section class="section flex flex-col items-center gap-10 lg:gap-8">
+    <!-- ********* PILL TEXT ********* -->
+    <Pill text="Launch with confidence" />
+    
+    <!-- ********* CTA TEXTS ********* -->
+    <div class="space-y-8">
+      <h1 class="font-extrabold text-5xl sm:text-6xl lg:text-8xl tracking-normal text-center">
+        Escape infrastructure. Unleash ideas.
+      </h1>
+  
+      <p class="text-center text-neutral-300 text-lg">
+        Build and run <strong>modern cloud-native serverless applications</strong> without piling on to the full stack.
+        <!-- Connect your GitHub repo. We’ll build, deploy and manage the hosting. -->
+      </p>
+    </div>
 
-            <p class="text-gray-400">
-              Connect your GitHub repo.
-              <br>
-               We will build, deploy and manage the
-              hosting.
-            </p>
+    <!-- ********* CONTROLS ********* -->
+    <div class="flex items-center justify-center gap-3 w-full">
+      <a
+        href="https://app.cyclic.sh/api/login"
+        class="button button-primary m-0 text-base w-max"
+        @click="sign_up('https://app.cyclic.sh/api/login', $event)"
+      >
+        <Brand :hideText="true" :small="true" />
+        deploy now
+      </a>
 
-            <div class="">
-              <b-button
-              href="https://app.cyclic.sh/api/login" 
-              class="m-1" 
-              @click="sign_up('https://app.cyclic.sh/api/login', $event)" 
-              variant="primary" size="lg">
-                <i class="fab fa-github mr-2"></i> Deploy Now
-              </b-button>
-            </div>
-          </div>
-        </b-col>
-        <b-col lg="6"  align-self="center" class="right-hero">
-          <div class="mb-1">
-            <div class="paragraph caption steps">
-              <div class="circle_number">1</div>
-              <div class="step-caption">Start with what you know.</div></div>
-          </div>
-          <example-code />
-          <br>
-          <div class="mb-1 mt-5">
-            <div class="paragraph caption steps">
-              <div class="circle_number">2</div>
-              <div class="step-caption">Go from <code>git push</code> to go-live in
-                <strong>under 10 seconds</strong>.
-              </div> 
-            </div>
-          </div>
-          
+      <a
+        href="https://docs.cyclic.sh/"
+        class="button button-outline m-0 w-max"
+        target="_blank"
+      >
+        Read Docs
+      </a>
+    </div>
 
-          <div
-            class="text-center video_box"
-            style="max-height: 220px; overflow: hidden"
-          >
-            <!-- <video autoplay="autoplay" muted loop> -->
-              <img src="/images/deploy_tour.gif" >
-            <!-- <video playsinline="playsinline" autoplay muted loop>
-                Your browser does not support the video tag.
-              <source src="/images/deploy_tour.mp4" type="video/mp4" />
-            </video> -->
-          </div>
-          
-        </b-col>
-      </b-row>
-  </div>
+    <!-- ********* CYCLIC PREVIEW ********* -->
+    <img class="rounded-3xl mt-8 preview w-[95%]" src="/images/preview1.png" alt="">
+  </section>
 </template>
 
 <script>
 
+import Brand from "../Brand.vue";
+import Pill from "../Pill.vue";
 import ExampleCode from "./ExampleCode.vue";
 
 export default {
   components:{
-    ExampleCode
-  },
+    ExampleCode,
+    Pill,
+    Brand
+},
   methods:{
     async sign_up(url, e){
           try{
@@ -95,6 +77,9 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;800;900&display=swap');
 
+.preview {
+  box-shadow: 10px 0px 60px 4px #162859;
+}
 .hero{
   position: relative;
     left: 0px;

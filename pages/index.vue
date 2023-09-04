@@ -1,15 +1,14 @@
 <template>
   <div id="index-page">
-    <div class="header_image fade_loop main_splash"></div>
-    <div class="max-w-screen-xl mx-auto">
-      <div class="front-page-spacer"></div>
+    <!-- <div class="header_image fade_loop main_splash"></div> -->
+    <div class="pt-20">
       <hero/>
-
-      <div class="front-page-spacer "></div>
-      <frameworks/>
-      <!-- <div class="front-page-spacer spacer-smaller"></div> -->
+      <Steps />
+      <Supported />
+      <WhyCyclic />
+      <TrustedBy />
+      <!-- <frameworks/>
       <big-feature/>
-      <div class="front-page-spacer spacer-smaller"></div>
       <languages/>
       <div class="front-page-spacer spacer-smaller"></div>
       <db-feature/>
@@ -22,15 +21,14 @@
       <small-feature/>
       <div class="front-page-spacer"></div>
       <CompanyStats/>
-      <div class="front-page-spacer"></div>
+      <div class="front-page-spacer"></div> -->
       <feature-matrix/>
-      <div class="front-page-spacer"></div>
+      <Infrastructure />
+      <Blurbs />
       <product-demo/>
-      <div class="front-page-spacer"></div>
-      <blurbs/>
-      <div class="front-page-spacer"></div>
-      <CtaFullStackApps/>
-      <div class="front-page-spacer"></div>
+      <Campaign />
+      <!-- <blurbs/>
+      <CtaFullStackApps/> -->
     </div>
   </div>
 </template>
@@ -51,6 +49,12 @@ import ProductDemo from '~/components/front_page/ProductDemo.vue'
 import Blurbs from '~/components/front_page/Blurbs.vue'
 import Hero from '~/components/front_page/Hero.vue'
 import FeatureMatrix from '~/components/front_page/FeatureMatrix.vue'
+import Steps from '~/components/front_page/Steps.vue'
+import Supported from '~/components/front_page/Supported.vue'
+import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
+import TrustedBy from '~/components/front_page/TrustedBy.vue'
+import Infrastructure from '~/components/front_page/Infrastructure.vue'
+import Campaign from '~/components/front_page/Campaign.vue'
 
 export default {
   name: 'Homepage',
@@ -80,7 +84,13 @@ export default {
     ProductDemo,
     Hero,
     FeatureMatrix,
-  },
+    Steps,
+    Supported,
+    WhyCyclic,
+    TrustedBy,
+    Infrastructure,
+    Campaign
+},
   async created(){
     // warmup cms 
     await fetch('https://release-notes.cyclic.app/_healthcheck')
@@ -91,9 +101,9 @@ export default {
 <style scoped>
 
 
-#index-page{
+/* #index-page{
   background-color: black !important;
-}
+} */
 h1,h2 {
     letter-spacing: 2px;
 }
@@ -171,4 +181,53 @@ em{
   }
 }
   
+  .banner{
+    /* position: absolute;
+    width: 100%;
+    z-index: 90; */
+  }
+  
+  .b-content{
+    max-width: 1250px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .b-content h2{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    letter-spacing: normal;;
+    font-size:25px;
+    font-weight:500;
+    /* color: white; */
+  }
+  .b-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1.1rem;; */
+  }
+  .b-content ul{
+    margin-left: 20px;
+  }
+  .header-alert{
+    color: white;
+    /* color: #ffc008; */
+    background-color: #080e20;
+    border-radius: 10px;
+    /* backdrop-filter: blur(5px); */
+    border: 0px solid #ffc008;
+    animation: popup 0.2s;
+
+  }
+
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 </style>

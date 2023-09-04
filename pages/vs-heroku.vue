@@ -26,15 +26,30 @@ export default {
 
 
 <template>
-  <div class="wrapper gradient-bg">
-    <div class="max-w-screen-xl mx-auto">
-      <b-container class="hero">
+  <section class="section">
+    <div class="">
+      <div class="pt-20 space-y-12">
+        <div class="common-section">
+          <!-- ********* PILL TEXT ********* -->
+          <Pill text="One v One" />
+          
+          <!-- ********* CTA TEXTS ********* -->
+          <div class="space-y-6">
+            <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
+              Heroku vs Cyclic
+            </h2>
+        
+            <p class="text-center text-neutral-300">
+              Take a look at how Cyclic compares to Heroku.
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-neutral-800">
+
         <b-row>
           <b-col lg="1"></b-col>
           <b-col md="6" lg="5" align-self="center" class="space-y-4 text-lg">
-            <h1 class="text-7xl font-black capitalize m-0 mb-4 tracking-tight">
-              Heroku vs Cyclic
-            </h1>
             <div class="spacer-32"></div>
             <p>
                 Heroku is one of the best known PaaS (Platform as a Service) vendors.
@@ -57,7 +72,7 @@ export default {
             </p>
           </b-col>
           <!-- <b-col lg="1" ></b-col> -->
-          <b-col md="6" lg="5" class="hero-images" align-self="center">
+          <b-col  md="6" lg="5" class="hero-images" align-self="center">
                 <div class="vs-images">
                   <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
                   <!-- <div class="spacer-16"></div> -->
@@ -70,11 +85,11 @@ export default {
           </b-col>
           <b-col lg="1"></b-col>
         </b-row>
-      </b-container>
+      </div>
 
-
+      <br><br>
       <b-container>
-        <b-row align-h="center">
+        <b-row align-h="center" class="mt-5">
           <b-col md="2"></b-col>
           <b-col>
               <b-container class="feature-matrix">
@@ -184,7 +199,7 @@ export default {
       <CtaFullStackApps></CtaFullStackApps>
     </div>
 
-  </div>
+  </section>
 </template>
 
 

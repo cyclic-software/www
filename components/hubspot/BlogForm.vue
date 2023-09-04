@@ -1,10 +1,12 @@
 <template>
-  <section id="subscribe-form" class="subscribe-form wf-section">
-    <div class="centered-container w-container">
+  <section id="subscribe-form" class="common-section border !border-neutral-700 rounded-2xl w-full
+  lg:w-[80%] px-7 py-10 bg-neutral-800/20">
+    <div class="flex flex-col items-center text-center">
       <h2 class="font-bold text-4xl mb-4">Subscribe to posts</h2>
       <p>Enter your email If you would like to get an email the next time we post.<br>We post about ~1-2x per month, and up to once a month about company news.<br></p>
     </div>
-    <div class="container-5 w-container mt-4">
+    
+    <div class="mt-4">
       <div id="embedded-form"></div>
     </div>
   </section>
