@@ -35,23 +35,34 @@
     </div>
 
     <!-- ********* TESTIMONIALS ********* -->
-    <!-- <div class="overflow-x-auto w-full pb-6">
+    <div class="overflow-x-auto w-full pb-6">
       <div class="flex gap-5 w-max">
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
+        <Testimonial
+          v-for="testimonial of testimonials"
+          :key="testimonial.name + Math.random()"
+          :name="testimonial.name"
+          :msg="testimonial.msg"
+          :link="testimonial.link"
+          :avatar="testimonial.avatar"
+          :work="testimonial.work"
+        />
       </div>
-    </div> -->
+    </div>
   </section>
 </template>
 
 <script>
 import StatCard from './StatCard.vue';
 import Testimonial from './Testimonial.vue';
+import { testimonials } from './testimonials';
 
   export default {
     name: 'TrustedBy',
-    components: { StatCard, Testimonial }
+    components: { StatCard, Testimonial },
+    data() {
+      return {
+        testimonials
+      }
+    }
 }
 </script>
