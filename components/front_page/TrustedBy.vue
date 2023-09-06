@@ -32,6 +32,8 @@
         <img src="/images/commerce-iq.svg" alt="">
         <img src="/images/kiva.svg" alt="">
         <img src="/images/annalise.svg" alt="">
+        <img src="/images/duda.svg" alt="">
+        <img src="/images/match-group.svg" alt="">
       </div>
       <div class="marquee">
         <img src="/images/google.svg" alt="">
