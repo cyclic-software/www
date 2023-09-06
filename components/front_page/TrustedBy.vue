@@ -26,6 +26,16 @@
         <img src="/images/black-knight.svg" alt="">
         <img src="/images/ibm.svg" alt="">
       </div>
+      <div class="marquee">
+        <img src="/images/google.svg" alt="">
+        <img src="/images/tango.svg" alt="">
+        <img src="/images/takeit.svg" alt="">
+        <img src="/images/gonation-dark.svg" alt="">
+        <img src="/images/docker.svg" alt="">
+        <img src="/images/captur.svg" alt="">
+        <img src="/images/black-knight.svg" alt="">
+        <img src="/images/ibm.svg" alt="">
+      </div>
     </div>
 
     <!-- ********* STATS ********* -->
@@ -80,7 +90,7 @@ import { testimonials } from './testimonials';
 
 <style scoped>
   .logos {
-    display: flex;
+    /* display: flex; */
     gap: 80px;
     overflow: hidden;
     padding: 60px 0;
@@ -89,7 +99,7 @@ import { testimonials } from './testimonials';
     position: relative;
     width: 100%;
   }
-
+  
   .logos:before,
   .logos:after {
     position: absolute;
@@ -99,35 +109,37 @@ import { testimonials } from './testimonials';
     content: "";
     z-index: 2;
   }
-
+  
   .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(23, 23, 23, 0), rgb(23,23,23));
   }
-
+  
   .logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(23, 23, 23, 0), rgb(23,23,23));
   }
-
+  
   .logos:hover .marquee {
     /* animation-play-state: paused; */
   }
   .marquee {
-    display: flex;
+    display: inline-block;
+    width: max-content;
     animation: marquee 35s linear infinite; /* Adjust duration as needed */
   }
 
   .marquee img {
+    display: inline-block;
     height: 50px;
     margin: 0 40px;
   }
 
   @keyframes marquee {
-    0% {
-      transform: translateX(100%);
+    from {
+      transform: translateX(0%);
     }
-    100% {
+    to {
       transform: translateX(-100%); /* Adjust for the duplicated logos */
     }
   }
