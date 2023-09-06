@@ -15,7 +15,46 @@
     </div>
 
     <!-- ********* COMPANIES ********* -->
-    <!-- <div class=""></div> -->
+    <div class="logos">
+      <div class="marquee">
+        <img src="/images/google.svg" alt="">
+        <img src="/images/tango.svg" alt="">
+        <img src="/images/takeit.svg" alt="">
+        <img src="/images/gonation-dark.svg" alt="">
+        <img src="/images/docker.svg" alt="">
+        <img src="/images/captur.svg" alt="">
+        <img src="/images/black-knight.svg" alt="">
+        <img src="/images/ibm.svg" alt="">
+        <img src="/images/infrrd.svg" alt="">
+        <img src="/images/people-ai.svg" alt="">
+        <img src="/images/devrev.svg" alt="">
+        <img src="/images/outdoorsy.svg" alt="">
+        <img src="/images/commerce-iq.svg" alt="">
+        <img src="/images/kiva.svg" alt="">
+        <img src="/images/annalise.svg" alt="">
+        <img src="/images/duda.svg" alt="">
+        <img src="/images/match-group.svg" alt="">
+      </div>
+      <div class="marquee">
+        <img src="/images/google.svg" alt="">
+        <img src="/images/tango.svg" alt="">
+        <img src="/images/takeit.svg" alt="">
+        <img src="/images/gonation-dark.svg" alt="">
+        <img src="/images/docker.svg" alt="">
+        <img src="/images/captur.svg" alt="">
+        <img src="/images/black-knight.svg" alt="">
+        <img src="/images/ibm.svg" alt="">
+        <img src="/images/infrrd.svg" alt="">
+        <img src="/images/people-ai.svg" alt="">
+        <img src="/images/devrev.svg" alt="">
+        <img src="/images/outdoorsy.svg" alt="">
+        <img src="/images/commerce-iq.svg" alt="">
+        <img src="/images/kiva.svg" alt="">
+        <img src="/images/annalise.svg" alt="">
+        <img src="/images/duda.svg" alt="">
+        <img src="/images/match-group.svg" alt="">
+      </div>
+    </div>
 
     <!-- ********* STATS ********* -->
     <div class="border !border-neutral-700 rounded-3xl flex flex-col sm:flex-row items-center justify-around p-5
@@ -66,3 +105,60 @@ import { testimonials } from './testimonials';
     }
 }
 </script>
+
+<style scoped>
+  .logos {
+    /* display: flex; */
+    gap: 80px;
+    overflow: hidden;
+    padding: 60px 0;
+    background: rgb(23,23,23);
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(23, 23, 23, 0), rgb(23,23,23));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(23, 23, 23, 0), rgb(23,23,23));
+  }
+  
+  .logos:hover .marquee {
+    /* animation-play-state: paused; */
+  }
+  .marquee {
+    display: inline-block;
+    width: max-content;
+    animation: marquee 35s linear infinite; /* Adjust duration as needed */
+  }
+
+  .marquee img {
+    display: inline-block;
+    height: 50px;
+    margin: 0 40px;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%); /* Adjust for the duplicated logos */
+    }
+  }
+</style>

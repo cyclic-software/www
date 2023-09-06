@@ -164,7 +164,7 @@
           </div>
 
           <a
-            href="https://cyclic.typeform.com/to/HNNO8Bkp"
+            href="https://app.cyclic.sh/#/plan"
             target="_blank"
             class="w-full flex items-center justify-center rounded-xl py-3 px-6
             bg-primary text-white font-semibold text-lg hover:no-underline cursor-pointer
