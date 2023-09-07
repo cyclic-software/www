@@ -3,13 +3,13 @@
     <div class="common-section pt-20">
       <!-- ********* PILL TEXT ********* -->
       <Pill text="Read carefully" />
-      
+
       <!-- ********* CTA TEXTS ********* -->
       <div class="space-y-6">
         <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
           privacy policy
         </h2>
-    
+
         <p class="text-center text-neutral-300">
           Stay up to date with our privacy policy.
         </p>
@@ -322,13 +322,7 @@ We may provide paid products and/or services within Service. In that case, we us
 We will not store or collect your payment card details. That information is provided directly to our third-party payment processors whose use of your personal information is governed by their Privacy Policy. These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, Mastercard, American Express and Discover. PCI-DSS requirements help ensure the secure handling of payment information.
 </p>
 <p>
-The payment processors we work with are:
-</p>
-<p>
-Stripe
-</p>
-<p>
-Their Privacy Policy can be viewed at: https://stripe.com/us/privacy
+We use Stripe for payment, analytics, and other business services. Stripe collects identifying information about the devices that connect to its services. Stripe uses this information to operate and improve the services it provides to us, including for fraud detection. You can learn more about Stripe and read its privacy policy at https://stripe.com/privacy.
 </p>
         <h3>17. Links to Other Sites</h3>
 <p>
