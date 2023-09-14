@@ -2,16 +2,16 @@
   <section class="section common-section w-full gap-10">
     <div class="common-section pt-20">
       <!-- ********* PILL TEXT ********* -->
-      <Pill text="A bot use case" />
-      
+      <Pill text="Ops Automation" />
+
       <!-- ********* CTA TEXTS ********* -->
       <div class="space-y-6">
         <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
-          ChatOps: an admin bot
+          ChatOps: Admininstration cia Chat
         </h2>
-    
+
         <p class="text-center text-neutral-300">
-          Use Cyclic to automate admin ops with a bot.
+          Use Cyclic to improve response times with less manual effort.
         </p>
       </div>
     </div>
@@ -21,16 +21,18 @@
       <!-- ********* CONTENT ********* -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div class="bg-neutral-800 w-full h-full p-8">
-          h
+          image of bot chatting in slack with a user, reactions and replies
         </div>
-  
+
         <div class="text-neutral-300 leading-[150%] space-y-5">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Egestas enim id tortor semper egestas justo integer iaculis. Tincidunt vitae est libero auctor adipiscing ut aliquam amet. In leo sem mauris at rutrum integer pharetra. Euismod dui gravida nascetur quis sollicitudin tempus arcu aenean sit. Pellentesque porta a vitae venenatis tellus venenatis.
+            Modern software organizations are able to build systems that were in the realm of science fiction only decades ago. However, the complexity of these systems has grown exponentially. Expectations of users and internal users have also grown.
           </p>
-  
           <p>
-            Dui in elit lacus vitae pulvinar aenean. Duis suscipit et vel egestas dolor est tincidunt elementum fermentum. Id ipsum consectetur scelerisque vestibulum varius. Tincidunt nulla facilisis augue 
+            The ChatOps paradigm inverts the access pattern for most administrative workflows. In a simplified model the three components of the system are, the ChatBot, the administrator and the software system in question. Sessions maybe initiated by either an external event (ie email, webhook or cron), a system trigger or directly by the administrator directly to the ChatBot.
+          </p>
+          <p>
+            Authentication is handled by the embedded Authn system of the chat system. A first tier of authorization maybe provided by the chat system with the option of further authz being performed by the ChatBot. The ChatBot may also be used to provide a first tier of authorization with the option of further authz being performed by the ChatBot.
           </p>
         </div>
       </div>
@@ -42,10 +44,10 @@
 
           </div>
 
-          <h3 class="text-2xl">Benefit One</h3>
+          <h3 class="text-2xl">Visibility</h3>
 
           <p class="text-neutral-300">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet dolore ab tempora quis debitis corrupti, facere quisquam aspernatur.
+            Create team wide visibility in to the flow of operations work. By surfacing events and actions into a shared channel more members of the team are able to see the work being done. This creates a shared sense of ownership and builds team moral.
           </p>
         </div>
 
@@ -54,10 +56,10 @@
 
           </div>
 
-          <h3 class="text-2xl">Benefit Two</h3>
+          <h3 class="text-2xl">Speed</h3>
 
           <p class="text-neutral-300">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet dolore ab tempora quis debitis corrupti, facere quisquam aspernatur.
+            Provide employees with the relevant information in the same UI window they are already interacting in. By delegating information gathering and common followup linking to the ChatBot you free your coworkers to collaborate.
           </p>
         </div>
 
@@ -66,10 +68,10 @@
 
           </div>
 
-          <h3 class="text-2xl">Benefit Three</h3>
+          <h3 class="text-2xl">Effectiveness</h3>
 
           <p class="text-neutral-300">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet dolore ab tempora quis debitis corrupti, facere quisquam aspernatur.
+            ChatOps allows for seamless operation of "human-in-the-loop" interactions while mantaining InfoSec and DataSec compliant actions. Chat messages often provide several possible actions as well as deep links for administrators to quickly jump into other systems to take further action.
           </p>
         </div>
       </div>
@@ -318,7 +320,7 @@
           >
             Deploy
           </a>
-          
+
           <a
             href="https://cyclic.typeform.com/to/HNNO8Bkp"
             class="border !border-neutral-500 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
