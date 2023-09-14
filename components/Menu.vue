@@ -15,6 +15,41 @@
             <Navlink name="investors" path="/investors" />
             <Navlink name="vs Heroku" path="/vs-heroku" />
             <Navlink name="updates" path="/updates" />
+
+            <!-- USE CASES DROPDOWN -->
+            <div class="relative group">
+              <button class="flex items-center gap-1 text-neutral-300 group-hover:text-white">
+                <span class="text-sm">Use Cases</span>
+                <i class="ri-arrow-drop-down-line"></i>
+              </button>
+              
+              <div class="absolute top-full hidden opacity-0 border !border-neutral-700 bg-neutral-800 p-2
+              rounded-xl group-hover:grid group-hover:opacity-100 transition min-w-[120px] w-max grid-cols-1">
+                <nuxt-link
+                  class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+                  rounded-lg transition w-full text-sm"
+                  to="/use-cases/chatops"
+                >
+                  ChatOps: An Admin Bot
+                </nuxt-link>
+
+                <nuxt-link
+                  class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+                  rounded-lg transition w-full text-sm"
+                  to="/use-cases/chatops"
+                >
+                  ChatOps: An Admin Bot
+                </nuxt-link>
+
+                <nuxt-link
+                  class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+                  rounded-lg transition w-full text-sm"
+                  to="/use-cases/chatops"
+                >
+                  ChatOps: An Admin Bot
+                </nuxt-link>
+              </div>
+            </div>
           </div>
         </div>
   
