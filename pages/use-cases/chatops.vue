@@ -19,11 +19,9 @@
     <!-- ********* CHATOPS CONTENT ********* -->
     <div class="mt-10 space-y-16">
       <!-- ********* CONTENT ********* -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div class="bg-neutral-800 w-full h-full p-8">
-          image of bot chatting in slack with a user, reactions and replies
-        </div>
-
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <img class="w-full align-middle" src="/images/chatops.svg" alt="">
+        
         <div class="text-neutral-300 leading-[150%] space-y-5">
           <p>
             Modern software organizations are able to build systems that were in the realm of science fiction only decades ago. However, the complexity of these systems has grown exponentially. Expectations of users and internal users have also grown.
@@ -78,6 +76,8 @@
 
       <!-- ********* TABS ********* -->
       <div class="space-y-8">
+        <h3 class="text-2xl font-semibold">Load Pattern</h3>
+
         <div class="border !border-neutral-700 p-2 rounded-2xl">
           <button
             class="px-4 py-2 rounded-xl capitalize font-medium transition"
@@ -99,13 +99,14 @@
         </div>
 
         <div class="">
+          <!-- ********* REGULAR ********* -->
           <div v-if="tab === 'regular'" class="space-y-8">
             <img src="/images/regular-graph.png" class="w-full" alt="regular">
 
             <!-- ********* COMPARISON ********* -->
-            <div class="flex items-center justify-center gap-12">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
-              <div class="space-y-4 w-[400px]">
+              <div class="space-y-4 w-full lg:w-[400px]">
                 <h3 class="text-xl">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
@@ -133,10 +134,10 @@
                 </div>
               </div>
 
-              <p class="text-sm uppercase font-semibold text-neutral-400">vs</p>
+              <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
 
               <!-- ********* OTHERS ********* -->
-              <div class="space-y-4 w-[400px]">
+              <div class="space-y-4 w-full lg:w-[400px]">
                 <h3 class="text-xl">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
@@ -166,13 +167,14 @@
             </div>
           </div>
 
+          <!-- ********* BURSTY ********* -->
           <div v-if="tab === 'bursty'" class="space-y-8">
             <img src="/images/bursty-graph.png" class="w-full" alt="bursty">
 
             <!-- ********* COMPARISON ********* -->
-            <div class="flex items-center justify-center gap-12">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
-              <div class="space-y-4 w-[400px]">
+              <div class="space-y-4 w-full lg:w-[400px]">
                 <h3 class="text-xl">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
@@ -200,10 +202,10 @@
                 </div>
               </div>
 
-              <p class="text-sm uppercase font-semibold text-neutral-400">vs</p>
+              <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
 
               <!-- ********* OTHERS ********* -->
-              <div class="space-y-4 w-[400px]">
+              <div class="space-y-4 w-full lg:w-[400px]">
                 <h3 class="text-xl">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
@@ -233,13 +235,14 @@
             </div>
           </div>
 
+          <!-- ********* INTERMITTENT ********* -->
           <div v-if="tab === 'intermittent'" class="space-y-8">
             <img src="/images/intermittent-graph.png" class="w-full" alt="intermittent">
 
             <!-- ********* COMPARISON ********* -->
-            <div class="flex items-center justify-center gap-12">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
-              <div class="space-y-4 w-[400px]">
+              <div class="space-y-4 w-full lg:w-[400px]">
                 <h3 class="text-xl">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
@@ -267,10 +270,10 @@
                 </div>
               </div>
 
-              <p class="text-sm uppercase font-semibold text-neutral-400">vs</p>
+              <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
 
               <!-- ********* OTHERS ********* -->
-              <div class="space-y-4 w-[400px]">
+              <div class="space-y-4 w-full lg:w-[400px]">
                 <h3 class="text-xl">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
@@ -302,6 +305,7 @@
         </div>
       </div>
 
+      <!-- ********* CALL TO ACTION ********* -->
       <div class="flex flex-col gap-2 items-center border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10
       space-y-5 text-center">
         <h2 class="text-3xl font-semibold">Deploy a ChatOps bot now</h2>
@@ -312,11 +316,11 @@
           We have the starter template ready, all you have to do is press ‘Deploy’.
         </p>
 
-        <div class="flex items-center gap-2">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-2">
           <a
             href="https://app.cyclic.sh/api/login"
             class="bg-primary text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
-            gap-2 hover:no-underline hover:scale-105 transition w-full md:w-[250px]"
+            gap-2 hover:no-underline hover:scale-105 transition w-full sm:w-[250px]"
           >
             Deploy
           </a>
@@ -324,7 +328,7 @@
           <a
             href="https://cyclic.typeform.com/to/HNNO8Bkp"
             class="border !border-neutral-500 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
-            gap-2 hover:no-underline hover:!border-white transition w-full md:w-[250px]"
+            gap-2 hover:no-underline hover:!border-white transition w-full sm:w-[250px]"
             target="_blank"
           >
             Talk to an Engineer
