@@ -20,7 +20,7 @@
     <div class="mt-10 space-y-16">
       <!-- ********* CONTENT ********* -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <img class="w-full align-middle" src="/images/chatops.svg" alt="">
+        <img class="w-full align-self-center" src="/images/chatops.svg" alt="">
         
         <div class="text-neutral-300 leading-[150%] space-y-5">
           <p>
@@ -38,8 +38,9 @@
       <!-- ********* BENEFITS ********* -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="space-y-5">
-          <div class="w-20 h-20 bg-neutral-800">
-
+          <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
+          text-2xl rounded-xl text-primary">
+            <i class="ri-eye-line"></i>
           </div>
 
           <h3 class="text-2xl">Visibility</h3>
@@ -50,8 +51,9 @@
         </div>
 
         <div class="space-y-5">
-          <div class="w-20 h-20 bg-neutral-800">
-
+          <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
+          text-2xl rounded-xl text-primary">
+            <i class="ri-flashlight-fill"></i>
           </div>
 
           <h3 class="text-2xl">Speed</h3>
@@ -62,8 +64,9 @@
         </div>
 
         <div class="space-y-5">
-          <div class="w-20 h-20 bg-neutral-800">
-
+          <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
+          text-2xl rounded-xl text-primary">
+            <i class="ri-checkbox-circle-line"></i>
           </div>
 
           <h3 class="text-2xl">Effectiveness</h3>
