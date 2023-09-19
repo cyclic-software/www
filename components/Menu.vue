@@ -35,9 +35,9 @@
                 <nuxt-link
                   class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
                   rounded-lg transition w-full text-sm"
-                  to="/use-cases/chatops"
+                  to="/use-cases/api-integrations"
                 >
-                  ChatOps: An Admin Bot
+                  API Integrations
                 </nuxt-link>
 
                 <nuxt-link
