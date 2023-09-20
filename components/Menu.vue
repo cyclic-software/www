@@ -97,6 +97,7 @@
       </div>
     </div>
 
+    <!-- ********* BRING CYCLIC TO WORK BANNER ********* -->
     <div v-if="show_banner" class="border-b border-neutral-700 px-4 sm:px-0 py-2 bg-neutral-800">
       <div class="max-w-6xl mx-auto flex items-center gap-3 text-sm">
         <p class="font-semibold">Cyclic at Work</p>
@@ -117,7 +118,7 @@
       </div>
     </div>
 
-    <!-- MOBILE MENU -->
+    <!-- ********* MOBILE MENU ********* -->
     <div :class="`fixed top-0 right-0 ${menu_open ? 'translate-x-0':'translate-x-full'} flex flex-col md:hidden w-full h-screen
     bg-neutral-800 border-l border-neutral-700 transition`">
       <button class="flex items-center justify-center h-10 w-10 border rounded-xl !border-neutral-700
@@ -161,14 +162,6 @@
         <nuxt-link
           class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
           rounded-lg transition"
-          to="/vs-heroku"
-        >
-          vs heroku
-        </nuxt-link>
-
-        <nuxt-link
-          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition"
           to="/updates"
         >
           updates
@@ -183,7 +176,41 @@
           docs
         </a>
 
+        <!-- USE CASES DROPDOWN -->
+        <div class="relative group w-full">
+          <button class="flex items-center justify-between gap-1 capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+          rounded-lg transition w-full">
+            <span class="">Use Cases</span>
+            <i class="ri-arrow-drop-down-line"></i>
+          </button>
+          
+          <div class="hidden opacity-0 h-0 border !border-neutral-700 bg-neutral-800 p-2
+          rounded-xl group-hover:grid group-hover:opacity-100 group-hover:h-max transition min-w-[120px] w-full grid-cols-1">
+            <nuxt-link
+              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+              rounded-lg transition w-full text-sm"
+              to="/use-cases/chatops"
+            >
+              ChatOps: An Admin Bot
+            </nuxt-link>
 
+            <nuxt-link
+              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+              rounded-lg transition w-full text-sm"
+              to="/use-cases/api-integrations"
+            >
+              API Integrations
+            </nuxt-link>
+
+            <nuxt-link
+              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+              rounded-lg transition w-full text-sm"
+              to="/vs-heroku"
+            >
+              Cyclic vs Heroku
+            </nuxt-link>
+          </div>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 mt-10 px-6 gap-2">
