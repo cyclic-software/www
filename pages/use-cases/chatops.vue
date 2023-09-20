@@ -6,8 +6,8 @@
 
       <!-- ********* CTA TEXTS ********* -->
       <div class="space-y-6">
-        <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
-          ChatOps: Admininstration cia Chat
+        <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
+          ChatOps: Administration via Chat
         </h2>
 
         <p class="text-center text-neutral-300">
