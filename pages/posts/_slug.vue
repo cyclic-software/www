@@ -116,6 +116,11 @@
             year
           }
         }
+    },
+    mounted() {
+    if (typeof window !== 'undefined') {
+      require('prismjs');
     }
+  },
   }
 </script>
