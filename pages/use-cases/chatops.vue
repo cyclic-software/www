@@ -81,24 +81,26 @@
       <div class="space-y-8">
         <h3 class="text-2xl font-semibold">Load Pattern</h3>
 
-        <div class="border !border-neutral-700 p-2 rounded-2xl">
-          <button
-            class="px-4 py-2 rounded-xl capitalize font-medium transition"
-            :class="tab === 'regular' ? 'bg-primary' : 'text-neutral-300'"
-            @click="tab='regular'"
-          >regular</button>
-
-          <button
-            class="px-4 py-2 rounded-xl capitalize font-medium transition"
-            :class="tab === 'bursty' ? 'bg-primary' : 'text-neutral-300'"
-            @click="tab='bursty'"
-          >bursty</button>
-
-          <button
-            class="px-4 py-2 rounded-xl capitalize font-medium transition"
-            :class="tab === 'intermittent' ? 'bg-primary' : 'text-neutral-300'"
-            @click="tab='intermittent'"
-          >intermittent</button>
+        <div class="border !border-neutral-700 p-2 rounded-2xl overflow-hidden w-full overflow-x-auto">
+          <div class="w-max flex">
+            <button
+              class="px-4 py-2 rounded-xl capitalize font-medium transition"
+              :class="tab === 'regular' ? 'bg-primary' : 'text-neutral-300'"
+              @click="tab='regular'"
+            >regular</button>
+  
+            <button
+              class="px-4 py-2 rounded-xl capitalize font-medium transition"
+              :class="tab === 'bursty' ? 'bg-primary' : 'text-neutral-300'"
+              @click="tab='bursty'"
+            >bursty</button>
+  
+            <button
+              class="px-4 py-2 rounded-xl capitalize font-medium transition"
+              :class="tab === 'intermittent' ? 'bg-primary' : 'text-neutral-300'"
+              @click="tab='intermittent'"
+            >intermittent</button>
+          </div>
         </div>
 
         <div class="">
