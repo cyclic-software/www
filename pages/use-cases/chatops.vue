@@ -85,6 +85,12 @@
           <div class="w-max flex">
             <button
               class="px-4 py-2 rounded-xl capitalize font-medium transition"
+              :class="tab === 'intermittent' ? 'bg-primary' : 'text-neutral-300'"
+              @click="tab='intermittent'"
+            >intermittent</button>
+
+            <button
+              class="px-4 py-2 rounded-xl capitalize font-medium transition"
               :class="tab === 'regular' ? 'bg-primary' : 'text-neutral-300'"
               @click="tab='regular'"
             >regular</button>
@@ -94,12 +100,6 @@
               :class="tab === 'bursty' ? 'bg-primary' : 'text-neutral-300'"
               @click="tab='bursty'"
             >bursty</button>
-  
-            <button
-              class="px-4 py-2 rounded-xl capitalize font-medium transition"
-              :class="tab === 'intermittent' ? 'bg-primary' : 'text-neutral-300'"
-              @click="tab='intermittent'"
-            >intermittent</button>
           </div>
         </div>
 
@@ -108,21 +108,43 @@
           <div v-if="tab === 'regular'" class="space-y-8">
             <img src="/images/regular-graph.png" class="w-full" alt="regular">
 
+            <div class="text-neutral-300 leading-[150%] space-y-2">
+              <p>100,000 requests per day with consistent usage pattern</p>
+              <p>- Example: servicing US based customer service representatives using ChatOps to support customer call center.</p>
+            </div>
+
+            <hr class="border-neutral-700">
+
             <!-- ********* COMPARISON ********* -->
             <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
               <div class="space-y-4 w-full lg:w-[400px]">
-                <h3 class="text-xl">On demand price on Cyclic</h3>
+                <h3 class="text-xl font-medium">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">10,000 requests</span>
+                    <span class="text-neutral-300">Unlimited dev/test environments</span>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">1 environment</span>
+                    <span class="text-neutral-300">Up to 100 GB ram concurrent</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">Up to 100 vCPU concurrent</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">CI/CD included</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">Scales up and down on-demand</span>
                   </div>
                 </div>
 
@@ -132,28 +154,45 @@
                   <span class="text-primary text-2xl font-bold">$</span>
 
                   <p class="text-7xl text-white font-semibold">
-                    29
+                    189
                   </p>
 
                   <div class="ml-1">/ month</div>
                 </div>
+
+                <p class="text-xs text-neutral-300 leading-[150%]">100,000 requests/day * 31 days/month * $0.00005 /request = $155 /month +$29 /month/developer</p>
               </div>
 
               <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
 
               <!-- ********* OTHERS ********* -->
               <div class="space-y-4 w-full lg:w-[400px]">
-                <h3 class="text-xl">Provisioned capacity on other platforms</h3>
+                <h3 class="text-xl font-medium">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">10,000 requests</span>
+                    <span class="text-neutral-300">Large compute</span>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">1 environment</span>
+                    <span class="text-neutral-300">3 environments (dev/test/prod)</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">2 instances in each environment for redundancy</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">Large compute 2vCPU 8GiB ram</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">2 x t3.large</span>
                   </div>
                 </div>
 
@@ -162,12 +201,14 @@
                 <div class="flex gap-2">
                   <span class="text-primary text-2xl font-bold">$</span>
 
-                  <p class="text-7xl text-neutral-200 font-semibold">
-                    299
+                  <p class="text-7xl text-red-400 font-semibold">
+                    371
                   </p>
 
                   <div class="ml-1">/ month</div>
                 </div>
+
+                <p class="text-xs text-neutral-300 leading-[150%]">$0.0832 /instance/hour * 24 hours/day * 31 days/month * 2 instances * 3 environments = $371 / month</p>
               </div>
             </div>
           </div>
@@ -176,21 +217,43 @@
           <div v-if="tab === 'bursty'" class="space-y-8">
             <img src="/images/bursty-graph.png" class="w-full" alt="bursty">
 
+            <div class="text-neutral-300 leading-[150%] space-y-2">
+              <p>Random peaks of up to 100 requests/second (75,000 average per day)</p>
+              <p>- Example: supporting large collaborative community events.</p>
+            </div>
+
+            <hr class="border-neutral-700">
+
             <!-- ********* COMPARISON ********* -->
             <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
               <div class="space-y-4 w-full lg:w-[400px]">
-                <h3 class="text-xl">On demand price on Cyclic</h3>
+                <h3 class="text-xl font-medium">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">10,000 requests</span>
+                    <span class="text-neutral-300">Unlimited dev/test environments</span>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">1 environment</span>
+                    <span class="text-neutral-300">100 GB RAM total concurrent included</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">200 vCPU total concurrent included</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">CI/CD included</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">Scales up and down on-demand, no cost for idle</span>
                   </div>
                 </div>
 
@@ -200,28 +263,40 @@
                   <span class="text-primary text-2xl font-bold">$</span>
 
                   <p class="text-7xl text-white font-semibold">
-                    29
+                    145
                   </p>
 
                   <div class="ml-1">/ month</div>
                 </div>
+
+                <p class="text-xs text-neutral-300 leading-[150%]">75,000 requests/day * 31 days/month * $0.00005 /request = $116 /month +$29 /month/developer</p>
               </div>
 
               <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
 
               <!-- ********* OTHERS ********* -->
               <div class="space-y-4 w-full lg:w-[400px]">
-                <h3 class="text-xl">Provisioned capacity on other platforms</h3>
+                <h3 class="text-xl font-medium">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">10,000 requests</span>
+                    <span class="text-neutral-300">Extra Large compute</span>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">1 environment</span>
+                    <span class="text-neutral-300">3 environments (dev/test/prod)</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">6 instances in prod, 2 in each in dev/test</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">t3.large compute 2vCPU 8GiB ram</span>
                   </div>
                 </div>
 
@@ -230,12 +305,14 @@
                 <div class="flex gap-2">
                   <span class="text-primary text-2xl font-bold">$</span>
 
-                  <p class="text-7xl text-neutral-200 font-semibold">
-                    299
+                  <p class="text-7xl text-red-400 font-semibold">
+                    619
                   </p>
 
                   <div class="ml-1">/ month</div>
                 </div>
+
+                <p class="text-xs text-neutral-300 leading-[150%]">$0.0832 /instance/hour * 24 hours/day * 31 days/month * 10 instances  = $619 /month</p>
               </div>
             </div>
           </div>
@@ -244,21 +321,43 @@
           <div v-if="tab === 'intermittent'" class="space-y-8">
             <img src="/images/intermittent-graph.png" class="w-full" alt="intermittent">
 
+            <div class="text-neutral-300 leading-[150%] space-y-2">
+              <p>Mostly idle, with small burst of light usage. Max concurrency 5 requests/second (500 average per day)</p>
+              <p>- Example: Internal support tool used by a small team.</p>
+            </div>
+
+            <hr class="border-neutral-700">
+
             <!-- ********* COMPARISON ********* -->
             <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
               <div class="space-y-4 w-full lg:w-[400px]">
-                <h3 class="text-xl">On demand price on Cyclic</h3>
+                <h3 class="text-xl font-medium">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">10,000 requests</span>
+                    <span class="text-neutral-300">Unlimited dev/test environments</span>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">1 environment</span>
+                    <span class="text-neutral-300">100 GB RAM total concurrent included</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">200 vCPU total concurrent included</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">CI/CD included</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">Scales up and down on-demand, no cost for idle</span>
                   </div>
                 </div>
 
@@ -268,28 +367,40 @@
                   <span class="text-primary text-2xl font-bold">$</span>
 
                   <p class="text-7xl text-white font-semibold">
-                    29
+                    30
                   </p>
 
                   <div class="ml-1">/ month</div>
                 </div>
+
+                <p class="text-xs text-neutral-300 leading-[150%]">500 requests/day * 31 days/month * $0.00005 /request = $1 /month +$29 /month/developer</p>
               </div>
 
               <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
 
               <!-- ********* OTHERS ********* -->
               <div class="space-y-4 w-full lg:w-[400px]">
-                <h3 class="text-xl">Provisioned capacity on other platforms</h3>
+                <h3 class="text-xl font-medium">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">10,000 requests</span>
+                    <span class="text-neutral-300">Small compute</span>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="ri-check-line text-primary"></i>
-                    <span class="text-neutral-300">1 environment</span>
+                    <span class="text-neutral-300">3 environments (dev/test/prod)</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">2 instances in prod, 1 in each in dev/test</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i>
+                    <span class="text-neutral-300">t3.medium compute 2vCPU 4GiB ram</span>
                   </div>
                 </div>
 
@@ -298,12 +409,14 @@
                 <div class="flex gap-2">
                   <span class="text-primary text-2xl font-bold">$</span>
 
-                  <p class="text-7xl text-neutral-200 font-semibold">
-                    299
+                  <p class="text-7xl text-red-400 font-semibold">
+                    123
                   </p>
 
                   <div class="ml-1">/ month</div>
                 </div>
+
+                <p class="text-xs text-neutral-300 leading-[150%]">$0.0416 /instance/hour * 24 hours/day * 31 days/month * 4 instances  = $123 /month</p>
               </div>
             </div>
           </div>
@@ -352,7 +465,7 @@
   export default {
     data() {
       return {
-        tab: 'regular'
+        tab: 'intermittent'
       }
     }
   }
