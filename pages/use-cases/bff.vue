@@ -37,14 +37,14 @@
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-eye-line"></i>
+            <i class="ri-tools-line"></i>
           </div>
 
           <h3 class="text-2xl">Reduced maintenance overhead</h3>
           <p class="text-neutral-300">
             While BFF does reduce the complexity of each individual component, multiple such component can burden and complicate release management. Cyclic.sh's integration with GitHub and AWS allows for a streamlined CI/CD pipeline that can be easily managed and scaled.  
           </p>
-          <p>
+          <p class="text-neutral-300">
             One-click rollbacks with detailed deployment history that is directly linked to version control making change management for multiple components easy.
           </p>
         </div>
@@ -52,15 +52,15 @@
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-flashlight-fill"></i>
+            <i class="ri-server-line"></i>
           </div>
 
-          <h3 class="text-2xl">Fast Dev </h3>
+          <h3 class="text-2xl">Dev env for every dev</h3>
 
           <p class="text-neutral-300">
             Isolated components reduce the complexity of the codebase and allow for faster development cycles. Many of the components need to be developed and tested in tandem. Cyclic.sh's environment management allows for easy creation of environments that can be used by individual developers without having to share. 
           </p>
-          <p>
+          <p class="text-neutral-300">
             Serverless makes this very cheap since you only pay for activity, whether you have 1 or 100 environments.
           </p>
         </div>
@@ -68,10 +68,10 @@
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-checkbox-circle-line"></i>
+            <i class="ri-grid-fill"></i>
           </div>
 
-          <h3 class="text-2xl">Monitoring</h3>
+          <h3 class="text-2xl">Integration without confusion</h3>
 
           <p class="text-neutral-300">
             One of the challenges with BFF is the increased complexity of monitoring. Cyclic.sh's integration with AWS CloudWatch allows for easy monitoring of components. With BFF architectures being heavily reliant on API's -  Cyclic.sh's dashboard provides a unique logging and monitoring experience that fuses application logs with API logs.
