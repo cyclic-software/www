@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/use-cases/bff", {data:[{}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1695656412",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fhow-a-phishing-scampage-works",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"b910bec7"}},globalRefs:{}}}(null));
