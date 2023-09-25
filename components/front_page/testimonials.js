@@ -67,3 +67,7 @@ export const testimonials = [
     link: 'https://twitter.com/noravgs/status/1613973553161830404?s=20'
   },
 ]
+
+export default {
+  testimonials
+}
