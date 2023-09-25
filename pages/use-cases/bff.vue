@@ -2,16 +2,16 @@
   <section class="section common-section w-full gap-10">
     <div class="common-section pt-20">
       <!-- ********* PILL TEXT ********* -->
-      <Pill text="Integrate APIs" />
+      <Pill text="Easy BFFs" />
 
       <!-- ********* CTA TEXTS ********* -->
       <div class="space-y-6">
         <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
-          API Integrations
+          Backends for Frontends
         </h2>
 
         <p class="text-center text-neutral-300">
-          Use Cyclic to improve response times with less manual effort.
+          Use Cyclic to develop and deploy BFF architectures.
         </p>
       </div>
     </div>
@@ -20,19 +20,16 @@
     <div class="mt-10 space-y-16">
       <!-- ********* CONTENT ********* -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <img class="w-full align-self-center" src="/images/api.svg" alt="">
+        <img class="w-full align-self-center" src="/images/bff.svg" alt="">
         
-        <div class="text-neutral-300 leading-[150%] space-y-5">
+        <div class="text-neutral-300 leading-[150%] space-y-5 align-self-center">
           <p>
-            Modern software organizations are able to build systems that were in the realm of science fiction only decades ago. However, the complexity of these systems has grown exponentially. Expectations of users and internal users have also grown.
+            In the Backends for Frontends (BFF) pattern, each frontend gets its own backend, optimized to meet its specific needs. 
           </p>
           <p>
-            The ChatOps paradigm inverts the access pattern for most administrative workflows. In a simplified model the three components of the system are, the ChatBot, the administrator and the software system in question. Sessions maybe initiated by either an external event (ie email, webhook or cron), a system trigger or directly by the administrator directly to the ChatBot.
+            Cyclic.sh's reliance on AWS resources gives applications a strong foundation for scalability and reliability while allowing for easy isolation of services. By leveraging AWS Lambda for serverless functions, it allows for a highly scalable backends that can adjust to varying loads without manual intervention. The use of AWS API Gateway ensures secure and efficient routing of API calls from each specialized frontend to the respective backend service. For data storage and retrieval, the integration with AWS DynamoDB offers a performant and flexible NoSQL database. 
           </p>
-          <p>
-            Authentication is handled by the embedded Authn system of the chat system. A first tier of authorization maybe provided by the chat system with the option of further authz being performed by the ChatBot. The ChatBot may also be used to provide a first tier of authorization with the option of further authz being performed by the ChatBot.
-          </p>
-        </div>
+          </div>
       </div>
 
       <!-- ********* BENEFITS ********* -->
@@ -40,39 +37,44 @@
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-eye-line"></i>
+            <i class="ri-tools-line"></i>
           </div>
 
-          <h3 class="text-2xl">Visibility</h3>
-
+          <h3 class="text-2xl">Reduced maintenance overhead</h3>
           <p class="text-neutral-300">
-            Create team wide visibility in to the flow of operations work. By surfacing events and actions into a shared channel more members of the team are able to see the work being done. This creates a shared sense of ownership and builds team moral.
+            While BFF does reduce the complexity of each individual component, multiple such component can burden and complicate release management. Cyclic.sh's integration with GitHub and AWS allows for a streamlined CI/CD pipeline that can be easily managed and scaled.  
+          </p>
+          <p class="text-neutral-300">
+            One-click rollbacks with detailed deployment history that is directly linked to version control making change management for multiple components easy.
           </p>
         </div>
 
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-flashlight-fill"></i>
+            <i class="ri-server-line"></i>
           </div>
 
-          <h3 class="text-2xl">Speed</h3>
+          <h3 class="text-2xl">Dev env for every dev</h3>
 
           <p class="text-neutral-300">
-            Provide employees with the relevant information in the same UI window they are already interacting in. By delegating information gathering and common followup linking to the ChatBot you free your coworkers to collaborate.
+            Isolated components reduce the complexity of the codebase and allow for faster development cycles. Many of the components need to be developed and tested in tandem. Cyclic.sh's environment management allows for easy creation of environments that can be used by individual developers without having to share. 
+          </p>
+          <p class="text-neutral-300">
+            Serverless makes this very cheap since you only pay for activity, whether you have 1 or 100 environments.
           </p>
         </div>
 
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-checkbox-circle-line"></i>
+            <i class="ri-grid-fill"></i>
           </div>
 
-          <h3 class="text-2xl">Effectiveness</h3>
+          <h3 class="text-2xl">Integration without confusion</h3>
 
           <p class="text-neutral-300">
-            ChatOps allows for seamless operation of "human-in-the-loop" interactions while mantaining InfoSec and DataSec compliant actions. Chat messages often provide several possible actions as well as deep links for administrators to quickly jump into other systems to take further action.
+            One of the challenges with BFF is the increased complexity of monitoring. Cyclic.sh's integration with AWS CloudWatch allows for easy monitoring of components. With BFF architectures being heavily reliant on API's -  Cyclic.sh's dashboard provides a unique logging and monitoring experience that fuses application logs with API logs.
           </p>
         </div>
       </div>
@@ -81,7 +83,7 @@
       <!-- ********* CALL TO ACTION ********* -->
       <div class="flex flex-col gap-2 items-center border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10
       space-y-5 text-center">
-        <h2 class="text-3xl font-semibold">Deploy an API now</h2>
+        <h2 class="text-3xl font-semibold">Deploy a BFF now</h2>
 
         <hr class="border-primary w-10">
 
