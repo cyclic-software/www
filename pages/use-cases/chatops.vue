@@ -118,7 +118,7 @@
             <!-- ********* COMPARISON ********* -->
             <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
-              <div class="space-y-4 w-full lg:w-[400px]">
+              <div class="space-y-4 w-full lg:h-[350px] lg:w-[400px]">
                 <h3 class="text-xl font-medium">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
@@ -163,10 +163,10 @@
                 <p class="text-xs text-neutral-300 leading-[150%]">100,000 requests/day * 31 days/month * $0.00005 /request = $155 /month +$29 /month/developer</p>
               </div>
 
-              <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
+              <p class="text-sm uppercase font-semibold text-neutral-400 text-center lg:pt-16">vs</p>
 
               <!-- ********* OTHERS ********* -->
-              <div class="space-y-4 w-full lg:w-[400px]">
+              <div class="space-y-4 w-full lg:h-[350px] lg:w-[400px]">
                 <h3 class="text-xl font-medium">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
@@ -227,7 +227,7 @@
             <!-- ********* COMPARISON ********* -->
             <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
-              <div class="space-y-4 w-full lg:w-[400px]">
+              <div class="space-y-4 w-full lg:h-[350px] lg:w-[400px]">
                 <h3 class="text-xl font-medium">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
@@ -272,10 +272,10 @@
                 <p class="text-xs text-neutral-300 leading-[150%]">75,000 requests/day * 31 days/month * $0.00005 /request = $116 /month +$29 /month/developer</p>
               </div>
 
-              <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
+              <p class="text-sm uppercase font-semibold text-neutral-400 text-center lg:pt-16">vs</p>
 
               <!-- ********* OTHERS ********* -->
-              <div class="space-y-4 w-full lg:w-[400px]">
+              <div class="space-y-4 w-full lg:h-[350px] lg:w-[400px]">
                 <h3 class="text-xl font-medium">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
@@ -298,6 +298,8 @@
                     <i class="ri-check-line text-primary"></i>
                     <span class="text-neutral-300">t3.large compute 2vCPU 8GiB ram</span>
                   </div>
+                  
+                  <div class="flex items-center gap-2 h-6"></div>
                 </div>
 
                 <hr class="border-neutral-700">
@@ -331,7 +333,7 @@
             <!-- ********* COMPARISON ********* -->
             <div class="flex flex-col lg:flex-row lg:items-center justify-center gap-12">
               <!-- ********* CYCLIC ********* -->
-              <div class="space-y-4 w-full lg:w-[400px]">
+              <div class="space-y-4 w-full lg:h-[350px] lg:w-[400px]">
                 <h3 class="text-xl font-medium">On demand price on Cyclic</h3>
 
                 <div class="space-y-2">
@@ -376,10 +378,10 @@
                 <p class="text-xs text-neutral-300 leading-[150%]">500 requests/day * 31 days/month * $0.00005 /request = $1 /month +$29 /month/developer</p>
               </div>
 
-              <p class="text-sm uppercase font-semibold text-neutral-400 text-center">vs</p>
+              <p class="text-sm uppercase font-semibold text-neutral-400 text-center lg:pt-16">vs</p>
 
               <!-- ********* OTHERS ********* -->
-              <div class="space-y-4 w-full lg:w-[400px]">
+              <div class="space-y-4 w-full lg:h-[350px] lg:w-[400px]">
                 <h3 class="text-xl font-medium">Provisioned capacity on other platforms</h3>
 
                 <div class="space-y-2">
@@ -402,6 +404,8 @@
                     <i class="ri-check-line text-primary"></i>
                     <span class="text-neutral-300">t3.medium compute 2vCPU 4GiB ram</span>
                   </div>
+
+                  <div class="flex items-center gap-2 h-6"></div>
                 </div>
 
                 <hr class="border-neutral-700">
