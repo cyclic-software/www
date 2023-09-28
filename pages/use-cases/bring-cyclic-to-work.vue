@@ -77,26 +77,26 @@
 
 
       <!-- ********* CALL TO ACTION ********* -->
-      <!-- <div class="flex flex-col gap-2 items-center border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10
+      <div class="flex flex-col gap-2 items-center border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10
       space-y-5 text-center">
-        <h2 class="text-3xl font-semibold">Deploy an API now</h2>
+        <h2 class="text-3xl font-semibold">Bring Cyclic to Work</h2>
 
         <hr class="border-primary w-10">
 
         <p class="text-neutral-300 w-full md:w-[50%] leading-[160%]">
-          We have the starter template ready, all you have to do is press ‘Deploy’.
+          Ready to build fast and ship even faster? Get started today.
         </p>
 
         <div class="flex flex-col sm:flex-row sm:items-center gap-2">
           <a
-            href="https://app.cyclic.sh/api/login"
+            href="https://cyclic.typeform.com/to/HNNO8Bkp"
             class="bg-primary text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
             gap-2 hover:no-underline hover:scale-105 transition w-full sm:w-[250px]"
           >
-            Deploy
+            Get Started
           </a>
 
-          <a
+          <!-- <a
             href="https://cyclic.typeform.com/to/HNNO8Bkp"
             class="border !border-neutral-500 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
             gap-2 hover:no-underline hover:!border-white transition w-full sm:w-[250px]"
@@ -104,10 +104,10 @@
           >
             Talk to an Engineer
             <i class="ri-arrow-right-up-line"></i>
-          </a>
+          </a> -->
 
         </div>
-      </div> -->
+      </div>
 
     </div>
 
