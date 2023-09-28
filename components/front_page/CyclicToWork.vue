@@ -25,7 +25,7 @@
         </div>
         
         <div class="">
-          <nuxt-link to="/uses-cases/bring-cyclic-to-work" class="button button-primary m-0 text-base w-max">
+          <nuxt-link to="/use-cases/bring-cyclic-to-work" class="button button-primary m-0 text-base w-max">
             Learn More
           </nuxt-link>
         </div>
