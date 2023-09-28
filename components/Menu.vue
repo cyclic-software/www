@@ -40,13 +40,13 @@
                  Backends for Frontends
                 </nuxt-link>
 
-                <!-- <nuxt-link
+                <nuxt-link
                   class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
                   rounded-lg transition w-full text-sm"
-                  to="/use-cases/api-integrations"
+                  to="/use-cases/bring-cyclic-to-work"
                 >
-                  API Integrations
-                </nuxt-link> -->
+                  Bring Cyclic to Work
+                </nuxt-link>
 
                 <nuxt-link
                   class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
@@ -202,13 +202,21 @@
               ChatOps: An Admin Bot
             </nuxt-link>
 
-            <!-- <nuxt-link
+            <nuxt-link
               class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
               rounded-lg transition w-full text-sm"
-              to="/use-cases/api-integrations"
+              to="/use-cases/bff"
             >
-              API Integrations
-            </nuxt-link> -->
+              Backends for Frontends
+            </nuxt-link>
+
+            <nuxt-link
+              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+              rounded-lg transition w-full text-sm"
+              to="/use-cases/bring-cyclic-to-work"
+            >
+              Bring Cyclic to Work
+            </nuxt-link>
 
             <nuxt-link
               class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
