@@ -25,6 +25,7 @@
       <feature-matrix/>
       <Infrastructure />
       <Blurbs />
+      <GlobalLocations />
       <product-demo/>
       <Campaign />
       <!-- <blurbs/>
@@ -55,6 +56,7 @@ import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
 import TrustedBy from '~/components/front_page/TrustedBy.vue'
 import Infrastructure from '~/components/front_page/Infrastructure.vue'
 import Campaign from '~/components/front_page/Campaign.vue'
+import GlobalLocations from '~/components/front_page/GlobalLocations.vue'
 
 export default {
   name: 'Homepage',
@@ -89,7 +91,8 @@ export default {
     WhyCyclic,
     TrustedBy,
     Infrastructure,
-    Campaign
+    Campaign,
+    GlobalLocations
 },
   async created(){
     // warmup cms 
