@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1696341603",layout:"default",error:a,serverRendered:true,routePath:"\u002Fposts\u002Fmanaging-service-account-credentials-json-files",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"b2e54df5"}},globalRefs:{}}}(null));
