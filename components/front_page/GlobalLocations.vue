@@ -3431,9 +3431,11 @@
     0%,
     100% {
       fill: #4dacff9c;
+      transform: translateY(0)
     }
     50% {
       fill: white;
+      transform: translateY(-3px)
     }
   }
 
