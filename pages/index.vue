@@ -26,6 +26,7 @@
       <Infrastructure />
       <Blurbs />
       <GlobalLocations />
+      <CyclicToWork />
       <product-demo/>
       <Campaign />
       <!-- <blurbs/>
@@ -56,6 +57,7 @@ import WhyCyclic from '~/components/front_page/WhyCyclic.vue'
 import TrustedBy from '~/components/front_page/TrustedBy.vue'
 import Infrastructure from '~/components/front_page/Infrastructure.vue'
 import Campaign from '~/components/front_page/Campaign.vue'
+import CyclicToWork from '~/components/front_page/CyclicToWork.vue'
 import GlobalLocations from '~/components/front_page/GlobalLocations.vue'
 
 export default {
@@ -92,6 +94,7 @@ export default {
     TrustedBy,
     Infrastructure,
     Campaign,
+    CyclicToWork,
     GlobalLocations
 },
   async created(){
