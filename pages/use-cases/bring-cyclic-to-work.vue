@@ -21,7 +21,7 @@
       <!-- ********* CONTENT ********* -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <img class="w-full align-self-center" src="/images/cyclic-to-work.svg" alt="">
-        
+
         <div class="text-neutral-300 leading-[150%] space-y-5">
           <p>
             Are you ready to revolutionize your work environment and elevate your team's productivity? Look no further than Cyclic, the ultimate solution for streamlining your development and testing processes. With Cyclic, we empower you to bring your own AWS account, granting you unparalleled control and flexibility over your cloud resources. Say goodbye to the limitations of shared environments and experience the freedom to optimize your AWS setup according to your specific needs.
@@ -41,10 +41,10 @@
             <i class="ri-eye-line"></i>
           </div>
 
-          <h3 class="text-2xl">Visibility</h3>
+          <h3 class="text-2xl">Security</h3>
 
           <p class="text-neutral-300">
-            Create team wide visibility in to the flow of operations work. By surfacing events and actions into a shared channel more members of the team are able to see the work being done. This creates a shared sense of ownership and builds team moral.
+            Self hosting without the hassle. Cyclic is a fully managed solution that runs in your AWS account. You have full control over your data and resources. Provide Cyclic control plane access and rest assured your data is safe and secure.
           </p>
         </div>
 
@@ -57,7 +57,7 @@
           <h3 class="text-2xl">Speed</h3>
 
           <p class="text-neutral-300">
-            Provide employees with the relevant information in the same UI window they are already interacting in. By delegating information gathering and common followup linking to the ChatBot you free your coworkers to collaborate.
+            Spin up and down preview environments without consuming DevOps resources that are better spent on production work. Its not a question of if you can, its a matter if it is the best use of your team's time.
           </p>
         </div>
 
@@ -67,10 +67,10 @@
             <i class="ri-checkbox-circle-line"></i>
           </div>
 
-          <h3 class="text-2xl">Effectiveness</h3>
-
+          <h3 class="text-2xl">Joy</h3>
+            Liberate your product teams to pour their creative energy into building that next feature to delight your users. Stop having your infrastructure dictate your product roadmap.
           <p class="text-neutral-300">
-            ChatOps allows for seamless operation of "human-in-the-loop" interactions while mantaining InfoSec and DataSec compliant actions. Chat messages often provide several possible actions as well as deep links for administrators to quickly jump into other systems to take further action.
+
           </p>
         </div>
       </div>
@@ -84,7 +84,7 @@
         <hr class="border-primary w-10">
 
         <p class="text-neutral-300 w-full md:w-[50%] leading-[160%]">
-          Ready to build fast and ship even faster? Get started today.
+          Ready to build fast and ship features even faster? Get started today.
         </p>
 
         <div class="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -116,6 +116,6 @@
 
 <script>
   export default {
-    
+
   }
 </script>
