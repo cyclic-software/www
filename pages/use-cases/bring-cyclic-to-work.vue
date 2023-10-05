@@ -38,7 +38,7 @@
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-eye-line"></i>
+            <i class="ri-lock-line"></i>
           </div>
 
           <h3 class="text-2xl">Security</h3>
@@ -51,7 +51,7 @@
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-flashlight-fill"></i>
+            <i class="ri-rocket-2-line"></i>
           </div>
 
           <h3 class="text-2xl">Speed</h3>
@@ -64,13 +64,13 @@
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-checkbox-circle-line"></i>
+            <i class="ri-bear-smile-line"></i>
           </div>
 
           <h3 class="text-2xl">Joy</h3>
-            Liberate your product teams to pour their creative energy into building that next feature to delight your users. Stop having your infrastructure dictate your product roadmap.
-          <p class="text-neutral-300">
 
+          <p class="text-neutral-300">
+            Liberate your product teams to pour their creative energy into building that next feature to delight your users. Stop having your infrastructure dictate your product roadmap.
           </p>
         </div>
       </div>
