@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/use-cases/bring-cyclic-to-work", {data:[{}],fetch:{},mutations:void 0});
