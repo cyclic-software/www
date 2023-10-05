@@ -141,48 +141,50 @@
         </nuxt-link>
       </div>
 
-      <div class="grid grid-cols-1 gap-5 pt-24 px-6" @click="menu_open=false">
-        <nuxt-link
-          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition w-full"
-          to="/pricing"
-        >
-          pricing
-        </nuxt-link>
-
-
-        <nuxt-link
-          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition"
-          to="/blog"
-        >
-          blog
-        </nuxt-link>
-
-        <nuxt-link
-          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition"
-          to="/investors"
-        >
-          investors
-        </nuxt-link>
-
-        <nuxt-link
-          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition"
-          to="/updates"
-        >
-          updates
-        </nuxt-link>
-
-        <a
-          class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition"
-          href="https://docs.cyclic.sh/"
-          target="_blank"
-        >
-          docs
-        </a>
+      <div class="space-y-5 pt-24 px-6">
+        <div class="grid grid-cols-1 gap-5" @click="menu_open=false">
+          <nuxt-link
+            class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+            rounded-lg transition w-full"
+            to="/pricing"
+          >
+            pricing
+          </nuxt-link>
+  
+  
+          <nuxt-link
+            class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+            rounded-lg transition"
+            to="/blog"
+          >
+            blog
+          </nuxt-link>
+  
+          <nuxt-link
+            class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+            rounded-lg transition"
+            to="/investors"
+          >
+            investors
+          </nuxt-link>
+  
+          <nuxt-link
+            class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+            rounded-lg transition"
+            to="/updates"
+          >
+            updates
+          </nuxt-link>
+  
+          <a
+            class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+            rounded-lg transition"
+            href="https://docs.cyclic.sh/"
+            target="_blank"
+          >
+            docs
+          </a>
+        </div>
 
         <!-- USE CASES DROPDOWN -->
         <div class="relative group w-full">
@@ -192,7 +194,7 @@
             <i class="ri-arrow-drop-down-line"></i>
           </button>
           
-          <div class="hidden opacity-0 h-0 border !border-neutral-700 bg-neutral-800 p-2
+          <div @click="menu_open=false" class="hidden opacity-0 h-0 border !border-neutral-700 bg-neutral-800 p-2
           rounded-xl group-hover:grid group-hover:opacity-100 group-hover:h-max transition min-w-[120px] w-full grid-cols-1">
             <nuxt-link
               class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
