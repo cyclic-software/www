@@ -3430,21 +3430,21 @@
   @keyframes pulsate {
     0%,
     100% {
-      fill: #4dacff9c;
-      transform: translateY(0)
+      fill: #4DABFF;
+      /* transform: translateY(0) */
     }
     50% {
       fill: white;
-      transform: translateY(-3px)
+      /* transform: translateY(-3px) */
     }
   }
 
   .pulsate:nth-child(odd) {
-    animation: linear 2s infinite alternate pulsate;
+    animation: linear 3s infinite alternate pulsate;
   }
 
   .pulsate:nth-child(even) {
-    animation: 2s linear 2s infinite alternate pulsate;
+    animation: 2s linear 3s infinite alternate pulsate;
   }
 </style>
 
