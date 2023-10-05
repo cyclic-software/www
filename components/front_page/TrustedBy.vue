@@ -2,13 +2,13 @@
   <section class="section common-section">
     <!-- ********* PILL TEXT ********* -->
     <Pill text="Developers love us" />
-    
+
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">
       <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
         Trusted by tens of thousands of developers
       </h2>
-  
+
       <p class="text-center text-neutral-300">
         We have a thriving and growing developer community. Become part of it. <a target="_blank" href="https://discord.cyclic.sh" class="text-sky-500">Join our Discord</a> and say hi!
       </p>
@@ -60,15 +60,15 @@
     <div class="border !border-neutral-700 rounded-3xl flex flex-col sm:flex-row items-center justify-around p-5
     gap-16 mt-10 bg-neutral-800/20 w-full sm:flex-wrap">
       <StatCard
-        stat="5,600+"
+        stat="5,300+"
         text="Developers active this week"
       />
       <StatCard
-        stat="95,000+"
+        stat="101,600+"
         text="Developers on Cyclic"
       />
       <StatCard
-        stat="1,000,000+"
+        stat="1,170,000+"
         text="Builds triggered"
       />
     </div>
@@ -117,7 +117,7 @@ import { testimonials } from './testimonials';
     position: relative;
     width: 100%;
   }
-  
+
   .logos:before,
   .logos:after {
     position: absolute;
@@ -127,17 +127,17 @@ import { testimonials } from './testimonials';
     content: "";
     z-index: 2;
   }
-  
+
   .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(23, 23, 23, 0), rgb(23,23,23));
   }
-  
+
   .logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(23, 23, 23, 0), rgb(23,23,23));
   }
-  
+
   .logos:hover .marquee {
     /* animation-play-state: paused; */
   }

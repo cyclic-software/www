@@ -19,8 +19,6 @@
       <div class="front-page-spacer"></div>
       <headline-thing class='mb-5'/>
       <small-feature/>
-      <div class="front-page-spacer"></div>
-      <CompanyStats/>
       <div class="front-page-spacer"></div> -->
       <feature-matrix/>
       <Infrastructure />
@@ -36,7 +34,7 @@
 </template>
 
 <script>
-import CompanyStats from '../components/CompanyStats.vue'
+
 import SectionHero from '~/components/SectionHero.vue'
 
 import DbFeature from '~/components/front_page/DbFeature.vue'
@@ -74,7 +72,6 @@ export default {
     }
   },
   components: {
-    CompanyStats,
     SectionHero,
     Frameworks,
     DbFeature,
@@ -98,7 +95,7 @@ export default {
     GlobalLocations
 },
   async created(){
-    // warmup cms 
+    // warmup cms
     await fetch('https://release-notes.cyclic.app/_healthcheck')
   }
 }
@@ -186,13 +183,13 @@ em{
     height: 20px;
   }
 }
-  
+
   .banner{
     /* position: absolute;
     width: 100%;
     z-index: 90; */
   }
-  
+
   .b-content{
     max-width: 1250px;
     text-align: left;
