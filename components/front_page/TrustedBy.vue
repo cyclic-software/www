@@ -17,42 +17,42 @@
     <!-- ********* COMPANIES ********* -->
     <div class="logos">
       <div class="marquee">
-        <img src="/images/google.svg" alt="">
-        <img src="/images/tango.svg" alt="">
-        <img src="/images/takeit.svg" alt="">
-        <img src="/images/gonation-dark.svg" alt="">
-        <img src="/images/docker.svg" alt="">
-        <img src="/images/captur.svg" alt="">
-        <img src="/images/black-knight.svg" alt="">
-        <img src="/images/ibm.svg" alt="">
-        <img src="/images/infrrd.svg" alt="">
-        <img src="/images/people-ai.svg" alt="">
-        <img src="/images/devrev.svg" alt="">
-        <img src="/images/outdoorsy.svg" alt="">
-        <img src="/images/commerce-iq.svg" alt="">
-        <img src="/images/kiva.svg" alt="">
-        <img src="/images/annalise.svg" alt="">
-        <img src="/images/duda.svg" alt="">
-        <img src="/images/match-group.svg" alt="">
+        <img src="/images/google.svg" alt="Google">
+        <img src="/images/tango.svg" alt="Tango">
+        <img src="/images/takeit.svg" alt="TakeIt">
+        <img src="/images/gonation-dark.svg" alt="Gonation">
+        <img src="/images/docker.svg" alt="Docker">
+        <img src="/images/captur.svg" alt="Captur">
+        <img src="/images/black-knight.svg" alt="Black Knight">
+        <img src="/images/ibm.svg" alt="IBM">
+        <img src="/images/infrrd.svg" alt="Infrrd">
+        <img src="/images/people-ai.svg" alt="People AI">
+        <img src="/images/devrev.svg" alt="DevRev">
+        <img src="/images/outdoorsy.svg" alt="Outdoorsy">
+        <img src="/images/commerce-iq.svg" alt="CommerceIQ">
+        <img src="/images/kiva.svg" alt="Kiva">
+        <img src="/images/annalise.svg" alt="Annalise">
+        <img src="/images/duda.svg" alt="Duda">
+        <img src="/images/match-group.svg" alt="MatchGroup">
       </div>
       <div class="marquee">
-        <img src="/images/google.svg" alt="">
-        <img src="/images/tango.svg" alt="">
-        <img src="/images/takeit.svg" alt="">
-        <img src="/images/gonation-dark.svg" alt="">
-        <img src="/images/docker.svg" alt="">
-        <img src="/images/captur.svg" alt="">
-        <img src="/images/black-knight.svg" alt="">
-        <img src="/images/ibm.svg" alt="">
-        <img src="/images/infrrd.svg" alt="">
-        <img src="/images/people-ai.svg" alt="">
-        <img src="/images/devrev.svg" alt="">
-        <img src="/images/outdoorsy.svg" alt="">
-        <img src="/images/commerce-iq.svg" alt="">
-        <img src="/images/kiva.svg" alt="">
-        <img src="/images/annalise.svg" alt="">
-        <img src="/images/duda.svg" alt="">
-        <img src="/images/match-group.svg" alt="">
+        <img src="/images/google.svg" alt="Google">
+        <img src="/images/tango.svg" alt="Tango">
+        <img src="/images/takeit.svg" alt="TakeIt">
+        <img src="/images/gonation-dark.svg" alt="Gonation">
+        <img src="/images/docker.svg" alt="Docker">
+        <img src="/images/captur.svg" alt="Captur">
+        <img src="/images/black-knight.svg" alt="Black Knight">
+        <img src="/images/ibm.svg" alt="IBM">
+        <img src="/images/infrrd.svg" alt="Infrrd">
+        <img src="/images/people-ai.svg" alt="People AI">
+        <img src="/images/devrev.svg" alt="DevRev">
+        <img src="/images/outdoorsy.svg" alt="Outdoorsy">
+        <img src="/images/commerce-iq.svg" alt="CommerceIQ">
+        <img src="/images/kiva.svg" alt="Kiva">
+        <img src="/images/annalise.svg" alt="Annalise">
+        <img src="/images/duda.svg" alt="Duda">
+        <img src="/images/match-group.svg" alt="MatchGroup">
       </div>
     </div>
 
