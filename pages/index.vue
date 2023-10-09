@@ -1,25 +1,11 @@
 <template>
   <div id="index-page">
-    <!-- <div class="header_image fade_loop main_splash"></div> -->
     <div class="pt-20">
       <hero/>
       <Steps />
       <Supported />
       <WhyCyclic />
       <TrustedBy />
-      <!-- <frameworks/>
-      <big-feature/>
-      <languages/>
-      <div class="front-page-spacer spacer-smaller"></div>
-      <db-feature/>
-      <div class="front-page-spacer"></div>
-      <cron-feature/>
-      <div class="front-page-spacer"></div>
-      <logs-feature/>
-      <div class="front-page-spacer"></div>
-      <headline-thing class='mb-5'/>
-      <small-feature/>
-      <div class="front-page-spacer"></div> -->
       <feature-matrix/>
       <Infrastructure />
       <Blurbs />
@@ -27,8 +13,6 @@
       <CyclicToWork />
       <product-demo/>
       <Campaign />
-      <!-- <blurbs/>
-      <CtaFullStackApps/> -->
     </div>
   </div>
 </template>
@@ -37,14 +21,7 @@
 
 import SectionHero from '~/components/SectionHero.vue'
 
-import DbFeature from '~/components/front_page/DbFeature.vue'
-import CronFeature from '~/components/front_page/CronFeature.vue'
-import LogsFeature from '~/components/front_page/LogsFeature.vue'
-import BigFeature from '~/components/front_page/BigFeature.vue'
-import SmallFeature from '~/components/front_page/SmallFeature.vue'
 import Frameworks from '~/components/front_page/Frameworks.vue'
-import Languages from '~/components/front_page/Languages.vue'
-import HeadlineThing from '~/components/front_page/HeadlineThing.vue'
 import ProductDemo from '~/components/front_page/ProductDemo.vue'
 import Blurbs from '~/components/front_page/Blurbs.vue'
 import Hero from '~/components/front_page/Hero.vue'
