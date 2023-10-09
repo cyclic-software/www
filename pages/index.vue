@@ -21,7 +21,6 @@
 
 import SectionHero from '~/components/SectionHero.vue'
 
-import Frameworks from '~/components/front_page/Frameworks.vue'
 import ProductDemo from '~/components/front_page/ProductDemo.vue'
 import Blurbs from '~/components/front_page/Blurbs.vue'
 import Hero from '~/components/front_page/Hero.vue'
@@ -50,15 +49,7 @@ export default {
   },
   components: {
     SectionHero,
-    Frameworks,
-    DbFeature,
-    Languages,
-    CronFeature,
-    LogsFeature,
-    BigFeature,
     Blurbs,
-    SmallFeature,
-    HeadlineThing,
     ProductDemo,
     Hero,
     FeatureMatrix,
