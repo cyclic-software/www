@@ -86,7 +86,7 @@
         <hr class="border-primary w-10">
 
         <p class="text-neutral-300 w-full md:w-[50%] leading-[160%]">
-          We have the starter template ready, all you have to do is press ‘Deploy’.
+          We have the starter template ready, all you have to do is press ‘Deploy’. 
         </p>
 
         <div class="flex flex-col sm:flex-row sm:items-center gap-2">
