@@ -36,7 +36,7 @@
     </div>
 
     <!-- ********* CYCLIC PREVIEW ********* -->
-    <img class="rounded-3xl mt-8 preview w-[95%]" src="/images/preview1.png" alt="">
+    <img class="rounded-3xl mt-8 preview w-[95%]" src="/images/preview1.png" alt="Cyclic Preview">
   </section>
 </template>
 

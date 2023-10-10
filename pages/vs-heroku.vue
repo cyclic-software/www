@@ -74,11 +74,11 @@ export default {
           <!-- <b-col lg="1" ></b-col> -->
           <b-col  md="6" lg="5" class="hero-images" align-self="center">
                 <div class="vs-images">
-                  <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px"/>
+                  <img class="vs-image" src="/images/vs/heroku-logo-solid-gradient.svg" width="150px" alt='Heroku' />
                   <!-- <div class="spacer-16"></div> -->
                   <div class="vs-text">vs</div>
                   <!-- <div class="spacer-16"></div> -->
-                  <img class="vs-image" src="/images/logos/icon-dark.svg" width="150px"/>
+                  <img class="vs-image" src="/images/logos/icon-dark.svg" width="150px" alt='Cyclic' />
                 </div>
               <!-- </b-col>
             </b-row> -->

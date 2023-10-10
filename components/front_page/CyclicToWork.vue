@@ -15,7 +15,7 @@
     </div>
 
     <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-      <img class="w-[80%]" src="/images/cyclic-to-work.svg" alt="">
+      <img class="w-[80%]" src="/images/cyclic-to-work.svg" alt="Bring Cyclic to Work">
 
       <div class="space-y-5">
         <div class="space-y-5 text-neutral-300">

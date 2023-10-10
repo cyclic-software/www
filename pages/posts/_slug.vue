@@ -2,7 +2,7 @@
   <section class="section common-section space-y-12">
     <div class="px-4 lg:px-0 max-w-screen-lg mx-auto space-y-10">
       <!-- IMAGE SECTION -->
-      <img :src="post.image" alt="" class="w-full rounded-2xl">
+      <img :src="post.image" :alt="post.title" class="w-full rounded-2xl">
 
       <!-- TITLE & META SECTION -->
       <div class="space-y-8 border-b border-b-white/10 pb-6">

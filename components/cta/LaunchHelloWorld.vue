@@ -5,7 +5,7 @@
       <img
         src="/images/Rectangle-240-copy.svg"
         loading="lazy"
-        alt=""
+        alt="Deploy on Cyclic"
         class="absolute top-0 left-0"
       >
   
