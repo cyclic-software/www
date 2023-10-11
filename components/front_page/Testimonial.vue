@@ -2,6 +2,7 @@
   <a
     :href="link"
     target="_blank"
+    rel="noopener noreferrer"
     class="flex flex-col justify-between gap-2 relative border !border-neutral-700 rounded-2xl p-6 bg-neutral-800 space-y-4 w-[300px] lg:w-[500px]
     hover:no-underline group"
   >
