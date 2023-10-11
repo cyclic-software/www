@@ -84,6 +84,7 @@ export default {
     link: [
       { hid: 'icon', rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css' },
+      { rel: 'canonical', href: 'https://cyclic.sh'}
     ],
 
     script: [
