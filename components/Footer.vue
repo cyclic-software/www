@@ -26,7 +26,7 @@
             <a
               href="https://docs.cyclic.sh/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition"
             >
               Documentation
@@ -56,7 +56,7 @@
             <a
               href="https://github.com/cyclic-software"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
@@ -66,7 +66,7 @@
             <a
               href="https://discord.cyclic.sh"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
@@ -76,7 +76,7 @@
             <a
               href="https://twitter.com/cyclic_sh"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
@@ -86,7 +86,7 @@
             <a
               href="https://www.linkedin.com/company/cyclic-software/about"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
@@ -96,7 +96,7 @@
             <a
               href="https://www.youtube.com/@CyclicSh"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
