@@ -1,3 +1,5 @@
 # Allow crawling of site by anyone
 User-agent: *
 Allow: /
+
+Sitemap: https://www.cyclic.sh/sitemap.xml
