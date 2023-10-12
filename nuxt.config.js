@@ -1,6 +1,6 @@
-const fs = require('fs').promises;
-const path = require('path');
-
+import fs from 'fs/promises';
+import path from 'path';
+import { defineNuxtConfig } from '@nuxt/bridge'
 
 const hostname = process.NODE_ENV === 'production' ? 'https://www.cyclic.sh' : 'http://localhost:3000';
 // console.log(process.env)
@@ -34,7 +34,7 @@ const create = async (feed, args) => {
     description: "Company blog for Cyclic Software. All about startups, serverless, technical stories and advice.",
     link: `${hostname}/blog/rss.${ext}`
   }
-  const { $content } = require('@nuxt/content')
+  const { $content } = await import('@nuxt/content')
   if (posts === null || posts.length === 0) {
     posts = await $content(filePath)
               .where({ "hidden": { "$ne": true } })
@@ -48,7 +48,8 @@ const create = async (feed, args) => {
   return feed;
 }
 
-export default {
+export default defineNuxtConfig({
+  bridge: false,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   // ssr: false,
@@ -183,7 +184,7 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-  
+
   // Feed module configuration: https://content.nuxtjs.org/v1/community/integrations/
   feed: [{
     path: '/blog/rss.xml',
@@ -216,7 +217,7 @@ export default {
   generate: {
     fallback: '404.html',
     async routes () {
-      const { $content } = require('@nuxt/content')
+      const { $content } = await import('@nuxt/content')
       const files = await $content({ deep: true })
         .where({ path: { $in: ['posts'] } })
         .only(['path']).fetch()
@@ -235,4 +236,4 @@ export default {
   router: {
     base: '/'
   },
-}
+})
