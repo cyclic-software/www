@@ -6,11 +6,11 @@
       <WhyCyclic />
       <Supported />
       <Blurbs />
+      <GlobalLocations />
       <Infrastructure />
       <CyclicToWork />
       <feature-matrix/>
       <TrustedBy />
-      <GlobalLocations />
       <product-demo/>
       <Campaign />
     </div>
