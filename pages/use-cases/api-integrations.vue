@@ -11,7 +11,7 @@
         </h2>
 
         <p class="text-center text-neutral-300">
-          Use Cyclic to improve response times with less manual effort.
+          Use Cyclic to transform and bridge data flows between disparate systems.
         </p>
       </div>
     </div>
@@ -24,13 +24,16 @@
         
         <div class="text-neutral-300 leading-[150%] space-y-5">
           <p>
-            Modern software organizations are able to build systems that were in the realm of science fiction only decades ago. However, the complexity of these systems has grown exponentially. Expectations of users and internal users have also grown.
+            Off the self software services offer unprecedented flexibility and power to organizations. However, the proliferation of these services has created new challenges. How do you connect these services together to create a cohesive dataflow? How do you ensure that events in one system are reflected in another?
+          </p>
+
+          <h2 class="text-white font-semibold text-xl">Transform and bridge data flows between disparate systems.</h2>
+
+          <p>
+            Use Cyclic to transform payloads to conform to upstream extraction formats or downstream ingestion formats. Most systems are constrained in the style and format of data they can accept. Cyclic is well suited to transform payloads to conform to these constraints.
           </p>
           <p>
-            The ChatOps paradigm inverts the access pattern for most administrative workflows. In a simplified model the three components of the system are, the ChatBot, the administrator and the software system in question. Sessions maybe initiated by either an external event (ie email, webhook or cron), a system trigger or directly by the administrator directly to the ChatBot.
-          </p>
-          <p>
-            Authentication is handled by the embedded Authn system of the chat system. A first tier of authorization maybe provided by the chat system with the option of further authz being performed by the ChatBot. The ChatBot may also be used to provide a first tier of authorization with the option of further authz being performed by the ChatBot.
+            Much of the time spent integrating systems is spent with provider's documentation that is only understandable to an engineer already well versed in the system being described. Cyclic accelerates the integration process by providing a visual interface to the dataflow. This allows for rapid feedback and deployment cycles for your engineering team.
           </p>
         </div>
       </div>
@@ -46,7 +49,7 @@
           <h3 class="text-2xl">Visibility</h3>
 
           <p class="text-neutral-300">
-            Create team wide visibility in to the flow of operations work. By surfacing events and actions into a shared channel more members of the team are able to see the work being done. This creates a shared sense of ownership and builds team moral.
+            See the exact shape of data sent to Cyclic for ingestion. Use the network tab to view request headers and payloads.
           </p>
         </div>
 
@@ -59,20 +62,20 @@
           <h3 class="text-2xl">Speed</h3>
 
           <p class="text-neutral-300">
-            Provide employees with the relevant information in the same UI window they are already interacting in. By delegating information gathering and common followup linking to the ChatBot you free your coworkers to collaborate.
+            Zero downtime deployments happen in under a minute. This allows your team to integrate first and then iterate to finalized data transformation.
           </p>
         </div>
 
         <div class="space-y-5">
           <div class="w-20 h-20 bg-neutral-800 flex items-center justify-center
           text-2xl rounded-xl text-primary">
-            <i class="ri-checkbox-circle-line"></i>
+            <i class="ri-arrow-left-right-line"></i>
           </div>
 
-          <h3 class="text-2xl">Effectiveness</h3>
+          <h3 class="text-2xl">Flexibility</h3>
 
           <p class="text-neutral-300">
-            ChatOps allows for seamless operation of "human-in-the-loop" interactions while mantaining InfoSec and DataSec compliant actions. Chat messages often provide several possible actions as well as deep links for administrators to quickly jump into other systems to take further action.
+            Cyclic enables you to reshape inbound data flow and enrich them with API calls to other systems before transforming the data for downstream egress.
           </p>
         </div>
       </div>
@@ -86,7 +89,7 @@
         <hr class="border-primary w-10">
 
         <p class="text-neutral-300 w-full md:w-[50%] leading-[160%]">
-          We have the starter template ready, all you have to do is press ‘Deploy’.
+          We have a starter template ready, all you have to do is press Deploy.
         </p>
 
         <div class="flex flex-col sm:flex-row sm:items-center gap-2">
