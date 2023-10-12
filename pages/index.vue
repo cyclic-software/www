@@ -20,9 +20,9 @@
       <headline-thing class='mb-5'/>
       <small-feature/>
       <div class="front-page-spacer"></div> -->
+      <Blurbs />
       <feature-matrix/>
       <Infrastructure />
-      <Blurbs />
       <GlobalLocations />
       <CyclicToWork />
       <product-demo/>
