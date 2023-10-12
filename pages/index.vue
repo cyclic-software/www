@@ -45,6 +45,26 @@ export default {
           content: 'lmJwyO7CCfgF7HJ3lEAOAkbHn9JGkXKOa2o_iJsMAnQ',
         },
       ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Corporation",
+            "name": "Cyclic Software",
+            "alternateName": "Cyclic",
+            "url": "https://www.cyclic.sh",
+            "logo": "https://www.cyclic.sh/images/logos/logo-text-blue.png",
+            "sameAs": [
+              "https://twitter.com/cyclic_sh",
+              "https://www.youtube.com/@CyclicSh",
+              "https://www.linkedin.com/company/cyclic-software/about",
+              "https://github.com/cyclic-software",
+              "https://www.cyclic.sh/"
+            ]
+          })
+        }
+      ]
     }
   },
   components: {
