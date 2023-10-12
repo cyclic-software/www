@@ -35,7 +35,7 @@
                 <nuxt-link
                   class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
                   rounded-lg transition w-full text-sm"
-                  to="/use-cases/bff"
+                  to="/use-cases/backends-for-frontends"
                 >
                  Backends for Frontends
                 </nuxt-link>
@@ -46,6 +46,14 @@
                   to="/use-cases/bring-cyclic-to-work"
                 >
                   Bring Cyclic to Work
+                </nuxt-link>
+
+                <nuxt-link
+                  class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+                  rounded-lg transition w-full text-sm"
+                  to="/use-cases/api-integrations"
+                >
+                  API Integrations
                 </nuxt-link>
 
                 <nuxt-link
@@ -207,7 +215,7 @@
             <nuxt-link
               class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
               rounded-lg transition w-full text-sm"
-              to="/use-cases/bff"
+              to="/use-cases/backends-for-frontends"
             >
               Backends for Frontends
             </nuxt-link>
@@ -218,6 +226,14 @@
               to="/use-cases/bring-cyclic-to-work"
             >
               Bring Cyclic to Work
+            </nuxt-link>
+            
+            <nuxt-link
+              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+              rounded-lg transition w-full text-sm"
+              to="/use-cases/api-integrations"
+            >
+              API Integrations
             </nuxt-link>
 
             <nuxt-link
