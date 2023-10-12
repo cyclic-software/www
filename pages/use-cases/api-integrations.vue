@@ -26,6 +26,9 @@
           <p>
             Off the self software services offer unprecedented flexibility and power to organizations. However, the proliferation of these services has created new challenges. How do you connect these services together to create a cohesive dataflow? How do you ensure that events in one system are reflected in another?
           </p>
+
+          <h2 class="text-white font-semibold text-xl">Transform and bridge data flows between disparate systems.</h2>
+
           <p>
             Use Cyclic to transform payloads to conform to upstream extraction formats or downstream ingestion formats. Most systems are constrained in the style and format of data they can accept. Cyclic is well suited to transform payloads to conform to these constraints.
           </p>
