@@ -13,19 +13,20 @@
           class="text-center video_box"
           style="max-height: 220px; overflow: hidden"
         >
-          <img src="/images/deploy_tour.gif" >
+          <img src="/images/deploy_tour.gif" alt='Deploy tour' />
         </div>
       </StepCard>
 
       <StepCard :step_num="3" text="Go live">
         <div class="logs-header">
-              <div class="text-center video_box logs_gif" style="max-width:450px; overflow: hidden;">
-                <img src="/images/logs_demo.gif" />
-              </div>
-              <div class="metrics-img">
-                <img src="/images/metrics.png"/>
-              </div>
-            </div>
+          <div class="text-center video_box logs_gif" style="max-width:450px; overflow: hidden;">
+            <img src="/images/logs_demo.gif" alt='Logs demo' />
+          </div>
+          
+          <div class="metrics-img">
+            <img src="/images/metrics.png" alt='Sample metrics' />
+          </div>
+        </div>
       </StepCard>
     </div>
   </section>

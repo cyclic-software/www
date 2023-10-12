@@ -11,7 +11,7 @@
           <div class="hidden md:flex items-center gap-5">
             <Navlink name="pricing" path="/pricing" />
             <Navlink name="blog" path="/blog" />
-            <a class="text-sm capitalize text-neutral-300 hover:text-white transition" href="https://docs.cyclic.sh/" target="_blank">docs</a>
+            <a class="text-sm capitalize text-neutral-300 hover:text-white transition" href="https://docs.cyclic.sh/" target="_blank" rel='noopener'>docs</a>
             <Navlink name="investors" path="/investors" />
             <Navlink name="updates" path="/updates" />
 
@@ -80,6 +80,7 @@
             <a
               href="https://github.com/cyclic-software"
               target="_blank"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
@@ -89,6 +90,7 @@
             <a
               href="https://discord.cyclic.sh"
               target="_blank"
+              rel="noopener"
               class="text-sm !no-underline text-neutral-400 hover:text-white transition
               flex items-center gap-2.5"
             >
@@ -252,6 +254,7 @@
           <a
             href="https://github.com/cyclic-software"
             target="_blank"
+            rel="noopener"
             class="text-sm !no-underline text-neutral-400 hover:text-white transition
             flex items-center gap-2.5"
           >
@@ -261,6 +264,7 @@
           <a
             href="https://discord.cyclic.sh"
             target="_blank"
+            rel="noopener"
             class="text-sm !no-underline text-neutral-400 hover:text-white transition
             flex items-center gap-2.5"
           >
