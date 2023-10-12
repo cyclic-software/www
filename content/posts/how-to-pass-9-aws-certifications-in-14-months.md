@@ -76,7 +76,7 @@ For me my employer paid for any certification tests I took. Also, after I passed
 
 This is probably the most important step. Tell everyone. Tell anyone. This is the equivalent of tying your self to the mast.
 
-For me the **TELL** was scheduling it on the office calendar and announcing each exam to my colleagues. In my personal life it meant  scheduling with my wife to coordinate childcare and usually having a play date. This meant I had multiple sets of people who were going to ask me the outcome of the test. Don't underestimate the power of feeling embarassment in going back on your assertions with your family, friends or colleagues.
+For me the **TELL** was scheduling it on the office calendar and announcing each exam to my colleagues. In my personal life it meant  scheduling with my wife to coordinate childcare and usually having a play date. This meant I had multiple sets of people who were going to ask me the outcome of the test. Don't underestimate the power of feeling embarrassment in going back on your assertions with your family, friends or colleagues.
 
 # Practice
 
