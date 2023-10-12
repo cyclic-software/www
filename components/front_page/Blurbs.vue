@@ -2,13 +2,13 @@
   <section class="section common-section">
     <!-- ********* PILL TEXT ********* -->
     <Pill text="Wait...there's more" />
-    
+
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-6">
       <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
         The best code is the code you don&#x27;t have to write.
       </h2>
-  
+
       <p class="text-center text-neutral-300">
         Focus on building, let us handle the rest.
       </p>
@@ -38,7 +38,7 @@
           <i class="fa-solid fa-arrow-trend-up"></i>
         </div>
         <h3 class="font-medium text-xl">Scale up and scale out.</h3>
-        <p class="text-neutral-300">Built and deployed with global scale enterprise grade serverless primates. Go from proof of concept to global load without re-architecting your app. </p>
+        <p class="text-neutral-300">Built and deployed with global scale enterprise grade serverless primitives. Go from proof of concept to global load without re-architecting your app. </p>
         <hr class="w-10 border-primary" />
       </div>
     </div>
