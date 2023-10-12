@@ -6,9 +6,9 @@
       <Supported />
       <WhyCyclic />
       <TrustedBy />
+      <Blurbs />
       <feature-matrix/>
       <Infrastructure />
-      <Blurbs />
       <GlobalLocations />
       <CyclicToWork />
       <product-demo/>
