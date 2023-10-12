@@ -1,6 +1,6 @@
 <template>
   <section class="section flex flex-col items-center gap-10 ">
-    
+
     <Pill  text="Git push to go live in under 10 seconds"  />
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -13,16 +13,23 @@
           class="text-center video_box"
           style="max-height: 220px; overflow: hidden"
         >
-          <img src="/images/deploy_tour.gif" alt='Deploy tour' />
+          <video autoplay loop muted playsinline>
+            <source src="/images/deploy_tour.webm" type="video/webm" />
+            <source src="/images/deploy_tour.mp4" type="video/mp4" />
+          </video>
         </div>
       </StepCard>
 
       <StepCard :step_num="3" text="Go live">
         <div class="logs-header">
           <div class="text-center video_box logs_gif" style="max-width:450px; overflow: hidden;">
-            <img src="/images/logs_demo.gif" alt='Logs demo' />
+            <video autoplay loop muted playsinline>
+              <source src="/images/logs_demo.webm" type="video/webm" />
+              <source src="/images/logs_demo.mp4" type="video/mp4" />
+            </video>
+
           </div>
-          
+
           <div class="metrics-img">
             <img src="/images/metrics.png" alt='Sample metrics' />
           </div>
