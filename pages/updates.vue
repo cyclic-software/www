@@ -38,6 +38,7 @@
           <div class="space-y-2">
             <div class="pb-2">
               <NuxtImg
+                loading="lazy"
                 v-if="update.props.image"
                 :src="update.props.image"
                 :alt="update.props.title"

@@ -24,6 +24,7 @@
         <div class="flex flex-col gap-3">
           <!-- IMAGE & CONTENT -->
           <NuxtImg
+            loading="lazy"
             :src="post.thumbnail"
             :alt="post.title"
             class="w-full h-60 object-cover rounded-xl"

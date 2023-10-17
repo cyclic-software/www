@@ -20,7 +20,7 @@
     <div class="mt-10 space-y-16">
       <!-- ********* CONTENT ********* -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <NuxtImg class="w-full align-self-center" src="/images/bff.svg" alt="Backends for Frontends" />
+        <NuxtImg loading="lazy" class="w-full align-self-center" src="/images/bff.svg" alt="Backends for Frontends" />
         
         <div class="text-neutral-300 leading-[150%] space-y-5 align-self-center">
           <p>

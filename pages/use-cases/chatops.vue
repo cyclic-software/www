@@ -106,7 +106,7 @@
         <div class="">
           <!-- ********* REGULAR ********* -->
           <div v-if="tab === 'regular'" class="space-y-8">
-            <NuxtImg src="/images/regular-graph.png" class="w-full" alt="regular" />
+            <NuxtImg loading="lazy" src="/images/regular-graph.png" class="w-full" alt="regular" />
 
             <div class="text-neutral-300 leading-[150%] space-y-2">
               <p>100,000 requests per day with consistent usage pattern</p>
@@ -215,7 +215,7 @@
 
           <!-- ********* BURSTY ********* -->
           <div v-if="tab === 'bursty'" class="space-y-8">
-            <NuxtImg src="/images/bursty-graph.png" class="w-full" alt="bursty" />
+            <NuxtImg loading="lazy" src="/images/bursty-graph.png" class="w-full" alt="bursty" />
 
             <div class="text-neutral-300 leading-[150%] space-y-2">
               <p>Random peaks of up to 100 requests/second (75,000 average per day)</p>
@@ -321,7 +321,7 @@
 
           <!-- ********* INTERMITTENT ********* -->
           <div v-if="tab === 'intermittent'" class="space-y-8">
-            <NuxtImg src="/images/intermittent-graph.png" class="w-full" alt="intermittent" />
+            <NuxtImg loading="lazy" src="/images/intermittent-graph.png" class="w-full" alt="intermittent" />
 
             <div class="text-neutral-300 leading-[150%] space-y-2">
               <p>Mostly idle, with small burst of light usage. Max concurrency 5 requests/second (500 average per day)</p>

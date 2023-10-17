@@ -17,42 +17,42 @@
     <!-- ********* COMPANIES ********* -->
     <div class="logos">
       <div class="marquee">
-        <NuxtImg src="/images/google.svg" alt="Google" />
-        <NuxtImg src="/images/tango.svg" alt="Tango" />
-        <NuxtImg src="/images/takeit.svg" alt="TakeIt" />
-        <NuxtImg src="/images/gonation-dark.svg" alt="Gonation" />
-        <NuxtImg src="/images/docker.svg" alt="Docker" />
-        <NuxtImg src="/images/captur.svg" alt="Captur" />
-        <NuxtImg src="/images/black-knight.svg" alt="Black Knight" />
-        <NuxtImg src="/images/ibm.svg" alt="IBM" />
-        <NuxtImg src="/images/infrrd.svg" alt="Infrrd" />
-        <NuxtImg src="/images/people-ai.svg" alt="People AI" />
-        <NuxtImg src="/images/devrev.svg" alt="DevRev" />
-        <NuxtImg src="/images/outdoorsy.svg" alt="Outdoorsy" />
-        <NuxtImg src="/images/commerce-iq.svg" alt="CommerceIQ" />
-        <NuxtImg src="/images/kiva.svg" alt="Kiva" />
-        <NuxtImg src="/images/annalise.svg" alt="Annalise" />
-        <NuxtImg src="/images/duda.svg" alt="Duda" />
-        <NuxtImg src="/images/match-group.svg" alt="MatchGroup" />
+        <NuxtImg  loading="lazy" src="/images/google.svg" alt="Google" />
+        <NuxtImg  loading="lazy" src="/images/tango.svg" alt="Tango" />
+        <NuxtImg  loading="lazy" src="/images/takeit.svg" alt="TakeIt" />
+        <NuxtImg  loading="lazy" src="/images/gonation-dark.svg" alt="Gonation" />
+        <NuxtImg  loading="lazy" src="/images/docker.svg" alt="Docker" />
+        <NuxtImg  loading="lazy" src="/images/captur.svg" alt="Captur" />
+        <NuxtImg  loading="lazy" src="/images/black-knight.svg" alt="Black Knight" />
+        <NuxtImg  loading="lazy" src="/images/ibm.svg" alt="IBM" />
+        <NuxtImg  loading="lazy" src="/images/infrrd.svg" alt="Infrrd" />
+        <NuxtImg  loading="lazy" src="/images/people-ai.svg" alt="People AI" />
+        <NuxtImg  loading="lazy" src="/images/devrev.svg" alt="DevRev" />
+        <NuxtImg  loading="lazy" src="/images/outdoorsy.svg" alt="Outdoorsy" />
+        <NuxtImg  loading="lazy" src="/images/commerce-iq.svg" alt="CommerceIQ" />
+        <NuxtImg  loading="lazy" src="/images/kiva.svg" alt="Kiva" />
+        <NuxtImg  loading="lazy" src="/images/annalise.svg" alt="Annalise" />
+        <NuxtImg  loading="lazy" src="/images/duda.svg" alt="Duda" />
+        <NuxtImg  loading="lazy" src="/images/match-group.svg" alt="MatchGroup" />
       </div>
       <div class="marquee">
-        <NuxtImg src="/images/google.svg" alt="Google" />
-        <NuxtImg src="/images/tango.svg" alt="Tango" />
-        <NuxtImg src="/images/takeit.svg" alt="TakeIt" />
-        <NuxtImg src="/images/gonation-dark.svg" alt="Gonation" />
-        <NuxtImg src="/images/docker.svg" alt="Docker" />
-        <NuxtImg src="/images/captur.svg" alt="Captur" />
-        <NuxtImg src="/images/black-knight.svg" alt="Black Knight" />
-        <NuxtImg src="/images/ibm.svg" alt="IBM" />
-        <NuxtImg src="/images/infrrd.svg" alt="Infrrd" />
-        <NuxtImg src="/images/people-ai.svg" alt="People AI" />
-        <NuxtImg src="/images/devrev.svg" alt="DevRev" />
-        <NuxtImg src="/images/outdoorsy.svg" alt="Outdoorsy" />
-        <NuxtImg src="/images/commerce-iq.svg" alt="CommerceIQ" />
-        <NuxtImg src="/images/kiva.svg" alt="Kiva" />
-        <NuxtImg src="/images/annalise.svg" alt="Annalise" />
-        <NuxtImg src="/images/duda.svg" alt="Duda" />
-        <NuxtImg src="/images/match-group.svg" alt="MatchGroup" />
+        <NuxtImg  loading="lazy" src="/images/google.svg" alt="Google" />
+        <NuxtImg  loading="lazy" src="/images/tango.svg" alt="Tango" />
+        <NuxtImg  loading="lazy" src="/images/takeit.svg" alt="TakeIt" />
+        <NuxtImg  loading="lazy" src="/images/gonation-dark.svg" alt="Gonation" />
+        <NuxtImg  loading="lazy" src="/images/docker.svg" alt="Docker" />
+        <NuxtImg  loading="lazy" src="/images/captur.svg" alt="Captur" />
+        <NuxtImg  loading="lazy" src="/images/black-knight.svg" alt="Black Knight" />
+        <NuxtImg  loading="lazy" src="/images/ibm.svg" alt="IBM" />
+        <NuxtImg  loading="lazy" src="/images/infrrd.svg" alt="Infrrd" />
+        <NuxtImg  loading="lazy" src="/images/people-ai.svg" alt="People AI" />
+        <NuxtImg  loading="lazy" src="/images/devrev.svg" alt="DevRev" />
+        <NuxtImg  loading="lazy" src="/images/outdoorsy.svg" alt="Outdoorsy" />
+        <NuxtImg  loading="lazy" src="/images/commerce-iq.svg" alt="CommerceIQ" />
+        <NuxtImg  loading="lazy" src="/images/kiva.svg" alt="Kiva" />
+        <NuxtImg  loading="lazy" src="/images/annalise.svg" alt="Annalise" />
+        <NuxtImg  loading="lazy" src="/images/duda.svg" alt="Duda" />
+        <NuxtImg  loading="lazy" src="/images/match-group.svg" alt="MatchGroup" />
       </div>
     </div>
 
