@@ -135,7 +135,7 @@
           aria-current="page"
           class=""
         >
-          <img src="/images/default-monochrome-white.svg" loading="lazy" alt="cyclic logo" class="w-32 h-auto">
+          <NuxtImg src="/images/default-monochrome-white.svg" loading="lazy" alt="cyclic logo" class="w-32 h-auto" />
         </nuxt-link>
   
         <p class="text-sm text-neutral-400">

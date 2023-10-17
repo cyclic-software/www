@@ -23,11 +23,11 @@
       :href="`/posts/${post.slug}`">
         <div class="flex flex-col gap-3">
           <!-- IMAGE & CONTENT -->
-          <img
+          <NuxtImg
             :src="post.thumbnail"
             :alt="post.title"
             class="w-full h-60 object-cover rounded-xl"
-          >
+          />
 
           <div class="space-y-4">
             <div class="w-full flex items-center justify-between">

@@ -17,42 +17,42 @@
     <!-- ********* COMPANIES ********* -->
     <div class="logos">
       <div class="marquee">
-        <img src="/images/google.svg" alt="Google">
-        <img src="/images/tango.svg" alt="Tango">
-        <img src="/images/takeit.svg" alt="TakeIt">
-        <img src="/images/gonation-dark.svg" alt="Gonation">
-        <img src="/images/docker.svg" alt="Docker">
-        <img src="/images/captur.svg" alt="Captur">
-        <img src="/images/black-knight.svg" alt="Black Knight">
-        <img src="/images/ibm.svg" alt="IBM">
-        <img src="/images/infrrd.svg" alt="Infrrd">
-        <img src="/images/people-ai.svg" alt="People AI">
-        <img src="/images/devrev.svg" alt="DevRev">
-        <img src="/images/outdoorsy.svg" alt="Outdoorsy">
-        <img src="/images/commerce-iq.svg" alt="CommerceIQ">
-        <img src="/images/kiva.svg" alt="Kiva">
-        <img src="/images/annalise.svg" alt="Annalise">
-        <img src="/images/duda.svg" alt="Duda">
-        <img src="/images/match-group.svg" alt="MatchGroup">
+        <NuxtImg src="/images/google.svg" alt="Google" />
+        <NuxtImg src="/images/tango.svg" alt="Tango" />
+        <NuxtImg src="/images/takeit.svg" alt="TakeIt" />
+        <NuxtImg src="/images/gonation-dark.svg" alt="Gonation" />
+        <NuxtImg src="/images/docker.svg" alt="Docker" />
+        <NuxtImg src="/images/captur.svg" alt="Captur" />
+        <NuxtImg src="/images/black-knight.svg" alt="Black Knight" />
+        <NuxtImg src="/images/ibm.svg" alt="IBM" />
+        <NuxtImg src="/images/infrrd.svg" alt="Infrrd" />
+        <NuxtImg src="/images/people-ai.svg" alt="People AI" />
+        <NuxtImg src="/images/devrev.svg" alt="DevRev" />
+        <NuxtImg src="/images/outdoorsy.svg" alt="Outdoorsy" />
+        <NuxtImg src="/images/commerce-iq.svg" alt="CommerceIQ" />
+        <NuxtImg src="/images/kiva.svg" alt="Kiva" />
+        <NuxtImg src="/images/annalise.svg" alt="Annalise" />
+        <NuxtImg src="/images/duda.svg" alt="Duda" />
+        <NuxtImg src="/images/match-group.svg" alt="MatchGroup" />
       </div>
       <div class="marquee">
-        <img src="/images/google.svg" alt="Google">
-        <img src="/images/tango.svg" alt="Tango">
-        <img src="/images/takeit.svg" alt="TakeIt">
-        <img src="/images/gonation-dark.svg" alt="Gonation">
-        <img src="/images/docker.svg" alt="Docker">
-        <img src="/images/captur.svg" alt="Captur">
-        <img src="/images/black-knight.svg" alt="Black Knight">
-        <img src="/images/ibm.svg" alt="IBM">
-        <img src="/images/infrrd.svg" alt="Infrrd">
-        <img src="/images/people-ai.svg" alt="People AI">
-        <img src="/images/devrev.svg" alt="DevRev">
-        <img src="/images/outdoorsy.svg" alt="Outdoorsy">
-        <img src="/images/commerce-iq.svg" alt="CommerceIQ">
-        <img src="/images/kiva.svg" alt="Kiva">
-        <img src="/images/annalise.svg" alt="Annalise">
-        <img src="/images/duda.svg" alt="Duda">
-        <img src="/images/match-group.svg" alt="MatchGroup">
+        <NuxtImg src="/images/google.svg" alt="Google" />
+        <NuxtImg src="/images/tango.svg" alt="Tango" />
+        <NuxtImg src="/images/takeit.svg" alt="TakeIt" />
+        <NuxtImg src="/images/gonation-dark.svg" alt="Gonation" />
+        <NuxtImg src="/images/docker.svg" alt="Docker" />
+        <NuxtImg src="/images/captur.svg" alt="Captur" />
+        <NuxtImg src="/images/black-knight.svg" alt="Black Knight" />
+        <NuxtImg src="/images/ibm.svg" alt="IBM" />
+        <NuxtImg src="/images/infrrd.svg" alt="Infrrd" />
+        <NuxtImg src="/images/people-ai.svg" alt="People AI" />
+        <NuxtImg src="/images/devrev.svg" alt="DevRev" />
+        <NuxtImg src="/images/outdoorsy.svg" alt="Outdoorsy" />
+        <NuxtImg src="/images/commerce-iq.svg" alt="CommerceIQ" />
+        <NuxtImg src="/images/kiva.svg" alt="Kiva" />
+        <NuxtImg src="/images/annalise.svg" alt="Annalise" />
+        <NuxtImg src="/images/duda.svg" alt="Duda" />
+        <NuxtImg src="/images/match-group.svg" alt="MatchGroup" />
       </div>
     </div>
 
