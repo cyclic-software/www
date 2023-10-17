@@ -140,8 +140,8 @@
             src="/images/default-monochrome-white.svg"
             loading="lazy"
             alt="cyclic logo"
-            width='128'
             class="h-auto"
+            sizes='128px'
           />
         </nuxt-link>
   
