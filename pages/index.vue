@@ -3,14 +3,14 @@
     <div class="pt-20">
       <hero/>
       <Steps />
-      <WhyCyclic />
       <Supported />
-      <Blurbs />
+      <TrustedBy />
       <GlobalLocations />
       <Infrastructure />
+      <Blurbs />
+      <WhyCyclic />
       <CyclicToWork />
       <feature-matrix/>
-      <TrustedBy />
       <product-demo/>
       <Campaign />
     </div>
