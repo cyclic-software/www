@@ -126,8 +126,11 @@ export default {
   ],
 
   // https://v0.image.nuxtjs.org/api/options
-  // image: {
-  // },
+  image: {
+    domains: [
+      'pbs.twimg.com'
+    ]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
