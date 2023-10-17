@@ -41,7 +41,7 @@
       src="/images/preview1.png"
       alt="Cyclic Preview"
       format="webp"
-      sizes="sm:340px md:400px lg:500px xl:600px"
+      sizes="sm:340px md:400px lg:600px xl:1200px"
     ></NuxtImg>
   </section>
 </template>
