@@ -141,7 +141,7 @@
             loading="lazy"
             alt="cyclic logo"
             class="h-auto"
-            sizes='128px'
+            width='128'
           />
         </nuxt-link>
   
