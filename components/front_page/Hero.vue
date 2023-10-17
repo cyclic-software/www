@@ -36,13 +36,13 @@
     </div>
 
     <!-- ********* CYCLIC PREVIEW ********* -->
-    <nuxt-img
+    <NuxtImg
       class="rounded-3xl mt-8 preview w-[95%]"
       src="/images/preview1.png"
       alt="Cyclic Preview"
       format="webp"
       sizes="sm:340px md:400px lg:500px xl:600px"
-    ></nuxt-img>
+    ></NuxtImg>
   </section>
 </template>
 
