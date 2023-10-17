@@ -48,7 +48,7 @@ export default {
       script: [
         {
           type: 'application/ld+json',
-          innerHTML: JSON.stringify({
+          json: {
             "@context": "https://schema.org",
             "@type": "Corporation",
             "name": "Cyclic Software",
@@ -62,7 +62,7 @@ export default {
               "https://github.com/cyclic-software",
               "https://www.cyclic.sh/"
             ]
-          })
+          }
         }
       ]
     }
