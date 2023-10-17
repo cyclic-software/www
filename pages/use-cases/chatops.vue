@@ -20,7 +20,7 @@
     <div class="mt-10 space-y-16">
       <!-- ********* CONTENT ********* -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <NuxtImg class="w-full align-self-center" src="/images/chatops.svg" alt="ChatOps illustration" />
+        <NuxtImg format="webp" class="w-full align-self-center" src="/images/chatops.svg" alt="ChatOps illustration" />
         
         <div class="text-neutral-300 leading-[150%] space-y-5">
           <p>
@@ -106,7 +106,7 @@
         <div class="">
           <!-- ********* REGULAR ********* -->
           <div v-if="tab === 'regular'" class="space-y-8">
-            <NuxtImg loading="lazy" src="/images/regular-graph.png" class="w-full" alt="regular" />
+            <NuxtImg format="webp" loading="lazy" src="/images/regular-graph.png" class="w-full" alt="regular" />
 
             <div class="text-neutral-300 leading-[150%] space-y-2">
               <p>100,000 requests per day with consistent usage pattern</p>
@@ -215,7 +215,7 @@
 
           <!-- ********* BURSTY ********* -->
           <div v-if="tab === 'bursty'" class="space-y-8">
-            <NuxtImg loading="lazy" src="/images/bursty-graph.png" class="w-full" alt="bursty" />
+            <NuxtImg format="webp" loading="lazy" src="/images/bursty-graph.png" class="w-full" alt="bursty" />
 
             <div class="text-neutral-300 leading-[150%] space-y-2">
               <p>Random peaks of up to 100 requests/second (75,000 average per day)</p>
@@ -321,7 +321,7 @@
 
           <!-- ********* INTERMITTENT ********* -->
           <div v-if="tab === 'intermittent'" class="space-y-8">
-            <NuxtImg loading="lazy" src="/images/intermittent-graph.png" class="w-full" alt="intermittent" />
+            <NuxtImg format="webp" loading="lazy" src="/images/intermittent-graph.png" class="w-full" alt="intermittent" />
 
             <div class="text-neutral-300 leading-[150%] space-y-2">
               <p>Mostly idle, with small burst of light usage. Max concurrency 5 requests/second (500 average per day)</p>

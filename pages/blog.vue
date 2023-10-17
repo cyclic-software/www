@@ -24,6 +24,7 @@
         <div class="flex flex-col gap-3">
           <!-- IMAGE & CONTENT -->
           <NuxtImg
+            format="webp"
             loading="lazy"
             :src="post.thumbnail"
             :alt="post.title"
