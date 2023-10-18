@@ -4,13 +4,13 @@
       <hero/>
       <Steps />
       <Supported />
-      <WhyCyclic />
       <TrustedBy />
-      <Blurbs />
-      <feature-matrix/>
-      <Infrastructure />
       <GlobalLocations />
+      <Infrastructure />
+      <Blurbs />
+      <WhyCyclic />
       <CyclicToWork />
+      <feature-matrix/>
       <product-demo/>
       <Campaign />
     </div>
