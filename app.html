@@ -12,48 +12,24 @@
       <!-- script>window.LogRocket && window.LogRocket.init('sprnyp/cyclicsh');</script -->
       <!--  Global site tag (gtag.js) - Google Analytics  -->
       <!--  Global site tag (gtag.js) - Google Analytics  -->
+    <script>
+      // Prod
+      var gtag_id = 'G-RMTRNCTQEJ'; // Prod
+      if (!window.location.host.endsWith('cyclic.sh')) {
+        gtag_id = 'G-5Q96TQLF49'; // Dev
+      }
 
+      var script = document.createElement('script');
+      script.async = true
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${gtag_id}`
+      document.head.appendChild(script);
 
-    <!-- dev analytics  -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-199750669-4"></script>
-    <script>
-      if (window.location.host !== 'www.cyclic.sh') {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-199750669-4');
-      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtag_id);
     </script>
-    
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5Q96TQLF49"></script>
-    <script>
-      if (window.location.host !== 'www.cyclic.sh') {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-5Q96TQLF49');
-      }
-    </script>
-  <!-- dev analytics  -->
 
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-199750669-3"></script>
-    <script>
-      if (window.location.host === 'www.cyclic.sh') {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-199750669-3');
-      }
-    </script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RMTRNCTQEJ"></script>
-    <script>
-      if (window.location.host === 'www.cyclic.sh') {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-RMTRNCTQEJ');
-      }
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
