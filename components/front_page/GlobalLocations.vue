@@ -16,7 +16,13 @@
 
     <!-- ********* WORLD MAP ********* -->
     <div class="">
-      <img src="/images/global-map.svg" height="549px" />
+      <NuxtImg
+        format="webp"
+        loading='lazy'
+        src="/images/global-map.svg"
+        height="549px"
+        alt="Cyclic Server Locations"
+      />
     </div>
   </section>
 </template>
