@@ -8,6 +8,7 @@
         :alt="post.title"
         class="w-full rounded-2xl"
         width='1280'
+        height='800'
       />
 
       <!-- TITLE & META SECTION -->
