@@ -12,7 +12,7 @@
   </section>
 </template>
 
-<script async>
+<script>
   // hbspt = require('static/hubspot/forms/shell.js')
   export default({
     data() {
@@ -37,7 +37,8 @@
       script: [
         {
           // src: '@static/hubspot/forms/shell.js'
-          src: 'https://js.hsforms.net/forms/shell.js'
+          src: 'https://js.hsforms.net/forms/shell.js',
+          async: true
         }
       ]
     }
