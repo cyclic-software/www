@@ -54,7 +54,7 @@ There are different implementations but the shared anatomy is:
 By far the most common and probably the most crudely implemented phishing scam we see is an attack on Microsoft accounts. Just a simple login page. 
 
 <p align="center">
-    <img src="/content/scampage-blog/ms2.png" width="650px"></img>
+    <img loading="lazy" src="/content/scampage-blog/ms2.png" width="650px"></img>
     <figcaption align = "center">The Microsoft login page is the most common scam we've seen hosted on cyclic.sh</figcaption>
 </p>
 
@@ -76,7 +76,7 @@ This code obfuscated, encoded to hide its contents. Most crawler bots do not exe
 
 
 <p align="center">
-    <img src="/content/scampage-blog/ms3.png" width="650px"></img>
+    <img loading="lazy" src="/content/scampage-blog/ms3.png" width="650px"></img>
     <figcaption align = "center">Obfuscated code is rendered in browser with `document.write`</figcaption>
 </p>
 
@@ -90,7 +90,7 @@ In this instance `finish.php` was likely injected into the host maliciously by e
 Another very common scam we see targets your Netflix account.
 
 <p align="center">
-    <img src="/content/scampage-blog/netflix.png" width="650px" ></img>
+    <img loading="lazy" src="/content/scampage-blog/netflix.png" width="650px" ></img>
     <figcaption align = "center">Another common scam targets Adobe, Netflix, and others with similar backend code</figcaption>
 </p>
 
@@ -100,7 +100,7 @@ While Adobe and Netfix have been most common as of late, we've seen almost ident
 Implementation here is a more sophisticated full stack express site built using MVC pattern and a nicely organized file structure.
 
 <p align="center">
-    <img src="/content/scampage-blog/netflix_files.png" width="150px"></img>
+    <img loading="lazy" src="/content/scampage-blog/netflix_files.png" width="150px"></img>
     <figcaption align = "center">Phishing site file structure</figcaption>
 </p>
 
@@ -120,7 +120,7 @@ All the links to the Privacy Policy, Help Center and TOS still work and point to
 First lets look at `app.js` before looking at the `/auth/login` controller:
 
 <p align="center">
-    <img src="/content/scampage-blog/netflix_appjs.png" width="650px"></img>
+    <img loading="lazy" src="/content/scampage-blog/netflix_appjs.png" width="650px"></img>
     <figcaption align = "center">The sites implements an anti-bot middleware</figcaption>
 </p>
 
@@ -286,7 +286,7 @@ When browsing the code, something stood out to me. The Telegram message header:
 What or who is `SHAKESWORDE`? Is it some kind of cool 1337 haxor name? 
 
 <p align="center">
-    <img src="https://media0.giphy.com/media/Q2W4hziDOyzu0/giphy.gif?cid=ecf05e470qrb82k3b4fvpxh5l7l3up9tyefvhfmm09cntn3u&ep=v1_gifs_search&rid=giphy.gif&ct=g"/>
+    <img loading="lazy" src="https://media0.giphy.com/media/Q2W4hziDOyzu0/giphy.gif?cid=ecf05e470qrb82k3b4fvpxh5l7l3up9tyefvhfmm09cntn3u&ep=v1_gifs_search&rid=giphy.gif&ct=g"/>
 </p>
 
 So I googled it - 
@@ -308,7 +308,7 @@ Maybe Wayback Machine caught it?
 No luck for `scampages.html` but the root domain was captured in 2022: 
 
 <p align="center">
-    <img src="/content/scampage-blog/pizza.png" width="650px"></img>
+    <img loading="lazy" src="/content/scampage-blog/pizza.png" width="650px"></img>
 </p>
 
 Pizza. It now made sense that Pizza Rosa in the German countryside was once a victim of an injection attack. `SHAKESWORDE` or somebody exploited their server and put that content there. 
@@ -318,7 +318,7 @@ I eventually found listings on GitHub under the [scampage topic](https://github.
 There were multiple repositories listing scampages for different targets with anti-bot features just like in the Netflix case above. 
 
 <p align="center">
-    <img src="/content/scampage-blog/scampage_github.png" width="650px"></img>
+    <img loading="lazy" src="/content/scampage-blog/scampage_github.png" width="650px"></img>
 </p>
 
 I reported these. Hopefully GitHub takes them down quickly, but unfortunately until problems with disposable accounts are mitigated, they will probably be back. 
@@ -331,7 +331,7 @@ While no longer hosted at the `rose-lauchheim.de` domain, Pizzeria Rose seems to
 
 
 <p align="center"> 
-    <img src="/content/scampage-blog/food.png" width="650px"></img>
+    <img loading="lazy" src="/content/scampage-blog/food.png" width="650px"></img>
     <figcaption align = "center">An actual pizza from Pizzeria Rosa in Lauchheim, Germany</figcaption>
 </p>
 

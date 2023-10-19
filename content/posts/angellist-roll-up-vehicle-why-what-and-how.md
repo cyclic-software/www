@@ -82,7 +82,7 @@ And one or more of these to apply:
 As a developer the complexity to go from your local to the cloud is increasing. This is driving cloud platform selection into a pre-design time decision. We are dedicated to solving both of these problems for developers. Our goal is to let you push to deploy while making cloud environment selection a runtime decision. Sign up for the [Cyclic Private Beta](https://app.cyclic.sh/api/login)  
 ‍
 <a href="https://deploy.cyclic.sh/cyclic-software/starter-express-api" target="_blank">
-    <img src="https://deploy.cyclic.sh/button.svg" />
+    <img loading="lazy" src="https://deploy.cyclic.sh/button.svg" />
 </a>
 
 
