@@ -27,7 +27,7 @@
             format="webp"
             :src="post.thumbnail"
             :alt="post.title"
-            class="object-cover rounded-xl"
+            class="w-full object-cover rounded-xl"
             :loading="i > 2 ? 'lazy' : ''"
             width='350'
             height='240'
