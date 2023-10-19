@@ -2,13 +2,13 @@
   <section class="section flex flex-col items-center gap-10 lg:gap-8">
     <!-- ********* PILL TEXT ********* -->
     <Pill text="Launch with confidence" />
-    
+
     <!-- ********* CTA TEXTS ********* -->
     <div class="space-y-8">
       <h1 class="font-extrabold text-5xl sm:text-6xl lg:text-8xl tracking-normal text-center">
         Escape infrastructure. Unleash ideas.
       </h1>
-  
+
       <p class="text-center text-neutral-300 text-lg">
         Build and run <strong>modern cloud-native serverless applications</strong> without piling on to the full stack.
         <!-- Connect your GitHub repo. We’ll build, deploy and manage the hosting. -->
@@ -36,7 +36,13 @@
     </div>
 
     <!-- ********* CYCLIC PREVIEW ********* -->
-    <img class="rounded-3xl mt-8 preview w-[95%]" src="/images/preview1.png" alt="Cyclic Preview">
+    <NuxtImg
+      class="rounded-3xl mt-8 preview w-[95%]"
+      src="/images/preview1.png"
+      alt="Cyclic Preview"
+      format="webp"
+      sizes="sm:340px md:400px lg:600px xl:1200px"
+    ></NuxtImg>
   </section>
 </template>
 
@@ -64,7 +70,7 @@ export default {
                 'session_seconds': session_seconds,
                 'event_callback': function() {
                   }
-                });  
+                });
             }catch(e){
             }
       }
@@ -130,7 +136,7 @@ export default {
 .btn-primary, .btn-primary:active{
     background-color: var(--pink);
     border-color: var(--pink);
-    
+
 }
 .btn-primary:hover, .btn-primary:focus{
     background-color: var(--darkpink);
@@ -162,7 +168,7 @@ export default {
     }
 
   }
-  
-  
+
+
 
 </style>

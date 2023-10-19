@@ -37,12 +37,14 @@
         >
           <div class="space-y-2">
             <div class="pb-2">
-              <img
+              <NuxtImg
+                format="webp"
+                loading="lazy"
                 v-if="update.props.image"
                 :src="update.props.image"
                 :alt="update.props.title"
                 class="w-96 h-auto rounded-xl"
-              >
+              />
             </div>
             <h3 class="text-3xl font-semibold">{{ update.props.title }}</h3>
             <p class="text-sky-500 text-sm">

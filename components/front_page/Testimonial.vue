@@ -15,9 +15,19 @@
     </p>
 
     <div class="flex items-center gap-3">
-      <div class="flex items-center justify-center w-12 h-12 bg-neutral-700 rounded-full overflow-hidden">
-        <img v-if="avatar" :src="avatar" class="w-full h-full bg-cover" :alt="name">
-        <i v-else class="ri-user-6-line text-xl"></i>
+      <NuxtImg
+        v-if="avatar"
+        format="webp"
+        loading="lazy"
+        :src="avatar"
+        class="bg-cover rounded-full"
+        width='48'
+        height='48'
+        :alt="name"
+      />
+
+      <div v-else class="flex items-center justify-center w-12 h-12 bg-neutral-700 rounded-full overflow-hidden">
+        <i class="ri-user-6-line text-xl"></i>
       </div>
 
       <div class="">

@@ -117,12 +117,20 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxt/image',
     '@/modules/generator',
     'bootstrap-vue/nuxt',
     '@nuxt/postcss8',
     '@nuxtjs/google-fonts',
     '@nuxtjs/composition-api/module'
   ],
+
+  // https://v0.image.nuxtjs.org/api/options
+  image: {
+    domains: [
+      'pbs.twimg.com'
+    ]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -183,7 +191,7 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-  
+
   // Feed module configuration: https://content.nuxtjs.org/v1/community/integrations/
   feed: [{
     path: '/blog/rss.xml',

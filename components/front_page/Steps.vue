@@ -31,7 +31,7 @@
           </div>
 
           <div class="metrics-img">
-            <img src="/images/metrics.png" alt='Sample metrics' />
+            <NuxtImg format="webp" loading="lazy" src="/images/metrics.png" alt='Sample metrics' />
           </div>
         </div>
       </StepCard>
