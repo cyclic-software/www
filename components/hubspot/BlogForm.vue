@@ -12,7 +12,7 @@
   </section>
 </template>
 
-<script>
+<script async>
   // hbspt = require('static/hubspot/forms/shell.js')
   export default({
     data() {
