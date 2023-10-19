@@ -28,7 +28,10 @@
             loading="lazy"
             :src="post.thumbnail"
             :alt="post.title"
-            class="w-full h-60 object-cover rounded-xl"
+            class="object-cover rounded-xl"
+            width='350'
+            height='240'
+            sizes='100vw sm:380px lg:350px'
           />
 
           <div class="space-y-4">
