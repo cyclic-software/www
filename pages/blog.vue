@@ -25,7 +25,6 @@
           <!-- IMAGE & CONTENT -->
           <NuxtImg
             format="webp"
-            loading="lazy"
             :src="post.thumbnail"
             :alt="post.title"
             class="object-cover rounded-xl"
