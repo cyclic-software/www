@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/vs-heroku", {data:[{_img:{"/_ipx/w_150,f_webp/images/vs/heroku-logo-solid-gradient.svg":"\u002F_nuxt\u002Fimage\u002F559ae6.webp","/_ipx/w_150,f_webp/images/logos/icon-dark.svg":"\u002F_nuxt\u002Fimage\u002F08edf6.webp","/_ipx/w_128,f_webp/images/default-monochrome-white.svg":"\u002F_nuxt\u002Fimage\u002F31b4be.webp"}}],fetch:{},mutations:void 0});
