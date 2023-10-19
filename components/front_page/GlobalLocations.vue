@@ -20,9 +20,7 @@
         format="webp"
         loading='lazy'
         src="/images/global-map.svg"
-        height="600px"
         alt="Cyclic Server Locations"
-        sizes="sm:340px md:400px lg:600px xl:1200px"
       />
     </div>
   </section>
