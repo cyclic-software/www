@@ -9,6 +9,7 @@
         class="w-full rounded-2xl"
         width='1280'
         height='800'
+        sizes='sm:340px md:400px lg:600px xl:1200px'
       />
 
       <!-- TITLE & META SECTION -->
