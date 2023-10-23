@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class='w-full md:max-w-screen-md mx-auto space-y-10'>
+    <div class='w-full md:max-w-screen-md mx-auto space-y-16'>
       <div class='w-full h-[400px] rounded-3xl flex items-center justify-center text-9xl bg-sky-500
       text-white'>
         <i class="ri-javascript-line"></i>
