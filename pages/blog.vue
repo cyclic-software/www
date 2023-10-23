@@ -19,16 +19,19 @@
     <!--************ POSTS ************-->
     <div role="list" class="mt-10 mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6
     sm:gap-8 lg:gap-10">
-      <a role="listitem" class="col-span-1 group hover:no-underline" v-for="post of posts" :key="post.slug"
+      <a role="listitem" class="col-span-1 group hover:no-underline" v-for="post, i of posts" :key="post.slug"
       :href="`/posts/${post.slug}`">
         <div class="flex flex-col gap-3">
           <!-- IMAGE & CONTENT -->
           <NuxtImg
             format="webp"
-            loading="lazy"
             :src="post.thumbnail"
             :alt="post.title"
-            class="w-full h-60 object-cover rounded-xl"
+            class="w-full object-cover rounded-xl"
+            :loading="i > 2 ? 'lazy' : ''"
+            width='350'
+            height='240'
+            sizes='100vw sm:380px lg:350px'
           />
 
           <div class="space-y-4">
@@ -50,9 +53,6 @@
         </div>
       </a>
     </div>
-
-
-    <HubspotBlogForm />
   </section>
 
 </template>

@@ -2,7 +2,15 @@
   <section class="section common-section space-y-12">
     <div class="px-4 lg:px-0 max-w-screen-lg mx-auto space-y-10">
       <!-- IMAGE SECTION -->
-      <NuxtImg format="webp" loading="lazy" :src="post.image" :alt="post.title" class="w-full rounded-2xl" />
+      <NuxtImg
+        format="webp"
+        :src="post.image"
+        :alt="post.title"
+        class="w-full rounded-2xl"
+        width='1280'
+        height='800'
+        sizes='sm:340px md:400px lg:600px xl:1200px'
+      />
 
       <!-- TITLE & META SECTION -->
       <div class="space-y-8 border-b border-b-white/10 pb-6">
