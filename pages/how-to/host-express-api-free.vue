@@ -44,7 +44,7 @@
         <ol>
           <li>Log in to your Cyclic.sh account.</li>
           <li>Click on "New App" and deploy a new app.</li>
-          <li>On the 'Link Your Own' tab, search for your React app. If you don't see it, try refreshing the list.</li>
+          <li>On the 'Link Your Own' tab, search for your Express API. If you don't see it, try refreshing the list.</li>
           <li>Once you select the repo, a Github popup will appear asking you to install Cyclic and give it access to the repo.</li>
         </ol>
 
