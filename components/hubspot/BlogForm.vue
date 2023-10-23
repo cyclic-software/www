@@ -37,7 +37,8 @@
       script: [
         {
           // src: '@static/hubspot/forms/shell.js'
-          src: 'https://js.hsforms.net/forms/shell.js'
+          src: 'https://js.hsforms.net/forms/shell.js',
+          // async: true
         }
       ]
     }
