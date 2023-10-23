@@ -53,9 +53,6 @@
         </div>
       </a>
     </div>
-
-
-    <HubspotBlogForm />
   </section>
 
 </template>
