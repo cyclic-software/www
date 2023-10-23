@@ -31,6 +31,14 @@
                 >
                   Host a React app for free
                 </nuxt-link>
+
+                <nuxt-link
+                  class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
+                  rounded-lg transition w-full text-sm"
+                  to="/how-to/host-express-api-free"
+                >
+                  Host an Express API for free
+                </nuxt-link>
               </div>
             </div>
 
