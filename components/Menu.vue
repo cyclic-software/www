@@ -15,33 +15,6 @@
             <Navlink name="investors" path="/investors" />
             <Navlink name="updates" path="/updates" />
 
-            <!-- HOW TOs DROPDOWN -->
-            <div class="relative group">
-              <button class="flex items-center gap-1 text-neutral-300 group-hover:text-white">
-                <span class="text-sm">How Tos</span>
-                <i class="ri-arrow-drop-down-line"></i>
-              </button>
-              
-              <div class="absolute top-full hidden opacity-0 border !border-neutral-700 bg-neutral-800 p-2
-              rounded-xl group-hover:grid group-hover:opacity-100 transition min-w-[120px] w-max grid-cols-1">
-                <nuxt-link
-                  class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-                  rounded-lg transition w-full text-sm"
-                  to="/how-to/host-react-app-free"
-                >
-                  Host a React app for free
-                </nuxt-link>
-
-                <nuxt-link
-                  class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-                  rounded-lg transition w-full text-sm"
-                  to="/how-to/host-express-api-free"
-                >
-                  Host an Express API for free
-                </nuxt-link>
-              </div>
-            </div>
-
             <!-- USE CASES DROPDOWN -->
             <div class="relative group">
               <button class="flex items-center gap-1 text-neutral-300 group-hover:text-white">
@@ -221,34 +194,6 @@
           >
             docs
           </a>
-        </div>
-
-        <!-- HOW TOs DROPDOWN -->
-        <div class="relative group w-full">
-          <button class="flex items-center justify-between gap-1 capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition w-full">
-            <span class="">How Tos</span>
-            <i class="ri-arrow-drop-down-line"></i>
-          </button>
-          
-          <div @click="menu_open=false" class="hidden opacity-0 h-0 border !border-neutral-700 bg-neutral-800 p-2
-          rounded-xl group-hover:grid group-hover:opacity-100 group-hover:h-max transition min-w-[120px] w-full grid-cols-1">
-            <nuxt-link
-              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-              rounded-lg transition w-full text-sm"
-              to="/how-to/host-react-app-free"
-            >
-              Host a React app for free
-            </nuxt-link>
-
-            <nuxt-link
-              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-              rounded-lg transition w-full text-sm"
-              to="/how-to/host-express-api-free"
-            >
-              Host an Express API for free
-            </nuxt-link>
-          </div>
         </div>
 
         <!-- USE CASES DROPDOWN -->
