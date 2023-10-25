@@ -22,7 +22,8 @@
         <i class="ri-javascript-line"></i>
       </div>
 
-      <article class='prose prose-invert prose-lg'>
+      <article class='prose prose-invert prose-lg prose-pre:px-0 prose-pre:py-2 prose-pre:m-0
+      prose-pre:h-max'>
         <h2>Prerequisites</h2>
         <ul>
           <li>You should have a Cyclic.sh account. If you don't have one, sign up for an account on their website.</li>
@@ -36,8 +37,7 @@
           mkdir my-express-api
           cd my-express-api
           npm init
-          npm install express
-        </pre>
+          npm install express</pre>
         <p>Build your API by creating routes, controllers, and defining endpoints.</p>
 
         <h2>Step 2: Create a Cyclic.sh app</h2>

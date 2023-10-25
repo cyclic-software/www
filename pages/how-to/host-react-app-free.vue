@@ -22,7 +22,8 @@
         <i class="ri-reactjs-fill"></i>
       </div>
 
-      <article class='prose prose-invert prose-lg'>
+      <article class='prose prose-invert prose-lg prose-pre:px-0 prose-pre:py-2 prose-pre:m-0
+      prose-pre:h-max'>
         <h2>Prerequisites</h2>
         <ul>
           <li>You should have a Cyclic.sh account. If you don't have one, sign up for an account on their website.</li>
@@ -33,14 +34,12 @@
         <p>If you don't have a React app already, you can create one using Create React App:</p>
         <pre>
           npx create-react-app my-react-app
-          cd my-react-app
-        </pre>
+          cd my-react-app</pre>
 
         <h2>Step 2: Build your React App</h2>
         <p>Before deploying your React app, you need to build it for production. Run the following command in your project's root directory:</p>
         <pre>
-          npm run build
-        </pre>
+          npm run build</pre>
 
         <h2>Step 3: Create a Cyclic.sh app</h2>
         <ol>
