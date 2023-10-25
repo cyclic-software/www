@@ -125,6 +125,28 @@
             </nuxt-link>
           </div>
         </div>
+        
+        <!-- ********** HOW TO ********** -->
+        <div class="space-y-4">
+          <h4 class="text-base font-semibold">How To</h4>
+  
+          <div class="flex flex-col gap-3 text-xs">
+            <nuxt-link
+              to="/how-to/host-react-app-free"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
+            >
+              Host a React app for free
+            </nuxt-link>
+
+            <nuxt-link
+              to="/how-to/host-express-api-free"
+              class="text-sm !no-underline text-neutral-400 hover:text-white transition"
+            >
+              Host an Express API for free
+            </nuxt-link>
+          </div>
+        </div>
+
       </div>
   
       <!-- ********** BRAND ********** -->
