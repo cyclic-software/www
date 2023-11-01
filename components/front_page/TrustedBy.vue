@@ -64,11 +64,11 @@
         text="Developers active this week"
       />
       <StatCard
-        stat="101,600+"
+        stat="108,000+"
         text="Developers on Cyclic"
       />
       <StatCard
-        stat="1,170,000+"
+        stat="1,240,000+"
         text="Builds triggered"
       />
     </div>
