@@ -349,7 +349,7 @@
 
           <div class="flex items-center gap-2">
             <i class="ri-checkbox-circle-fill text-primary"></i>
-            <p class="text-neutral-200">10 000 API requests / month</p>
+            <p class="text-neutral-200">1000 API requests / month</p>
           </div>
 
           <div class="flex items-center gap-2">
