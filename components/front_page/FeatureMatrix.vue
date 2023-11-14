@@ -79,13 +79,6 @@
       <hr class="border-neutral-800">
 
       <div class="flex items-center justify-between gap-10 lg:gap-20">
-        <p class="text-neutral-300">Builds</p>
-        <p class="text-white text-end">Unlimited</p>
-      </div>
-
-      <hr class="border-neutral-800">
-
-      <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Edge Locations</p>
         <p class="text-white text-end">Closest of 18+ Regions</p>
       </div>

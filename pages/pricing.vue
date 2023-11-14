@@ -374,11 +374,6 @@
 
           <div class="flex items-center gap-2">
             <i class="ri-checkbox-circle-fill text-primary"></i>
-            <p class="text-neutral-200">Unlimited Builds</p>
-          </div>
-
-          <div class="flex items-center gap-2">
-            <i class="ri-checkbox-circle-fill text-primary"></i>
             <p class="text-neutral-200">18+ Cloud Regions (Edge Locations)</p>
           </div>
 
