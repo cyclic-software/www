@@ -46,7 +46,7 @@
 
       <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">API Requests</p>
-        <p class="text-white text-end">10,000 / month / app</p>
+        <p class="text-white text-end">1000 / month / app</p>
       </div>
 
       <hr class="border-neutral-800">
@@ -74,13 +74,6 @@
       <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">Integrated Object Storage</p>
         <p class="text-white">1 GB (AWS S3)</p>
-      </div>
-
-      <hr class="border-neutral-800">
-
-      <div class="flex items-center justify-between gap-10 lg:gap-20">
-        <p class="text-neutral-300">Builds</p>
-        <p class="text-white text-end">Unlimited</p>
       </div>
 
       <hr class="border-neutral-800">
