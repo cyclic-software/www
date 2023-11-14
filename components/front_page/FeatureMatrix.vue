@@ -46,7 +46,7 @@
 
       <div class="flex items-center justify-between gap-10 lg:gap-20">
         <p class="text-neutral-300">API Requests</p>
-        <p class="text-white text-end">{{(1000).toLocaleString()}} / month / app</p>
+        <p class="text-white text-end">1000 / month / app</p>
       </div>
 
       <hr class="border-neutral-800">
