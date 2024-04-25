@@ -29,13 +29,13 @@
     <div class="common-section pt-20">
       <!-- ********* PILL TEXT ********* -->
       <Pill text="Flexible pricing" />
-      
+
       <!-- ********* CTA TEXTS ********* -->
       <div class="space-y-6">
         <h2 class="font-extrabold text-4xl lg:text-5xl text-center">
           Only pay for what you use.
         </h2>
-    
+
         <p class="text-center text-neutral-300">
           Pricing scales up and down with your usage. Match cost and value.
         </p>
@@ -215,67 +215,58 @@
             and we can tailor a solution that meets your requirements.
           </p>
         </div>
-  
+
         <div class="mt-[44px] space-y-5">
-          <a
-            href="https://cyclic.typeform.com/to/HNNO8Bkp"
-            target="_blank"
-            class="w-full flex items-center justify-center rounded-xl py-3 px-6
-            bg-primary text-white font-semibold text-lg hover:no-underline cursor-pointer
-            hover:-translate-y-1 transition lg:max-w-xs ml-auto"
-          >
-            Schedule a Review
-          </a>
           <hr class="border-neutral-800">
-  
+
           <div class="space-y-2">
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">Configurable data retention</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">Log drains</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">Configurable Log Retention</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">Multi-region Active-Active</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">BYO Cloud Account</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">BYO IdP / SSO</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">SOC2/PCI/HIPAA</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">Annual architectural reviews</p>
             </div>
-  
+
             <div class="flex items-center gap-2">
               <i class="ri-checkbox-circle-fill text-primary"></i>
               <p class="text-neutral-200">Dedicated relationship manager</p>
             </div>
           </div>
         </div>
-  
+
 
       </div>
     </div>
@@ -293,23 +284,14 @@
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-5">
           <div class="flex gap-2">
             <span class="text-primary text-2xl font-bold">$</span>
-  
+
             <p class="text-7xl text-white font-semibold">
               0
             </p>
-  
+
             <div class="">/ month</div>
           </div>
-  
-          <a
-            href="https://app.cyclic.sh/api/login"
-            @click="sign_up('https://app.cyclic.sh/api/login', $event)"
-            class="w-full sm:w-80 flex items-center justify-center rounded-xl py-3 px-6
-            bg-primary text-white font-semibold text-lg hover:no-underline cursor-pointer
-            hover:-translate-y-1 transition"
-          >
-            Start
-          </a>
+
         </div>
 
         <hr class="border-neutral-800">
@@ -417,31 +399,6 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-    methods:{
-      async sign_up(url, e){
-          try{
-              let session_seconds = parseInt(e.timeStamp/1000)
-                await gtag('event', 'cta_pricing_free_forever', {
-                'event_label' : window.location.href,
-                'event_category' : 'sign_up',
-                'value' : session_seconds,
-
-                'page' : window.location,
-                'session_seconds': session_seconds,
-                'event_callback': function() {
-                  }
-                });
-            }catch(e){
-            }
-      }
-    }
-}
-</script>
-
-
 
 <style scoped>
 .col-2 {
