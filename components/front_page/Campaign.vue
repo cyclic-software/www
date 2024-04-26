@@ -1,25 +1,20 @@
 <template>
   <section class="section">
     <div class="flex flex-col gap-8 md:flex-row md:items-center border !border-neutral-700 bg-neutral-800/20 rounded-2xl p-10">
-      <div class="space-y-5">
-        <h2 class="text-3xl font-semibold">Bring Cyclic to Work</h2>
-        <hr class="border-primary w-10">
-        <p class="text-neutral-300 w-full md:w-[50%] leading-[160%]">
-          We are growing the product for teams and are looking for design partners. Are you part of a team that could use Cyclic at work?
+
+      <div class="max-w-6xl mx-auto flex items-center gap-3 text-sm">
+        <p class="text-neutral-300">
+          Cyclic is shutting down. New signups are disabled. Free tier after May 10th. Paid tier after May 31th. Details
+          <a
+            href="/posts/cyclic-is-shutting-down/"
+            class="text-sky-400 underline"
+            target="_blank"
+          >
+            blog post
+          </a>
         </p>
       </div>
-  
-      <div class="">
-        <a
-          href="https://cyclic.typeform.com/to/HNNO8Bkp"
-          class="bg-primary text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
-          gap-2 hover:no-underline hover:scale-105 transition w-full md:w-max"
-          target="_blank"
-        >
-          let's talk
-          <i class="ri-arrow-right-up-line"></i>
-        </a>
-      </div>
+
     </div>
   </section>
 </template>

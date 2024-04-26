@@ -31,13 +31,13 @@ export default {
       <div class="common-section">
           <!-- ********* PILL TEXT ********* -->
           <Pill text="Invest in Cyclic" />
-          
+
           <!-- ********* CTA TEXTS ********* -->
           <div class="space-y-6">
             <h2 class="font-extrabold text-4xl lg:text-5xl text-center capitalize">
               Investors
             </h2>
-        
+
             <p class="text-center text-neutral-300">
               Cyclic is the future of cloud.
             </p>
@@ -49,9 +49,9 @@ export default {
       <b-row>
         <b-col lg="1"></b-col>
         <b-col md="7" lg="5" align-self="center" class="space-y-4 text-lg">
-    
+
           <div class="spacer-32"></div>
-    
+
           <h4 class="text-2xl font-bold">Software is changing</h4>
           <p>
             <!-- Cloud native <strong>serverless</strong> architectures are enabling applications to grow from zero to global
@@ -61,14 +61,14 @@ export default {
             Innovative organizations are adopting these technologies despite complexity of tooling, design and orchestration.
           </p>
           <div class="spacer-32"></div>
-    
+
           <h4 class="text-2xl font-bold">Lower barriers - faster time to market</h4>
           <p>
             Without the support of a platform team, an individual developer lacks access to this massive potential.
             The global community of developers will <a href="https://dashboard.slashdata.co/" target="_blank">nearly double in the next 6 years</a>.
             Cyclic eliminates barriers to meet developers where they are. So even the most junior developer can take advantage of these technologies.
           </p>
-    
+
           <div class="spacer-32"></div>
           <h4 class="text-2xl font-bold">A good start and yet so much more to do</h4>
           <p>
@@ -85,58 +85,15 @@ export default {
             Join us on our journey.
           </p>
         </b-col>
-        <!-- <b-col lg="1" ></b-col> -->
-        <b-col md="5" lg="5"  >
-          <div class="text-center mt-5 space-y-2">
-            <div>
-              <NuxtImg format="webp" loading="lazy" class="mx-auto" src="images/logos/big_logo.png" width="300px" alt="Invest in Cyclic" />
-            </div>
-            <div class="spacer-32"></div>
-            <h3 class="mt-5 text-3xl font-bold">Intrigued?</h3>
-            <div>
-              <p>
-                Stay updated on our progress or schedule a call:
-              </p>
-              <p class="mt-4">
-                  <a href="https://cyclic.typeform.com/to/rTL1sd0X?ref=www"
-                  @click="track()"
-                    class="border !border-neutral-700 text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
-                    gap-2 hover:no-underline hover:!border-white transition w-max mx-auto">Subscribe to Investor Updates</a>
-                </p>
-            </div>
-          </div>
-        </b-col>
+
         <b-col lg="1"></b-col>
       </b-row>
     </b-container>
-    
+
     <CtaFullStackApps></CtaFullStackApps>
   </section>
 </template>
 
-<script>
-
-  export default {
-    methods: {
-      async track(url, e){
-          try{
-              let session_seconds = parseInt(e.timeStamp/1000)
-                await gtag('event', 'investor_newsletter_sign_up', {
-                'event_label' : window.location.href,
-                'event_category' : 'typeform_link',
-                'value' : session_seconds,
-
-                'page' : window.location,
-                'session_seconds': session_seconds,
-                'event_callback': function() { }
-              });
-            }catch(e){
-            }
-      }
-    }
-  }
-
-</script>
 
 
 <style scoped>

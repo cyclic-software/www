@@ -5,9 +5,9 @@
         <!-- ********* BRAND & LINKS********* -->
         <div class="flex items-center gap-5">
           <Brand />
-  
+
           <div class="hidden md:block h-5 border-l border-neutral-700"></div>
-  
+
           <div class="hidden md:flex items-center gap-5">
             <Navlink name="pricing" path="/pricing" />
             <Navlink name="blog" path="/blog" />
@@ -21,7 +21,7 @@
                 <span class="text-sm">Use Cases</span>
                 <i class="ri-arrow-drop-down-line"></i>
               </button>
-              
+
               <div class="absolute top-full hidden opacity-0 border !border-neutral-700 bg-neutral-800 p-2
               rounded-xl group-hover:grid group-hover:opacity-100 transition min-w-[120px] w-max grid-cols-1">
                 <nuxt-link
@@ -67,7 +67,7 @@
             </div>
           </div>
         </div>
-  
+
         <!-- ********* CONTROLS ********* -->
         <div class="flex !items-center gap-5">
           <button class="flex items-center justify-center h-10 w-10 border rounded-xl !border-neutral-700
@@ -100,16 +100,10 @@
             <a
               href="https://app.cyclic.sh/api/login"
               @click="sign_in('https://app.cyclic.sh/api/login', $event)"
-              class="m-0 text-sm capitalize text-neutral-300 hover:text-white transition"
+              class="button button-primary m-0 w-max"
             >
               login
             </a>
-    
-            <a
-              href="https://app.cyclic.sh/api/login"
-              @click="sign_up('https://app.cyclic.sh/api/login', $event)"
-              class="button button-primary m-0 w-max"
-            >sign up</a>
           </div>
         </div>
       </div>
@@ -118,21 +112,16 @@
     <!-- ********* BRING CYCLIC TO WORK BANNER ********* -->
     <div v-if="show_banner" class="border-b border-neutral-700 px-4 sm:px-0 py-2 bg-neutral-800">
       <div class="max-w-6xl mx-auto flex items-center gap-3 text-sm">
-        <p class="font-semibold">Cyclic at Work</p>
-        <div class="h-3 w-px border-l !border-neutral-600"></div>
         <p class="text-neutral-300">
-          We are growing and looking for design partners. Part of a team that could use Cyclic at work?
+          Cyclic is shutting down. New signups are disabled. Free tier after May 10th. Paid tier after May 31th. Details
           <a
-            href="https://cyclic.typeform.com/to/HNNO8Bkp"
-            class="text-sky-400 capitalize underline"
+            href="/posts/cyclic-is-shutting-down/"
+            class="text-sky-400 underline"
             target="_blank"
           >
-            let's talk
+            blog post
           </a>
         </p>
-        <button class="text-neutral-400 hover:text-white transition" @click="show_banner=false">
-          <i class="ri-close-line"></i>
-        </button>
       </div>
     </div>
 
@@ -160,8 +149,8 @@
           >
             pricing
           </nuxt-link>
-  
-  
+
+
           <nuxt-link
             class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
             rounded-lg transition"
@@ -169,7 +158,7 @@
           >
             blog
           </nuxt-link>
-  
+
           <nuxt-link
             class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
             rounded-lg transition"
@@ -177,7 +166,7 @@
           >
             investors
           </nuxt-link>
-  
+
           <nuxt-link
             class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
             rounded-lg transition"
@@ -185,7 +174,7 @@
           >
             updates
           </nuxt-link>
-  
+
           <a
             class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
             rounded-lg transition"
@@ -194,58 +183,6 @@
           >
             docs
           </a>
-        </div>
-
-        <!-- USE CASES DROPDOWN -->
-        <div class="relative group w-full">
-          <button class="flex items-center justify-between gap-1 capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-          rounded-lg transition w-full">
-            <span class="">Use Cases</span>
-            <i class="ri-arrow-drop-down-line"></i>
-          </button>
-          
-          <div @click="menu_open=false" class="hidden opacity-0 h-0 border !border-neutral-700 bg-neutral-800 p-2
-          rounded-xl group-hover:grid group-hover:opacity-100 group-hover:h-max transition min-w-[120px] w-full grid-cols-1">
-            <nuxt-link
-              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-              rounded-lg transition w-full text-sm"
-              to="/use-cases/chatops"
-            >
-              ChatOps: An Admin Bot
-            </nuxt-link>
-
-            <nuxt-link
-              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-              rounded-lg transition w-full text-sm"
-              to="/use-cases/backends-for-frontends"
-            >
-              Backends for Frontends
-            </nuxt-link>
-
-            <nuxt-link
-              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-              rounded-lg transition w-full text-sm"
-              to="/use-cases/bring-cyclic-to-work"
-            >
-              Bring Cyclic to Work
-            </nuxt-link>
-            
-            <nuxt-link
-              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-              rounded-lg transition w-full text-sm"
-              to="/use-cases/api-integrations"
-            >
-              API Integrations
-            </nuxt-link>
-
-            <nuxt-link
-              class="capitalize text-neutral-300 hover:text-white px-3 py-2 hover:bg-neutral-700
-              rounded-lg transition w-full text-sm"
-              to="/vs-heroku"
-            >
-              Cyclic vs Heroku
-            </nuxt-link>
-          </div>
         </div>
       </div>
 
@@ -281,12 +218,6 @@
           login
         </a>
 
-        <a
-          href="https://app.cyclic.sh/api/login"
-          @click="sign_up('https://app.cyclic.sh/api/login', $event)"
-          class="bg-primary text-white capitalize flex items-center justify-center rounded-xl px-4 py-3
-          gap-2 hover:no-underline hover:scale-105 transition w-full"
-        >sign up</a>
       </div>
     </div>
   </nav>
@@ -348,22 +279,6 @@
             catch (e) {
             }
         },
-        async sign_up(url, e) {
-            try {
-                let session_seconds = parseInt(e.timeStamp / 1000);
-                await gtag('event', 'header_sign_up', {
-                    'event_label': window.location.href,
-                    'event_category': 'sign_up',
-                    'value': session_seconds,
-                    'page': window.location,
-                    'session_seconds': session_seconds,
-                    'event_callback': function () {
-                    }
-                });
-            }
-            catch (e) {
-            }
-        },
         handleScroll() {
             if (window.pageYOffset) {
                 this.scrolled = true;
@@ -389,7 +304,7 @@
   /* :root {
     --menu-height: 65px;
   }
-  
+
   .navbar-brand {
     min-width: 85px;
   }
@@ -418,7 +333,7 @@
   .nav-item{
     margin: 10px
   }
-  
+
   .dark, .menu_collapsed{
     @apply bg-black/90 border-b border-b-white/10 backdrop-blur-sm;
   } */
