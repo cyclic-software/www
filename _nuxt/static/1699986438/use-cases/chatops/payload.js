@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/use-cases/chatops", {data:[{_img:{"/_ipx/f_webp/images/chatops.svg":"\u002F_nuxt\u002Fimage\u002Fb12f21.webp","/_ipx/f_webp/images/intermittent-graph.png":"\u002F_nuxt\u002Fimage\u002F85d70c.webp","/_ipx/w_128,f_webp/images/default-monochrome-white.svg":"\u002F_nuxt\u002Fimage\u002F31b4be.webp"}}],fetch:{},mutations:void 0});

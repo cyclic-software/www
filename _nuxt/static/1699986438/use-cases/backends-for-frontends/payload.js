@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/use-cases/backends-for-frontends", {data:[{_img:{"/_ipx/f_webp/images/bff.svg":"\u002F_nuxt\u002Fimage\u002F8722f5.webp","/_ipx/w_128,f_webp/images/default-monochrome-white.svg":"\u002F_nuxt\u002Fimage\u002F31b4be.webp"}}],fetch:{},mutations:void 0});

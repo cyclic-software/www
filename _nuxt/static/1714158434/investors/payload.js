@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/investors", {data:[{_img:{"/_ipx/w_128,f_webp/images/default-monochrome-white.svg":"\u002F_nuxt\u002Fimage\u002F31b4be.webp"}}],fetch:{},mutations:void 0});
