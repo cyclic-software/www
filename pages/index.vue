@@ -82,10 +82,6 @@ export default {
     CyclicToWork,
     GlobalLocations
 },
-  async created(){
-    // warmup cms
-    await fetch('https://release-notes.cyclic.app/_healthcheck')
-  }
 }
 </script>
 

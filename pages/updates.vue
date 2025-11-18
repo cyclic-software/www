@@ -30,30 +30,35 @@
       <!--************ UPDATES ************-->
       <div class="col-span-1 xl:col-span-3 space-y-10">
         <div class="text-sm" v-if="loading">Loading updates...</div>
-        <div
-          v-for="update of updates"
-          :key="update.key"
-          class="space-y-6 border-b border-white/10 pb-6"
-        >
-          <div class="space-y-2">
-            <div class="pb-2">
-              <NuxtImg
-                format="webp"
-                loading="lazy"
-                v-if="update.props.image"
-                :src="update.props.image"
-                :alt="update.props.title"
-                class="w-96 h-auto rounded-xl"
-              />
-            </div>
-            <h3 class="text-3xl font-semibold">{{ update.props.title }}</h3>
-            <p class="text-sky-500 text-sm">
-              {{ new Date(update.props.published).toDateString() }}
-            </p>
-          </div>
-
-          <div class="prose prose-lg prose-invert" v-html="$md.render(update.props.content || '')"></div>
+        <div class="text-sm text-neutral-400" v-else-if="!updates.length">
+          No updates are available right now.
         </div>
+        <template v-else>
+          <div
+            v-for="update of updates"
+            :key="update.key"
+            class="space-y-6 border-b border-white/10 pb-6"
+          >
+            <div class="space-y-2">
+              <div class="pb-2">
+                <NuxtImg
+                  format="webp"
+                  loading="lazy"
+                  v-if="update.props.image"
+                  :src="update.props.image"
+                  :alt="update.props.title"
+                  class="w-96 h-auto rounded-xl"
+                />
+              </div>
+              <h3 class="text-3xl font-semibold">{{ update.props.title }}</h3>
+              <p class="text-sky-500 text-sm">
+                {{ new Date(update.props.published).toDateString() }}
+              </p>
+            </div>
+
+            <div class="prose prose-lg prose-invert" v-html="$md.render(update.props.content || '')"></div>
+          </div>
+        </template>
       </div>
     </div>
   </section>
@@ -61,15 +66,6 @@
 
 <script>
 export default {
-  async created() {
-    this.loading = true
-    const data = await fetch('https://release-notes.cyclic.app/api/posts')
-      .then(res => res.json())
-    
-    this.updates = data
-    this.loading = false
-  },
-
   data() {
     return {
       updates: [],

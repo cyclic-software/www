@@ -1,6 +1,14 @@
 <template>
     <div class="example_code">
-        <prism-editor v-model="example_code" class="my-editor" :highlight="highlighter" line-numbers readonly></prism-editor>
+        <client-only>
+            <prism-editor
+                v-model="example_code"
+                class="my-editor"
+                :highlight="highlighter"
+                line-numbers
+                readonly
+            />
+        </client-only>
     </div>
 </template>
 
