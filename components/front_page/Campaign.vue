@@ -4,7 +4,7 @@
 
       <div class="max-w-6xl mx-auto flex items-center gap-3 text-sm">
         <p class="text-neutral-300">
-          Cyclic is shutting down. New signups are disabled. Free tier after May 10th. Paid tier after May 31th. Details
+          Cyclic is shutting down. New signups are disabled. Free tier after May 10th 2024. Paid tier after May 31th 2024. Details
           <a
             href="/posts/cyclic-is-shutting-down/"
             class="text-sky-400 underline"
