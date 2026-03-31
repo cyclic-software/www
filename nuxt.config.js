@@ -52,6 +52,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   // ssr: false,
+  server: {
+    https: true
+  },
 
   env: {
     dev: process.env.NODE_ENV !== 'production'
